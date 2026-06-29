@@ -1,0 +1,39 @@
+name: Build & Deploy store
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Lets the GITHUB_TOKEN read this repo; release links for the (public) app repos
+# are resolved unauthenticated, so no extra secret is needed.
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install tools
+        run: sudo apt-get update -y && sudo apt-get install -y imagemagick jq
+
+      - name: Resolve download links + resize screenshots + build
+        run: make all
+        # make all = fetch + screenshots + build (no deploy; the action below deploys)
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          # the site uses relative URLs, so it works at the /ol1n.now/ project path
