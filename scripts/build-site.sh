@@ -138,7 +138,7 @@ while IFS="$TAB" read -r ord meta; do
 
   # detail page
   {
-    emit_head "$name — ol1n.now"
+    emit_head "$name — olin.now"
     cat <<HERO
 <a class="back-link" href="index.html">← Všechny aplikace</a>
 <section class="app-hero">
@@ -172,7 +172,7 @@ EOF
 
 # ---- build index ----
 {
-  emit_head "ol1n.now — aplikace"
+  emit_head "olin.now — aplikace"
   cat <<'HERO'
 <section class="hero">
   <h1>Moje aplikace</h1>
