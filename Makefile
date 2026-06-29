@@ -8,7 +8,7 @@ PORT ?= 8099
 
 .DEFAULT_GOAL := help
 
-.PHONY: help build fetch screenshots all deploy serve tunnel clean
+.PHONY: help build fetch screenshots all deploy serve clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -31,11 +31,6 @@ deploy: build ## Publish dist/ to the gh-pages branch
 serve: build ## Serve dist/ locally for preview
 	@echo "Serving $(DIST) at http://localhost:$(PORT)"
 	@cd $(DIST) && python3 -m http.server $(PORT)
-
-tunnel: build ## Serve dist/ locally and expose it at http://ol1n.now via cloudflared
-	@echo "Starting local origin on :$(PORT) + cloudflared tunnel..."
-	@cd $(DIST) && python3 -m http.server $(PORT) >/tmp/ol1n-serve.log 2>&1 &
-	@cloudflared tunnel --config cloudflared/config.yml run
 
 clean: ## Remove generated site (keeps downloads/ and screenshots/)
 	@rm -f $(DIST)/*.html && rm -rf $(DIST)/assets $(DIST)/icons

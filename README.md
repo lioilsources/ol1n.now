@@ -1,8 +1,9 @@
 # ol1n.now
 
 Statický "app store" pro distribuci vlastních aplikací (Windows / macOS / Linux + mobil),
-alternativa Google Play / Apple Store. Hostováno na GitHub Pages, servováno přes
-Cloudflare Tunnel na `http://ol1n.now`.
+alternativa Google Play / Apple Store. Hostováno na **GitHub Pages** s custom doménou
+`olin.now` (CNAME); HTTPS dodává Cloudflare (proxied, SSL mode Full). Žádný backend.
+Repo se jmenuje `ol1n.now`, doména je `olin.now`.
 
 ## Jak to funguje
 
@@ -15,10 +16,14 @@ Cloudflare Tunnel na `http://ol1n.now`.
 3. **`make screenshots`** vezme raw screenshoty z `apps/<slug>/screenshots/raw/`
    a resizne je na přesné rozměry vyžadované obchody do `dist/screenshots/<slug>/`.
 4. **`make build`** vygeneruje statický web do `dist/`.
-5. **`make deploy`** publikuje `dist/` na branch `gh-pages` (GitHub Pages, canonical HTTPS).
-6. **`make tunnel`** spustí cloudflared → `http://ol1n.now` proxyuje na Pages.
+5. **`make deploy`** publikuje `dist/` na branch `gh-pages` (GitHub Pages slouží
+   `olin.now` na rootu; `CNAME` soubor v buildu drží custom doménu).
 
 `make all` = fetch + screenshots + build. `make serve` spustí lokální náhled.
+
+### Doména / hosting
+- Cloudflare zóna `olin.now`: `CNAME @ → lioilsources.github.io` (proxied), SSL mode **Full (strict)**.
+- GitHub repo Settings → Pages → Custom domain: `olin.now` (drženo `CNAME` souborem).
 
 ## Přidání aplikace
 
@@ -51,4 +56,3 @@ konstanty na začátku `scripts/resize-screenshots.sh`.
 - `gh` CLI (pro `make fetch`)
 - ImageMagick `magick` (pro `make screenshots`) — `brew install imagemagick`
 - `python3` (pro `make serve`)
-- `cloudflared` (pro `make tunnel`)
