@@ -13,7 +13,7 @@ APPS="$ROOT/apps"
 TPL="$ROOT/templates"
 TAB="$(printf '\t')"
 
-emit_head() { sed -e "s|__TITLE__|$1|g" -e "s|__BASE__||g" "$TPL/head.html"; }
+emit_head() { _t="$(printf '%s' "$1" | sed 's/[&|]/\\&/g')"; sed -e "s|__TITLE__|$_t|g" -e "s|__BASE__||g" "$TPL/head.html"; }
 emit_foot() { sed -e "s|__BASE__||g" "$TPL/foot.html"; }
 
 # inner HTML for an .icon box: <img> if an icon exists, else first letter
@@ -172,11 +172,12 @@ EOF
 
 # ---- build index ----
 {
-  emit_head "olin.now — aplikace"
+  emit_head "Ananas&Bananas — olin.now"
   cat <<'HERO'
-<section class="hero">
-  <h1>Moje aplikace</h1>
-  <p>Stáhni si je pro Windows, macOS, Linux nebo mobil. Bez prostředníka.</p>
+<section class="hero hero--brand">
+  <img class="brand-hero" src="assets/img/ananas-bananas-logo.png"
+       alt="Ananas&Bananas — Digitální ovoce &amp; technologie">
+  <p>Stáhni si aplikace pro Windows, macOS, Linux nebo mobil. Bez prostředníka.</p>
 </section>
 <section class="app-grid">
 HERO

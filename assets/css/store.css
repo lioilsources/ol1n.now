@@ -45,6 +45,14 @@ a:hover { text-decoration: underline; }
 .hero h1 { font-size: 40px; margin: 0 0 8px; letter-spacing: -0.03em; }
 .hero p { color: var(--text-dim); font-size: 18px; margin: 0; max-width: 640px; }
 
+/* Brand hero (logo on dark bg) */
+.hero--brand { text-align: center; padding: 40px 0 24px; }
+.brand-hero {
+  display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto 16px;
+  border-radius: var(--radius); box-shadow: 0 8px 30px rgba(0, 0, 0, .35);
+}
+.hero--brand p { margin: 0 auto; }
+
 /* App grid */
 .app-grid {
   display: grid; gap: 20px;
