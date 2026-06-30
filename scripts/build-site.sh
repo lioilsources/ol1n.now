@@ -21,6 +21,16 @@ JSVER="$(hashf "$ROOT/assets/js/store.js")"
 emit_head() { _t="$(printf '%s' "$1" | sed 's/[&|]/\\&/g')"; sed -e "s|__TITLE__|$_t|g" -e "s|__CSSVER__|$CSSVER|g" -e "s|__BASE__||g" "$TPL/head.html"; }
 emit_foot() { sed -e "s|__JSVER__|$JSVER|g" -e "s|__BASE__||g" "$TPL/foot.html"; }
 
+# fixed brand logo backdrop + scroll spacer (parallax via store.css/.js); used on every page
+emit_brand() {
+  cat <<'BRAND'
+<div class="brand-backdrop" aria-hidden="true">
+  <img class="brand-logo" src="assets/img/ananas-bananas-logo.png" alt="">
+</div>
+<div class="brand-spacer"></div>
+BRAND
+}
+
 # inner HTML for an .icon box: <img> if an icon exists, else first letter
 icon_html() {
   _slug="$1"; _name="$2"
@@ -168,6 +178,7 @@ HERO
     echo '<section class="section"><h2>Popis</h2><div class="app-desc">'
     fm_body "$meta" | md_to_html
     echo '</div></section>'
+    emit_brand
     emit_foot
   } > "$DIST/$slug.html"
   echo "  built $slug.html"
@@ -181,12 +192,7 @@ EOF
   echo '<section class="app-grid">'
   printf '%s' "$CARDS"
   echo '</section>'
-  cat <<'BRAND'
-<div class="brand-backdrop" aria-hidden="true">
-  <img class="brand-logo" src="assets/img/ananas-bananas-logo.png" alt="">
-</div>
-<div class="brand-spacer"></div>
-BRAND
+  emit_brand
   emit_foot
 } > "$DIST/index.html"
 
