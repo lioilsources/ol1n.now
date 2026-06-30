@@ -13,8 +13,13 @@ APPS="$ROOT/apps"
 TPL="$ROOT/templates"
 TAB="$(printf '\t')"
 
-emit_head() { _t="$(printf '%s' "$1" | sed 's/[&|]/\\&/g')"; sed -e "s|__TITLE__|$_t|g" -e "s|__BASE__||g" "$TPL/head.html"; }
-emit_foot() { sed -e "s|__BASE__||g" "$TPL/foot.html"; }
+# short content hash of a file (portable: macOS `md5`, Linux `md5sum`) for cache-busting
+hashf() { if command -v md5 >/dev/null 2>&1; then md5 -q "$1"; else md5sum "$1" | cut -d' ' -f1; fi | cut -c1-8; }
+CSSVER="$(hashf "$ROOT/assets/css/store.css")"
+JSVER="$(hashf "$ROOT/assets/js/store.js")"
+
+emit_head() { _t="$(printf '%s' "$1" | sed 's/[&|]/\\&/g')"; sed -e "s|__TITLE__|$_t|g" -e "s|__CSSVER__|$CSSVER|g" -e "s|__BASE__||g" "$TPL/head.html"; }
+emit_foot() { sed -e "s|__JSVER__|$JSVER|g" -e "s|__BASE__||g" "$TPL/foot.html"; }
 
 # inner HTML for an .icon box: <img> if an icon exists, else first letter
 icon_html() {
