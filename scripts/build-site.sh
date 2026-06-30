@@ -173,16 +173,15 @@ EOF
 # ---- build index ----
 {
   emit_head "Ananas&Bananas — olin.now"
-  cat <<'HERO'
-<section class="hero hero--brand">
-  <img class="brand-hero" src="assets/img/ananas-bananas-logo.png"
-       alt="Ananas&Bananas — Digitální ovoce &amp; technologie">
-  <p>Stáhni si aplikace pro Windows, macOS, Linux nebo mobil. Bez prostředníka.</p>
-</section>
-<section class="app-grid">
-HERO
+  echo '<section class="app-grid">'
   printf '%s' "$CARDS"
   echo '</section>'
+  cat <<'BRAND'
+<div class="brand-backdrop" aria-hidden="true">
+  <img class="brand-logo" src="assets/img/ananas-bananas-logo.png" alt="">
+</div>
+<div class="brand-spacer"></div>
+BRAND
   emit_foot
 } > "$DIST/index.html"
 
