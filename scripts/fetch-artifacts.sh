@@ -27,12 +27,13 @@ command -v jq >/dev/null || { echo "error: jq not found" >&2; exit 1; }
 
 mkdir -p "$OUT"
 
-# awk ERE matched against the asset filename (lowercased) per platform bucket
-bucket_pattern() {
+# Space-separated ERE patterns (matched against lowercased asset filename) per
+# platform bucket, in PREFERENCE order — the first pattern with a match wins.
+bucket_patterns() {
   case "$1" in
     macos)   echo 'macos|mac-os|mac_os|\.dmg' ;;
     windows) echo 'windows|win64|win-x64|win32|\.exe$|\.msi$' ;;
-    linux)   echo 'linux|\.appimage|\.tar\.gz$' ;;
+    linux)   echo '\.appimage$' 'linux|\.tar\.gz$' ;;   # prefer AppImage, else tar.gz
     android) echo '\.apk$' ;;
   esac
 }
@@ -57,8 +58,11 @@ fetch_app() {
 
   got=0
   for bucket in macos windows linux android; do
-    pat="$(bucket_pattern "$bucket")"
-    line="$(printf '%s\n' "$rows" | awk -F'\t' -v p="$pat" 'tolower($2) ~ p {print; exit}')"
+    line=""
+    for pat in $(bucket_patterns "$bucket"); do
+      line="$(printf '%s\n' "$rows" | awk -F'\t' -v p="$pat" 'tolower($2) ~ p {print; exit}')"
+      [ -n "$line" ] && break
+    done
     [ -n "$line" ] || continue
     tag="$(printf '%s' "$line" | cut -f1)"
     name="$(printf '%s' "$line" | cut -f2)"
