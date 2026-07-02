@@ -5,18 +5,24 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Lets the GITHUB_TOKEN read this repo; release links for the (public) app repos
-# are resolved unauthenticated, so no extra secret is needed.
+# GitHub Pages via Actions (deploy straight from main — no gh-pages branch,
+# no legacy Jekyll build). Needs pages:write + id-token:write.
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
+# Allow one concurrent deployment; don't cancel an in-progress publish.
 concurrency:
-  group: pages-deploy
-  cancel-in-progress: true
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -28,12 +34,16 @@ jobs:
 
       - name: Resolve download links + resize screenshots + build
         run: make all
-        # make all = fetch + screenshots + build (no deploy; the action below deploys)
+        # make all = fetch + screenshots + build → dist/
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          # the site uses relative URLs, so it works at the /ol1n.now/ project path
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
