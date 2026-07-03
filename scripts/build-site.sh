@@ -97,9 +97,17 @@ shots_html() {
   if [ -d "$_dir" ]; then
     printf '<div class="shots %s">' "$_kind"
     for f in "$_dir"/*; do
-      [ -e "$f" ] || continue
+      [ -f "$f" ] || continue
       b="$(basename "$f")"
-      printf '<img src="screenshots/%s/%s/%s" alt="" loading="lazy">' "$_slug" "$_kind" "$b"
+      case "$b" in
+        *.poster.jpg) continue ;;   # emitted as its video's poster, not a standalone tile
+        *.mp4)
+          _stem="${b%.mp4}"
+          printf '<video class="shot-video" src="screenshots/%s/%s/%s" poster="screenshots/%s/%s/%s.poster.jpg" muted loop playsinline controls preload="metadata"></video>' \
+            "$_slug" "$_kind" "$b" "$_slug" "$_kind" "$_stem" ;;
+        *)
+          printf '<img src="screenshots/%s/%s/%s" alt="" loading="lazy">' "$_slug" "$_kind" "$b" ;;
+      esac
       _any=1
     done
     printf '</div>\n'

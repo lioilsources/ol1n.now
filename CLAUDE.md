@@ -8,10 +8,14 @@ Static app store for distributing own apps (Windows/macOS/Linux/mobile). Hosted 
 
 ```bash
 make fetch        # Fetch latest GitHub release artifacts per app → dist/downloads/<slug>.tsv
-make screenshots  # Resize raw screenshots → dist/screenshots/<slug>/
+make screenshots  # Resize raw screenshots + transcode videos → dist/screenshots/<slug>/
 make build        # Generate static site → dist/
 make deploy       # Publish dist/ to gh-pages branch
 ```
+
+Tooling: `make screenshots` needs **ImageMagick** (`magick`); **ffmpeg** is only
+required when `raw/` contains videos (transcodes to web mp4 + generates a poster).
+`make fetch` needs `gh` (authenticated) + `jq`.
 
 ## Structure
 
@@ -19,7 +23,8 @@ make deploy       # Publish dist/ to gh-pages branch
 apps/<slug>/
   meta.md              # YAML front-matter (name, repo, platforms, store links) + Markdown description
   screenshots/
-    raw/               # Source screenshots (any size)
+    raw/<kind>/<platform>/   # Source screenshots (png/jpg) AND short videos (mp4/mov/webm/m4v)
+                             # kind = desktop|mobile ; videos capped to 15s, transcoded to web mp4
 
 assets/                # Site-wide assets (CSS, fonts, icons)
 scripts/               # Makefile helper scripts

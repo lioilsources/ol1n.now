@@ -2,12 +2,14 @@
 # Resize raw screenshots into (1) web-gallery copies shown on the store site and
 # (2) exact store-upload dimensions for Google Play / Apple App Store.
 #
-#   input : apps/<slug>/screenshots/raw/<kind>/<platform>/*.{png,jpg,jpeg}
+#   input : apps/<slug>/screenshots/raw/<kind>/<platform>/*.{png,jpg,jpeg,mp4,mov,webm,m4v}
 #           kind = desktop|mobile ; platform = macos|windows|linux|android|ios|ipad
 #   output: dist/screenshots/<slug>/<kind>/<name>              (gallery, downscaled)
-#           dist/screenshots/<slug>/store/<target>/<name>      (exact store size)
+#           dist/screenshots/<slug>/store/<target>/<name>      (exact store size, images only)
+#           dist/screenshots/<slug>/<kind>/<stem>.mp4          (web H.264, videos)
+#           dist/screenshots/<slug>/<kind>/<stem>.poster.jpg   (video poster/thumbnail)
 #
-# Requires: ImageMagick `magick`.
+# Requires: ImageMagick `magick`; ffmpeg (only if raw/ contains videos).
 set -eu
 
 HERE="$(cd "$(dirname "$0")" && pwd)"
@@ -21,6 +23,8 @@ APPS="$ROOT/apps"
 # same -resize/-extent syntax used below.
 MAGICK="$(command -v magick || command -v convert || true)"
 [ -n "$MAGICK" ] || { echo "error: ImageMagick not found (brew install imagemagick / apt install imagemagick)" >&2; exit 1; }
+# ffmpeg is optional — only needed when raw/ contains videos (mp4/mov/webm/m4v)
+FFMPEG="$(command -v ffmpeg || true)"
 
 # ---- target dimensions (edit here when store specs change) ----
 # gallery (downscale only, preserve aspect)
@@ -37,6 +41,12 @@ MAC_APPSTORE="2880x1800"         # Mac App Store
 fit() { "$MAGICK" "$1" -resize "${3}>" "$2"; }
 # fill <in> <out> <WxH>  cover + center-crop to exact pixels
 fill() { "$MAGICK" "$1" -resize "${3}^" -gravity center -extent "$3" "$2"; }
+# vid <in> <out.mp4>     web H.264 (<=1280px wide, <=15s, no audio, faststart)
+vid() { "$FFMPEG" -y -loglevel error -i "$1" -t 15 -an \
+  -vf "scale='min(1280,iw)':-2" -c:v libx264 -profile:v high -pix_fmt yuv420p \
+  -crf 28 -preset veryfast -movflags +faststart "$2"; }
+# poster <in> <out.jpg>  first frame, used as the <video> poster / thumbnail
+poster() { "$FFMPEG" -y -loglevel error -i "$1" -frames:v 1 -vf "scale='min(1280,iw)':-2" "$2"; }
 
 count=0
 process_app() {
@@ -56,9 +66,24 @@ process_app() {
     platform="$(printf '%s' "$rel" | cut -d/ -f2)"
     name="$(basename "$img")"
     stem="${name%.*}"
+    ext="$(printf '%s' "${name##*.}" | tr 'A-Z' 'a-z')"
+    mkdir -p "$outroot/$kind"
+
+    # videos: transcode to web mp4 + poster; no store-exact variants
+    case "$ext" in
+      mp4|mov|webm|m4v)
+        if [ -z "$FFMPEG" ]; then
+          echo "  ! $slug/$rel: ffmpeg not found, skipping video (brew install ffmpeg)"
+          continue
+        fi
+        vid    "$img" "$outroot/$kind/$stem.mp4"
+        poster "$img" "$outroot/$kind/$stem.poster.jpg"
+        count=$((count+1)); echo "  ✓ $slug/$rel (video)"
+        continue
+        ;;
+    esac
 
     # (1) gallery copy
-    mkdir -p "$outroot/$kind"
     case "$kind" in
       desktop) fit "$img" "$outroot/$kind/$name" "$GALLERY_DESKTOP" ;;
       mobile)  fit "$img" "$outroot/$kind/$name" "$GALLERY_MOBILE" ;;
@@ -85,7 +110,7 @@ process_app() {
     count=$((count+1))
     echo "  ✓ $slug/$rel"
   done <<EOF
-$(find "$rawroot" -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \) 2>/dev/null | sort)
+$(find "$rawroot" -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.mp4' -o -iname '*.mov' -o -iname '*.webm' -o -iname '*.m4v' \) 2>/dev/null | sort)
 EOF
 
   [ "$found" = 1 ] || echo "  - $slug: no raw screenshots"

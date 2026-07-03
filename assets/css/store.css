@@ -92,8 +92,9 @@ a:hover { text-decoration: underline; }
 
 /* Screenshots gallery */
 .shots { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; }
-.shots.desktop img { height: 280px; border-radius: 10px; border: 1px solid var(--border); }
-.shots.mobile img { height: 420px; border-radius: 22px; border: 1px solid var(--border); }
+.shots.desktop img, .shots.desktop video { height: 280px; border-radius: 10px; border: 1px solid var(--border); }
+.shots.mobile img, .shots.mobile video { height: 420px; border-radius: 22px; border: 1px solid var(--border); }
+.shots video { background: #000; flex: none; }
 .shots-empty { color: var(--text-dim); font-size: 14px; }
 
 /* Downloads */
