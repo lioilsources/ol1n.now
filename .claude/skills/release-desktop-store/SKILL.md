@@ -41,11 +41,38 @@ The Flutter desktop workflows historically built `--debug`. A **Windows debug**
 `ucrtbased.dll`) which is **not present on normal user machines** → the app won't
 launch. **Fix = build `--release`** and package from the `Release` output dir.
 
-macOS/Linux debug bundles *do* run (just unsigned/larger), so they're lower
-priority — but release is still preferable. The workflow generator is
-`scripts/gen-desktop-workflows.sh`; note the real per-repo workflows have since
-**drifted** from it (e.g. Linux gained AppImage packaging), so **edit the repo
-workflow files in place — do not regenerate** (you'd lose the AppImage step).
+All three desktop platforms now build **`--release`** (release bundles are also
+smaller — Windows dropped ~36 MB debug → ~12 MB release). macOS/Linux debug did
+run (unsigned/larger) but release is preferred and what the store ships. The
+workflow generator is `scripts/gen-desktop-workflows.sh`; note the real per-repo
+workflows have since **drifted** from it (e.g. Linux gained AppImage packaging),
+so **edit the repo workflow files in place — do not regenerate** (you'd lose the
+AppImage step).
+
+### Keeping debug builds without shipping them
+The store fetch (`fetch-artifacts.sh`) matches assets by filename substring
+(`windows`, `macos`, `.appimage`/`.tar.gz`) and takes the **newest match across
+recent releases**. So a debug asset attached to a release with `windows`/`macos`
+in its name *could* get shipped — don't do that. Options to retain debug:
+- **Old prerelease tags keep their debug assets** (we don't delete them) — the
+  simplest "kept but not shipped" store, since the store points at the newest tag.
+- To retain debug for *new* builds, add a separate `flutter build … --debug` step
+  + `actions/upload-artifact` (with `continue-on-error` / `if: always()`). That
+  keeps debug as a **CI artifact** (not a release asset), so the store never sees
+  it. Repos are public → Actions minutes are free; artifacts count toward storage
+  and expire (set `retention-days`).
+
+### Known Windows release-build gotchas
+- **audioplayers_windows** (and other plugins using `<experimental/coroutine>`)
+  fail release compile on new MSVC with `error C2338 … STL1011`. Fix: set
+  `env: { CL: /D_SILENCE_EXPERIMENTAL_COROUTINE_DEPRECATION_WARNINGS }` on the
+  Windows build step (already in the generator).
+- **ffmpeg_kit_flutter_new** (MirrorBooth) fails at CMake configure on Windows:
+  "Cannot extract through symlink … Failed to extract FFmpegKit archive". This
+  hits debug *and* release — MirrorBooth has **never** produced a Windows asset.
+  Not fixed by the debug→release change; treat as a separate plugin issue. Until
+  fixed, either drop `windows` from `apps/mirrorbooth/meta.md` `desktop:` or
+  accept no Windows download for that app.
 
 Per-platform fix (find & replace in each repo's `release-<platform>.yml`):
 

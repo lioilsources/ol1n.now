@@ -55,11 +55,11 @@ jobs:
 
       - name: Build macOS (debug)
         working-directory: ${WD}
-        run: flutter build macos --debug
+        run: flutter build macos --release
 
       - name: Package as ZIP
         run: |
-          cd "${WD}/build/macos/Build/Products/Debug"
+          cd "${WD}/build/macos/Build/Products/Release"
           zip -r "\$OLDPWD/${ART}-\${{ github.ref_name }}-macOS.zip" "${PKG}.app"
 
       - name: Upload to GitHub Release
@@ -108,6 +108,10 @@ jobs:
       - name: Build Windows (release)
         working-directory: ${WD}
         run: flutter build windows --release
+        env:
+          # some plugins (e.g. audioplayers_windows) use <experimental/coroutine>,
+          # a hard error on recent MSVC — silence it so release builds succeed
+          CL: /D_SILENCE_EXPERIMENTAL_COROUTINE_DEPRECATION_WARNINGS
 
       - name: Package as ZIP
         shell: pwsh
@@ -168,12 +172,12 @@ jobs:
 
       - name: Build Linux (debug)
         working-directory: ${WD}
-        run: flutter build linux --debug
+        run: flutter build linux --release
 
       - name: Package as tar.gz
         run: |
           tar -czf "${ART}-\${{ github.ref_name }}-Linux.tar.gz" \\
-            -C ${WD}/build/linux/x64/debug/bundle .
+            -C ${WD}/build/linux/x64/release/bundle .
 
       - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v2
