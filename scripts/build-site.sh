@@ -103,7 +103,7 @@ shots_html() {
         *.poster.jpg) continue ;;   # emitted as its video's poster, not a standalone tile
         *.mp4)
           _stem="${b%.mp4}"
-          printf '<video class="shot-video" src="screenshots/%s/%s/%s" poster="screenshots/%s/%s/%s.poster.jpg" muted loop playsinline controls preload="metadata"></video>' \
+          printf '<video class="shot-video" src="screenshots/%s/%s/%s" poster="screenshots/%s/%s/%s.poster.jpg" loop playsinline controls preload="metadata"></video>' \
             "$_slug" "$_kind" "$b" "$_slug" "$_kind" "$_stem" ;;
         *)
           printf '<img src="screenshots/%s/%s/%s" alt="" loading="lazy">' "$_slug" "$_kind" "$b" ;;
