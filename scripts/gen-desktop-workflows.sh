@@ -105,14 +105,14 @@ jobs:
         working-directory: ${WD}
         run: flutter pub get
 
-      - name: Build Windows (debug)
+      - name: Build Windows (release)
         working-directory: ${WD}
-        run: flutter build windows --debug
+        run: flutter build windows --release
 
       - name: Package as ZIP
         shell: pwsh
         run: |
-          \$src = "${WDWIN}\build\windows\x64\runner\Debug"
+          \$src = "${WDWIN}\build\windows\x64\runner\Release"
           \$dest = "${ART}-\${{ github.ref_name }}-Windows.zip"
           Compress-Archive -Path "\$src\*" -DestinationPath \$dest
 
