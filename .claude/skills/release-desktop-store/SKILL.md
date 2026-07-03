@@ -62,17 +62,21 @@ in its name *could* get shipped — don't do that. Options to retain debug:
   it. Repos are public → Actions minutes are free; artifacts count toward storage
   and expire (set `retention-days`).
 
-### Known Windows release-build gotchas
-- **audioplayers_windows** (and other plugins using `<experimental/coroutine>`)
-  fail release compile on new MSVC with `error C2338 … STL1011`. Fix: set
-  `env: { CL: /D_SILENCE_EXPERIMENTAL_COROUTINE_DEPRECATION_WARNINGS }` on the
-  Windows build step (already in the generator).
-- **ffmpeg_kit_flutter_new** (MirrorBooth) fails at CMake configure on Windows:
-  "Cannot extract through symlink … Failed to extract FFmpegKit archive". This
-  hits debug *and* release — MirrorBooth has **never** produced a Windows asset.
-  Not fixed by the debug→release change; treat as a separate plugin issue. Until
-  fixed, either drop `windows` from `apps/mirrorbooth/meta.md` `desktop:` or
-  accept no Windows download for that app.
+### Known Windows release-build gotchas (both fixed)
+- **`<experimental/coroutine>` STL1011** — plugins like `permission_handler_windows`
+  and `audioplayers_windows` fail release compile on new MSVC with
+  `error C2338 … STL1011`. Fix: `env: { CL: /D_SILENCE_EXPERIMENTAL_COROUTINE_DEPRECATION_WARNINGS }`
+  on the Windows build step. In the generator; add per-repo if a build line has
+  extra flags (e.g. Ol1nLLM's `--dart-define`s) the sed/perl insert skipped.
+- **ffmpeg_kit_flutter_new "Cannot extract through symlink"** (MirrorBooth) — the
+  plugin `cmake -E tar` extracts the FFmpegKit zip into a dir reached via Flutter's
+  `.plugin_symlinks`; libarchive refuses. Fix (in `MirrorBooth/.github/workflows/release-windows.yml`):
+  a **Prefetch FFmpegKit** step downloads + `Expand-Archive`s the bundle to
+  `$RUNNER_TEMP\ffmpegkit` and sets `FFMPEGKIT_LOCAL_DIR` in `$GITHUB_ENV` — the
+  plugin then `file(COPY)`s instead of `tar`. Pin the plugin (`ffmpeg_kit_flutter_new: 4.3.2`)
+  so the prefetched `8.0.0-full-gpl-windows` bundle stays in sync. Bundle URL:
+  `github.com/sk3llo/ffmpeg_kit_flutter/releases/download/8.0.0-full-gpl-windows/ffmpeg-kit-windows-x86_64-full-gpl-8.0.0.zip`
+  (zip root has `bin/*.dll`, so `FFMPEGKIT_LOCAL_DIR` = the extract dir).
 
 Per-platform fix (find & replace in each repo's `release-<platform>.yml`):
 
