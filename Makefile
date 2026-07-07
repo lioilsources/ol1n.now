@@ -25,7 +25,7 @@ screenshots: ## Resize raw screenshots into store sizes in dist/screenshots/
 
 all: fetch screenshots build ## fetch + screenshots + build
 
-deploy: build ## Publish dist/ to the gh-pages branch
+deploy: ## Trigger the Build & Deploy store workflow (builds from origin/main on CI)
 	@$(SCRIPTS)/deploy.sh
 
 serve: build ## Serve dist/ locally for preview
