@@ -1,0 +1,113 @@
+:root {
+  --bg: #f8f6e9;            /* = pozadí loga */
+  --bg-soft: #efeada;       /* hlubší krém pro badge */
+  --card: #ffffff;          /* neprůhledné bílé dlaždice nad krémem */
+  --card-hover: #fbfaf3;
+  --text: #26291f;          /* teple tmavá */
+  --text-dim: #6c7160;      /* tlumená zeleno-šedá */
+  --accent: #2f7d32;        /* zeleň z wordmarku */
+  --accent-soft: rgba(47, 125, 50, 0.14);
+  --border: #e2dcc7;        /* tlumený teplý okraj */
+  --radius: 16px;
+  --maxw: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Main / footer */
+.site-main { max-width: var(--maxw); margin: 0 auto; padding: 32px 24px 24px; }
+.site-footer {
+  position: relative; background: var(--bg); text-align: center;
+  max-width: var(--maxw); margin: 0 auto; padding: 32px 24px;
+  color: var(--text-dim); font-size: 14px;
+}
+
+/* Brand backdrop — logo splývá s pozadím, parallax za obsahem */
+.brand-backdrop {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: -1;
+  display: flex; justify-content: center; pointer-events: none;
+}
+.brand-logo { width: min(680px, 82vw); height: auto; will-change: transform; }
+.brand-spacer { height: 92vh; }
+@media (prefers-reduced-motion: reduce) { .brand-logo { transform: none !important; } }
+
+/* App grid */
+.app-grid {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  margin-top: 28px;
+}
+.app-card {
+  display: flex; flex-direction: column; gap: 12px;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
+  transition: background .15s, transform .15s, box-shadow .15s;
+}
+.app-card:hover { background: var(--card-hover); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0, 0, 0, .10); text-decoration: none; }
+.app-card .icon {
+  width: 64px; height: 64px; border-radius: 16px; flex: none;
+  background: var(--accent-soft); color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; font-weight: 700; overflow: hidden;
+}
+.app-card .icon img { width: 100%; height: 100%; object-fit: cover; }
+.app-card .name { font-size: 18px; font-weight: 600; color: var(--text); margin: 0; }
+.app-card .tagline { color: var(--text-dim); font-size: 14px; margin: 0; flex: 1; }
+
+/* Platform badges */
+.badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.badge {
+  font-size: 11px; font-weight: 600; letter-spacing: .02em;
+  padding: 3px 8px; border-radius: 999px;
+  background: var(--bg-soft); color: var(--text-dim); border: 1px solid var(--border);
+}
+.badge.featured { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+
+/* App detail page */
+.app-hero { display: flex; gap: 24px; align-items: center; padding: 24px 0 8px; }
+.app-hero .icon {
+  width: 96px; height: 96px; border-radius: 22px; flex: none;
+  background: var(--accent-soft); color: var(--accent);
+  display: flex; align-items: center; justify-content: center; font-size: 40px; font-weight: 700; overflow: hidden;
+}
+.app-hero .icon img { width: 100%; height: 100%; object-fit: cover; }
+.app-hero h1 { font-size: 32px; margin: 0 0 6px; letter-spacing: -0.02em; }
+.app-hero .tagline { color: var(--text-dim); font-size: 17px; margin: 0 0 10px; }
+.back-link { display: inline-block; margin: 8px 0 0; color: var(--text-dim); font-size: 14px; }
+
+.section { margin-top: 40px; }
+.section h2 { font-size: 20px; margin: 0 0 16px; }
+
+/* Screenshots gallery */
+.shots { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; }
+.shots.desktop img, .shots.desktop video { height: 280px; border-radius: 10px; border: 1px solid var(--border); }
+.shots.mobile img, .shots.mobile video { height: 420px; border-radius: 22px; border: 1px solid var(--border); }
+.shots video { background: #000; flex: none; }
+.shots-empty { color: var(--text-dim); font-size: 14px; }
+
+/* Downloads */
+.downloads { display: flex; flex-wrap: wrap; gap: 12px; }
+.dl-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent); color: #fff; font-weight: 600; font-size: 14px;
+  padding: 12px 18px; border-radius: 12px; border: none;
+}
+.dl-btn:hover { text-decoration: none; filter: brightness(1.08); }
+.dl-btn.secondary { background: var(--bg-soft); color: var(--text); border: 1px solid var(--border); }
+.dl-meta { font-weight: 400; font-size: 12px; opacity: 0.75; }
+.dl-empty { color: var(--text-dim); font-size: 14px; }
+
+.app-desc { max-width: 680px; }
+.app-desc p { margin: 0 0 14px; }
