@@ -35,21 +35,27 @@ html_escape() {
 # Supports: paragraphs (blank-line separated), **bold**, `code`.
 md_to_html() {
   awk '
+    # Inline spans run on the whole joined paragraph, not per line — otherwise
+    # a **bold** or `code` span that wraps across a line break never pairs up
+    # and renders with its literal markers.
+    function inline(s,   t) {
+      while (match(s, /\*\*[^*]+\*\*/)) {
+        t = substr(s, RSTART+2, RLENGTH-4)
+        s = substr(s, 1, RSTART-1) "<strong>" t "</strong>" substr(s, RSTART+RLENGTH)
+      }
+      while (match(s, /`[^`]+`/)) {
+        t = substr(s, RSTART+1, RLENGTH-2)
+        s = substr(s, 1, RSTART-1) "<code>" t "</code>" substr(s, RSTART+RLENGTH)
+      }
+      return s
+    }
     function flush() {
-      if (buf != "") { print "<p>" buf "</p>"; buf = "" }
+      if (buf != "") { print "<p>" inline(buf) "</p>"; buf = "" }
     }
     { line = $0 }
     /^[ \t]*$/ { flush(); next }
     {
       gsub(/&/, "\\&amp;", line); gsub(/</, "\\&lt;", line); gsub(/>/, "\\&gt;", line)
-      while (match(line, /\*\*[^*]+\*\*/)) {
-        s = substr(line, RSTART+2, RLENGTH-4)
-        line = substr(line, 1, RSTART-1) "<strong>" s "</strong>" substr(line, RSTART+RLENGTH)
-      }
-      while (match(line, /`[^`]+`/)) {
-        s = substr(line, RSTART+1, RLENGTH-2)
-        line = substr(line, 1, RSTART-1) "<code>" s "</code>" substr(line, RSTART+RLENGTH)
-      }
       buf = (buf == "" ? line : buf " " line)
     }
     END { flush() }

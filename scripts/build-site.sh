@@ -72,7 +72,7 @@ downloads_html() {
       [ -n "${_plat:-}" ] || continue
       case "$_plat" in
         macos) l="macOS";; windows) l="Windows";; linux) l="Linux";;
-        android) l="Android (APK)";; *) l="$_plat";;
+        android) l="Android (APK)";; mod) l="Mod (ZIP)";; *) l="$_plat";;
       esac
       printf '<a class="dl-btn" href="%s" download>⬇ %s <span class="dl-meta">%s · %s MB</span></a>\n' \
         "$_url" "$l" "$_tag" "$_mb"
@@ -86,7 +86,7 @@ downloads_html() {
 # external store links (App Store / Google Play / TestFlight)
 store_links_html() {
   _meta="$1"
-  for kv in "appstore:App Store" "playstore:Google Play" "testflight:TestFlight"; do
+  for kv in "appstore:App Store" "playstore:Google Play" "testflight:TestFlight" "contentdb:ContentDB"; do
     key="${kv%%:*}"; label="${kv#*:}"
     url="$(fm_get "$_meta" "$key")"
     [ -n "$url" ] && printf '<a class="dl-btn secondary" href="%s">%s</a>\n' "$url" "$label"

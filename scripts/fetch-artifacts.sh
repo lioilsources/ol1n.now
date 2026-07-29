@@ -28,18 +28,25 @@ command -v jq >/dev/null || { echo "error: jq not found" >&2; exit 1; }
 mkdir -p "$OUT"
 
 # Space-separated ERE patterns (matched against lowercased asset filename) per
-# platform bucket, in PREFERENCE order — the first pattern with a match wins.
+# bucket, in PREFERENCE order — the first pattern with a match wins.
+#
+# `mod` is platform-agnostic (a Luanti mod is a zip that works everywhere the
+# engine runs). Its pattern would also match the macOS/Windows zips the Flutter
+# apps ship, so it is opt-in only: an app gets it by setting `artifacts: mod`
+# in meta.md. Without that key the default buckets apply and nothing changes.
+DEFAULT_BUCKETS="macos windows linux android"
 bucket_patterns() {
   case "$1" in
     macos)   echo 'macos|mac-os|mac_os|\.dmg' ;;
     windows) echo 'windows|win64|win-x64|win32|\.exe$|\.msi$' ;;
     linux)   echo '\.appimage$' 'linux|\.tar\.gz$' ;;   # prefer AppImage, else tar.gz
     android) echo '\.apk$' ;;
+    mod)     echo '\.zip$' ;;
   esac
 }
 
 fetch_app() {
-  repo="$1"; slug="$2"
+  repo="$1"; slug="$2"; buckets="$3"
   manifest="$OUT/$slug.tsv"
   rm -f "$manifest"
 
@@ -57,7 +64,7 @@ fetch_app() {
   [ -n "$rows" ] || { echo "  - $slug: releases have no assets"; return 0; }
 
   got=0
-  for bucket in macos windows linux android; do
+  for bucket in $buckets; do
     line=""
     for pat in $(bucket_patterns "$bucket"); do
       line="$(printf '%s\n' "$rows" | awk -F'\t' -v p="$pat" 'tolower($2) ~ p {print; exit}')"
@@ -73,7 +80,7 @@ fetch_app() {
     echo "  ✓ $slug/$bucket: $name (${mb} MB, $tag)"
     got=$((got+1))
   done
-  [ "$got" -gt 0 ] || echo "  - $slug: no desktop/android artifacts matched"
+  [ "$got" -gt 0 ] || echo "  - $slug: no artifacts matched ($buckets)"
 }
 
 echo "Resolving download links -> $OUT/"
@@ -82,6 +89,8 @@ for m in "$APPS"/*/meta.md; do
   slug="$(fm_get "$m" slug)"
   repo="$(fm_get "$m" repo)"
   [ -n "$repo" ] || { echo "  - $slug: no repo in meta.md, skipping"; continue; }
-  fetch_app "$repo" "$slug"
+  buckets="$(fm_get "$m" artifacts | tr ',' ' ')"
+  [ -n "$buckets" ] || buckets="$DEFAULT_BUCKETS"
+  fetch_app "$repo" "$slug" "$buckets"
 done
 echo "Done."

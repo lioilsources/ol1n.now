@@ -42,7 +42,8 @@ Volitelně přidej `apps/<slug>/icon.png` (čtvercová ikona). Hotovo — build 
 | `featured` | `true` = badge „Doporučeno" |
 | `desktop` | CSV platforem: `macos,windows,linux` |
 | `mobile` | CSV platforem: `android,ios` |
-| `appstore` / `playstore` / `testflight` | URL na obchody (volitelné) |
+| `artifacts` | CSV bucketů pro `make fetch`; default `macos,windows,linux,android`. `mod` = platformově neutrální `.zip` (Luanti mod) |
+| `appstore` / `playstore` / `testflight` / `contentdb` | URL na obchody (volitelné) |
 
 ## Screenshoty
 
