@@ -1,6 +1,6 @@
 ---
-slug: doggiofight
-name: DoggioFight
+slug: doggiowars
+name: DoggioWars
 repo: lioilsources/DoggioFight
 tagline: Voxel dogfight na vzdušných ostrovech (mod pro Luanti)
 order: 12
@@ -13,7 +13,7 @@ playstore:
 testflight:
 contentdb:
 ---
-DoggioFight je letecký souboj ve voxelovém světě — vzdušné ostrovy, vlastní
+DoggioWars je letecký souboj ve voxelovém světě — vzdušné ostrovy, vlastní
 mapgen a biomy, létající stroje, závodní tratě, triky a zbraně. Podporuje
 gamepad (Xbox 360 i PS4 DualShock) přes nativní joystick v Luanti, takže
 žádný externí mapovač není potřeba.
@@ -28,5 +28,5 @@ Nejjednodušší instalace je přímo z klienta přes **Content → Browse onlin
 content**. Ruční cesta: rozbal stažený archiv do složky `mods/` ve svém
 datovém adresáři Luanti — na macOS je to
 `~/Library/Application Support/minetest/mods/`. Rozbalená složka se musí
-jmenovat `aerowars`, protože to je interní název modu; pod jiným jménem ho
-Luanti nenačte.
+jmenovat přesně tak, jak zní `name` v souboru `mod.conf`; pod jiným jménem
+ho Luanti nenačte.

@@ -62,15 +62,19 @@ sfx, music). A category with no manifest rows emits nothing at all — that is h
 
 ## App Catalog
 
-Current apps (in `apps/`): djfy, doggiofight, doodlebugs, kindlify, kirian (Kiran), lexify,
+Current apps (in `apps/`): djfy, doggiowars, doodlebugs, kindlify, kirian (Kiran), lexify,
 mangaprompts, mirrorbooth, ol1nllm, orbitrontactics, poetrystream, swypekids.
 
-All are standalone binaries except **doggiofight**, which is a Luanti (ex-Minetest) mod —
+All are standalone binaries except **doggiowars**, which is a Luanti (ex-Minetest) mod —
 no per-platform executable, so it sets `artifacts: mod` (a platform-agnostic `.zip` bucket in
 `fetch-artifacts.sh`, opt-in because that pattern would otherwise match the Flutter apps'
-macOS/Windows zips) and carries a `contentdb:` link. Its repo is `DoggioFight`, its display
-name is DoggioFight, but the mod's internal name in `mod.conf` is `aerowars` — that is the
-folder name Luanti requires on disk.
+macOS/Windows zips) and carries a `contentdb:` link.
+
+Its naming is still in flux, so check before relying on any one name: the product and the
+Luanti world are **DoggioWars**, the GitHub repo is still `DoggioFight` (which is what
+`repo:` must point at for `make fetch`), and `mod.conf` still declares `name = aerowars` —
+a deprecated name. That `name` is the folder Luanti requires on disk, so the app description
+deliberately refers to `mod.conf` rather than hard-coding it.
 
 ## Adding a New App
 
