@@ -8,7 +8,7 @@ PORT ?= 8099
 
 .DEFAULT_GOAL := help
 
-.PHONY: help build fetch screenshots all deploy serve clean
+.PHONY: help build fetch screenshots import-skins all deploy serve clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -23,6 +23,9 @@ fetch: ## Download latest GitHub release artifacts into dist/downloads/
 screenshots: ## Resize raw screenshots into store sizes in dist/screenshots/
 	@$(SCRIPTS)/resize-screenshots.sh
 
+import-skins: ## (authoring) Re-encode skin galleries from a local Kiran checkout into apps/kirian/skins/
+	@KIRAN_SRC=$${KIRAN_SRC:-$(CURDIR)/../Kiran} $(SCRIPTS)/import-skins.sh
+
 all: fetch screenshots build ## fetch + screenshots + build
 
 deploy: ## Trigger the Build & Deploy store workflow (builds from origin/main on CI)
@@ -33,5 +36,5 @@ serve: build ## Serve dist/ locally for preview
 	@cd $(DIST) && python3 -m http.server $(PORT)
 
 clean: ## Remove generated site (keeps downloads/ and screenshots/)
-	@rm -f $(DIST)/*.html && rm -rf $(DIST)/assets $(DIST)/icons
+	@rm -f $(DIST)/*.html && rm -rf $(DIST)/assets $(DIST)/icons $(DIST)/skins
 	@echo "cleaned generated html/assets"

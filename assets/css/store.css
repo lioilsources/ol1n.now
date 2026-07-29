@@ -10,6 +10,9 @@
   --border: #e2dcc7;        /* tlumený teplý okraj */
   --radius: 16px;
   --maxw: 1100px;
+  --sprite-bg: #171a12;     /* sprity jsou kreslené proti tmavému starfieldu */
+  --sprite-bg-soft: #232719;
+  --sprite-dim: #9aa08c;    /* popisky na tmavé dlaždici */
 }
 
 * { box-sizing: border-box; }
@@ -111,3 +114,102 @@ a:hover { text-decoration: underline; }
 
 .app-desc { max-width: 680px; }
 .app-desc p { margin: 0 0 14px; }
+
+/* ---- Skins ---- */
+.skins h1 { font-size: 32px; margin: 16px 0 6px; letter-spacing: -0.02em; }
+.skins-intro { color: var(--text-dim); max-width: 680px; margin: 0 0 4px; }
+.skins-more { margin: 14px 0 0; font-size: 14px; }
+.skins-disclaimer {
+  margin: 48px 0 0; padding-top: 16px; border-top: 1px solid var(--border);
+  color: var(--text-dim); font-size: 12px; max-width: 680px;
+}
+
+/* Picker — <a> tiles in the teaser, <button role="tab"> on the subpage */
+.skin-picker {
+  display: grid; gap: 12px; margin: 20px 0 8px;
+  grid-template-columns: repeat(auto-fill, minmax(116px, 1fr));
+}
+.skin-chip {
+  appearance: none; font: inherit; cursor: pointer; text-align: center; color: var(--text);
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 8px 8px 10px;
+  display: flex; flex-direction: column; gap: 6px;
+  transition: background .15s, transform .15s, box-shadow .15s, border-color .15s;
+}
+.skin-chip:hover { background: var(--card-hover); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0, 0, 0, .10); text-decoration: none; }
+/* height:auto is required — the width/height HTML attributes are presentational
+   hints, and a definite height would make aspect-ratio a no-op */
+.skin-chip img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 10px; background: var(--sprite-bg); display: block; }
+.skin-chip .n { font-size: 12px; font-weight: 600; line-height: 1.25; }
+.skin-chip .y { font-size: 11px; color: var(--text-dim); }
+.skin-chip[aria-selected="true"] { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+/* Bez JS zůstanou všechny panely pod sebou; skrývá se až po přidání .js */
+.js .skin-panel[hidden] { display: none; }
+.skin-panel { margin-top: 32px; }
+.skin-head h2 { font-size: 22px; margin: 0 0 4px; }
+.skin-theme { color: var(--text-dim); font-size: 14px; margin: 0 0 8px; }
+.skin-notes { color: var(--text-dim); font-size: 13px; margin: 8px 0 0; }
+
+.skin-cat { margin-top: 26px; }
+.skin-cat h3 {
+  font-size: 12px; margin: 0 0 10px; color: var(--text-dim);
+  text-transform: uppercase; letter-spacing: .06em; font-weight: 700;
+}
+
+/* Sprite grid — tmavé podložení, jinak jsou tmavé trupy na krému neviditelné */
+.sprite-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); }
+.sprite {
+  margin: 0; padding: 8px; text-align: center;
+  background: var(--sprite-bg); border: 1px solid var(--border); border-radius: 12px;
+}
+.sprite img { width: 100%; height: 96px; object-fit: contain; display: block; }
+.sprite figcaption { font-size: 11px; color: var(--sprite-dim); margin-top: 6px; }
+.skin-panel[data-pixelart="1"] .sprite img { image-rendering: pixelated; }
+
+.sprite.wide { grid-column: 1 / -1; }
+/* the roster strip is 756px native — center it rather than upscaling to fill */
+.sprite.wide img { width: auto; max-width: 100%; height: auto; max-height: 220px; margin: 0 auto; }
+.sprite-grid.hero { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+.sprite-grid.hero .sprite img { height: 190px; object-fit: cover; border-radius: 8px; }
+.sprite-grid.bg { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.sprite-grid.bg .sprite img { height: 300px; object-fit: cover; border-radius: 6px; }
+.sprite-grid.ui .sprite img { height: 72px; }
+
+/* Audio — jeden sdílený kanál, viz store.js */
+.audio { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
+.sfx-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.sfx-btn {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 13px;
+  background: var(--bg-soft); color: var(--text); border: 1px solid var(--border);
+  padding: 8px 12px; border-radius: 999px;
+}
+.sfx-btn:hover { text-decoration: none; background: var(--card-hover); }
+.sfx-btn .i { font-size: 10px; opacity: .7; }
+.sfx-btn.is-playing { background: var(--accent); color: #fff; border-color: transparent; }
+.sfx-btn.is-playing .i { opacity: 1; }
+.player { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.player button {
+  appearance: none; cursor: pointer; font: inherit; font-size: 14px; line-height: 1;
+  width: 36px; height: 36px; border-radius: 50%; flex: none;
+  background: var(--bg-soft); color: var(--text); border: 1px solid var(--border);
+}
+.player button:hover { background: var(--card-hover); }
+.player .p-play { background: var(--accent); color: #fff; border-color: transparent; }
+.p-title { font-weight: 600; font-size: 14px; }
+.p-bar { flex: 1; height: 6px; accent-color: var(--accent); }
+.tracklist { list-style: none; margin: 0; padding: 0; }
+.tracklist li { padding: 6px 0; border-top: 1px solid var(--border); font-size: 14px; }
+.tracklist li:first-child { border-top: none; }
+.tracklist li[aria-current="true"] a { color: var(--accent); font-weight: 600; }
+.tracklist .d, .sfx-btn .d { font-size: 11px; color: var(--text-dim); }
+
+@media (prefers-reduced-motion: reduce) {
+  .skin-chip { transition: none; }
+  .skin-chip:hover { transform: none; }
+}
+@media (max-width: 560px) {
+  .skin-picker { grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); }
+  .sprite-grid { grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); }
+  .sprite-grid.bg .sprite img { height: 220px; }
+}

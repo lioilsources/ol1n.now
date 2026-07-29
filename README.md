@@ -50,9 +50,40 @@ Hoď raw obrázky do `apps/<slug>/screenshots/raw/{desktop,mobile}/<platform>/`.
 `make screenshots` z nich vyrobí přesné store rozměry. Cílové rozměry jsou
 konstanty na začátku `scripts/resize-screenshots.sh`.
 
+## Skiny (Kirian)
+
+Kirian má navíc galerii skinů: sekce „Skiny" na `kirian.html` a podstránka
+`kirian-skins.html` s výběrem skinu, sprity po kategoriích (lodě, nepřátelé, boss,
+asteroidy, efekty, game center, pozadí), SFX tlačítky a hudebním playlistem.
+
+Zdroj pravdy je herní repo **`lioilsources/Kiran`** — `SKINS.md`,
+`lib/services/skin_registry.dart` a `assets/skins/<id>/`. Web-ready assety se
+generují lokálně a **commitují** do `apps/kirian/skins/`:
+
+```bash
+KIRAN_SRC=/cesta/ke/Kiran make import-skins
+```
+
+`scripts/import-skins.sh` zmenší sprity do WebP a přetranskóduje `.ogg` na `.m4a`
+(Safari a iOS `.ogg` nepřehrají), rozřadí je do kategorií podle názvu souboru
+a vygeneruje dva manifesty:
+
+| Soubor | Sloupce |
+|--------|---------|
+| `apps/kirian/skins/skins.tsv` | `id name year theme vessels bloom crt tint notes wiki pixelart` |
+| `apps/kirian/skins/assets.tsv` | `skin ord category file label meta1 meta2` |
+
+Knoflíky (rozměry, kvality, bitrate, seznam hudebních stop `MUSIC_TRACKS`) jsou
+konstanty na začátku `scripts/import-skins.sh`. `make build` už jen kopíruje
+`apps/<slug>/skins/` do `dist/skins/<slug>/`; sekce i podstránka se vygenerují
+**jen** když existuje `dist/skins/<slug>/skins.tsv`, takže ostatní aplikace
+zůstávají beze změny.
+
 ## Závislosti
 
 - `bash`, `awk`, `sed` (běžné)
 - `gh` CLI (pro `make fetch`)
-- ImageMagick `magick` (pro `make screenshots`) — `brew install imagemagick`
+- ImageMagick `magick` (pro `make screenshots` a `make import-skins`) — `brew install imagemagick`
+  (pro skiny je potřeba WebP delegát: `magick -list format | grep WEBP`)
+- `ffmpeg` (videa v galerii + audio skinů) — `brew install ffmpeg`
 - `python3` (pro `make serve`)

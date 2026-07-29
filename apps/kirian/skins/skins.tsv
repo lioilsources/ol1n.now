@@ -1,0 +1,14 @@
+space_invaders	Space Invaders (1978)	1978	1978 arcade	6	—	scanlines 0.4, curve 0.01	neutral	Subtle CRT phosphor	https://en.wikipedia.org/wiki/Space_Invaders	1
+asteroids	Asteroids (1979)	1979	Vector wireframe	6	0.6×	—	green tint (0.85 / 1.0 / 0.85)	Glow on geometry	https://en.wikipedia.org/wiki/Asteroids_(video_game)	1
+galaga	Galaga (1981)	1981	Classic fixed-shooter	6	0.5×	—	neutral	Soft bloom on projectiles	https://en.wikipedia.org/wiki/Galaga	1
+rtype	R-Type (1987)	1987	Sci-fi horizontal shmup	6	0.7×	—	neutral	Neutral bloom	https://en.wikipedia.org/wiki/R-Type	0
+blazing_lazers	Blazing Lazers (1989)	1989	PC Engine shooter	6	0.8×	—	warm (1.0 / 0.95 / 0.9)	Subtle warm glow	https://en.wikipedia.org/wiki/Blazing_Lazers	0
+tyrian_dos	Tyrian DOS (1995)	1995	DOS-era pixel art	6	—	scanlines 0.7, curve 0.02	warm (1.0 / 0.95 / 0.85)	Faithful retro feel	https://en.wikipedia.org/wiki/Tyrian_(video_game)	1
+ikaruga	Ikaruga (2001)	2001	Polarity shooter	6	0.8×	—	cool blue (0.9 / 0.95 / 1.0)	Matches ikaruga's palette	https://en.wikipedia.org/wiki/Ikaruga	0
+geometry_wars	Geometry Wars (2003)	2003	Neon twin-stick	6	1.5×	—	cyan tint (0.8 / 1.0 / 1.0)	Strongest bloom preset	https://en.wikipedia.org/wiki/Geometry_Wars:_Retro_Evolved	0
+gradius_v	Gradius V (2004)	2004	Classic horizontal shmup	6	0.6×	—	cool blue (0.9 / 0.95 / 1.0)	Clean, high-contrast	https://en.wikipedia.org/wiki/Gradius_V	0
+luftrausers	Luftrausers (2014)	2014	Sepia war aesthetic	6	—	—	warm yellow (1.0 / 0.9 / 0.7)	No bloom — flat palette	https://en.wikipedia.org/wiki/Luftrausers	0
+nuclear_throne	Nuclear Throne (2015)	2015	Post-apoc top-down	6	—	—	desaturated warm	Saturation 0.85, orange tint	https://en.wikipedia.org/wiki/Nuclear_Throne	1
+nex_machina	Nex Machina (2017)	2017	Neon twin-stick (dark)	6	1.0×	—	neutral	High-contrast neon	https://en.wikipedia.org/wiki/Nex_Machina	0
+river_raid	River Raid (1982)	1982	Atari 2600 4-color	6	—	—	neutral	Ultra-chunky flat sprites	https://en.wikipedia.org/wiki/River_Raid	1
+default	Kiran (2026)	2026	Tyrian original	1	—	—	neutral	Hand-crafted baseline		1
