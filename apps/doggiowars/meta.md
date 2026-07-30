@@ -26,7 +26,10 @@ najdeš v samotném klientu v záložce Content.
 
 Nejjednodušší instalace je přímo z klienta přes **Content → Browse online
 content**. Ruční cesta: rozbal stažený archiv do složky `mods/` ve svém
-datovém adresáři Luanti — na macOS je to
-`~/Library/Application Support/minetest/mods/`. Archiv se rozbaluje do složky
-`doggiowars/`, na jejím názvu ale nezáleží: mod si své jméno určuje sám
-v `mod.conf`.
+datovém adresáři Luanti. Na Windows je to `%APPDATA%\Minetest\mods\` —
+u přenosné zip verze `mods\` přímo ve složce s hrou. Na macOS
+`~/Library/Application Support/minetest/mods/`, na Linuxu `~/.minetest/mods/`.
+
+Archiv se rozbaluje do složky `doggiowars/`, na jejím názvu ale nezáleží: mod
+si své jméno určuje sám v `mod.conf`. Pak založ svět nad **Minetest Game** a
+v **Select Mods** zaškrtni DoggioWars.
