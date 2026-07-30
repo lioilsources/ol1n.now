@@ -1,7 +1,7 @@
 ---
 slug: doggiowars
 name: DoggioWars
-repo: lioilsources/DoggioFight
+repo: lioilsources/DoggioWars
 tagline: Voxel dogfight na vzdušných ostrovech (mod pro Luanti)
 order: 12
 featured: false
@@ -27,6 +27,6 @@ najdeš v samotném klientu v záložce Content.
 Nejjednodušší instalace je přímo z klienta přes **Content → Browse online
 content**. Ruční cesta: rozbal stažený archiv do složky `mods/` ve svém
 datovém adresáři Luanti — na macOS je to
-`~/Library/Application Support/minetest/mods/`. Rozbalená složka se musí
-jmenovat přesně tak, jak zní `name` v souboru `mod.conf`; pod jiným jménem
-ho Luanti nenačte.
+`~/Library/Application Support/minetest/mods/`. Archiv se rozbaluje do složky
+`doggiowars/`, na jejím názvu ale nezáleží: mod si své jméno určuje sám
+v `mod.conf`.

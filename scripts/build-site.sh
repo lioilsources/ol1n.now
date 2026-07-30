@@ -68,14 +68,14 @@ downloads_html() {
     # `_`-prefixed loop vars: this runs in the caller's shell, and the final
     # read at EOF blanks every variable it names (`name` used to belong to the
     # per-app loop).
-    while IFS="$TAB" read -r _plat _dlname _url _mb _tag; do
+    while IFS="$TAB" read -r _plat _dlname _url _size _tag; do
       [ -n "${_plat:-}" ] || continue
       case "$_plat" in
         macos) l="macOS";; windows) l="Windows";; linux) l="Linux";;
         android) l="Android (APK)";; mod) l="Mod (ZIP)";; *) l="$_plat";;
       esac
-      printf '<a class="dl-btn" href="%s" download>⬇ %s <span class="dl-meta">%s · %s MB</span></a>\n' \
-        "$_url" "$l" "$_tag" "$_mb"
+      printf '<a class="dl-btn" href="%s" download>⬇ %s <span class="dl-meta">%s · %s</span></a>\n' \
+        "$_url" "$l" "$_tag" "$_size"
       _any=1
     done < "$_manifest"
   fi

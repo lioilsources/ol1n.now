@@ -8,7 +8,9 @@
 # releases (artifacts are scattered across prerelease tags).
 #
 #   output: dist/downloads/<slug>.tsv
-#           lines: platform<TAB>filename<TAB>url<TAB>sizeMB<TAB>tag
+#           lines: platform<TAB>filename<TAB>url<TAB>size<TAB>tag
+#           size is preformatted ("56 KB" / "787 MB") — a mod zip rounds to
+#           "0 MB" if the column is whole megabytes.
 #
 # Requires: gh (authenticated), jq.
 set -eu
@@ -75,9 +77,9 @@ fetch_app() {
     name="$(printf '%s' "$line" | cut -f2)"
     url="$(printf '%s' "$line" | cut -f3)"
     bytes="$(printf '%s' "$line" | cut -f4)"
-    mb="$(awk -v b="$bytes" 'BEGIN{ printf "%.0f", b/1048576 }')"
-    printf '%s\t%s\t%s\t%s\t%s\n' "$bucket" "$name" "$url" "$mb" "$tag" >> "$manifest"
-    echo "  ✓ $slug/$bucket: $name (${mb} MB, $tag)"
+    size="$(awk -v b="$bytes" 'BEGIN{ if (b >= 1048576) printf "%.0f MB", b/1048576; else printf "%.0f KB", b/1024 }')"
+    printf '%s\t%s\t%s\t%s\t%s\n' "$bucket" "$name" "$url" "$size" "$tag" >> "$manifest"
+    echo "  ✓ $slug/$bucket: $name ($size, $tag)"
     got=$((got+1))
   done
   [ "$got" -gt 0 ] || echo "  - $slug: no artifacts matched ($buckets)"

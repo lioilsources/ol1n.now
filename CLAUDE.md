@@ -70,11 +70,14 @@ no per-platform executable, so it sets `artifacts: mod` (a platform-agnostic `.z
 `fetch-artifacts.sh`, opt-in because that pattern would otherwise match the Flutter apps'
 macOS/Windows zips) and carries a `contentdb:` link.
 
-Its naming is still in flux, so check before relying on any one name: the product and the
-Luanti world are **DoggioWars**, the GitHub repo is still `DoggioFight` (which is what
-`repo:` must point at for `make fetch`), and `mod.conf` still declares `name = aerowars` —
-a deprecated name. That `name` is the folder Luanti requires on disk, so the app description
-deliberately refers to `mod.conf` rather than hard-coding it.
+Everything is called DoggioWars now — repo, `mod.conf` `name`/`title`, the Luanti world, and
+the store entry. The old name `aerowars` is fully gone as of `DoggioWars@v0.1.0`; renaming it
+was a breaking change, because `name` is the namespace of every registered node, so worlds
+saved under the old name load their blocks as unknown.
+
+Note for install instructions: a mod folder does **not** have to match `name`. Luanti reads
+`name` from `mod.conf` and, per its own docs, that works "even if the folder is wrongly
+named".
 
 ## Adding a New App
 
