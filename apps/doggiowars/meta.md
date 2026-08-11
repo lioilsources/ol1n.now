@@ -2,7 +2,7 @@
 slug: doggiowars
 name: DoggioWars
 repo: lioilsources/DoggioWars
-tagline: Voxel dogfight na vzdušných ostrovech (mod pro Luanti)
+tagline: Voxel dogfight na vzdušných ostrovech (samostatná hra pro Luanti)
 order: 12
 featured: false
 desktop: macos,windows,linux
@@ -13,23 +13,55 @@ playstore:
 testflight:
 contentdb:
 ---
-DoggioWars je letecký souboj ve voxelovém světě — vzdušné ostrovy, vlastní
-mapgen a biomy, létající stroje, závodní tratě, triky a zbraně. Podporuje
-gamepad (Xbox 360 i PS4 DualShock) přes nativní joystick v Luanti, takže
-žádný externí mapovač není potřeba.
+Jsi stíhačka. Ne pilot ve stíhačce — samotný stroj. V DoggioWars se nechodí
+pěšky, nic se netěží a nestaví: od první vteřiny letíš.
 
-Na rozdíl od ostatních aplikací tady to **není samostatný program**, ale mod
-pro **Luanti** (dřív Minetest). Potřebuješ tedy nainstalovaný Luanti verze
-**5.12 nebo novější** a k němu **Minetest Game** — mod na něj závisí
-(`depends = default`) a Luanti ho od verze 5.8 už nedodává v základu. Obojí
-najdeš v samotném klientu v záložce Content.
+Pod tebou se táhne nebe plné **létajících ostrovů** ve dvanácti biomech —
+sopky s lávou přetékající přes kráter, ledovcové mesy s rampouchy, atolové
+laguny, obří houby, zářící krystalové věže. Generují se z čísla, kterému se
+říká seed, takže dva světy nejsou stejné, a ostrovy jsou **rozbitné**:
+tvoje střely z nich odlamují kusy, které se pak sypou do prázdna.
 
-Nejjednodušší instalace je přímo z klienta přes **Content → Browse online
-content**. Ruční cesta: rozbal stažený archiv do složky `mods/` ve svém
-datovém adresáři Luanti. Na Windows je to `%APPDATA%\Minetest\mods\` —
-u přenosné zip verze `mods\` přímo ve složce s hrou. Na macOS
-`~/Library/Application Support/minetest/mods/`, na Linuxu `~/.minetest/mods/`.
+### Dva stroje v jednom
 
-Archiv se rozbaluje do složky `doggiowars/`, na jejím názvu ale nezáleží: mod
-si své jméno určuje sám v `mod.conf`. Pak založ svět nad **Minetest Game** a
-v **Select Mods** zaškrtni DoggioWars.
+Přepínají se příkazem `/mode` a létají úplně jinak.
+
+**Ponorka** je výchozí a odpouští chyby. Visí na místě — když pustíš ovládání,
+plynule zastaví, takže se dá v klidu prohlížet ostrov nebo manévrovat mezi
+skalami po milimetrech. Umí i úkrok stranou, aniž by změnila kurz.
+
+**Stíhačka** nezastaví nikdy. Drží rychlost, kterou jí nastavíš, a zatáčí se
+**náklonem** — levá páčka ji položí na křídlo a nos se stočí sám, tím ochotněji,
+čím strměji visíš. Strmý střemhlavý let ji rozežene nad maximum, stoupání jí
+rychlost naopak ubírá, takže výšku a rychlost pořád proti sobě směňuješ.
+Umí barrel roll, looping i Immelmannovu otočku — a let těsně kolem skály
+nabíjí boost, takže se riskování vyplácí.
+
+### Závod za zlatým králíkem
+
+Příkazem `/race` se spustí chrtí dostih: po obloze uhání zlatý králík, který
+umí tytéž triky co ty, proplétá se tunely provrtanými skrz ostrovy a nečeká.
+Buď ho projedeš celou tratí, nebo ne.
+
+### Ovládání
+
+Myš a klávesnice fungují, ale hra je dělaná pro **gamepad** — Xbox 360 i PS4
+DualShock přes nativní joystick v Luanti, žádný externí mapovač. Levá páčka
+letadlo řídí, pravá míří zbraní nezávisle na tom, kam letíš. Náklon a sklon
+ukazuje vodováha v HUD, protože horizontem Luanti naklánět neumí.
+
+### Instalace
+
+Potřebuješ **Luanti 5.12 nebo novější** a **nic dalšího** — od verze 2.0 je
+DoggioWars samostatná hra, ne mod, takže Minetest Game už není potřeba.
+
+Rozbal archiv do složky `games/` ve svém datovém adresáři Luanti. Na Windows
+je to `%APPDATA%\Minetest\games\`, u přenosné zip verze `games\` přímo ve
+složce s hrou. Na macOS `~/Library/Application Support/minetest/games/`,
+na Linuxu `~/.minetest/games/`.
+
+Rozbalená složka se musí jmenovat **`doggiowars_game`**. Pak spusť Luanti,
+v dolním pruhu hlavního menu vyber DoggioWars a dej **New**.
+
+Kdo má ještě starší verzi jako **mod** ve složce `mods/`, ať ji smaže — od
+verze 2.0 je to hra a obojí najednou nedává smysl.

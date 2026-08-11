@@ -65,19 +65,23 @@ sfx, music). A category with no manifest rows emits nothing at all — that is h
 Current apps (in `apps/`): djfy, doggiowars, doodlebugs, kindlify, kirian (Kiran), lexify,
 mangaprompts, mirrorbooth, ol1nllm, orbitrontactics, poetrystream, swypekids.
 
-All are standalone binaries except **doggiowars**, which is a Luanti (ex-Minetest) mod —
+All are standalone binaries except **doggiowars**, which runs inside Luanti (ex-Minetest) —
 no per-platform executable, so it sets `artifacts: mod` (a platform-agnostic `.zip` bucket in
 `fetch-artifacts.sh`, opt-in because that pattern would otherwise match the Flutter apps'
-macOS/Windows zips) and carries a `contentdb:` link.
+macOS/Windows zips) and can carry a `contentdb:` link.
 
-Everything is called DoggioWars now — repo, `mod.conf` `name`/`title`, the Luanti world, and
-the store entry. The old name `aerowars` is fully gone as of `DoggioWars@v0.1.0`; renaming it
-was a breaking change, because `name` is the namespace of every registered node, so worlds
-saved under the old name load their blocks as unknown.
+As of `DoggioWars@v2.0.0` it is a **standalone game, not a mod**: it installs into `games/`
+rather than `mods/` and no longer needs Minetest Game. Install instructions must say so.
 
-Note for install instructions: a mod folder does **not** have to match `name`. Luanti reads
-`name` from `mod.conf` and, per its own docs, that works "even if the folder is wrongly
-named".
+The unpacked folder has to be named **`doggiowars_game`**. For a game the folder name is the
+game id, except Luanti strips a `_game` suffix — the same reason `minetest_game` has the id
+`minetest` — so the id stays `doggiowars` and existing worlds keep loading. The suffix exists
+because the ContentDB package had to be `doggiowars_game`; plain `doggiowars` is taken by the
+older mod package, which this game replaces.
+
+`contentdb:` is deliberately empty: the game's package is still an unapproved draft and its
+page 403s for visitors. Fill it in once approved — pointing it at the old mod package would
+send people to the thing this replaces.
 
 ## Adding a New App
 
