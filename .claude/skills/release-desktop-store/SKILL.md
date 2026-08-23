@@ -141,6 +141,33 @@ Then load the app's detail page and check the Windows download. CSS/JS are
 cache-busted (`?v=<hash>`); the HTML has a 10-min Cloudflare TTL, so hard-refresh
 (Cmd+Shift+R) or wait for the live site to update.
 
+## Before deploying: the icon check
+
+**Every app needs `apps/<slug>/icon.png`.** It is easy to miss because nothing
+fails: `build-site.sh:35` falls back to the app's **first letter** in the icon
+box, so the build is green, the page renders, and the store just quietly shows a
+letter tile next to twelve real icons. Missed on **ugcfactory** (2026-08-23) and
+on apps before it — hence this section.
+
+```bash
+for d in apps/*/; do [ -f "$d/icon.png" ] || echo "MISSING icon: $d"; done
+```
+
+`make build` now prints the same warning, but check it before you deploy — the
+letter fallback is only visible if you actually look at the store index.
+
+Icons are **512×512 PNG** (256 is tolerated). The house style is the
+lioilsources motif: **pineapple + banana**, flat vector, bold dark outlines,
+cream background — see `apps/lexify/icon.png` or `apps/swypekids/icon.png`.
+Do NOT reuse the Flutter app's `assets/icon/app_icon.png`; those are often
+unmodified scaffold art copied between projects (UGCFactory's was another app's).
+
+To generate one, use **FLUX on SPARK**, not a danbooru checkpoint. Illustrious
+turned "pineapple in a crown" into an anime girl three times out of three — it
+draws characters, not logos. FLUX takes prose and produces flat vector marks.
+See `/tmp/icon2.py` on SPARK for the working graph (UNETLoader + DualCLIPLoader
++ FluxGuidance, cfg 1.0, 20 steps).
+
 ## Notes
 - Only commit the workflow file — never sweep unrelated working-tree changes.
 - If a platform's release build fails in CI, the release just lacks that asset;

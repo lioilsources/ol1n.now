@@ -25,6 +25,7 @@ Kiran checkout (`KIRAN_SRC`, defaults to `../Kiran`); it is never run on CI.
 ```
 apps/<slug>/
   meta.md              # YAML front-matter (name, repo, platforms, store links) + Markdown description
+  icon.png             # REQUIRED. 512x512. Missing = silent first-letter fallback, build stays green
   screenshots/
     raw/<kind>/<platform>/   # Source screenshots (png/jpg) AND short videos (mp4/mov/webm/m4v)
                              # kind = desktop|mobile ; videos capped to 15s, transcoded to web mp4
@@ -63,7 +64,7 @@ sfx, music). A category with no manifest rows emits nothing at all — that is h
 ## App Catalog
 
 Current apps (in `apps/`): djfy, doggiowars, doodlebugs, kindlify, kirian (Kiran), lexify,
-mangaprompts, mirrorbooth, ol1nllm, orbitrontactics, poetrystream, swypekids.
+mangaprompts, mirrorbooth, ol1nllm, orbitrontactics, poetrystream, swypekids, ugcfactory.
 
 All are standalone binaries except **doggiowars**, which runs inside Luanti (ex-Minetest) —
 no per-platform executable, so it sets `artifacts: mod` (a platform-agnostic `.zip` bucket in
@@ -86,11 +87,13 @@ send people to the thing this replaces.
 ## Adding a New App
 
 1. Create `apps/<slug>/meta.md` with YAML front-matter
-2. Add screenshots to `apps/<slug>/screenshots/raw/`
-3. `make fetch` — pulls release manifest
-4. `make screenshots` — resizes screenshots
-5. `make build` — regenerates site
-6. `make deploy` — publishes to GitHub Pages
+2. Add `apps/<slug>/icon.png` (512x512) — **easy to forget**: without it the
+   build silently falls back to the app's first letter instead of failing
+3. Add screenshots to `apps/<slug>/screenshots/raw/`
+4. `make fetch` — pulls release manifest
+5. `make screenshots` — resizes screenshots
+6. `make build` — regenerates site (warns about any app missing an icon)
+7. `make deploy` — publishes to GitHub Pages
 
 ## Deployment
 

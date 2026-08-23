@@ -297,11 +297,17 @@ touch "$DIST/.nojekyll"
 # GitHub Pages custom domain (served at root). Edit repo-root CNAME to change it.
 [ -f "$ROOT/CNAME" ] && cp "$ROOT/CNAME" "$DIST/CNAME"
 
-# copy per-app icons if provided
+# copy per-app icons. A missing icon is not fatal - icon_html falls back to the
+# app's first letter - but that fallback is silent and has shipped to the live
+# store more than once, so say it out loud.
 for m in "$APPS"/*/meta.md; do
   [ -e "$m" ] || continue
   d="$(dirname "$m")"; slug="$(fm_get "$m" slug)"
-  [ -f "$d/icon.png" ] && cp "$d/icon.png" "$DIST/icons/$slug.png"
+  if [ -f "$d/icon.png" ]; then
+    cp "$d/icon.png" "$DIST/icons/$slug.png"
+  else
+    echo "  warning: $slug has no icon.png - store will show a letter tile" >&2
+  fi
 done
 
 # copy per-app skin galleries if provided (already web-ready; see scripts/import-skins.sh)
