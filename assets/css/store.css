@@ -114,6 +114,10 @@ a:hover { text-decoration: underline; }
 
 .app-desc { max-width: 680px; }
 .app-desc p { margin: 0 0 14px; }
+.app-desc h3 { font-size: 16px; margin: 26px 0 10px; letter-spacing: -0.01em; }
+.app-desc h3:first-child { margin-top: 0; }
+.app-desc ol, .app-desc ul { margin: 0 0 14px; padding-left: 22px; }
+.app-desc li { margin: 0 0 8px; }
 
 /* ---- Skins ---- */
 .skins h1 { font-size: 32px; margin: 16px 0 6px; letter-spacing: -0.02em; }
