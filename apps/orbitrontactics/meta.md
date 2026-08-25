@@ -18,3 +18,10 @@ Online multiplayer přes **Supabase Realtime** (synchronizace tahů ~20–50 ms,
 detekce odpojení soupeře) i lokální hot-seat na jednom zařízení.
 
 Postaveno ve Flutteru.
+
+### Pocta originálu
+
+OrbitronTactics je remake — a zároveň volné pokračování a pocta — hře
+**Orbitron: Space Academy** od mého kamaráda Lukáše Zdenka. Originál si můžete
+stáhnout a zahrát na Steamu:
+[Orbitron: Space Academy na Steamu](https://steamcommunity.com/app/3180200).
