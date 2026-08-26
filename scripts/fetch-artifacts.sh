@@ -67,9 +67,20 @@ fetch_app() {
 
   got=0
   for bucket in $buckets; do
+    # Find the newest release with anything for this bucket FIRST, and only
+    # then apply the format preference inside that release. Scanning by
+    # pattern across all releases instead let an old AppImage outrank a newer
+    # tar.gz, and the store served Linux users a version everyone else had
+    # already moved past (kirian v2.7.4 vs v2.8.0, 2026-08-26).
+    combined=""
+    for pat in $(bucket_patterns "$bucket"); do
+      combined="${combined:+$combined|}($pat)"
+    done
+    newest="$(printf '%s\n' "$rows" | awk -F'\t' -v p="$combined" 'tolower($2) ~ p {print $1; exit}')"
+    [ -n "$newest" ] || continue
     line=""
     for pat in $(bucket_patterns "$bucket"); do
-      line="$(printf '%s\n' "$rows" | awk -F'\t' -v p="$pat" 'tolower($2) ~ p {print; exit}')"
+      line="$(printf '%s\n' "$rows" | awk -F'\t' -v p="$pat" -v t="$newest" '$1 == t && tolower($2) ~ p {print; exit}')"
       [ -n "$line" ] && break
     done
     [ -n "$line" ] || continue
