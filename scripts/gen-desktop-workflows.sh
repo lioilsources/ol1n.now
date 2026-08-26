@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Generate release-{macos,windows,linux}.yml GitHub Actions workflows for a
-# Flutter app, mirroring the PoetryStream template. Builds debug desktop bundles
-# on tag push (v*) and uploads them to the GitHub Release.
+# Flutter app, mirroring the PoetryStream template. Builds release desktop
+# bundles on tag push (v*) and uploads them to the GitHub Release.
 #
 # Usage:
 #   gen-desktop-workflows.sh <repo-dir> <flutter-root-rel> <pkg-name> <artifact-name>

@@ -19,7 +19,7 @@ a fixed build" = **push a new tag on the app repo** (CI builds + uploads) then
 
 ## App ↔ repo ↔ store slug map
 
-Repos live under `/Users/ol1n/Dev/GitHub/`. Apps with desktop release workflows:
+Repos live under `/Volumes/YOTTA/Dev/`. Apps with desktop release workflows:
 
 | store slug  | repo (lioilsources/…) | flutter root        | artifact prefix |
 |-------------|-----------------------|---------------------|-----------------|
@@ -40,6 +40,22 @@ The Flutter desktop workflows historically built `--debug`. A **Windows debug**
 `.exe` links against the *debug* C runtime (`VCRUNTIME140D.dll`, `MSVCP140D.dll`,
 `ucrtbased.dll`) which is **not present on normal user machines** → the app won't
 launch. **Fix = build `--release`** and package from the `Release` output dir.
+
+As of 2026-08-26 DJfy, Kindlify and MangaPrompts were still on `--debug`
+(they only have a macOS workflow, so the Windows symptom never surfaced) —
+check every repo you are about to tag, not just the ones in the table above:
+
+```bash
+gh api "repos/lioilsources/<repo>/contents/.github/workflows/release-macos.yml" \
+  -H "Accept: application/vnd.github.raw" | grep -oE 'flutter build macos --[a-z]+'
+```
+
+Two more things bite when cutting a non-alpha release: `prerelease:` is
+hardcoded `true` in several repos (use the `contains(github.ref_name, 'alpha')`
+expression from `release-ios.yml` instead), and the desktop workflows have no
+`workflow_dispatch:` trigger, so a build can only be tested by pushing a tag —
+add one plus `if: startsWith(github.ref, 'refs/tags/')` on the upload step, and
+the build can be smoke-tested first.
 
 All three desktop platforms now build **`--release`** (release bundles are also
 smaller — Windows dropped ~36 MB debug → ~12 MB release). macOS/Linux debug did
@@ -126,7 +142,7 @@ gh release view "$NEW" -R lioilsources/<repo>          # confirm *-Windows.zip a
 ### 4. Redeploy the store
 Once releases have the fresh assets:
 ```bash
-cd /Users/ol1n/Dev/GitHub/ol1n.now
+cd /Volumes/YOTTA/Dev/ol1n.now
 make fetch      # re-resolves newest release asset per platform → dist/downloads/*.tsv
 make build      # regenerates dist/
 make deploy     # pushes dist/ to gh-pages (Cloudflare-fronted olin.now)
@@ -156,11 +172,28 @@ for d in apps/*/; do [ -f "$d/icon.png" ] || echo "MISSING icon: $d"; done
 `make build` now prints the same warning, but check it before you deploy — the
 letter fallback is only visible if you actually look at the store index.
 
-Icons are **512×512 PNG** (256 is tolerated). The house style is the
-lioilsources motif: **pineapple + banana**, flat vector, bold dark outlines,
-cream background — see `apps/lexify/icon.png` or `apps/swypekids/icon.png`.
-Do NOT reuse the Flutter app's `assets/icon/app_icon.png`; those are often
-unmodified scaffold art copied between projects (UGCFactory's was another app's).
+Icons are **512×512 PNG** (256 is tolerated). **The app's own icon wins** —
+the store must show what the user sees after installing, so derive
+`apps/<slug>/icon.png` from the app's master (`assets/icon/app_icon.png` /
+`icon.png`, or `menu/icon.png` for a Luanti game) rather than drawing a
+separate one. That is what went wrong on ugcfactory (2026-08-23): the app got
+its icon on the 22nd, the store a different drawing on the 23rd, because
+nobody copied from the app repo. The house style is the lioilsources motif —
+**pineapple + banana**, flat vector, bold dark outlines, cream background —
+and it belongs in the app first; the store just mirrors it.
+
+Audit the whole set with RMSE after normalizing both to 128 px:
+
+```bash
+magick compare -metric RMSE \
+  \( apps/<slug>/icon.png -alpha remove -resize 128x128! \) \
+  \( <app-repo>/assets/icon/app_icon.png -alpha remove -resize 128x128! \) null:
+```
+
+Anything above ~0.01 is a different picture, not a rescale. The one app this
+rule cannot fix is an app whose own icon is still the Flutter scaffold logo —
+then the fix is to give the *app* an icon, not to copy the placeholder onto
+the store.
 
 To generate one, use **FLUX on SPARK**, not a danbooru checkpoint. Illustrious
 turned "pineapple in a crown" into an anime girl three times out of three — it
