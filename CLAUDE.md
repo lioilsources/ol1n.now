@@ -76,13 +76,14 @@ rather than `mods/` and no longer needs Minetest Game. Install instructions must
 
 The unpacked folder has to be named **`doggiowars_game`**. For a game the folder name is the
 game id, except Luanti strips a `_game` suffix — the same reason `minetest_game` has the id
-`minetest` — so the id stays `doggiowars` and existing worlds keep loading. The suffix exists
-because the ContentDB package had to be `doggiowars_game`; plain `doggiowars` is taken by the
-older mod package, which this game replaces.
+`minetest` — so the id stays `doggiowars` and existing worlds keep loading.
 
-`contentdb:` points at `lioilsources/doggiowars_game`, approved on 2026-08-14 (the page was a
-403ing draft before that). Never point it at the old `doggiowars` mod package — that is the
-thing this game replaces.
+There is exactly **one** ContentDB package, `lioilsources/doggiowars_game`, titled
+"DoggioWars" and typed `game` (approved 2026-08-14; before that its page 403'd as a draft).
+The old mod package was renamed into it rather than left standing beside it, so
+`/packages/lioilsources/doggiowars/` is a 302 to the game and no rival "Doggio Wars" package
+exists — the author's profile and `api/packages/?author=lioilsources` both list this one and
+nothing else.
 
 The repo has **no release workflow** — DoggioWars ships to two places by hand:
 
@@ -94,7 +95,10 @@ The repo has **no release workflow** — DoggioWars ships to two places by hand:
 2. **ContentDB** builds its own zip from git. Its git update detection polls **once a day**
    (no webhook on the repo), so a fresh tag shows up there a day late; the UI's Create
    Release, or `POST /api/packages/lioilsources/doggiowars_game/releases/new/` with
-   `{"method":"git","title":"vX.Y.Z","ref":"vX.Y.Z"}` and a Bearer token, publishes it at once.
+   `{"method":"git","title":"vX.Y.Z","ref":"vX.Y.Z"}` and a Bearer token, publishes it at
+   once. The POST returns immediately with `commit: null` and `size: 0` plus a `task` URL —
+   the import runs asynchronously, so read the release back from
+   `api/packages/.../releases/` to confirm the commit and size landed.
 
 ## Adding a New App
 
