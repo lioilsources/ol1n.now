@@ -80,9 +80,21 @@ game id, except Luanti strips a `_game` suffix — the same reason `minetest_gam
 because the ContentDB package had to be `doggiowars_game`; plain `doggiowars` is taken by the
 older mod package, which this game replaces.
 
-`contentdb:` is deliberately empty: the game's package is still an unapproved draft and its
-page 403s for visitors. Fill it in once approved — pointing it at the old mod package would
-send people to the thing this replaces.
+`contentdb:` points at `lioilsources/doggiowars_game`, approved on 2026-08-14 (the page was a
+403ing draft before that). Never point it at the old `doggiowars` mod package — that is the
+thing this game replaces.
+
+The repo has **no release workflow** — DoggioWars ships to two places by hand:
+
+1. **GitHub Release** (what the store links to): tag, then
+   `git archive --format=zip --prefix=doggiowars_game/ <tag> -o doggiowars-<tag>.zip` and
+   `gh release create`. The `doggiowars_game/` prefix is what makes the folder name
+   unmistakable on unpack. `git archive` honours `.gitattributes` `export-ignore`, which is
+   how `Prompts/` and `play.sh` stay out; `roblox/` deliberately ships.
+2. **ContentDB** builds its own zip from git. Its git update detection polls **once a day**
+   (no webhook on the repo), so a fresh tag shows up there a day late; the UI's Create
+   Release, or `POST /api/packages/lioilsources/doggiowars_game/releases/new/` with
+   `{"method":"git","title":"vX.Y.Z","ref":"vX.Y.Z"}` and a Bearer token, publishes it at once.
 
 ## Adding a New App
 

@@ -11,7 +11,7 @@ artifacts: mod
 appstore:
 playstore:
 testflight:
-contentdb:
+contentdb: https://content.luanti.org/packages/lioilsources/doggiowars_game/
 ---
 Jsi stíhačka. Ne pilot ve stíhačce — samotný stroj. V DoggioWars se nechodí
 pěšky, nic se netěží a nestaví: od první vteřiny letíš.
