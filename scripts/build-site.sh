@@ -310,6 +310,80 @@ for m in "$APPS"/*/meta.md; do
   fi
 done
 
+# ---- visuals gallery (dist/visuals/<slug>/, produced by import-visuals.sh) ----
+# Same gating idea as skins, but a much flatter model: skins are a product
+# feature with audio and per-skin settings, visuals are just categorised
+# artwork, so two manifests and no per-item entity.
+visuals_have() { [ -f "$DIST/visuals/$1/cats.tsv" ]; }
+
+# rows of one category, as SEP-delimited lines
+visuals_rows() {
+  awk -F"$TAB" -v c="$2" -v OFS="$SEP" '$1 == c { $1 = $1; print }' "$DIST/visuals/$1/assets.tsv" \
+    | sort -t"$SEP" -k2,2n
+}
+
+visuals_grid_html() {
+  _slug="$1"; _cat="$2"; _grid="${3:-}"
+  printf '<div class="sprite-grid %s">' "$_grid"
+  while IFS="$SEP" read -r v_cat v_ord v_file v_label v_w v_h; do
+    [ -n "${v_file:-}" ] || continue
+    printf '<figure class="sprite%s"><img src="visuals/%s/%s/%s" alt="%s" width="%s" height="%s" loading="lazy" decoding="async"><figcaption>%s</figcaption></figure>' \
+      "$([ "$_grid" = wide ] && printf ' wide')" "$_slug" "$_cat" "$v_file" \
+      "$(esc "$v_label")" "$v_w" "$v_h" "$(esc "$v_label")"
+  done <<EOF
+$(visuals_rows "$_slug" "$_cat")
+EOF
+  printf '</div>'
+  return 0
+}
+
+# teaser on the app page: a handful of airframes, then a link to the subpage
+visuals_teaser_html() {
+  _slug="$1"
+  _total="$(grep -c . "$DIST/visuals/$_slug/assets.tsv" || true)"
+  printf '<section class="section"><h2>Vizuály</h2>\n'
+  printf '<p class="skins-intro">%s kusů artworku — trupy, kamufláže, arény a parallax terén.</p>\n' "$_total"
+  printf '<div class="visuals-cat" data-pixelart="1"><div class="sprite-grid">'
+  _n=0
+  while IFS="$SEP" read -r v_cat v_ord v_file v_label v_w v_h; do
+    [ -n "${v_file:-}" ] || continue
+    _n=$((_n + 1)); [ "$_n" -le 8 ] || continue
+    printf '<figure class="sprite"><img src="visuals/%s/planes/%s" alt="%s" width="%s" height="%s" loading="lazy" decoding="async"><figcaption>%s</figcaption></figure>' \
+      "$_slug" "$v_file" "$(esc "$v_label")" "$v_w" "$v_h" "$(esc "$v_label")"
+  done <<EOF
+$(visuals_rows "$_slug" planes)
+EOF
+  printf '</div></div>\n'
+  printf '<p class="skins-more"><a href="%s-visuals.html">Prozkoumat všechny vizuály →</a></p>\n' "$_slug"
+  printf '</section>\n'
+  return 0
+}
+
+visuals_page_html() {
+  _slug="$1"; _appname="$2"
+  printf '<section class="skins" id="visuals">\n'
+  printf '<h1 class="skin-head">%s — vizuály</h1>\n' "$(esc "$_appname")"
+  while IFS="$SEP" read -r c_id c_title c_note; do
+    [ -n "${c_id:-}" ] || continue
+    # Sprites are hard-edged pixel art and must not be smoothed; the painted
+    # arenas must not be pixelated.
+    case "$c_id" in
+      planes|skins) _px=1; _grid="" ;;
+      backgrounds)  _px=0; _grid="hero" ;;
+      *)            _px=0; _grid="wide" ;;
+    esac
+    printf '<div class="skin-cat visuals-cat" data-pixelart="%s" id="%s">' "$_px" "$c_id"
+    printf '<h3>%s</h3>' "$(esc "$c_title")"
+    [ -n "${c_note:-}" ] && printf '<p class="skin-notes">%s</p>' "$(esc "$c_note")"
+    visuals_grid_html "$_slug" "$c_id" "$_grid"
+    printf '</div>\n'
+  done <<EOF
+$(tsv_rows "$DIST/visuals/$_slug/cats.tsv")
+EOF
+  printf '</section>\n'
+  return 0
+}
+
 # copy per-app skin galleries if provided (already web-ready; see scripts/import-skins.sh)
 for d in "$APPS"/*/skins; do
   [ -d "$d" ] || continue
@@ -317,6 +391,15 @@ for d in "$APPS"/*/skins; do
   mkdir -p "$DIST/skins"
   rm -rf "$DIST/skins/$slug"
   cp -R "$d" "$DIST/skins/$slug"
+done
+
+# same, for visuals galleries (scripts/import-visuals.sh)
+for d in "$APPS"/*/visuals; do
+  [ -d "$d" ] || continue
+  slug="$(basename "$(dirname "$d")")"
+  mkdir -p "$DIST/visuals"
+  rm -rf "$DIST/visuals/$slug"
+  cp -R "$d" "$DIST/visuals/$slug"
 done
 
 # ordered list of meta files
@@ -367,6 +450,7 @@ HERO
     # explicit `if` (not `&&`): under `set -e` a failing guard as the last
     # command of this group would truncate the page
     if skins_have "$slug"; then skins_teaser_html "$slug"; fi
+    if visuals_have "$slug"; then visuals_teaser_html "$slug"; fi
     echo '<section class="section"><h2>Screenshoty — desktop</h2>'
     shots_html "$slug" desktop
     echo '</section>'
@@ -392,6 +476,17 @@ HERO
       emit_foot
     } > "$DIST/$slug-skins.html"
     echo "  built $slug-skins.html"
+  fi
+
+  if visuals_have "$slug"; then
+    {
+      emit_head "$name — vizuály — olin.now"
+      printf '<a class="back-link" href="%s.html">← Zpět na %s</a>\n' "$slug" "$name"
+      visuals_page_html "$slug" "$name"
+      emit_brand
+      emit_foot
+    } > "$DIST/$slug-visuals.html"
+    echo "  built $slug-visuals.html"
   fi
 done <<EOF
 $ORDER_LIST

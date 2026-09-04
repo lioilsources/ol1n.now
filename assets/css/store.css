@@ -170,6 +170,11 @@ a:hover { text-decoration: underline; }
 .sprite img { width: 100%; height: 96px; object-fit: contain; display: block; }
 .sprite figcaption { font-size: 11px; color: var(--sprite-dim); margin-top: 6px; }
 .skin-panel[data-pixelart="1"] .sprite img { image-rendering: pixelated; }
+/* Visuals gallery reuses this grid, but the pixel-art flag sits on the
+   category rather than a skin panel: one page mixes hard-edged sprites with
+   painted arenas, and smoothing the sprites destroys them. */
+.visuals-cat[data-pixelart="1"] .sprite img { image-rendering: pixelated; }
+.visuals-cat .skin-notes { margin: 0 0 12px; }
 
 .sprite.wide { grid-column: 1 / -1; }
 /* the roster strip is 756px native — center it rather than upscaling to fill */

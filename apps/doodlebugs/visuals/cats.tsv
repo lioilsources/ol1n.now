@@ -1,0 +1,4 @@
+planes	Trupy	Každý tvar prošel stejnou obálkou, takže má i stejný zásahový box — liší se jen silueta.
+skins	Kamufláže	Kamufláž je čistě textura na sdílené siluetě — ocasní ploška zůstává červená a hra ji přebarvuje podle hráče.
+backgrounds	Arény	Pozadí se roztáhne přes celou kameru; horní dvě třetiny zůstávají klidné, protože se v nich létá.
+foregrounds	Terén	Parallax pás v popředí. Letadla létají za ním, střely ho prostřelují a kusy z něj ubývají.

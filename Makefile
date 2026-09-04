@@ -8,7 +8,7 @@ PORT ?= 8099
 
 .DEFAULT_GOAL := help
 
-.PHONY: help build fetch screenshots import-skins all deploy serve clean
+.PHONY: help build fetch screenshots import-skins import-visuals all deploy serve clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -25,6 +25,9 @@ screenshots: ## Resize raw screenshots into store sizes in dist/screenshots/
 
 import-skins: ## (authoring) Re-encode skin galleries from a local Kiran checkout into apps/kirian/skins/
 	@KIRAN_SRC=$${KIRAN_SRC:-$(CURDIR)/../Kiran} $(SCRIPTS)/import-skins.sh
+
+import-visuals: ## (authoring) Re-encode an app's artwork gallery into apps/<slug>/visuals/
+	@DOODLEBUGS_SRC=$${DOODLEBUGS_SRC:-/Volumes/Unity_Storage/Code/doodlebugs-revival-6} $(SCRIPTS)/import-visuals.sh doodlebugs
 
 all: fetch screenshots build ## fetch + screenshots + build
 
