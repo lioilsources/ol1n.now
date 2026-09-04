@@ -3,26 +3,30 @@ planes	1	model_barnstormer.webp	Barnstormer	512	512
 planes	2	model_bathtub.webp	Bathtub	512	512
 planes	3	model_crop_duster.webp	Crop Duster	512	512
 planes	4	model_delta_glider.webp	Delta Glider	512	512
-planes	5	model_flying_boat.webp	Flying Boat	512	512
-planes	6	model_flying_car.webp	Flying Car	512	512
-planes	7	model_gull_wing.webp	Gull Wing	512	512
-planes	8	model_gunship.webp	Gunship	512	512
-planes	9	model_gyrocopter.webp	Gyrocopter	512	512
-planes	10	model_hover_pod.webp	Hover Pod	512	512
-planes	11	model_interceptor.webp	Interceptor	512	512
-planes	12	model_ornithopter.webp	Ornithopter	512	512
-planes	13	model_paper_plane.webp	Paper Plane	512	512
-planes	14	model_racer.webp	Racer	512	512
-planes	15	model_rocket.webp	Rocket	512	512
-planes	16	model_saucer.webp	Saucer	512	512
-planes	17	model_seaplane.webp	Seaplane	512	512
-planes	18	model_shuttle.webp	Shuttle	512	512
-planes	19	model_starfighter.webp	Starfighter	512	512
-planes	20	model_stealth.webp	Stealth	512	512
-planes	21	model_tiltrotor.webp	Tiltrotor	512	512
-planes	22	model_triplane.webp	Triplane	512	512
-planes	23	model_twin_boom.webp	Twin Boom	512	512
-planes	24	model_zeppelin.webp	Zeppelin	512	512
+planes	5	model_dragon.webp	Dragon	512	512
+planes	6	model_flying_boat.webp	Flying Boat	512	512
+planes	7	model_flying_car.webp	Flying Car	512	512
+planes	8	model_goose.webp	Goose	512	512
+planes	9	model_gull_wing.webp	Gull Wing	512	512
+planes	10	model_gunship.webp	Gunship	512	512
+planes	11	model_gyrocopter.webp	Gyrocopter	512	512
+planes	12	model_hover_pod.webp	Hover Pod	512	512
+planes	13	model_interceptor.webp	Interceptor	512	512
+planes	14	model_ornithopter.webp	Ornithopter	512	512
+planes	15	model_paper_plane.webp	Paper Plane	512	512
+planes	16	model_racer.webp	Racer	512	512
+planes	17	model_rocket.webp	Rocket	512	512
+planes	18	model_saucer.webp	Saucer	512	512
+planes	19	model_seaplane.webp	Seaplane	512	512
+planes	20	model_shuttle.webp	Shuttle	512	512
+planes	21	model_starfighter.webp	Starfighter	512	512
+planes	22	model_stealth.webp	Stealth	512	512
+planes	23	model_tiltrotor.webp	Tiltrotor	512	512
+planes	24	model_triplane.webp	Triplane	512	512
+planes	25	model_twin_boom.webp	Twin Boom	512	512
+planes	26	model_unicorn.webp	Unicorn	512	512
+planes	27	model_wasp.webp	Wasp	512	512
+planes	28	model_zeppelin.webp	Zeppelin	512	512
 skins	1	skin_aeronautique_blue.webp	Aeronautique Blue	512	512
 skins	2	skin_arcade_pixel.webp	Arcade Pixel	512	512
 skins	3	skin_arctic_camo.webp	Arctic Camo	512	512
