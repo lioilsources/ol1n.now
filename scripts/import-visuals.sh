@@ -59,10 +59,14 @@ emit_cat() { printf '%s%s%s%s%s\n' "$1" "$TAB" "$2" "$TAB" "$3" >> "$OUT/cats.ts
 #   mode=pixel  hard-edged sprite: point-scaled to 4x, lossless (lossy WebP
 #               turns pixel art into mush at these sizes)
 #   mode=photo  painted artwork: Lanczos downscale, lossy
+#   AS=<stem>   optional destination stem, consumed and cleared by add.
+#               Projectiles live at <element>/<form>.png, so six files are
+#               called rocket.png and basename alone would overwrite five.
 add() {
   _cat="$1"; _ord="$2"; _src="$3"; _label="$4"; _mode="$5"
   mkdir -p "$OUT/$_cat"
-  _stem="$(basename "$_src")"; _stem="${_stem%.png}"
+  if [ -n "${AS:-}" ]; then _stem="$AS"; AS=""
+  else _stem="$(basename "$_src")"; _stem="${_stem%.png}"; fi
   _dst="$OUT/$_cat/$_stem.webp"
   case "$_mode" in
     pixel) "$MAGICK" "$_src" -filter point -resize 400% -strip \
@@ -70,6 +74,23 @@ add() {
     photo) "$MAGICK" "$_src" -filter Lanczos -resize "${6}>" -strip \
              -define webp:method=6 -quality 82 "$_dst" ;;
   esac
+  _wh="$("$MAGICK" identify -format '%w %h' "$_dst")"
+  printf '%s%s%s%s%s%s%s%s%s%s%s\n' \
+    "$_cat" "$TAB" "$_ord" "$TAB" "$_stem.webp" "$TAB" "$_label" "$TAB" \
+    "${_wh%% *}" "$TAB" "${_wh##* }" >> "$OUT/assets.tsv"
+}
+
+# add_strip <cat> <ord> <stem> <label> <frame>...
+#   Lays an animation's frames out left to right as one image. 84 separate
+#   frames would drown the gallery and say nothing; a strip shows the arc,
+#   which is the whole point of a flipbook. 2x rather than the 4x `add` uses
+#   on single sprites - an 8-frame 96 px strip is already 768 px wide.
+add_strip() {
+  _cat="$1"; _ord="$2"; _stem="$3"; _label="$4"; shift 4
+  mkdir -p "$OUT/$_cat"
+  _dst="$OUT/$_cat/$_stem.webp"
+  "$MAGICK" "$@" -background none +append -filter point -resize 200% -strip \
+    -define webp:lossless=true "$_dst"
   _wh="$("$MAGICK" identify -format '%w %h' "$_dst")"
   printf '%s%s%s%s%s%s%s%s%s%s%s\n' \
     "$_cat" "$TAB" "$_ord" "$TAB" "$_stem.webp" "$TAB" "$_label" "$TAB" \
@@ -111,6 +132,30 @@ for f in "$SRC"/Assets/Doodlebugs/Sprites/Foreground/*_fg.png; do
   [ -e "$f" ] || continue
   n=$((n + 1))
   add foregrounds "$n" "$f" "$(pretty "$(basename "${f%.png}")")" photo 1280x
+done
+
+# ---- projectiles -----------------------------------------------------------
+emit_cat projectiles "Střely" "Čím letadlo střílí, určuje jeho tvar, ne zbraň. Drak dýchá oheň, jednorožec hází blesky, dvouplošník pálí mosaz — zbraň dál rozhoduje o čísle, element o vzhledu."
+n=0
+for e in metal fire lightning venom plasma air; do
+  for f in tracer pellet bomb bolt rocket mine; do
+    _src="$SRC/Assets/Doodlebugs/Resources/Sprites/Projectiles/$e/$f.png"
+    [ -e "$_src" ] || continue
+    n=$((n + 1))
+    AS="${e}_${f}" add projectiles "$n" "$_src" "$(pretty "${e}_${f}")" pixel
+  done
+done
+
+# ---- explosions ------------------------------------------------------------
+emit_cat effects "Zásahy a výbuchy" "Každý element má vlastní dopad a explozi. Snímky jsou tu vedle sebe zleva doprava tak, jak je hra přehraje."
+n=0
+for e in metal fire lightning venom plasma air; do
+  for k in impact explosion; do
+    set -- "$SRC"/Assets/Doodlebugs/Resources/Sprites/Effects/"$e"/"$k"_*.png
+    [ -e "$1" ] || continue
+    n=$((n + 1))
+    add_strip effects "$n" "${e}_${k}" "$(pretty "${e}_${k}")" "$@"
+  done
 done
 
 echo "visuals -> $OUT"

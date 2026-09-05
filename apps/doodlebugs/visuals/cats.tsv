@@ -2,3 +2,5 @@ planes	Trupy	Každý tvar prošel stejnou obálkou, takže má i stejný zásaho
 skins	Kamufláže	Kamufláž je čistě textura na sdílené siluetě — ocasní ploška zůstává červená a hra ji přebarvuje podle hráče.
 backgrounds	Arény	Pozadí se roztáhne přes celou kameru; horní dvě třetiny zůstávají klidné, protože se v nich létá.
 foregrounds	Terén	Parallax pás v popředí. Letadla létají za ním, střely ho prostřelují a kusy z něj ubývají.
+projectiles	Střely	Čím letadlo střílí, určuje jeho tvar, ne zbraň. Drak dýchá oheň, jednorožec hází blesky, dvouplošník pálí mosaz — zbraň dál rozhoduje o čísle, element o vzhledu.
+effects	Zásahy a výbuchy	Každý element má vlastní dopad a explozi. Snímky jsou tu vedle sebe zleva doprava tak, jak je hra přehraje.
