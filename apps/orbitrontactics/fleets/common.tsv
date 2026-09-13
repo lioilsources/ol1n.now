@@ -1,0 +1,16 @@
+sfx	1	sfx/kinetic_shot.m4a	Kinetický výstřel	1	
+sfx	2	sfx/kinetic_explosion.m4a	Kinetický exploze	9	
+sfx	3	sfx/water_shot.m4a	Vodní výstřel	1	
+sfx	4	sfx/water_explosion.m4a	Vodní exploze	9	
+sfx	5	sfx/fire_shot.m4a	Ohnivý výstřel	1	
+sfx	6	sfx/fire_explosion.m4a	Ohnivý exploze	9	
+sfx	7	sfx/ice_shot.m4a	Ledový výstřel	1	
+sfx	8	sfx/ice_explosion.m4a	Ledový exploze	9	
+sfx	9	sfx/electric_shot.m4a	Elektrický výstřel	1	
+sfx	10	sfx/electric_explosion.m4a	Elektrický exploze	9	
+music	1	music/pawn.m4a	Téma — Pěšec	25	
+music	2	music/knight.m4a	Téma — Jezdec	27	
+music	3	music/bishop.m4a	Téma — Střelec	26	
+music	4	music/rook.m4a	Téma — Věž	21	
+music	5	music/queen.m4a	Téma — Dáma	27	
+music	6	music/king.m4a	Téma — Král	32	

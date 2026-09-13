@@ -384,6 +384,241 @@ EOF
   return 0
 }
 
+# ---- fleets gallery (dist/fleets/<slug>/, produced by scripts/import-fleets.sh) ----
+# Third gallery shape. Skins are whole themes and visuals are flat artwork;
+# fleets are ten interchangeable sprite sets over one shared game — so the
+# per-fleet panels are joined by a shared section (maneuvers, sounds, music)
+# that does not belong to any one fleet.
+fleets_have() { [ -f "$DIST/fleets/$1/fleets.tsv" ]; }
+
+fl_rows()     { tsv_rows "$DIST/fleets/$1/fleets.tsv"; }
+fl_assets()   { awk -F"$TAB" -v f="$2" -v c="$3" -v OFS="$SEP" '$1 == f && $3 == c { $1 = $1; print }' "$DIST/fleets/$1/assets.tsv"; }
+fl_common()   { awk -F"$TAB" -v c="$2" -v OFS="$SEP" '$1 == c { $1 = $1; print }' "$DIST/fleets/$1/common.tsv"; }
+fl_mans()     { awk -F"$TAB" -v u="$2" -v OFS="$SEP" '$2 == u { $1 = $1; print }' "$DIST/fleets/$1/maneuvers.tsv"; }
+
+UNIT_IDS="pawn knight bishop rook queen king"
+
+unit_label() {
+  case "$1" in
+    pawn) echo "Pěšec" ;; knight) echo "Jezdec" ;; bishop) echo "Střelec" ;;
+    rook) echo "Věž" ;;   queen)  echo "Dáma" ;;  king)   echo "Král" ;;
+    *)    echo "$1" ;;
+  esac
+}
+# the battle element each unit shoots with (BattleElement in the game)
+unit_element() {
+  case "$1" in
+    pawn) echo "kinetický" ;; knight) echo "vodní" ;; bishop) echo "ohnivý" ;;
+    rook) echo "ledový" ;;    queen|king) echo "elektrický" ;;
+    *)    echo "" ;;
+  esac
+}
+
+# 400 -> "0,40 s"  (Czech decimal comma)
+secs() { awk -v ms="$1" 'BEGIN { printf "%.2f", ms / 1000 }' | tr . ,; }
+
+# plural_win <n> -> výhra / výhry / výher
+plural_win() { case "$1" in 1) echo "výhra" ;; 2|3|4) echo "výhry" ;; *) echo "výher" ;; esac; }
+
+# unlock_label <starter|wins:N|pack:ID>
+unlock_label() {
+  case "$1" in
+    starter) echo "od začátku" ;;
+    wins:*)  _w="${1#wins:}"; echo "$_w $(plural_win "$_w")" ;;
+    pack:*)  echo "balíček $(printf '%s' "${1#pack:}" | tr '[:lower:]' '[:upper:]')" ;;
+    *)       echo "$1" ;;
+  esac
+}
+
+# gesture_svg <dash-joined dots> — the 3x3 lock-screen pattern that starts the
+# maneuver, drawn with the same 0.2/0.3 dot layout as the game's PatternGlyph.
+gesture_svg() {
+  awk -v dots="$1" 'BEGIN {
+    n = split(dots, d, "-")
+    printf "<svg class=\"gesture\" viewBox=\"0 0 1 1\" aria-hidden=\"true\">"
+    for (i = 0; i < 9; i++)
+      printf "<circle class=\"d\" cx=\"%.2f\" cy=\"%.2f\" r=\"0.035\"/>", \
+             0.2 + 0.3 * (i % 3), 0.2 + 0.3 * int(i / 3)
+    printf "<polyline class=\"g\" points=\""
+    for (i = 1; i <= n; i++)
+      printf "%s%.2f,%.2f", (i > 1 ? " " : ""), 0.2 + 0.3 * (d[i] % 3), 0.2 + 0.3 * int(d[i] / 3)
+    printf "\"/>"
+    for (i = 1; i <= n; i++)
+      printf "<circle class=\"%s\" cx=\"%.2f\" cy=\"%.2f\" r=\"%s\"/>", (i == n ? "h" : "v"), \
+             0.2 + 0.3 * (d[i] % 3), 0.2 + 0.3 * int(d[i] / 3), (i == n ? "0.075" : "0.055")
+    printf "</svg>"
+  }'
+}
+
+# one sprite grid for a fleet's white or black ships
+fleet_ships_html() {
+  _slug="$1"; _fl="$2"; _cat="$3"; _h="$4"
+  _rows="$(fl_assets "$_slug" "$_fl" "$_cat")"
+  [ -n "$_rows" ] || return 0
+  printf '<div class="skin-cat"><h3>%s</h3><div class="sprite-grid">' "$_h"
+  printf '%s\n' "$_rows" | while IFS="$SEP" read -r a_fl a_ord a_cat a_file a_label a_w a_h; do
+    printf '<figure class="sprite"><img src="fleets/%s/%s/%s" alt="%s" width="%s" height="%s" loading="lazy" decoding="async"><figcaption>%s</figcaption></figure>' \
+      "$_slug" "$a_fl" "$a_file" "$(esc "$a_label")" "$a_w" "$a_h" "$(esc "$a_label")"
+  done
+  printf '</div></div>\n'
+  return 0
+}
+
+# shared SFX buttons / music playlist — same markup (and the same single audio
+# channel in store.js) as the skins gallery
+fleet_audio_html() {
+  _slug="$1"; _cat="$2"; _h="$3"; _note="$4"
+  _rows="$(fl_common "$_slug" "$_cat")"
+  [ -n "$_rows" ] || return 0
+  printf '<div class="skin-cat"><h3>%s</h3>' "$_h"
+  [ -n "$_note" ] && printf '<p class="skin-notes">%s</p>' "$(esc "$_note")"
+  if [ "$_cat" = sfx ]; then
+    printf '<div class="sfx-grid" data-audio="sfx">'
+    printf '%s\n' "$_rows" | while IFS="$SEP" read -r c_cat c_ord c_file c_label c_secs c_rest; do
+      printf '<a class="sfx-btn" href="fleets/%s/common/%s" data-src="fleets/%s/common/%s"><span class="i">▶</span>%s</a>' \
+        "$_slug" "$c_file" "$_slug" "$c_file" "$(esc "$c_label")"
+    done
+    printf '</div>'
+  else
+    printf '<div class="audio" data-audio="music">'
+    printf '<div class="player" hidden><button type="button" class="p-prev" aria-label="Předchozí">⏮</button>'
+    printf '<button type="button" class="p-play" aria-label="Přehrát">▶</button>'
+    printf '<button type="button" class="p-next" aria-label="Další">⏭</button>'
+    printf '<span class="p-title"></span><progress class="p-bar" max="100" value="0"></progress></div>'
+    printf '<ol class="tracklist">'
+    printf '%s\n' "$_rows" | while IFS="$SEP" read -r c_cat c_ord c_file c_label c_secs c_rest; do
+      printf '<li><a href="fleets/%s/common/%s" data-src="fleets/%s/common/%s">%s <span class="d">%s</span></a></li>' \
+        "$_slug" "$c_file" "$_slug" "$c_file" "$(esc "$c_label")" "$(mmss "$c_secs")"
+    done
+    printf '</ol></div>'
+  fi
+  printf '</div>\n'
+  return 0
+}
+
+# the maneuvers of one unit: a card per maneuver, gesture drawn server-side,
+# flight path animated by store.js from fleets/<slug>/maneuvers.json
+fleet_maneuvers_html() {
+  _slug="$1"; _u="$2"
+  _rows="$(fl_mans "$_slug" "$_u")"
+  [ -n "$_rows" ] || return 0
+  printf '<div class="man-grid">'
+  printf '%s\n' "$_rows" | while IFS="$SEP" read -r m_id m_ship m_fam m_tier m_name m_desc m_energy m_dur m_pat m_unlock m_price m_unt m_tags m_shots; do
+    printf '<article class="man-card" data-man="%s" data-unit="%s">' "$(esc "$m_id")" "$m_ship"
+    printf '<div class="man-anim"><canvas class="man-canvas" width="340" height="340" role="img" aria-label="Dráha manévru %s"></canvas></div>' \
+      "$(esc "$m_name")"
+    printf '<div class="man-body"><div class="man-head">'
+    gesture_svg "$m_pat"
+    printf '<div><h4>%s</h4><p class="man-unlock">%s</p></div></div>' \
+      "$(esc "$m_name")" "$(unlock_label "$m_unlock")"
+    printf '<p class="man-desc">%s</p>' "$(esc "$m_desc")"
+    printf '<ul class="man-stats">'
+    printf '<li title="Energie">⚡ %s</li>' "$m_energy"
+    printf '<li title="Trvání">%s s</li>' "$(secs "$m_dur")"
+    [ "$m_shots" != 0 ] && printf '<li title="Výstřely">%s ×</li>' "$m_shots"
+    [ -n "$m_unt" ] && printf '<li class="hl" title="Střely procházejí skrz">nezasažitelný</li>'
+    case "$m_tags" in *shield*)  printf '<li class="hl" title="Zvedá štít">štít</li>' ;; esac
+    case "$m_tags" in *control*) printf '<li title="Řízení zůstává na pilotovi">volné řízení</li>' ;; esac
+    case "$m_tags" in *mirror*)  printf '<li title="Zrcadlené gesto letí zrcadlený manévr">zrcadlitelný</li>' ;; esac
+    [ -n "$m_price" ] && printf '<li title="Cena v kreditech">%s kr.</li>' "$m_price"
+    printf '</ul></div></article>'
+  done
+  printf '</div>\n'
+  return 0
+}
+
+# teaser section on the app detail page
+fleets_teaser_html() {
+  _slug="$1"; _n="$(grep -c . "$DIST/fleets/$_slug/fleets.tsv")"
+  _m="$(if [ -f "$DIST/fleets/$_slug/maneuvers.tsv" ]; then grep -c . "$DIST/fleets/$_slug/maneuvers.tsv"; else echo 0; fi)"
+  printf '<section class="section"><h2>Flotily</h2>\n'
+  printf '<p class="skins-intro">%s flotil po šesti typech lodí' "$_n"
+  [ "$_m" != 0 ] && printf ' a %s manévrů, které se kreslí prstem' "$_m"
+  printf '.</p>\n'
+  printf '<div class="skin-picker">'
+  while IFS="$SEP" read -r f_id f_name f_theme f_note f_def; do
+    [ -n "${f_id:-}" ] || continue
+    printf '<a class="skin-chip" href="%s-fleets.html#%s"><img src="fleets/%s/%s/preview/preview.webp" alt="" width="384" height="384" loading="lazy" decoding="async"><span class="n">%s</span></a>' \
+      "$_slug" "$f_id" "$_slug" "$f_id" "$(esc "$f_name")"
+  done <<EOF
+$(fl_rows "$_slug")
+EOF
+  printf '</div>\n'
+  printf '<p class="skins-more"><a href="%s-fleets.html">Prozkoumat flotily a manévry →</a></p>\n' "$_slug"
+  printf '</section>\n'
+  return 0
+}
+
+fleets_page_html() {
+  _slug="$1"; _appname="$2"
+  _n="$(grep -c . "$DIST/fleets/$_slug/fleets.tsv")"
+  printf '<section class="skins fleets" id="fleets" data-slug="%s">\n' "$_slug"
+  printf '<h1>Flotily</h1>\n'
+  printf '<p class="skins-intro">%s flotil pro %s. Každá překresluje všech šest typů lodí v bílé i černé variantě — flotila je čistě vizuální, pohyb figur ani souboj se s ní nemění.</p>\n' \
+    "$_n" "$(esc "$_appname")"
+
+  printf '<div class="skin-picker" role="tablist" aria-label="Flotily">'
+  while IFS="$SEP" read -r f_id f_name f_theme f_note f_def; do
+    [ -n "${f_id:-}" ] || continue
+    printf '<button type="button" class="skin-chip" role="tab" data-skin="%s" id="tab-%s" aria-selected="false" aria-controls="panel-%s">' \
+      "$f_id" "$f_id" "$f_id"
+    printf '<img src="fleets/%s/%s/preview/preview.webp" alt="" width="384" height="384" loading="lazy" decoding="async"><span class="n">%s</span>' \
+      "$_slug" "$f_id" "$(esc "$f_name")"
+    [ "$f_def" = 1 ] && printf '<span class="y">výchozí</span>'
+    printf '</button>'
+  done <<EOF
+$(fl_rows "$_slug")
+EOF
+  printf '</div>\n'
+
+  while IFS="$SEP" read -r f_id f_name f_theme f_note f_def; do
+    [ -n "${f_id:-}" ] || continue
+    printf '<div class="skin-panel" id="panel-%s" role="tabpanel" aria-labelledby="tab-%s" data-skin="%s">\n' \
+      "$f_id" "$f_id" "$f_id"
+    printf '<header class="skin-head"><h2>%s</h2><p class="skin-theme">%s</p>' \
+      "$(esc "$f_name")" "$(esc "$f_theme")"
+    [ -n "$f_note" ] && printf '<p class="skin-notes">%s</p>' "$(esc "$f_note")"
+    printf '</header>\n'
+    fleet_ships_html "$_slug" "$f_id" white "Bílá flotila"
+    fleet_ships_html "$_slug" "$f_id" black "Černá flotila"
+    printf '</div>\n'
+  done <<EOF
+$(fl_rows "$_slug")
+EOF
+
+  # ---- shared across fleets ----
+  if [ -f "$DIST/fleets/$_slug/maneuvers.tsv" ]; then
+    _mn="$(grep -c . "$DIST/fleets/$_slug/maneuvers.tsv")"
+    printf '<section class="maneuvers" id="manevry">\n'
+    printf '<h2>Manévry</h2>\n'
+    printf '<p class="skins-intro">%s manévrů: dvanáct rodin, které umí každá loď po svém, plus jeden vlastní. Spouští se gestem nakresleným do mřížky 3×3 — jako odemykání Androidu — a stojí energii, která se sama dobíjí. Dráhy níž jsou vzorkované přímo z herního katalogu, takže loď na plátně letí to, co letí v souboji.</p>\n' "$_mn"
+    printf '<div class="unit-picker" role="tablist" aria-label="Typy lodí">'
+    for u in $UNIT_IDS; do
+      printf '<button type="button" class="unit-chip" role="tab" data-unit="%s" aria-selected="false">' "$u"
+      printf '<img data-unit-img="%s" src="fleets/%s/vanguard/white/%s.webp" alt="" width="256" height="256" loading="lazy" decoding="async">' \
+        "$u" "$_slug" "$u"
+      printf '<span class="n">%s</span><span class="y">%s</span></button>' \
+        "$(unit_label "$u")" "$(unit_element "$u")"
+    done
+    printf '</div>\n'
+    for u in $UNIT_IDS; do
+      printf '<div class="unit-panel" data-unit="%s">' "$u"
+      fleet_maneuvers_html "$_slug" "$u"
+      printf '</div>\n'
+    done
+    printf '</section>\n'
+  fi
+
+  printf '<section class="fleet-audio">\n<h2>Zvuk souboje</h2>\n'
+  fleet_audio_html "$_slug" sfx "Zvuky (SFX)" \
+    "Zvuk výstřelu i exploze určuje element lodi, ne flotila: pěšec střílí kineticky, jezdec vodou, střelec ohněm, věž ledem, dáma a král elektřinou."
+  fleet_audio_html "$_slug" music "Hudba" \
+    "Souboji hraje téma útočící lodi."
+  printf '</section>\n'
+  printf '</section>\n'
+  return 0
+}
+
 # copy per-app skin galleries if provided (already web-ready; see scripts/import-skins.sh)
 for d in "$APPS"/*/skins; do
   [ -d "$d" ] || continue
@@ -400,6 +635,15 @@ for d in "$APPS"/*/visuals; do
   mkdir -p "$DIST/visuals"
   rm -rf "$DIST/visuals/$slug"
   cp -R "$d" "$DIST/visuals/$slug"
+done
+
+# and fleet galleries (scripts/import-fleets.sh)
+for d in "$APPS"/*/fleets; do
+  [ -d "$d" ] || continue
+  slug="$(basename "$(dirname "$d")")"
+  mkdir -p "$DIST/fleets"
+  rm -rf "$DIST/fleets/$slug"
+  cp -R "$d" "$DIST/fleets/$slug"
 done
 
 # ordered list of meta files
@@ -451,6 +695,7 @@ HERO
     # command of this group would truncate the page
     if skins_have "$slug"; then skins_teaser_html "$slug"; fi
     if visuals_have "$slug"; then visuals_teaser_html "$slug"; fi
+    if fleets_have "$slug"; then fleets_teaser_html "$slug"; fi
     echo '<section class="section"><h2>Screenshoty — desktop</h2>'
     shots_html "$slug" desktop
     echo '</section>'
@@ -487,6 +732,17 @@ HERO
       emit_foot
     } > "$DIST/$slug-visuals.html"
     echo "  built $slug-visuals.html"
+  fi
+
+  if fleets_have "$slug"; then
+    {
+      emit_head "$name — flotily a manévry — olin.now"
+      printf '<a class="back-link" href="%s.html">← Zpět na %s</a>\n' "$slug" "$name"
+      fleets_page_html "$slug" "$name"
+      emit_brand
+      emit_foot
+    } > "$DIST/$slug-fleets.html"
+    echo "  built $slug-fleets.html"
   fi
 done <<EOF
 $ORDER_LIST

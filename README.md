@@ -80,11 +80,45 @@ konstanty na začátku `scripts/import-skins.sh`. `make build` už jen kopíruje
 **jen** když existuje `dist/skins/<slug>/skins.tsv`, takže ostatní aplikace
 zůstávají beze změny.
 
+## Flotily a manévry (OrbitronTactics)
+
+OrbitronTactics má galerii flotil: sekce „Flotily" na `orbitrontactics.html`
+a podstránka `orbitrontactics-fleets.html` s výběrem flotily, loděmi v bílé
+i černé variantě, manévry po typech lodí a zvuky souboje.
+
+Zdroj pravdy je herní repo **`lioilsources/OrbitronTactics`** — `assets/fleets/`,
+`assets/audio/` a katalog manévrů v `lib/core/maneuvers/`. Web-ready assety se
+generují lokálně a **commitují** do `apps/orbitrontactics/fleets/`:
+
+```bash
+ORBITRON_SRC=/cesta/k/OrbitronTactics make import-fleets
+```
+
+`scripts/import-fleets.sh` zmenší sprity do WebP, poskládá z bílých lodí náhled
+flotily, přetranskóduje `.ogg` na `.m4a` a spustí `tools/dump_maneuvers.dart`
+ve hře, který vysype katalog manévrů:
+
+| Soubor | Sloupce |
+|--------|---------|
+| `fleets.tsv` | `id name theme notes default` |
+| `assets.tsv` | `fleet ord category file label w h` (kategorie `preview`, `white`, `black`) |
+| `common.tsv` | `category ord file label secs —` (zvuky a hudba, sdílené všemi flotilami) |
+| `maneuvers.tsv` | `id ship family tier name description energy duration pattern unlock price untouchable tags shots` |
+| `maneuvers.json` | navzorkované dráhy letu pro animaci na plátně |
+
+Dráhy se **vzorkují v Dartu** přes `Maneuver.poseAt`, ne dopočítávají
+v JavaScriptu — galerie má ukazovat to, co engine doopravdy letí, a druhá
+implementace easingu by se rozešla s první při první změně křivky. Gesto (mřížka
+3×3) kreslí `build-site.sh` do SVG, animaci plátna `assets/js/store.js`.
+
+Bez Dartu import proběhne, jen si nechá už zacommitovaný dump manévrů.
+
 ## Závislosti
 
 - `bash`, `awk`, `sed` (běžné)
 - `gh` CLI (pro `make fetch`)
-- ImageMagick `magick` (pro `make screenshots` a `make import-skins`) — `brew install imagemagick`
+- ImageMagick `magick` (pro `make screenshots`, `make import-skins`, `make import-fleets`) — `brew install imagemagick`
   (pro skiny je potřeba WebP delegát: `magick -list format | grep WEBP`)
-- `ffmpeg` (videa v galerii + audio skinů) — `brew install ffmpeg`
+- `ffmpeg` (videa v galerii + audio skinů a flotil) — `brew install ffmpeg`
+- Dart SDK (jen `make import-fleets` — vysypání katalogu manévrů)
 - `python3` (pro `make serve`)

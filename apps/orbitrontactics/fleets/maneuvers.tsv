@@ -1,0 +1,74 @@
+pawn.sidestep	pawn	sidestep	starter	Sidestep	A quick step aside, matching the enemy's altitude.	20	400	3-4-5	starter			mirror	0
+pawn.strike	pawn	strike	starter	Strike	Climbs onto the enemy, fires twice and drops back.	30	720	7-4-1	starter				4
+pawn.retreat	pawn	retreat	basic	Retreat	Falls back to its own edge behind a shield.	15	560	1-4-7	wins:2	150		shield	0
+pawn.roll	pawn	roll	basic	Barrel Roll	Rolls out of the way; shots pass through.	25	560	1-5-7-3	wins:3	150	0.15-0.65	mirror	0
+pawn.feint	pawn	feint	basic	Feint	Leans one way, cuts back the other and fires.	25	640	0-7-2	wins:4	150		mirror	2
+pawn.volley	pawn	volley	basic	Volley	Four rounds in a row from a standing ship.	35	720	0-1-2-4-7	wins:5	150			8
+pawn.slalom	pawn	slalom	advanced	Slalom	Weaves across the enemy's altitude, firing throughout.	40	1280	0-1-2-4-6-7-8	wins:7	400		mirror	16
+pawn.dash	pawn	dash	advanced	Dash	Crosses the arena at the enemy's altitude, firing.	35	800	0-4-8	wins:9	400	0.2-0.5	mirror	6
+pawn.shadow	pawn	shadow	advanced	Shadow	Sticks to the enemy wherever it goes, firing steadily.	40	1600	0-1-2-4-6	wins:11	400			12
+pawn.overdrive	pawn	overdrive	advanced	Overdrive	Keeps the helm, but the guns run hot for three seconds.	30	2400	2-3-4-5-6	wins:13	400		control	0
+pawn.loop	pawn	loop	signature	Loop	Over the top and down; shots pass under the ship.	45	1440	1-2-5-8-7-6-3-0	wins:16	900	0.25-0.55		4
+pawn.spiral	pawn	spiral	pack	Corkscrew	Climbs and dives through a rolling spiral.	45	1200	4-1-2-5-8-7-6-3	pack:ace		0.3-0.7		4
+pawn.signature	pawn	signature	signature	Double Step	Two hops forward, a burst after each.	45	960	8-5-2-1	wins:20	900			8
+rook.sidestep	rook	sidestep	starter	Castle	A long slide across the arena onto the enemy's altitude.	25	650	3-4-5	starter			mirror	0
+rook.strike	rook	strike	starter	Steamroller	Grinds forward, firing all the way.	40	1820	7-4-1	starter				4
+rook.retreat	rook	retreat	basic	Retreat	Falls back to its own edge behind a shield.	20	910	1-4-7	wins:2	150		shield	0
+rook.roll	rook	roll	basic	Barrel Roll	Rolls out of the way; shots pass through.	30	910	1-5-7-3	wins:3	150	0.15-0.65	mirror	0
+rook.feint	rook	feint	basic	Feint	Leans one way, cuts back the other and fires.	30	1040	0-7-2	wins:4	150		mirror	1
+rook.volley	rook	volley	basic	Volley	Two heavy rounds from a standing ship.	40	1300	0-1-2-4-7	wins:5	150			2
+rook.slalom	rook	slalom	advanced	Slalom	Weaves across the enemy's altitude, firing throughout.	45	2080	0-1-2-4-6-7-8	wins:7	400		mirror	8
+rook.dash	rook	dash	advanced	Dash	Crosses the arena at the enemy's altitude, firing.	40	1300	0-4-8	wins:9	400	0.2-0.5	mirror	3
+rook.shadow	rook	shadow	advanced	Shadow	Sticks to the enemy wherever it goes, firing steadily.	45	2600	0-1-2-4-6	wins:11	400			6
+rook.overdrive	rook	overdrive	advanced	Overdrive	Keeps the helm, but the guns run hot for three seconds.	35	3900	2-3-4-5-6	wins:13	400		control	0
+rook.signature	rook	signature	signature	Bulwark	Shield up even on cooldown, three heavy rounds out.	60	1950	0-3-6-7-8-5-2	wins:20	900		shield	3
+knight.sidestep	knight	sidestep	starter	Sidestep	A quick step aside, matching the enemy's altitude.	25	500	3-4-5	starter			mirror	0
+knight.strike	knight	strike	starter	Strike	Climbs onto the enemy, fires twice and drops back.	35	900	7-4-1	starter				2
+knight.retreat	knight	retreat	basic	Retreat	Falls back to its own edge behind a shield.	20	700	1-4-7	wins:2	150		shield	0
+knight.roll	knight	roll	basic	Barrel Roll	Rolls out of the way; shots pass through.	30	700	1-5-7-3	wins:3	150	0.15-0.793	mirror	0
+knight.feint	knight	feint	basic	Feint	Leans one way, cuts back the other and fires.	30	800	0-7-2	wins:4	150		mirror	1
+knight.volley	knight	volley	basic	Volley	Four rounds in a row from a standing ship.	40	900	0-1-2-4-7	wins:5	150			4
+knight.slalom	knight	slalom	advanced	Slalom	Weaves across the enemy's altitude, firing throughout.	45	1440	0-1-2-4-6-7-8	wins:7	400		mirror	8
+knight.dash	knight	dash	advanced	Dash	Crosses the arena at the enemy's altitude, firing.	40	1000	0-4-8	wins:9	400	0.2-0.6	mirror	3
+knight.shadow	knight	shadow	advanced	Shadow	Sticks to the enemy wherever it goes, firing steadily.	45	2000	0-1-2-4-6	wins:11	400			6
+knight.overdrive	knight	overdrive	advanced	Overdrive	Keeps the helm, but the guns run hot for three seconds.	35	3000	2-3-4-5-6	wins:13	400		control	0
+knight.loop	knight	loop	signature	Loop	Over the top and down; shots pass under the ship.	50	1800	1-2-5-8-7-6-3-0	wins:16	900	0.25-0.606		2
+knight.spiral	knight	spiral	pack	Corkscrew	Climbs and dives through a rolling spiral.	50	1500	4-1-2-5-8-7-6-3	pack:ace		0.3-0.767		2
+knight.signature	knight	signature	signature	Leap	Jumps clear and lands a lane over, on the enemy.	45	1000	0-3-6-7	wins:20	900	0.1-0.7	mirror	2
+bishop.sidestep	bishop	sidestep	starter	Sidestep	A quick step aside, matching the enemy's altitude.	25	600	3-4-5	starter			mirror	0
+bishop.strike	bishop	strike	starter	Strike	Climbs onto the enemy, fires twice and drops back.	35	1080	7-4-1	starter				2
+bishop.retreat	bishop	retreat	basic	Retreat	Falls back to its own edge behind a shield.	20	840	1-4-7	wins:2	150		shield	0
+bishop.roll	bishop	roll	basic	Barrel Roll	Rolls out of the way; shots pass through.	30	840	1-5-7-3	wins:3	150	0.15-0.65	mirror	0
+bishop.feint	bishop	feint	basic	Feint	Leans one way, cuts back the other and fires.	30	960	0-7-2	wins:4	150		mirror	1
+bishop.volley	bishop	volley	basic	Charged Shot	Holds still, charges, and lands one heavy round.	45	1440	0-1-2-4-7	wins:5	150			1
+bishop.slalom	bishop	slalom	advanced	Slalom	Weaves across the enemy's altitude, firing throughout.	45	1920	0-1-2-4-6-7-8	wins:7	400		mirror	8
+bishop.dash	bishop	dash	advanced	Dash	Crosses the arena at the enemy's altitude, firing.	40	1200	0-4-8	wins:9	400	0.2-0.5	mirror	3
+bishop.shadow	bishop	shadow	advanced	Shadow	Sticks to the enemy wherever it goes, firing steadily.	45	2400	0-1-2-4-6	wins:11	400			6
+bishop.overdrive	bishop	overdrive	advanced	Overdrive	Keeps the helm, but the guns run hot for three seconds.	35	3600	2-3-4-5-6	wins:13	400		control	0
+bishop.loop	bishop	loop	signature	Loop	Over the top and down; shots pass under the ship.	50	2160	1-2-5-8-7-6-3-0	wins:16	900	0.25-0.55		2
+bishop.spiral	bishop	spiral	pack	Corkscrew	Climbs and dives through a rolling spiral.	50	1800	4-1-2-5-8-7-6-3	pack:ace		0.3-0.7		2
+bishop.signature	bishop	signature	signature	Sniper Shot	Stands still for a second, then one devastating round.	55	1440	0-4-8-5-2	wins:20	900			1
+queen.sidestep	queen	sidestep	starter	Sidestep	A quick step aside, matching the enemy's altitude.	25	500	3-4-5	starter			mirror	0
+queen.strike	queen	strike	starter	Strike	Climbs onto the enemy, fires twice and drops back.	35	900	7-4-1	starter				2
+queen.retreat	queen	retreat	basic	Retreat	Falls back to its own edge behind a shield.	20	700	1-4-7	wins:2	150		shield	0
+queen.roll	queen	roll	basic	Barrel Roll	Rolls out of the way; shots pass through.	30	700	1-5-7-3	wins:3	150	0.15-0.65	mirror	0
+queen.feint	queen	feint	basic	Feint	Leans one way, cuts back the other and fires.	30	800	0-7-2	wins:4	150		mirror	1
+queen.volley	queen	volley	basic	Volley	Four rounds in a row from a standing ship.	40	900	0-1-2-4-7	wins:5	150			4
+queen.slalom	queen	slalom	advanced	Slalom	Weaves across the enemy's altitude, firing throughout.	45	1600	0-1-2-4-6-7-8	wins:7	400		mirror	8
+queen.dash	queen	dash	advanced	Dash	Crosses the arena at the enemy's altitude, firing.	40	1000	0-4-8	wins:9	400	0.2-0.5	mirror	3
+queen.shadow	queen	shadow	advanced	Shadow	Sticks to the enemy wherever it goes, firing steadily.	45	2000	0-1-2-4-6	wins:11	400			6
+queen.overdrive	queen	overdrive	advanced	Overdrive	Keeps the helm, but the guns run hot for three seconds.	35	3000	2-3-4-5-6	wins:13	400		control	0
+queen.loop	queen	loop	signature	Loop	Over the top and down; shots pass under the ship.	50	1800	1-2-5-8-7-6-3-0	wins:16	900	0.25-0.55		2
+queen.spiral	queen	spiral	pack	Corkscrew	Climbs and dives through a rolling spiral.	50	1500	4-1-2-5-8-7-6-3	pack:ace		0.3-0.7		2
+queen.signature	queen	signature	signature	Royal Waltz	Sweeps the whole arena on the enemy's altitude.	60	1800	6-3-0-1-2-5-8	wins:20	900	0.15-0.4	mirror	6
+king.sidestep	king	sidestep	starter	Sidestep	A quick step aside, matching the enemy's altitude.	30	650	3-4-5	starter			mirror	0
+king.strike	king	strike	starter	Strike	Climbs onto the enemy, fires twice and drops back.	40	1170	7-4-1	starter				2
+king.retreat	king	retreat	basic	Retreat	Falls back to its own edge behind a shield.	25	1300	1-4-7	wins:2	150		shield	0
+king.roll	king	roll	basic	Barrel Roll	Rolls out of the way; shots pass through.	35	910	1-5-7-3	wins:3	150	0.15-0.65	mirror	0
+king.feint	king	feint	basic	Feint	Leans one way, cuts back the other and fires.	35	1040	0-7-2	wins:4	150		mirror	1
+king.volley	king	volley	basic	Volley	Four rounds in a row from a standing ship.	45	1170	0-1-2-4-7	wins:5	150			4
+king.slalom	king	slalom	advanced	Slalom	Weaves across the enemy's altitude, firing throughout.	50	2080	0-1-2-4-6-7-8	wins:7	400		mirror	8
+king.dash	king	dash	advanced	Dash	Crosses the arena at the enemy's altitude, firing.	45	1300	0-4-8	wins:9	400	0.2-0.5	mirror	3
+king.shadow	king	shadow	advanced	Shadow	Sticks to the enemy wherever it goes, firing steadily.	50	2600	0-1-2-4-6	wins:11	400			6
+king.overdrive	king	overdrive	advanced	Overdrive	Keeps the helm, but the guns run hot for three seconds.	40	3900	2-3-4-5-6	wins:13	400		control	0
+king.signature	king	signature	signature	Crown	Holds the line behind a shield, every battery firing.	65	2080	6-3-0-4-2-5-8	wins:20	900		shield	6

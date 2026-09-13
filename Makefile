@@ -8,7 +8,7 @@ PORT ?= 8099
 
 .DEFAULT_GOAL := help
 
-.PHONY: help build fetch screenshots import-skins import-visuals all deploy serve clean
+.PHONY: help build fetch screenshots import-skins import-visuals import-fleets all deploy serve clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -29,6 +29,9 @@ import-skins: ## (authoring) Re-encode skin galleries from a local Kiran checkou
 import-visuals: ## (authoring) Re-encode an app's artwork gallery into apps/<slug>/visuals/
 	@DOODLEBUGS_SRC=$${DOODLEBUGS_SRC:-/Volumes/Unity_Storage/Code/doodlebugs-revival-6} $(SCRIPTS)/import-visuals.sh doodlebugs
 
+import-fleets: ## (authoring) Re-encode OrbitronTactics fleets + maneuvers into apps/orbitrontactics/fleets/
+	@ORBITRON_SRC=$${ORBITRON_SRC:-$(CURDIR)/../OrbitronTactics} $(SCRIPTS)/import-fleets.sh orbitrontactics
+
 all: fetch screenshots build ## fetch + screenshots + build
 
 deploy: ## Trigger the Build & Deploy store workflow (builds from origin/main on CI)
@@ -39,5 +42,5 @@ serve: build ## Serve dist/ locally for preview
 	@cd $(DIST) && python3 -m http.server $(PORT)
 
 clean: ## Remove generated site (keeps downloads/ and screenshots/)
-	@rm -f $(DIST)/*.html && rm -rf $(DIST)/assets $(DIST)/icons $(DIST)/skins
+	@rm -f $(DIST)/*.html && rm -rf $(DIST)/assets $(DIST)/icons $(DIST)/skins $(DIST)/visuals $(DIST)/fleets
 	@echo "cleaned generated html/assets"

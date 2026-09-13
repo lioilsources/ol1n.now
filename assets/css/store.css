@@ -213,6 +213,69 @@ a:hover { text-decoration: underline; }
 .tracklist li[aria-current="true"] a { color: var(--accent); font-weight: 600; }
 .tracklist .d, .sfx-btn .d { font-size: 11px; color: var(--text-dim); }
 
+/* ---- Fleets (OrbitronTactics): reuses .skins, adds maneuvers ---- */
+/* Ship art is painted, not pixel art — never pixelate it. The tiles are square
+   PNGs with a lot of empty space around a tall hull, so `contain` at a taller
+   box keeps the ships readable at the same scale across units. */
+.fleets .sprite-grid { grid-template-columns: repeat(auto-fill, minmax(124px, 1fr)); }
+.fleets .sprite img { height: 124px; }
+.fleets .skin-chip img { object-fit: contain; padding: 4px; }
+
+.maneuvers, .fleet-audio { margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--border); }
+.maneuvers h2, .fleet-audio h2 { font-size: 24px; margin: 0 0 8px; letter-spacing: -0.02em; }
+.fleet-audio .skin-cat:first-of-type { margin-top: 18px; }
+
+/* Unit picker — same chip shape as the fleet picker, one row of six */
+.unit-picker {
+  display: grid; gap: 10px; margin: 20px 0 8px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.unit-chip {
+  appearance: none; font: inherit; cursor: pointer; text-align: center; color: var(--text);
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 6px 6px 8px;
+  display: flex; flex-direction: column; gap: 4px;
+  transition: background .15s, border-color .15s, box-shadow .15s;
+}
+.unit-chip:hover { background: var(--card-hover); }
+.unit-chip img { width: 100%; height: 62px; object-fit: contain; display: block; }
+.unit-chip .n { font-size: 12px; font-weight: 600; line-height: 1.2; }
+.unit-chip .y { font-size: 10px; color: var(--text-dim); }
+.unit-chip[aria-selected="true"] { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.js .unit-panel[hidden] { display: none; }
+
+/* Maneuver cards */
+.man-grid {
+  display: grid; gap: 16px; margin-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+}
+.man-card {
+  display: flex; flex-direction: column;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+}
+.man-anim { background: var(--sprite-bg); line-height: 0; }
+.man-canvas { width: 100%; height: auto; aspect-ratio: 1; display: block; }
+.man-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.man-head { display: flex; align-items: flex-start; gap: 10px; }
+.man-head h4 { font-size: 15px; margin: 0; }
+.man-unlock { font-size: 11px; color: var(--text-dim); margin: 0; }
+.man-desc { font-size: 13px; color: var(--text-dim); margin: 0; flex: 1; }
+
+/* Gesture glyph — the 3x3 lock pattern that starts the maneuver */
+.gesture { width: 38px; height: 38px; flex: none; overflow: visible; }
+.gesture .d { fill: var(--border); }
+.gesture .v { fill: var(--accent); }
+.gesture .h { fill: none; stroke: var(--accent); stroke-width: 0.035; }
+.gesture .g { fill: none; stroke: var(--accent); stroke-width: 0.045; stroke-linejoin: round; stroke-linecap: round; opacity: .55; }
+
+.man-stats { list-style: none; display: flex; flex-wrap: wrap; gap: 5px; margin: 2px 0 0; padding: 0; }
+.man-stats li {
+  font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 999px;
+  background: var(--bg-soft); color: var(--text-dim); border: 1px solid var(--border);
+}
+.man-stats li.hl { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+
 @media (prefers-reduced-motion: reduce) {
   .skin-chip { transition: none; }
   .skin-chip:hover { transform: none; }
@@ -221,4 +284,6 @@ a:hover { text-decoration: underline; }
   .skin-picker { grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); }
   .sprite-grid { grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); }
   .sprite-grid.bg .sprite img { height: 220px; }
+  .unit-picker { grid-template-columns: repeat(3, 1fr); }
+  .man-grid { grid-template-columns: 1fr; }
 }
