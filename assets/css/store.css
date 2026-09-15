@@ -25,6 +25,11 @@ body {
   line-height: 1.55;
 }
 
+html[lang="ja"] body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+               "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+}
+
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
@@ -89,6 +94,21 @@ a:hover { text-decoration: underline; }
 .app-hero h1 { font-size: 32px; margin: 0 0 6px; letter-spacing: -0.02em; }
 .app-hero .tagline { color: var(--text-dim); font-size: 17px; margin: 0 0 10px; }
 .back-link { display: inline-block; margin: 8px 0 0; color: var(--text-dim); font-size: 14px; }
+
+/* Page top row: back-link left, language flags right. A page with a single
+   language emits no switcher and the row lays out exactly like the bare
+   back-link did. */
+.page-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.lang-switch { display: flex; gap: 6px; margin: 8px 0 0; }
+.lang-switch a {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border-radius: 999px; font-size: 13px;
+  background: var(--card); border: 1px solid var(--border); color: var(--text-dim);
+}
+.lang-switch a:hover { background: var(--card-hover); text-decoration: none; }
+.lang-switch a[aria-current="true"] { background: var(--accent-soft); border-color: transparent; color: var(--accent); font-weight: 600; }
+/* both flags are mostly white, so they need an edge of their own */
+.lang-switch img { display: block; width: 18px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .18); }
 
 .section { margin-top: 40px; }
 .section h2 { font-size: 20px; margin: 0 0 16px; }

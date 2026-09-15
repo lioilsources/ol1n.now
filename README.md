@@ -44,6 +44,40 @@ Volitelně přidej `apps/<slug>/icon.png` (čtvercová ikona). Hotovo — build 
 | `mobile` | CSV platforem: `android,ios` |
 | `artifacts` | CSV bucketů pro `make fetch`; default `macos,windows,linux,android`. `mod` = platformově neutrální `.zip` (Luanti mod) |
 | `appstore` / `playstore` / `testflight` / `contentdb` | URL na obchody (volitelné) |
+| `langs` | CSV jazyků aplikace, např. `cs,ja`; default `cs` (viz [Jazyky](#jazyky)) |
+
+## Jazyky
+
+Základní jazyk je čeština a drží si holé URL (`kirian.html`). Každý další jazyk
+dostane vedle něj stránku s příponou (`kirian.ja.html`, `kirian-skins.ja.html`),
+takže žádný dosud sdílený odkaz se nehne. Z téhož zdroje se generuje `<html lang>`,
+`<link rel="alternate">` i přepínač s vlaječkami vedle zpětného odkazu.
+
+**Překlady si řídí každá aplikace sama.** Přihlásí se přes `langs: cs,ja` ve
+front-matteru a všechno si drží ve svém `apps/<slug>/i18n/`. Aplikace, která nic
+nedeklaruje, se staví jen česky a její výstup zůstává bajt po bajtu stejný —
+přidání jazyka jedné aplikaci se ostatních vůbec nedotkne.
+
+Tři vrstvy, slévají se v tomhle pořadí (pozdější vyhrává):
+
+| Soubor | Co v něm je |
+|--------|-------------|
+| `templates/i18n/cs.tsv` | základní katalog — všechny klíče, které web používá |
+| `templates/i18n/<lang>.tsv` | tytéž klíče v daném jazyce; co chybí, spadne zpět na češtinu |
+| `apps/<slug>/i18n/<lang>.tsv` | vlastní soubor aplikace: přepis kteréhokoli klíče + překlad galerie |
+
+`apps/<slug>/i18n/<lang>.md` je přeložené `meta.md` — front-matter jen pro pole,
+která se mění (`tagline`), a tělo, které nahradí popis.
+
+Galerie se překládá na úrovni dat, ne šablony: řádky s klíčem
+`label.<původní text>` přepíšou textové sloupce `skins.tsv` a `assets.tsv` do
+`dist/skins/<slug>/{skins,assets}.<lang>.tsv`. Klíčem je zdrojový řetězec (ne
+číslo řádku), takže `make import-skins` může galerii kdykoli přegenerovat z
+herního repa, aniž by překlad zneplatnil; buňka bez řádku projde beze změny —
+což je přesně to, co vlastní jména (`Falcon X`, `Bouncer`, názvy skinů) chtějí.
+
+Dnes má druhý jazyk (japonštinu) jen **kirian**. Podstránky vizuálů a flotil mají
+nadpisy pořád ve skriptu, takže se staví jen v základním jazyce.
 
 ## Screenshoty
 

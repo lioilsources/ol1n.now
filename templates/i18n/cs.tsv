@@ -1,0 +1,47 @@
+# Site chrome, base language. Every other catalog falls back to this one,
+# key by key, so a language only has to carry what it actually changes.
+# Format: <key>TAB<value>. Lines starting with # are comments.
+nav.all_apps	← Všechny aplikace
+nav.back_to	← Zpět na %s
+nav.lang	Jazyk
+title.app	%s — olin.now
+title.skins	%s — skiny — olin.now
+badge.featured	★ Doporučeno
+badge.mobile	Mobil
+sec.downloads	Ke stažení
+sec.description	Popis
+sec.shots_desktop	Screenshoty — desktop
+sec.shots_mobile	Screenshoty — mobil
+shots.empty.desktop	Zatím bez screenshotů (desktop).
+shots.empty.mobile	Zatím bez screenshotů (mobil).
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Buildy brzy k dispozici.
+skins.title	Skiny
+skins.teaser_intro	%s vizuálních témat — každé s vlastními sprity, parallax pozadím, zvuky a hudbou.
+skins.more	Prozkoumat všechny skiny →
+skins.page_intro	%s vizuálních témat pro %s. Každý skin má vlastní lodě, nepřátele, bosse, pozadí, zvuky i adaptivní hudbu.
+skins.disclaimer	Skiny jsou volnou poctou klasickým střílečkám. %s není nijak spojen s jejich autory ani vydavateli a nepoužívá jejich původní grafiku ani zvuky.
+skins.wiki	Wikipedie
+skins.vessels	%s lodí
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	tint %s
+cat.preview	Náhled
+cat.vessels	Lodě
+cat.enemies	Nepřátelé
+cat.boss	Boss
+cat.asteroids	Asteroidy
+cat.fx	Efekty a projektily
+cat.ui	Game center
+cat.backgrounds	Pozadí
+cat.sfx	Zvuky (SFX)
+cat.music	Hudba
+player.prev	Předchozí
+player.play	Přehrát
+player.next	Další
+player.pause	Pozastavit

@@ -1,0 +1,111 @@
+# Kirian — Japanese. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,ja}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests, which are
+# generated from the game repo by `make import-skins`. Keying on the source
+# string (and not on a row number) is what lets the manifests be regenerated
+# without invalidating the translation; anything with no row here — ship and
+# enemy names, skin titles — passes through untouched, which is what we want
+# for proper names.
+
+# --- skin themes ---
+label.Monochrome arcade	モノクロアーケード
+label.Vector wireframe	ベクターワイヤーフレーム
+label.Fixed-formation arcade	固定編隊アーケード
+label.Biomechanical sci-fi	バイオメカSF
+label.16-bit console shooter	16ビット機シューター
+label.DOS-era pixel art	DOS時代のピクセルアート
+label.Two-polarity shooter	二極性シューター
+label.Neon vector grid	ネオンベクターグリッド
+label.Chrome fleet shmup	クロームの艦隊シューティング
+label.Sepia dogfight	セピアの空中戦
+label.Post-apocalyptic	ポストアポカリプス
+label.Dark neon voxel	ダークネオンボクセル
+label.4-colour console era	4色コンソール時代
+label.Kirian original	Kirian オリジナル
+
+# --- skin notes ---
+label.Subtle CRT phosphor	控えめなCRTの蛍光
+label.Glow on geometry	線画に乗るグロー
+label.Soft bloom on projectiles	弾にやわらかいブルーム
+label.Neutral bloom	ニュートラルなブルーム
+label.Subtle warm glow	控えめな暖色のグロー
+label.Faithful retro feel	忠実なレトロ感
+label.Matches the polarity palette	極性パレットに合わせた調整
+label.Strongest bloom preset	最も強いブルーム設定
+label.Clean, high-contrast	クリアで高コントラスト
+label.No bloom — flat palette	ブルームなし — フラットなパレット
+label.Saturation 0.85, orange tint	彩度 0.85、オレンジの色調
+label.High-contrast neon	高コントラストのネオン
+label.Ultra-chunky flat sprites	極端に粗いフラットスプライト
+label.Hand-crafted baseline	手作りの基準スキン
+
+# --- CRT / tint presets ---
+label.neutral	ニュートラル
+label.scanlines 0.4, curve 0.01	走査線 0.4、曲率 0.01
+label.scanlines 0.7, curve 0.02	走査線 0.7、曲率 0.02
+label.green tint (0.85 / 1.0 / 0.85)	緑の色調（0.85 / 1.0 / 0.85）
+label.cyan tint (0.8 / 1.0 / 1.0)	シアンの色調（0.8 / 1.0 / 1.0）
+label.cool blue (0.9 / 0.95 / 1.0)	寒色のブルー（0.9 / 0.95 / 1.0）
+label.warm (1.0 / 0.95 / 0.9)	暖色（1.0 / 0.95 / 0.9）
+label.warm (1.0 / 0.95 / 0.85)	暖色（1.0 / 0.95 / 0.85）
+label.warm yellow (1.0 / 0.9 / 0.7)	暖色のイエロー（1.0 / 0.9 / 0.7）
+label.desaturated warm	彩度を落とした暖色
+
+# --- sprite labels ---
+label.Náhled	プレビュー
+label.Loď	自機
+label.Loď 1	自機 1
+label.Loď 2	自機 2
+label.Loď 3	自機 3
+label.Loď 4	自機 4
+label.Loď 5	自機 5
+label.Loď 6	自機 6
+label.Přehled nepřátel	敵一覧
+label.Asteroid 1	小惑星 1
+label.Asteroid 2	小惑星 2
+label.Asteroid 3	小惑星 3
+label.Asteroid 4	小惑星 4
+label.Bublina	バブル
+label.Blaster	ブラスター
+label.Laser	レーザー
+label.Vulcan	バルカン
+label.Rododendron	ロドデンドロン
+label.Hvězda	スター
+label.Hvězda (zelená)	スター（緑）
+label.Exploze 1	爆発 1
+label.Exploze 2	爆発 2
+label.Exploze 3	爆発 3
+label.Exploze 4	爆発 4
+label.Vrstva 0	レイヤー 0
+label.Vrstva 1	レイヤー 1
+label.Vrstva 2	レイヤー 2
+label.Vrstva 3	レイヤー 3
+
+# --- game center (UI) ---
+label.Karta	カード
+label.Tlačítko	ボタン
+label.Aktivní záložka	アクティブなタブ
+label.Kredity	クレジット
+label.Štít	シールド
+label.Život	ライフ
+label.Bomba	ボム
+label.Generátor	ジェネレーター
+
+# --- sfx + music ---
+label.Výstřel	射撃
+label.Paprsek	ビーム
+label.Malá exploze	小爆発
+label.Velká exploze	大爆発
+label.Zásah trupu	機体被弾
+label.Zásah štítu	シールド被弾
+label.Nová zbraň	新しい武器
+label.Sektor dokončen	セクタークリア
+label.Konec hry	ゲームオーバー
+label.Bonus	ボーナス
+label.Intro	イントロ
+label.Téma 1	テーマ 1
+label.Téma 2	テーマ 2
+label.Téma 3	テーマ 3
+label.Téma 4	テーマ 4
+label.Téma 5 (boss)	テーマ 5（ボス）
