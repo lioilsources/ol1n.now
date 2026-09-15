@@ -52,10 +52,18 @@
   var qi = -1;      // index into queue
   var scope = null; // the [data-audio] box that currently owns playback
 
+  // The play button is the one control whose label changes at runtime, so the
+  // page hands both wordings down on the .player element — the script must not
+  // decide what language the page is in.
+  function label(btn, which) {
+    var p = btn.closest(".player");
+    return (p && p.dataset[which]) || (which === "pause" ? "Pozastavit" : "Přehrát");
+  }
+
   function paint() {
     root.querySelectorAll(".sfx-btn.is-playing").forEach(function (b) { b.classList.remove("is-playing"); });
     root.querySelectorAll('.tracklist li[aria-current="true"]').forEach(function (li) { li.removeAttribute("aria-current"); });
-    root.querySelectorAll(".p-play").forEach(function (b) { b.textContent = "▶"; b.setAttribute("aria-label", "Přehrát"); });
+    root.querySelectorAll(".p-play").forEach(function (b) { b.textContent = "▶"; b.setAttribute("aria-label", label(b, "play")); });
     root.querySelectorAll(".p-title").forEach(function (t) { t.textContent = ""; });
     root.querySelectorAll(".p-bar").forEach(function (b) { b.value = 0; });
     if (qi < 0 || !queue[qi] || !scope) return;
@@ -71,7 +79,7 @@
     player.querySelector(".p-title").textContent = queue[qi].label;
     var play = player.querySelector(".p-play");
     play.textContent = au.paused ? "▶" : "⏸";
-    play.setAttribute("aria-label", au.paused ? "Přehrát" : "Pozastavit");
+    play.setAttribute("aria-label", label(play, au.paused ? "play" : "pause"));
   }
 
   function stop() {

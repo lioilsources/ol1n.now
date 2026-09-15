@@ -1,0 +1,43 @@
+# Site chrome, Japanese. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string.
+nav.all_apps	← すべてのアプリ
+nav.back_to	← %s に戻る
+nav.lang	言語
+title.app	%s — olin.now
+title.skins	%s — スキン — olin.now
+badge.featured	★ おすすめ
+badge.mobile	モバイル
+sec.downloads	ダウンロード
+sec.description	説明
+sec.shots_desktop	スクリーンショット — デスクトップ
+sec.shots_mobile	スクリーンショット — モバイル
+shots.empty.desktop	デスクトップのスクリーンショットはまだありません。
+shots.empty.mobile	モバイルのスクリーンショットはまだありません。
+dl.android	Android（APK）
+dl.mod	Mod（ZIP）
+dl.empty	ビルドは近日公開予定です。
+skins.title	スキン
+skins.teaser_intro	%s 種類のビジュアルテーマ — どれも専用のスプライト、パララックス背景、効果音、音楽を備えています。
+skins.more	すべてのスキンを見る →
+skins.page_intro	%s 種類のビジュアルテーマを収録した %s。どのスキンにも専用の自機、敵、ボス、背景、効果音、アダプティブ音楽があります。
+skins.disclaimer	スキンは往年のシューティングゲームへの自由なオマージュです。%s は原作の制作者や販売元とは一切関係がなく、オリジナルのグラフィックや音声も使用していません。
+skins.wiki	Wikipedia
+skins.vessels	%s 機
+skins.pixelart	ピクセルアート
+skins.bloom	ブルーム %s
+skins.crt	CRT %s
+skins.tint	色調 %s
+cat.preview	プレビュー
+cat.vessels	自機
+cat.enemies	敵
+cat.boss	ボス
+cat.asteroids	小惑星
+cat.fx	エフェクトと弾
+cat.ui	ゲーム内UI
+cat.backgrounds	背景
+cat.sfx	効果音（SFX）
+cat.music	音楽
+player.prev	前へ
+player.play	再生
+player.next	次へ
+player.pause	一時停止

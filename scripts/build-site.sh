@@ -6,6 +6,8 @@ set -eu
 HERE="$(cd "$(dirname "$0")" && pwd)"
 # shellcheck source=lib.sh
 . "$HERE/lib.sh"
+# shellcheck source=i18n.sh
+. "$HERE/i18n.sh"
 
 ROOT="$OLN_ROOT"
 DIST="$ROOT/dist"
@@ -18,8 +20,98 @@ hashf() { if command -v md5 >/dev/null 2>&1; then md5 -q "$1"; else md5sum "$1" 
 CSSVER="$(hashf "$ROOT/assets/css/store.css")"
 JSVER="$(hashf "$ROOT/assets/js/store.js")"
 
-emit_head() { _t="$(printf '%s' "$1" | sed 's/[&|]/\\&/g')"; sed -e "s|__TITLE__|$_t|g" -e "s|__CSSVER__|$CSSVER|g" -e "s|__BASE__||g" "$TPL/head.html"; }
+# emit_head <title> [<link rel="alternate"> lines]
+# awk and not sed: a title like "Ananas&Bananas" is data, and every regex-based
+# substitution in this file would have to escape it. The __ALTS__ line is
+# dropped whole when the page has no translations.
+emit_head() {
+  # ENVIRON and not -v: awk runs backslash escapes over a -v value, and the
+  # alternates arrive as several lines
+  HEAD_TITLE="$1" HEAD_ALTS="${2:-}" HEAD_CSSVER="$CSSVER" HEAD_LANG="$I18N_LANG" \
+  awk '
+    function repl(str, from, to,   out, i) {
+      while ((i = index(str, from)) > 0) { out = out substr(str, 1, i - 1) to; str = substr(str, i + length(from)) }
+      return out str
+    }
+    /__ALTS__/ { if (ENVIRON["HEAD_ALTS"] != "") print ENVIRON["HEAD_ALTS"]; next }
+    {
+      $0 = repl($0, "__TITLE__", ENVIRON["HEAD_TITLE"])
+      $0 = repl($0, "__CSSVER__", ENVIRON["HEAD_CSSVER"])
+      $0 = repl($0, "__LANG__", ENVIRON["HEAD_LANG"])
+      print repl($0, "__BASE__", "")
+    }
+  ' "$TPL/head.html"
+}
 emit_foot() { sed -e "s|__JSVER__|$JSVER|g" -e "s|__BASE__||g" "$TPL/foot.html"; }
+
+# ---- languages ----
+# An app declares the languages it ships in its front-matter (`langs: cs,ja`)
+# and keeps the translations in its own apps/<slug>/i18n/. An app that declares
+# nothing is built in the base language only, which is why adding Japanese to
+# one app leaves every other app's output byte-identical.
+app_langs() {
+  _l="$(fm_get "$1" langs)"
+  [ -n "$_l" ] || _l="$I18N_BASE"
+  printf '%s' "$_l" | tr ',' ' ' | tr -s ' '
+}
+
+# suffix on the gallery manifests of the language being built (see i18n_gallery)
+GSFX=""
+
+# page_name <slug> [subpage] [lang] -> kirian.html / kirian-skins.html / kirian-skins.ja.html
+# The base language keeps the bare URL, so every link that has ever been
+# shared still lands where it did.
+page_name() {
+  _pn="$1"; [ -z "${2:-}" ] || _pn="$_pn-$2"
+  _pl="${3:-$I18N_LANG}"
+  if [ "$_pl" = "$I18N_BASE" ]; then printf '%s.html' "$_pn"; else printf '%s.%s.html' "$_pn" "$_pl"; fi
+}
+
+# lang_switch_html <slug> <subpage> <lang>... -> the flag row, or nothing at
+# all for a single-language app
+lang_switch_html() {
+  _slug="$1"; _sub="$2"; shift 2
+  [ $# -gt 1 ] || return 0
+  printf '<nav class="lang-switch" aria-label="%s">' "$(esc "$(t nav.lang)")"
+  for _l in "$@"; do
+    printf '<a href="%s" hreflang="%s" lang="%s"' "$(page_name "$_slug" "$_sub" "$_l")" "$_l" "$_l"
+    [ "$_l" = "$I18N_LANG" ] && printf ' aria-current="true"'
+    printf '><img src="assets/img/flag-%s.svg" alt="" width="18" height="12">%s</a>' \
+      "$_l" "$(esc "$(lang_name "$_l")")"
+  done
+  printf '</nav>'
+  return 0
+}
+
+# alts_html <slug> <subpage> <lang>... -> <link rel="alternate"> block for the head
+alts_html() {
+  _slug="$1"; _sub="$2"; shift 2
+  [ $# -gt 1 ] || return 0
+  for _l in "$@"; do
+    printf '  <link rel="alternate" hreflang="%s" href="%s">\n' "$_l" "$(page_name "$_slug" "$_sub" "$_l")"
+  done
+  printf '  <link rel="alternate" hreflang="x-default" href="%s">' "$(page_name "$_slug" "$_sub" "$I18N_BASE")"
+  return 0
+}
+
+# page_top_html <back href> <back label> <lang switch html>
+page_top_html() {
+  printf '<div class="page-top"><a class="back-link" href="%s">%s</a>%s</div>\n' "$1" "$(esc "$2")" "$3"
+}
+
+# tr_meta <meta> <lang> -> the translated meta.md if the app wrote one, else the original
+tr_meta() {
+  _tm="$(dirname "$1")/i18n/$2.md"
+  if [ "$2" != "$I18N_BASE" ] && [ -f "$_tm" ]; then printf '%s' "$_tm"; else printf '%s' "$1"; fi
+}
+
+# fm_get_l <translated meta> <base meta> <key> -> translated value, else the base one.
+# A translation file only has to carry the fields it actually changes.
+fm_get_l() {
+  _v="$(fm_get "$1" "$3")"
+  [ -n "$_v" ] || _v="$(fm_get "$2" "$3")"
+  printf '%s' "$_v"
+}
 
 # fixed brand logo backdrop + scroll spacer (parallax via store.css/.js); used on every page
 emit_brand() {
@@ -44,7 +136,7 @@ icon_html() {
 # platform badges from desktop/mobile front-matter fields
 badges_html() {
   _meta="$1"; _featured="$2"; _out=""
-  [ "$_featured" = "true" ] && _out="$_out<span class=\"badge featured\">★ Doporučeno</span>"
+  [ "$_featured" = "true" ] && _out="$_out<span class=\"badge featured\">$(esc "$(t badge.featured)")</span>"
   _d="$(fm_get "$_meta" desktop)"
   if [ -n "$_d" ]; then
     OLDIFS="$IFS"; IFS=','
@@ -55,7 +147,7 @@ badges_html() {
     IFS="$OLDIFS"
   fi
   _m="$(fm_get "$_meta" mobile)"
-  [ -n "$_m" ] && _out="$_out<span class=\"badge\">Mobil</span>"
+  [ -n "$_m" ] && _out="$_out<span class=\"badge\">$(esc "$(t badge.mobile)")</span>"
   printf '%s' "$_out"
   return 0
 }
@@ -71,15 +163,14 @@ downloads_html() {
     while IFS="$TAB" read -r _plat _dlname _url _size _tag; do
       [ -n "${_plat:-}" ] || continue
       case "$_plat" in
-        macos) l="macOS";; windows) l="Windows";; linux) l="Linux";;
-        android) l="Android (APK)";; mod) l="Mod (ZIP)";; *) l="$_plat";;
+        macos|windows|linux|android|mod) l="$(t "dl.$_plat")";; *) l="$_plat";;
       esac
       printf '<a class="dl-btn" href="%s" download>⬇ %s <span class="dl-meta">%s · %s</span></a>\n' \
         "$_url" "$l" "$_tag" "$_size"
       _any=1
     done < "$_manifest"
   fi
-  [ "$_any" = 0 ] && printf '<p class="dl-empty">Buildy brzy k dispozici.</p>\n'
+  [ "$_any" = 0 ] && printf '<p class="dl-empty">%s</p>\n' "$(esc "$(t dl.empty)")"
   return 0
 }
 
@@ -115,7 +206,7 @@ shots_html() {
     done
     printf '</div>\n'
   fi
-  [ "$_any" = 0 ] && printf '<p class="shots-empty">Zatím bez screenshotů (%s).</p>\n' "$_kind"
+  [ "$_any" = 0 ] && printf '<p class="shots-empty">%s</p>\n' "$(esc "$(t "shots.empty.$_kind")")"
   return 0
 }
 
@@ -149,21 +240,21 @@ skin_card_inner() {
 
 # teaser section on the app detail page: preview cards linking into the subpage
 skins_teaser_html() {
-  _slug="$1"; _tsv="$DIST/skins/$_slug/skins.tsv"
+  _slug="$1"; _tsv="$DIST/skins/$_slug/skins$GSFX.tsv"
   _n="$(wc -l < "$_tsv" | tr -d ' ')"
-  printf '<section class="section"><h2>Skiny</h2>\n'
-  printf '<p class="skins-intro">%s vizuálních témat — každé s vlastními sprity, parallax pozadím, zvuky a hudbou.</p>\n' "$_n"
+  printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t skins.title)")"
+  printf '<p class="skins-intro">%s</p>\n' "$(esc "$(tf skins.teaser_intro "$_n")")"
   printf '<div class="skin-picker">'
   while IFS="$SEP" read -r s_id s_name s_year s_theme s_vessels s_bloom s_crt s_tint s_notes s_wiki s_px; do
     [ -n "${s_id:-}" ] || continue
-    printf '<a class="skin-chip" href="%s-skins.html#%s">' "$_slug" "$s_id"
+    printf '<a class="skin-chip" href="%s#%s">' "$(page_name "$_slug" skins)" "$s_id"
     skin_card_inner "$_slug" "$s_id" "$s_name" "$s_year"
     printf '</a>'
   done <<EOF
 $(tsv_rows "$_tsv")
 EOF
   printf '</div>\n'
-  printf '<p class="skins-more"><a href="%s-skins.html">Prozkoumat všechny skiny →</a></p>\n' "$_slug"
+  printf '<p class="skins-more"><a href="%s">%s</a></p>\n' "$(page_name "$_slug" skins)" "$(esc "$(t skins.more)")"
   printf '</section>\n'
   return 0
 }
@@ -172,7 +263,7 @@ EOF
 # (that is what makes the `default` skin's missing backgrounds/ a non-event)
 skin_assets_html() {
   _slug="$1"; _sk="$2"; _cat="$3"; _h="$4"; _g="${5:-}"
-  _rows="$(awk -F"$TAB" -v s="$_sk" -v c="$_cat" -v OFS="$SEP" '$1 == s && $3 == c { $1 = $1; print }' "$DIST/skins/$_slug/assets.tsv")"
+  _rows="$(awk -F"$TAB" -v s="$_sk" -v c="$_cat" -v OFS="$SEP" '$1 == s && $3 == c { $1 = $1; print }' "$DIST/skins/$_slug/assets$GSFX.tsv")"
   [ -n "$_rows" ] || return 0
   printf '<div class="skin-cat"><h3>%s</h3><div class="sprite-grid %s">' "$_h" "$_g"
   printf '%s\n' "$_rows" | while IFS="$SEP" read -r sk ord cat file label w h; do
@@ -189,7 +280,7 @@ skin_assets_html() {
 # and the JS track source, so the list exists exactly once.
 skin_audio_html() {
   _slug="$1"; _sk="$2"; _cat="$3"; _h="$4"
-  _rows="$(awk -F"$TAB" -v s="$_sk" -v c="$_cat" -v OFS="$SEP" '$1 == s && $3 == c { $1 = $1; print }' "$DIST/skins/$_slug/assets.tsv")"
+  _rows="$(awk -F"$TAB" -v s="$_sk" -v c="$_cat" -v OFS="$SEP" '$1 == s && $3 == c { $1 = $1; print }' "$DIST/skins/$_slug/assets$GSFX.tsv")"
   [ -n "$_rows" ] || return 0
   printf '<div class="skin-cat"><h3>%s</h3>' "$_h"
   if [ "$_cat" = sfx ]; then
@@ -201,9 +292,13 @@ skin_audio_html() {
     printf '</div>'
   else
     printf '<div class="audio" data-audio="music">'
-    printf '<div class="player" hidden><button type="button" class="p-prev" aria-label="Předchozí">⏮</button>'
-    printf '<button type="button" class="p-play" aria-label="Přehrát">▶</button>'
-    printf '<button type="button" class="p-next" aria-label="Další">⏭</button>'
+    # the play button flips to "pause" in store.js, so its two labels ride
+    # along on the element instead of being hard-coded in the script
+    printf '<div class="player" hidden data-play="%s" data-pause="%s">' \
+      "$(esc "$(t player.play)")" "$(esc "$(t player.pause)")"
+    printf '<button type="button" class="p-prev" aria-label="%s">⏮</button>' "$(esc "$(t player.prev)")"
+    printf '<button type="button" class="p-play" aria-label="%s">▶</button>' "$(esc "$(t player.play)")"
+    printf '<button type="button" class="p-next" aria-label="%s">⏭</button>' "$(esc "$(t player.next)")"
     printf '<span class="p-title"></span><progress class="p-bar" max="100" value="0"></progress></div>'
     printf '<ol class="tracklist">'
     printf '%s\n' "$_rows" | while IFS="$SEP" read -r sk ord cat file label secs rest; do
@@ -218,14 +313,13 @@ skin_audio_html() {
 
 # full subpage body: picker + one panel per skin
 skins_page_html() {
-  _slug="$1"; _appname="$2"; _tsv="$DIST/skins/$_slug/skins.tsv"
+  _slug="$1"; _appname="$2"; _tsv="$DIST/skins/$_slug/skins$GSFX.tsv"
   _n="$(wc -l < "$_tsv" | tr -d ' ')"
   printf '<section class="skins" id="skins">\n'
-  printf '<h1>Skiny</h1>\n'
-  printf '<p class="skins-intro">%s vizuálních témat pro %s. Každý skin má vlastní lodě, nepřátele, bosse, pozadí, zvuky i adaptivní hudbu.</p>\n' \
-    "$_n" "$(esc "$_appname")"
+  printf '<h1>%s</h1>\n' "$(esc "$(t skins.title)")"
+  printf '<p class="skins-intro">%s</p>\n' "$(esc "$(tf skins.page_intro "$_n" "$_appname")")"
 
-  printf '<div class="skin-picker" role="tablist" aria-label="Skiny">'
+  printf '<div class="skin-picker" role="tablist" aria-label="%s">' "$(esc "$(t skins.title)")"
   while IFS="$SEP" read -r s_id s_name s_year s_theme s_vessels s_bloom s_crt s_tint s_notes s_wiki s_px; do
     [ -n "${s_id:-}" ] || continue
     printf '<button type="button" class="skin-chip" role="tab" data-skin="%s" id="tab-%s" aria-selected="false" aria-controls="panel-%s">' \
@@ -243,38 +337,37 @@ EOF
       "$s_id" "$s_id" "$s_id" "$s_px"
     printf '<header class="skin-head"><h2>%s</h2>' "$(esc "$s_name")"
     printf '<p class="skin-theme">%s' "$(esc "$s_theme")"
-    [ -n "$s_vessels" ] && [ "$s_vessels" != 0 ] && printf ' · %s %s' "$s_vessels" "$(plural_ship "$s_vessels")"
+    [ -n "$s_vessels" ] && [ "$s_vessels" != 0 ] && printf ' · %s' "$(esc "$(vessels_label "$s_vessels")")"
     printf '</p><div class="badges">'
-    [ -n "$s_bloom" ] && [ "$s_bloom" != "—" ] && printf '<span class="badge">bloom %s</span>' "$(esc "$s_bloom")"
-    [ -n "$s_crt" ]   && [ "$s_crt"   != "—" ] && printf '<span class="badge">CRT %s</span>' "$(esc "$s_crt")"
-    [ -n "$s_tint" ]  && [ "$s_tint"  != "—" ] && printf '<span class="badge">tint %s</span>' "$(esc "$s_tint")"
-    [ "$s_px" = 1 ] && printf '<span class="badge">pixel art</span>'
+    [ -n "$s_bloom" ] && [ "$s_bloom" != "—" ] && printf '<span class="badge">%s</span>' "$(esc "$(tf skins.bloom "$s_bloom")")"
+    [ -n "$s_crt" ]   && [ "$s_crt"   != "—" ] && printf '<span class="badge">%s</span>' "$(esc "$(tf skins.crt "$s_crt")")"
+    [ -n "$s_tint" ]  && [ "$s_tint"  != "—" ] && printf '<span class="badge">%s</span>' "$(esc "$(tf skins.tint "$s_tint")")"
+    [ "$s_px" = 1 ] && printf '<span class="badge">%s</span>' "$(esc "$(t skins.pixelart)")"
     printf '</div>'
     if [ -n "$s_notes" ] || [ -n "$s_wiki" ]; then
       printf '<p class="skin-notes">%s' "$(esc "$s_notes")"
       [ -n "$s_notes" ] && [ -n "$s_wiki" ] && printf ' · '
-      [ -n "$s_wiki" ] && printf '<a href="%s" rel="noopener">Wikipedie</a>' "$(esc "$s_wiki")"
+      [ -n "$s_wiki" ] && printf '<a href="%s" rel="noopener">%s</a>' "$(esc "$s_wiki")" "$(esc "$(t skins.wiki)")"
       printf '</p>'
     fi
     printf '</header>\n'
 
-    skin_assets_html "$_slug" "$s_id" preview     "Náhled"                hero
-    skin_assets_html "$_slug" "$s_id" vessels     "Lodě"
-    skin_assets_html "$_slug" "$s_id" enemies     "Nepřátelé"
-    skin_assets_html "$_slug" "$s_id" boss        "Boss"
-    skin_assets_html "$_slug" "$s_id" asteroids   "Asteroidy"
-    skin_assets_html "$_slug" "$s_id" fx          "Efekty a projektily"
-    skin_assets_html "$_slug" "$s_id" ui          "Game center"           ui
-    skin_assets_html "$_slug" "$s_id" backgrounds "Pozadí"                bg
-    skin_audio_html  "$_slug" "$s_id" sfx         "Zvuky (SFX)"
-    skin_audio_html  "$_slug" "$s_id" music       "Hudba"
+    skin_assets_html "$_slug" "$s_id" preview     "$(t cat.preview)"     hero
+    skin_assets_html "$_slug" "$s_id" vessels     "$(t cat.vessels)"
+    skin_assets_html "$_slug" "$s_id" enemies     "$(t cat.enemies)"
+    skin_assets_html "$_slug" "$s_id" boss        "$(t cat.boss)"
+    skin_assets_html "$_slug" "$s_id" asteroids   "$(t cat.asteroids)"
+    skin_assets_html "$_slug" "$s_id" fx          "$(t cat.fx)"
+    skin_assets_html "$_slug" "$s_id" ui          "$(t cat.ui)"           ui
+    skin_assets_html "$_slug" "$s_id" backgrounds "$(t cat.backgrounds)"  bg
+    skin_audio_html  "$_slug" "$s_id" sfx         "$(t cat.sfx)"
+    skin_audio_html  "$_slug" "$s_id" music       "$(t cat.music)"
     printf '</div>\n'
   done <<EOF
 $(tsv_rows "$_tsv")
 EOF
 
-  printf '<p class="skins-disclaimer">Skiny jsou volnou poctou klasickým střílečkám. %s není nijak spojen s jejich autory ani vydavateli a nepoužívá jejich původní grafiku ani zvuky.</p>\n' \
-    "$(esc "$_appname")"
+  printf '<p class="skins-disclaimer">%s</p>\n' "$(esc "$(tf skins.disclaimer "$_appname")")"
   printf '</section>\n'
   return 0
 }
@@ -286,6 +379,43 @@ plural_ship() {
     2|3|4) echo "lodě" ;;
     *) echo "lodí" ;;
   esac
+}
+
+# "6 lodí" is Czech grammar, not a format string — the count picks the case.
+# Languages that do not inflect just take a format out of the catalog.
+vessels_label() {
+  case "$I18N_LANG" in
+    cs) printf '%s %s' "$1" "$(plural_ship "$1")" ;;
+    *)  tf skins.vessels "$1" ;;
+  esac
+}
+
+# i18n_gallery <slug> <lang> <catalog.tsv>
+# Writes dist/skins/<slug>/{skins,assets}.<lang>.tsv, the manifests the page
+# functions read for that language. Rows are keyed on the source string
+# (`label.<text>`), which is what lets `make import-skins` regenerate the
+# gallery from the game repo without invalidating the translation; a cell with
+# no row passes through, which is what we want for ship and enemy names.
+i18n_gallery() {
+  _gslug="$1"; _glang="$2"; _gcat="$3"; _gdir="$DIST/skins/$_gslug"
+  for _gf in skins assets; do
+    [ -f "$_gdir/$_gf.tsv" ] || continue
+    if [ -f "$_gcat" ]; then
+      awk -F"$TAB" -v OFS="$TAB" -v cat="$_gcat" -v which="$_gf" '
+        function tr(v) { return (v in m) ? m[v] : v }
+        FILENAME == cat {
+          if (NF >= 2 && substr($1, 1, 6) == "label.") m[substr($1, 7)] = $2
+          next
+        }
+        which == "skins"  { $4 = tr($4); $6 = tr($6); $7 = tr($7); $8 = tr($8); $9 = tr($9) }
+        which == "assets" { $5 = tr($5) }
+        { print }
+      ' "$_gcat" "$_gdir/$_gf.tsv" > "$_gdir/$_gf.$_glang.tsv"
+    else
+      cp "$_gdir/$_gf.tsv" "$_gdir/$_gf.$_glang.tsv"
+    fi
+  done
+  return 0
 }
 
 # ---- prepare dist ----
@@ -481,9 +611,13 @@ fleet_audio_html() {
     printf '</div>'
   else
     printf '<div class="audio" data-audio="music">'
-    printf '<div class="player" hidden><button type="button" class="p-prev" aria-label="Předchozí">⏮</button>'
-    printf '<button type="button" class="p-play" aria-label="Přehrát">▶</button>'
-    printf '<button type="button" class="p-next" aria-label="Další">⏭</button>'
+    # the play button flips to "pause" in store.js, so its two labels ride
+    # along on the element instead of being hard-coded in the script
+    printf '<div class="player" hidden data-play="%s" data-pause="%s">' \
+      "$(esc "$(t player.play)")" "$(esc "$(t player.pause)")"
+    printf '<button type="button" class="p-prev" aria-label="%s">⏮</button>' "$(esc "$(t player.prev)")"
+    printf '<button type="button" class="p-play" aria-label="%s">▶</button>' "$(esc "$(t player.play)")"
+    printf '<button type="button" class="p-next" aria-label="%s">⏭</button>' "$(esc "$(t player.next)")"
     printf '<span class="p-title"></span><progress class="p-bar" max="100" value="0"></progress></div>'
     printf '<ol class="tracklist">'
     printf '%s\n' "$_rows" | while IFS="$SEP" read -r c_cat c_ord c_file c_label c_secs c_rest; do
@@ -654,101 +788,131 @@ ORDER_LIST="$(for m in "$APPS"/*/meta.md; do
 done | sort -n -k1,1)"
 
 # ---- build per-app pages + accumulate index cards ----
+# The inner loop is the app's language list: every page an app has is built
+# once per language it declares, and the index (one shared page) is built from
+# the base language only.
 CARDS=""
 while IFS="$TAB" read -r ord meta; do
   [ -n "${meta:-}" ] || continue
+  appdir="$(dirname "$meta")"
   slug="$(fm_get "$meta" slug)"
   name="$(fm_get "$meta" name)"
-  tagline="$(fm_get "$meta" tagline)"
   featured="$(fm_get "$meta" featured)"
   icon="$(icon_html "$slug" "$name")"
-  badges="$(badges_html "$meta" "$featured")"
+  langs="$(app_langs "$meta")"
 
-  # index card
-  CARDS="$CARDS<a class=\"app-card\" href=\"$slug.html\">
+  for lang in $langs; do
+    # base catalog first, then the language, then whatever this app overrides:
+    # an app can reword the chrome for itself without touching any other app
+    i18n_load "$lang" "$TPL/i18n/$I18N_BASE.tsv" "$TPL/i18n/$lang.tsv" "$appdir/i18n/$lang.tsv"
+    lmeta="$(tr_meta "$meta" "$lang")"
+    lname="$(fm_get_l "$lmeta" "$meta" name)"
+    tagline="$(fm_get_l "$lmeta" "$meta" tagline)"
+    badges="$(badges_html "$meta" "$featured")"
+
+    GSFX=""
+    if [ "$lang" != "$I18N_BASE" ]; then
+      GSFX=".$lang"
+      if skins_have "$slug"; then i18n_gallery "$slug" "$lang" "$appdir/i18n/$lang.tsv"; fi
+    fi
+
+    lsw_app="$(lang_switch_html "$slug" "" $langs)"
+    alt_app="$(alts_html "$slug" "" $langs)"
+
+    # index card — one per app, in the base language
+    if [ "$lang" = "$I18N_BASE" ]; then
+      CARDS="$CARDS<a class=\"app-card\" href=\"$(page_name "$slug")\">
   <div class=\"icon\">$icon</div>
-  <h3 class=\"name\">$name</h3>
+  <h3 class=\"name\">$lname</h3>
   <p class=\"tagline\">$tagline</p>
   <div class=\"badges\">$badges</div>
 </a>
 "
+    fi
 
-  # detail page
-  {
-    emit_head "$name — olin.now"
-    cat <<HERO
-<a class="back-link" href="index.html">← Všechny aplikace</a>
+    # detail page
+    {
+      emit_head "$(tf title.app "$lname")" "$alt_app"
+      page_top_html "index.html" "$(t nav.all_apps)" "$lsw_app"
+      cat <<HERO
 <section class="app-hero">
   <div class="icon">$icon</div>
   <div>
-    <h1>$name</h1>
+    <h1>$lname</h1>
     <p class="tagline">$tagline</p>
     <div class="badges">$badges</div>
   </div>
 </section>
 HERO
-    echo '<section class="section"><h2>Ke stažení</h2><div class="downloads">'
-    downloads_html "$slug"
-    store_links_html "$meta"
-    echo '</div></section>'
-    # explicit `if` (not `&&`): under `set -e` a failing guard as the last
-    # command of this group would truncate the page
-    if skins_have "$slug"; then skins_teaser_html "$slug"; fi
-    if visuals_have "$slug"; then visuals_teaser_html "$slug"; fi
-    if fleets_have "$slug"; then fleets_teaser_html "$slug"; fi
-    echo '<section class="section"><h2>Screenshoty — desktop</h2>'
-    shots_html "$slug" desktop
-    echo '</section>'
-    echo '<section class="section"><h2>Screenshoty — mobil</h2>'
-    shots_html "$slug" mobile
-    echo '</section>'
-    echo '<section class="section"><h2>Popis</h2><div class="app-desc">'
-    fm_body "$meta" | md_to_html
-    echo '</div></section>'
-    emit_brand
-    emit_foot
-  } > "$DIST/$slug.html"
-  echo "  built $slug.html"
-
-  # skins subpage — flat URL at dist/ root, so __BASE__ stays empty and
-  # `rm -f dist/*.html` already cleans it
-  if skins_have "$slug"; then
-    {
-      emit_head "$name — skiny — olin.now"
-      printf '<a class="back-link" href="%s.html">← Zpět na %s</a>\n' "$slug" "$name"
-      skins_page_html "$slug" "$name"
+      printf '<section class="section"><h2>%s</h2><div class="downloads">\n' "$(esc "$(t sec.downloads)")"
+      downloads_html "$slug"
+      store_links_html "$meta"
+      echo '</div></section>'
+      # explicit `if` (not `&&`): under `set -e` a failing guard as the last
+      # command of this group would truncate the page
+      if skins_have "$slug"; then skins_teaser_html "$slug"; fi
+      if visuals_have "$slug"; then visuals_teaser_html "$slug"; fi
+      if fleets_have "$slug"; then fleets_teaser_html "$slug"; fi
+      printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t sec.shots_desktop)")"
+      shots_html "$slug" desktop
+      echo '</section>'
+      printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t sec.shots_mobile)")"
+      shots_html "$slug" mobile
+      echo '</section>'
+      printf '<section class="section"><h2>%s</h2><div class="app-desc">\n' "$(esc "$(t sec.description)")"
+      fm_body "$lmeta" | md_to_html
+      echo '</div></section>'
       emit_brand
       emit_foot
-    } > "$DIST/$slug-skins.html"
-    echo "  built $slug-skins.html"
-  fi
+    } > "$DIST/$(page_name "$slug")"
+    echo "  built $(page_name "$slug")"
 
-  if visuals_have "$slug"; then
-    {
-      emit_head "$name — vizuály — olin.now"
-      printf '<a class="back-link" href="%s.html">← Zpět na %s</a>\n' "$slug" "$name"
-      visuals_page_html "$slug" "$name"
-      emit_brand
-      emit_foot
-    } > "$DIST/$slug-visuals.html"
-    echo "  built $slug-visuals.html"
-  fi
+    back_href="$(page_name "$slug")"
+    back_label="$(tf nav.back_to "$lname")"
 
-  if fleets_have "$slug"; then
-    {
-      emit_head "$name — flotily a manévry — olin.now"
-      printf '<a class="back-link" href="%s.html">← Zpět na %s</a>\n' "$slug" "$name"
-      fleets_page_html "$slug" "$name"
-      emit_brand
-      emit_foot
-    } > "$DIST/$slug-fleets.html"
-    echo "  built $slug-fleets.html"
-  fi
+    # skins subpage — flat URL at dist/ root, so __BASE__ stays empty and
+    # `rm -f dist/*.html` already cleans it
+    if skins_have "$slug"; then
+      {
+        emit_head "$(tf title.skins "$lname")" "$(alts_html "$slug" skins $langs)"
+        page_top_html "$back_href" "$back_label" "$(lang_switch_html "$slug" skins $langs)"
+        skins_page_html "$slug" "$lname"
+        emit_brand
+        emit_foot
+      } > "$DIST/$(page_name "$slug" skins)"
+      echo "  built $(page_name "$slug" skins)"
+    fi
+
+    # visuals and fleets are single-language today: their chrome still lives in
+    # the scripts, so they are built for the base language only
+    if [ "$lang" = "$I18N_BASE" ] && visuals_have "$slug"; then
+      {
+        emit_head "$lname — vizuály — olin.now"
+        page_top_html "$back_href" "$back_label" ""
+        visuals_page_html "$slug" "$lname"
+        emit_brand
+        emit_foot
+      } > "$DIST/$slug-visuals.html"
+      echo "  built $slug-visuals.html"
+    fi
+
+    if [ "$lang" = "$I18N_BASE" ] && fleets_have "$slug"; then
+      {
+        emit_head "$lname — flotily a manévry — olin.now"
+        page_top_html "$back_href" "$back_label" ""
+        fleets_page_html "$slug" "$lname"
+        emit_brand
+        emit_foot
+      } > "$DIST/$slug-fleets.html"
+      echo "  built $slug-fleets.html"
+    fi
+  done
 done <<EOF
 $ORDER_LIST
 EOF
 
 # ---- build index ----
+i18n_load "$I18N_BASE" "$TPL/i18n/$I18N_BASE.tsv"
 {
   emit_head "Ananas&Bananas — olin.now"
   echo '<section class="app-grid">'

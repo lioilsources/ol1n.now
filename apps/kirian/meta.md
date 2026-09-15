@@ -4,6 +4,7 @@ name: Kirian
 repo: lioilsources/Kiran
 tagline: Vertikální arkádová střílečka s roguelike smyčkou
 order: 5
+langs: cs,ja
 featured: true
 desktop: macos,windows,linux
 mobile: android,ios
