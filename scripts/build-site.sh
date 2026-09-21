@@ -919,6 +919,8 @@ EOF
 # lines carry the title, the meta description and the contact address.
 page_meta() { sed -n "s/^<!-- $2: \(.*\) -->\$/\1/p" "$1" | head -1; }
 sed_safe() { printf '%s' "$1" | sed 's/[&|]/\\&/g'; }
+# the app loop leaves whichever language it built last; these pages are Czech
+i18n_load "$I18N_BASE" "$TPL/i18n/$I18N_BASE.tsv"
 for page in "$ROOT"/pages/*.html; do
   [ -e "$page" ] || continue
   pname="$(basename "$page" .html)"
