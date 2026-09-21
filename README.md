@@ -154,8 +154,10 @@ v terénu, školy a zájemce o rodokmen. Zdroj je `pages/business.html` (jen tě
 stránky), vzhled `assets/css/business.css`. `make build` ji zabalí do stejné
 hlavičky a patičky jako obchod a zapíše do `dist/business.html`.
 
-- Kontaktní adresa je na jednom místě: řádek `<!-- email: … -->` na začátku
-  souboru. V textu se na ni odkazuje zástupkou `__EMAIL__`.
+- Kontaktní adresa je na jednom místě: řádky `<!-- email-user: … -->` a
+  `<!-- email-domain: … -->` na začátku souboru. Je rozdělená schválně, aby ve
+  veřejném repu nebyl řetězec `x@y`, který sbírají roboti. V textu se na ni
+  odkazuje zástupkou `__EMAIL__`; na živém webu ji maskuje Cloudflare.
 - `business.css` se načítá po `store.css` a přepisuje hlavně proměnné s barvami
   (černá, zlatá, šedá). Karty, čipy a písmo jsou z obchodu.
 - Přepínač nabídek je stejný kód jako přepínač skinů v `store.js`. Na konkrétní

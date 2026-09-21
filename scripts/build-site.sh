@@ -916,7 +916,9 @@ EOF
 # assets/css/<name>.css, when present, is linked after store.css: the store's
 # layout is all CSS variables, so a page re-skins itself by redefining them
 # (business.html is the store in black and gold). Leading `<!-- key: value -->`
-# lines carry the title, the meta description and the contact address.
+# lines carry the title, the meta description and the contact address. The
+# address is kept as two halves (email-user, email-domain) so that no harvestable
+# `x@y` string sits in this public repo; on the live site Cloudflare obfuscates it.
 page_meta() { sed -n "s/^<!-- $2: \(.*\) -->\$/\1/p" "$1" | head -1; }
 sed_safe() { printf '%s' "$1" | sed 's/[&|]/\\&/g'; }
 # the app loop leaves whichever language it built last; these pages are Czech
@@ -926,7 +928,7 @@ for page in "$ROOT"/pages/*.html; do
   pname="$(basename "$page" .html)"
   ptitle="$(page_meta "$page" title)"
   pdesc="$(page_meta "$page" description)"
-  pmail="$(page_meta "$page" email)"
+  pmail="$(page_meta "$page" email-user)@$(page_meta "$page" email-domain)"
   extra=""
   if [ -n "$pdesc" ]; then
     extra="$extra<meta name=\"description\" content=\"$pdesc\"><meta property=\"og:title\" content=\"$ptitle\"><meta property=\"og:description\" content=\"$pdesc\"><meta property=\"og:type\" content=\"website\">"
@@ -938,7 +940,7 @@ for page in "$ROOT"/pages/*.html; do
     emit_head "$ptitle" | sed "s|</head>|$(sed_safe "$extra")</head>|"
     # Czech typography: a one-letter preposition or conjunction never ends a
     # line. Applied twice because matches cannot overlap ("a v lese").
-    grep -v -e '^<!-- title: ' -e '^<!-- description: ' -e '^<!-- email: ' "$page" \
+    grep -v -e '^<!-- title: ' -e '^<!-- description: ' -e '^<!-- email-' "$page" \
       | sed -e "s|__EMAIL__|$(sed_safe "$pmail")|g" \
             -e 's/ \([ksvzouaiKSVZOUAI]\) / \1\&nbsp;/g' \
             -e 's/\&nbsp;\([ksvzouaiKSVZOUAI]\) /\&nbsp;\1\&nbsp;/g'

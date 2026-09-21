@@ -144,9 +144,13 @@ implementation drifts from the engine the first time a curve changes.
 
 `pages/<name>.html` is a body fragment; `build-site.sh` wraps it in the store's
 head/foot and writes `dist/<name>.html`, which GitHub Pages also serves as
-`/<name>`. Leading `<!-- title: -->`, `<!-- description: -->` and `<!-- email: -->`
-lines are metadata, not content; `__EMAIL__` in the body is replaced by the last one,
-so the contact address lives in exactly one place.
+`/<name>`. Leading `<!-- title: -->`, `<!-- description: -->`, `<!-- email-user: -->`
+and `<!-- email-domain: -->` lines are metadata, not content; `__EMAIL__` in the body
+is replaced by user@domain, so the contact address lives in exactly one place. It is
+split in two on purpose: this repo is public and harvesters grep it for `x@y`. On the
+live site Cloudflare's email obfuscation rewrites every occurrence, so never paste the
+address as plain text anywhere else in the repo. It is a Cloudflare Email Routing alias
+(catch-all off) — if it starts drawing spam, rotate the alias rather than filtering.
 
 A sibling `assets/css/<name>.css` is linked after `store.css`. The store's layout is
 all CSS variables, so `business.css` is mostly a palette (black, gold, grey) — the
