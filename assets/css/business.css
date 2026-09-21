@@ -105,18 +105,21 @@ strong { color: var(--text-strong); font-weight: 600; }
 .first-step p { margin: 0 0 18px; }
 .first-step .dl-btn { margin: 0 8px 8px 0; }
 
-/* What already runs — the repos behind the offer */
-.proof { margin-top: 56px; }
-.proof h3 { font-size: 17px; color: var(--text-strong); margin: 0 0 4px; }
-.proof > p { color: var(--text-dim); font-size: 14px; margin: 0 0 18px; max-width: 64ch; }
-.proof-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
-.proof-card {
-  display: block; padding: 16px 18px 18px; color: var(--text);
-  background: var(--card); border: 1px solid var(--border); border-radius: 14px;
-}
-.proof-card:hover { text-decoration: none; background: var(--card-hover); border-color: #4a4222; }
-.proof-card .n { display: block; color: var(--accent); font-weight: 600; font-size: 14px; margin-bottom: 4px; }
-.proof-card .t { display: block; font-size: 13.5px; line-height: 1.5; }
+/* Technologies behind the offer: label left, plain list right. No pills —
+   forty badges read as decoration, a sentence reads as a list. */
+.tech { margin-top: 56px; }
+.tech h3, .demo h3 { font-size: 17px; color: var(--text-strong); margin: 0 0 14px; }
+.tech dl { margin: 0; border-top: 1px solid var(--border); }
+.tech dl > div { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 4px 24px; padding: 11px 0; border-bottom: 1px solid var(--border); }
+.tech dt { color: var(--accent); font-size: 14px; font-weight: 600; }
+.tech dd { margin: 0; font-size: 14.5px; max-width: 78ch; }
+
+/* Screenshots of the features on offer — the store's own .shots strip */
+.demo { margin-top: 48px; }
+.demo > p { color: var(--text-dim); font-size: 14px; margin: -6px 0 16px; max-width: 70ch; }
+.demo .shots + .shots { margin-top: 16px; }
+.demo .shots.mobile img { height: 380px; }
+.shot-wide { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; }
 
 /* ---- how it goes: a real sequence, so it is numbered ---- */
 .biz-steps { margin-top: 96px; padding-top: 40px; border-top: 1px solid var(--border); }
@@ -154,4 +157,6 @@ strong { color: var(--text-strong); font-weight: 600; }
   .biz-offers .skin-chip { padding: 12px; }
   .biz-offers .skin-chip .y { display: none; }
   .biz-steps ol { grid-template-columns: 1fr; }
+  .tech dl > div { grid-template-columns: 1fr; }
+  .demo .shots.mobile img { height: 320px; }
 }

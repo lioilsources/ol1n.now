@@ -946,6 +946,12 @@ for page in "$ROOT"/pages/*.html; do
             -e 's/\&nbsp;\([ksvzouaiKSVZOUAI]\) /\&nbsp;\1\&nbsp;/g'
     emit_foot
   } > "$DIST/$pname.html"
+  # These pages borrow the store's screenshots by path; a renamed raw file would
+  # otherwise ship as a broken image without anyone noticing.
+  grep -o 'src="[^"]*"' "$DIST/$pname.html" | sed 's/^src="//; s/"$//; s/?.*//' | while read -r _src; do
+    case "$_src" in http*|/*|data:*) continue ;; esac
+    [ -f "$DIST/$_src" ] || echo "  warning: $pname.html references missing $_src" >&2
+  done
   echo "  built $pname.html"
 done
 

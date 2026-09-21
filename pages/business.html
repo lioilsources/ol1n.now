@@ -82,21 +82,18 @@
       <p>Na 2–4 týdny dostanete vzdálený přístup do mého studia a zpracujeme tři vaše reálná zadání. Na konci porovnáme výstupy s tím, co používáte dnes, a řeknu vám, jestli se vlastní studio vyplatí.</p>
       <a class="dl-btn" href="mailto:__EMAIL__?subject=Pilot%20AI%20studia%20pro%20agenturu">Napsat kvůli pilotu</a>
     </div>
-    <div class="proof">
-      <h3>Co už běží</h3>
-      <p>Nabídka stojí na nástrojích, které používám každý den. Většina kódu je veřejná.</p>
-      <div class="proof-grid">
-        <a class="proof-card" href="ol1nllm.html"><span class="n">Ol1nLLM</span><span class="t">Aplikace pro telefon i počítač: soukromý chat a obrazové studio s kontrolou pózy, stylu a úprav.</span></a>
-        <div class="proof-card"><span class="n">video-stack</span><span class="t">Video z fotky nebo textu, knihovna hotových postupů a změřené časy. Hotový třicetisekundový reklamní spot.</span></div>
-        <div class="proof-card"><span class="n">AiStack</span><span class="t">Jedno rozhraní pro jazykové modely, obrázky, hudbu a zvuky. Fronty úloh a přehled licencí.</span></div>
-        <a class="proof-card" href="https://github.com/lioilsources/FineTuneGallery" rel="noopener"><span class="n">FineTuneGallery</span><span class="t">Hodnocení výstupů a doladění modelu na styl značky. Ze schválených obrázků vznikají tréninková data.</span></a>
-        <a class="proof-card" href="https://github.com/lioilsources/status-collector" rel="noopener"><span class="n">status-collector</span><span class="t">Stavová stránka vašeho studia: dostupnost za 30 dní, fronta úloh, vytížení stroje.</span></a>
-        <a class="proof-card" href="https://github.com/lioilsources/PromoClown" rel="noopener"><span class="n">PromoClown</span><span class="t">Agent na promo. Navrhne příspěvky, vy je schválíte v Telegramu, on je naplánuje. Bez schválení nezveřejní nic.</span></a>
-        <a class="proof-card" href="https://github.com/lioilsources/WorldLibraryProject" rel="noopener"><span class="n">WorldLibraryProject</span><span class="t">Chat nad vlastní knihovnou dokumentů s citacemi zdrojů. Dnes 93 děl v původních jazycích.</span></a>
-        <a class="proof-card" href="mangaprompts.html"><span class="n">MangaPrompts</span><span class="t">Fotka v novém stylu, rozhýbaná fotka, zkouška účesu. Běží jako samoobsluha v Telegramu.</span></a>
-        <a class="proof-card" href="https://github.com/lioilsources/AiController" rel="noopener"><span class="n">AiController</span><span class="t">Přepínání modelů, aby jedna stanice zvládla text, obraz, video i zvuk.</span></a>
-        <div class="proof-card"><span class="n">ComfyUI-Custom-SPARK</span><span class="t">Generovací jádro vyladěné pro DGX Spark, včetně převodu obrázku na 3D model.</span></div>
-      </div>
+    <div class="tech">
+      <h3>Technologie</h3>
+      <dl>
+        <div><dt>Stanice a provoz</dt><dd>NVIDIA DGX Spark se 128 GB paměti, Docker Compose, systemd, Cloudflare Tunnel a Access, dohled se stavovou stránkou</dd></div>
+        <div><dt>Jazykové modely</dt><dd>vLLM, LiteLLM, NVIDIA NIM; Qwen3, gpt-oss, Nemotron; rozhraní kompatibilní s OpenAI API</dd></div>
+        <div><dt>Obraz</dt><dd>ComfyUI, FLUX, SDXL, ControlNet pro pózu a hloubku, domalování podle masky, doladění stylu přes LoRA</dd></div>
+        <div><dt>Video</dt><dd>Wan 2.2: video z textu, z fotky, mezi dvěma snímky, s pohybem kamery; LTX-2: video se zvukem; RIFE, ffmpeg</dd></div>
+        <div><dt>Zvuk</dt><dd>ACE-Step pro hudbu, MOSS-SoundEffect pro zvukové efekty, vyrovnání hlasitosti</dd></div>
+        <div><dt>Dokumenty</dt><dd>odpovědi z vlastních dokumentů s citacemi zdrojů; vícejazyčné vyhledávání (e5, bge-m3), ChromaDB, PostgreSQL s pgvector</dd></div>
+        <div><dt>Aplikace</dt><dd>Flutter pro iOS, Android, macOS, Windows, Linux a web; Go, FastAPI, Svelte</dd></div>
+        <div><dt>Promo</dt><dd>agent, který navrhuje příspěvky, schvalování v Telegramu, plánování přes Postiz</dd></div>
+      </dl>
     </div>
   </div>
 
@@ -149,16 +146,25 @@
       <p>Pošlete trailer nebo build a seznam toho, co vám chybí. Vyrobím první balíček za pevnou cenu. Co se nepovede, předělám, a co nejde, řeknu předem.</p>
       <a class="dl-btn" href="mailto:__EMAIL__?subject=Assety%20pro%20na%C5%A1i%20hru">Napsat, co hře chybí</a>
     </div>
-    <div class="proof">
-      <h3>Co už běží</h3>
-      <p>Sám hry vydávám a tyhle nástroje jsem si postavil nejdřív pro ně.</p>
-      <div class="proof-grid">
-        <a class="proof-card" href="ugcfactory.html"><span class="n">UGCFactory</span><span class="t">Linka z textu na 3D předmět pro Roblox: koncept, model, převod v Blenderu, balíček. S auditem licencí.</span></a>
-        <a class="proof-card" href="kirian.html"><span class="n">Kirian</span><span class="t">Vlastní střílečka na App Storu. Kvůli ní vznikla služba na hudbu a zvuky i třicetisekundový reklamní spot.</span></a>
-        <div class="proof-card"><span class="n">AiStack</span><span class="t">Hudba za 12–15 s, zvukový efekt asi za 24 s. Do výroby jdou jen modely s licencí MIT nebo Apache 2.0.</span></div>
-        <div class="proof-card"><span class="n">video-stack</span><span class="t">Třicetisekundový spot z herních assetů: deset záběrů, hudba, zvuky, titulky.</span></div>
-        <a class="proof-card" href="https://github.com/lioilsources/PromoClown" rel="noopener"><span class="n">PromoClown</span><span class="t">Promo agent se schvalováním v Telegramu a hlídáním recenzí.</span></a>
-        <a class="proof-card" href="https://github.com/lioilsources/Distribution" rel="noopener"><span class="n">Distribution</span><span class="t">Vydávací pipeline, kterou jde do obchodů osm mých aplikací.</span></a>
+    <div class="tech">
+      <h3>Technologie</h3>
+      <dl>
+        <div><dt>Zvuk a hudba</dt><dd>ACE-Step, MOSS-SoundEffect, vyrovnání hlasitosti, výstup OGG a WAV</dd></div>
+        <div><dt>3D</dt><dd>TRELLIS.2, Stable Fast 3D, Blender bez obrazovky: převod, rig, přenos animací, export GLB a FBX, limity pro Roblox</dd></div>
+        <div><dt>Koncepty a textury</dt><dd>ComfyUI, SDXL, odstranění pozadí</dd></div>
+        <div><dt>Trailer a spot</dt><dd>Wan 2.2, RIFE, střih a titulky přes ffmpeg</dd></div>
+        <div><dt>Promo</dt><dd>agent se schvalováním v Telegramu, Postiz; hlídání recenzí z App Storu a Google Play, komentářů na YouTube, zmínek na Bluesky a Redditu</dd></div>
+        <div><dt>Vydávání</dt><dd>GitHub Actions, TestFlight, Google Play, Firebase App Distribution, desktopové buildy</dd></div>
+        <div><dt>Enginy, ve kterých dělám</dt><dd>Flutter a Flame, Unity, Godot, Roblox, Luanti, PICO-8</dd></div>
+      </dl>
+    </div>
+    <div class="demo">
+      <h3>Ukázky</h3>
+      <p>Linka na 3D předměty: hotové modely a třídění návrhů na počítači i v telefonu.</p>
+      <div class="shots desktop">
+        <img src="screenshots/ugcfactory/desktop/3d-modely.png" alt="Šest vygenerovaných 3D předmětů: batoh, dort, prsten, čelenka, batoh a drak" loading="lazy">
+        <img src="screenshots/ugcfactory/desktop/triage.png" alt="Třídění návrhů: obrázek, zadání a tlačítka zamítnout, znovu, schválit" loading="lazy">
+        <img src="screenshots/ugcfactory/mobile/triage-mobil.png" alt="Třídění návrhů v telefonu" loading="lazy">
       </div>
     </div>
   </div>
@@ -210,14 +216,16 @@
       <p>Pošlete adresu XML feedu. Nahraju katalog, vyzkouším dvacet dotazů, jaké píšou vaši zákazníci, a ukážu vám výsledek i s tím, kde poradce chyboval.</p>
       <a class="dl-btn" href="mailto:__EMAIL__?subject=Poradce%20pro%20n%C3%A1%C5%A1%20e-shop">Poslat adresu feedu</a>
     </div>
-    <div class="proof">
-      <h3>Co už běží</h3>
-      <p>Tři rozpracované projekty. Žádný zatím neběží u zákazníka.</p>
-      <div class="proof-grid">
-        <a class="proof-card" href="https://github.com/lioilsources/Shopify" rel="noopener"><span class="n">ChatShop</span><span class="t">Chat nad katalogem, galerie produktů a filtry, které rostou se sortimentem. Čeština přes vícejazyčné vyhledávání.</span></a>
-        <a class="proof-card" href="https://github.com/lioilsources/AukrofySimulation" rel="noopener"><span class="n">AukrofySimulation</span><span class="t">Simulátor aukcí. Dražitele hraje jazykový model, zkoušet jde holandská, Vickreyho i centová aukce a jejich parametry.</span></a>
-        <a class="proof-card" href="https://github.com/lioilsources/EduRAG" rel="noopener"><span class="n">EduRAG</span><span class="t">Odpovědi z vlastního korpusu textů s uvedením zdrojů, celé bez cizích služeb. Návody, PDF a FAQ zatím číst neumí.</span></a>
-      </div>
+    <div class="tech">
+      <h3>Technologie</h3>
+      <dl>
+        <div><dt>Vyhledávání a doporučení</dt><dd>PostgreSQL s pgvector, vícejazyčné vektory bge-m3 včetně češtiny, atributy v JSONB, filtry generované z katalogu</dd></div>
+        <div><dt>Jazykový model</dt><dd>Qwen3 32B přes vLLM; rozhraní kompatibilní s OpenAI API, takže jde vyměnit</dd></div>
+        <div><dt>Web</dt><dd>SvelteKit, TypeScript, Tailwind, PWA; FastAPI; odpovědi streamované přes SSE</dd></div>
+        <div><dt>Data</dt><dd>XML feed pro Heureku a Zboží, EAN, parametry, dostupnost</dd></div>
+        <div><dt>Provoz</dt><dd>Docker Compose, Caddy s Let’s Encrypt, Cloudflare</dd></div>
+        <div><dt>Simulace aukcí</dt><dd>Go, SQLite, dražitelé řízení jazykovým modelem; holandská, Vickreyho a centová aukce</dd></div>
+      </dl>
     </div>
   </div>
 
@@ -270,11 +278,15 @@
       <p>Jedna parta, čtyři týdny, skutečné zakázky. Na konci položíme výkaz z aplikace vedle toho, co jste za stejný měsíc sepsali ručně.</p>
       <a class="dl-btn" href="mailto:__EMAIL__?subject=Doch%C3%A1zka%20na%20zak%C3%A1zk%C3%A1ch">Napsat kvůli pilotu</a>
     </div>
-    <div class="proof">
-      <h3>Co už běží</h3>
-      <div class="proof-grid">
-        <a class="proof-card" href="https://github.com/lioilsources/PMTracker" rel="noopener"><span class="n">PMTracker</span><span class="t">Aplikace ve Flutteru nad Supabase. Práva podle rolí hlídá databáze, ne aplikace, a souřadnice se nikam neukládají.</span></a>
-      </div>
+    <div class="tech">
+      <h3>Technologie</h3>
+      <dl>
+        <div><dt>Aplikace</dt><dd>Flutter pro iPhone a Android, Riverpod, GoRouter</dd></div>
+        <div><dt>Server</dt><dd>Supabase: PostgreSQL, PostGIS pro okruh zakázky, práva po řádcích (RLS), serverové funkce, pg_cron</dd></div>
+        <div><dt>Soukromí</dt><dd>souřadnice se neukládají, jen výsledek ověření; auditní záznam; data v EU</dd></div>
+        <div><dt>Bez připojení</dt><dd>PowerSync, připravený k zapnutí</dd></div>
+        <div><dt>Výstupy</dt><dd>CSV pro mzdy; PDF a napojení na mzdový systém na zakázku</dd></div>
+      </dl>
     </div>
   </div>
 
@@ -325,12 +337,27 @@
       <p>Pošlete slovíčka jedné lekce. Udělám z nich balíček, učitel ho projde a opraví, třída ho měsíc používá. Pak se rozhodnete, jestli chcete další.</p>
       <a class="dl-btn" href="mailto:__EMAIL__?subject=Karti%C4%8Dky%20pro%20na%C5%A1i%20%C5%A1kolu">Poslat slovíčka</a>
     </div>
-    <div class="proof">
-      <h3>Co už běží</h3>
-      <div class="proof-grid">
-        <a class="proof-card" href="lexify.html"><span class="n">Lexify</span><span class="t">14 balíčků po 50 kartách v 17 jazycích. Překlady a obrázky ke kartám vznikají na mém stroji.</span></a>
-        <a class="proof-card" href="swypekids.html"><span class="n">SwypeKids</span><span class="t">Hra na písmena a slabiky pro děti od 5 do 9 let. Obsah jde podle analyticko-syntetické metody čtení a dá se vyměnit.</span></a>
-        <a class="proof-card" href="https://github.com/lioilsources/pico8-hollow-vibe" rel="noopener"><span class="n">Dílna s PICO-8</span><span class="t">Dvě hodiny, kdy děti vymýšlejí hru, dospělý ji před nimi staví a ony ji hned hrají na herních konzolkách.</span></a>
+    <div class="tech">
+      <h3>Technologie</h3>
+      <dl>
+        <div><dt>Aplikace</dt><dd>Flutter pro iOS, Android, macOS, Windows a Linux; funguje bez internetu; výslovnost čte hlas zařízení</dd></div>
+        <div><dt>Výroba balíčků</dt><dd>nástroj v Go, zadání v YAML, strojový překlad do 17 jazyků, generované ilustrace ve více stylech, automatická kontrola obrázků</dd></div>
+        <div><dt>Soukromí</dt><dd>bez účtů, bez analytiky, bez reklam; pokrok jen v zařízení</dd></div>
+        <div><dt>Čtení pro nejmenší</dt><dd>SwypeKids: obsah v JSON balíčcích podle jazyka, vyměnitelný bez zásahu do aplikace</dd></div>
+      </dl>
+    </div>
+    <div class="demo">
+      <h3>Ukázky</h3>
+      <p>Lexify: karta se slovem a výslovností, akvarelový styl obrázků, výběr jazyků. SwypeKids: slabiky a skládání slov tahem.</p>
+      <div class="shots mobile">
+        <img src="screenshots/lexify/mobile/card.png" alt="Karta se slovem hamster, obrázkem a tlačítkem výslovnosti" loading="lazy">
+        <img src="screenshots/lexify/mobile/akvarel_style.png" alt="Karta Počasí v akvarelovém stylu" loading="lazy">
+        <img src="screenshots/lexify/mobile/shop_languages.png" alt="Výběr ze sedmnácti jazyků" loading="lazy">
+      </div>
+      <div class="shots desktop">
+        <img src="screenshots/swypekids/desktop/swypekids_swype2.png" alt="SwypeKids: slabiky MA-MA skládané tahem po klávesnici" loading="lazy">
+        <img src="screenshots/swypekids/desktop/swypekids_swype3.png" alt="SwypeKids: slovo MAT skládané tahem" loading="lazy">
+        <img src="screenshots/swypekids/desktop/swypekids_es.png" alt="SwypeKids: skládání věty ve španělštině" loading="lazy">
       </div>
     </div>
   </div>
@@ -380,13 +407,20 @@
       <h3>První krok: ověření stopy</h3>
       <p>Napište mi nejstaršího předka, o kterém víte. Najdu jeho zápis v matrice, pošlu vám ho a řeknu, jak daleko se dá dojít a co by to stálo.</p>
       <a class="dl-btn" href="mailto:__EMAIL__?subject=Rodokmen%20%E2%80%93%20ov%C4%9B%C5%99en%C3%AD%20stopy">Napsat, koho hledáte</a>
-      <a class="dl-btn secondary" href="https://lioilsources.github.io/genealogy-matriky/" rel="noopener">Prohlédnout ukázkový strom</a>
     </div>
-    <div class="proof">
-      <h3>Co už běží</h3>
-      <div class="proof-grid">
-        <a class="proof-card" href="https://github.com/lioilsources/genealogy-matriky" rel="noopener"><span class="n">genealogy-matriky</span><span class="t">Stažení skenů, strojové čtení zápisů, propojení osob a strom s proklikem na sken. Vlastní rod mám doložený do roku 1763.</span></a>
-      </div>
+    <div class="tech">
+      <h3>Technologie</h3>
+      <dl>
+        <div><dt>Zdroje</dt><dd>vlastní stahovače pro eBadatelnu SOA Praha a Acta Publica MZA Brno, šetrné k serverům archivů</dd></div>
+        <div><dt>Čtení zápisů</dt><dd>obrazový jazykový model s kontrolou úplnosti po stranách, ruční ověření hlavní linie</dd></div>
+        <div><dt>Data</dt><dd>Go, SQLite; propojování osob napříč knihami, sjednocení jmen v češtině, němčině a latině, data s různou přesností</dd></div>
+        <div><dt>Výstup</dt><dd>interaktivní strom v prohlížeči (React, TypeScript), zápis s přiblížením skenu, přehledy: příjmení, délka života, stěhování</dd></div>
+      </dl>
+    </div>
+    <div class="demo">
+      <h3>Ukázka</h3>
+      <p>Takhle vypadá strom mého vlastního rodu: vrstvy narození, svateb a úmrtí, čárkovaně nejisté vazby.</p>
+      <img class="shot-wide" src="assets/img/business/rodokmen-strom.webp" alt="Interaktivní rodokmen rodu Vořechovských se čtyřmi generacemi" width="1440" height="900" loading="lazy">
     </div>
   </div>
 </section>
@@ -405,7 +439,7 @@
   <div>
     <h2>Kdo to dělá</h2>
     <p>Jeden člověk, ne agentura. Píšete si a voláte přímo s tím, kdo věc staví a kdo ji pak udržuje.</p>
-    <p>Všechno, co tu nabízím, stojí na kódu, který je z velké části veřejně na <a href="https://github.com/lioilsources" rel="noopener">GitHubu</a>. Hry a aplikace, které z něj vznikly, si můžete stáhnout v <a href="index.html">obchodě na olin.now</a>.</p>
+    <p>Všechno, co tu nabízím, jsem si nejdřív postavil pro sebe a denně to používám. Hry a aplikace, které jsem vydal, si můžete stáhnout v <a href="index.html">obchodě na olin.now</a>.</p>
     <p>Beru jen tolik zakázek, kolik zvládnu udržovat. Když vám líp poslouží hotová služba za pár stovek měsíčně, doporučím vám ji.</p>
   </div>
   <div class="biz-contact">
