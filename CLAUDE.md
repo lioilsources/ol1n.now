@@ -48,6 +48,8 @@ apps/<slug>/
     maneuvers.json     #   flight paths sampled through Maneuver.poseAt
     <fleet_id>/<category>/*.webp ; common/{sfx,music}/*.m4a
 
+pages/<name>.html      # Hand-written standalone pages -> dist/<name>.html (business.html = olin.now/business)
+
 assets/                # Site-wide assets (CSS, fonts, icons)
 scripts/               # Makefile helper scripts
 templates/             # HTML/CSS templates for site generation
@@ -137,6 +139,28 @@ repo** samples every maneuver through `Maneuver.poseAt` and writes both a TSV
 paths. `store.js` only interpolates between samples and paints: the easing, the
 anchors and the per-ship scaling are never reimplemented here, because a second
 implementation drifts from the engine the first time a curve changes.
+
+## Standalone pages (olin.now/business)
+
+`pages/<name>.html` is a body fragment; `build-site.sh` wraps it in the store's
+head/foot and writes `dist/<name>.html`, which GitHub Pages also serves as
+`/<name>`. Leading `<!-- title: -->`, `<!-- description: -->` and `<!-- email: -->`
+lines are metadata, not content; `__EMAIL__` in the body is replaced by the last one,
+so the contact address lives in exactly one place.
+
+A sibling `assets/css/<name>.css` is linked after `store.css`. The store's layout is
+all CSS variables, so `business.css` is mostly a palette (black, gold, grey) — the
+cards, chips and badges are the store's own. The six offers reuse the skins markup
+(`.skins`, `.skin-picker`, `.skin-chip[data-skin]`, `.skin-panel`), which is why the
+switching and the `#agentury` / `#hry` / `#eshopy` / `#firmy` / `#skoly` / `#rodokmen`
+deep links need no JavaScript of their own. The catch that comes with it: `show()`
+treats every hash as an offer id, so the page must not use other in-page anchors.
+
+The build also puts a non-breaking space after one-letter Czech prepositions in
+these pages (never in the generated store pages).
+
+`business.olin.now` cannot be a second GitHub Pages domain (one `CNAME` per site); it
+is a Cloudflare redirect rule to `olin.now/business`.
 
 ## App Catalog
 

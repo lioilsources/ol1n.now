@@ -1,0 +1,157 @@
+/* olin.now/business — loaded AFTER store.css. The store's layout, cards, chips
+   and badges are all driven by the variables below, so the pitch page is the
+   same stylesheet in a different palette: black ground, gold accent, grey type. */
+:root {
+  --bg: #000000;
+  --bg-soft: #16140d;        /* badge / secondary button fill */
+  --card: #0c0b08;
+  --card-hover: #14120b;
+  --text: #b8b5aa;           /* body grey */
+  --text-dim: #837f73;
+  --text-strong: #e9e5d8;    /* emphasis inside grey copy */
+  --accent: #d4af37;         /* gold */
+  --accent-soft: rgba(212, 175, 55, 0.13);
+  --border: #2a2617;
+  color-scheme: dark;
+}
+
+body { background: var(--bg); }
+strong { color: var(--text-strong); font-weight: 600; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+::selection { background: var(--accent); color: #000; }
+
+/* Gold buttons carry black text — white on gold fails contrast */
+.dl-btn { color: #000; cursor: pointer; }
+.dl-btn.secondary { color: var(--text-strong); }
+
+/* ---- top bar ---- */
+.biz-top {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+  font-size: 14px; color: var(--text-dim);
+}
+.biz-top .home { color: var(--text-dim); }
+.biz-top .home:hover { color: var(--accent); text-decoration: none; }
+
+/* ---- hero ---- */
+.biz-hero { padding: 72px 0 8px; max-width: 860px; }
+.biz-hero h1 {
+  margin: 0 0 24px; color: var(--accent);
+  font-size: clamp(34px, 5.4vw, 60px); line-height: 1.08; letter-spacing: -0.02em; font-weight: 700;
+  text-wrap: balance;
+}
+.biz-lead { font-size: 19px; line-height: 1.6; max-width: 62ch; margin: 0; }
+
+/* Three promises that hold for every offer on the page */
+.biz-rules {
+  list-style: none; margin: 40px 0 0; padding: 0;
+  display: grid; gap: 0; grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+}
+.biz-rules li { padding: 18px 24px 20px 0; font-size: 14px; color: var(--text-dim); }
+.biz-rules li + li { padding-left: 24px; border-left: 1px solid var(--border); }
+.biz-rules b { display: block; color: var(--text-strong); font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+
+/* ---- offers: reuses the store's .skins picker (store.js does the switching) ---- */
+.biz-offers { margin-top: 72px; }
+.biz-offers > h2 { font-size: 24px; letter-spacing: -0.02em; color: var(--text-strong); margin: 0 0 4px; }
+.biz-offers .skin-picker { grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0 0; }
+.biz-offers .skin-chip { text-align: left; padding: 14px 14px 16px; gap: 4px; justify-content: flex-start; }
+.biz-offers .skin-chip:hover { transform: none; box-shadow: none; border-color: #4a4222; }
+.biz-offers .skin-chip .n { font-size: 15px; color: var(--text-strong); }
+.biz-offers .skin-chip .y { font-size: 12.5px; line-height: 1.4; color: var(--text-dim); }
+.biz-offers .skin-chip[aria-selected="true"] { background: var(--accent-soft); box-shadow: none; }
+.biz-offers .skin-chip[aria-selected="true"] .n { color: var(--accent); }
+
+.biz-offers .skin-panel { margin-top: 56px; }
+/* No JS: every offer stays on the page, so they need telling apart */
+.biz-offers .skin-panel + .skin-panel { padding-top: 56px; border-top: 1px solid var(--border); }
+.js .biz-offers .skin-panel + .skin-panel { padding-top: 0; border-top: none; }
+
+.offer-head { max-width: 780px; }
+.offer-head h2 {
+  font-size: clamp(26px, 3.6vw, 38px); line-height: 1.14; letter-spacing: -0.02em;
+  color: var(--accent); margin: 0 0 14px; text-wrap: balance;
+}
+.offer-head p { font-size: 17px; margin: 0; max-width: 64ch; }
+
+.offer-cols { display: grid; gap: 48px; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); margin-top: 44px; align-items: start; }
+.offer-cols h3 { font-size: 17px; color: var(--text-strong); margin: 0 0 12px; letter-spacing: -0.01em; }
+.offer-cols h3:not(:first-child) { margin-top: 36px; }
+.offer-cols ul { margin: 0; padding-left: 20px; }
+.offer-cols li { margin: 0 0 9px; }
+.offer-cols li::marker { color: var(--accent); }
+
+/* "Na rovinu" — the limits, said out loud. The one loud device on the page. */
+.straight { border-left: 2px solid var(--accent); padding: 2px 0 2px 20px; }
+.straight h3 { color: var(--accent); }
+.straight ul { list-style: none; padding-left: 0; }
+.straight li { color: var(--text); }
+
+/* Price list */
+.price { width: 100%; border-collapse: collapse; font-size: 15px; }
+.price th, .price td { text-align: left; padding: 11px 0; border-top: 1px solid var(--border); vertical-align: top; }
+.price tr:first-child th, .price tr:first-child td { border-top: none; padding-top: 0; }
+.price th { font-weight: 400; color: var(--text); padding-right: 16px; }
+.price td { color: var(--text-strong); font-weight: 600; text-align: right; white-space: nowrap; }
+.price .sub { display: block; font-weight: 400; font-size: 12.5px; color: var(--text-dim); white-space: normal; }
+.price-note { font-size: 13px; color: var(--text-dim); margin: 12px 0 0; }
+
+/* First step */
+.first-step {
+  margin-top: 36px; padding: 22px 24px 24px;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+}
+.first-step h3 { margin: 0 0 8px; }
+.first-step p { margin: 0 0 18px; }
+.first-step .dl-btn { margin: 0 8px 8px 0; }
+
+/* What already runs — the repos behind the offer */
+.proof { margin-top: 56px; }
+.proof h3 { font-size: 17px; color: var(--text-strong); margin: 0 0 4px; }
+.proof > p { color: var(--text-dim); font-size: 14px; margin: 0 0 18px; max-width: 64ch; }
+.proof-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.proof-card {
+  display: block; padding: 16px 18px 18px; color: var(--text);
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+}
+.proof-card:hover { text-decoration: none; background: var(--card-hover); border-color: #4a4222; }
+.proof-card .n { display: block; color: var(--accent); font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+.proof-card .t { display: block; font-size: 13.5px; line-height: 1.5; }
+
+/* ---- how it goes: a real sequence, so it is numbered ---- */
+.biz-steps { margin-top: 96px; padding-top: 40px; border-top: 1px solid var(--border); }
+.biz-steps h2, .biz-about h2 { font-size: 24px; letter-spacing: -0.02em; color: var(--text-strong); margin: 0 0 24px; }
+.biz-steps ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 28px; grid-template-columns: repeat(4, 1fr); counter-reset: step; }
+.biz-steps li { counter-increment: step; font-size: 14.5px; }
+.biz-steps li::before {
+  content: counter(step); display: block; color: var(--accent);
+  font-size: 34px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; margin-bottom: 12px;
+}
+.biz-steps b { display: block; color: var(--text-strong); font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+
+/* ---- about + contact ---- */
+.biz-about { margin-top: 96px; padding-top: 40px; border-top: 1px solid var(--border); display: grid; gap: 48px; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: start; }
+.biz-about p { margin: 0 0 14px; max-width: 62ch; }
+.biz-contact { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+.biz-contact h2 { margin-bottom: 8px; }
+.biz-contact .mail { display: inline-block; font-size: 20px; font-weight: 600; margin: 4px 0 16px; word-break: break-all; }
+.biz-contact ul { margin: 0; padding-left: 20px; font-size: 14.5px; }
+.biz-contact li { margin-bottom: 6px; }
+.biz-contact li::marker { color: var(--accent); }
+
+@media (max-width: 900px) {
+  .biz-offers .skin-picker { grid-template-columns: repeat(2, 1fr); }
+  .offer-cols, .biz-about { grid-template-columns: 1fr; gap: 40px; }
+  .biz-steps ol { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .biz-hero { padding-top: 48px; }
+  .biz-lead { font-size: 17px; }
+  .biz-rules { grid-template-columns: 1fr; }
+  .biz-rules li { padding: 14px 0; }
+  .biz-rules li + li { padding-left: 0; border-left: none; border-top: 1px solid var(--border); }
+  /* six one-column chips would push the offer off the first screen */
+  .biz-offers .skin-chip { padding: 12px; }
+  .biz-offers .skin-chip .y { display: none; }
+  .biz-steps ol { grid-template-columns: 1fr; }
+}

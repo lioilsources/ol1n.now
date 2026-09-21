@@ -147,6 +147,24 @@ implementace easingu by se rozešla s první při první změně křivky. Gesto 
 
 Bez Dartu import proběhne, jen si nechá už zacommitovaný dump manévrů.
 
+## Stránka pro firmy (olin.now/business)
+
+Ručně psaná stránka s nabídkami pro agentury, herní studia, e-shopy, firmy
+v terénu, školy a zájemce o rodokmen. Zdroj je `pages/business.html` (jen tělo
+stránky), vzhled `assets/css/business.css`. `make build` ji zabalí do stejné
+hlavičky a patičky jako obchod a zapíše do `dist/business.html`.
+
+- Kontaktní adresa je na jednom místě: řádek `<!-- email: … -->` na začátku
+  souboru. V textu se na ni odkazuje zástupkou `__EMAIL__`.
+- `business.css` se načítá po `store.css` a přepisuje hlavně proměnné s barvami
+  (černá, zlatá, šedá). Karty, čipy a písmo jsou z obchodu.
+- Přepínač nabídek je stejný kód jako přepínač skinů v `store.js`. Na konkrétní
+  nabídku vede kotva: `/business#agentury`, `#hry`, `#eshopy`, `#firmy`,
+  `#skoly`, `#rodokmen`.
+
+Další stránka vznikne přidáním `pages/<jmeno>.html` a případně
+`assets/css/<jmeno>.css`.
+
 ## Závislosti
 
 - `bash`, `awk`, `sed` (běžné)

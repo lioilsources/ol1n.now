@@ -911,6 +911,40 @@ done <<EOF
 $ORDER_LIST
 EOF
 
+# ---- standalone pages (pages/<name>.html -> dist/<name>.html) ----
+# Hand-written body fragments wrapped in the store's head/foot. A sibling
+# assets/css/<name>.css, when present, is linked after store.css: the store's
+# layout is all CSS variables, so a page re-skins itself by redefining them
+# (business.html is the store in black and gold). Leading `<!-- key: value -->`
+# lines carry the title, the meta description and the contact address.
+page_meta() { sed -n "s/^<!-- $2: \(.*\) -->\$/\1/p" "$1" | head -1; }
+sed_safe() { printf '%s' "$1" | sed 's/[&|]/\\&/g'; }
+for page in "$ROOT"/pages/*.html; do
+  [ -e "$page" ] || continue
+  pname="$(basename "$page" .html)"
+  ptitle="$(page_meta "$page" title)"
+  pdesc="$(page_meta "$page" description)"
+  pmail="$(page_meta "$page" email)"
+  extra=""
+  if [ -n "$pdesc" ]; then
+    extra="$extra<meta name=\"description\" content=\"$pdesc\"><meta property=\"og:title\" content=\"$ptitle\"><meta property=\"og:description\" content=\"$pdesc\"><meta property=\"og:type\" content=\"website\">"
+  fi
+  if [ -f "$ROOT/assets/css/$pname.css" ]; then
+    extra="$extra<link rel=\"stylesheet\" href=\"assets/css/$pname.css?v=$(hashf "$ROOT/assets/css/$pname.css")\">"
+  fi
+  {
+    emit_head "$ptitle" | sed "s|</head>|$(sed_safe "$extra")</head>|"
+    # Czech typography: a one-letter preposition or conjunction never ends a
+    # line. Applied twice because matches cannot overlap ("a v lese").
+    grep -v -e '^<!-- title: ' -e '^<!-- description: ' -e '^<!-- email: ' "$page" \
+      | sed -e "s|__EMAIL__|$(sed_safe "$pmail")|g" \
+            -e 's/ \([ksvzouaiKSVZOUAI]\) / \1\&nbsp;/g' \
+            -e 's/\&nbsp;\([ksvzouaiKSVZOUAI]\) /\&nbsp;\1\&nbsp;/g'
+    emit_foot
+  } > "$DIST/$pname.html"
+  echo "  built $pname.html"
+done
+
 # ---- build index ----
 i18n_load "$I18N_BASE" "$TPL/i18n/$I18N_BASE.tsv"
 {
