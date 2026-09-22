@@ -919,41 +919,122 @@ EOF
 # lines carry the title, the meta description and the contact address. The
 # address is kept as two halves (email-user, email-domain) so that no harvestable
 # `x@y` string sits in this public repo; on the live site Cloudflare obfuscates it.
-page_meta() { sed -n "s/^<!-- $2: \(.*\) -->\$/\1/p" "$1" | head -1; }
-sed_safe() { printf '%s' "$1" | sed 's/[&|]/\\&/g'; }
-# the app loop leaves whichever language it built last; these pages are Czech
-i18n_load "$I18N_BASE" "$TPL/i18n/$I18N_BASE.tsv"
+#
+# Translations are whole files next to the source, pages/<name>.<lang>.html,
+# held to its markup by scripts/check-page-translation.py. The base language
+# keeps the bare URL like the store's apps do; each language gets a canonical
+# URL without .html (GitHub Pages serves both forms), hreflang alternates, Open
+# Graph tags and a language menu in place of __LANGS__. The body may also use
+# __URL__, __LANG__ and __OGIMAGE__ (the JSON-LD does).
+PAGE_LANGS="cs en de fr es it pl pt-BR ja"   # menu order
+SITE="https://$(tr -d '[:space:]' < "$ROOT/CNAME" 2>/dev/null)"
+[ "$SITE" = "https://" ] && SITE="https://olin.now"
+page_meta()  { sed -n "s/^<!-- $2: \(.*\) -->\$/\1/p" "$1" | head -1; }
+page_file()  { if [ "$2" = "$I18N_BASE" ]; then printf '%s.html' "$1"; else printf '%s.%s.html' "$1" "$2"; fi; }
+page_canon() { if [ "$2" = "$I18N_BASE" ]; then printf '%s/%s' "$SITE" "$1"; else printf '%s/%s.%s' "$SITE" "$1" "$2"; fi; }
+og_locale()  { case "$1" in cs) echo cs_CZ ;; en) echo en_GB ;; de) echo de_DE ;; fr) echo fr_FR ;;
+  es) echo es_ES ;; it) echo it_IT ;; pl) echo pl_PL ;; pt-BR) echo pt_BR ;; ja) echo ja_JP ;; *) echo "$1" ;; esac; }
+# translator-supplied text going into an attribute
+attr() { printf '%s' "$1" | sed -e 's/&/\&amp;/g' -e 's/"/\&quot;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g'; }
+PAGE_OUTS=""; PAGE_URLS=""
+
 for page in "$ROOT"/pages/*.html; do
   [ -e "$page" ] || continue
   pname="$(basename "$page" .html)"
-  ptitle="$(page_meta "$page" title)"
-  pdesc="$(page_meta "$page" description)"
-  pmail="$(page_meta "$page" email-user)@$(page_meta "$page" email-domain)"
-  extra=""
-  if [ -n "$pdesc" ]; then
-    extra="$extra<meta name=\"description\" content=\"$pdesc\"><meta property=\"og:title\" content=\"$ptitle\"><meta property=\"og:description\" content=\"$pdesc\"><meta property=\"og:type\" content=\"website\">"
-  fi
-  if [ -f "$ROOT/assets/css/$pname.css" ]; then
-    extra="$extra<link rel=\"stylesheet\" href=\"assets/css/$pname.css?v=$(hashf "$ROOT/assets/css/$pname.css")\">"
-  fi
-  {
-    emit_head "$ptitle" | sed "s|</head>|$(sed_safe "$extra")</head>|"
-    # Czech typography: a one-letter preposition or conjunction never ends a
-    # line. Applied twice because matches cannot overlap ("a v lese").
-    grep -v -e '^<!-- title: ' -e '^<!-- description: ' -e '^<!-- email-' "$page" \
-      | sed -e "s|__EMAIL__|$(sed_safe "$pmail")|g" \
-            -e 's/ \([ksvzouaiKSVZOUAI]\) / \1\&nbsp;/g' \
-            -e 's/\&nbsp;\([ksvzouaiKSVZOUAI]\) /\&nbsp;\1\&nbsp;/g'
-    emit_foot
-  } > "$DIST/$pname.html"
-  # These pages borrow the store's screenshots by path; a renamed raw file would
-  # otherwise ship as a broken image without anyone noticing.
-  grep -o 'src="[^"]*"' "$DIST/$pname.html" | sed 's/^src="//; s/"$//; s/?.*//' | while read -r _src; do
-    case "$_src" in http*|/*|data:*) continue ;; esac
-    [ -f "$DIST/$_src" ] || echo "  warning: $pname.html references missing $_src" >&2
+  case "$pname" in *.*) continue ;; esac   # a translation, built with its source
+  langs="$I18N_BASE"
+  for l in $PAGE_LANGS; do
+    [ "$l" != "$I18N_BASE" ] && [ -f "$ROOT/pages/$pname.$l.html" ] && langs="$langs $l"
   done
-  echo "  built $pname.html"
+  # a visitor whose language is not on the list gets English, not Czech
+  xdef="$I18N_BASE"; case " $langs " in *" en "*) xdef=en ;; esac
+  css=""
+  [ -f "$ROOT/assets/css/$pname.css" ] && \
+    css="<link rel=\"stylesheet\" href=\"assets/css/$pname.css?v=$(hashf "$ROOT/assets/css/$pname.css")\">"
+
+  for l in $langs; do
+    src="$ROOT/pages/$(page_file "$pname" "$l")"
+    out="$(page_file "$pname" "$l")"
+    canon="$(page_canon "$pname" "$l")"
+    ptitle="$(page_meta "$src" title)"
+    pdesc="$(page_meta "$src" description)"
+    pmail="$(page_meta "$src" email-user)@$(page_meta "$src" email-domain)"
+    ogimg=""
+    for o in "assets/img/og/$pname.$l.png" "assets/img/og/$pname.png"; do
+      [ -f "$ROOT/$o" ] && { ogimg="$SITE/$o"; break; }
+    done
+
+    head="  <meta name=\"description\" content=\"$(attr "$pdesc")\">
+  <link rel=\"canonical\" href=\"$canon\">"
+    if [ "$langs" != "$I18N_BASE" ]; then
+      for a in $langs; do head="$head
+  <link rel=\"alternate\" hreflang=\"$a\" href=\"$(page_canon "$pname" "$a")\">"; done
+      head="$head
+  <link rel=\"alternate\" hreflang=\"x-default\" href=\"$(page_canon "$pname" "$xdef")\">"
+    fi
+    head="$head
+  <meta name=\"theme-color\" content=\"#000000\">
+  <meta property=\"og:type\" content=\"website\">
+  <meta property=\"og:site_name\" content=\"olin.now\">
+  <meta property=\"og:title\" content=\"$(attr "$ptitle")\">
+  <meta property=\"og:description\" content=\"$(attr "$pdesc")\">
+  <meta property=\"og:url\" content=\"$canon\">
+  <meta property=\"og:locale\" content=\"$(og_locale "$l")\">"
+    for a in $langs; do [ "$a" = "$l" ] || head="$head
+  <meta property=\"og:locale:alternate\" content=\"$(og_locale "$a")\">"; done
+    [ -n "$ogimg" ] && head="$head
+  <meta property=\"og:image\" content=\"$ogimg\">
+  <meta property=\"og:image:width\" content=\"1200\">
+  <meta property=\"og:image:height\" content=\"630\">
+  <meta name=\"twitter:card\" content=\"summary_large_image\">"
+    [ -n "$css" ] && head="$head
+  $css"
+
+    menu=""
+    if [ "$langs" != "$I18N_BASE" ]; then
+      menu="<details class=\"lang-menu\"><summary><img src=\"assets/img/flag-$l.svg\" alt=\"\" width=\"18\" height=\"12\"><span>$(lang_name "$l")</span></summary><ul>"
+      for a in $langs; do
+        cur=""; [ "$a" = "$l" ] && cur=' aria-current="true"'
+        menu="$menu<li><a href=\"$(page_file "$pname" "$a")\" hreflang=\"$a\" lang=\"$a\"$cur><img src=\"assets/img/flag-$a.svg\" alt=\"\" width=\"18\" height=\"12\">$(lang_name "$a")</a></li>"
+      done
+      menu="$menu</ul></details>"
+    fi
+
+    I18N_LANG="$l"   # emit_head writes it into <html lang>
+    {
+      emit_head "$ptitle" "$head"
+      grep -v -e '^<!-- title: ' -e '^<!-- description: ' -e '^<!-- email-' "$src" \
+        | P_EMAIL="$pmail" P_LANGS="$menu" P_URL="$canon" P_LANG="$l" P_OG="$ogimg" awk '
+            function repl(str, from, to,   out, i) {
+              while ((i = index(str, from)) > 0) { out = out substr(str, 1, i - 1) to; str = substr(str, i + length(from)) }
+              return out str
+            }
+            { $0 = repl($0, "__EMAIL__", ENVIRON["P_EMAIL"]); $0 = repl($0, "__LANGS__", ENVIRON["P_LANGS"])
+              $0 = repl($0, "__URL__", ENVIRON["P_URL"]);     $0 = repl($0, "__LANG__", ENVIRON["P_LANG"])
+              print repl($0, "__OGIMAGE__", ENVIRON["P_OG"]) }' \
+        | case "$l" in
+            # Czech and Polish typography: a one-letter preposition or
+            # conjunction never ends a line. Applied twice because matches
+            # cannot overlap ("a v lese"), and never inside <script>, where an
+            # entity would land in the JSON-LD as literal text.
+            cs|pl) sed -e '/<script/,/<\/script>/!{' \
+                       -e 's/ \([ksvzouaiwKSVZOUAIW]\) / \1\&nbsp;/g' \
+                       -e 's/\&nbsp;\([ksvzouaiwKSVZOUAIW]\) /\&nbsp;\1\&nbsp;/g' -e '}' ;;
+            *) cat ;;
+          esac
+      emit_foot
+    } > "$DIST/$out"
+    # These pages borrow the store's screenshots by path; a renamed raw file
+    # would otherwise ship as a broken image without anyone noticing.
+    grep -o 'src="[^"]*"' "$DIST/$out" | sed 's/^src="//; s/"$//; s/?.*//' | while read -r _src; do
+      case "$_src" in http*|/*|data:*) continue ;; esac
+      [ -f "$DIST/$_src" ] || echo "  warning: $out references missing $_src" >&2
+    done
+    PAGE_OUTS="$PAGE_OUTS $out"; PAGE_URLS="$PAGE_URLS $canon"
+    echo "  built $out"
+  done
 done
+I18N_LANG="$I18N_BASE"
 
 # ---- build index ----
 i18n_load "$I18N_BASE" "$TPL/i18n/$I18N_BASE.tsv"
@@ -967,4 +1048,23 @@ i18n_load "$I18N_BASE" "$TPL/i18n/$I18N_BASE.tsv"
 } > "$DIST/index.html"
 
 echo "  built index.html"
+
+# ---- sitemap.xml + robots.txt ----
+# Store pages under the file names they are linked by; standalone pages under
+# their canonical URLs (their hreflang alternates are in each page's head).
+{
+  echo '<?xml version="1.0" encoding="UTF-8"?>'
+  echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+  printf '  <url><loc>%s/</loc></url>\n' "$SITE"
+  for f in "$DIST"/*.html; do
+    b="$(basename "$f")"
+    case "$b" in index.html) continue ;; esac
+    case " $PAGE_OUTS " in *" $b "*) continue ;; esac
+    printf '  <url><loc>%s/%s</loc></url>\n' "$SITE" "$b"
+  done
+  for u in $PAGE_URLS; do printf '  <url><loc>%s</loc></url>\n' "$u"; done
+  echo '</urlset>'
+} > "$DIST/sitemap.xml"
+printf 'User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' "$SITE" > "$DIST/robots.txt"
+echo "  built sitemap.xml, robots.txt"
 echo "Done -> $DIST"

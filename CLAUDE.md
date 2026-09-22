@@ -163,6 +163,26 @@ treats every hash as an offer id, so the page must not use other in-page anchors
 The build also puts a non-breaking space after one-letter Czech prepositions in
 these pages (never in the generated store pages).
 
+Translations are whole files next to the source: `pages/<name>.<lang>.html` for
+`en de fr es it pl pt-BR ja` (menu order is `PAGE_LANGS` in `build-site.sh`). Czech keeps
+`/business`; every other language is `/business.<lang>` (GitHub Pages serves it with and
+without `.html`, so each page declares its canonical URL without it). The build adds per
+language: `<html lang>`, meta description, canonical, `hreflang` for all versions plus
+`x-default` → English, Open Graph + Twitter tags, the language menu at `__LANGS__`, and
+fills `__URL__` / `__LANG__` / `__OGIMAGE__` in the page's JSON-LD. A translation must keep
+the source's markup exactly — `scripts/check-page-translation.py <source> <translation>`
+enforces it (same elements, classes, ids, links, placeholders, JSON-LD shape and prices);
+run it after every edit to the Czech page and re-translate what it flags. Header comments
+`title` (≤ 60 chars) and `description` (≤ 160) are per language. The one-letter-preposition
+`&nbsp;` pass runs only for `cs` and `pl`, and never inside `<script>` (it would corrupt the
+JSON-LD).
+
+`make og` (authoring, needs Chrome) renders `assets/img/og/<name>.<lang>.png` from the
+built pages with `scripts/shoot.mjs`; commit the PNGs. Re-run it when a headline changes.
+
+The build also writes `dist/sitemap.xml` (store pages by file name, standalone pages by
+canonical URL) and `dist/robots.txt` pointing at it.
+
 `business.olin.now` cannot be a second GitHub Pages domain (one `CNAME` per site); it
 is a Cloudflare redirect rule to `olin.now/business`.
 

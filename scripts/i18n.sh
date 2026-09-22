@@ -22,6 +22,11 @@ lang_name() {
     ja) echo "日本語" ;;
     en) echo "English" ;;
     de) echo "Deutsch" ;;
+    fr) echo "Français" ;;
+    es) echo "Español" ;;
+    it) echo "Italiano" ;;
+    pl) echo "Polski" ;;
+    pt-BR) echo "Português (Brasil)" ;;
     *)  echo "$1" ;;
   esac
 }

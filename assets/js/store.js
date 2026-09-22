@@ -466,3 +466,14 @@
     showUnit(unitChips[0].dataset.unit);
   }).catch(function () { /* no maneuvers.json: every panel stays open and static */ });
 })();
+
+// Language menu on standalone pages: switching language keeps the open offer
+// (#agentury …), because every translation uses the same panel ids.
+(function () {
+  "use strict";
+  document.querySelectorAll(".lang-menu a[hreflang]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      if (location.hash) a.href = a.getAttribute("href").split("#")[0] + location.hash;
+    });
+  });
+})();

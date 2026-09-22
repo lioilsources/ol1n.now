@@ -167,6 +167,21 @@ hlavičky a patičky jako obchod a zapíše do `dist/business.html`.
 Další stránka vznikne přidáním `pages/<jmeno>.html` a případně
 `assets/css/<jmeno>.css`.
 
+### Překlady a SEO
+
+Stránka pro firmy je v devíti jazycích: čeština (`/business`) a `pages/business.<jazyk>.html`
+pro `en de fr es it pl pt-BR ja` (adresa `/business.en` atd.). Build ke každé verzi doplní
+kanonickou adresu, `hreflang` na všechny ostatní, značky Open Graph, JSON-LD se službami
+a cenami a jazykové menu s vlajkami. Po každé úpravě české stránky spusť
+
+```bash
+scripts/check-page-translation.py pages/business.html pages/business.en.html   # a tak dál
+```
+
+Skript ohlídá, že překlad má stejné prvky, odkazy, ceny a zástupné značky; co nahlásí,
+je potřeba přeložit znovu. `make og` vyrobí náhledové obrázky pro sdílení
+(`assets/img/og/`, potřebuje Chrome). Build zapisuje i `sitemap.xml` a `robots.txt`.
+
 ## Závislosti
 
 - `bash`, `awk`, `sed` (běžné)

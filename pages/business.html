@@ -1,12 +1,15 @@
-<!-- title: Pro firmy — olin.now -->
-<!-- description: Soukromé AI studio pro agentury a herní studia, poradce pro e-shopy, docházka pro firmy v terénu, kartičky pro školy a rodokmen z matrik. Pevné ceny, nejdřív malý placený pilot. -->
+<!-- title: AI a software pro malé týmy | Olin Vořechovský -->
+<!-- description: AI studio pro agentury a herní studia, poradce pro e-shopy, docházka pro firmy v terénu, kartičky pro školy a rodokmen z matrik. Pevné ceny. -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
 
 <nav class="biz-top" aria-label="Navigace">
   <a class="home" href="index.html">olin.now</a>
-  <a href="mailto:__EMAIL__">__EMAIL__</a>
+  <div class="biz-top-right">
+    __LANGS__
+    <a class="mail-top" href="mailto:__EMAIL__">__EMAIL__</a>
+  </div>
 </nav>
 
 <header class="biz-hero">
@@ -179,7 +182,7 @@
         <img src="assets/img/business/hry-zvuky.webp" alt="Zvukové efekty a hudební přehrávač ke hře Kirian" loading="lazy">
       </div>
       <div class="shots desktop">
-        <img src="screenshots/ugcfactory/desktop/3d-modely.png" alt="Šest vygenerovaných 3D předmětů: batoh, dort, prsten, čelenka, batoh a drak" loading="lazy">
+        <img src="screenshots/ugcfactory/desktop/3d-modely.png" alt="Šest vygenerovaných 3D předmětů: batoh, dort, prsten, tiára, batoh a drak" loading="lazy">
         <img src="screenshots/ugcfactory/desktop/triage.png" alt="Třídění návrhů: obrázek, zadání a tlačítka zamítnout, znovu, schválit" loading="lazy">
       </div>
     </div>
@@ -475,3 +478,30 @@
 </section>
 
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://olin.now/business#service",
+  "name": "olin.now — AI a software pro malé týmy",
+  "url": "__URL__",
+  "inLanguage": "__LANG__",
+  "image": "__OGIMAGE__",
+  "description": "Soukromé AI studio pro agentury a herní studia, poradce pro e-shopy, docházka pro firmy v terénu, kartičky pro školy a rodokmen z matrik. Pevné ceny, nejdřív malý placený pilot.",
+  "founder": { "@type": "Person", "name": "Olin Vořechovský" },
+  "priceRange": "1 900–85 000 CZK",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Nabídky pro firmy",
+    "itemListElement": [
+      { "@type": "Offer", "name": "Pilot soukromého AI studia pro agentury", "price": "20000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Zvukový balíček pro herní studia", "price": "9000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Pilot poradce nad katalogem e-shopu", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Pilot docházky na zakázkách", "price": "12000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Balíček kartiček na míru pro školy", "price": "3500", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Rodokmen: jedna linie, 4 generace", "price": "12900", "priceCurrency": "CZK" }
+    ]
+  }
+}
+</script>
