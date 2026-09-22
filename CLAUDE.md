@@ -164,7 +164,7 @@ The build also puts a non-breaking space after one-letter Czech prepositions in
 these pages (never in the generated store pages).
 
 Translations are whole files next to the source: `pages/<name>.<lang>.html` for
-`en de fr es it pl pt-BR ja` (menu order is `PAGE_LANGS` in `build-site.sh`). Czech keeps
+`en de fr es it nl pl hu uk pt-BR vi ja ko` (menu order is `PAGE_LANGS` in `build-site.sh`). Czech keeps
 `/business`; every other language is `/business.<lang>` (GitHub Pages serves it with and
 without `.html`, so each page declares its canonical URL without it). The build adds per
 language: `<html lang>`, meta description, canonical, `hreflang` for all versions plus

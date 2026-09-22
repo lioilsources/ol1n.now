@@ -926,14 +926,15 @@ EOF
 # URL without .html (GitHub Pages serves both forms), hreflang alternates, Open
 # Graph tags and a language menu in place of __LANGS__. The body may also use
 # __URL__, __LANG__ and __OGIMAGE__ (the JSON-LD does).
-PAGE_LANGS="cs en de fr es it pl pt-BR ja"   # menu order
+PAGE_LANGS="cs en de fr es it nl pl hu uk pt-BR vi ja ko"   # menu order
 SITE="https://$(tr -d '[:space:]' < "$ROOT/CNAME" 2>/dev/null)"
 [ "$SITE" = "https://" ] && SITE="https://olin.now"
 page_meta()  { sed -n "s/^<!-- $2: \(.*\) -->\$/\1/p" "$1" | head -1; }
 page_file()  { if [ "$2" = "$I18N_BASE" ]; then printf '%s.html' "$1"; else printf '%s.%s.html' "$1" "$2"; fi; }
 page_canon() { if [ "$2" = "$I18N_BASE" ]; then printf '%s/%s' "$SITE" "$1"; else printf '%s/%s.%s' "$SITE" "$1" "$2"; fi; }
 og_locale()  { case "$1" in cs) echo cs_CZ ;; en) echo en_GB ;; de) echo de_DE ;; fr) echo fr_FR ;;
-  es) echo es_ES ;; it) echo it_IT ;; pl) echo pl_PL ;; pt-BR) echo pt_BR ;; ja) echo ja_JP ;; *) echo "$1" ;; esac; }
+  es) echo es_ES ;; it) echo it_IT ;; pl) echo pl_PL ;; pt-BR) echo pt_BR ;; ja) echo ja_JP ;;
+  nl) echo nl_NL ;; hu) echo hu_HU ;; uk) echo uk_UA ;; vi) echo vi_VN ;; ko) echo ko_KR ;; *) echo "$1" ;; esac; }
 # translator-supplied text going into an attribute
 attr() { printf '%s' "$1" | sed -e 's/&/\&amp;/g' -e 's/"/\&quot;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g'; }
 PAGE_OUTS=""; PAGE_URLS=""

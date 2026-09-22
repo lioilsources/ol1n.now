@@ -33,7 +33,7 @@ strong { color: var(--text-strong); font-weight: 600; }
 .biz-top .home:hover { color: var(--accent); text-decoration: none; }
 .biz-top-right { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; justify-content: flex-end; }
 
-/* Language menu: nine languages do not fit a row of pills on a phone, so the
+/* Language menu: fourteen languages do not fit a row of pills on a phone, so the
    current one is a pill and the rest open below it. No JS — <details>. */
 .lang-menu { position: relative; }
 .lang-menu summary {
@@ -49,6 +49,7 @@ strong { color: var(--text-strong); font-weight: 600; }
   list-style: none; margin: 0; padding: 6px;
   background: var(--card); border: 1px solid var(--border); border-radius: 12px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, .6);
+  max-height: min(70vh, 560px); overflow-y: auto;
 }
 .lang-menu li a { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; color: var(--text); }
 .lang-menu li a:hover { background: var(--card-hover); text-decoration: none; }
@@ -58,6 +59,9 @@ strong { color: var(--text-strong); font-weight: 600; }
 /* Japanese breaks between phrases, not anywhere, and wants a little more air */
 html[lang="ja"] .biz { word-break: auto-phrase; line-height: 1.75; }
 html[lang="ja"] .biz-hero h1, html[lang="ja"] .offer-head h2 { letter-spacing: 0; line-height: 1.3; }
+/* Korean wraps between words (spaces), never inside one */
+html[lang="ko"] .biz { word-break: keep-all; line-height: 1.7; }
+html[lang="ko"] .biz-hero h1, html[lang="ko"] .offer-head h2 { letter-spacing: 0; line-height: 1.3; }
 
 /* ---- hero ---- */
 .biz-hero { padding: 72px 0 8px; max-width: 860px; }

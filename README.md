@@ -169,8 +169,8 @@ Další stránka vznikne přidáním `pages/<jmeno>.html` a případně
 
 ### Překlady a SEO
 
-Stránka pro firmy je v devíti jazycích: čeština (`/business`) a `pages/business.<jazyk>.html`
-pro `en de fr es it pl pt-BR ja` (adresa `/business.en` atd.). Build ke každé verzi doplní
+Stránka pro firmy je ve čtrnácti jazycích: čeština (`/business`) a `pages/business.<jazyk>.html`
+pro `en de fr es it nl pl hu uk pt-BR vi ja ko` (adresa `/business.en` atd.). Build ke každé verzi doplní
 kanonickou adresu, `hreflang` na všechny ostatní, značky Open Graph, JSON-LD se službami
 a cenami a jazykové menu s vlajkami. Po každé úpravě české stránky spusť
 

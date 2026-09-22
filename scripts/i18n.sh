@@ -27,6 +27,11 @@ lang_name() {
     it) echo "Italiano" ;;
     pl) echo "Polski" ;;
     pt-BR) echo "Português (Brasil)" ;;
+    nl) echo "Nederlands" ;;
+    hu) echo "Magyar" ;;
+    uk) echo "Українська" ;;
+    vi) echo "Tiếng Việt" ;;
+    ko) echo "한국어" ;;
     *)  echo "$1" ;;
   esac
 }
