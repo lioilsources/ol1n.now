@@ -191,10 +191,13 @@ is a Cloudflare redirect rule to `olin.now/business`.
 Current apps (in `apps/`): djfy, doggiowars, doodlebugs, kindlify, kirian (Kiran), lexify,
 mangaprompts, mirrorbooth, ol1nllm, orbitrontactics, poetrystream, puff, swypekids, ugcfactory.
 
-**ugcfactory has no releases at all** and no desktop release workflow (only
-`firebase-android.yml` + `testflight.yml`), so its page shows "Buildy brzy k dispozici"
-while advertising `desktop: macos`. It needs a `release-macos.yml` before the store can
-link anything.
+**ugcfactory** got its first public release only on 2026-09-25 (`v1.0.0`); until then it had
+no release workflow at all (just `firebase-android.yml` + `testflight.yml`) and its page
+showed "Buildy brzy k dispozici" while advertising `desktop: macos`. Its `release-macos.yml`
+is the odd one out: the Flutter root is **`app/`**, not the repo root, it pins no Flutter
+version (matching that repo's other workflows), and it has `workflow_dispatch` so the build
+can be smoke-tested without burning a tag. It ships macOS only — `app/windows` and
+`app/linux` do not exist.
 
 All are standalone binaries except **doggiowars**, which runs inside Luanti (ex-Minetest) —
 no per-platform executable, so it sets `artifacts: mod` (a platform-agnostic `.zip` bucket in
