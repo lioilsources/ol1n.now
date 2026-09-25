@@ -36,6 +36,19 @@ lang_name() {
   esac
 }
 
+# i18n_key <key> -> sets _i18n_key to the shell variable name for that key.
+#
+# Byte-wise on purpose. In a UTF-8 locale the range A-z collates accented
+# letters *inside* it, so `[!A-Za-z0-9_]` leaves the á in `label.Náhled` alone
+# and the eval below dies with `T6_label_Náhled=...: command not found`. Under
+# LC_ALL=C every byte outside ASCII is replaced, which is all a variable name
+# can hold anyway. The scope ends with the function, so nothing else in the
+# build gets C collation (sorting of Czech names stays put).
+i18n_key() {
+  local LC_ALL=C
+  _i18n_key="${1//[!A-Za-z0-9_]/_}"
+}
+
 # i18n_load <lang> <catalog.tsv>...
 # Catalogs are applied in order and later ones win, so call sites pass
 # base language → target language → app override.
@@ -54,7 +67,8 @@ i18n_load() {
       [ -n "${_i18n_v:-}" ] || continue
       # assignment from an expansion, not from re-parsed text: a value with
       # quotes, $ or backticks in it is data, never shell
-      eval "T${I18N_GEN}_${_i18n_k//[!A-Za-z0-9_]/_}=\$_i18n_v"
+      i18n_key "$_i18n_k"
+      eval "T${I18N_GEN}_${_i18n_key}=\$_i18n_v"
     done < "$_i18n_cat"
   done
   return 0
@@ -63,7 +77,8 @@ i18n_load() {
 # t <key> -> the translated string, or the key itself when nothing defines it
 # (a visibly wrong string beats a silently empty element)
 t() {
-  eval "_i18n_t=\${T${I18N_GEN}_${1//[!A-Za-z0-9_]/_}:-}"
+  i18n_key "$1"
+  eval "_i18n_t=\${T${I18N_GEN}_${_i18n_key}:-}"
   printf '%s' "${_i18n_t:-$1}"
 }
 
