@@ -10,7 +10,7 @@ Static app store for distributing own apps (Windows/macOS/Linux/mobile). Hosted 
 make fetch        # Fetch latest GitHub release artifacts per app → dist/downloads/<slug>.tsv
 make screenshots  # Resize raw screenshots + transcode videos → dist/screenshots/<slug>/
 make build        # Generate static site → dist/
-make deploy       # Publish dist/ to gh-pages branch
+make deploy       # Trigger the CI deploy workflow (builds from origin/main — push first!)
 make import-skins # (authoring, local only) Re-encode Kiran skin galleries → apps/kirian/skins/
 make import-fleets # (authoring, local only) Re-encode OrbitronTactics fleets + maneuvers → apps/orbitrontactics/fleets/
 ```
@@ -189,7 +189,12 @@ is a Cloudflare redirect rule to `olin.now/business`.
 ## App Catalog
 
 Current apps (in `apps/`): djfy, doggiowars, doodlebugs, kindlify, kirian (Kiran), lexify,
-mangaprompts, mirrorbooth, ol1nllm, orbitrontactics, poetrystream, swypekids, ugcfactory.
+mangaprompts, mirrorbooth, ol1nllm, orbitrontactics, poetrystream, puff, swypekids, ugcfactory.
+
+**ugcfactory has no releases at all** and no desktop release workflow (only
+`firebase-android.yml` + `testflight.yml`), so its page shows "Buildy brzy k dispozici"
+while advertising `desktop: macos`. It needs a `release-macos.yml` before the store can
+link anything.
 
 All are standalone binaries except **doggiowars**, which runs inside Luanti (ex-Minetest) —
 no per-platform executable, so it sets `artifacts: mod` (a platform-agnostic `.zip` bucket in
@@ -210,14 +215,22 @@ The old mod package was renamed into it rather than left standing beside it, so
 exists — the author's profile and `api/packages/?author=lioilsources` both list this one and
 nothing else.
 
-The repo has **no release workflow** — DoggioWars ships to two places by hand:
+Since v2.4.0 the repo has a **release workflow** (`.github/workflows/release.yml`, first run
+2026-09-25): pushing an **annotated** `v*` tag ships to both places, and the tag's message
+becomes the release description on each. `git tag -a v2.4.0 -m "…" && git push origin v2.4.0`
+is the whole procedure. What it does, and what still has to be done by hand:
 
-1. **GitHub Release** (what the store links to): tag, then
+1. **GitHub Release** (what the store links to): the workflow runs
    `git archive --format=zip --prefix=doggiowars_game/ <tag> -o doggiowars-<tag>.zip` and
-   `gh release create`. The `doggiowars_game/` prefix is what makes the folder name
+   attaches it. The `doggiowars_game/` prefix is what makes the folder name
    unmistakable on unpack. `git archive` honours `.gitattributes` `export-ignore`, which is
    how `Prompts/` and `play.sh` stay out; `roblox/` deliberately ships.
-2. **ContentDB** builds its own zip from git. Its git update detection polls **once a day**
+2. **ContentDB** is only published automatically once the repo has a `CONTENTDB_TOKEN`
+   secret — it has **none today**, so that step exits 0 with a warning and the game reaches
+   Luanti players a day late over the daily poll below (that is what happened to v2.4.0).
+   Set it with `gh secret set CONTENTDB_TOKEN -R lioilsources/DoggioWars` (ContentDB →
+   Settings → API Tokens) to make it immediate.
+   ContentDB builds its own zip from git. Its git update detection polls **once a day**
    (no webhook on the repo), so a fresh tag shows up there a day late; the UI's Create
    Release, or `POST /api/packages/lioilsources/doggiowars_game/releases/new/` with
    `{"method":"git","title":"vX.Y.Z","ref":"vX.Y.Z"}` and a Bearer token, publishes it at
@@ -238,7 +251,15 @@ The repo has **no release workflow** — DoggioWars ships to two places by hand:
 
 ## Deployment
 
-- Branch `gh-pages` is the published branch
+- **GitHub Pages is set to `build_type: workflow`** — the site is published only by the
+  "Build & Deploy store" workflow (`.github/workflows/deploy.yml`), which runs `make all`
+  (fetch + screenshots + build) **on CI from the tip of `origin/main`**. `make deploy` just
+  triggers that workflow and watches it. So **commit and push first**: nothing that lives
+  only in your working tree or your local `dist/` is ever published.
+- The `gh-pages` branch is a **dead leftover** (that path was removed 2026-07-08 because it
+  silently "succeeded" while the live site stayed stale). Its last commit is from July —
+  reading it will tell you the site is months behind when it is not. Check
+  `gh run list --workflow deploy.yml` instead.
 - `CNAME` file in build keeps custom domain `olin.now` active
 - Cloudflare proxied (SSL mode Full) — no server needed
 - Binary hosting: links to GitHub release URLs (repos must be public)
