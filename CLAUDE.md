@@ -192,17 +192,17 @@ Current apps (in `apps/`): audioscanner, beenhere (Been Here), djfy, doggiowars,
 kindlify, kirian (Kiran), lexify, mangaprompts, mirrorbooth, ol1nllm, orbitrontactics,
 poetrystream, puff, storyteller, swypekids, ugcfactory.
 
-**storyteller** is the one app whose repo is **private** (`lioilsources/storyteller`). CI's
-`GITHUB_TOKEN` is scoped to this repo, so `make fetch` cannot see its releases, and its assets
-would 404 for a visitor anyway — the page stays download-less until the repo goes public or
-gets a TestFlight link.
+**storyteller** was private until 2026-09-26 and is now public, so `make fetch` resolves it
+like any other app. Its default branch is **`master`**, not `main` — the only one in the
+catalog.
 
-A private repo in `apps/` **used to take the whole deploy down**, and the trap is worth
-keeping in mind for the next one: `gh api` answers a 404 with an error *object* on stdout and
-a non-zero exit that `|| true` hides. The object is neither empty nor `[]`, so the emptiness
-check waved it through and the `jq` after it died with `Cannot index string with string
-"draft"` — exit 5, `make: *** [fetch] Error 5`, Pages never published (run 100, 2026-09-26).
-`fetch_app` now checks that the response `type` is `array` before touching it.
+While it was private it **took the whole deploy down**, and the trap is worth keeping in mind
+before adding another private repo here: `gh api` answers a 404 with an error *object* on
+stdout and a non-zero exit that `|| true` hides. The object is neither empty nor `[]`, so the
+emptiness check waved it through and the `jq` after it died with `Cannot index string with
+string "draft"` — exit 5, `make: *** [fetch] Error 5`, Pages never published (run 100,
+2026-09-26). `fetch_app` now checks that the response `type` is `array` before touching it, so
+an unreadable repo costs that app its download buttons and nothing more.
 
 **ugcfactory** got its first public release only on 2026-09-25 (`v1.0.0`); until then it had
 no release workflow at all (just `firebase-android.yml` + `testflight.yml`) and its page
