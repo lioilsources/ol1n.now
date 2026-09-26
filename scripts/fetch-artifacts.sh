@@ -53,7 +53,17 @@ fetch_app() {
   rm -f "$manifest"
 
   json="$(gh api "repos/$repo/releases?per_page=$PER_PAGE" 2>/dev/null || true)"
-  if [ -z "$json" ] || [ "$json" = "[]" ]; then
+  # A repo this token cannot read — private, renamed, gone — answers 404 with an
+  # error OBJECT on stdout and a non-zero exit that `|| true` hides. That object
+  # is neither empty nor "[]", so an emptiness check waves it through, and the
+  # jq below then dies with `Cannot index string with string "draft"` (exit 5),
+  # which under `set -e` takes the whole deploy down with it. Adding the private
+  # `storyteller` did exactly that on 2026-09-26. Check the shape instead.
+  if [ "$(printf '%s' "$json" | jq -r 'type' 2>/dev/null)" != "array" ]; then
+    echo "  - $slug: no releases visible (private, or no such repo)"
+    return 0
+  fi
+  if [ "$json" = "[]" ]; then
     echo "  - $slug: no releases yet"
     return 0
   fi
