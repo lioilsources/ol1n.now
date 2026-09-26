@@ -188,8 +188,14 @@ is a Cloudflare redirect rule to `olin.now/business`.
 
 ## App Catalog
 
-Current apps (in `apps/`): djfy, doggiowars, doodlebugs, kindlify, kirian (Kiran), lexify,
-mangaprompts, mirrorbooth, ol1nllm, orbitrontactics, poetrystream, puff, swypekids, ugcfactory.
+Current apps (in `apps/`): audioscanner, beenhere (Been Here), djfy, doggiowars, doodlebugs,
+kindlify, kirian (Kiran), lexify, mangaprompts, mirrorbooth, ol1nllm, orbitrontactics,
+poetrystream, puff, storyteller, swypekids, ugcfactory.
+
+**storyteller** is the one app whose repo is **private** (`lioilsources/storyteller`). `make
+fetch` degrades to "no releases yet" rather than failing — `gh api` errors are swallowed — but
+its release assets would 404 for a visitor even once it has tags, so the page stays
+download-less until the repo goes public or gets a TestFlight link.
 
 **ugcfactory** got its first public release only on 2026-09-25 (`v1.0.0`); until then it had
 no release workflow at all (just `firebase-android.yml` + `testflight.yml`) and its page
@@ -240,6 +246,43 @@ is the whole procedure. What it does, and what still has to be done by hand:
    once. The POST returns immediately with `commit: null` and `size: 0` plus a `task` URL —
    the import runs asynchronously, so read the release back from
    `api/packages/.../releases/` to confirm the commit and size landed.
+
+## Screenshots without a device
+
+Two mobile apps have no screenshots taken on a phone; theirs are rendered by a
+**golden test against the app's own widgets** and copied here, which is why they
+are in Czech and match the UI as it actually was:
+
+    flutter test test/screenshots_test.dart --update-goldens
+
+`storyteller` ships that harness itself (`app/test/screenshots_test.dart`, tagged
+`screenshots` so CI skips it — goldens compare pixels, and a runner's Skia or font
+version reds the build for a rendering difference that is not a regression).
+`been-here`'s was written the same way against its existing fakes
+(`FakePhotoLibrary`, `FakeLocationService`, an in-memory drift db) but **is not
+committed to that repo yet**, so regenerating its four shots means writing it
+again — worth upstreaming the next time that repo is open.
+
+Three things make such a harness work where a naive golden test gives black boxes
+and English text: real fonts have to be loaded by hand out of
+`$FLUTTER_ROOT/bin/cache/artifacts/material_fonts`, the locale has to be forced to
+`cs` (the test platform reports en-US), and `WidgetsApp.debugAllowBannerOverride =
+false` gets the red DEBUG ribbon off the top-right corner.
+
+Two known gaps, both wanting a real phone rather than more code:
+
+- **been-here's photo tiles are blank.** `FakePhotoLibrary.thumbnail()` returns a
+  2×2 placeholder PNG, so the Here screen shows its visit timeline over empty
+  tiles. The layout is real; the photos are not.
+- **audioscanner has no screenshots at all.** Its screens are fed by ARKit and the
+  microphone, and every one of them shows *measurements*. Rendering them in a test
+  would mean inventing a room's frequency response — the one thing a measurement
+  tool must not ship on its store page. These have to come off a phone in a real
+  room.
+
+`storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
+default Flutter logo, which is not worth shipping, so they fall back to the store's
+letter tile on purpose.
 
 ## Adding a New App
 
