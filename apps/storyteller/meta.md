@@ -54,5 +54,16 @@ ukáže ilustraci scény a při přechodu na další krok nabídne, jak navázat
 Osnova se před vyprávěním složí do „pohádky v kostce“. Model pro vyhledávání
 běží přímo v telefonu, takže nic z toho nepotřebuje připojení.
 
+### Zvuky a postavy
+
+Pod nápovědami je zvukový pult. Tiše hrající melodie ladí s prostředím
+kroku — les, vesnice, palác, moře — a u problému přejde do napětí. Vedle
+ní tlačítka se zvuky zvířat a bytostí z tvé pohádky a s kouzly a akcemi:
+vlk, sova, vodník, drak, proměna, kletba, cval, hrom. Nic nehraje samo
+a nikdo nemluví; zvuk pustíš ty, až se to do vyprávění hodí.
+
+U Česka si můžeš vybrat i ze sto sedmi postav z pohádek, každou s vlastní
+ilustrací.
+
 Celý průchod Globus → Postavy → Úkol → Problém → Konec → Osnova → Suflér
 běží v telefonu, bez jediného volání na server.
