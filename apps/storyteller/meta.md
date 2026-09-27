@@ -34,9 +34,12 @@ tři nabídky motivů ukazují jen dánský materiál. Úzká tradice proto nab�
 
 ### Motivy jsou z korpusu, ne vymyšlené
 
-Úkoly, problémy a konce pocházejí z korpusu 93 pohádek Grimmů, Andersena
-a Perraulta ve veřejném vlastnictví. Obrázky k postavám i motivům jsou
-skutečné rendery, ne barevné přechody na místě, kde měla být grafika.
+Úkoly, problémy a konce pocházejí z pohádek ve veřejném vlastnictví —
+Grimmové, Andersen, Perrault, Ezop, Erben, Němcová, Langovy knihy pohádek,
+celkem 913 textů. Z nich se extrahují motivy a model k nim napíše české
+podoby pro různé věky. Česko je první země, která takhle ožila: 247 motivů
+s vlastními ilustracemi. Obrázky k postavám i motivům jsou skutečné rendery,
+ne barevné přechody na místě, kde měla být grafika.
 
 ### Suflér
 
@@ -44,5 +47,12 @@ Při vyprávění běží suflér po krocích — kdo v tom bude, kde jsou, co s
 pokazilo, jak to dopadne. Když se zasekneš, řekneš si o nápovědu. Nedostaneš
 větu k přečtení, dostaneš šťouchnutí.
 
+Nápovědy nejsou pár ručně napsaných šablon. Telefon převede na vektor, co se
+zrovna děje (jde to i nadiktovat), a v balíčku s tisíci nápověd najde ty
+nejbližší — k motivům z tvé osnovy a k fázi příběhu, ve které jsi. K tomu
+ukáže ilustraci scény a při přechodu na další krok nabídne, jak navázat.
+Osnova se před vyprávěním složí do „pohádky v kostce“. Model pro vyhledávání
+běží přímo v telefonu, takže nic z toho nepotřebuje připojení.
+
 Celý průchod Globus → Postavy → Úkol → Problém → Konec → Osnova → Suflér
-běží v telefonu, zatím bez jediného volání na server.
+běží v telefonu, bez jediného volání na server.
