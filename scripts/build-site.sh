@@ -784,6 +784,22 @@ $(tsv_rows "$_dir/decks.tsv")
 EOF
   printf '</div>\n'
 
+  # Translation switch. words.tsv's header names the languages; the first one
+  # is what a visitor without JS sees, and store.js unhides the switch.
+  _wlangs=""; _wfile=/dev/null
+  if [ -f "$_dir/words.tsv" ]; then
+    _wfile="$_dir/words.tsv"
+    _wlangs="$(head -1 "$_dir/words.tsv" | cut -f3- | tr "$TAB" ' ')"
+    printf '<div class="tr-pick" role="group" aria-label="Překlad" hidden><span class="tr-label">Překlad:</span>'
+    _first=1
+    for _l in $_wlangs; do
+      printf '<button type="button" data-tr="%s" lang="%s" aria-pressed="%s"><img src="assets/img/flag-%s.svg" alt="" width="18" height="12">%s</button>' \
+        "$_l" "$_l" "$([ "$_first" = 1 ] && printf true || printf false)" "$_l" "$(esc "$(lang_name "$_l")")"
+      _first=0
+    done
+    printf '</div>\n'
+  fi
+
   while IFS="$SEP" read -r d_id d_title d_count d_free d_cover; do
     [ -n "${d_id:-}" ] || continue
     printf '<div class="skin-panel" id="panel-%s" role="tabpanel" aria-labelledby="tab-%s" data-skin="%s">\n' "$d_id" "$d_id" "$d_id"
@@ -796,12 +812,28 @@ EOF
       printf '<div class="skin-cat"><h4>%s</h4>' "$(esc "$s_label")"
       [ -n "$s_desc" ] && printf '<p class="skin-notes">%s</p>' "$(esc "$s_desc")"
       printf '<div class="sprite-grid cards">'
-      awk -F"$TAB" -v d="$d_id" -v s="$s_id" -v OFS="$SEP" '$1 == d && $2 == s { $1 = $1; print }' "$_dir/cards.tsv" \
+      # cards joined with their row in words.tsv (deck + key), translations appended
+      awk -F"$TAB" -v d="$d_id" -v s="$s_id" -v OFS="$SEP" '
+          FILENAME != ARGV[2] { if (FNR > 1) w[$1 SUBSEP $2] = $0; next }
+          $1 == d && $2 == s {
+            k = $4; sub(/\.webp$/, "", k); line = $1
+            for (i = 2; i <= NF; i++) line = line OFS $i
+            if ((d SUBSEP k) in w) { n = split(w[d SUBSEP k], t, "\t"); for (i = 3; i <= n; i++) line = line OFS t[i] }
+            print line
+          }' "$_wfile" "$_dir/cards.tsv" \
         | sort -t"$SEP" -k3,3n \
-        | while IFS="$SEP" read -r c_deck c_style c_ord c_file c_label c_en; do
+        | while IFS="$SEP" read -r c_deck c_style c_ord c_file c_label c_rest; do
             printf '<figure class="sprite"><img src="decks/%s/%s/%s/%s" alt="%s" width="384" height="384" loading="lazy" decoding="async"><figcaption><b>%s</b>' \
               "$_slug" "$d_id" "$s_id" "$c_file" "$(esc "$c_label")" "$(esc "$c_label")"
-            [ -n "$c_en" ] && printf '<span lang="en">%s</span>' "$(esc "$c_en")"
+            _first=1
+            for _l in $_wlangs; do
+              _w="${c_rest%%"$SEP"*}"
+              case "$c_rest" in *"$SEP"*) c_rest="${c_rest#*"$SEP"}" ;; *) c_rest="" ;; esac
+              if [ -n "$_w" ]; then
+                printf '<span lang="%s"%s>%s</span>' "$_l" "$([ "$_first" = 1 ] || printf ' hidden')" "$(esc "$_w")"
+              fi
+              _first=0
+            done
             printf '</figcaption></figure>'
           done
       printf '</div></div>\n'
@@ -850,6 +882,8 @@ for d in "$APPS"/*/decks; do
   mkdir -p "$DIST/decks"
   rm -rf "$DIST/decks/$slug"
   cp -R "$d" "$DIST/decks/$slug"
+  # hand-checked translations live beside decks/, which import-decks.sh rewrites
+  if [ -f "$APPS/$slug/words.tsv" ]; then cp "$APPS/$slug/words.tsv" "$DIST/decks/$slug/words.tsv"; fi
 done
 
 # ordered list of meta files

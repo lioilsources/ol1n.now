@@ -32,6 +32,7 @@ lang_name() {
     uk) echo "Українська" ;;
     vi) echo "Tiếng Việt" ;;
     ko) echo "한국어" ;;
+    ru) echo "Русский" ;;
     *)  echo "$1" ;;
   esac
 }

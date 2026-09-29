@@ -53,7 +53,8 @@ apps/<slug>/
   decks/               # Optional, committed, web-ready deck samples (make import-decks; lexify only)
     decks.tsv          #   id title count free cover
     styles.tsv         #   deck ord style label desc     (ord 0 = first five cards, 1 = next five)
-    cards.tsv          #   deck style ord file label en
+    cards.tsv          #   deck style ord file label
+  words.tsv            # lexify only, hand-checked: deck key + one column per language (header names them)
     <deck>/<style>/*.webp
 
 pages/<name>.html      # Hand-written standalone pages -> dist/<name>.html (business.html = olin.now/business)
@@ -170,6 +171,17 @@ It reuses the skins markup (`.skins`, `.skin-chip[data-skin]`, `.skin-panel`), s
 switching and `#<deck>` deep links come from `store.js` for free; that works only
 because it is the one `.skins` root on the page. Chrome strings are Czech in the
 script, like visuals and fleets.
+
+Under each Czech word sits its translation, switchable between the languages in
+the header of **`apps/lexify/words.tsv`** (en de it fr pl pt-BR ja ko vi ru uk; the
+first is the no-JS default, `store.js` remembers the choice in localStorage). That
+file is **hand-checked and deliberately not imported**: the packs' own labels are
+machine output and wrong in exactly the way a store page must not show (ja calls
+the eagle an owl, ko the owl a lion, vi the penguin an ostrich; pl/uk are empty and
+it exists for two decks). It sits outside `decks/` because `import-decks.sh` wipes
+that folder; the import warns about any sampled card that has no row in it, so a
+re-import that picks new cards tells you what to translate. A new language is a new
+column plus `assets/img/flag-<lang>.svg` and a `lang_name` entry in `i18n.sh`.
 
 ## Standalone pages (olin.now/business)
 

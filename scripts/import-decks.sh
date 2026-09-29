@@ -15,8 +15,14 @@
 # and writes:
 #   apps/lexify/decks/decks.tsv    id title count free cover
 #   apps/lexify/decks/styles.tsv   deck ord style label desc
-#   apps/lexify/decks/cards.tsv    deck style ord file label en
+#   apps/lexify/decks/cards.tsv    deck style ord file label
 #   apps/lexify/decks/<deck>/<style>/<key>.webp
+#
+# The translations under each card do NOT come from here. The packs' own
+# labels are machine-translated and patchy (Polish and Ukrainian are empty,
+# Italian exists for two decks, Japanese calls the eagle an owl), so the page
+# reads them from the hand-checked apps/lexify/words.tsv instead. This script
+# only warns about a sampled card that has no row there.
 #
 # Authoring-time only, never run on CI - the output is committed, exactly as
 # with skins, so a build needs no source repo and no ImageMagick.
@@ -32,6 +38,7 @@ SIZE="${SIZE:-384}"
 
 HERE="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$HERE/apps/lexify/decks"
+WORDS="$HERE/apps/lexify/words.tsv"
 
 [ -d "$SRC/docs/decks" ] || { echo "error: no DuolingoCards checkout at $SRC (set LEXIFY_SRC)" >&2; exit 1; }
 command -v jq >/dev/null || { echo "error: jq not found" >&2; exit 1; }
@@ -96,7 +103,7 @@ for deck in $ORDER; do
       reduce .cards[] as $c ({seen: {}, out: []};
         ($c.label.cs // $c.key) as $l
         | if .seen[$l] then . else .seen[$l] = true | .out += [$c] end)
-      | .out[] | [.key, .image, (.label.cs // .key), (.label.en // "")] | @tsv' "$json")"
+      | .out[] | [.key, .image, (.label.cs // .key)] | @tsv' "$json")"
 
   si=0; cover=""
   for style in $styles; do
@@ -108,14 +115,16 @@ for deck in $ORDER; do
     mkdir -p "$OUT/$deck/$style"
 
     ord=0
-    while IFS="$TAB" read -r key image cs en; do
+    while IFS="$TAB" read -r key image cs; do
       [ -n "${key:-}" ] || continue
       src="$SRC/docs/decks/$deck/images/$style/$image"
       [ -f "$src" ] || continue
       file="$key.webp"
       "$MAGICK" "$src" -filter Lanczos -resize "${SIZE}x${SIZE}>" -strip \
         -define webp:method=6 -quality 80 "$OUT/$deck/$style/$file"
-      printf '%s\t%s\t%s\t%s\t%s\t%s\n' "$deck" "$style" "$ord" "$file" "$cs" "$en" >> "$OUT/cards.tsv"
+      printf '%s\t%s\t%s\t%s\t%s\n' "$deck" "$style" "$ord" "$file" "$cs" >> "$OUT/cards.tsv"
+      grep -q "^$deck$TAB$key$TAB" "$WORDS" 2>/dev/null \
+        || echo "  warning: $deck/$key has no translations in ${WORDS#$HERE/}" >&2
       [ -n "$cover" ] || cover="$style/$file"
       ord=$((ord + 1))
       [ "$ord" -lt "$PER_STYLE" ] || break

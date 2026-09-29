@@ -309,7 +309,21 @@ a:hover { text-decoration: underline; }
 .sprite-grid.cards .sprite img { height: auto; aspect-ratio: 1; object-fit: cover; }
 .sprite-grid.cards figcaption { margin: 0; padding: 8px 6px 10px; font-size: 13px; line-height: 1.3; }
 .sprite-grid.cards figcaption b { display: block; color: #f3f1e8; font-weight: 600; }
-.sprite-grid.cards figcaption span { display: block; font-size: 11px; }
+.sprite-grid.cards figcaption span { display: block; font-size: 12px; }
+.sprite-grid.cards figcaption span[hidden] { display: none; }
+/* Translation switch — same pill as .lang-switch, but buttons, and it wraps */
+.tr-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 16px 0 0; }
+.tr-pick[hidden] { display: none; }
+.tr-label { font-size: 13px; color: var(--text-dim); margin-right: 2px; }
+.tr-pick button {
+  appearance: none; cursor: pointer; font: inherit;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border-radius: 999px; font-size: 13px;
+  background: var(--card); border: 1px solid var(--border); color: var(--text-dim);
+}
+.tr-pick button:hover { background: var(--card-hover); }
+.tr-pick button[aria-pressed="true"] { background: var(--accent-soft); border-color: transparent; color: var(--accent); font-weight: 600; }
+.tr-pick img { display: block; width: 18px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .18); }
 
 @media (prefers-reduced-motion: reduce) {
   .skin-chip { transition: none; }

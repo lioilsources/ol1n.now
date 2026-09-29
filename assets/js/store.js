@@ -477,3 +477,31 @@
     });
   });
 })();
+
+// Lexify decks: which translation sits under the Czech word on each card.
+// Every language is already in the markup (the first one visible), so this
+// only flips `hidden` and remembers the choice for the next visit.
+(function () {
+  "use strict";
+  var box = document.querySelector(".tr-pick");
+  if (!box) return;
+  var root = box.closest(".decks") || document;
+  var spans = [].slice.call(root.querySelectorAll("figcaption span[lang]"));
+  var btns = [].slice.call(box.querySelectorAll("button[data-tr]"));
+  var KEY = "lexify.tr";
+
+  function pick(l) {
+    spans.forEach(function (s) { s.hidden = s.getAttribute("lang") !== l; });
+    btns.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.tr === l)); });
+    try { localStorage.setItem(KEY, l); } catch (e) { /* private mode */ }
+  }
+
+  box.hidden = false;
+  box.addEventListener("click", function (e) {
+    var b = e.target.closest("button[data-tr]");
+    if (b) pick(b.dataset.tr);
+  });
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) { /* blocked */ }
+  if (saved && btns.some(function (b) { return b.dataset.tr === saved; })) pick(saved);
+})();
