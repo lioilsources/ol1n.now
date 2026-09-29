@@ -753,6 +753,69 @@ EOF
   return 0
 }
 
+# ---- decks gallery (dist/decks/<slug>/, produced by scripts/import-decks.sh) ----
+# Fourth gallery shape: Lexify's card decks. Each deck is drawn in two art
+# styles, so a deck panel shows ten sample cards, five in either style. It
+# reuses the skins markup (.skins, .skin-chip[data-skin], .skin-panel), which
+# gives it the picker, #deep links and keyboard handling for free — and, being
+# the only .skins root on the app page, it can live there instead of on a
+# subpage.
+decks_have() { [ -f "$DIST/decks/$1/decks.tsv" ]; }
+
+# plural_card <n> -> kartička / kartičky / kartiček
+plural_card() { case "$1" in 1) echo "kartička" ;; 2|3|4) echo "kartičky" ;; *) echo "kartiček" ;; esac; }
+
+decks_html() {
+  _slug="$1"; _dir="$DIST/decks/$_slug"
+  _n="$(grep -c . "$_dir/decks.tsv" || true)"
+  printf '<section class="section skins decks" id="decks"><h2>Balíčky</h2>\n'
+  printf '<p class="skins-intro">%s balíčků a každý je nakreslený ve dvou výtvarných stylech. Z každého tu je ukázka deseti kartiček: pět v prvním stylu, pět ve druhém.</p>\n' "$_n"
+
+  printf '<div class="skin-picker" role="tablist" aria-label="Balíčky">'
+  while IFS="$SEP" read -r d_id d_title d_count d_free d_cover; do
+    [ -n "${d_id:-}" ] || continue
+    printf '<button type="button" class="skin-chip" role="tab" data-skin="%s" id="tab-%s" aria-selected="false" aria-controls="panel-%s">' \
+      "$d_id" "$d_id" "$d_id"
+    printf '<img src="decks/%s/%s/%s" alt="" width="384" height="384" loading="lazy" decoding="async"><span class="n">%s</span><span class="y">%s</span>' \
+      "$_slug" "$d_id" "$d_cover" "$(esc "$d_title")" "$([ "$d_free" = 1 ] && printf 'zdarma' || printf '%s %s' "$d_count" "$(plural_card "$d_count")")"
+    printf '</button>'
+  done <<EOF
+$(tsv_rows "$_dir/decks.tsv")
+EOF
+  printf '</div>\n'
+
+  while IFS="$SEP" read -r d_id d_title d_count d_free d_cover; do
+    [ -n "${d_id:-}" ] || continue
+    printf '<div class="skin-panel" id="panel-%s" role="tabpanel" aria-labelledby="tab-%s" data-skin="%s">\n' "$d_id" "$d_id" "$d_id"
+    printf '<header class="skin-head"><h3>%s</h3><div class="badges">' "$(esc "$d_title")"
+    printf '<span class="badge">%s %s</span>' "$d_count" "$(plural_card "$d_count")"
+    [ "$d_free" = 1 ] && printf '<span class="badge featured">Zdarma</span>'
+    printf '</div></header>\n'
+    while IFS="$SEP" read -r s_deck s_ord s_id s_label s_desc; do
+      [ "${s_deck:-}" = "$d_id" ] || continue
+      printf '<div class="skin-cat"><h4>%s</h4>' "$(esc "$s_label")"
+      [ -n "$s_desc" ] && printf '<p class="skin-notes">%s</p>' "$(esc "$s_desc")"
+      printf '<div class="sprite-grid cards">'
+      awk -F"$TAB" -v d="$d_id" -v s="$s_id" -v OFS="$SEP" '$1 == d && $2 == s { $1 = $1; print }' "$_dir/cards.tsv" \
+        | sort -t"$SEP" -k3,3n \
+        | while IFS="$SEP" read -r c_deck c_style c_ord c_file c_label c_en; do
+            printf '<figure class="sprite"><img src="decks/%s/%s/%s/%s" alt="%s" width="384" height="384" loading="lazy" decoding="async"><figcaption><b>%s</b>' \
+              "$_slug" "$d_id" "$s_id" "$c_file" "$(esc "$c_label")" "$(esc "$c_label")"
+            [ -n "$c_en" ] && printf '<span lang="en">%s</span>' "$(esc "$c_en")"
+            printf '</figcaption></figure>'
+          done
+      printf '</div></div>\n'
+    done <<EOF
+$(tsv_rows "$_dir/styles.tsv")
+EOF
+    printf '</div>\n'
+  done <<EOF
+$(tsv_rows "$_dir/decks.tsv")
+EOF
+  printf '</section>\n'
+  return 0
+}
+
 # copy per-app skin galleries if provided (already web-ready; see scripts/import-skins.sh)
 for d in "$APPS"/*/skins; do
   [ -d "$d" ] || continue
@@ -778,6 +841,15 @@ for d in "$APPS"/*/fleets; do
   mkdir -p "$DIST/fleets"
   rm -rf "$DIST/fleets/$slug"
   cp -R "$d" "$DIST/fleets/$slug"
+done
+
+# and deck galleries (scripts/import-decks.sh)
+for d in "$APPS"/*/decks; do
+  [ -d "$d" ] || continue
+  slug="$(basename "$(dirname "$d")")"
+  mkdir -p "$DIST/decks"
+  rm -rf "$DIST/decks/$slug"
+  cp -R "$d" "$DIST/decks/$slug"
 done
 
 # ordered list of meta files
@@ -853,6 +925,7 @@ HERO
       if skins_have "$slug"; then skins_teaser_html "$slug"; fi
       if visuals_have "$slug"; then visuals_teaser_html "$slug"; fi
       if fleets_have "$slug"; then fleets_teaser_html "$slug"; fi
+      if decks_have "$slug"; then decks_html "$slug"; fi
       printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t sec.shots_desktop)")"
       shots_html "$slug" desktop
       echo '</section>'
