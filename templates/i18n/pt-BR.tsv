@@ -1,0 +1,25 @@
+# Site chrome, Brazilian Portuguese. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
+# skins gallery ships this language.
+nav.all_apps	← Todos os apps
+nav.back_to	← Voltar para %s
+nav.lang	Idioma
+title.app	%s — olin.now
+badge.featured	★ Destaque
+badge.mobile	Celular
+sec.downloads	Downloads
+sec.description	Descrição
+sec.shots_desktop	Capturas de tela — computador
+sec.shots_mobile	Capturas de tela — celular
+shots.empty.desktop	Ainda sem capturas de tela para computador.
+shots.empty.mobile	Ainda sem capturas de tela para celular.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Versões em breve.
+decks.title	Baralhos
+decks.intro	%s baralhos, cada um desenhado em dois estilos. Aqui estão dez cartas de amostra de cada: cinco no primeiro estilo, cinco no segundo.
+decks.cards	%s cartas
+decks.free	grátis
+decks.free_badge	Grátis
+decks.tr	Tradução

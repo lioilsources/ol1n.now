@@ -8,7 +8,7 @@ PORT ?= 8099
 
 .DEFAULT_GOAL := help
 
-.PHONY: help build fetch screenshots import-skins import-visuals import-fleets og all deploy serve clean
+.PHONY: help build fetch screenshots import-skins import-visuals import-fleets import-decks og all deploy serve clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -32,6 +32,9 @@ import-visuals: ## (authoring) Re-encode an app's artwork gallery into apps/<slu
 import-fleets: ## (authoring) Re-encode OrbitronTactics fleets + maneuvers into apps/orbitrontactics/fleets/
 	@ORBITRON_SRC=$${ORBITRON_SRC:-$(CURDIR)/../OrbitronTactics} $(SCRIPTS)/import-fleets.sh orbitrontactics
 
+import-decks: ## (authoring) Re-encode Lexify deck samples (5+5 cards per deck) into apps/lexify/decks/
+	@LEXIFY_SRC=$${LEXIFY_SRC:-$(CURDIR)/../DuolingoCards} $(SCRIPTS)/import-decks.sh
+
 og: ## (authoring) Render Open Graph images of standalone pages into assets/img/og/ (needs Chrome)
 	@$(SCRIPTS)/og-images.sh
 
@@ -45,5 +48,5 @@ serve: build ## Serve dist/ locally for preview
 	@cd $(DIST) && python3 -m http.server $(PORT)
 
 clean: ## Remove generated site (keeps downloads/ and screenshots/)
-	@rm -f $(DIST)/*.html && rm -rf $(DIST)/assets $(DIST)/icons $(DIST)/skins $(DIST)/visuals $(DIST)/fleets
+	@rm -f $(DIST)/*.html && rm -rf $(DIST)/assets $(DIST)/icons $(DIST)/skins $(DIST)/visuals $(DIST)/fleets $(DIST)/decks
 	@echo "cleaned generated html/assets"

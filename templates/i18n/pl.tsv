@@ -1,0 +1,25 @@
+# Site chrome, Polish. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
+# skins gallery ships this language.
+nav.all_apps	← Wszystkie aplikacje
+nav.back_to	← Wróć do %s
+nav.lang	Język
+title.app	%s — olin.now
+badge.featured	★ Polecane
+badge.mobile	Mobilne
+sec.downloads	Do pobrania
+sec.description	Opis
+sec.shots_desktop	Zrzuty ekranu — komputer
+sec.shots_mobile	Zrzuty ekranu — telefon
+shots.empty.desktop	Na razie brak zrzutów ekranu z komputera.
+shots.empty.mobile	Na razie brak zrzutów ekranu z telefonu.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Wersje wkrótce.
+decks.title	Talie
+decks.intro	%s talii, każda narysowana w dwóch stylach. Z każdej dziesięć przykładowych kart: pięć w pierwszym stylu, pięć w drugim.
+decks.cards	%s kart
+decks.free	za darmo
+decks.free_badge	Za darmo
+decks.tr	Tłumaczenie

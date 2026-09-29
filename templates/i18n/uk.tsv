@@ -1,0 +1,25 @@
+# Site chrome, Ukrainian. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
+# skins gallery ships this language.
+nav.all_apps	← Усі застосунки
+nav.back_to	← Назад до %s
+nav.lang	Мова
+title.app	%s — olin.now
+badge.featured	★ Рекомендуємо
+badge.mobile	Мобільні
+sec.downloads	Завантаження
+sec.description	Опис
+sec.shots_desktop	Знімки екрана — комп'ютер
+sec.shots_mobile	Знімки екрана — телефон
+shots.empty.desktop	Знімків екрана для комп'ютера поки немає.
+shots.empty.mobile	Знімків екрана для телефона поки немає.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Збірки незабаром.
+decks.title	Колоди
+decks.intro	%s колод, і кожну намальовано у двох стилях. З кожної тут десять карток: п'ять у першому стилі, п'ять у другому.
+decks.cards	%s карток
+decks.free	безкоштовно
+decks.free_badge	Безкоштовно
+decks.tr	Переклад

@@ -1,0 +1,25 @@
+# Site chrome, French. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
+# skins gallery ships this language.
+nav.all_apps	← Toutes les applis
+nav.back_to	← Retour à %s
+nav.lang	Langue
+title.app	%s — olin.now
+badge.featured	★ À la une
+badge.mobile	Mobile
+sec.downloads	Téléchargements
+sec.description	Description
+sec.shots_desktop	Captures d'écran — ordinateur
+sec.shots_mobile	Captures d'écran — mobile
+shots.empty.desktop	Pas encore de captures d'écran pour ordinateur.
+shots.empty.mobile	Pas encore de captures d'écran pour mobile.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Versions bientôt disponibles.
+decks.title	Paquets
+decks.intro	%s paquets de cartes, chacun dessiné dans deux styles. Voici dix cartes de chacun : cinq dans le premier style, cinq dans le second.
+decks.cards	%s cartes
+decks.free	gratuit
+decks.free_badge	Gratuit
+decks.tr	Traduction

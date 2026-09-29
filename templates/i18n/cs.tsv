@@ -45,3 +45,9 @@ player.prev	Předchozí
 player.play	Přehrát
 player.next	Další
 player.pause	Pozastavit
+decks.title	Balíčky
+decks.intro	%s balíčků a každý je nakreslený ve dvou výtvarných stylech. Z každého tu je ukázka deseti kartiček: pět v prvním stylu, pět ve druhém.
+decks.cards	%s kartiček
+decks.free	zdarma
+decks.free_badge	Zdarma
+decks.tr	Překlad

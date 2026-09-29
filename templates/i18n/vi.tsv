@@ -1,0 +1,25 @@
+# Site chrome, Vietnamese. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
+# skins gallery ships this language.
+nav.all_apps	← Tất cả ứng dụng
+nav.back_to	← Quay lại %s
+nav.lang	Ngôn ngữ
+title.app	%s — olin.now
+badge.featured	★ Nổi bật
+badge.mobile	Di động
+sec.downloads	Tải về
+sec.description	Mô tả
+sec.shots_desktop	Ảnh chụp màn hình — máy tính
+sec.shots_mobile	Ảnh chụp màn hình — di động
+shots.empty.desktop	Chưa có ảnh chụp màn hình trên máy tính.
+shots.empty.mobile	Chưa có ảnh chụp màn hình trên di động.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Bản dựng sắp ra mắt.
+decks.title	Bộ thẻ
+decks.intro	%s bộ thẻ, mỗi bộ được vẽ theo hai phong cách. Đây là mười thẻ mẫu từ mỗi bộ: năm thẻ theo phong cách thứ nhất, năm thẻ theo phong cách thứ hai.
+decks.cards	%s thẻ
+decks.free	miễn phí
+decks.free_badge	Miễn phí
+decks.tr	Bản dịch

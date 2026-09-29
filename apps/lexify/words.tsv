@@ -1,0 +1,141 @@
+deck	key	cs	en	de	it	fr	pl	pt-BR	ja	ko	vi	ru	uk
+numbers-1-10	num.one	jedna	one	eins	uno	un	jeden	um	一	하나	một	один	один
+numbers-1-10	num.two	dva	two	zwei	due	deux	dwa	dois	二	둘	hai	два	два
+numbers-1-10	num.three	tři	three	drei	tre	trois	trzy	três	三	셋	ba	три	три
+numbers-1-10	num.four	čtyři	four	vier	quattro	quatre	cztery	quatro	四	넷	bốn	четыре	чотири
+numbers-1-10	num.five	pět	five	fünf	cinque	cinq	pięć	cinco	五	다섯	năm	пять	п'ять
+numbers-1-10	num.six	šest	six	sechs	sei	six	sześć	seis	六	여섯	sáu	шесть	шість
+numbers-1-10	num.seven	sedm	seven	sieben	sette	sept	siedem	sete	七	일곱	bảy	семь	сім
+numbers-1-10	num.eight	osm	eight	acht	otto	huit	osiem	oito	八	여덟	tám	восемь	вісім
+numbers-1-10	num.nine	devět	nine	neun	nove	neuf	dziewięć	nove	九	아홉	chín	девять	дев'ять
+numbers-1-10	num.ten	deset	ten	zehn	dieci	dix	dziesięć	dez	十	열	mười	десять	десять
+colors-basic	color.red	červená	red	rot	rosso	rouge	czerwony	vermelho	赤	빨간색	đỏ	красный	червоний
+colors-basic	color.blue	modrá	blue	blau	blu	bleu	niebieski	azul	青	파란색	xanh dương	синий	синій
+colors-basic	color.green	zelená	green	grün	verde	vert	zielony	verde	緑	초록색	xanh lá	зелёный	зелений
+colors-basic	color.yellow	žlutá	yellow	gelb	giallo	jaune	żółty	amarelo	黄色	노란색	vàng	жёлтый	жовтий
+colors-basic	color.orange	oranžová	orange	orange	arancione	orange	pomarańczowy	laranja	オレンジ色	주황색	cam	оранжевый	помаранчевий
+colors-basic	color.purple	fialová	purple	lila	viola	violet	fioletowy	roxo	紫	보라색	tím	фиолетовый	фіолетовий
+colors-basic	color.pink	růžová	pink	rosa	rosa	rose	różowy	rosa	ピンク	분홍색	hồng	розовый	рожевий
+colors-basic	color.brown	hnědá	brown	braun	marrone	marron	brązowy	marrom	茶色	갈색	nâu	коричневый	коричневий
+colors-basic	color.black	černá	black	schwarz	nero	noir	czarny	preto	黒	검은색	đen	чёрный	чорний
+colors-basic	color.white	bílá	white	weiß	bianco	blanc	biały	branco	白	흰색	trắng	белый	білий
+animals-pets	pet.dog	pes	dog	Hund	cane	chien	pies	cachorro	犬	개	chó	собака	собака
+animals-pets	pet.cat	kočka	cat	Katze	gatto	chat	kot	gato	猫	고양이	mèo	кошка	кіт
+animals-pets	pet.rabbit	králík	rabbit	Kaninchen	coniglio	lapin	królik	coelho	ウサギ	토끼	thỏ	кролик	кролик
+animals-pets	pet.hamster	křeček	hamster	Hamster	criceto	hamster	chomik	hamster	ハムスター	햄스터	chuột hamster	хомяк	хом'як
+animals-pets	pet.goldfish	zlatá rybka	goldfish	Goldfisch	pesce rosso	poisson rouge	złota rybka	peixinho-dourado	金魚	금붕어	cá vàng	золотая рыбка	золота рибка
+animals-pets	pet.parrot	papoušek	parrot	Papagei	pappagallo	perroquet	papuga	papagaio	オウム	앵무새	vẹt	попугай	папуга
+animals-pets	pet.turtle	želva	turtle	Schildkröte	tartaruga	tortue	żółw	tartaruga	カメ	거북	rùa	черепаха	черепаха
+animals-pets	pet.guinea_pig	morče	guinea pig	Meerschweinchen	porcellino d'India	cochon d'Inde	świnka morska	porquinho-da-índia	モルモット	기니피그	chuột lang	морская свинка	морська свинка
+animals-pets	pet.mouse	myš bílá	white mouse	weiße Maus	topolino bianco	souris blanche	biała mysz	camundongo branco	白いネズミ	흰쥐	chuột bạch	белая мышь	біла миша
+animals-pets	pet.rat	krysa domácí	rat	Ratte	ratto	rat	szczur	rato	ラット	쥐	chuột cống	крыса	щур
+animals-birds	animal.eagle	orel	eagle	Adler	aquila	aigle	orzeł	águia	ワシ	독수리	đại bàng	орёл	орел
+animals-birds	animal.owl	sova	owl	Eule	gufo	hibou	sowa	coruja	フクロウ	부엉이	cú mèo	сова	сова
+animals-birds	animal.penguin	tučňák	penguin	Pinguin	pinguino	manchot	pingwin	pinguim	ペンギン	펭귄	chim cánh cụt	пингвин	пінгвін
+animals-birds	animal.parrot	papoušek	parrot	Papagei	pappagallo	perroquet	papuga	papagaio	オウム	앵무새	vẹt	попугай	папуга
+animals-birds	animal.flamingo	plameňák	flamingo	Flamingo	fenicottero	flamant	flaming	flamingo	フラミンゴ	홍학	hồng hạc	фламинго	фламінго
+animals-birds	animal.toucan	tukan	toucan	Tukan	tucano	toucan	tukan	tucano	オオハシ	큰부리새	chim toucan	тукан	тукан
+animals-birds	animal.peacock	páv	peacock	Pfau	pavone	paon	paw	pavão	クジャク	공작	chim công	павлин	павич
+animals-birds	animal.hummingbird	kolibřík	hummingbird	Kolibri	colibrì	colibri	koliber	beija-flor	ハチドリ	벌새	chim ruồi	колибри	колібрі
+animals-birds	animal.crow	vrána	crow	Krähe	cornacchia	corneille	wrona	corvo	カラス	까마귀	quạ	ворона	ворона
+animals-birds	animal.pigeon	holub	pigeon	Taube	piccione	pigeon	gołąb	pombo	ハト	비둘기	bồ câu	голубь	голуб
+animals-farm	farm.cow	kráva	cow	Kuh	mucca	vache	krowa	vaca	牛	소	bò	корова	корова
+animals-farm	farm.pig	prase	pig	Schwein	maiale	cochon	świnia	porco	豚	돼지	lợn	свинья	свиня
+animals-farm	farm.sheep	ovce	sheep	Schaf	pecora	mouton	owca	ovelha	羊	양	cừu	овца	вівця
+animals-farm	farm.chicken	slepice	hen	Huhn	gallina	poule	kura	galinha	ニワトリ	닭	gà mái	курица	курка
+animals-farm	farm.goat	koza	goat	Ziege	capra	chèvre	koza	cabra	ヤギ	염소	dê	коза	коза
+animals-farm	farm.horse	kůň	horse	Pferd	cavallo	cheval	koń	cavalo	馬	말	ngựa	лошадь	кінь
+animals-farm	farm.donkey	osel	donkey	Esel	asino	âne	osioł	burro	ロバ	당나귀	lừa	осёл	віслюк
+animals-farm	farm.duck	kachna	duck	Ente	anatra	canard	kaczka	pato	アヒル	오리	vịt	утка	качка
+animals-farm	farm.turkey	krocan	turkey	Truthahn	tacchino	dindon	indyk	peru	七面鳥	칠면조	gà tây	индюк	індик
+animals-farm	farm.rabbit	králík	rabbit	Kaninchen	coniglio	lapin	królik	coelho	ウサギ	토끼	thỏ	кролик	кролик
+animals-insects	insect.butterfly	motýl	butterfly	Schmetterling	farfalla	papillon	motyl	borboleta	チョウ	나비	bướm	бабочка	метелик
+animals-insects	insect.bee	včela	bee	Biene	ape	abeille	pszczoła	abelha	ミツバチ	꿀벌	ong	пчела	бджола
+animals-insects	insect.ladybug	beruška	ladybird	Marienkäfer	coccinella	coccinelle	biedronka	joaninha	テントウムシ	무당벌레	bọ rùa	божья коровка	сонечко
+animals-insects	insect.dragonfly	vážka	dragonfly	Libelle	libellula	libellule	ważka	libélula	トンボ	잠자리	chuồn chuồn	стрекоза	бабка
+animals-insects	insect.ant	mravenec	ant	Ameise	formica	fourmi	mrówka	formiga	アリ	개미	kiến	муравей	мураха
+animals-insects	insect.beetle	brouk	beetle	Käfer	coleottero	scarabée	chrząszcz	besouro	甲虫	딱정벌레	bọ cánh cứng	жук	жук
+animals-insects	insect.grasshopper	kobylka	grasshopper	Heuschrecke	cavalletta	sauterelle	konik polny	gafanhoto	バッタ	메뚜기	châu chấu	кузнечик	коник
+animals-insects	insect.cricket	cvrček	cricket	Grille	grillo	grillon	świerszcz	grilo	コオロギ	귀뚜라미	dế	сверчок	цвіркун
+animals-insects	insect.mosquito	komár	mosquito	Stechmücke	zanzara	moustique	komar	mosquito	蚊	모기	muỗi	комар	комар
+animals-insects	insect.fly	moucha	fly	Fliege	mosca	mouche	mucha	mosca	ハエ	파리	ruồi	муха	муха
+animals-reptiles	reptile.snake	had	snake	Schlange	serpente	serpent	wąż	cobra	ヘビ	뱀	rắn	змея	змія
+animals-reptiles	reptile.lizard	ještěr	lizard	Eidechse	lucertola	lézard	jaszczurka	lagarto	トカゲ	도마뱀	thằn lằn	ящерица	ящірка
+animals-reptiles	reptile.crocodile	krokodýl	crocodile	Krokodil	coccodrillo	crocodile	krokodyl	crocodilo	ワニ	악어	cá sấu	крокодил	крокодил
+animals-reptiles	reptile.gecko	gekon	gecko	Gecko	geco	gecko	gekon	lagartixa	ヤモリ	도마뱀붙이	tắc kè	геккон	гекон
+animals-reptiles	reptile.chameleon	chameleon	chameleon	Chamäleon	camaleonte	caméléon	kameleon	camaleão	カメレオン	카멜레온	tắc kè hoa	хамелеон	хамелеон
+animals-reptiles	reptile.tortoise	suchozemská želva	tortoise	Landschildkröte	testuggine	tortue terrestre	żółw lądowy	jabuti	リクガメ	육지거북	rùa cạn	сухопутная черепаха	суходільна черепаха
+animals-reptiles	reptile.frog	žába	frog	Frosch	rana	grenouille	żaba	rã	カエル	개구리	ếch	лягушка	жаба
+animals-reptiles	reptile.salamander	mlok	newt	Molch	tritone	triton	traszka	tritão	イモリ	영원	sa giông	тритон	тритон
+animals-reptiles	reptile.alligator	aligátor	alligator	Alligator	alligatore	alligator	aligator	aligátor	アリゲーター	앨리게이터	cá sấu Mỹ	аллигатор	алігатор
+animals-reptiles	reptile.python	krajta	python	Python	pitone	python	pyton	píton	ニシキヘビ	비단뱀	trăn	питон	пітон
+animals-sea	animal.dolphin	delfín	dolphin	Delfin	delfino	dauphin	delfin	golfinho	イルカ	돌고래	cá heo	дельфин	дельфін
+animals-sea	animal.shark	žralok	shark	Hai	squalo	requin	rekin	tubarão	サメ	상어	cá mập	акула	акула
+animals-sea	animal.whale	velryba	whale	Wal	balena	baleine	wieloryb	baleia	クジラ	고래	cá voi	кит	кит
+animals-sea	animal.octopus	chobotnice	octopus	Krake	polpo	pieuvre	ośmiornica	polvo	タコ	문어	bạch tuộc	осьминог	восьминіг
+animals-sea	animal.seahorse	mořský koník	seahorse	Seepferdchen	cavalluccio marino	hippocampe	konik morski	cavalo-marinho	タツノオトシゴ	해마	cá ngựa	морской конёк	морський коник
+animals-sea	animal.sea_turtle	mořská želva	sea turtle	Meeresschildkröte	tartaruga marina	tortue de mer	żółw morski	tartaruga-marinha	ウミガメ	바다거북	rùa biển	морская черепаха	морська черепаха
+animals-sea	animal.crab	krab	crab	Krabbe	granchio	crabe	krab	caranguejo	カニ	게	cua	краб	краб
+animals-sea	animal.jellyfish	medúza	jellyfish	Qualle	medusa	méduse	meduza	água-viva	クラゲ	해파리	sứa	медуза	медуза
+animals-sea	animal.lobster	humr	lobster	Hummer	astice	homard	homar	lagosta	ロブスター	바닷가재	tôm hùm	омар	омар
+animals-sea	animal.shrimp	kreveta	shrimp	Garnele	gambero	crevette	krewetka	camarão	エビ	새우	tôm	креветка	креветка
+animals-wild	animal.lion	lev	lion	Löwe	leone	lion	lew	leão	ライオン	사자	sư tử	лев	лев
+animals-wild	animal.elephant	slon	elephant	Elefant	elefante	éléphant	słoń	elefante	ゾウ	코끼리	voi	слон	слон
+animals-wild	animal.giraffe	žirafa	giraffe	Giraffe	giraffa	girafe	żyrafa	girafa	キリン	기린	hươu cao cổ	жираф	жирафа
+animals-wild	animal.zebra	zebra	zebra	Zebra	zebra	zèbre	zebra	zebra	シマウマ	얼룩말	ngựa vằn	зебра	зебра
+animals-wild	animal.wolf	vlk	wolf	Wolf	lupo	loup	wilk	lobo	オオカミ	늑대	sói	волк	вовк
+animals-wild	animal.bear	medvěd	bear	Bär	orso	ours	niedźwiedź	urso	クマ	곰	gấu	медведь	ведмідь
+animals-wild	animal.tiger	tygr	tiger	Tiger	tigre	tigre	tygrys	tigre	トラ	호랑이	hổ	тигр	тигр
+animals-wild	animal.hippopotamus	hroch	hippopotamus	Nilpferd	ippopotamo	hippopotame	hipopotam	hipopótamo	カバ	하마	hà mã	бегемот	бегемот
+animals-wild	animal.rhinoceros	nosorožec	rhinoceros	Nashorn	rinoceronte	rhinocéros	nosorożec	rinoceronte	サイ	코뿔소	tê giác	носорог	носоріг
+animals-wild	animal.gorilla	gorila	gorilla	Gorilla	gorilla	gorille	goryl	gorila	ゴリラ	고릴라	khỉ đột	горилла	горила
+body-parts	body.head	hlava	head	Kopf	testa	tête	głowa	cabeça	頭	머리	đầu	голова	голова
+body-parts	body.hand	ruka	hand	Hand	mano	main	dłoń	mão	手	손	bàn tay	кисть	кисть
+body-parts	body.foot	noha (chodidlo)	foot	Fuß	piede	pied	stopa	pé	足	발	bàn chân	стопа	стопа
+body-parts	body.eye	oko	eye	Auge	occhio	œil	oko	olho	目	눈	mắt	глаз	око
+body-parts	body.ear	ucho	ear	Ohr	orecchio	oreille	ucho	orelha	耳	귀	tai	ухо	вухо
+body-parts	body.nose	nos	nose	Nase	naso	nez	nos	nariz	鼻	코	mũi	нос	ніс
+body-parts	body.mouth	ústa	mouth	Mund	bocca	bouche	usta	boca	口	입	miệng	рот	рот
+body-parts	body.heart	srdce	heart	Herz	cuore	cœur	serce	coração	心臓	심장	tim	сердце	серце
+body-parts	body.arm	paže	arm	Arm	braccio	bras	ramię	braço	腕	팔	cánh tay	рука	рука
+body-parts	body.leg	noha	leg	Bein	gamba	jambe	noga	perna	脚	다리	chân	нога	нога
+emotions	emotion.happy	šťastný	happy	glücklich	felice	heureux	szczęśliwy	feliz	うれしい	행복한	vui vẻ	счастливый	щасливий
+emotions	emotion.sad	smutný	sad	traurig	triste	triste	smutny	triste	悲しい	슬픈	buồn	грустный	сумний
+emotions	emotion.angry	naštvaný	angry	wütend	arrabbiato	en colère	zły	bravo	怒っている	화난	tức giận	сердитый	сердитий
+emotions	emotion.surprised	překvapený	surprised	überrascht	sorpreso	surpris	zaskoczony	surpreso	驚いた	놀란	ngạc nhiên	удивлённый	здивований
+emotions	emotion.scared	vystrašený	scared	verängstigt	spaventato	effrayé	przestraszony	assustado	怖がっている	겁먹은	sợ hãi	испуганный	наляканий
+emotions	emotion.tired	unavený	tired	müde	stanco	fatigué	zmęczony	cansado	疲れた	피곤한	mệt mỏi	усталый	втомлений
+emotions	emotion.excited	nadšený	excited	begeistert	entusiasta	enthousiaste	podekscytowany	animado	わくわくした	신난	háo hức	воодушевлённый	захоплений
+emotions	emotion.calm	klidný	calm	ruhig	calmo	calme	spokojny	calmo	落ち着いた	차분한	bình tĩnh	спокойный	спокійний
+emotions	emotion.bored	nuda	boredom	Langeweile	noia	ennui	nuda	tédio	退屈	지루함	sự buồn chán	скука	нудьга
+emotions	emotion.confused	zmatenost	confusion	Verwirrung	confusione	confusion	dezorientacja	confusão	混乱	혼란	sự bối rối	замешательство	розгубленість
+food-fruits	fruit.apple	jablko	apple	Apfel	mela	pomme	jabłko	maçã	りんご	사과	táo	яблоко	яблуко
+food-fruits	fruit.banana	banán	banana	Banane	banana	banane	banan	banana	バナナ	바나나	chuối	банан	банан
+food-fruits	fruit.orange	pomeranč	orange	Orange	arancia	orange	pomarańcza	laranja	オレンジ	오렌지	cam	апельсин	апельсин
+food-fruits	fruit.strawberry	jahoda	strawberry	Erdbeere	fragola	fraise	truskawka	morango	いちご	딸기	dâu tây	клубника	полуниця
+food-fruits	fruit.grape	hrozno	grapes	Weintraube	uva	raisin	winogrono	uva	ぶどう	포도	nho	виноград	виноград
+food-fruits	fruit.watermelon	meloun vodní	watermelon	Wassermelone	anguria	pastèque	arbuz	melancia	スイカ	수박	dưa hấu	арбуз	кавун
+food-fruits	fruit.mango	mango	mango	Mango	mango	mangue	mango	manga	マンゴー	망고	xoài	манго	манго
+food-fruits	fruit.cherry	třešeň	cherry	Kirsche	ciliegia	cerise	czereśnia	cereja	さくらんぼ	체리	anh đào	черешня	черешня
+food-fruits	fruit.pear	hruška	pear	Birne	pera	poire	gruszka	pera	梨	배	lê	груша	груша
+food-fruits	fruit.pineapple	ananas	pineapple	Ananas	ananas	ananas	ananas	abacaxi	パイナップル	파인애플	dứa	ананас	ананас
+food-vegetables	veg.carrot	mrkev	carrot	Karotte	carota	carotte	marchewka	cenoura	にんじん	당근	cà rốt	морковь	морква
+food-vegetables	veg.potato	brambor	potato	Kartoffel	patata	pomme de terre	ziemniak	batata	じゃがいも	감자	khoai tây	картофель	картопля
+food-vegetables	veg.broccoli	brokolice	broccoli	Brokkoli	broccoli	brocoli	brokuł	brócolis	ブロッコリー	브로콜리	bông cải xanh	брокколи	броколі
+food-vegetables	veg.tomato	rajče	tomato	Tomate	pomodoro	tomate	pomidor	tomate	トマト	토마토	cà chua	помидор	помідор
+food-vegetables	veg.onion	cibule	onion	Zwiebel	cipolla	oignon	cebula	cebola	玉ねぎ	양파	hành tây	лук	цибуля
+food-vegetables	veg.cucumber	okurka	cucumber	Gurke	cetriolo	concombre	ogórek	pepino	きゅうり	오이	dưa chuột	огурец	огірок
+food-vegetables	veg.corn	kukuřice	corn	Mais	mais	maïs	kukurydza	milho	とうもろこし	옥수수	ngô	кукуруза	кукурудза
+food-vegetables	veg.pepper	paprika	bell pepper	Paprika	peperone	poivron	papryka	pimentão	パプリカ	파프리카	ớt chuông	болгарский перец	солодкий перець
+food-vegetables	veg.mushroom	houba	mushroom	Pilz	fungo	champignon	grzyb	cogumelo	きのこ	버섯	nấm	гриб	гриб
+food-vegetables	veg.garlic	česnek	garlic	Knoblauch	aglio	ail	czosnek	alho	にんにく	마늘	tỏi	чеснок	часник
+weather	weather.sunny	slunečno	sunny	sonnig	soleggiato	ensoleillé	słonecznie	ensolarado	晴れ	맑음	nắng	солнечно	сонячно
+weather	weather.rainy	deštivo	rainy	regnerisch	piovoso	pluvieux	deszczowo	chuvoso	雨	비	mưa	дождливо	дощово
+weather	weather.snowy	sněžení	snowfall	Schneefall	nevicata	chute de neige	opady śniegu	queda de neve	雪	눈	tuyết rơi	снегопад	снігопад
+weather	weather.cloudy	oblačno	cloudy	bewölkt	nuvoloso	nuageux	pochmurno	nublado	曇り	흐림	nhiều mây	облачно	хмарно
+weather	weather.windy	větrno	windy	windig	ventoso	venteux	wietrznie	ventoso	風が強い	바람이 부는	có gió	ветрено	вітряно
+weather	weather.foggy	mlhavo	foggy	neblig	nebbioso	brumeux	mglisto	com neblina	霧	안개	sương mù	туманно	туманно
+weather	weather.stormy	bouřka	thunderstorm	Gewitter	temporale	orage	burza	tempestade	雷雨	뇌우	giông bão	гроза	гроза
+weather	weather.rainbow	duha	rainbow	Regenbogen	arcobaleno	arc-en-ciel	tęcza	arco-íris	虹	무지개	cầu vồng	радуга	веселка
+weather	weather.hailing	krupobití	hail	Hagel	grandine	grêle	grad	granizo	雹	우박	mưa đá	град	град
+weather	weather.lightning	blesk	lightning	Blitz	fulmine	éclair	błyskawica	relâmpago	稲妻	번개	tia chớp	молния	блискавка

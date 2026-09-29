@@ -72,6 +72,19 @@ page_name() {
 lang_switch_html() {
   _slug="$1"; _sub="$2"; shift 2
   [ $# -gt 1 ] || return 0
+  # a row of flags stops fitting a phone after a few languages; past that the
+  # current one is a pill and the rest drop down, like on the business page
+  if [ $# -gt 3 ]; then
+    printf '<details class="lang-menu"><summary><img src="assets/img/flag-%s.svg" alt="" width="18" height="12"><span>%s</span></summary><ul>' \
+      "$I18N_LANG" "$(esc "$(lang_name "$I18N_LANG")")"
+    for _l in "$@"; do
+      printf '<li><a href="%s" hreflang="%s" lang="%s"' "$(page_name "$_slug" "$_sub" "$_l")" "$_l" "$_l"
+      [ "$_l" = "$I18N_LANG" ] && printf ' aria-current="true"'
+      printf '><img src="assets/img/flag-%s.svg" alt="" width="18" height="12">%s</a></li>' "$_l" "$(esc "$(lang_name "$_l")")"
+    done
+    printf '</ul></details>'
+    return 0
+  fi
   printf '<nav class="lang-switch" aria-label="%s">' "$(esc "$(t nav.lang)")"
   for _l in "$@"; do
     printf '<a href="%s" hreflang="%s" lang="%s"' "$(page_name "$_slug" "$_sub" "$_l")" "$_l" "$_l"
@@ -753,6 +766,128 @@ EOF
   return 0
 }
 
+# ---- decks gallery (dist/decks/<slug>/, produced by scripts/import-decks.sh) ----
+# Fourth gallery shape: Lexify's card decks. Each deck is drawn in two art
+# styles, so a deck panel shows ten sample cards, five in either style. It
+# reuses the skins markup (.skins, .skin-chip[data-skin], .skin-panel), which
+# gives it the picker, #deep links and keyboard handling for free — and, being
+# the only .skins root on the app page, it can live there instead of on a
+# subpage.
+decks_have() { [ -f "$DIST/decks/$1/decks.tsv" ]; }
+
+# plural_card <n> -> kartička / kartičky / kartiček
+plural_card() { case "$1" in 1) echo "kartička" ;; 2|3|4) echo "kartičky" ;; *) echo "kartiček" ;; esac; }
+
+# tr_or <key> <fallback> -> the catalog string, or the fallback when no catalog
+# has the key. Deck titles and style names come from the import in Czech; the
+# other languages carry them as app keys (apps/lexify/i18n/<lang>.tsv).
+tr_or() {
+  _tv="$(t "$1")"
+  if [ "$_tv" = "$1" ]; then printf '%s' "$2"; else printf '%s' "$_tv"; fi
+}
+
+# "50 kartiček" is Czech grammar, like plural_ship; other languages get a format
+cards_label() {
+  case "$I18N_LANG" in
+    cs) printf '%s %s' "$1" "$(plural_card "$1")" ;;
+    *)  tf decks.cards "$1" ;;
+  esac
+}
+
+decks_html() {
+  _slug="$1"; _dir="$DIST/decks/$_slug"
+  _n="$(grep -c . "$_dir/decks.tsv" || true)"
+  printf '<section class="section skins decks" id="decks"><h2>%s</h2>\n' "$(esc "$(t decks.title)")"
+  printf '<p class="skins-intro">%s</p>\n' "$(esc "$(tf decks.intro "$_n")")"
+
+  printf '<div class="skin-picker" role="tablist" aria-label="%s">' "$(esc "$(t decks.title)")"
+  while IFS="$SEP" read -r d_id d_title d_count d_free d_cover; do
+    [ -n "${d_id:-}" ] || continue
+    printf '<button type="button" class="skin-chip" role="tab" data-skin="%s" id="tab-%s" aria-selected="false" aria-controls="panel-%s">' \
+      "$d_id" "$d_id" "$d_id"
+    printf '<img src="decks/%s/%s/%s" alt="" width="384" height="384" loading="lazy" decoding="async"><span class="n">%s</span><span class="y">%s</span>' \
+      "$_slug" "$d_id" "$d_cover" "$(esc "$(tr_or "deck.$d_id" "$d_title")")" \
+      "$(esc "$([ "$d_free" = 1 ] && t decks.free || cards_label "$d_count")")"
+    printf '</button>'
+  done <<EOF
+$(tsv_rows "$_dir/decks.tsv")
+EOF
+  printf '</div>\n'
+
+  # Translation switch. words.tsv's header names the languages. The page's own
+  # language is the bold word, so it is not offered again; English leads (the
+  # no-JS default) because it is the one most visitors can read, and store.js
+  # unhides the switch.
+  _sw=""; _wfile=/dev/null
+  if [ -f "$_dir/words.tsv" ]; then
+    _wfile="$_dir/words.tsv"
+    for _l in en $(head -1 "$_wfile" | cut -f3- | tr "$TAB" ' '); do
+      case " $_sw $I18N_LANG " in *" $_l "*) continue ;; esac
+      _sw="$_sw $_l"
+    done
+    printf '<div class="tr-pick" role="group" aria-label="%s" hidden><span class="tr-label">%s</span>' \
+      "$(esc "$(t decks.tr)")" "$(esc "$(t decks.tr)"):"
+    _first=1
+    for _l in $_sw; do
+      printf '<button type="button" data-tr="%s" lang="%s" aria-pressed="%s"><img src="assets/img/flag-%s.svg" alt="" width="18" height="12">%s</button>' \
+        "$_l" "$_l" "$([ "$_first" = 1 ] && printf true || printf false)" "$_l" "$(esc "$(lang_name "$_l")")"
+      _first=0
+    done
+    printf '</div>\n'
+  fi
+
+  while IFS="$SEP" read -r d_id d_title d_count d_free d_cover; do
+    [ -n "${d_id:-}" ] || continue
+    printf '<div class="skin-panel" id="panel-%s" role="tabpanel" aria-labelledby="tab-%s" data-skin="%s">\n' "$d_id" "$d_id" "$d_id"
+    printf '<header class="skin-head"><h3>%s</h3><div class="badges">' "$(esc "$(tr_or "deck.$d_id" "$d_title")")"
+    printf '<span class="badge">%s</span>' "$(esc "$(cards_label "$d_count")")"
+    if [ "$d_free" = 1 ]; then printf '<span class="badge featured">%s</span>' "$(esc "$(t decks.free_badge)")"; fi
+    printf '</div></header>\n'
+    while IFS="$SEP" read -r s_deck s_ord s_id s_label s_desc; do
+      [ "${s_deck:-}" = "$d_id" ] || continue
+      s_desc="$(tr_or "style.$s_id.desc" "$s_desc")"
+      printf '<div class="skin-cat"><h4>%s</h4>' "$(esc "$(tr_or "style.$s_id" "$s_label")")"
+      if [ -n "$s_desc" ]; then printf '<p class="skin-notes">%s</p>' "$(esc "$s_desc")"; fi
+      printf '<div class="sprite-grid cards">'
+      # The cards of one style, rendered by awk in one pass: 140 cards times a
+      # dozen words each would otherwise be thousands of `esc` subshells per
+      # language. The bold word is in the page language, the spans follow the
+      # switch order; Czech falls back to the import's label, so a card missing
+      # from words.tsv still reads on the base page.
+      awk -F"$TAB" -v d="$d_id" -v s="$s_id" -v page="$I18N_LANG" -v order="$_sw" -v slug="$_slug" '
+          function h(v) { gsub(/&/, "\\&amp;", v); gsub(/</, "\\&lt;", v); gsub(/>/, "\\&gt;", v); gsub(/"/, "\\&quot;", v); return v }
+          function word(l, row,   n, f) {
+            if (l in col && row != "") { n = split(row, f, "\t"); if (f[col[l]] != "") return f[col[l]] }
+            return l == "cs" ? $5 : ""
+          }
+          FILENAME != ARGV[2] {
+            if (FNR == 1) { for (i = 3; i <= NF; i++) col[$i] = i } else w[$1 SUBSEP $2] = $0
+            next
+          }
+          $1 == d && $2 == s {
+            k = $4; sub(/\.webp$/, "", k); row = ((d SUBSEP k) in w) ? w[d SUBSEP k] : ""
+            m = h(word(page, row))
+            out = sprintf("<figure class=\"sprite\"><img src=\"decks/%s/%s/%s/%s\" alt=\"%s\" width=\"384\" height=\"384\" loading=\"lazy\" decoding=\"async\"><figcaption><b>%s</b>", slug, d, s, $4, m, m)
+            n = split(order, o, " ")
+            for (i = 1; i <= n; i++) {
+              t = word(o[i], row)
+              if (t != "") out = out sprintf("<span lang=\"%s\"%s>%s</span>", o[i], (i == 1 ? "" : " hidden"), h(t))
+            }
+            printf "%s\t%s</figcaption></figure>\n", $3, out
+          }' "$_wfile" "$_dir/cards.tsv" \
+        | sort -t"$TAB" -k1,1n | cut -f2- | tr -d '\n'
+      printf '</div></div>\n'
+    done <<EOF
+$(tsv_rows "$_dir/styles.tsv")
+EOF
+    printf '</div>\n'
+  done <<EOF
+$(tsv_rows "$_dir/decks.tsv")
+EOF
+  printf '</section>\n'
+  return 0
+}
+
 # copy per-app skin galleries if provided (already web-ready; see scripts/import-skins.sh)
 for d in "$APPS"/*/skins; do
   [ -d "$d" ] || continue
@@ -778,6 +913,17 @@ for d in "$APPS"/*/fleets; do
   mkdir -p "$DIST/fleets"
   rm -rf "$DIST/fleets/$slug"
   cp -R "$d" "$DIST/fleets/$slug"
+done
+
+# and deck galleries (scripts/import-decks.sh)
+for d in "$APPS"/*/decks; do
+  [ -d "$d" ] || continue
+  slug="$(basename "$(dirname "$d")")"
+  mkdir -p "$DIST/decks"
+  rm -rf "$DIST/decks/$slug"
+  cp -R "$d" "$DIST/decks/$slug"
+  # hand-checked translations live beside decks/, which import-decks.sh rewrites
+  if [ -f "$APPS/$slug/words.tsv" ]; then cp "$APPS/$slug/words.tsv" "$DIST/decks/$slug/words.tsv"; fi
 done
 
 # ordered list of meta files
@@ -853,6 +999,7 @@ HERO
       if skins_have "$slug"; then skins_teaser_html "$slug"; fi
       if visuals_have "$slug"; then visuals_teaser_html "$slug"; fi
       if fleets_have "$slug"; then fleets_teaser_html "$slug"; fi
+      if decks_have "$slug"; then decks_html "$slug"; fi
       printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t sec.shots_desktop)")"
       shots_html "$slug" desktop
       echo '</section>'
