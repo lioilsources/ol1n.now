@@ -5,6 +5,7 @@ repo: lioilsources/DuolingoCards
 tagline: Učení slovíček kartičkami ve stylu Duolingo
 order: 3
 featured: false
+langs: cs,en,de,it,fr,pl,pt-BR,ja,ko,vi,ru,uk
 desktop: macos,windows,linux
 mobile: android,ios
 appstore:

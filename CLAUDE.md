@@ -54,7 +54,7 @@ apps/<slug>/
     decks.tsv          #   id title count free cover
     styles.tsv         #   deck ord style label desc     (ord 0 = first five cards, 1 = next five)
     cards.tsv          #   deck style ord file label
-  words.tsv            # lexify only, hand-checked: deck key + one column per language (header names them)
+  words.tsv            # lexify only, hand-checked: deck key cs en de … (header names the languages)
     <deck>/<style>/*.webp
 
 pages/<name>.html      # Hand-written standalone pages -> dist/<name>.html (business.html = olin.now/business)
@@ -109,7 +109,13 @@ Czech grammar that a format string cannot express stays in code: `plural_ship`
 picks loď/lodě/lodí, and `vessels_label` hands every other language a plain
 format (`skins.vessels`) instead.
 
-Today only **kirian** ships a second language (Japanese). The visuals and fleets
+Two apps ship more than Czech: **kirian** (Japanese) and **lexify** (en de it fr pl
+pt-BR ja ko vi ru uk). Past three languages the flag row next to the back-link turns
+into the business page's `<details class="lang-menu">` dropdown (its CSS lives in
+`store.css`; `business.css` only re-tints it), so kirian's pages stay as they were.
+The ten catalogs added for lexify translate only the keys an app page uses; the
+skins keys (`skins.*`, `cat.*`, `player.*`) fall back to Czech until an app with a
+skins gallery ships that language. The visuals and fleets
 subpages still have their headings in the scripts, so they are built for the base
 language only — localising them means moving those strings into the catalogs first.
 
@@ -172,9 +178,14 @@ switching and `#<deck>` deep links come from `store.js` for free; that works onl
 because it is the one `.skins` root on the page. Chrome strings are Czech in the
 script, like visuals and fleets.
 
-Under each Czech word sits its translation, switchable between the languages in
-the header of **`apps/lexify/words.tsv`** (en de it fr pl pt-BR ja ko vi ru uk; the
-first is the no-JS default, `store.js` remembers the choice in localStorage). That
+The bold word on a card is in the page's language; under it sits a translation,
+switchable between the other languages in the header of **`apps/lexify/words.tsv`**
+(English first — the no-JS default — or Czech on the English page; `store.js`
+remembers the choice in localStorage). On the translated pages the section's chrome
+comes from the `decks.*` catalog keys and the deck titles and style names from
+`deck.<id>` / `style.<id>` / `style.<id>.desc` in `apps/lexify/i18n/<lang>.tsv`; the
+Czech page keeps taking them from the import. The cards are rendered by one awk pass
+per style, not per-word `esc` subshells — twelve languages of those took minutes. That
 file is **hand-checked and deliberately not imported**: the packs' own labels are
 machine output and wrong in exactly the way a store page must not show (ja calls
 the eagle an owl, ko the owl a lion, vi the penguin an ostrich; pl/uk are empty and

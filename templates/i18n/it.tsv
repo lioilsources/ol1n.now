@@ -1,0 +1,25 @@
+# Site chrome, Italian. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
+# skins gallery ships this language.
+nav.all_apps	← Tutte le app
+nav.back_to	← Torna a %s
+nav.lang	Lingua
+title.app	%s — olin.now
+badge.featured	★ In evidenza
+badge.mobile	Mobile
+sec.downloads	Download
+sec.description	Descrizione
+sec.shots_desktop	Screenshot — desktop
+sec.shots_mobile	Screenshot — mobile
+shots.empty.desktop	Ancora nessuno screenshot desktop.
+shots.empty.mobile	Ancora nessuno screenshot mobile.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Build in arrivo.
+decks.title	Mazzi
+decks.intro	%s mazzi, ognuno disegnato in due stili. Da ciascuno, dieci carte di esempio: cinque nel primo stile, cinque nel secondo.
+decks.cards	%s carte
+decks.free	gratis
+decks.free_badge	Gratis
+decks.tr	Traduzione

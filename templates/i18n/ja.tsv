@@ -41,3 +41,9 @@ player.prev	前へ
 player.play	再生
 player.next	次へ
 player.pause	一時停止
+decks.title	デッキ
+decks.intro	%s個のデッキがあり、どれも2つの画風で描かれています。各デッキから10枚をご紹介します。最初の5枚は1つ目のスタイル、残りの5枚は2つ目のスタイルです。
+decks.cards	%s枚のカード
+decks.free	無料
+decks.free_badge	無料
+decks.tr	訳語

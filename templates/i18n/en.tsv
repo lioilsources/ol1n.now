@@ -1,0 +1,25 @@
+# Site chrome, English. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
+# skins gallery ships this language.
+nav.all_apps	← All apps
+nav.back_to	← Back to %s
+nav.lang	Language
+title.app	%s — olin.now
+badge.featured	★ Featured
+badge.mobile	Mobile
+sec.downloads	Downloads
+sec.description	Description
+sec.shots_desktop	Screenshots — desktop
+sec.shots_mobile	Screenshots — mobile
+shots.empty.desktop	No desktop screenshots yet.
+shots.empty.mobile	No mobile screenshots yet.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Builds coming soon.
+decks.title	Decks
+decks.intro	%s decks, each drawn in two art styles. Here are ten sample cards from each: five in the first style, five in the second.
+decks.cards	%s cards
+decks.free	free
+decks.free_badge	Free
+decks.tr	Translation

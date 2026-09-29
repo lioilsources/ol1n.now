@@ -1,0 +1,25 @@
+# Site chrome, German. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
+# skins gallery ships this language.
+nav.all_apps	← Alle Apps
+nav.back_to	← Zurück zu %s
+nav.lang	Sprache
+title.app	%s — olin.now
+badge.featured	★ Empfohlen
+badge.mobile	Mobil
+sec.downloads	Downloads
+sec.description	Beschreibung
+sec.shots_desktop	Screenshots — Desktop
+sec.shots_mobile	Screenshots — Mobil
+shots.empty.desktop	Noch keine Desktop-Screenshots.
+shots.empty.mobile	Noch keine Mobil-Screenshots.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Builds folgen in Kürze.
+decks.title	Kartendecks
+decks.intro	%s Kartendecks, jedes in zwei Zeichenstilen. Aus jedem hier zehn Beispielkarten: fünf im ersten Stil, fünf im zweiten.
+decks.cards	%s Karten
+decks.free	kostenlos
+decks.free_badge	Kostenlos
+decks.tr	Übersetzung

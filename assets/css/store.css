@@ -110,6 +110,31 @@ a:hover { text-decoration: underline; }
 /* both flags are mostly white, so they need an edge of their own */
 .lang-switch img { display: block; width: 18px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .18); }
 
+/* Language menu: a dozen languages do not fit a row of pills on a phone, so the
+   current one is a pill and the rest open below it. No JS — <details>. Used by
+   app pages with more than three languages and by the standalone pages. */
+.lang-menu { position: relative; }
+.lang-menu summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;
+  padding: 4px 11px; border: 1px solid var(--border); border-radius: 999px; color: var(--text);
+  font-size: 14px; background: var(--card);
+}
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary::after { content: ""; width: 6px; height: 6px; margin-left: 2px; border: solid var(--text-dim);
+  border-width: 0 1.5px 1.5px 0; transform: translateY(-2px) rotate(45deg); }
+.lang-menu[open] summary { border-color: var(--accent); }
+.lang-menu ul {
+  position: absolute; right: 0; top: calc(100% + 6px); z-index: 30; min-width: 200px;
+  list-style: none; margin: 0; padding: 6px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .14);
+  max-height: min(70vh, 560px); overflow-y: auto;
+}
+.lang-menu li a { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; color: var(--text); }
+.lang-menu li a:hover { background: var(--card-hover); text-decoration: none; }
+.lang-menu li a[aria-current="true"] { color: var(--accent); font-weight: 600; }
+.lang-menu img { display: block; width: 18px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .18); }
+
 .section { margin-top: 40px; }
 .section h2 { font-size: 20px; margin: 0 0 16px; }
 

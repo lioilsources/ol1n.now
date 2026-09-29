@@ -1,0 +1,25 @@
+# Site chrome, Korean. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
+# skins gallery ships this language.
+nav.all_apps	← 모든 앱
+nav.back_to	← %s 페이지로 돌아가기
+nav.lang	언어
+title.app	%s — olin.now
+badge.featured	★ 추천
+badge.mobile	모바일
+sec.downloads	다운로드
+sec.description	설명
+sec.shots_desktop	스크린샷 — 데스크톱
+sec.shots_mobile	스크린샷 — 모바일
+shots.empty.desktop	아직 데스크톱 스크린샷이 없습니다.
+shots.empty.mobile	아직 모바일 스크린샷이 없습니다.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	빌드가 곧 제공됩니다.
+decks.title	덱
+decks.intro	덱 %s개, 모두 두 가지 화풍으로 그렸습니다. 덱마다 카드 10장을 보여 드립니다. 다섯 장은 첫 번째 스타일, 다섯 장은 두 번째 스타일입니다.
+decks.cards	카드 %s장
+decks.free	무료
+decks.free_badge	무료
+decks.tr	번역

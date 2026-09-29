@@ -1,0 +1,25 @@
+# Lexify — deck titles and style names for the deck gallery. Czech comes from
+# the DuolingoCards packs via `make import-decks`; these are the other languages.
+# The words on the cards themselves live in apps/lexify/words.tsv.
+deck.numbers-1-10	Số đếm 1–50
+deck.colors-basic	Màu cơ bản
+deck.animals-pets	Thú cưng
+deck.animals-birds	Chim
+deck.animals-farm	Vật nuôi trang trại
+deck.animals-insects	Côn trùng
+deck.animals-reptiles	Bò sát và lưỡng cư
+deck.animals-sea	Động vật biển
+deck.animals-wild	Động vật hoang dã
+deck.body-parts	Bộ phận cơ thể
+deck.emotions	Cảm xúc
+deck.food-fruits	Trái cây
+deck.food-vegetables	Rau củ
+deck.weather	Thời tiết
+style.photo	Ảnh chụp
+style.photo.desc	Ảnh sắc nét, gần với thực tế nhất
+style.ink	Bút lông và mực
+style.ink.desc	Nét cọ, giấy trắng, một điểm nhấn màu
+style.pastel	Phấn màu
+style.pastel.desc	Phấn khô trên giấy màu
+style.watercolor	Màu nước
+style.watercolor.desc	Lớp màu loang, giấy ẩn hiện bên dưới

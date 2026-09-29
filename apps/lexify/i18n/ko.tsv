@@ -1,0 +1,25 @@
+# Lexify — deck titles and style names for the deck gallery. Czech comes from
+# the DuolingoCards packs via `make import-decks`; these are the other languages.
+# The words on the cards themselves live in apps/lexify/words.tsv.
+deck.numbers-1-10	숫자 1–50
+deck.colors-basic	기본 색
+deck.animals-pets	반려동물
+deck.animals-birds	새
+deck.animals-farm	농장 동물
+deck.animals-insects	곤충
+deck.animals-reptiles	파충류와 양서류
+deck.animals-sea	바다 동물
+deck.animals-wild	야생 동물
+deck.body-parts	신체 부위
+deck.emotions	감정
+deck.food-fruits	과일
+deck.food-vegetables	채소
+deck.weather	날씨
+style.photo	사진
+style.photo.desc	선명한 사진, 실물에 가장 가까운 표현
+style.ink	붓과 먹
+style.ink.desc	붓 터치, 여백, 한 가지 색의 포인트
+style.pastel	파스텔
+style.pastel.desc	색지에 그린 건식 파스텔
+style.watercolor	수채화
+style.watercolor.desc	번지는 물감, 비치는 종이
