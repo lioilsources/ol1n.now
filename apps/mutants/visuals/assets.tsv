@@ -1,0 +1,67 @@
+head	1	head_deer.webp	Jelení hlava	381	512
+head	2	head_dragon.webp	Dračí hlava	386	512
+head	3	head_fly.webp	Hlava mouchy	426	440
+head	4	head_owl.webp	Soví hlava	384	512
+head	5	head_robot.webp	Robotí hlava	360	512
+head	6	head_shark.webp	Žraločí hlava	389	512
+head	7	head_spider.webp	Pavoučí hlava	512	463
+head	8	head_trex.webp	Hlava T-rexe	512	424
+head	9	head_triceratops.webp	Hlava triceratopse	512	330
+head	10	head_wolf.webp	Hlava sněžného vlka	504	512
+torso	1	torso_beetle.webp	Krovky brouka	404	512
+torso	2	torso_dragon.webp	Dračí hruď	380	512
+torso	3	torso_octopus.webp	Chobotničí tělo	442	512
+torso	4	torso_parrot.webp	Papouščí hruď	386	512
+torso	5	torso_penguin.webp	Tučňáčí bříško	345	512
+torso	6	torso_polar_bear.webp	Tělo ledního medvěda	420	512
+torso	7	torso_robot.webp	Kovový trup	512	493
+torso	8	torso_shadow_dragon.webp	Trup stínového draka	405	512
+torso	9	torso_stegosaurus.webp	Trup stegosaura	512	357
+torso	10	torso_turtle.webp	Krunýř mořské želvy	512	413
+front	1	front_crab.webp	Krabí klepeta	434	512
+front	2	front_dragon.webp	Dračí tlapy	512	497
+front	3	front_drill.webp	Vrtákové ruce	512	357
+front	4	front_eagle.webp	Orlí pařáty	432	512
+front	5	front_gorilla.webp	Gorilí paže	421	512
+front	6	front_mantis.webp	Kudlankové pařátky	484	512
+front	7	front_raptor.webp	Pařáty nočního raptora	512	452
+front	8	front_submarine.webp	Chapadla ponorky	391	512
+front	9	front_trex.webp	Ručičky T-rexe	391	512
+front	10	front_walrus.webp	Mroží ploutve	414	512
+back	1	back_brontosaurus.webp	Nohy brontosaura	374	512
+back	2	back_crab.webp	Krabí nožky	438	512
+back	3	back_dragon.webp	Dračí nohy	410	512
+back	4	back_forest_dragon.webp	Nohy lesního draka	441	512
+back	5	back_grasshopper.webp	Kobylčí nohy	420	512
+back	6	back_hare.webp	Nohy sněžného zajíce	281	512
+back	7	back_heron.webp	Volavčí nohy	266	512
+back	8	back_phoenix.webp	Pařáty fénixe	392	512
+back	9	back_spider.webp	Pavoučí nohy	426	512
+back	10	back_tracks.webp	Tankové pásy	512	265
+tail	1	tail_fish.webp	Rybí ocas	363	512
+tail	2	tail_fox.webp	Liščí ohon	506	512
+tail	3	tail_ice_dragon.webp	Ocas ledového draka	512	504
+tail	4	tail_metal.webp	Kovový ocas	512	240
+tail	5	tail_ninja_robot.webp	Ocas nindža robota	512	260
+tail	6	tail_peacock.webp	Paví ocas	425	512
+tail	7	tail_scorpion.webp	Štíří ocas	512	411
+tail	8	tail_swallow.webp	Vlaštovčí ocas	512	263
+tail	9	tail_whale.webp	Velrybí ocas	512	404
+extra	1	extra_antenna.webp	Radarová anténa	215	512
+extra	2	extra_bat.webp	Netopýří křídla	512	278
+extra	3	extra_butterfly.webp	Motýlí křídla	512	451
+extra	4	extra_dragon.webp	Dračí křídla	512	446
+extra	5	extra_dragonfly.webp	Křídla vážky	512	453
+extra	6	extra_eagle.webp	Křídla orla skalního	512	495
+extra	7	extra_ice_spikes.webp	Ledové ostny	512	491
+extra	8	extra_pterodactyl.webp	Křídla pterodaktyla	509	512
+extra	9	extra_rhino.webp	Nosorožčí roh	425	512
+extra	10	extra_shark_fin.webp	Žraločí ploutev	442	512
+mut	1	mut_eyes_everywhere.webp	Oči všude	512	510
+mut	2	mut_forked_tail.webp	Rozdvojený ocas	490	512
+mut	3	mut_glowing_shell.webp	Svítící krunýř	425	512
+mut	4	mut_six_arms.webp	Šest rukou	512	505
+mut	5	mut_spring_legs.webp	Pérové nohy	500	512
+mut	6	mut_tail_on_head.webp	Ocas na hlavě	398	512
+mut	7	mut_two_heads.webp	Druhá hlava	512	512
+mut	8	mut_winged_horns.webp	Rohy s křídly	512	503

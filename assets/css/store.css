@@ -229,6 +229,17 @@ a:hover { text-decoration: underline; }
 .sprite-grid.bg { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 .sprite-grid.bg .sprite img { height: 300px; object-fit: cover; border-radius: 6px; }
 .sprite-grid.ui .sprite img { height: 72px; }
+/* Visuals gallery layouts beyond pixel sprites (cats.tsv column 4):
+   illustrations and cut-out stickers want a bigger tile than a 96px sprite,
+   portraits are cropped like the arenas, and a specimen sheet is black ink on
+   white — on the dark tile it would be invisible. */
+.sprite-grid.art { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.sprite-grid.art .sprite img { height: 150px; }
+.sprite-grid.portrait { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+.sprite-grid.portrait .sprite img { height: auto; aspect-ratio: 13 / 19; object-fit: cover; border-radius: 8px; }
+.sprite-grid.sheet { grid-template-columns: 1fr; }
+.sprite-grid.sheet .sprite { background: #fff; }
+.sprite-grid.sheet .sprite img { height: auto; }
 
 /* Audio — jeden sdílený kanál, viz store.js */
 .audio { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }

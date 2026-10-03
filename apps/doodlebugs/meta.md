@@ -7,6 +7,7 @@ order: 6
 featured: false
 desktop: windows,macos,linux
 mobile: android,ios
+visuals: {n} kusů artworku — trupy, kamufláže, arény a parallax terén.
 appstore:
 playstore:
 testflight:

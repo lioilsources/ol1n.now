@@ -1,0 +1,18 @@
+cards	1	card_opsonin_color_s1101.webp	Opsonizace · barva 1	512	512
+cards	2	card_opsonin_color_s1102.webp	Opsonizace · barva 2	512	512
+cards	3	card_opsonin_color_s1103.webp	Opsonizace · barva 3	512	512
+cards	4	card_opsonin_color_s1104.webp	Opsonizace · barva 4	512	512
+cards	5	card_opsonin_gray_s1101.webp	Opsonizace · SEM 1	512	512
+cards	6	card_opsonin_gray_s1102.webp	Opsonizace · SEM 2	512	512
+cards	7	card_opsonin_gray_s1103.webp	Opsonizace · SEM 3	512	512
+cards	8	card_opsonin_gray_s1104.webp	Opsonizace · SEM 4	512	512
+sprites	1	sprite_macrophage_gray_s2101.webp	Makrofág · SEM 1	512	500
+sprites	2	sprite_macrophage_gray_s2102.webp	Makrofág · SEM 2	512	496
+sprites	3	sprite_macrophage_gray_s2103.webp	Makrofág · SEM 3	512	492
+sprites	4	sprite_macrophage_gray_s2104.webp	Makrofág · SEM 4	512	507
+sprites	5	sprite_macrophage_color_s2101.webp	Makrofág · barva 1	512	512
+sprites	6	sprite_macrophage_color_s2102.webp	Makrofág · barva 2	496	512
+sprites	7	sprite_macrophage_color_s2103.webp	Makrofág · barva 3	512	501
+sprites	8	sprite_macrophage_color_s2104.webp	Makrofág · barva 4	512	506
+ingame	1	macrophage.webp	Makrofág	512	410
+ingame	2	cocci.webp	Koky	512	435

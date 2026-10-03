@@ -480,21 +480,37 @@ EOF
   return 0
 }
 
-# teaser on the app page: a handful of airframes, then a link to the subpage
+# cats.tsv column 4 says how a category is laid out; the page never guesses it
+# from the category id, so a new app brings its own layout with its manifest.
+#   pixel -> small tiles, never smoothed      art -> larger tiles
+#   portrait / hero -> cropped to the tile    wide / sheet -> one per row
+visuals_px()   { [ "$1" = pixel ] && printf 1 || printf 0; }
+visuals_grid() { case "$1" in pixel) ;; *) printf '%s' "$1" ;; esac; }
+
+# teaser on the app page: the head of the first category, then a link to the
+# subpage. The sentence above it is the app's own (`visuals:` in meta.md, with
+# {n} for the number of pieces) - what a gallery holds is not something the
+# store can word for every app.
 visuals_teaser_html() {
-  _slug="$1"
+  _slug="$1"; _meta="$2"
   _total="$(grep -c . "$DIST/visuals/$_slug/assets.tsv" || true)"
+  _first="$(head -1 "$DIST/visuals/$_slug/cats.tsv")"
+  _cat="$(printf '%s' "$_first" | cut -f1)"; _kind="$(printf '%s' "$_first" | cut -f4)"
+  _grid="$(visuals_grid "$_kind")"
+  case "$_kind" in sheet|wide) _max=1 ;; hero|portrait) _max=6 ;; *) _max=8 ;; esac
+  _intro="$(fm_get "$_meta" visuals | sed "s/{n}/$_total/g")"
   printf '<section class="section"><h2>Vizuály</h2>\n'
-  printf '<p class="skins-intro">%s kusů artworku — trupy, kamufláže, arény a parallax terén.</p>\n' "$_total"
-  printf '<div class="visuals-cat" data-pixelart="1"><div class="sprite-grid">'
+  [ -n "$_intro" ] && printf '<p class="skins-intro">%s</p>\n' "$(esc "$_intro")"
+  printf '<div class="visuals-cat" data-pixelart="%s"><div class="sprite-grid%s">' \
+    "$(visuals_px "$_kind")" "${_grid:+ $_grid}"
   _n=0
   while IFS="$SEP" read -r v_cat v_ord v_file v_label v_w v_h; do
     [ -n "${v_file:-}" ] || continue
-    _n=$((_n + 1)); [ "$_n" -le 8 ] || continue
-    printf '<figure class="sprite"><img src="visuals/%s/planes/%s" alt="%s" width="%s" height="%s" loading="lazy" decoding="async"><figcaption>%s</figcaption></figure>' \
-      "$_slug" "$v_file" "$(esc "$v_label")" "$v_w" "$v_h" "$(esc "$v_label")"
+    _n=$((_n + 1)); [ "$_n" -le "$_max" ] || continue
+    printf '<figure class="sprite"><img src="visuals/%s/%s/%s" alt="%s" width="%s" height="%s" loading="lazy" decoding="async"><figcaption>%s</figcaption></figure>' \
+      "$_slug" "$_cat" "$v_file" "$(esc "$v_label")" "$v_w" "$v_h" "$(esc "$v_label")"
   done <<EOF
-$(visuals_rows "$_slug" planes)
+$(visuals_rows "$_slug" "$_cat")
 EOF
   printf '</div></div>\n'
   printf '<p class="skins-more"><a href="%s-visuals.html">Prozkoumat všechny vizuály →</a></p>\n' "$_slug"
@@ -506,19 +522,14 @@ visuals_page_html() {
   _slug="$1"; _appname="$2"
   printf '<section class="skins" id="visuals">\n'
   printf '<h1 class="skin-head">%s — vizuály</h1>\n' "$(esc "$_appname")"
-  while IFS="$SEP" read -r c_id c_title c_note; do
+  while IFS="$SEP" read -r c_id c_title c_note c_kind; do
     [ -n "${c_id:-}" ] || continue
     # Sprites are hard-edged pixel art and must not be smoothed; the painted
     # arenas must not be pixelated.
-    case "$c_id" in
-      planes|skins) _px=1; _grid="" ;;
-      backgrounds)  _px=0; _grid="hero" ;;
-      *)            _px=0; _grid="wide" ;;
-    esac
-    printf '<div class="skin-cat visuals-cat" data-pixelart="%s" id="%s">' "$_px" "$c_id"
+    printf '<div class="skin-cat visuals-cat" data-pixelart="%s" id="%s">' "$(visuals_px "$c_kind")" "$c_id"
     printf '<h3>%s</h3>' "$(esc "$c_title")"
     [ -n "${c_note:-}" ] && printf '<p class="skin-notes">%s</p>' "$(esc "$c_note")"
-    visuals_grid_html "$_slug" "$c_id" "$_grid"
+    visuals_grid_html "$_slug" "$c_id" "$(visuals_grid "$c_kind")"
     printf '</div>\n'
   done <<EOF
 $(tsv_rows "$DIST/visuals/$_slug/cats.tsv")
@@ -997,7 +1008,7 @@ HERO
       # explicit `if` (not `&&`): under `set -e` a failing guard as the last
       # command of this group would truncate the page
       if skins_have "$slug"; then skins_teaser_html "$slug"; fi
-      if visuals_have "$slug"; then visuals_teaser_html "$slug"; fi
+      if visuals_have "$slug"; then visuals_teaser_html "$slug" "$meta"; fi
       if fleets_have "$slug"; then fleets_teaser_html "$slug"; fi
       if decks_have "$slug"; then decks_html "$slug"; fi
       printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t sec.shots_desktop)")"

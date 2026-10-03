@@ -12,6 +12,7 @@ make screenshots  # Resize raw screenshots + transcode videos → dist/screensho
 make build        # Generate static site → dist/
 make deploy       # Trigger the CI deploy workflow (builds from origin/main — push first!)
 make import-skins # (authoring, local only) Re-encode Kiran skin galleries → apps/kirian/skins/
+make import-visuals APP=<slug> # (authoring, local only) Re-encode one app's artwork → apps/<slug>/visuals/
 make import-fleets # (authoring, local only) Re-encode OrbitronTactics fleets + maneuvers → apps/orbitrontactics/fleets/
 make import-decks  # (authoring, local only) Re-encode Lexify deck samples (5+5 cards per deck) → apps/lexify/decks/
 ```
@@ -43,6 +44,10 @@ apps/<slug>/
     skins.tsv          #   id name year theme vessels bloom crt tint notes wiki pixelart
     assets.tsv         #   skin ord category file label meta1 meta2
     <skin_id>/<category>/*.{webp,m4a}
+  visuals/             # Optional, committed, web-ready artwork gallery (make import-visuals APP=<slug>)
+    cats.tsv           #   id title note grid   (grid = pixel|art|portrait|hero|wide|sheet)
+    assets.tsv         #   cat ord file label w h
+    <cat>/*.webp
   fleets/              # Optional, committed, web-ready fleet gallery (make import-fleets)
     fleets.tsv         #   id name theme notes default
     assets.tsv         #   fleet ord category file label w h   (preview|white|black)
@@ -133,6 +138,35 @@ on `<slug>.html` and a full explorer at `<slug>-skins.html` (skin picker + one p
 per skin, categories: preview, vessels, enemies, boss, asteroids, fx, ui, backgrounds,
 sfx, music). A category with no manifest rows emits nothing at all — that is how the
 `default` skin's empty `backgrounds/` is handled.
+
+## Visuals gallery
+
+The flat one: categorised artwork, no entities, no audio. `doodlebugs`, `kittens`,
+`mutants`, `memeshorts`, `immunorun` and `handwrittenstickers` have one.
+`scripts/import-visuals.sh <slug>` holds one `import_<slug>` function per app — where
+the art lives in that app's checkout, how it is bucketed, the Czech titles — and
+`make build` only copies the result. Gated on `dist/visuals/<slug>/cats.tsv`; emits a
+teaser on `<slug>.html` (the head of the **first** category) and `<slug>-visuals.html`.
+
+Nothing in `build-site.sh` knows an app by name. The layout of a category is the
+fourth column of `cats.tsv`, and the sentence above the teaser is `visuals:` in the
+app's `meta.md` (`{n}` = number of pieces). Adding a gallery is a function in the
+import script plus that one front-matter line.
+
+What deliberately stays out of a gallery, per app:
+
+- **memeshorts** — only the flux-schnell line of the character library (Apache-2.0).
+  The anime line is Animagine, whose licence that repo's graphics plan still lists as
+  unverified. `data/originals` (the meme templates) never ships. Two of Taro's picks
+  (`proud`, `angry`) are skipped because the jacket came out with a sportswear wordmark.
+- **immunorun** — the G0 batch is a style test, not production art, and the page says so.
+- **handwrittenstickers** — the stickers are composed by the import script from the
+  app's glyph PNGs, in capitals only: without the app's baseline metrics, capitals are
+  what bottom-aligns correctly.
+
+The default checkout paths are the local folder names, three of which differ from the
+GitHub repo: `KittenCards` (Kittens), `MutantCards` (Mutants), `HandWritenStickers`
+(HandWrittenStickers), plus `BioDefenseRogue` for ImmunoRun.
 
 ## Fleets gallery
 
@@ -243,8 +277,24 @@ is a Cloudflare redirect rule to `olin.now/business`.
 ## App Catalog
 
 Current apps (in `apps/`): audioscanner, beenhere (Been Here), djfy, doggiowars, doodlebugs,
-kindlify, kirian (Kiran), lexify, mangaprompts, mirrorbooth, ol1nllm, orbitrontactics,
+handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
+lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
 poetrystream, puff, storyteller, swypekids, ugcfactory.
+
+Five were added on 2026-10-04 for their artwork rather than for a build, and their pages
+lean on the visuals gallery. None has a real app screenshot: what sits in
+`screenshots/raw/desktop/sheets/` are the projects' own mockups and review contact sheets
+(the ones `/Volumes/YOTTA/Dev/review-hub.html` links to), captured from the sheet HTML with
+`scripts/shoot.mjs` at 1440×900 @2x. Each app's `i18n/cs.tsv` therefore renames
+`sec.shots_desktop` to say so ("Makety a revizní archy"), instead of passing a sheet off as
+a desktop build. The memeshorts sheet is shot only as far down as the flux-schnell rows —
+the anime rows below them are the unverified-licence line — and its two Wan 2.2 clips are
+under `raw/mobile/clips/`. Their icons are derived from their
+own art (the Flutter projects still carry the default logo). **kittens**, **mutants** and
+**handwrittenstickers** have no release yet. **immunorun** links a pre-release APK
+(`v1.0.0`). **memeshorts** is a Go CLI with no GitHub repo at all — `repo:` is empty, so
+`make fetch` skips it, and its `i18n/cs.tsv` rewords `dl.empty` so the page does not
+promise builds.
 
 **storyteller** was private until 2026-09-26 and is now public, so `make fetch` resolves it
 like any other app. Its default branch is **`master`**, not `main` — the only one in the

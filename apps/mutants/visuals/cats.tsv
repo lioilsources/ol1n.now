@@ -1,0 +1,7 @@
+head	Hlavy	Každý mutant se skládá ze šesti slotů. Hlava se kreslí z profilu a kouká doleva, aby na trup sedla vždycky stejně.	art
+torso	Trupy	Trup je celé zvíře z boku vyříznuté elipsou — na něj se věší všechno ostatní.	art
+front	Přední končetiny	Nohy, klepeta i vrták. Pár je vždycky jeden obrázek.	art
+back	Zadní končetiny	Od brontosauřích sloupů po tankové pásy.	art
+tail	Ocasy	Ocas vyčnívá doprava a určuje, jak dlouhý tvor nakonec je.	art
+extra	Něco navíc	Šestý slot: křídla, rohy, ploutev, anténa.	art
+mut	Mutace	Mutace přepíše slot, který už je obsazený — a z obyčejného tvora je rázem vzácný.	art

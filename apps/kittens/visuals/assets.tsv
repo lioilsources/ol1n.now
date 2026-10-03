@@ -1,0 +1,13 @@
+cards	1	BOMB.webp	Bomba	512	512
+cards	2	DEFUSE.webp	Zneškodni	512	512
+cards	3	DETONATE.webp	Odpal	512	512
+cards	4	NOPE.webp	Ne!	512	512
+cards	5	SHIELD.webp	Štít	512	512
+cards	6	STEAL.webp	Kradež	512	512
+cards	7	TWIST.webp	Otoč	512	512
+cards	8	BLIND.webp	Slepá	512	512
+suits	1	R.webp	Červená	512	512
+suits	2	Y.webp	Žlutá	512	512
+suits	3	G.webp	Zelená	512	512
+suits	4	B.webp	Modrá	512	512
+back	1	back.webp	Rub karty	512	727

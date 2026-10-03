@@ -26,8 +26,8 @@ screenshots: ## Resize raw screenshots into store sizes in dist/screenshots/
 import-skins: ## (authoring) Re-encode skin galleries from a local Kiran checkout into apps/kirian/skins/
 	@KIRAN_SRC=$${KIRAN_SRC:-$(CURDIR)/../Kiran} $(SCRIPTS)/import-skins.sh
 
-import-visuals: ## (authoring) Re-encode an app's artwork gallery into apps/<slug>/visuals/
-	@DOODLEBUGS_SRC=$${DOODLEBUGS_SRC:-/Volumes/Unity_Storage/Code/doodlebugs-revival-6} $(SCRIPTS)/import-visuals.sh doodlebugs
+import-visuals: ## (authoring) Re-encode one app's artwork gallery into apps/<slug>/visuals/ (APP=<slug>, default doodlebugs)
+	@$(SCRIPTS)/import-visuals.sh $${APP:-doodlebugs}
 
 import-fleets: ## (authoring) Re-encode OrbitronTactics fleets + maneuvers into apps/orbitrontactics/fleets/
 	@ORBITRON_SRC=$${ORBITRON_SRC:-$(CURDIR)/../OrbitronTactics} $(SCRIPTS)/import-fleets.sh orbitrontactics
