@@ -42,11 +42,15 @@ fit() { "$MAGICK" "$1" -resize "${3}>" "$2"; }
 # fill <in> <out> <WxH>  cover + center-crop to exact pixels
 fill() { "$MAGICK" "$1" -resize "${3}^" -gravity center -extent "$3" "$2"; }
 # vid <in> <out.mp4>     web H.264 + AAC (<=1280px wide, <=15s, faststart)
-vid() { "$FFMPEG" -y -loglevel error -i "$1" -t 15 \
+# -nostdin on both: the file list below is fed to `while read` on stdin, and
+# ffmpeg reads stdin for its interactive keys - it swallowed the head of the
+# next path, so the video after a video came out as "/runner/work/..." and the
+# deploy died on "No such file" (first seen with two clips in one folder).
+vid() { "$FFMPEG" -nostdin -y -loglevel error -i "$1" -t 15 \
   -vf "scale='min(1280,iw)':-2" -c:v libx264 -profile:v high -pix_fmt yuv420p \
   -crf 28 -preset veryfast -c:a aac -b:a 128k -movflags +faststart "$2"; }
 # poster <in> <out.jpg>  first frame, used as the <video> poster / thumbnail
-poster() { "$FFMPEG" -y -loglevel error -i "$1" -frames:v 1 -vf "scale='min(1280,iw)':-2" "$2"; }
+poster() { "$FFMPEG" -nostdin -y -loglevel error -i "$1" -frames:v 1 -vf "scale='min(1280,iw)':-2" "$2"; }
 
 count=0
 process_app() {
