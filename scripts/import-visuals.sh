@@ -22,6 +22,7 @@
 # bucketed, and what the categories are called. `grid` in cats.tsv is how the
 # page lays a category out (see visuals_page_html in build-site.sh):
 #   pixel     hard-edged sprites, small tiles, never smoothed
+#   small     smooth artwork at the pixel grid's tile size, for long catalogues
 #   art       illustrations and cut-out stickers, larger tiles
 #   portrait  tall character portraits, cropped to the tile
 #   hero      painted scenes, cropped to the tile
@@ -42,6 +43,7 @@ case "$SLUG" in
   mutants)             SRC="${2:-${MUTANTS_SRC:-$DEV/MutantCards}}";         PROBE="app/assets/art/parts" ;;
   memeshorts)          SRC="${2:-${MEMESHORTS_SRC:-$DEV/MemeShorts}}";       PROBE="drafts/library/selection.yaml" ;;
   immunorun)           SRC="${2:-${IMMUNORUN_SRC:-$DEV/BioDefenseRogue}}";   PROBE="art/drafts/g0/post" ;;
+  swypekids)           SRC="${2:-${SWYPEKIDS_SRC:-$DEV/SwypeKids}}";         PROBE="assets/characters/panda" ;;
   handwrittenstickers) SRC="${2:-${HWS_SRC:-$DEV/HandWritenStickers}}";      PROBE="docs/glyph_sheets_handwriting.png" ;;
   *) echo "error: no visuals described for '$SLUG'" >&2; exit 1 ;;
 esac
@@ -298,6 +300,54 @@ import_immunorun() {
   emit_cat ingame "Ve hře" "Dva sprity, které už ve hře jsou: hráčův makrofág a koky, první patogen." art
   add ingame 1 "$SRC/immunorun/assets/images/cells/macrophage.png" "Makrofág" cutout 512x
   add ingame 2 "$SRC/immunorun/assets/images/pathogens/cocci.png" "Koky" cutout 512x
+}
+
+# ---- SwypeKids -------------------------------------------------------------
+# Shipped art first (the guide's ten poses, the stickers that replaced emoji),
+# then the two review rounds that led there. A sticker's caption is the emoji it
+# replaced - the file name is its code point, so nothing needs translating and
+# the page shows the before next to the after.
+import_swypekids() {
+  _d="$SRC/drafts/stickers"
+  pose_cs() {
+    case "$1" in
+      wave) echo "mává" ;;        idle) echo "stojí" ;;       read) echo "čte" ;;
+      sleep) echo "spí" ;;        oops) echo "jejda" ;;       cheer-clap) echo "tleská" ;;
+      cheer-dance) echo "tančí" ;; cheer-hug) echo "objímá" ;; cheer-jump) echo "skáče" ;;
+      cheer-star) echo "hvězda" ;; *) pretty "$1" ;;
+    esac
+  }
+  POSES="wave idle cheer-jump cheer-dance cheer-clap cheer-hug cheer-star read oops sleep"
+  emit_cat panda "Pandička" "Průvodkyně hrou v deseti pózách: pět různých jásotů, jejda, čte, spí. Stojí přímo na ploše, dá se prstem odsunout a na ťuknutí zamává." art
+  n=0
+  for p in $POSES; do
+    [ -e "$SRC/assets/characters/panda/$p.png" ] || continue
+    n=$((n + 1)); add panda "$n" "$SRC/assets/characters/panda/$p.png" "$(pose_cs "$p" | perl -CSD -pe '$_ = ucfirst')" cutout 384x
+  done
+  emit_cat stickers "Nálepky místo emoji" "Od verze 2.9 hra nepoužívá systémové emoji. Každé nahradil obrázek ve stylu Pandičky — na kartě, na klávesách, ve Zvěřinci i na mapě. Pod nálepkou je emoji, které vystřídala." small
+  n=0
+  for f in "$SRC"/assets/emoji/*.webp; do
+    [ -e "$f" ] || continue
+    _cp="$(basename "${f%.webp}")"
+    n=$((n + 1)); add stickers "$n" "$f" "$(perl -CO -e 'print map { chr hex } split /-/, shift' "$_cp")" cutout 224x
+  done
+  emit_cat mascots "Kdo bude průvodcem" "Druhé kolo revize: čtyři zvířata, každé ve stejných deseti pózách, aby se dala porovnat pózu proti póze. Vyhrála panda." art
+  n=0
+  for kv in "panda:Panda" "capybara:Kapybara" "giraffe:Žirafa" "cheetah:Gepardice"; do
+    for p in $POSES; do
+      f="$_d/round2/out/mascot2-${kv%%:*}-$p.png"
+      [ -e "$f" ] || continue
+      n=$((n + 1)); AS="${kv%%:*}-$p" add mascots "$n" "$f" "${kv#*:} · $(pose_cs "$p")" photo 256x
+    done
+  done
+  emit_cat firstround "První návrhy" "První kolo: jak má nálepka vůbec vypadat. Zvířata, rodina, věci a první pokusy o maskota — z nich vzešel styl i užší výběr." small
+  n=0
+  for kv in "mascot:Maskot" "animal:Zvíře" "family:Rodina" "object:Věc"; do
+    for f in "$_d"/out/"${kv%%:*}"-*.png; do
+      [ -e "$f" ] || continue
+      n=$((n + 1)); add firstround "$n" "$f" "${kv#*:}" photo 224x
+    done
+  done
 }
 
 # ---- HandWrittenStickers ---------------------------------------------------

@@ -142,7 +142,7 @@ sfx, music). A category with no manifest rows emits nothing at all — that is h
 ## Visuals gallery
 
 The flat one: categorised artwork, no entities, no audio. `doodlebugs`, `kittens`,
-`mutants`, `memeshorts`, `immunorun` and `handwrittenstickers` have one.
+`mutants`, `memeshorts`, `immunorun`, `handwrittenstickers` and `swypekids` have one.
 `scripts/import-visuals.sh <slug>` holds one `import_<slug>` function per app — where
 the art lives in that app's checkout, how it is bucketed, the Czech titles — and
 `make build` only copies the result. Gated on `dist/visuals/<slug>/cats.tsv`; emits a
@@ -159,6 +159,11 @@ What deliberately stays out of a gallery, per app:
   The anime line is Animagine, whose licence that repo's graphics plan still lists as
   unverified. `data/originals` (the meme templates) never ships. Two of Taro's picks
   (`proud`, `angry`) are skipped because the jacket came out with a sportswear wordmark.
+- **swypekids** — the one gallery that mixes shipped art (Pandička's ten poses, the 294
+  stickers from `assets/emoji`) with review rounds (`drafts/stickers`: the four mascot
+  candidates, the first-round proposals). A sticker's caption is the emoji it replaced,
+  decoded from the code point in its file name. The import re-encodes ~400 images and
+  takes about six minutes. Its four macOS screenshots predate 2.9 and still show emoji.
 - **immunorun** — the G0 batch is a style test, not production art, and the page says so.
 - **handwrittenstickers** — the stickers are composed by the import script from the
   app's glyph PNGs, in capitals only: without the app's baseline metrics, capitals are

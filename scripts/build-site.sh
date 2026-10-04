@@ -483,6 +483,7 @@ EOF
 # cats.tsv column 4 says how a category is laid out; the page never guesses it
 # from the category id, so a new app brings its own layout with its manifest.
 #   pixel -> small tiles, never smoothed      art -> larger tiles
+#   small -> the same small tiles, smoothed
 #   portrait / hero -> cropped to the tile    wide / sheet -> one per row
 visuals_px()   { [ "$1" = pixel ] && printf 1 || printf 0; }
 visuals_grid() { case "$1" in pixel) ;; *) printf '%s' "$1" ;; esac; }

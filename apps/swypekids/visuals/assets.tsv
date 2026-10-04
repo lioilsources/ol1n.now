@@ -1,0 +1,414 @@
+panda	1	wave.webp	Mává	384	384
+panda	2	idle.webp	Stojí	384	384
+panda	3	cheer-jump.webp	Skáče	384	384
+panda	4	cheer-dance.webp	Tančí	384	384
+panda	5	cheer-clap.webp	Tleská	384	384
+panda	6	cheer-hug.webp	Objímá	384	384
+panda	7	cheer-star.webp	Hvězda	384	384
+panda	8	read.webp	Čte	384	384
+panda	9	oops.webp	Jejda	384	384
+panda	10	sleep.webp	Spí	384	384
+stickers	1	1f300.webp	🌀	224	224
+stickers	2	1f305.webp	🌅	224	224
+stickers	3	1f307.webp	🌇	224	224
+stickers	4	1f308.webp	🌈	224	224
+stickers	5	1f30a.webp	🌊	224	224
+stickers	6	1f30b.webp	🌋	224	224
+stickers	7	1f319.webp	🌙	224	224
+stickers	8	1f32b.webp	🌫	224	224
+stickers	9	1f32d.webp	🌭	224	224
+stickers	10	1f331.webp	🌱	224	224
+stickers	11	1f332.webp	🌲	224	224
+stickers	12	1f333.webp	🌳	224	224
+stickers	13	1f334.webp	🌴	224	224
+stickers	14	1f337.webp	🌷	224	224
+stickers	15	1f338.webp	🌸	224	224
+stickers	16	1f339.webp	🌹	224	224
+stickers	17	1f33a.webp	🌺	224	224
+stickers	18	1f33b.webp	🌻	224	224
+stickers	19	1f33c.webp	🌼	224	224
+stickers	20	1f33e.webp	🌾	224	224
+stickers	21	1f33f.webp	🌿	224	224
+stickers	22	1f340.webp	🍀	224	224
+stickers	23	1f342.webp	🍂	224	224
+stickers	24	1f344.webp	🍄	224	224
+stickers	25	1f345.webp	🍅	224	224
+stickers	26	1f347.webp	🍇	224	224
+stickers	27	1f348.webp	🍈	224	224
+stickers	28	1f349.webp	🍉	224	224
+stickers	29	1f34a.webp	🍊	224	224
+stickers	30	1f34b.webp	🍋	224	224
+stickers	31	1f34c.webp	🍌	224	224
+stickers	32	1f34d.webp	🍍	224	224
+stickers	33	1f34e.webp	🍎	224	224
+stickers	34	1f350.webp	🍐	224	224
+stickers	35	1f351.webp	🍑	224	224
+stickers	36	1f353.webp	🍓	224	224
+stickers	37	1f355.webp	🍕	224	224
+stickers	38	1f356.webp	🍖	224	224
+stickers	39	1f359.webp	🍙	224	224
+stickers	40	1f35a.webp	🍚	224	224
+stickers	41	1f35d.webp	🍝	224	224
+stickers	42	1f35e.webp	🍞	224	224
+stickers	43	1f35f.webp	🍟	224	224
+stickers	44	1f360.webp	🍠	224	224
+stickers	45	1f366.webp	🍦	224	224
+stickers	46	1f369.webp	🍩	224	224
+stickers	47	1f36a.webp	🍪	224	224
+stickers	48	1f36b.webp	🍫	224	224
+stickers	49	1f36c.webp	🍬	224	224
+stickers	50	1f372.webp	🍲	224	224
+stickers	51	1f374.webp	🍴	224	224
+stickers	52	1f375.webp	🍵	224	224
+stickers	53	1f37c.webp	🍼	224	224
+stickers	54	1f37d.webp	🍽	224	224
+stickers	55	1f37f.webp	🍿	224	224
+stickers	56	1f381.webp	🎁	224	224
+stickers	57	1f382.webp	🎂	224	224
+stickers	58	1f383.webp	🎃	224	224
+stickers	59	1f388.webp	🎈	224	224
+stickers	60	1f392.webp	🎒	224	224
+stickers	61	1f3a9.webp	🎩	224	224
+stickers	62	1f3af.webp	🎯	224	224
+stickers	63	1f3b0.webp	🎰	224	224
+stickers	64	1f3b2.webp	🎲	224	224
+stickers	65	1f3b3.webp	🎳	224	224
+stickers	66	1f3b5.webp	🎵	224	224
+stickers	67	1f3b8.webp	🎸	224	224
+stickers	68	1f3b9.webp	🎹	224	224
+stickers	69	1f3ba.webp	🎺	224	224
+stickers	70	1f3bb.webp	🎻	224	224
+stickers	71	1f3bf.webp	🎿	224	224
+stickers	72	1f3c0.webp	🏀	224	224
+stickers	73	1f3c1.webp	🏁	224	224
+stickers	74	1f3c3.webp	🏃	224	224
+stickers	75	1f3c5.webp	🏅	224	224
+stickers	76	1f3c6.webp	🏆	224	224
+stickers	77	1f3cd.webp	🏍	224	224
+stickers	78	1f3d4.webp	🏔	224	224
+stickers	79	1f3d6.webp	🏖	224	224
+stickers	80	1f3dc.webp	🏜	224	224
+stickers	81	1f3dd.webp	🏝	224	224
+stickers	82	1f3de.webp	🏞	224	224
+stickers	83	1f3e0.webp	🏠	224	224
+stickers	84	1f3e2.webp	🏢	224	224
+stickers	85	1f3e8.webp	🏨	224	224
+stickers	86	1f3ea.webp	🏪	224	224
+stickers	87	1f3eb.webp	🏫	224	224
+stickers	88	1f3ed.webp	🏭	224	224
+stickers	89	1f3f0.webp	🏰	224	224
+stickers	90	1f3fa.webp	🏺	224	224
+stickers	91	1f400.webp	🐀	224	224
+stickers	92	1f402.webp	🐂	224	224
+stickers	93	1f404.webp	🐄	224	224
+stickers	94	1f409.webp	🐉	224	224
+stickers	95	1f40a.webp	🐊	224	224
+stickers	96	1f40b.webp	🐋	224	224
+stickers	97	1f40c.webp	🐌	224	224
+stickers	98	1f40d.webp	🐍	224	224
+stickers	99	1f411.webp	🐑	224	224
+stickers	100	1f412.webp	🐒	224	224
+stickers	101	1f413.webp	🐓	224	224
+stickers	102	1f414.webp	🐔	224	224
+stickers	103	1f415.webp	🐕	224	224
+stickers	104	1f418.webp	🐘	224	224
+stickers	105	1f419.webp	🐙	224	224
+stickers	106	1f41a.webp	🐚	224	224
+stickers	107	1f41b.webp	🐛	224	224
+stickers	108	1f41d.webp	🐝	224	224
+stickers	109	1f41e.webp	🐞	224	224
+stickers	110	1f41f.webp	🐟	224	224
+stickers	111	1f422.webp	🐢	224	224
+stickers	112	1f423.webp	🐣	224	224
+stickers	113	1f424.webp	🐤	224	224
+stickers	114	1f426.webp	🐦	224	224
+stickers	115	1f427.webp	🐧	224	224
+stickers	116	1f428.webp	🐨	224	224
+stickers	117	1f42c.webp	🐬	224	224
+stickers	118	1f42d.webp	🐭	224	224
+stickers	119	1f42e.webp	🐮	224	224
+stickers	120	1f42f.webp	🐯	224	224
+stickers	121	1f430.webp	🐰	224	224
+stickers	122	1f431.webp	🐱	224	224
+stickers	123	1f433.webp	🐳	224	224
+stickers	124	1f434.webp	🐴	224	224
+stickers	125	1f435.webp	🐵	224	224
+stickers	126	1f436.webp	🐶	224	224
+stickers	127	1f437.webp	🐷	224	224
+stickers	128	1f438.webp	🐸	224	224
+stickers	129	1f43a.webp	🐺	224	224
+stickers	130	1f43b.webp	🐻	224	224
+stickers	131	1f43c.webp	🐼	224	224
+stickers	132	1f43e.webp	🐾	224	224
+stickers	133	1f43f.webp	🐿	224	224
+stickers	134	1f440.webp	👀	224	224
+stickers	135	1f441.webp	👁	224	224
+stickers	136	1f442.webp	👂	224	224
+stickers	137	1f444.webp	👄	224	224
+stickers	138	1f44b.webp	👋	224	224
+stickers	139	1f44d.webp	👍	224	224
+stickers	140	1f451.webp	👑	224	224
+stickers	141	1f456.webp	👖	224	224
+stickers	142	1f457.webp	👗	224	224
+stickers	143	1f45c.webp	👜	224	224
+stickers	144	1f45e.webp	👞	224	224
+stickers	145	1f45f.webp	👟	224	224
+stickers	146	1f462.webp	👢	224	224
+stickers	147	1f466.webp	👦	224	224
+stickers	148	1f467.webp	👧	224	224
+stickers	149	1f468.webp	👨	224	224
+stickers	150	1f469-200d-1f9b1.webp	👩‍🦱	224	224
+stickers	151	1f469.webp	👩	224	224
+stickers	152	1f46a.webp	👪	224	224
+stickers	153	1f474.webp	👴	224	224
+stickers	154	1f475.webp	👵	224	224
+stickers	155	1f476.webp	👶	224	224
+stickers	156	1f48e.webp	💎	224	224
+stickers	157	1f4a1.webp	💡	224	224
+stickers	158	1f4a4.webp	💤	224	224
+stickers	159	1f4a7.webp	💧	224	224
+stickers	160	1f4a8.webp	💨	224	224
+stickers	161	1f4c4.webp	📄	224	224
+stickers	162	1f4cc.webp	📌	224	224
+stickers	163	1f4cd.webp	📍	224	224
+stickers	164	1f4d6.webp	📖	224	224
+stickers	165	1f4da.webp	📚	224	224
+stickers	166	1f4f1.webp	📱	224	224
+stickers	167	1f4f7.webp	📷	224	224
+stickers	168	1f50d.webp	🔍	224	224
+stickers	169	1f512.webp	🔒	224	224
+stickers	170	1f514.webp	🔔	224	224
+stickers	171	1f51d.webp	🔝	224	224
+stickers	172	1f51f.webp	🔟	224	224
+stickers	173	1f525.webp	🔥	224	224
+stickers	174	1f534.webp	🔴	224	224
+stickers	175	1f54a.webp	🕊	224	224
+stickers	176	1f56f.webp	🕯	224	224
+stickers	177	1f578.webp	🕸	224	224
+stickers	178	1f58a.webp	🖊	224	224
+stickers	179	1f58d.webp	🖍	224	224
+stickers	180	1f590.webp	🖐	224	224
+stickers	181	1f5bc.webp	🖼	224	224
+stickers	182	1f5fa.webp	🗺	224	224
+stickers	183	1f602.webp	😂	224	224
+stickers	184	1f60a.webp	😊	224	224
+stickers	185	1f620.webp	😠	224	224
+stickers	186	1f628.webp	😨	224	224
+stickers	187	1f64b.webp	🙋	224	224
+stickers	188	1f682.webp	🚂	224	224
+stickers	189	1f683.webp	🚃	224	224
+stickers	190	1f68c.webp	🚌	224	224
+stickers	191	1f690.webp	🚐	224	224
+stickers	192	1f697.webp	🚗	224	224
+stickers	193	1f69a.webp	🚚	224	224
+stickers	194	1f69c.webp	🚜	224	224
+stickers	195	1f6a2.webp	🚢	224	224
+stickers	196	1f6a6.webp	🚦	224	224
+stickers	197	1f6aa.webp	🚪	224	224
+stickers	198	1f6b0.webp	🚰	224	224
+stickers	199	1f6b2.webp	🚲	224	224
+stickers	200	1f6b6.webp	🚶	224	224
+stickers	201	1f6bd.webp	🚽	224	224
+stickers	202	1f6c1.webp	🛁	224	224
+stickers	203	1f6cf.webp	🛏	224	224
+stickers	204	1f7e3.webp	🟣	224	224
+stickers	205	1f7e4.webp	🟤	224	224
+stickers	206	1f7eb.webp	🟫	224	224
+stickers	207	1f915.webp	🤕	224	224
+stickers	208	1f916.webp	🤖	224	224
+stickers	209	1f917.webp	🤗	224	224
+stickers	210	1f91d.webp	🤝	224	224
+stickers	211	1f921.webp	🤡	224	224
+stickers	212	1f941.webp	🥁	224	224
+stickers	213	1f951.webp	🥑	224	224
+stickers	214	1f952.webp	🥒	224	224
+stickers	215	1f954.webp	🥔	224	224
+stickers	216	1f955.webp	🥕	224	224
+stickers	217	1f957.webp	🥗	224	224
+stickers	218	1f95a.webp	🥚	224	224
+stickers	219	1f95b.webp	🥛	224	224
+stickers	220	1f95c.webp	🥜	224	224
+stickers	221	1f95f.webp	🥟	224	224
+stickers	222	1f963.webp	🥣	224	224
+stickers	223	1f964.webp	🥤	224	224
+stickers	224	1f965.webp	🥥	224	224
+stickers	225	1f967.webp	🥧	224	224
+stickers	226	1f96b.webp	🥫	224	224
+stickers	227	1f96c.webp	🥬	224	224
+stickers	228	1f980.webp	🦀	224	224
+stickers	229	1f981.webp	🦁	224	224
+stickers	230	1f985.webp	🦅	224	224
+stickers	231	1f986.webp	🦆	224	224
+stickers	232	1f987.webp	🦇	224	224
+stickers	233	1f989.webp	🦉	224	224
+stickers	234	1f98a.webp	🦊	224	224
+stickers	235	1f98b.webp	🦋	224	224
+stickers	236	1f98d.webp	🦍	224	224
+stickers	237	1f991.webp	🦑	224	224
+stickers	238	1f992.webp	🦒	224	224
+stickers	239	1f993.webp	🦓	224	224
+stickers	240	1f994.webp	🦔	224	224
+stickers	241	1f995.webp	🦕	224	224
+stickers	242	1f998.webp	🦘	224	224
+stickers	243	1f99b.webp	🦛	224	224
+stickers	244	1f99c.webp	🦜	224	224
+stickers	245	1f99e.webp	🦞	224	224
+stickers	246	1f9a2.webp	🦢	224	224
+stickers	247	1f9b4.webp	🦴	224	224
+stickers	248	1f9b5.webp	🦵	224	224
+stickers	249	1f9b7.webp	🦷	224	224
+stickers	250	1f9c0.webp	🧀	224	224
+stickers	251	1f9c2.webp	🧂	224	224
+stickers	252	1f9c3.webp	🧃	224	224
+stickers	253	1f9c5.webp	🧅	224	224
+stickers	254	1f9cd.webp	🧍	224	224
+stickers	255	1f9d2.webp	🧒	224	224
+stickers	256	1f9da.webp	🧚	224	224
+stickers	257	1f9e2.webp	🧢	224	224
+stickers	258	1f9e4.webp	🧤	224	224
+stickers	259	1f9ed.webp	🧭	224	224
+stickers	260	1f9f1.webp	🧱	224	224
+stickers	261	1f9f6.webp	🧶	224	224
+stickers	262	1f9f8.webp	🧸	224	224
+stickers	263	1f9fb.webp	🧻	224	224
+stickers	264	1fa80.webp	🪀	224	224
+stickers	265	1fa81.webp	🪁	224	224
+stickers	266	1fa91.webp	🪑	224	224
+stickers	267	1fa95.webp	🪕	224	224
+stickers	268	1fabd.webp	🪽	224	224
+stickers	269	231a.webp	⌚	224	224
+stickers	270	2600.webp	☀	224	224
+stickers	271	2601.webp	☁	224	224
+stickers	272	2602.webp	☂	224	224
+stickers	273	2615.webp	☕	224	224
+stickers	274	261d.webp	☝	224	224
+stickers	275	26a1.webp	⚡	224	224
+stickers	276	26bd.webp	⚽	224	224
+stickers	277	26c4.webp	⛄	224	224
+stickers	278	26f0.webp	⛰	224	224
+stickers	279	26f5.webp	⛵	224	224
+stickers	280	26f8.webp	⛸	224	224
+stickers	281	26fa.webp	⛺	224	224
+stickers	282	2702.webp	✂	224	224
+stickers	283	2708.webp	✈	224	224
+stickers	284	270b.webp	✋	224	224
+stickers	285	270d.webp	✍	224	224
+stickers	286	270f.webp	✏	224	224
+stickers	287	2744.webp	❄	224	224
+stickers	288	2753.webp	❓	224	224
+stickers	289	2764.webp	❤	224	224
+stickers	290	2b50.webp	⭐	224	224
+stickers	291	2b55.webp	⭕	224	224
+stickers	292	30-20e3.webp	0⃣	224	224
+stickers	293	31-20e3.webp	1⃣	224	224
+stickers	294	39-20e3.webp	9⃣	224	224
+mascots	1	panda-wave.webp	Panda · mává	256	256
+mascots	2	panda-idle.webp	Panda · stojí	256	256
+mascots	3	panda-cheer-jump.webp	Panda · skáče	256	256
+mascots	4	panda-cheer-dance.webp	Panda · tančí	256	256
+mascots	5	panda-cheer-clap.webp	Panda · tleská	256	256
+mascots	6	panda-cheer-hug.webp	Panda · objímá	256	256
+mascots	7	panda-cheer-star.webp	Panda · hvězda	256	256
+mascots	8	panda-read.webp	Panda · čte	256	256
+mascots	9	panda-oops.webp	Panda · jejda	256	256
+mascots	10	panda-sleep.webp	Panda · spí	256	256
+mascots	11	capybara-wave.webp	Kapybara · mává	256	256
+mascots	12	capybara-idle.webp	Kapybara · stojí	256	256
+mascots	13	capybara-cheer-jump.webp	Kapybara · skáče	256	256
+mascots	14	capybara-cheer-dance.webp	Kapybara · tančí	256	256
+mascots	15	capybara-cheer-clap.webp	Kapybara · tleská	256	256
+mascots	16	capybara-cheer-hug.webp	Kapybara · objímá	256	256
+mascots	17	capybara-cheer-star.webp	Kapybara · hvězda	256	256
+mascots	18	capybara-read.webp	Kapybara · čte	256	256
+mascots	19	capybara-oops.webp	Kapybara · jejda	256	256
+mascots	20	capybara-sleep.webp	Kapybara · spí	256	256
+mascots	21	giraffe-wave.webp	Žirafa · mává	256	256
+mascots	22	giraffe-idle.webp	Žirafa · stojí	256	256
+mascots	23	giraffe-cheer-jump.webp	Žirafa · skáče	256	256
+mascots	24	giraffe-cheer-dance.webp	Žirafa · tančí	256	256
+mascots	25	giraffe-cheer-clap.webp	Žirafa · tleská	256	256
+mascots	26	giraffe-cheer-hug.webp	Žirafa · objímá	256	256
+mascots	27	giraffe-cheer-star.webp	Žirafa · hvězda	256	256
+mascots	28	giraffe-read.webp	Žirafa · čte	256	256
+mascots	29	giraffe-oops.webp	Žirafa · jejda	256	256
+mascots	30	giraffe-sleep.webp	Žirafa · spí	256	256
+mascots	31	cheetah-wave.webp	Gepardice · mává	256	256
+mascots	32	cheetah-idle.webp	Gepardice · stojí	256	256
+mascots	33	cheetah-cheer-jump.webp	Gepardice · skáče	256	256
+mascots	34	cheetah-cheer-dance.webp	Gepardice · tančí	256	256
+mascots	35	cheetah-cheer-clap.webp	Gepardice · tleská	256	256
+mascots	36	cheetah-cheer-hug.webp	Gepardice · objímá	256	256
+mascots	37	cheetah-cheer-star.webp	Gepardice · hvězda	256	256
+mascots	38	cheetah-read.webp	Gepardice · čte	256	256
+mascots	39	cheetah-oops.webp	Gepardice · jejda	256	256
+mascots	40	cheetah-sleep.webp	Gepardice · spí	256	256
+firstround	1	mascot-capybara-cheer.webp	Maskot	224	224
+firstround	2	mascot-capybara-idle.webp	Maskot	224	224
+firstround	3	mascot-capybara-sleep.webp	Maskot	224	224
+firstround	4	mascot-capybara-wave.webp	Maskot	224	224
+firstround	5	mascot-owl-cheer.webp	Maskot	224	224
+firstround	6	mascot-owl-idle.webp	Maskot	224	224
+firstround	7	mascot-owl-sleep.webp	Maskot	224	224
+firstround	8	mascot-owl-wave.webp	Maskot	224	224
+firstround	9	mascot-panda-cheer.webp	Maskot	224	224
+firstround	10	mascot-panda-idle.webp	Maskot	224	224
+firstround	11	mascot-panda-sleep.webp	Maskot	224	224
+firstround	12	mascot-panda-wave.webp	Maskot	224	224
+firstround	13	mascot-red-fox-cheer.webp	Maskot	224	224
+firstround	14	mascot-red-fox-idle.webp	Maskot	224	224
+firstround	15	mascot-red-fox-sleep.webp	Maskot	224	224
+firstround	16	mascot-red-fox-wave.webp	Maskot	224	224
+firstround	17	animal-bear.webp	Zvíře	224	224
+firstround	18	animal-bee.webp	Zvíře	224	224
+firstround	19	animal-butterfly.webp	Zvíře	224	224
+firstround	20	animal-cat.webp	Zvíře	224	224
+firstround	21	animal-cow.webp	Zvíře	224	224
+firstround	22	animal-crab.webp	Zvíře	224	224
+firstround	23	animal-dog.webp	Zvíře	224	224
+firstround	24	animal-duck.webp	Zvíře	224	224
+firstround	25	animal-eagle.webp	Zvíře	224	224
+firstround	26	animal-elephant.webp	Zvíře	224	224
+firstround	27	animal-fish.webp	Zvíře	224	224
+firstround	28	animal-frog.webp	Zvíře	224	224
+firstround	29	animal-giraffe.webp	Zvíře	224	224
+firstround	30	animal-hedgehog.webp	Zvíře	224	224
+firstround	31	animal-hen.webp	Zvíře	224	224
+firstround	32	animal-horse.webp	Zvíře	224	224
+firstround	33	animal-koala.webp	Zvíře	224	224
+firstround	34	animal-ladybug.webp	Zvíře	224	224
+firstround	35	animal-lion.webp	Zvíře	224	224
+firstround	36	animal-monkey.webp	Zvíře	224	224
+firstround	37	animal-mouse.webp	Zvíře	224	224
+firstround	38	animal-octopus.webp	Zvíře	224	224
+firstround	39	animal-owl.webp	Zvíře	224	224
+firstround	40	animal-parrot.webp	Zvíře	224	224
+firstround	41	animal-penguin.webp	Zvíře	224	224
+firstround	42	animal-pig.webp	Zvíře	224	224
+firstround	43	animal-rabbit.webp	Zvíře	224	224
+firstround	44	animal-snail.webp	Zvíře	224	224
+firstround	45	animal-snake.webp	Zvíře	224	224
+firstround	46	animal-squirrel.webp	Zvíře	224	224
+firstround	47	animal-tiger.webp	Zvíře	224	224
+firstround	48	animal-turtle.webp	Zvíře	224	224
+firstround	49	animal-whale.webp	Zvíře	224	224
+firstround	50	animal-wolf.webp	Zvíře	224	224
+firstround	51	animal-zebra.webp	Zvíře	224	224
+firstround	52	family-boy.webp	Rodina	224	224
+firstround	53	family-dad.webp	Rodina	224	224
+firstround	54	family-girl.webp	Rodina	224	224
+firstround	55	family-grandma.webp	Rodina	224	224
+firstround	56	family-grandpa.webp	Rodina	224	224
+firstround	57	family-mum.webp	Rodina	224	224
+firstround	58	object-ball.webp	Věc	224	224
+firstround	59	object-balloon.webp	Věc	224	224
+firstround	60	object-bike.webp	Věc	224	224
+firstround	61	object-car.webp	Věc	224	224
+firstround	62	object-house.webp	Věc	224	224
+firstround	63	object-kite.webp	Věc	224	224
+firstround	64	object-moon.webp	Věc	224	224
+firstround	65	object-mushroom.webp	Věc	224	224
+firstround	66	object-pear.webp	Věc	224	224
+firstround	67	object-snowman.webp	Věc	224	224
+firstround	68	object-star.webp	Věc	224	224
+firstround	69	object-sun.webp	Věc	224	224
+firstround	70	object-tree.webp	Věc	224	224
