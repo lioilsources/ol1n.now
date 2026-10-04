@@ -539,6 +539,79 @@ EOF
   return 0
 }
 
+# ---- app subpages (apps/<slug>/pages/<name>.html -> dist/<slug>-<name>.html) ----
+# Hand-written prose an app page has no room for - today the OrbitronTactics
+# rules. A body fragment with `<!-- title: -->` and `<!-- intro: -->` header
+# comments; the app page gets a section with that intro and a link. Two
+# placeholders keep diagrams out of the prose:
+#   __BOARD:<id>__     an 8x8 board from pages/boards.tsv (rows of one id)
+#   __GESTURE:<dots>__ a maneuver gesture on the 3x3 pad, e.g. 1-4-7
+page_meta() { sed -n "s/^<!-- $2: \(.*\) -->\$/\1/p" "$1" | head -1; }
+app_pages() { for _f in "$APPS/$1"/pages/*.html; do [ -f "$_f" ] && printf '%s\n' "$_f"; done; return 0; }
+
+# board_svg <boards.tsv> <id>
+#   marks: self|ally|enemy (a piece), move, jump, capture, field. Row 0 is
+#   white's back rank and white sits at the bottom, hence y = 7 - row.
+#   U+FE0E after the glyph: without it iOS draws the pawn as an emoji.
+board_svg() {
+  awk -F"$TAB" -v id="$2" '
+    BEGIN {
+      g["pawn"] = "♟"; g["knight"] = "♞"; g["bishop"] = "♝"
+      g["rook"] = "♜"; g["queen"] = "♛"; g["king"] = "♚"
+      printf "<svg class=\"board\" viewBox=\"0 0 8 8\" role=\"img\" aria-label=\"Šachovnice 8×8\">"
+      for (r = 0; r < 8; r++) for (c = 0; c < 8; c++)
+        printf "<rect class=\"%s\" x=\"%d\" y=\"%d\" width=\"1\" height=\"1\"/>", ((r + c) % 2 ? "sq d" : "sq"), c, r
+    }
+    $1 == id { n++; row[n] = $2; col[n] = $3; mark[n] = $4; piece[n] = $5; color[n] = $6 }
+    END {
+      # fields and move marks under the pieces
+      for (i = 1; i <= n; i++) {
+        x = col[i]; y = 7 - row[i]
+        if (mark[i] == "field")
+          printf "<rect class=\"pf\" x=\"%.2f\" y=\"%.2f\" width=\"0.76\" height=\"0.76\" rx=\"0.16\"/>", x + 0.12, y + 0.12
+        else if (mark[i] == "move")
+          printf "<circle class=\"mv\" cx=\"%.1f\" cy=\"%.1f\" r=\"0.17\"/>", x + 0.5, y + 0.5
+        else if (mark[i] == "jump")
+          printf "<circle class=\"mv\" cx=\"%.1f\" cy=\"%.1f\" r=\"0.17\"/><circle class=\"jp\" cx=\"%.1f\" cy=\"%.1f\" r=\"0.34\"/>", x + 0.5, y + 0.5, x + 0.5, y + 0.5
+        else if (mark[i] == "capture")
+          printf "<rect class=\"cap\" x=\"%.2f\" y=\"%.2f\" width=\"0.88\" height=\"0.88\" rx=\"0.14\"/>", x + 0.06, y + 0.06
+      }
+      for (i = 1; i <= n; i++) {
+        if (mark[i] != "self" && mark[i] != "ally" && mark[i] != "enemy") continue
+        printf "<text class=\"pc %s%s\" x=\"%.1f\" y=\"%.2f\">%s&#xFE0E;</text>", color[i], (mark[i] == "self" ? " self" : ""), col[i] + 0.5, 7 - row[i] + 0.79, g[piece[i]]
+      }
+      printf "</svg>"
+    }' "$1"
+}
+
+# body of one app subpage, placeholders filled in
+app_page_body() {
+  _file="$1"; _boards="$(dirname "$1")/boards.tsv"
+  grep -v -E '^<!-- (title|intro): .* -->$' "$_file" | while IFS= read -r _line; do
+    while [[ "$_line" =~ __BOARD:([a-z0-9-]+)__ ]]; do
+      _line="${_line%%"${BASH_REMATCH[0]}"*}$(board_svg "$_boards" "${BASH_REMATCH[1]}")${_line#*"${BASH_REMATCH[0]}"}"
+    done
+    while [[ "$_line" =~ __GESTURE:([0-9-]+)__ ]]; do
+      _line="${_line%%"${BASH_REMATCH[0]}"*}$(gesture_svg "${BASH_REMATCH[1]}")${_line#*"${BASH_REMATCH[0]}"}"
+    done
+    printf '%s\n' "$_line"
+  done
+  return 0
+}
+
+# link sections on the app page, one per subpage
+app_pages_teaser_html() {
+  _slug="$1"
+  app_pages "$_slug" | while IFS= read -r _f; do
+    _name="$(basename "${_f%.html}")"
+    printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(page_meta "$_f" title)")"
+    printf '<p class="skins-intro">%s</p>\n' "$(esc "$(page_meta "$_f" intro)")"
+    printf '<p class="skins-more"><a href="%s-%s.html">%s →</a></p>\n</section>\n' \
+      "$_slug" "$_name" "$(esc "$(page_meta "$_f" title)")"
+  done
+  return 0
+}
+
 # ---- fleets gallery (dist/fleets/<slug>/, produced by scripts/import-fleets.sh) ----
 # Third gallery shape. Skins are whole themes and visuals are flat artwork;
 # fleets are ten interchangeable sprite sets over one shared game — so the
@@ -1008,6 +1081,7 @@ HERO
       echo '</div></section>'
       # explicit `if` (not `&&`): under `set -e` a failing guard as the last
       # command of this group would truncate the page
+      if [ "$lang" = "$I18N_BASE" ]; then app_pages_teaser_html "$slug"; fi
       if skins_have "$slug"; then skins_teaser_html "$slug"; fi
       if visuals_have "$slug"; then visuals_teaser_html "$slug" "$meta"; fi
       if fleets_have "$slug"; then fleets_teaser_html "$slug"; fi
@@ -1055,6 +1129,23 @@ HERO
       echo "  built $slug-visuals.html"
     fi
 
+    # hand-written subpages - base language only, like visuals and fleets
+    if [ "$lang" = "$I18N_BASE" ]; then
+      app_pages "$slug" | while IFS= read -r pg; do
+        pg_name="$(basename "${pg%.html}")"
+        {
+          emit_head "$lname — $(page_meta "$pg" title) — olin.now"
+          page_top_html "$back_href" "$back_label" ""
+          printf '<article class="rules">\n<h1>%s — %s</h1>\n' "$(esc "$lname")" "$(esc "$(page_meta "$pg" title)")"
+          app_page_body "$pg"
+          printf '</article>\n'
+          emit_brand
+          emit_foot
+        } > "$DIST/$slug-$pg_name.html"
+        echo "  built $slug-$pg_name.html"
+      done
+    fi
+
     if [ "$lang" = "$I18N_BASE" ] && fleets_have "$slug"; then
       {
         emit_head "$lname — flotily a manévry — olin.now"
@@ -1088,7 +1179,6 @@ EOF
 PAGE_LANGS="cs en de fr es it nl pl hu uk pt-BR vi ja ko"   # menu order
 SITE="https://$(tr -d '[:space:]' < "$ROOT/CNAME" 2>/dev/null)"
 [ "$SITE" = "https://" ] && SITE="https://olin.now"
-page_meta()  { sed -n "s/^<!-- $2: \(.*\) -->\$/\1/p" "$1" | head -1; }
 page_file()  { if [ "$2" = "$I18N_BASE" ]; then printf '%s.html' "$1"; else printf '%s.%s.html' "$1" "$2"; fi; }
 page_canon() { if [ "$2" = "$I18N_BASE" ]; then printf '%s/%s' "$SITE" "$1"; else printf '%s/%s.%s' "$SITE" "$1" "$2"; fi; }
 og_locale()  { case "$1" in cs) echo cs_CZ ;; en) echo en_GB ;; de) echo de_DE ;; fr) echo fr_FR ;;

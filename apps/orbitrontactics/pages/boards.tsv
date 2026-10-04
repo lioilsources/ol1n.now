@@ -1,0 +1,174 @@
+pawn	3	3	self	pawn	white
+pawn	4	4	enemy	pawn	black
+pawn	3	2	move		
+pawn	3	4	move		
+pawn	2	3	move		
+pawn	4	2	move		
+pawn	4	4	capture	pawn	black
+knight	3	3	self	knight	white
+knight	5	2	move		
+knight	5	4	move		
+knight	4	1	move		
+knight	4	5	move		
+knight	2	1	move		
+knight	2	5	move		
+knight-blocked	3	3	self	knight	white
+knight-blocked	4	3	ally	rook	white
+knight-blocked	4	1	move		
+knight-blocked	4	5	move		
+knight-blocked	2	1	move		
+knight-blocked	2	5	move		
+bishop	2	3	self	bishop	white
+bishop	3	3	ally	pawn	white
+bishop	4	3	enemy	pawn	black
+bishop	4	5	enemy	knight	black
+bishop	1	2	move		
+bishop	0	1	move		
+bishop	1	4	move		
+bishop	0	5	move		
+bishop	3	2	move		
+bishop	4	1	move		
+bishop	5	0	move		
+bishop	3	4	move		
+bishop	4	5	capture	knight	black
+bishop	5	3	jump		
+rook	3	3	self	rook	white
+rook	3	5	enemy	pawn	black
+rook	3	4	move		
+rook	3	5	capture	pawn	black
+rook	3	2	move		
+rook	3	1	move		
+rook	3	0	move		
+rook	4	3	move		
+rook	5	3	move		
+rook	6	3	move		
+rook	7	3	move		
+rook	2	3	move		
+rook	1	3	move		
+rook	0	3	move		
+queen	3	3	self	queen	white
+queen	2	2	move		
+queen	1	1	move		
+queen	0	0	move		
+queen	2	4	move		
+queen	1	5	move		
+queen	0	6	move		
+queen	4	2	move		
+queen	5	1	move		
+queen	6	0	move		
+queen	4	4	move		
+queen	5	5	move		
+queen	6	6	move		
+queen	7	7	move		
+queen	3	4	move		
+queen	3	5	move		
+queen	3	2	move		
+queen	3	1	move		
+queen	4	3	move		
+queen	5	3	move		
+queen	2	3	move		
+queen	1	3	move		
+king	3	3	self	king	white
+king	3	4	move		
+king	3	5	move		
+king	3	6	move		
+king	3	7	move		
+king	3	2	move		
+king	3	1	move		
+king	3	0	move		
+king	4	3	move		
+king	5	3	move		
+king	6	3	move		
+king	7	3	move		
+king	2	3	move		
+king	1	3	move		
+king	0	3	move		
+king	2	2	move		
+king	1	1	move		
+king	2	4	move		
+king	1	5	move		
+king	4	2	move		
+king	5	1	move		
+king	4	4	move		
+king	5	5	move		
+last-warrior	3	3	self	king	white
+last-warrior	2	2	move		
+last-warrior	2	3	move		
+last-warrior	2	4	move		
+last-warrior	3	2	move		
+last-warrior	3	4	move		
+last-warrior	4	2	move		
+last-warrior	4	3	move		
+last-warrior	4	4	move		
+start	0	0	ally	rook	white
+start	0	1	ally	knight	white
+start	0	2	ally	bishop	white
+start	0	3	ally	queen	white
+start	0	4	ally	king	white
+start	0	5	ally	bishop	white
+start	0	6	ally	knight	white
+start	0	7	ally	rook	white
+start	1	0	ally	pawn	white
+start	1	1	ally	pawn	white
+start	1	2	ally	pawn	white
+start	1	3	ally	pawn	white
+start	1	4	ally	pawn	white
+start	1	5	ally	pawn	white
+start	1	6	ally	pawn	white
+start	1	7	ally	pawn	white
+start	7	0	enemy	rook	black
+start	7	1	enemy	knight	black
+start	7	2	enemy	bishop	black
+start	7	3	enemy	queen	black
+start	7	4	enemy	king	black
+start	7	5	enemy	bishop	black
+start	7	6	enemy	knight	black
+start	7	7	enemy	rook	black
+start	6	0	enemy	pawn	black
+start	6	1	enemy	pawn	black
+start	6	2	enemy	pawn	black
+start	6	3	enemy	pawn	black
+start	6	4	enemy	pawn	black
+start	6	5	enemy	pawn	black
+start	6	6	enemy	pawn	black
+start	6	7	enemy	pawn	black
+fields-0	3	3	field		
+fields-0	3	4	field		
+fields-0	4	3	field		
+fields-0	4	4	field		
+fields-0	3	5	field		
+fields-1	2	3	field		
+fields-1	3	2	field		
+fields-1	3	5	field		
+fields-1	4	4	field		
+fields-1	5	4	field		
+fields-2	1	1	field		
+fields-2	2	2	field		
+fields-2	5	5	field		
+fields-2	6	6	field		
+fields-2	3	4	field		
+fields-3	2	0	field		
+fields-3	2	7	field		
+fields-3	5	0	field		
+fields-3	5	7	field		
+fields-3	3	4	field		
+fields-4	2	3	field		
+fields-4	2	4	field		
+fields-4	5	3	field		
+fields-4	5	4	field		
+fields-4	4	3	field		
+fields-5	1	2	field		
+fields-5	1	5	field		
+fields-5	6	2	field		
+fields-5	6	5	field		
+fields-5	4	3	field		
+fields-6	1	3	field		
+fields-6	3	1	field		
+fields-6	4	6	field		
+fields-6	6	4	field		
+fields-6	3	4	field		
+fields-7	1	4	field		
+fields-7	3	3	field		
+fields-7	4	4	field		
+fields-7	6	3	field		
+fields-7	4	3	field		

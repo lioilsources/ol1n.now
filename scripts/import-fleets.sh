@@ -192,6 +192,15 @@ if [ -n "$DART" ] && [ -f "$SRC/tools/dump_maneuvers.dart" ]; then
     || echo "  ! maneuver dump failed — gallery will have no maneuvers" >&2
 fi
 
+# ---- rules page diagrams ----------------------------------------------------
+# The move diagrams on <slug>-rules.html, asked of the game's own validators.
+# The script lives here but runs against the game's package config.
+if [ -n "$DART" ] && [ -f "$SRC/.dart_tool/package_config.json" ] && [ -d "$HERE/apps/$SLUG/pages" ]; then
+  "$DART" --packages="$SRC/.dart_tool/package_config.json" \
+    "$HERE/scripts/dump_orbitron_rules.dart" "$HERE/apps/$SLUG/pages" \
+    || echo "  ! rules dump failed — keeping the committed boards.tsv" >&2
+fi
+
 echo "fleets -> $OUT"
 awk -F"$TAB" '{ c[$3]++ } END { for (k in c) printf "  %-10s %d\n", k, c[k] }' "$OUT/assets.tsv"
 awk -F"$TAB" '{ c[$1]++ } END { for (k in c) printf "  %-10s %d\n", k, c[k] }' "$OUT/common.tsv"

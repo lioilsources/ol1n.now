@@ -1,0 +1,155 @@
+<!-- title: Pravidla -->
+<!-- intro: Jak se vyhrává, jak táhne každá figura a jak funguje souboj v reálném čase — výška letu, štít, energie a manévry kreslené gestem. -->
+<p class="lead">OrbitronTactics vypadá jako šachy, ale hraje se jinak: figury mají vlastní tahy, král se dá sebrat a hra kvůli tomu nekončí, a každé braní se musí vybojovat v aréně. Všechno níže odpovídá tomu, jak hra skutečně počítá — diagramy tahů jsou vygenerované přímo z jejích pravidel.</p>
+
+<nav class="rules-toc">
+<a href="#cil">Jak se vyhrává</a>
+<a href="#deska">Deska a silová pole</a>
+<a href="#tahy">Tahy figur</a>
+<a href="#brani">Braní je souboj</a>
+<a href="#arena">Aréna</a>
+<a href="#stit">Štít</a>
+<a href="#manevry">Manévry</a>
+<a href="#motivy">Taktické motivy</a>
+<a href="#flotila">Flotila a vylepšení</a>
+</nav>
+
+<h2 id="cil">Jak se vyhrává</h2>
+<p>Hraje se na desce 8×8, každý má šestnáct figur, bílý začíná a hráči se střídají po jednom tahu. Šach ani mat neexistuje. Vyhrát jde třemi způsoby a stačí kterýkoli z nich:</p>
+<div class="rule-cards">
+<div class="rule-card"><h3>Ovládnutí polí</h3><p>Na konci svého tahu stojíš vlastní figurou na <strong>všech pěti</strong> silových polích.</p></div>
+<div class="rule-card"><h3>Pád velení</h3><p>Soupeř přijde o <strong>krále i královnu</strong>. Jeden z nich nestačí.</p></div>
+<div class="rule-card"><h3>Průnik</h3><p>Tvůj <strong>pěšec</strong> dojde na soupeřovu zadní řadu. Neproměňuje se — rovnou vyhrává.</p></div>
+</div>
+<p>Podmínky se vyhodnocují po každém tahu pro hráče, který právě táhl. V síťové hře navíc vyhrává ten, komu soupeř ze hry odejde.</p>
+
+<h2 id="deska">Deska a silová pole</h2>
+<div class="board-row">
+<figure class="board-fig">__BOARD:start__<figcaption>Výchozí rozestavení. Bílý je dole a táhne nahoru.</figcaption></figure>
+<div class="board-text">
+<p>Každá strana má osm pěšců, dvě věže, dva jezdce, dva střelce, královnu a krále. Hra začíná ze šachového pořadí; pravidla dovolují i vlastní rozestavení — šestnáct figur libovolně ve vlastních dvou řadách.</p>
+<p>Na desce leží <strong>pět silových polí</strong>. Pole ovládá ten, kdo na něm zrovna stojí figurou; jakmile figura odejde nebo padne, pole je volné. Rozložení se losuje na začátku partie z osmi připravených vzorů.</p>
+</div>
+</div>
+<div class="board-grid small">
+<figure class="board-fig">__BOARD:fields-0__<figcaption>Střed</figcaption></figure>
+<figure class="board-fig">__BOARD:fields-1__<figcaption>Kosočtverec</figcaption></figure>
+<figure class="board-fig">__BOARD:fields-2__<figcaption>Úhlopříčka</figcaption></figure>
+<figure class="board-fig">__BOARD:fields-3__<figcaption>Okraje</figcaption></figure>
+<figure class="board-fig">__BOARD:fields-4__<figcaption>Vnitřní prstenec</figcaption></figure>
+<figure class="board-fig">__BOARD:fields-5__<figcaption>Rohy a střed</figcaption></figure>
+<figure class="board-fig">__BOARD:fields-6__<figcaption>Rozházené</figcaption></figure>
+<figure class="board-fig">__BOARD:fields-7__<figcaption>Středový sloupec</figcaption></figure>
+</div>
+
+<h2 id="tahy">Tahy figur</h2>
+<p class="legend"><span class="lg mv"></span> sem figura smí táhnout <span class="lg jp"></span> skok přes figury <span class="lg cap"></span> braní</p>
+<p>Na obsazené pole vlastní figurou táhnout nejde, na soupeřovo se bere. Posuvné figury (střelec, věž, královna, král) se zastaví o první figuru v cestě.</p>
+
+<div class="board-grid">
+<figure class="board-fig">__BOARD:pawn__<figcaption><strong>Pěšec</strong> Rovně vpřed nesmí. O jedno pole do strany a vzad jen táhne, brát tam nemůže. Šikmo vpřed táhne i bere — to je jeho jediný útok i jediná cesta dopředu.</figcaption></figure>
+<figure class="board-fig">__BOARD:knight__<figcaption><strong>Jezdec</strong> Skáče do L a figury přeskakuje. Vpřed a do stran všemi tvary, vzad jen „nízkým L“: jedno pole dozadu a dvě do strany. Dvě dozadu a jedno do strany neumí.</figcaption></figure>
+<figure class="board-fig">__BOARD:knight-blocked__<figcaption><strong>Jezdec za věží</strong> Stojí-li přímo před jezdcem věž — vlastní nebo cizí — přijde o oba dlouhé skoky vpřed. Zbylé čtyři mu zůstávají.</figcaption></figure>
+<figure class="board-fig">__BOARD:bishop__<figcaption><strong>Střelec</strong> Šikmo nejvýš o tři pole, nepřeskakuje. K tomu <em>snipe</em>: přesně tři pole rovně vpřed, a to skokem — na obrázku přes vlastního i soupeřova pěšce.</figcaption></figure>
+<figure class="board-fig">__BOARD:rook__<figcaption><strong>Věž</strong> Rovně nejvýš o čtyři pole. Vpravo ji zastavil soupeřův pěšec: může ho sebrat, dál už ne.</figcaption></figure>
+<figure class="board-fig">__BOARD:queen__<figcaption><strong>Královna</strong> Šikmo až o čtyři pole, rovně jen o dvě. Je to úhlopříčná figura, ne šachová dáma.</figcaption></figure>
+<figure class="board-fig">__BOARD:king__<figcaption><strong>Král</strong> Zrcadlo královny: rovně až o čtyři pole, šikmo o dvě. Je to těžká bojová figura, ne někdo, koho je třeba schovávat.</figcaption></figure>
+<figure class="board-fig">__BOARD:last-warrior__<figcaption><strong>Poslední bojovník</strong> Jakmile padne král nebo královna, ten druhý z páru se promění: už jen o jedno pole všemi směry. Až padne i on, hra končí.</figcaption></figure>
+</div>
+<p>Figury, které může soupeř příštím tahem napadnout, hra označuje červeným odznakem.</p>
+
+<h2 id="brani">Braní je souboj</h2>
+<p>Táhneš-li na pole se soupeřovou figurou, deska se zastaví a obě figury se jako lodě utkají v aréně. Výsledek souboje rozhodne, co se na desce stane:</p>
+<ul>
+<li><strong>Vyhraje útočník</strong> — braní proběhne, útočník obsadí pole.</li>
+<li><strong>Vyhraje obránce</strong> — útočník je zničen a obránce zůstává stát, kde byl.</li>
+</ul>
+<p>V obou případech je pak na tahu soupeř. Braní tedy není jistota jako v šachu: poslat pěšce na krále znamená poslat čtyřicet bodů trupu proti sto osmdesáti. A naopak — dobrý pilot ubrání figuru, kterou by na desce ztratil.</p>
+<p>Aréna se hraje proti počítači, ve dvou na jednom zařízení i po místní Wi-Fi. V online hře přes cloud se zatím bere rovnou, bez souboje.</p>
+
+<h2 id="arena">Aréna</h2>
+<p>Každý má svou polovinu arény a loď v ní řídí jedním prstem:</p>
+<ul>
+<li><strong>do stran</strong> — úhyb mezi letovými drahami,</li>
+<li><strong>dopředu</strong>, k soupeři — stoupání,</li>
+<li><strong>dozadu</strong>, k vlastnímu okraji — klesání.</li>
+</ul>
+<p>Loď střílí sama, v pravidelném rytmu své zbraně. Střela si pamatuje dráhu a výšku, ze které vyšla, a letí rovně. Zasáhne jen tehdy, když je soupeř ve chvíli jejího doletu ve stejné dráze <em>a</em> zhruba ve stejné výšce. Z toho plyne základní pravidlo celé arény:</p>
+<p class="callout">Abys soupeře trefil, musíš letět tam, kde může trefit on tebe. Výška je zároveň úkryt i zaměřovač.</p>
+<p>Každá figura je jiná loď. Pancíř ubírá z každého zásahu dané procento; doba letu je čas, za který střela přeletí arénu — čím kratší, tím hůř se jí uhýbá.</p>
+<div class="table-wrap"><table class="rules-table">
+<thead><tr><th>Loď</th><th>Trup</th><th>Zásah</th><th>Výstřel každých</th><th>Pancíř</th><th>Let střely</th><th>Živel</th></tr></thead>
+<tbody>
+<tr><td>Pěšec</td><td>40</td><td>8</td><td>0,4 s</td><td>—</td><td>0,30 s</td><td>kinetický</td></tr>
+<tr><td>Jezdec</td><td>80</td><td>20</td><td>0,8 s</td><td>10 %</td><td>0,50 s</td><td>voda</td></tr>
+<tr><td>Střelec</td><td>70</td><td>25</td><td>0,9 s</td><td>5 %</td><td>0,25 s</td><td>oheň</td></tr>
+<tr><td>Věž</td><td>120</td><td>30</td><td>1,2 s</td><td>25 %</td><td>0,70 s</td><td>led</td></tr>
+<tr><td>Královna</td><td>150</td><td>40</td><td>1,0 s</td><td>20 %</td><td>0,70 s</td><td>elektřina</td></tr>
+<tr><td>Král</td><td>180</td><td>35</td><td>1,4 s</td><td>35 %</td><td>0,70 s</td><td>elektřina</td></tr>
+</tbody></table></div>
+<p>Pěšec je kulomet: slabý, ale rychlý v palbě i ve střele. Střelec je odstřelovač s nejrychlejší střelou ve hře. Věž, královna a král nesou těžké dělo — hodně poškození, ale pomalá střela, které se dá uletět.</p>
+
+<h2 id="stit">Štít</h2>
+<p>Tlačítko štítu na <strong>1,5 sekundy</strong> pohltí každý zásah beze zbytku. Potom se <strong>5 sekund</strong> dobíjí. Štít nestojí žádnou energii a nebrání ve střelbě ani v řízení, takže otázka nezní „jestli“, ale „kdy“: nejvíc se vyplatí proti těžké salvě, které už neuletíš, nebo ve chvíli, kdy sám vlétáš soupeři do rány.</p>
+
+<h2 id="manevry">Manévry</h2>
+<p>Vedle kormidla je mřížka 3×3. Pustíš řízení, nakreslíš na ni jedním tahem gesto — jako odemykání telefonu — a loď převezme řízení sama: odletí manévr a střílí podle jeho plánu.</p>
+<ul>
+<li>Gesto má aspoň tři body, žádný se neopakuje, a když tah přejede přes bod, ten se započítá.</li>
+<li>Během manévru loď <strong>neposlouchá řízení</strong>. Je to závazek — kdo ho odstartuje ve špatnou chvíli, nemůže uhnout.</li>
+<li>Manévr stojí <strong>energii</strong>. Souboj začíná na 50 ze 100 a každou sekundu přibude 12, takže na jeden vyjde řada jednou za pár sekund.</li>
+<li>U zrcadlitelných manévrů letí zrcadlové gesto manévr na opačnou stranu.</li>
+<li>Hned po manévru loď vystřelí nejpozději do pětiny sekundy — nečeká celý interval zbraně.</li>
+<li>Do souboje jdou vždy <strong>čtyři</strong> zvolené manévry; pad ukazuje jejich gesta i cenu.</li>
+</ul>
+<p>Gesta jsou pro všechny lodě stejná — co se naučíš na pěšci, funguje na králi — liší se cena, délka a síla. Ceny v tabulce jsou rozpětí od pěšce po krále.</p>
+<div class="table-wrap"><table class="rules-table maneuvers">
+<thead><tr><th>Gesto</th><th>Manévr</th><th>Energie</th><th>Co udělá</th></tr></thead>
+<tbody>
+<tr><td>__GESTURE:3-4-5__</td><td>Úkrok<span>Sidestep</span></td><td>20–30</td><td>Rychlý krok stranou, který srovná výšku se soupeřem. Základní zaměření.</td></tr>
+<tr><td>__GESTURE:7-4-1__</td><td>Výpad<span>Strike</span></td><td>30–40</td><td>Vystoupá na soupeře, dvakrát vypálí a vrátí se.</td></tr>
+<tr><td>__GESTURE:1-4-7__</td><td>Ústup<span>Retreat</span></td><td>15–25</td><td>Stáhne se k vlastnímu okraji a zvedne štít. Nejlevnější manévr ve hře.</td></tr>
+<tr><td>__GESTURE:1-5-7-3__</td><td>Výkrut<span>Barrel Roll</span></td><td>25–35</td><td>Odvalí se z dráhy; uprostřed výkrutu střely procházejí skrz.</td></tr>
+<tr><td>__GESTURE:0-7-2__</td><td>Finta<span>Feint</span></td><td>25–35</td><td>Nakloní se na jednu stranu, strhne to na druhou a vypálí.</td></tr>
+<tr><td>__GESTURE:0-1-2-4-7__</td><td>Salva<span>Volley</span></td><td>35–45</td><td>Čtyři dávky za sebou ze stojící lodi. Hodně palby, žádný pohyb.</td></tr>
+<tr><td>__GESTURE:0-1-2-4-6-7-8__</td><td>Slalom<span>Slalom</span></td><td>40–50</td><td>Kličkuje přes soupeřovu výšku a celou dobu střílí.</td></tr>
+<tr><td>__GESTURE:0-4-8__</td><td>Průlet<span>Dash</span></td><td>35–45</td><td>Přeletí arénu v soupeřově výšce a pálí; kus cesty je nezasažitelný.</td></tr>
+<tr><td>__GESTURE:0-1-2-4-6__</td><td>Stín<span>Shadow</span></td><td>40–50</td><td>Přilepí se na soupeře, ať letí kamkoli, a střílí rovnoměrně.</td></tr>
+<tr><td>__GESTURE:2-3-4-5-6__</td><td>Přetížení<span>Overdrive</span></td><td>30–40</td><td>Jediný manévr, při kterém ti zůstane řízení: děla jedou několik sekund naplno.</td></tr>
+<tr><td>__GESTURE:1-2-5-8-7-6-3-0__</td><td>Přemet<span>Loop</span></td><td>45–50</td><td>Přes vrchol a dolů; střely prolétnou pod lodí.</td></tr>
+<tr><td>__GESTURE:4-1-2-5-8-7-6-3__</td><td>Vývrtka<span>Corkscrew</span></td><td>45–50</td><td>Stoupá a klesá rotující spirálou, část je nezasažitelná. Jen z balíčku.</td></tr>
+</tbody></table></div>
+<p>Přemet a vývrtku neumějí těžké lodě — věž a král. Každá loď má navíc jeden <strong>vlastní manévr</strong>, který nikdo jiný nemá:</p>
+<div class="table-wrap"><table class="rules-table maneuvers">
+<thead><tr><th>Gesto</th><th>Loď a manévr</th><th>Energie</th><th>Co udělá</th></tr></thead>
+<tbody>
+<tr><td>__GESTURE:8-5-2-1__</td><td>Pěšec<span>Double Step</span></td><td>45</td><td>Dva skoky vpřed, po každém dávka.</td></tr>
+<tr><td>__GESTURE:0-3-6-7__</td><td>Jezdec<span>Leap</span></td><td>45</td><td>Vyskočí z dráhy a dopadne o dráhu vedle, přímo na soupeře. Většinu skoku je nezasažitelný.</td></tr>
+<tr><td>__GESTURE:0-4-8-5-2__</td><td>Střelec<span>Sniper Shot</span></td><td>55</td><td>Sekundu stojí bez hnutí, pak jedna ničivá rána.</td></tr>
+<tr><td>__GESTURE:0-3-6-7-8-5-2__</td><td>Věž<span>Bulwark</span></td><td>60</td><td>Zvedne štít, i když se ještě dobíjí, a vypálí tři těžké rány.</td></tr>
+<tr><td>__GESTURE:6-3-0-1-2-5-8__</td><td>Královna<span>Royal Waltz</span></td><td>60</td><td>Přejede celou arénu v soupeřově výšce.</td></tr>
+<tr><td>__GESTURE:6-3-0-4-2-5-8__</td><td>Král<span>Crown</span></td><td>65</td><td>Drží pozici za štítem a pálí ze všech baterií.</td></tr>
+</tbody></table></div>
+<p>Dráhy všech manévrů každé lodi, animované tak, jak je hra letí, jsou na stránce <a href="orbitrontactics-fleets.html">Flotily</a>.</p>
+
+<h2 id="motivy">Taktické motivy</h2>
+<p>Z pravidel arény vychází několik motivů, které se v soubojích opakují.</p>
+<div class="rule-cards wide">
+<div class="rule-card"><h3>Výška jako úkryt</h3><p>Dokud letíš jinde než soupeř, jeho střely tě míjejí — a tvoje jeho. Souboj je střídání dvou stavů: schovat se mimo jeho výšku, nebo se na ni srovnat a pálit. Úkrok a Výpad to srovnání udělají za tebe.</p></div>
+<div class="rule-card"><h3>Okno nezasažitelnosti</h3><p>Výkrut, Přemet, Průlet, Vývrtka a jezdcův Leap mají úsek, kdy střely procházejí lodí. Načasované proti salvě, která už letí, je to úhyb, který nejde přestřelit.</p></div>
+<div class="rule-card"><h3>Štít do rány</h3><p>Štít nestojí energii a manévr ho neruší. Zvednout ho těsně před útočným manévrem znamená vletět na soupeřovu výšku krytý. Ústup, Bulwark a Crown si štít zvedají samy.</p></div>
+<div class="rule-card"><h3>Štít mimo pořadí</h3><p>Věž se svým Bulwarkem zvedne štít i během dobíjení. Soupeř, který si počítá pět sekund do dalšího štítu, se přepočítá.</p></div>
+<div class="rule-card"><h3>Hospodaření s energií</h3><p>Padesát na začátku je jeden drahý manévr, nebo dva levné. Kdo ji vystřílí hned, další čtyři sekundy jen řídí a čeká — a soupeř to ví.</p></div>
+<div class="rule-card"><h3>Trest za závazek</h3><p>Loď v manévru neuhne. Salva a Sniper Shot navíc stojí na místě. Kdo pozná soupeřovo gesto podle rozletu, ví, kde jeho loď za půl sekundy bude.</p></div>
+<div class="rule-card"><h3>Rána po manévru</h3><p>Po dolétnutí manévru střílí loď skoro okamžitě. Manévr, který končí na soupeřově výšce, si tak nese jednu ránu navíc.</p></div>
+<div class="rule-card"><h3>Rychlá proti pomalé střele</h3><p>Těžké dělo letí arénou 0,7 sekundy, pěšcova a střelcova střela třetinu toho. Proti těžké lodi se uhýbá očima; proti střelci jen tím, že na jeho výšce nejsi.</p></div>
+</div>
+
+<h2 id="flotila">Flotila a vylepšení</h2>
+<p>Za každý vyhraný souboj dostane vítězova flotila kredity podle toho, koho sestřelil: pěšec 20, jezdec 30, střelec 35, věž 40, královna 60, král 100. Utrácejí se v Comcenteru.</p>
+<ul>
+<li><strong>Vylepšení lodí</strong> — tři úrovně za 100, 250 a 500 kreditů. Trup a zásah +20 / +40 / +60 %, interval střelby kratší o 10 / 15 / 20 % a štít delší o 0,5 / 0,75 / 1 sekundu.</li>
+<li><strong>Nové manévry</strong> — odemykají se počtem vítězství s danou lodí, dají se koupit dřív za kredity, nebo přijdou v balíčku. Úkrok a Výpad má každá loď od začátku.</li>
+<li><strong>Trénink manévrů</strong> — každý vlastněný manévr jde dvakrát vytrénovat: je levnější a rychlejší a přidá buď ránu navíc, nebo delší okno nezasažitelnosti.</li>
+</ul>
+<p>Proti počítači volíš obtížnost, která určuje jen jeho um — jak daleko počítá na desce a jak dobře pilotuje. Sílu lodí má jeho flotila vlastní a vylepšuje si ji po každé hře, nikdy ale o víc než 0, 1 nebo 2 úrovně nad tvoji (lehká, střední, těžká).</p>

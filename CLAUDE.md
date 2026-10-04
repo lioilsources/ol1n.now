@@ -13,7 +13,7 @@ make build        # Generate static site → dist/
 make deploy       # Trigger the CI deploy workflow (builds from origin/main — push first!)
 make import-skins # (authoring, local only) Re-encode Kiran skin galleries → apps/kirian/skins/
 make import-visuals APP=<slug> # (authoring, local only) Re-encode one app's artwork → apps/<slug>/visuals/
-make import-fleets # (authoring, local only) Re-encode OrbitronTactics fleets + maneuvers → apps/orbitrontactics/fleets/
+make import-fleets # (authoring, local only) Re-encode OrbitronTactics fleets + maneuvers → apps/orbitrontactics/fleets/ (+ rules diagrams → pages/boards.tsv)
 make import-decks  # (authoring, local only) Re-encode Lexify deck samples (5+5 cards per deck) → apps/lexify/decks/
 ```
 
@@ -194,6 +194,34 @@ repo** samples every maneuver through `Maneuver.poseAt` and writes both a TSV
 paths. `store.js` only interpolates between samples and paints: the easing, the
 anchors and the per-ship scaling are never reimplemented here, because a second
 implementation drifts from the engine the first time a curve changes.
+
+## App subpages (OrbitronTactics rules)
+
+`apps/<slug>/pages/<name>.html` is a hand-written body fragment that becomes
+`dist/<slug>-<name>.html` (base language only), with a link section on the app page
+taken from its `<!-- title: -->` and `<!-- intro: -->` header comments. Today that is
+`orbitrontactics-rules.html`: win conditions, every piece's moves, the realtime arena,
+shield, maneuvers and the tactical motifs.
+
+Two placeholders keep diagrams out of the prose. `__BOARD:<id>__` draws an 8×8 board
+from `pages/boards.tsv` (`board row col mark piece color`), and `__GESTURE:<dots>__`
+draws a maneuver gesture with the fleets page's `gesture_svg`. `boards.tsv` is **not
+written by hand**: `scripts/dump_orbitron_rules.dart` asks the game's own validators
+which squares each piece reaches, and `make import-fleets` reruns it (the script lives
+here but runs with `dart --packages=<game>/.dart_tool/package_config.json`). A rule
+change in the game redraws the diagrams; the prose next to them has to be re-read by a
+person.
+
+What is still hand-copied from the game and can drift: the unit stats table
+(`unit_base_stats.dart`, projectile speeds in `battle_engine.dart`), shield and energy
+numbers, upgrade multipliers (`upgrade_engine.dart`), and the maneuver names, gestures
+and energy ranges (cross-check against `fleets/maneuvers.tsv`). Two things the game's
+README gets wrong and the page gets right, per the code: power-field victory needs
+**all five** fields, not a majority; and the cloud multiplayer captures without a
+battle — only single player, hot-seat and local Wi-Fi enter the arena.
+
+The page must not use the `.skins` class (see the business page note on `show()`):
+its table of contents relies on plain in-page anchors.
 
 ## Decks gallery
 
