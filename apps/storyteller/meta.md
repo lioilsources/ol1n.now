@@ -2,7 +2,7 @@
 slug: storyteller
 name: StoryTeller
 repo: lioilsources/storyteller
-tagline: Pohádka na dobrou noc, kterou vyprávíš ty — appka jen napovídá
+tagline: Pohádka na dobrou noc, kterou vyprávíš ty — 2 795 pohádek z 98 zemí, appka jen napovídá
 order: 15
 featured: false
 desktop:
@@ -35,11 +35,15 @@ tři nabídky motivů ukazují jen dánský materiál. Úzká tradice proto nab�
 ### Motivy jsou z korpusu, ne vymyšlené
 
 Úkoly, problémy a konce pocházejí z pohádek ve veřejném vlastnictví —
-Grimmové, Andersen, Perrault, Ezop, Erben, Němcová, Langovy knihy pohádek,
-celkem 913 textů. Z nich se extrahují motivy a model k nim napíše české
-podoby pro různé věky. Česko je první země, která takhle ožila: 247 motivů
-s vlastními ilustracemi. Obrázky k postavám i motivům jsou skutečné rendery,
-ne barevné přechody na místě, kde měla být grafika.
+Grimmové, Andersen, Perrault, Ezop, Erben, Němcová, Langovy knihy pohádek
+a sbírky z Afriky, Asie, Kavkazu i Latinské Ameriky, celkem **2 795 pohádek
+z 98 zemí**. Z nich se extrahují motivy a model k nim napíše české podoby pro
+různé věky. Obrázky k postavám i motivům jsou skutečné rendery, ne barevné
+přechody na místě, kde měla být grafika.
+
+**Originál, ne překlad.** Kde má pohádka český originál (Erben, Němcová), píše
+se český text z něj — se jmény a obraty z originálu, ne zpětným překladem
+z angličtiny.
 
 ### Suflér
 
@@ -62,8 +66,18 @@ ní tlačítka se zvuky zvířat a bytostí z tvé pohádky a s kouzly a akcemi:
 vlk, sova, vodník, drak, proměna, kletba, cval, hrom. Nic nehraje samo
 a nikdo nemluví; zvuk pustíš ty, až se to do vyprávění hodí.
 
-U Česka si můžeš vybrat i ze sto sedmi postav z pohádek, každou s vlastní
+U Česka si můžeš vybrat ze stovek postav z pohádek, každou s vlastní
 ilustrací.
+
+### Balíčky pohádek
+
+**Česko je celé zdarma** — všech 127 českých pohádek, každá s ilustracemi.
+Z ostatních zemí je **pět pohádek zdarma**. Evropa je v appce rovnou, další
+kontinenty (Afrika, Asie, Amerika, Oceánie) si stáhneš zdarma jedním klepnutím
+na globusu; balíček se po stažení ověří a jde odinstalovat, když dojde místo.
+
+Písmo je baculaté a čitelné, nadpisy „bublinkové“ — appka je pro děti a má
+tak i vypadat.
 
 Celý průchod Globus → Postavy → Úkol → Problém → Konec → Osnova → Suflér
 běží v telefonu, bez jediného volání na server.
