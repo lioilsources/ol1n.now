@@ -1,0 +1,238 @@
+<!-- title: Co appka umí -->
+<!-- intro: Chat s rolemi, Knihovník a Právník nad vlastními korpusy, Image Studio s Kadeřníkem, pózami, inpaintem a 3D, rozhýbání obrázku do videa, pohádky s vlastním obsazením a hudba složená podle ukázky — funkce po funkci, se screenshoty. -->
+<p class="lead">Ol1nLLM je jedna appka nad vlastním serverem: chat s jazykovými modely, tři asistenti nad vlastními korpusy, studio na obrázky, a z obrázků dál video, 3D a pohádky; k tomu studio na hudbu. Všechno níže appka umí ve verzi 1.28. Screenshoty jsou vyrenderované z jejích obrazovek, odpovědi a katalogy v nich jsou zachycené ze serveru.</p>
+
+<nav class="rules-toc">
+<a href="#chat">Chat a role</a>
+<a href="#knihovnik">Knihovník</a>
+<a href="#pravnik">Právník</a>
+<a href="#smlouvy">Právník – smlouvy</a>
+<a href="#leads">Leads</a>
+<a href="#studio">Image Studio</a>
+<a href="#styly">Styly, pózy, LoRA</a>
+<a href="#upravy">Inpaint a Kadeřník</a>
+<a href="#video">Video a 3D</a>
+<a href="#pribehy">Story Studio</a>
+<a href="#hudba">Music Studio</a>
+<a href="#historie">Historie a upload</a>
+</nav>
+
+<h2 id="chat">Chat a role</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/01-chat-role.png" alt="Výběr role před začátkem konverzace" loading="lazy"><figcaption>Výběr role</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/08-chat-historie.png" alt="Šuplík s historií konverzací" loading="lazy"><figcaption>Historie konverzací</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Nová konverzace začíná výběrem <strong>role</strong>. Deset z nich jsou povahy, které odpovídají po svém: pětileté a desetileté dítě, puberťák, vystresovaná maminka, babička, dědeček a další. Čtyři další role nejsou povahy, ale asistenti s vlastním serverem a vlastními daty — Knihovník, Právník, Právník – smlouvy a Leads.</p>
+<ul>
+<li><strong>Odpověď se píše průběžně</strong>, slovo po slovu, a jde kdykoli zastavit.</li>
+<li><strong>Konverzace je strom.</strong> Klepnutím na starší místo a odesláním nové zprávy vznikne větev; strom nahoře ukazuje, kde jsi, a mezi větvemi se dá přepínat.</li>
+<li><strong>Roli jde změnit uprostřed</strong> — stejná otázka pak dostane odpověď babičky i puberťáka, každou ve své větvi.</li>
+<li><strong>Useknutou odpověď</strong> nabídne appka dopsat („Pokračuj“).</li>
+<li><strong>Dlouhý stisk</strong> na odpovědi ji celou zkopíruje do schránky.</li>
+<li><strong>OCR:</strong> druhý režim vstupního pole přečte text z fotky nebo obrázku.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="knihovnik">Knihovník 📚</h2>
+<p>Odpovídá z korpusu světové filosofie a posvátných textů: přes tisíc děl v <strong>původních jazycích</strong> — řečtina, latina, klasická čínština, pálí. Nevymýšlí z hlavy; nejdřív v knihovně hledá a odpověď staví z nalezených pasáží.</p>
+<ul>
+<li><strong>Umí víc než hledat citát.</strong> Zeptáš-li se, co v knihovně je, vypíše díla s autorem a jazykem originálu; umí přehled díla, seznam kapitol, obsah jedné kapitoly i číst dál.</li>
+<li><strong>Zdroje jsou vidět.</strong> Pod odpovědí je seznam pasáží, ze kterých vznikla. Každá má český název díla a místo v něm.</li>
+<li><strong>Překlad i originál.</strong> V detailu zdroje je nahoře český překlad úryvku a pod ním původní text — úryvek je doklad, takže originál zůstává po ruce.</li>
+<li><strong>Pamatuje si rozhovor</strong> (posledních deset tahů), takže se dá doptávat.</li>
+</ul>
+<p>Stejný korpus čte i <a href="kindlify.html">Kindlify</a>.</p>
+
+<h2 id="pravnik">Právník ⚖️</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/02-chat-pravnik.png" alt="Odpověď Právníka na otázku o výpovědní době" loading="lazy"><figcaption>Odpověď s odkazy na paragrafy</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/03-chat-zdroje.png" alt="Seznam paragrafů, ze kterých odpověď vznikla" loading="lazy"><figcaption>Zdroje pod odpovědí</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/04-chat-zdroj-detail.png" alt="Otevřený zdroj se zněním paragrafu" loading="lazy"><figcaption>Znění paragrafu</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Odpovídá z <strong>účinných zákonů České republiky</strong> (e-Sbírka) a u každého tvrzení cituje paragraf. Odpověď dělí na tři části: co zákon doslova říká, co z toho plyne pro popsanou situaci a co je nejisté nebo závisí na výkladu.</p>
+<ul>
+<li><strong>Zdroje</strong> pod odpovědí jsou konkrétní paragrafy a odstavce; klepnutím se otevře jejich znění.</li>
+<li>Pracuje se zněním účinným k danému dni, takže odpověď uvádí, od kdy platí.</li>
+</ul>
+<p class="callout">Není to právní poradenství. Odpověď je orientace v zákoně s odkazy, ze kterých se dá vyjít.</p>
+</div>
+</div>
+
+<h2 id="smlouvy">Právník – smlouvy 📝</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/06-chat-smlouvy-otazky.png" alt="Agent se ptá na údaje pronajímatele pomocí karty s poli" loading="lazy"><figcaption>Otázky po kartách</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/07-chat-smlouvy-dokument.png" alt="Hotová nájemní smlouva s kontrolním seznamem" loading="lazy"><figcaption>Dokument a kontrolní seznam</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Agent, který <strong>sepíše smlouvu nebo dokument ze šablony</strong>. Šablon je čtrnáct: nájem bytu, kupní smlouva, smlouva o dílo, NDA, DPP a DPČ, plná moc, reklamace a další.</p>
+<ul>
+<li><strong>Ptá se po kartách</strong>, nejvýš tři otázky najednou. Pole odpovídá typu údaje: částka má číselnou klávesnici, datum kalendář, výběr z možností čipy.</li>
+<li><strong>Průběh je vidět</strong> — kolik povinných údajů už má a kolik zbývá.</li>
+<li><strong>Hlídá zákonné limity.</strong> Když odpověď zákonu odporuje (třeba jistota vyšší než trojnásobek nájemného), řekne proč a zeptá se znovu.</li>
+<li><strong>Výsledek</strong> je dokument, který jde otevřít na celou obrazovku, zkopírovat nebo sdílet — vždy i s kontrolním seznamem a upozorněními, aby návrh necestoval bez nich.</li>
+</ul>
+<p class="callout">Běží večer od 19:00 do 01:00. Dokument je návrh k odborné kontrole.</p>
+</div>
+</div>
+
+<h2 id="leads">Leads 📈</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/05-chat-leads.png" alt="Odpověď se seznamem škol, které kupují tablety" loading="lazy"><figcaption>Firmy s čísly smluv</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Hledá <strong>firmy a instituce v Registru smluv</strong>: kdo zadává kampaně, kdo kupuje tablety, kdo řeší spisovou službu. Odpověď je seznam organizací s IČO, tím, co kupují a od koho, a čísly smluv; u každého zdroje je odkaz na smlouvu v registru.</p>
+<p>Zatím běží jen v domácí síti, mimo ni se role nepřipojí.</p>
+</div>
+</div>
+
+<h2 id="studio">Image Studio</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/10-studio-kolo.png" alt="Čtyři varianty jednoho kola a strom kol nad nimi" loading="lazy"><figcaption>Kolo o čtyřech variantách</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/12-studio-modely.png" alt="Výběr modelu s popisem schopností" loading="lazy"><figcaption>Výběr modelu</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/11-studio-styl-vysledek.png" alt="Kolo ve stylu Gustava Klimta" loading="lazy"><figcaption>Další kolo se stylem</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Obrázek vzniká po <strong>kolech</strong>. První kolo je text → obraz; každé další vychází z vybraného obrázku a mění ho podle toho, co napíšeš. Kola tvoří <strong>strom</strong>: z jednoho obrázku jde odbočit několikrát a ke kterékoli větvi se vrátit.</p>
+<ul>
+<li><strong>Devatenáct modelů</strong> v jednom výběru: FLUX (schnell, Kontext, manga, Fill), fotorealistické SDXL (Juggernaut, RealVis, CyberRealistic) i anime linie (Illustrious, NoobAI, Animagine, Pony). U každého je napsáno, co umí a jak se chová ke stylům; nabízí se jen ty, které na serveru opravdu jsou.</li>
+<li><strong>Čtyři varianty</strong> na kolo, kde to model dovolí.</li>
+<li><strong>Úprava si pamatuje, co bylo.</strong> Nová instrukce se spojí s prompty předchozích kol a má před nimi přednost.</li>
+<li><strong>Negativní prompt bez druhého pole:</strong> slova napsaná VELKÝMI písmeny se z promptu vyjmou a model se jim vyhne.</li>
+<li><strong>Klepnutí do stromu</strong> vrátí nastavení, se kterým obrázek vznikl — model, LoRA, pózu.</li>
+<li><strong>Začít z fotky:</strong> vyfotit nebo vybrat z galerie, a upravovat ji stejně jako vygenerovaný obrázek.</li>
+<li><strong>Uložení do Fotek</strong>, zobrazení na celou obrazovku a zkopírování promptu dlouhým stiskem.</li>
+<li><strong>Fronta přežije uspání.</strong> Když appku zavřeš nebo vypadne síť, práce na serveru běží dál a appka se k ní po návratu připojí.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="styly">Styly, pózy, LoRA</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/13-studio-styly.png" alt="Seznam výtvarných stylů s hledáním" loading="lazy"><figcaption>Výtvarné styly</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/14-studio-pozy.png" alt="Mřížka osmi šablon póz" loading="lazy"><figcaption>Šablony póz</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/19-studio-zachovej-pozu.png" alt="Režim Zachovej pózu s volbou tváře" loading="lazy"><figcaption>Zachovej pózu</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/15-studio-lora.png" alt="Výběr LoRA rozdělený podle rodiny modelu" loading="lazy"><figcaption>LoRA podle rodiny</figcaption></figure>
+</div>
+<div class="feat-text">
+<p><strong>Styly.</strong> Přes osmdesát výtvarných stylů ve dvou skupinách: kultury a epochy (mayská nástěnná malba, ukijo-e, secese…) a styly podle konkrétních umělců (Klimt, Hopper, van Gogh, Lada…). Každý prošel měřením, že na něj aspoň jeden model skutečně reaguje. Styl se připojí za tvůj prompt, takže zadání má přednost; hledá se podle názvu i autora.</p>
+<p><strong>Síla úpravy.</strong> Jemná, automatická, nebo silná. Automatika sama přidá, když je vybraný styl — slabší úprava by ho nepustila.</p>
+<p><strong>Pózy.</strong> Osm šablon postoje, které jdou vnutit generování i úpravě. Při úpravě bez šablony se póza <strong>drží ze zdrojového obrázku sama</strong>, včetně natočení.</p>
+<p><strong>Zachovej pózu.</strong> Ikona chodce na obrázku: nová postava a nový styl celé z promptu, postoj z předlohy.</p>
+<p><strong>Zachovat tvář.</strong> K póze jde přenést i obličej z předlohy — volba „Tvář“ nabízí dvě metody přenosu a jejich kombinaci.</p>
+<p><strong>LoRA.</strong> Doplňkové modely se načítají ze serveru. Výběr je řadí podle toho, jak sedí k modelu — doporučené, slabší efekt, neznámý původ — a nekompatibilní vůbec neukáže. Síla se nastavuje posuvníkem, i do záporu.</p>
+</div>
+</div>
+
+<h2 id="upravy">Inpaint a Kadeřník</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/20-studio-inpaint.png" alt="Editor masky se zamalovanou oblastí" loading="lazy"><figcaption>Zamalování oblasti</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/16-studio-kadernik.png" alt="Výběr účesu s náhledy" loading="lazy"><figcaption>Kadeřník</figcaption></figure>
+</div>
+<div class="feat-text">
+<p><strong>Inpaint</strong> (kouzelná hůlka na obrázku). Štětcem zamaluješ, co se má změnit, a popíšeš, co tam má být; zbytek obrázku zůstane. Jde přidat <strong>referenční obrázek</strong>, ze kterého se vezme vzhled, a přepnout ho do režimu <strong>identity obličeje</strong> — do zamalovaného místa se pak přenese tvář z reference.</p>
+<p><strong>Kadeřník</strong> (nůžky). Nový účes bez kreslení masky: appka sama najde vlasy, obličej a čepici a přemaluje jen vlasy.</p>
+<ul>
+<li><strong>Účesy pro ženy i muže</strong>, v sekcích a s hledáním. Každý řádek má náhled na stejné tváři, takže oko srovnává jen vlasy.</li>
+<li><strong>Sedmnáct barev</strong>, k účesu nebo samostatně („Jen barva“ — střih zůstane).</li>
+<li><strong>Tvář zůstává.</strong> Nejlíp funguje čelní portrét s celými vlasy, bez čepice.</li>
+<li>V nabídce jsou jen účesy a barvy, které prošly měřením; podle zvoleného účesu si appka sama vybere model, na kterém vyšel.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="video">Video a 3D</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/17-studio-rozhybat.png" alt="Rozhýbat obrázek: vlastní pohyb nebo scéna" loading="lazy"><figcaption>Rozhýbat</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/18-studio-3d.png" alt="Volba mezi 3D modelem k tisku a tančící figurkou" loading="lazy"><figcaption>3D model nebo figurka</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Video nemá vlastní studio — vzniká z obrázku v Image Studiu, ikonami přímo na něm.</p>
+<p><strong>Rozhýbat</strong> (klapka) udělá z obrázku krátký klip.</p>
+<ul>
+<li><strong>Scény ze serveru:</strong> mrknutí a úsměv, vlasy ve větru, sednutí na zem a hlavně <strong>tance</strong> — macarena, salsa, samba, rumba, hip hop, ptačí tanec, disco. U každé je délka a odhad času.</li>
+<li><strong>Vlastní pohyb:</strong> napíšeš česky, co se má stát, a vybereš délku 5, 10 nebo 15 sekund.</li>
+<li>Render trvá minuty a běží na serveru; appku jde zavřít, video se po návratu dotáhne samo.</li>
+</ul>
+<p><strong>3D</strong> (kostka) nabízí dvě věci:</p>
+<ul>
+<li><strong>3D model k tisku</strong> — otočitelný náhled a STL pro slicer (100 mm), za 4–7 minut.</li>
+<li><strong>Tančící 3D figurka</strong> — postava s kostrou, která umí všech devět tanců z knihovny; v prohlížeči se mezi nimi přepíná. Nejlíp vychází z celé postavy stojící čelem; tvář je spíš jako u figurky než jako na fotce.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="pribehy">Story Studio — pohádka s vlastním obsazením</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/40-pribeh-katalog.png" alt="Katalog pohádek" loading="lazy"><figcaption>Katalog příběhů</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/41-pribeh-obsazeni.png" alt="Obsazení rolí vlastními obrázky" loading="lazy"><figcaption>Obsazení rolí</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/42-pribeh-scenar.png" alt="Nastavení a scénář po záběrech" loading="lazy"><figcaption>Nastavení a scénář</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/43-pribeh-render.png" alt="Průběh renderu pohádky" loading="lazy"><figcaption>Průběh renderu</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Z ikony klapky v chatu. Vybereš pohádku, obsadíš ji svými postavičkami a server z ní udělá <strong>minutové animované video</strong> s vypravěčem, hudbou a titulky.</p>
+<ul>
+<li><strong>Deset scénářů:</strong> Ztracený deštník, Noční strach, Kouzelná tužka, Dráček, který neuměl foukat oheň a další. Každý má dvanáct záběrů; scénář je vidět předem, záběr po záběru i s větami vypravěče.</li>
+<li><strong>Výměna postav.</strong> Ke každé roli přiřadíš vlastní obrázek z Fotek nebo ze souborů — z jeho vzhledu se nakreslí všechny záběry. Když je na obrázku někdo jiný, než čeká scénář, přepíšeš, kdo to je, a příběh se podle toho upraví. Role bez obrázku zahraje výchozí postava.</li>
+<li><strong>Vypravěč česky nebo anglicky.</strong></li>
+<li><strong>Kontrola záběrů před animací.</strong> Po nakreslení se práce zastaví a ukáže mřížku záběrů. Nepovedený jde nechat překreslit nebo mu upravit popis; teprve po schválení se začne animovat.</li>
+<li><strong>Vyšší rozlišení</strong> za zhruba dvojnásobný čas.</li>
+<li><strong>Výsledek:</strong> video s vypravěčem a hudbou, na vyžádání verze s vypálenými titulky a verze na šířku 16:9. Jde uložit do Fotek a sdílet.</li>
+</ul>
+<p>Pohádka se počítá necelou hodinu. Běží na serveru, takže appku jde zavřít.</p>
+</div>
+</div>
+
+<h2 id="hudba">Music Studio — hudba podle ukázky</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/30-hudba-analyza.png" alt="Co studio v ukázce slyšelo a nastavení skladby" loading="lazy"><figcaption>Co studio slyšelo</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/31-hudba-slozit.png" alt="Složené varianty ve dvou režimech" loading="lazy"><figcaption>Složené varianty</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/33-hudba-nahrat.png" alt="Nahrávání ukázky mikrofonem" loading="lazy"><figcaption>Nahrát z okolí</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Z ikony noty v chatu. Dáš studiu hudební ukázku, ono ji <strong>poslechne</strong> a řekne, co slyšelo: popis zvuku, žánr, tempo, tóninu a takt. Opravíš, co nesedí, připíšeš přání a necháš složit jednu až čtyři varianty.</p>
+<div class="rule-cards wide">
+<div class="rule-card"><h3>Vibe</h3><p><strong>Nová skladba ve stejném duchu.</strong> Ukázka slouží jako vzor zvuku: barva, tempo a nálada zůstanou, melodie je nová. Délku si určíš.</p></div>
+<div class="rule-card"><h3>Groove</h3><p><strong>Tatáž skladba v jiném kabátě.</strong> Drží rytmus a stavbu předlohy a mění nástroje a žánr — z lo-fi beatu jazzové trio. Věrnost předloze se dá nastavit.</p></div>
+</div>
+<ul>
+<li><strong>Ukázka ze souboru</strong> (mp3, wav, m4a, i video — vezme se zvuková stopa), nebo <strong>nahraná mikrofonem</strong> z rádia či reproduktoru, 5 až 60 sekund.</li>
+<li><strong>Vždy instrumentál</strong> — zpěv by kopíroval originál.</li>
+<li><strong>Rozvrhnout skladbu:</strong> volitelně dostane skladba úvod a závěr, za zhruba čtyřnásobný čas.</li>
+<li>Varianty se přehrávají v appce a jdou sdílet jako mp3.</li>
+</ul>
+<p>Hudební model běží na serveru jen přes den; mimo tu dobu appka řekne, kdy to zkusit znovu.</p>
+</div>
+</div>
+
+<h2 id="historie">Historie a upload</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/21-studio-historie.png" alt="Historie sezení v Image Studiu se stavem exportu" loading="lazy"><figcaption>Sezení Image Studia</figcaption></figure>
+</div>
+<div class="feat-text">
+<p><strong>Všechno zůstává v telefonu.</strong> Konverzace i s větvemi, sezení Image Studia s celým stromem kol, hudební projekty a pohádky se ukládají a po spuštění jsou tam, kde jsi skončil. Každá část má svůj seznam: šuplík konverzací v chatu, historii sezení ve studiu, předlohy v Music Studiu, „Moje příběhy“ ve Story Studiu.</p>
+<p><strong>Rozdělaná práce se neztratí.</strong> Generování obrázku, videa, 3D, hudby i pohádky běží na serveru; po návratu do appky nebo po výpadku sítě se appka sama připojí zpátky a výsledek stáhne.</p>
+<p><strong>Co jde do appky nahrát:</strong></p>
+<ul>
+<li>fotku jako začátek sezení v Image Studiu (foťák nebo galerie),</li>
+<li>referenční obrázek pro inpaint, i jako předlohu obličeje,</li>
+<li>obrázky postav do pohádky,</li>
+<li>hudební ukázku ze souboru nebo z mikrofonu,</li>
+<li>obrázek s textem pro OCR v chatu.</li>
+</ul>
+<p><strong>Export do galerie.</strong> Sezení Image Studia jde jedním tlačítkem odeslat do vlastní galerie na domácím serveru i s tím, jak každý obrázek vznikl (model, prompt, seed, styl, póza). Ikona u sezení ukazuje, jestli je export aktuální; opakovaný export pošle jen nové obrázky.</p>
+</div>
+</div>
