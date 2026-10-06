@@ -22,6 +22,13 @@ země opravdu mají pohádky v korpusu, šedé zatím ne. U šedé země je tla�
 schválně nefunkční — kdyby prošlo, dostal bys pod jednou nálepkou tradici
 odjinud, a to je jediná věc, kterou globus slibuje nedělat.
 
+Každá země má na globusu svou stavbu — Eiffelovku, Big Ben, Pražský hrad,
+Tádž Mahal, pyramidy — celkem 241 nálepek, podle kterých dítě zemi pozná
+dřív, než umí číst její jméno. K tomu řeky, pohoří, sopky, pouště a pralesy,
+nakreslené jako v dětském atlasu. Malé země by se na celé planetě ztratily,
+takže Evropa, Karibik nebo jihovýchodní Asie jsou z dálky jeden kus; ťukneš
+a globus přiletí blíž, kde už je každá země zvlášť.
+
 ### Od obsazení k osnově
 
 Vybereš si jednu až šest postav, každou můžeš přetočit na jinou nebo smazat.
