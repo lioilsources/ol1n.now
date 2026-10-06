@@ -7,6 +7,7 @@ order: 15
 featured: false
 desktop:
 mobile: android,ios
+langs: cs,en,de,it,fr,pl,pt-BR,ja,ko,vi,ru,uk
 artifacts: android
 appstore:
 playstore:
@@ -19,7 +20,7 @@ svými slovy.
 Začíná se na globusu. Roztočíš planetu, ťukneš na zemi a ta určí, z jaké
 tradice bude dnešní pohádka. Globus je zároveň poctivá mapa pokrytí: zelené
 země opravdu mají pohádky v korpusu, šedé zatím ne. U šedé země je tlačítko
-schválně nefunkční — kdyby prošlo, dostal bys pod jednou nálepkou tradici
+schválně nefunkční — kdyby prošlo, dostal bys pod jménem jedné země tradici
 odjinud, a to je jediná věc, kterou globus slibuje nedělat.
 
 Každá země má na globusu svou stavbu — Eiffelovku, Big Ben, Pražský hrad,
@@ -79,7 +80,7 @@ ilustrací.
 ### Balíčky pohádek
 
 **Česko je celé zdarma** — všech 127 českých pohádek, každá s ilustracemi.
-Z ostatních zemí je **pět pohádek zdarma**. Evropa je v appce rovnou, další
+Z každé další země je **pět pohádek zdarma**. Evropa je v appce rovnou, další
 kontinenty (Afrika, Asie, Amerika, Oceánie) si stáhneš zdarma jedním klepnutím
 na globusu; balíček se po stažení ověří a jde odinstalovat, když dojde místo.
 
