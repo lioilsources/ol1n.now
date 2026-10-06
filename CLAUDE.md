@@ -163,7 +163,12 @@ What deliberately stays out of a gallery, per app:
   stickers from `assets/emoji`) with review rounds (`drafts/stickers`: the four mascot
   candidates, the first-round proposals). A sticker's caption is the emoji it replaced,
   decoded from the code point in its file name. The import re-encodes ~400 images and
-  takes about six minutes. Its four macOS screenshots predate 2.9 and still show emoji.
+  takes about six minutes. Its screenshots (14 phone, 5 desktop, numbered so the
+  gallery follows the app: map, game, Zvěřinec, pet world, sentences, book, guides,
+  parent corner, onboarding) are not taken by hand: `tool/store_screenshots.sh <dir>`
+  in the SwypeKids repo runs the real app with a seeded profile and writes
+  `phone-*.png` / `desktop-*.png`; drop the prefix and copy them into
+  `raw/mobile/ios` and `raw/desktop/macos`.
 - **immunorun** — the G0 batch is a style test, not production art, and the page says so.
 - **handwrittenstickers** — the stickers are composed by the import script from the
   app's glyph PNGs, in capitals only: without the app's baseline metrics, capitals are
