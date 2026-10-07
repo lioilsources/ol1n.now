@@ -26,6 +26,11 @@ Hrou provází **Pandička**. Stojí přímo na ploše, dá se prstem odsunout, 
 čte, v noci spí a na ťuknutí zamává. Systémové emoji nahradilo 294 ilustrovaných
 nálepek v jejím stylu a celá appka je vysázená baculatým dětským písmem.
 
+Ve Zvěřinci si dítě se zvířátky hraje: pohladí je, pošimrá a dává jim dárky ze
+slov, která už umí — jídlo do misky, pití do misky s vodou. Zvířátko se nají a
+objeví se věta („Myš jí jablko."), kterou jde uložit do Mé knížky. Průvodce si
+každý sourozenec vybere svého: Pandičku, Kapybárku, Žirafku nebo Gepardíčka.
+
 Mapa je svět, který žije: každá jednotka má svůj biotop, roční období jdou podle
 kalendáře, střídá se den a noc a les, rybník i cvrčci jsou slyšet. Nálepky,
 tajné nálepky a odznaky — bez streaků a bez tlaku.
