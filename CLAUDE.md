@@ -229,14 +229,15 @@ The page must not use the `.skins` class (see the business page note on `show()`
 its table of contents relies on plain in-page anchors.
 
 `ol1nllm-features.html` is the second one: a feature-by-feature walkthrough (chat roles,
-Knihovník, Právník, the contract agent, Image Studio, video and 3D, Story Studio, Music
-Studio, history). It uses no placeholders. Its `.feat` blocks put a sideways-scrolling
+Knihovník, Právník, the contract agent, Image Studio, the style map, video and 3D, Story
+Studio, Music Studio, history). It uses no placeholders. Its `.feat` blocks put a sideways-scrolling
 strip of phone screenshots (`.feat-shots`) above the prose and borrow the store's
 gallery copies by path (`screenshots/ol1nllm/mobile/<name>.png`), so renaming a raw
 file breaks an `<img>` here without failing the build — grep the page after renaming.
 The numbers in its prose (19 models, 80+ styles, 17 hair colours, 10 stories, 14
 contract templates, 9 dances) are hand-copied from the app's registries and the live
-catalogs as of app 1.28.1 and drift with them.
+catalogs as of app 1.28.1 and drift with them; the style map section was written against
+1.31.0 (three playback speeds, „přes dvacet“ = 22 axes in a pack).
 
 ## Decks gallery
 
@@ -439,10 +440,12 @@ Two known gaps, both wanting a real phone rather than more code:
   tool must not ship on its store page. These have to come off a phone in a real
   room.
 
-**ol1nllm** is the third app shot this way (27 files in `raw/mobile/android/`, named
+**ol1nllm** is the third app shot this way (31 files in `raw/mobile/android/`, named
 `NN-<area>-<what>.png`; the one macOS shot, `llm_chat.png`, is from a real build). Its harness
 *is* committed — `test/screenshots_test.dart` in that repo — and the answers and
-catalogs on screen are captures, not inventions: the fixtures say which. To refresh:
+catalogs on screen are captures, not inventions: the fixtures say which. The four
+`5N-mapa-*` shots show a real style-map pack built from the same lab run as the Image
+Studio shots (602 pictures of the dancer), with the facets a vision model gave it. To refresh:
 run it there with `--update-goldens` and copy `test/screenshots/*.png` over. Two
 features have no shot because nothing real was available to show: a Knihovník answer
 (the only capture is a 90-character fragment) and the Story Studio keyframe review
