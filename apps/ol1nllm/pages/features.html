@@ -1,6 +1,6 @@
 <!-- title: Co appka umí -->
 <!-- intro: Chat s rolemi, Knihovník a Právník nad vlastními korpusy, Image Studio s Kadeřníkem, pózami, inpaintem a 3D, rozhýbání obrázku do videa, pohádky s vlastním obsazením a hudba složená podle ukázky — funkce po funkci, se screenshoty. -->
-<p class="lead">Ol1nLLM je jedna appka nad vlastním serverem: chat s jazykovými modely, tři asistenti nad vlastními korpusy, studio na obrázky, a z obrázků dál video, 3D a pohádky; k tomu studio na hudbu. Všechno níže appka umí ve verzi 1.28. Screenshoty jsou vyrenderované z jejích obrazovek, odpovědi a katalogy v nich jsou zachycené ze serveru.</p>
+<p class="lead">Ol1nLLM je jedna appka nad vlastním serverem: chat s jazykovými modely, tři asistenti nad vlastními korpusy, studio na obrázky, a z obrázků dál video, 3D a pohádky; k tomu studio na hudbu. Všechno níže appka umí ve verzi 1.31. Screenshoty jsou vyrenderované z jejích obrazovek, odpovědi a katalogy v nich jsou zachycené ze serveru.</p>
 
 <nav class="rules-toc">
 <a href="#chat">Chat a role</a>
@@ -10,6 +10,7 @@
 <a href="#leads">Leads</a>
 <a href="#studio">Image Studio</a>
 <a href="#styly">Styly, pózy, LoRA</a>
+<a href="#mapa">Mapa stylů</a>
 <a href="#upravy">Inpaint a Kadeřník</a>
 <a href="#video">Video a 3D</a>
 <a href="#pribehy">Story Studio</a>
@@ -129,6 +130,28 @@
 <p><strong>Zachovej pózu.</strong> Ikona chodce na obrázku: nová postava a nový styl celé z promptu, postoj z předlohy.</p>
 <p><strong>Zachovat tvář.</strong> K póze jde přenést i obličej z předlohy — volba „Tvář“ nabízí dvě metody přenosu a jejich kombinaci.</p>
 <p><strong>LoRA.</strong> Doplňkové modely se načítají ze serveru. Výběr je řadí podle toho, jak sedí k modelu — doporučené, slabší efekt, neznámý původ — a nekompatibilní vůbec neukáže. Síla se nastavuje posuvníkem, i do záporu.</p>
+</div>
+</div>
+
+<h2 id="mapa">Mapa stylů</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/ol1nllm/mobile/50-mapa-mozaika.png" alt="Mozaika šesti set obrázků téže tanečnice, nad ní náhled obrázku pod prstem" loading="lazy"><figcaption>Mozaika a náhled pod prstem</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/51-mapa-osy.png" alt="Bodový graf obrázků podle teploty barev a světlosti" loading="lazy"><figcaption>Osy: dvě měřené vlastnosti</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/52-mapa-barvy.png" alt="Prstenec převládajících barev a mřížka obrázků jednoho sektoru" loading="lazy"><figcaption>Kolo barev</figcaption></figure>
+<figure><img src="screenshots/ol1nllm/mobile/53-mapa-filtr.png" alt="Filtr s hledáním a chipy pro model, médium, paletu a náladu" loading="lazy"><figcaption>Hledání a filtr</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Seznam stylů říká, jak se styl jmenuje. <strong>Mapa</strong> ukáže, jak vypadá: stovky až tisíce obrázků <strong>téhož námětu</strong> — tady jedné tanečnice — v různých stylech a na různých modelech, srovnané tak, že vedle sebe leží ty, které si jsou podobné. Prst jede po mozaice a nahoře se mění obrázek pod ním; protože se sousedé liší jen málo, působí to jako plynulá animace.</p>
+<ul>
+<li><strong>Mozaika.</strong> Jeden prst vybírá, dva prsty přibližují a posouvají. Náhled je tu okamžitě, ostrý se dotáhne, jakmile prst zpomalí.</li>
+<li><strong>Přehrát.</strong> Lišta pod náhledem pustí sadu jako film — po trase, na které se dva po sobě jdoucí obrázky liší co nejméně — nebo jí projedeš posuvníkem. Rychlost 3, 6 nebo 12 obrázků za vteřinu.</li>
+<li><strong>Osy.</strong> Tytéž obrázky jako body podle dvou změřených vlastností: tmavý–světlý, studený–teplý, kresba–fotka — vlastností je přes dvacet. Prst dostane obrázek, který je nejblíž.</li>
+<li><strong>Kolo.</strong> Prstenec rozdělený podle převládající barvy, nebo podle skupin podobných stylů; uvnitř jsou obrázky vybraného dílu.</li>
+<li><strong>Hledání a filtr.</strong> Podle jména stylu či umělce, modelu a podle toho, co o obrázku řekl obrazový model: médium, paleta, nálada, linka, pozadí. Mapa i přehrávání se zúží na to, co vyhovuje.</li>
+<li><strong>Použít.</strong> Z Image Studia (chip „Mapa“) vybraný obrázek nastaví styl, ve kterém vznikl — další kolo pak maluje stejně.</li>
+</ul>
+<p>Map je víc; každá vzniká z jedné série obrázků a přibývají ze serveru, bez nové verze appky.</p>
 </div>
 </div>
 

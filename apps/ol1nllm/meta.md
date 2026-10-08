@@ -38,6 +38,8 @@ negativní prompt psaný velkými písmeny.
 
 - **Zachovej pózu** a **Zachovat tvář** — nová postava v postoji z předlohy,
   volitelně i s jejím obličejem.
+- **Mapa stylů** — stovky obrázků téhož námětu srovnané podle podobnosti;
+  prst jede po mozaice a styl se mění jako animace, vybraný se použije.
 - **Inpaint** — zamaluješ oblast a popíšeš, co tam má být.
 - **Kadeřník** — nový účes nebo barva vlasů bez kreslení masky.
 - **Rozhýbat** — z obrázku krátké video: tance a gesta ze serveru, nebo
