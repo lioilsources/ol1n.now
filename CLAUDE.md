@@ -440,6 +440,12 @@ Two known gaps, both wanting a real phone rather than more code:
   tool must not ship on its store page. These have to come off a phone in a real
   room.
 
+**handwrittenstickers** is shot the same way (5 files in `raw/mobile/android/`,
+`stickers_N_<what>.png`, 402×874 @3x). Its harness is committed in that repo —
+`handwritten_stickers/test/screenshots_test.dart` — and writes PNGs instead of goldens:
+`SCREENSHOT_DIR=<dir> flutter test test/screenshots_test.dart`, then copy them over. It
+shows the editor as a release build does (sheets marked `"bundle": false` hidden).
+
 **ol1nllm** is the third app shot this way (31 files in `raw/mobile/android/`, named
 `NN-<area>-<what>.png`; the one macOS shot, `llm_chat.png`, is from a real build). Its harness
 *is* committed — `test/screenshots_test.dart` in that repo — and the answers and
