@@ -68,15 +68,29 @@ tagline: Сказка на ночь, которую рассказываешь �
 галоп, гром. Ничто не играет само, и никто не говорит; звук включаешь ты,
 когда он к месту.
 
-У Чехии можно выбирать из сотен сказочных героев, у каждого своя иллюстрация.
+### 150 сказок бесплатно, по десять из каждого региона
+
+Приложение делит мир на пятнадцать регионов, и из каждого десять сказок бесплатны и сразу есть в телефоне. Флаг показывает, из какой страны сказка. Названия даны так, как они звучат в исходных сборниках.
+
+- **Чехия и Словакия:** 🇨🇿 O Popelce · 🇸🇰 Morový chumel · 🇨🇿 Bratři · 🇨🇿 Pták Ohnivák a liška Ryška · 🇨🇿 Jirka s kozou · 🇨🇿 Kdo je hloupější · 🇨🇿 O hloupém Honzovi · 🇨🇿 O princezně se zlatou hvězdou na čele · 🇨🇿 O Nesytovi · 🇨🇿 Chytrá horákyně
+- **Немецкоязычные страны:** 🇩🇪 The Water of Life · 🇨🇭 The Palace Under the Waves · 🇦🇹 The Reckoning Day · 🇩🇪 Hans in Luck · 🇨🇭 Two Good Natured Dragons · 🇦🇹 The Dove-Maiden · 🇩🇪 The Golden Goose · 🇨🇭 The Dwarf’s Secret · 🇦🇹 The Wilder Jäger and the Baroness · 🇩🇪 Jorinda and Jorindel
+- **Британские острова:** 🇬🇧 The History of Jack the Giant-killer · 🇮🇲 The Coming of Saint Patrick · 🇮🇪 The Believing Husbands · 🇬🇧 Jack and the Beanstalk · 🇮🇲 Joe Moore's Story of Finn MacCooilley and the Buggane · 🇮🇪 The Black Thief and Knight of the Glen · 🇬🇧 The Lady of the Fountain · 🇮🇲 Themselves · 🇮🇪 The Shifty Lad · 🇬🇧 The Escape of the Mouse
+- **Франция и Бенилюкс:** 🇫🇷 The Language of Beasts · 🇧🇪 Lyderic, the Orphan · 🇳🇱 The Ice King and his Wonderful Grandchild · 🇫🇷 The Stones of Plouhinec · 🇧🇪 The Long Wappers, and Their Tricks · 🇳🇱 The Golden Helmet · 🇫🇷 The Castle of Kerglas · 🇧🇪 The Swan Maidens and the Silver Knight · 🇳🇱 The Woman with Three Hundred and Sixty-six Children · 🇧🇪 The Fairy of the Poppies
+- **Пиренейский полуостров:** 🇪🇸 Simple Johnny and the Spell-bound Princesses · 🇵🇹 Longstaff, Pinepuller and Rockheaver · 🇪🇸 The Hermit and the Fig-tree · 🇵🇹 The Listening King · 🇪🇸 Starving John the Doctor · 🇵🇹 Princess Bluegreen of the Seven Cities · 🇪🇸 Turian and Floreta · 🇵🇹 Linda Branca and her Mask · 🇪🇸 Another Fair Maid of Zaragoza · 🇵🇹 Fresh Figs
+- **Италия, Греция и Балканы:** 🇬🇷 The Dog and the Shadow · 🇷🇴 Stan Bolovan · 🇷🇸 Good Deeds Are Never Lost · 🇮🇹 How to Find Out a True Friend · 🇸🇮 Potopa světa · 🇭🇷 Sudičky · 🇦🇱 The Bronze Ring · 🇬🇷 The Lion and the Mouse · 🇷🇴 Mogarzea and his Son · 🇮🇹 The Two Brothers
+- **Север:** 🇩🇰 The Fir Tree · 🇳🇴 The Master Thief · 🇮🇸 The Story of Sigurd · 🇫🇮 The Six Hungry Beasts · 🇸🇪 The Bird ‘Grip’ · 🇪🇪 The Underground Workers · 🇩🇰 The Snow Queen · 🇳🇴 East of the Sun and West of the Moon · 🇮🇸 The Horse Gullfaxi and the Sword Gunnfoder · 🇫🇮 The Gifts of the Magician
+- **Восточная Европа и Кавказ:** 🇬🇪 The Lot of the Holy Virgin · 🇷🇺 Baba Jaga · 🇦🇲 Mirza · 🇺🇦 The Vampire and St Michael · 🇵🇱 O králevici Nenadálkovi · 🇭🇺 The Boy Who Could Keep a Secret · 🇬🇪 Saint Nina · 🇦🇲 The Dreamer · 🇺🇦 The Straw Ox · 🇵🇱 O zakletém zámku
+- **Индия и Южная Азия:** 🇵🇰 The Eighth Key · 🇦🇫 Moti · 🇱🇰 The Millet Trader · 🇮🇳 The Story of Swet-Basanta · 🇵🇰 Sakhi, the Generous Moslem · 🇵🇰 Lal Shahbaz · 🇱🇰 The Prince and the Princess · 🇵🇰 Makhdum Niamat Ullah and Makhdum Nuh · 🇱🇰 The Black Storks' Girl · 🇵🇰 The Guru and his Greedy Disciple
+- **Восточная Азия:** 🇰🇷 The Soldier of Kang-wha · 🇨🇳 The Wonderful Man · 🇯🇵 The Stone-Cutter · 🇰🇷 Charan · 🇨🇳 The Fairy Bonze · 🇯🇵 The Slaying of the Tanuki · 🇲🇳 The Boy-King · 🇰🇷 The Story of Chang To-ryong · 🇨🇳 The God of the City · 🇯🇵 The Crab and the Monkey
+- **Юго-Восточная Азия и Океания:** 🇱🇦 The Faithful Wife · 🇦🇺 Dinewan the Emu, and Goomblegubbon the Bustard · 🇲🇾 The Mouse-deer's Shipwreck · 🇲🇲 The Two Chinamen · 🇫🇯 The Bones of Djulung · 🇫🇯 Pivi and Kabo · 🇵🇭 Juan Pusong · 🇦🇺 The Origin of the Narran Lake · 🇲🇾 A Vegetarian Dispute · 🇲🇲 Story of the Princess Nang Kam Ung
+- **Ближний Восток и Средняя Азия:** 🇹🇷 How the Junkman Travelled to Find Treasure in his Own Yard · 🇮🇶 The Story of the Porter and of Five Ladies of Bagdad · 🇮🇷 The Story of the Third Calendar, Son of a King · 🇰🇿 The Young Fisherman · 🇹🇷 The Wise Son of Ali Pasha · 🇦🇪 The Blue Parrot · 🇨🇾 Fortunatus and his Purse · 🇾🇪 The Story of the Beautiful One Who Did Not Have her Desire · 🇸🇦 Story of the Candy-Maker’s Apprentice · 🇹🇲 The Forty Stories
+- **Африка:** 🇿🇦 The Rabbit Prince · 🇸🇱 A Stone That Wore a Beard · 🇳🇬 Why the Worms Live Underneath the Ground · 🇬🇭 Tit for Tat · 🇨🇬 Rat's Play on a Name · 🇹🇿 The Story of Hassebu · 🇨🇲 The Giant Goat · 🇪🇬 The Story of the Envious Man and of Him Who Was Envied · 🇨🇩 A Plea for Mercy · 🇱🇸 The Little Hare
+- **Северная Америка и Карибы:** 🇺🇸 Ivango or the Lost Sister · 🇨🇦 Rabbit and the Grain Buyers · 🇬🇱 Qujavarssuk · 🇨🇺 The Voice in the Inn · 🇯🇲 The King’s Two Daughters · 🇬🇹 The National Book · 🇭🇹 The Deluge · 🇨🇦 The Fall of the Spider Man · 🇭🇳 A Tale of Three Tails · 🇬🇱 The Woman Who Had a Bear as a Foster-son
+- **Южная Америка:** 🇧🇷 Tale of a Tortoise and of a Mischievous Monkey · 🇨🇴 The Boat of Phantom Children · 🇻🇪 The Magic Dog · 🇵🇪 The Wonderful Mirror · 🇨🇱 Na-Ha the Fighter · 🇦🇷 The Tale of the Gentle Folk · 🇬🇾 The Calabash Man · 🇵🇾 The Bad Wishers · 🇺🇾 The Hungry Old Witch · 🇧🇴 The Cat and the Dream Man
 
 ### Наборы сказок
 
-**Чехия целиком бесплатна** — все 127 чешских сказок, каждая с иллюстрациями.
-Из каждой другой страны — **пять сказок бесплатно**. Европа есть в приложении
-сразу, остальные континенты (Африка, Азия, Америка, Океания) скачиваешь
-бесплатно одним касанием на глобусе; после загрузки набор проверяется, и его
-можно удалить, когда закончится место.
+**150 сказок бесплатны и сразу есть в приложении** — по десять из каждого из пятнадцати регионов мира, каждая с иллюстрациями сцен, подсказками и собственными звуками. Новые сказки будут появляться частями: пятьдесят сказок одного региона. Для каждой страны глобус показывает, сколько из неё сказок и в какой части их искать.
 
 Шрифт пухлый и разборчивый, заголовки «пузырьковые» — приложение детское и
 выглядеть должно так же.
