@@ -326,7 +326,7 @@ is a Cloudflare redirect rule to `olin.now/business`.
 ## App Catalog
 
 Current apps (in `apps/`): audioscanner, beenhere (Been Here), djfy, doggiowars, doodlebugs,
-handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
+elftonplayer (Elfton Player, repo `ol1nplay`), handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
 poetrystream, puff, storyteller, swypekids, ugcfactory.
 
@@ -480,3 +480,12 @@ letter tile on purpose.
 - `CNAME` file in build keeps custom domain `olin.now` active
 - Cloudflare proxied (SSL mode Full) — no server needed
 - Binary hosting: links to GitHub release URLs (repos must be public)
+
+**elftonplayer** (Elfton Player, added 2026-10-11) lives in the repo `lioilsources/ol1nplay` and
+keeps that code name everywhere but on screen. It is a Windows program: `desktop: windows`, and
+its release workflow ships one zip (Flutter UI + Go engine + FFmpeg DLLs) plus the Android remote
+as an APK. The screenshots sit under `raw/desktop/macos/` because they come from the macOS
+development build (`flutter drive` against a demo engine — `test_driver/shots_app_test.dart` in
+that repo), and the description says so. There is no phone screenshot yet, and as of `v0.1.0` the
+ASIO/WASAPI output has never played on a real DAC — the page says that too; drop the sentence
+once it has.
