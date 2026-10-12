@@ -31,9 +31,10 @@ na převodníku nebo zesilovači.
   s CUE, synchronizované texty z LRC.
 - **FLAC, ALAC, WAV, AIFF, MP3, AAC, Ogg i DSD** (nativně, DoP, nebo převod na PCM).
 - **Mono (L+R)/2** jako jediný zásah do signálu, vždy viditelně označený.
-  Přepínač má čtyři polohy — Stereo · Mono · L · P: poslední dvě pustí stejný
-  mono signál jen do jedné bedny, takže jde z křesla telefonem okamžitě
-  porovnat levou a pravou stranu sestavy (kabely, součástky).
+- **Tlačítka L a P** pustí jen jednu bednu a druhou ztlumí. Se zapnutým monem
+  hraje v obou totéž, takže jde z křesla telefonem okamžitě porovnat levou
+  a pravou stranu sestavy (kabely, součástky); bez mona hraje jen levý, nebo
+  jen pravý kanál nahrávky.
 - **Posuvník kreslený jako hlasitost skladby** přes celou šířku okna: tichý
   úvod je vidět a jde přeskočit jedním kliknutím.
 - **Srdíčko u skladby** a filtr „jen oblíbené“ přímo v albu.
@@ -56,9 +57,11 @@ MinorityClean) spolu s přehrávačem. MinorityClean součástí není.
 ### Stav
 
 **Verze 0.2, předběžné vydání.** První verze běžela na Windows 11 u jednoho
-posluchače: hraje a ovládání z telefonu funguje. Měření a potvrzení, přes
-který výstup (ASIO, nebo WASAPI) hrála, zatím chybí. Novinky verze 0.2 jsou
-pokryté testy, na Windows ale ještě neběžely. Screenshoty jsou z první verze,
+posluchače přes ASIO (Behringer UMC204HD a SMSL D200): WAV 24/192 šel ven
+jako 32bitové ASIO bez převodu a bez výpadků a ovládání z telefonu funguje.
+To je hlášení samotného přehrávače o cestě signálu; výstup zatím nikdo
+nezachytil a neporovnal bit po bitu. Novinky verze 0.2 jsou pokryté testy,
+na Windows ale ještě neběžely. Screenshoty jsou z první verze,
 z vývojového sestavení pro macOS s ukázkovou knihovnou — pruh s průběhem
 hlasitosti a přepínač L/P na nich ještě nejsou.
 
