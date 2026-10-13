@@ -124,6 +124,28 @@ skins gallery ships that language. The visuals and fleets
 subpages still have their headings in the scripts, so they are built for the base
 language only — localising them means moving those strings into the catalogs first.
 
+## Screenshot lightbox and the footer logo
+
+Every screenshot in a `.shots` gallery or a `.feat-shots` strip opens in a lightbox
+(`store.js`): wheel zooms towards the pointer, drag pans, two fingers pinch, `+` `-` `0`
+and Esc work, and there are on-screen buttons. It needs no markup — the script binds to
+the `<img>`s and derives the picture to show from the gallery URL
+(`screenshots/<slug>/<kind>/x.png` -> `screenshots/<slug>/<kind>/full/x.png`), falling
+back to the gallery copy if there is no `full/` one.
+
+So `make screenshots` writes **two** sizes per image: the gallery copy (capped 800x1500
+mobile / 1920x1080 desktop, sized for the strip) and `full/` (capped 2600x2600, i.e. the
+raw file for nearly everything). The `full/` copies added ~110 MB to `dist/` (510 MB
+total, 2026-10-13) against GitHub Pages' 1 GB limit — the next thing to shrink, if it
+comes to that, is the 245 MB of `store/` upload sizes, which no page links to.
+A raw screenshot smaller than its gallery cap gains nothing from the lightbox; ol1nllm's
+are rendered at 3x (1170x2532) for that reason.
+
+The Ananas&Bananas logo is a plain `<img class="footer-logo">` in `templates/foot.html`.
+Until 2026-10-13 it was a fixed full-width backdrop with a parallax transform, sliding
+under the text at its own speed — long descriptions were unreadable wherever the two
+overlapped. Do not bring a moving or fixed layer back behind prose.
+
 ## Skins gallery
 
 Only `kirian` has one today. Source of truth is the game repo `lioilsources/Kiran`

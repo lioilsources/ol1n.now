@@ -1,6 +1,4 @@
 // ol1n.now store — minimal client behaviour.
-// Currently a no-op placeholder; reserved for future enhancements
-// (screenshot lightbox, platform auto-detection of default download, search).
 (function () {
   "use strict";
 
@@ -19,18 +17,145 @@
   });
 })();
 
-// Parallax: brand logo rises slower than content on scroll (and slides under tiles).
+// Screenshot lightbox. A click on a screenshot opens it over the page; the
+// wheel zooms towards the pointer, dragging pans, two fingers pinch. The
+// picture shown is the `full/` copy next to the gallery one (see
+// resize-screenshots.sh) - the gallery copy is sized for a 420 px strip and
+// turns to mush long before the text on it becomes readable.
 (function () {
   "use strict";
-  var logo = document.querySelector(".brand-logo");
-  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!logo || reduce) return;
-  var f = 0.45; // < 1 → logo stoupá pomaleji než obsah
-  var tick = function () {
-    logo.style.transform = "translateY(" + (-(window.scrollY || 0) * f) + "px)";
-  };
-  addEventListener("scroll", tick, { passive: true });
-  tick();
+  var SEL = ".shots img, .feat-shots img";
+  if (!document.querySelector(SEL)) return;
+
+  var box, img, pct, opener;
+  var s = 1, x = 0, y = 0, fit = 1;      // scale and offset of the picture
+  var pts = {}, pinch = 0, moved = false; // active pointers
+
+  function fullOf(src) {
+    return src.replace(/(screenshots\/[^/]+\/(?:desktop|mobile)\/)([^/]+)$/, "$1full/$2");
+  }
+  function apply() {
+    img.style.transform = "translate(" + x + "px," + y + "px) scale(" + s + ")";
+    pct.textContent = Math.round(s * 100) + " %";
+  }
+  // keep at least a strip of the picture on screen
+  function clamp() {
+    var w = img.naturalWidth * s, h = img.naturalHeight * s, m = 80;
+    x = Math.min(innerWidth - m, Math.max(m - w, x));
+    y = Math.min(innerHeight - m, Math.max(m - h, y));
+  }
+  function zoomAt(cx, cy, k) {
+    var n = Math.min(8, Math.max(fit * 0.5, s * k));
+    x = cx - (cx - x) * (n / s);
+    y = cy - (cy - y) * (n / s);
+    s = n; clamp(); apply();
+  }
+  function fitView() {
+    var w = img.naturalWidth, h = img.naturalHeight;
+    if (!w || !h) return;
+    fit = Math.min(1, (innerWidth - 24) / w, (innerHeight - 96) / h);
+    s = fit; x = (innerWidth - w * s) / 2; y = Math.max(12, (innerHeight - 72 - h * s) / 2);
+    apply();
+  }
+  function close() {
+    if (!box || box.hidden) return;
+    box.hidden = true; document.documentElement.style.overflow = "";
+    if (opener) opener.focus();
+  }
+  function btn(label, text, fn) {
+    var b = document.createElement("button");
+    b.type = "button"; b.textContent = text; b.setAttribute("aria-label", label); b.title = label;
+    b.addEventListener("click", function (e) { e.stopPropagation(); fn(); });
+    return b;
+  }
+  function build() {
+    box = document.createElement("div");
+    box.className = "lb"; box.hidden = true;
+    box.setAttribute("role", "dialog"); box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-label", "Screenshot");
+    img = document.createElement("img"); img.className = "lb-img"; img.alt = ""; img.draggable = false;
+    var hint = document.createElement("div"); hint.className = "lb-hint";
+    hint.textContent = "kolečko přibližuje · tažením posouváš · Esc zavře";
+    var bar = document.createElement("div"); bar.className = "lb-bar";
+    pct = document.createElement("span"); pct.className = "lb-pct";
+    var mid = function (k) { zoomAt(innerWidth / 2, innerHeight / 2, k); };
+    bar.appendChild(btn("Oddálit", "−", function () { mid(1 / 1.4); }));
+    bar.appendChild(pct);
+    bar.appendChild(btn("Přiblížit", "+", function () { mid(1.4); }));
+    bar.appendChild(btn("Na celou obrazovku", "⤢", fitView));
+    bar.appendChild(btn("Zavřít", "×", close));
+    box.appendChild(img); box.appendChild(hint); box.appendChild(bar);
+    document.body.appendChild(box);
+
+    img.addEventListener("load", fitView);
+    box.addEventListener("wheel", function (e) {
+      e.preventDefault();
+      // trackpads send many small deltas, a mouse wheel few large ones
+      zoomAt(e.clientX, e.clientY, Math.exp(-Math.max(-60, Math.min(60, e.deltaY)) * 0.004));
+    }, { passive: false });
+    box.addEventListener("pointerdown", function (e) {
+      if (e.target.closest(".lb-bar")) return;
+      box.setPointerCapture(e.pointerId);
+      pts[e.pointerId] = [e.clientX, e.clientY]; moved = false; pinch = 0;
+      img.classList.add("dragging");
+    });
+    box.addEventListener("pointermove", function (e) {
+      var p = pts[e.pointerId]; if (!p) return;
+      var ids = Object.keys(pts);
+      if (ids.length === 1) {
+        x += e.clientX - p[0]; y += e.clientY - p[1];
+        if (Math.abs(e.clientX - p[0]) + Math.abs(e.clientY - p[1]) > 2) moved = true;
+        pts[e.pointerId] = [e.clientX, e.clientY]; clamp(); apply();
+        return;
+      }
+      pts[e.pointerId] = [e.clientX, e.clientY];
+      var a = pts[ids[0]], b = pts[ids[1]];
+      var d = Math.hypot(a[0] - b[0], a[1] - b[1]);
+      if (pinch) zoomAt((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, d / pinch);
+      pinch = d; moved = true;
+    });
+    var up = function (e) {
+      var was = pts[e.pointerId]; delete pts[e.pointerId]; pinch = 0;
+      if (!Object.keys(pts).length) img.classList.remove("dragging");
+      // a plain click on the dark surround closes; a drag never does
+      if (was && !moved && e.type === "pointerup" && e.target === box) close();
+    };
+    box.addEventListener("pointerup", up);
+    box.addEventListener("pointercancel", up);
+    box.addEventListener("dblclick", function (e) {
+      if (e.target.closest(".lb-bar")) return;
+      if (s > fit * 1.05) fitView(); else zoomAt(e.clientX, e.clientY, Math.max(2, 1 / s));
+    });
+    addEventListener("resize", function () { if (!box.hidden) fitView(); });
+    addEventListener("keydown", function (e) {
+      if (box.hidden) return;
+      if (e.key === "Escape") close();
+      else if (e.key === "+" || e.key === "=") mid(1.4);
+      else if (e.key === "-") mid(1 / 1.4);
+      else if (e.key === "0") fitView();
+      else return;
+      e.preventDefault();
+    });
+  }
+  function open(el) {
+    if (!box) build();
+    opener = el;
+    var small = el.currentSrc || el.src, big = fullOf(small);
+    img.onerror = function () { img.onerror = null; img.src = small; }; // no full copy: show what we have
+    img.src = big;
+    box.hidden = false; document.documentElement.style.overflow = "hidden";
+    if (img.complete && img.naturalWidth) fitView();
+    box.querySelector(".lb-bar button:last-child").focus();
+  }
+
+  [].forEach.call(document.querySelectorAll(SEL), function (el) {
+    el.tabIndex = 0; el.setAttribute("role", "button");
+    if (!el.alt) el.setAttribute("aria-label", "Zvětšit screenshot");
+    el.addEventListener("click", function () { open(el); });
+    el.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(el); }
+    });
+  });
 })();
 
 // Skins gallery: tab switching + a single shared audio channel, so only one

@@ -5,6 +5,7 @@
 #   input : apps/<slug>/screenshots/raw/<kind>/<platform>/*.{png,jpg,jpeg,mp4,mov,webm,m4v}
 #           kind = desktop|mobile ; platform = macos|windows|linux|android|ios|ipad
 #   output: dist/screenshots/<slug>/<kind>/<name>              (gallery, downscaled)
+#           dist/screenshots/<slug>/<kind>/full/<name>         (lightbox, near-original)
 #           dist/screenshots/<slug>/store/<target>/<name>      (exact store size, images only)
 #           dist/screenshots/<slug>/<kind>/<stem>.mp4          (web H.264, videos)
 #           dist/screenshots/<slug>/<kind>/<stem>.poster.jpg   (video poster/thumbnail)
@@ -30,6 +31,9 @@ FFMPEG="$(command -v ffmpeg || true)"
 # gallery (downscale only, preserve aspect)
 GALLERY_DESKTOP="1920x1080"      # cap; landscape
 GALLERY_MOBILE="800x1500"        # cap; portrait
+# what the lightbox opens (store.js swaps <kind>/x.png for <kind>/full/x.png);
+# the gallery copy is sized for the strip and is unreadable once zoomed
+FULL="2600x2600"                 # cap; either orientation
 # store-exact (fill + center-crop to exact px)
 PLAY_PHONE="1080x1920"           # Google Play phone
 APPSTORE_IPHONE_69="1320x2868"   # Apple iPhone 6.9"
@@ -93,6 +97,9 @@ process_app() {
       mobile)  fit "$img" "$outroot/$kind/$name" "$GALLERY_MOBILE" ;;
       *)       fit "$img" "$outroot/$kind/$name" "$GALLERY_DESKTOP" ;;
     esac
+
+    mkdir -p "$outroot/$kind/full"
+    fit "$img" "$outroot/$kind/full/$name" "$FULL"
 
     # (2) store-exact copies by platform
     case "$platform" in
