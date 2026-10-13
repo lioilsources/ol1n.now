@@ -126,16 +126,6 @@ fm_get_l() {
   printf '%s' "$_v"
 }
 
-# fixed brand logo backdrop + scroll spacer (parallax via store.css/.js); used on every page
-emit_brand() {
-  cat <<'BRAND'
-<div class="brand-backdrop" aria-hidden="true">
-  <img class="brand-logo" src="assets/img/ananas-bananas-logo.png" alt="">
-</div>
-<div class="brand-spacer"></div>
-BRAND
-}
-
 # inner HTML for an .icon box: <img> if an icon exists, else first letter
 icon_html() {
   _slug="$1"; _name="$2"
@@ -1095,7 +1085,6 @@ HERO
       printf '<section class="section"><h2>%s</h2><div class="app-desc">\n' "$(esc "$(t sec.description)")"
       fm_body "$lmeta" | md_to_html
       echo '</div></section>'
-      emit_brand
       emit_foot
     } > "$DIST/$(page_name "$slug")"
     echo "  built $(page_name "$slug")"
@@ -1110,7 +1099,6 @@ HERO
         emit_head "$(tf title.skins "$lname")" "$(alts_html "$slug" skins $langs)"
         page_top_html "$back_href" "$back_label" "$(lang_switch_html "$slug" skins $langs)"
         skins_page_html "$slug" "$lname"
-        emit_brand
         emit_foot
       } > "$DIST/$(page_name "$slug" skins)"
       echo "  built $(page_name "$slug" skins)"
@@ -1123,7 +1111,6 @@ HERO
         emit_head "$lname — vizuály — olin.now"
         page_top_html "$back_href" "$back_label" ""
         visuals_page_html "$slug" "$lname"
-        emit_brand
         emit_foot
       } > "$DIST/$slug-visuals.html"
       echo "  built $slug-visuals.html"
@@ -1139,7 +1126,6 @@ HERO
           printf '<article class="rules">\n<h1>%s — %s</h1>\n' "$(esc "$lname")" "$(esc "$(page_meta "$pg" title)")"
           app_page_body "$pg"
           printf '</article>\n'
-          emit_brand
           emit_foot
         } > "$DIST/$slug-$pg_name.html"
         echo "  built $slug-$pg_name.html"
@@ -1151,7 +1137,6 @@ HERO
         emit_head "$lname — flotily a manévry — olin.now"
         page_top_html "$back_href" "$back_label" ""
         fleets_page_html "$slug" "$lname"
-        emit_brand
         emit_foot
       } > "$DIST/$slug-fleets.html"
       echo "  built $slug-fleets.html"
@@ -1293,7 +1278,6 @@ i18n_load "$I18N_BASE" "$TPL/i18n/$I18N_BASE.tsv"
   echo '<section class="app-grid">'
   printf '%s' "$CARDS"
   echo '</section>'
-  emit_brand
   emit_foot
 } > "$DIST/index.html"
 

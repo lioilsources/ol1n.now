@@ -176,3 +176,6 @@ html[lang="ko"] .biz-hero h1, html[lang="ko"] .offer-head h2 { letter-spacing: 0
   .tech dl > div { grid-template-columns: 1fr; }
   .demo .shots.mobile img { height: 320px; }
 }
+
+/* The store logo is drawn on cream; this page is dark and never showed it. */
+.footer-logo { display: none; }

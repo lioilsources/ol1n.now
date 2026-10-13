@@ -41,14 +41,39 @@ a:hover { text-decoration: underline; }
   color: var(--text-dim); font-size: 14px;
 }
 
-/* Brand backdrop — logo splývá s pozadím, parallax za obsahem */
-.brand-backdrop {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: -1;
-  display: flex; justify-content: center; pointer-events: none;
+/* The brand logo sits in the footer, in the flow. It used to be a fixed
+   backdrop sliding under the text at its own speed, which made long
+   descriptions unreadable wherever the two overlapped. */
+.footer-logo { display: block; width: min(340px, 70vw); height: auto; margin: 0 auto 12px; }
+
+/* Screenshot lightbox: a click opens the picture, the wheel zooms it */
+.shots img, .feat-shots img { cursor: zoom-in; }
+.lb {
+  position: fixed; inset: 0; z-index: 1000; background: rgba(12, 14, 9, 0.94);
+  overflow: hidden; touch-action: none; overscroll-behavior: contain;
 }
-.brand-logo { width: min(680px, 82vw); height: auto; will-change: transform; }
-.brand-spacer { height: 92vh; }
-@media (prefers-reduced-motion: reduce) { .brand-logo { transform: none !important; } }
+.lb[hidden] { display: none; }
+.lb-img {
+  position: absolute; left: 0; top: 0; transform-origin: 0 0; max-width: none;
+  cursor: grab; user-select: none; -webkit-user-drag: none;
+}
+.lb-img.dragging { cursor: grabbing; }
+.lb-bar {
+  position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 6px; padding: 6px;
+  background: rgba(38, 41, 31, 0.92); border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 999px;
+}
+.lb-bar button {
+  width: 44px; height: 44px; border: 0; border-radius: 50%; cursor: pointer;
+  background: transparent; color: #fff; font: 600 22px/1 inherit;
+}
+.lb-bar button:hover, .lb-bar button:focus-visible { background: rgba(255, 255, 255, 0.16); outline: none; }
+.lb-pct { min-width: 56px; text-align: center; color: #fff; font-size: 14px; font-variant-numeric: tabular-nums; }
+.lb-hint {
+  position: absolute; left: 50%; top: 14px; transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.72); font-size: 13px; pointer-events: none; white-space: nowrap;
+}
+@media (hover: none) { .lb-hint { display: none; } }
 
 /* App grid */
 .app-grid {
