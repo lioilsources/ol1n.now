@@ -350,7 +350,7 @@ is a Cloudflare redirect rule to `olin.now/business`.
 Current apps (in `apps/`): audioscanner, beenhere (Been Here), djfy, doggiowars, doodlebugs,
 elftonplayer (Elfton Player, repo `ol1nplay`), handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
-poetrystream, puff, storyteller, swypekids, ugcfactory.
+poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory.
 
 Five were added on 2026-10-04 for their artwork rather than for a build, and their pages
 lean on the visuals gallery. None has a real app screenshot: what sits in
@@ -428,6 +428,17 @@ is the whole procedure. What it does, and what still has to be done by hand:
    once. The POST returns immediately with `commit: null` and `size: 0` plus a `task` URL —
    the import runs asynchronously, so read the release back from
    `api/packages/.../releases/` to confirm the commit and size landed.
+
+**terrareality** (added 2026-10-16) is not a store app but a web platform plus a Flutter app,
+both unreleased: `repo:` is empty (`lioilsources/terrareality` has no releases, so `make fetch` skips it), `desktop: Web`
+only produces the badge, and its `i18n/{cs,en}.tsv` reword `sec.downloads` / `dl.empty` so the page
+says it is not public yet. Its screenshots (`raw/desktop/web`, `raw/mobile/web`, numbered in the order
+of the description) were taken with Playwright from a local dev stack of the `m8-launch` branch
+against a separate throwaway database: fictional names, `example.com` e-mails, offline (mock) AI, and
+flat photos from Unsplash (Unsplash License) uploaded as listing photos. The phone shots are the web
+at 390 px, not the Flutter app. The page text is sourced from that repo's `PLAN.md`,
+`docs/04-user-testing.md` and `docs/runbooks/launch.md`; refresh the status section when the pilot
+moves.
 
 ## Screenshots without a device
 
