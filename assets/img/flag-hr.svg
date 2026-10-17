@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <rect width="900" height="200" fill="#FF0000"/>
+  <rect y="200" width="900" height="200" fill="#ffffff"/>
+  <rect y="400" width="900" height="200" fill="#171796"/>
+  <!-- Simplified coat of arms: the 5x5 red-white chequy shield without the crown -->
+  <clipPath id="s"><path d="M375 150h150v175a75 75 0 0 1-150 0z"/></clipPath>
+  <g clip-path="url(#s)">
+    <rect x="375" y="150" width="150" height="250" fill="#ffffff"/>
+    <path fill="#FF0000" d="M375 150h30v30h-30zM435 150h30v30h-30zM495 150h30v30h-30zM405 180h30v30h-30zM465 180h30v30h-30zM375 210h30v30h-30zM435 210h30v30h-30zM495 210h30v30h-30zM405 240h30v30h-30zM465 240h30v30h-30zM375 270h30v30h-30zM435 270h30v30h-30zM495 270h30v30h-30zM405 300h30v30h-30zM465 300h30v30h-30zM375 330h30v30h-30zM435 330h30v30h-30zM495 330h30v30h-30zM405 360h30v30h-30zM465 360h30v30h-30z"/>
+  </g>
+  <path d="M375 150h150v175a75 75 0 0 1-150 0z" fill="none" stroke="#FF0000" stroke-width="4"/>
+</svg>

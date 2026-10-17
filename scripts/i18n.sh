@@ -29,6 +29,7 @@ lang_name() {
     pt-BR) echo "Português (Brasil)" ;;
     nl) echo "Nederlands" ;;
     hu) echo "Magyar" ;;
+    hr) echo "Hrvatski" ;;
     uk) echo "Українська" ;;
     vi) echo "Tiếng Việt" ;;
     ko) echo "한국어" ;;

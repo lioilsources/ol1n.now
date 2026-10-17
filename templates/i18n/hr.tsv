@@ -1,0 +1,19 @@
+# Site chrome, Croatian. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery and deck keys are not translated yet: no app with those galleries
+# ships this language.
+nav.all_apps	← Sve aplikacije
+nav.back_to	← Natrag na %s
+nav.lang	Jezik
+title.app	%s — olin.now
+badge.featured	★ Preporučeno
+badge.mobile	Mobilno
+sec.downloads	Preuzimanja
+sec.description	Opis
+sec.shots_desktop	Snimke zaslona — računalo
+sec.shots_mobile	Snimke zaslona — mobitel
+shots.empty.desktop	Zasad nema snimki zaslona s računala.
+shots.empty.mobile	Zasad nema snimki zaslona s mobitela.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Verzije uskoro.
