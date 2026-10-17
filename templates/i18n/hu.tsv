@@ -1,0 +1,19 @@
+# Site chrome, Hungarian. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. The skins
+# gallery and deck keys are not translated yet: no app with those galleries
+# ships this language.
+nav.all_apps	← Összes alkalmazás
+nav.back_to	← Vissza ide: %s
+nav.lang	Nyelv
+title.app	%s — olin.now
+badge.featured	★ Ajánlott
+badge.mobile	Mobil
+sec.downloads	Letöltések
+sec.description	Leírás
+sec.shots_desktop	Képernyőképek — asztali gép
+sec.shots_mobile	Képernyőképek — mobil
+shots.empty.desktop	Még nincsenek asztali képernyőképek.
+shots.empty.mobile	Még nincsenek mobilos képernyőképek.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	A buildek hamarosan elérhetők.

@@ -114,7 +114,8 @@ Czech grammar that a format string cannot express stays in code: `plural_ship`
 picks loď/lodě/lodí, and `vessels_label` hands every other language a plain
 format (`skins.vessels`) instead.
 
-Two apps ship more than Czech: **kirian** (Japanese) and **lexify** (en de it fr pl
+Three apps ship more than Czech: **kirian** (Japanese), **terrareality** (en de pl hu hr —
+`hu` and `hr` got their chrome catalogs for it) and **lexify** (en de it fr pl
 pt-BR ja ko vi ru uk). Past three languages the flag row next to the back-link turns
 into the business page's `<details class="lang-menu">` dropdown (its CSS lives in
 `store.css`; `business.css` only re-tints it), so kirian's pages stay as they were.

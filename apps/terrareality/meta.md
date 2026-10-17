@@ -7,7 +7,7 @@ order: 25
 featured: false
 desktop: Web
 mobile: android,ios
-langs: cs,en
+langs: cs,en,de,pl,hu,hr
 appstore:
 playstore:
 testflight:
