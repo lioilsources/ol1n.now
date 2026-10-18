@@ -1,0 +1,106 @@
+<!-- title: Čtečka a editor -->
+<!-- intro: Obrazovka po obrazovce: čtení dílu, volba a její cena, vznikající díl, moderace, a na straně autora svět, lore a kánon, postavy s tagy od LLM, lokace a přehled kampaní. -->
+<p class="lead">Čtenář i autor používají jednu aplikaci, liší se jen tím, komu svět patří. Screenshoty jsou z webové verze v šířce telefonu proti lokálnímu backendu. Svět „Zahrada světlušek“ na nich vznikl od nuly přímo v editoru.</p>
+
+<nav class="rules-toc">
+<a href="#cteni">Čtení</a>
+<a href="#volby">Volby a další díl</a>
+<a href="#moderace">Moderace</a>
+<a href="#svet">Svět a styl</a>
+<a href="#lore">Lore a kánon</a>
+<a href="#postavy">Postavy a tagy</a>
+<a href="#lokace">Lokace</a>
+<a href="#prehled">Přehled</a>
+</nav>
+
+<h2 id="cteni">Čtení</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/webtoon/mobile/01-svety.png" alt="Seznam světů" loading="lazy"><figcaption>Světy</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/03-za-koho-hrat.png" alt="Výběr hratelné postavy" loading="lazy"><figcaption>Za koho hrát</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/04-ctecka.png" alt="Začátek dílu v čtečce" loading="lazy"><figcaption>Začátek dílu</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/05-bubliny.png" alt="Výkřik a zvukový efekt" loading="lazy"><figcaption>Výkřik a SFX</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Kampaň začíná výběrem světa a hratelné postavy. Díl je svislý strip. Panely jsou obrázky ze serveru a <strong>bubliny kreslí až čtečka</strong>: řeč, myšlenku, výkřik, vypravěče a zvukové efekty, každé svým písmem. Proto jde text opravit bez nového kreslení.</p>
+</div>
+</div>
+
+<h2 id="volby">Volby a další díl</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/webtoon/mobile/06-volby.png" alt="Blok voleb na konci dílu" loading="lazy"><figcaption>Co uděláš dál?</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/07-cena.png" alt="Potvrzení ceny dílu" loading="lazy"><figcaption>Cena dílu</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/08-dalsi-dil.png" alt="Díl 2 čeká na kreslení" loading="lazy"><figcaption>Díl vzniká</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/09-historie-dilu.png" alt="Historie dílů" loading="lazy"><figcaption>Historie dílů</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Na konci dílu jsou tři volby a pole pro vlastní text do 500 znaků. Před generováním čtečka ukáže cenu, 1 kredit za panel. Kredity jsou zatím jen odhad, účtování ještě neexistuje. Díl pak vzniká na serveru: <strong>nejdřív scénář, potom panel po panelu</strong>, a čtečka průběh ukazuje. Když server zrovna nekreslí, panely počkají ve frontě. Historie dílů ukazuje, kterou volbou čtenář pokračoval.</p>
+</div>
+</div>
+
+<h2 id="moderace">Moderace</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/webtoon/mobile/10-moderace.png" alt="Zamítnutý vlastní text" loading="lazy"><figcaption>Zamítnutý text</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Vlastní text nejdřív posoudí jazykový model. V dětském světě má přísnější pokyny a při pochybnosti odmítne. Čtenář vidí důvod a volí znovu. Každý hotový panel pak ještě zkontroluje tagger WD14 podle publika světa.</p>
+</div>
+</div>
+
+<h2 id="svet">Svět a styl</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/webtoon/mobile/11-tvorit.png" alt="Seznam autorových světů" loading="lazy"><figcaption>Tvořit</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/12-svet-zaklad.png" alt="Základ světa" loading="lazy"><figcaption>Základ</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/13-svet-styl.png" alt="Výběr výtvarného stylu a práv hráče" loading="lazy"><figcaption>Styl a práva hráče</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Svět má název, synopsi, tón, jazyk textů, publikum a viditelnost: soukromý, jen s odkazem, nebo veřejný. <strong>Výtvarný styl se vybírá jednou pro celý svět</strong> z připravených presetů. Každý preset určuje checkpoint, sampler, počet kroků a CFG. Autor taky rozhodne, co smí hráč: přidávat postavy, vytvořit si vlastní, měnit lokace.</p>
+</div>
+</div>
+
+<h2 id="lore">Lore a kánon</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/webtoon/mobile/14-lore-kanon.png" alt="Pravidla, frakce, kánon a mantinely" loading="lazy"><figcaption>Lore a kánon</figcaption></figure>
+</div>
+<div class="feat-text">
+<p><strong>Pravidla světa</strong> dostane jazykový model u každého dílu a validátor je kontroluje. <strong>Kánon</strong> jsou události, kterými musí projít každá kampaň, v pevném pořadí. Seřadí se přetažením. <strong>Mantinely</strong> říkají, co se stát nesmí. První díl Zahrady světlušek začal přesně prvním uzlem kánonu: světlušky přestaly svítit.</p>
+</div>
+</div>
+
+<h2 id="postavy">Postavy a tagy</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/webtoon/mobile/15-postavy.png" alt="Knihovna postav" loading="lazy"><figcaption>Postavy</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/16-postava.png" alt="Postava: popis, povaha, styl řeči" loading="lazy"><figcaption>Popis postavy</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/17-postava-tagy.png" alt="Booru tagy postavy a character sheet" loading="lazy"><figcaption>Tagy a character sheet</figcaption></figure>
+<figure><img src="screenshots/webtoon/mobile/18-zvire-tagy.png" alt="Tagy zvířecí postavy" loading="lazy"><figcaption>Zvíře: ježek</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Postava se popíše česky. <strong>Vygenerovat tagy</strong> z popisu udělá pevný seznam booru tagů, který jde do každého panelu s postavou. Tagy mimo slovník WD14 se vyřadí, protože je model nejspíš nezná, a autor je jedním klepnutím přidá zpět. Zvířata a tvorové mají vlastní pokyny. Bez nich z ježka Bodlíčka byla holčička s ušima, s nimi je to <i>hedgehog, red scarf, brown fur</i>.</p>
+<p><strong>Character sheet</strong> vykreslí čtyři varianty postavy na bílém pozadí. Ta, která nejvíc odpovídá tagům, se stane referencí. Identitu zatím drží samotné tagy. IP-Adapter s referenčním obrázkem backend umí, LoRA je zatím jen volba v editoru.</p>
+</div>
+</div>
+
+<h2 id="lokace">Lokace</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/webtoon/mobile/19-lokace-tagy.png" alt="Lokace s tagy scény" loading="lazy"><figcaption>Babiččina zahrada</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Lokace funguje stejně: popis, nálada a tagy scény od LLM. Prvních několik tagů musí místo poznat samo, protože detailní záběr si nechá jen je.</p>
+</div>
+</div>
+
+<h2 id="prehled">Přehled</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/webtoon/mobile/20-prehled.png" alt="Přehled kampaní světa" loading="lazy"><figcaption>Přehled</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Autor vidí počet kampaní, hráčů a dílů, kde čtenáři skončili, jaké volby vybírali a kolik kampaní prošlo kterým uzlem kánonu. Tlačítkem <strong>Zahraj si vlastní svět</strong> si ho rovnou vyzkouší jako čtenář.</p>
+</div>
+</div>

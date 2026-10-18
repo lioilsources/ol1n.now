@@ -45,6 +45,7 @@ case "$SLUG" in
   immunorun)           SRC="${2:-${IMMUNORUN_SRC:-$DEV/BioDefenseRogue}}";   PROBE="art/drafts/g0/post" ;;
   swypekids)           SRC="${2:-${SWYPEKIDS_SRC:-$DEV/SwypeKids}}";         PROBE="assets/characters/panda" ;;
   handwrittenstickers) SRC="${2:-${HWS_SRC:-$DEV/HandWritenStickers}}";      PROBE="docs/glyph_sheets_handwriting.png" ;;
+  webtoon)             SRC="${2:-${WEBTOON_SRC:-$DEV/Webtoon}}";             PROBE="out/2026-10-18/final_les" ;;
   *) echo "error: no visuals described for '$SLUG'" >&2; exit 1 ;;
 esac
 [ -e "$SRC/$PROBE" ] || { echo "error: no $SLUG checkout at $SRC (missing $PROBE)" >&2; exit 1; }
@@ -380,6 +381,66 @@ import_handwrittenstickers() {
   add sheets 1 "$SRC/docs/glyph_sheets_handwriting.png" "Rukopis" lossless
   add sheets 2 "$SRC/docs/glyph_sheets_typography.png" "Typografie" lossless
   add sheets 3 "$SRC/docs/glyph_sheets_calligraphy.png" "Kaligrafie" lossless
+}
+
+# ---- Webtoon ---------------------------------------------------------------
+# The renders live in the gitignored out/<day>/ of a local checkout, not in the
+# repo: final_<story>/ is the panel set a kids strip was composed from (base run
+# plus re-renders), strip_<story>.png the composed strip with bubbles. Captions
+# are the panel's first bubble, else its SFX, taken from the storyboard.
+# Left out on purpose: the clean_webtoon preset (it weights two named artists'
+# tags - no public page shows a style borrowed by name), sheet_live (the skin-
+# tight suit that the kids "sensitive" check exists to reject) and the IP-Adapter
+# runs (broken images, a measurement, not art).
+# stripy/<story>.webp are written but NOT listed in assets.tsv: the gamebook and
+# strips subpages read them by path (build-site.sh copies the whole folder).
+import_webtoon() {
+  command -v jq >/dev/null 2>&1 || { echo "error: jq not found" >&2; exit 1; }
+  _d="$SRC/out/2026-10-18"; _o="$SRC/out/2026-10-17"
+  caption() {   # <storyboard.json> <panel index>
+    jq -r --argjson i "$2" '.panels[$i] | ((.bubbles // [])[0].text // (.sfx // [])[0].text // .shot)' "$1"
+  }
+  story_cat() {   # <id> <title> <note>
+    emit_cat "$1" "$2" "$3" art
+    _sb="$SRC/data/stories/$1/storyboard.json"
+    n=0
+    for f in "$_d/final_$1"/p*_s0.png; do
+      _i="$(basename "$f" | sed -E 's/^p0*([0-9]+)_.*/\1/')"
+      n=$((n + 1)); add "$1" "$n" "$f" "$(caption "$_sb" "$_i")" photo 640x
+    done
+  }
+  story_cat les       "Záhada v lese"            "Terezka, kočka Míša, sova a ztracený skřítek. Panely bez bublin — ty kreslí až čtečka."
+  story_cat park      "Veselý den v parku"       "Anička, pes Maxík, Tomáš a paní Nováková hledají poklad."
+  story_cat more      "Dobrodružství u moře"     "Eliška, králík Rybka, dědeček a racek."
+  story_cat kuchyne   "Zábavný zmatek v kuchyni" "Lucka, křeček Puntík, máma a malý Honzík."
+  story_cat halloween "Halloweenská noc"         "Natálka, pes Stínek, Sofie a laskavý duch."
+
+  _sb="$SRC/out/dev/storyboard_ep1.json"
+  style_cat() {   # <id> <run> <title> <note>
+    emit_cat "$1" "$3" "$4" hero
+    n=0
+    for f in "$_o/$2"/p*_s0.png; do
+      _i="$(basename "$f" | sed -E 's/^p0*([0-9]+)_.*/\1/')"
+      n=$((n + 1)); AS="p$_i" add "$1" "$n" "$f" "$(caption "$_sb" "$_i")" photo 640x
+    done
+  }
+  style_cat styl_noob    ep1_noob_plain "Styl clean_webtoon_noartist" "NoobAI-XL eps 1.1, ploché barvy a čistá linka. Díl 1 „Dopis bez adresy“ ze světa Nebeské ostrovy (od 13 let) — stejné scény jako vedle."
+  style_cat styl_hassaku ep1_hassaku    "Styl hassaku_soft"           "Hassaku XL (Illustrious) 3.4, měkké stínování a pastelové barvy. Stejný storyboard a stejné seedy."
+
+  emit_cat postavy "Character sheety" "Postava celá na bílém pozadí, čtyři seedy; nejlepší podle shody s tagy (WD14) se stane referencí. Vesna ze Nebeských ostrovů a holčička v pláštěnce z dětského testu." portrait
+  n=0
+  for k in 0 1 2 3; do n=$((n + 1)); AS="vesna_$k" add postavy "$n" "$_o/sheet_vesna/p00_s$k.png" "Vesna, seed $((k + 1))" photo 512x; done
+  n=$((n + 1)); AS="vesna_face" add postavy "$n" "$_o/sheet_vesna/face_ref.png" "Vesna, výřez obličeje" photo 512x
+  k=0
+  for f in "$_o/sheet_kids"/*.png; do
+    k=$((k + 1)); n=$((n + 1)); AS="kids_$k" add postavy "$n" "$f" "Pláštěnka, seed $k" photo 512x
+  done
+
+  mkdir -p "$OUT/stripy"
+  for s in les park more kuchyne halloween; do
+    "$MAGICK" "$_d/strip_$s.png" -filter Lanczos -resize '720x>' -strip \
+      -define webp:method=6 -quality 80 "$OUT/stripy/$s.webp"
+  done
 }
 
 "import_$SLUG"
