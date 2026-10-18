@@ -28,4 +28,9 @@ Hra je ve vývoji: smyčka, meta-progrese, zvuky a menu jsou hotové, grafika se
 právě mění z barevných kruhů na sprity ve stylu rastrovacího elektronového
 mikroskopu.
 
+Ve hře je i kniha **Lexikon zdraví**: třináct kapitol pro děti od 10 do 15 let
+o tom, jak se tělo doopravdy brání. Otevře se z menu nebo přímo ze hry, třeba
+tlačítkem „Co mě zabilo?“ po prohře. Kde hra kvůli hratelnosti zjednodušuje,
+kniha to přizná.
+
 Postaveno ve Flutteru a Flame (repo `BioDefenseRogue`).
