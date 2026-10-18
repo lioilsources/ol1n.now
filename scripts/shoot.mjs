@@ -13,6 +13,8 @@
 //   {"type": text}                insert text into the focused element
 //   {"key": "Enter"}              press a key
 //   {"scroll": dy}                scroll the page by dy CSS pixels
+//   {"swipe": dy, "at": [x, y]}   touch-drag scroll by dy CSS pixels (Flutter web: its
+//                                 canvas lists ignore window.scrollBy)
 //   {"eval": js}                  run JS in the page (result is logged)
 //   {"shot": "out.png", "full": false}  screenshot (viewport, or full page)
 // Needs nothing but Node >= 22 (global WebSocket) and Chrome.
@@ -163,6 +165,28 @@ try {
         { type, key: s.key, code: s.key, windowsVirtualKeyCode: s.key === "Enter" ? 13 : 0 });
       await sleep(s.settle ?? 800);
     } else if (s.scroll) { await evalJs(`window.scrollBy(0, ${s.scroll})`); await sleep(500); }
+    else if (s.swipe) {
+      // touch drag by dy CSS pixels (positive = content moves up, i.e. scroll down), slow
+      // and held at the end so a Flutter list lands where it was dragged instead of flinging
+      const [x, y0] = s.at || [dev.width / 2, dev.height * 0.8];
+      const pts = (dy) => [{ x, y: dy, id: 1 }];
+      let y = y0;
+      await send("Input.dispatchTouchEvent", { type: "touchStart", touchPoints: pts(y) });
+      for (let left = s.swipe; Math.abs(left) > 0;) {
+        const d = Math.sign(left) * Math.min(Math.abs(left), 20);
+        y -= d; left -= d;
+        if (y < 60 || y > dev.height - 60) {   // out of room: lift and start a new stroke
+          await sleep(120);
+          await send("Input.dispatchTouchEvent", { type: "touchEnd", touchPoints: [] });
+          y = d > 0 ? y0 : dev.height * 0.2;
+          await send("Input.dispatchTouchEvent", { type: "touchStart", touchPoints: pts(y) });
+        } else await send("Input.dispatchTouchEvent", { type: "touchMove", touchPoints: pts(y) });
+        await sleep(16);
+      }
+      await sleep(150);
+      await send("Input.dispatchTouchEvent", { type: "touchEnd", touchPoints: [] });
+      await sleep(s.settle ?? 700);
+    }
     else if (s.eval) console.log("eval:", JSON.stringify(await evalJs(s.eval)).slice(0, 400));
     else if (s.shot) {
       const params = { format: "png", captureBeyondViewport: !!s.full };

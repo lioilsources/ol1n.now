@@ -165,7 +165,7 @@ sfx, music). A category with no manifest rows emits nothing at all — that is h
 ## Visuals gallery
 
 The flat one: categorised artwork, no entities, no audio. `doodlebugs`, `kittens`,
-`mutants`, `memeshorts`, `immunorun`, `handwrittenstickers` and `swypekids` have one.
+`mutants`, `memeshorts`, `immunorun`, `handwrittenstickers`, `swypekids` and `webtoon` have one.
 `scripts/import-visuals.sh <slug>` holds one `import_<slug>` function per app — where
 the art lives in that app's checkout, how it is bucketed, the Czech titles — and
 `make build` only copies the result. Gated on `dist/visuals/<slug>/cats.tsv`; emits a
@@ -351,7 +351,7 @@ is a Cloudflare redirect rule to `olin.now/business`.
 Current apps (in `apps/`): audioscanner, beenhere (Been Here), djfy, doggiowars, doodlebugs,
 elftonplayer (Elfton Player, repo `ol1nplay`), handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
-poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory.
+poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, webtoon.
 
 Five were added on 2026-10-04 for their artwork rather than for a build, and their pages
 lean on the visuals gallery. None has a real app screenshot: what sits in
@@ -450,6 +450,28 @@ apps/display/build/web` in that repo (scenarios `empty`, `few`, `rush`, clock fr
 `scripts/shoot.mjs` at 1280×800 @2x and 402×874 @3x. `pages/features.html` ("Jak to funguje")
 borrows them by path; its status section lists what the pilot still has to verify — update it
 when the pilot happens.
+
+**webtoon** (added 2026-10-18) is an unreleased project (Go backend + Flutter app + Python
+prototype in the public repo `lioilsources/Webtoon`, no releases), so `repo:` is empty and
+`desktop: Web` only produces the badge; `i18n/cs.tsv` rewords downloads and the empty desktop
+section (the app is laid out for phone width — a desktop shot would just be stretched cards).
+Its 20 phone shots (`raw/mobile/web/NN-*.png`, numbered in the order of the editor subpage) were
+taken with `scripts/shoot.mjs` from the Flutter **web** build at 402 px @3x against a local
+backend with the five kids worlds imported as episode 1; touch `swipe` steps scroll the Flutter
+reader (its canvas ignores `window.scrollBy`). Taps are CSS coordinates read off a first shot —
+a layout change in the app moves them. Episode 2 in the shots has only a script (ComfyUI was
+off), and the page says so.
+
+The visuals come from the Webtoon checkout's gitignored `out/` (see `import_webtoon` for what is
+left out and why — no named-artist preset, no skin-tight sheet, no IP-Adapter tests).
+`visuals/stripy/<story>.webp` are composed strips that are **not in `assets.tsv`**: the
+`stripy` and `gamebook` subpages read them by path, and they reach `dist/` only because the
+build copies the whole `visuals/` folder. Three subpages: `stripy` (the strips in `<details>`),
+`gamebook` (episode 1 of Záhada v lese plus, under each choice, the episode-2 storyboard the
+LLM wrote — verbatim, including its mistakes) and `editor` (screen-by-screen walkthrough,
+`.feat-shots` borrowing `screenshots/webtoon/mobile/*.png` by path). Their CSS is the `.wt-*`
+block in `store.css`; no script. When episode 2 gets panels, the gamebook branches can show
+them instead of the script.
 
 ## Screenshots without a device
 
