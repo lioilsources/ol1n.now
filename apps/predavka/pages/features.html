@@ -1,0 +1,205 @@
+<!-- title: Jak to funguje -->
+<!-- intro: Cesta objednávky od pokladny přes kuchaře a předávku až ke stolu, co kdo vidí a slyší, chody, které dorazí najednou, a tři momenty večera: prázdná fronta, pár stolů a „nestíháme!“ — se screenshoty skutečných displejů. -->
+<p class="lead">Předávka propojuje tři místa v restauraci: kuchyň, předávku (místo, kde se jídlo skládá na stůl a předává obsluze) a plac. Každé dostane jen to, co potřebuje: kuchyň hlas a frontu, předávka přehled stolů a plac odhady v minutách. Screenshoty jsou ze skutečných displejů. Stav na nich vznikl simulací služby se smyšleným menu, čas je zastavený v daném okamžiku večera.</p>
+
+<nav class="rules-toc">
+<a href="#prubeh">Cesta objednávky</a>
+<a href="#kuchyn">Kuchyň</a>
+<a href="#predavka">Předávka</a>
+<a href="#plac">Plac</a>
+<a href="#hlas">Hlas</a>
+<a href="#chody">Chody</a>
+<a href="#vecer">Tři momenty večera</a>
+<a href="#odhady">Odhady</a>
+<a href="#objednavky">Odkud chodí objednávky</a>
+<a href="#nastaveni">Nastavení</a>
+<a href="#provoz">Provoz a instalace</a>
+<a href="#stav">Stav projektu</a>
+</nav>
+
+<h2 id="prubeh">Cesta objednávky</h2>
+<div class="feat">
+<div class="feat-text">
+<p>Každé jídlo prochází stejnými kroky a každý krok je vidět na všech displejích najednou:</p>
+<ol>
+<li><strong>Nové.</strong> Číšník namarkuje objednávku v pokladně nebo na tabletu. Reproduktor na předávce ji přečte („Stůl sedm: dvě svíčkové, jeden řízek.“) a jídla se rozdělí do front stanic: řízek na gril, svíčková na teplou.</li>
+<li><strong>Vzato.</strong> Kuchař na stanici si jídlo klepnutím vezme. Ozve se krátký tón místo řeči a obsluze na placu se ukáže odhad, za kolik minut bude hotovo.</li>
+<li><strong>Hotovo.</strong> Kuchař jídlo odklepne. Když je hotový celý chod stolu, reproduktor řekne „Stůl sedm, kompletní.“ a plac ukáže zeleně <em>HOTOVO – vyzvedni</em>.</li>
+<li><strong>Vyzvednuto.</strong> Když si obsluha jídlo odnese, expedient na předávce klepne na kartu stolu a stůl zmizí z placu. Pokud má stůl další chod, Předávka ho ve správnou chvíli pošle do kuchyně.</li>
+</ol>
+<p>Když se některý krok zasekne, Předávka se ozve sama. Hlásí to, co na kuchaři nikdo nevzal, a jídlo, které stojí na předávce. Na každou drobnost ale nepípá.</p>
+</div>
+</div>
+
+<h2 id="kuchyn">Kuchyň — fronta stanice</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/predavka/desktop/02-kuchyn-gril-nestihame.png" alt="Fronta grilu ve špičce na tabletu" loading="lazy"><figcaption>Gril ve špičce (aplikace na tabletu)</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/06-kuchyn-tepla-malo.png" alt="Fronta teplé kuchyně s jedním jídlem" loading="lazy"><figcaption>Teplá, klidný začátek večera</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/10-kuchyn-gril-web.png" alt="Fronta grilu ve verzi pro prohlížeč" loading="lazy"><figcaption>Totéž v prohlížeči</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Každá stanice má svou frontu seřazenou podle toho, co přišlo dřív. Velké číslo stolu, kolik kusů, úpravy oranžově („bez cibule“, „medium rare“), a u každé dlaždice dva časy: jak dlouho jídlo čeká nebo se vaří a kdy má být hotovo.</p>
+<ul>
+<li><strong>Jedno klepnutí</strong> jídlo vezme, druhé ho označí jako hotové. Bez myši a bez psaní, jde to i mokrou rukou. Místo klepání může kuchař používat bump bar, tedy pár velkých tlačítek: číslo pořadí na dlaždici odpovídá tlačítku.</li>
+<li><strong>Barvy dýchají, nebliká se.</strong> Čekající jídlo pomalu přechází do oranžové a jídlo, které se vaří déle, než je u něj v této kuchyni obvyklé, do červené.</li>
+<li><strong>„Začít za 5 min“:</strong> u jídla, které se dělá rychleji než zbytek stolu, fronta poradí, kdy začít, aby všechno došlo na předávku najednou a nic nechladlo.</li>
+<li><strong>Kuchaře jde pojmenovat</strong> („Gril · Tomáš“). Na předávce je pak vidět, kdo co vzal.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="predavka">Předávka — skládání stolů</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/predavka/desktop/03-predavka-nestihame.png" alt="Předávka ve špičce: stoly hotové, částečně hotové a ve frontě" loading="lazy"><figcaption>Předávka ve špičce</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/07-predavka-malo.png" alt="Předávka se třemi stoly a tlačítkem pro další chod" loading="lazy"><figcaption>Tři stoly, tlačítko „Fire další chod“</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Pohled pro expedienta, tedy toho, kdo na předávce skládá stoly. Často je to šéfkuchař. Každý stůl je jedna karta se všemi jídly a jejich stanicemi a u každého jídla je vidět, jestli je hotové, vaří se, nebo čeká.</p>
+<ul>
+<li><strong>Nahoře je to, co hoří:</strong> hotové stoly, které čekají na odnesení, s časem, jak dlouho už stojí na předávce.</li>
+<li><strong>Částečně hotový stůl</strong> ukazuje, na co se ještě čeká a z které stanice („4× Řízek, Gril, za chvíli“).</li>
+<li><strong>Vyzvednuto</strong> je jedno klepnutí na kartu. <strong>Fire další chod</strong> pošle další chod do kuchyně hned, nemusí čekat na automatiku.</li>
+<li><strong>Tichý režim</strong> a <strong>Ještě jednou</strong> jsou po ruce v hlavičce.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="plac">Plac — displej pro obsluhu</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/predavka/desktop/01-plac-nestihame.png" alt="Displej na placu ve špičce" loading="lazy"><figcaption>Televize na placu ve špičce</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/05-plac-malo.png" alt="Displej na placu se třemi stoly" loading="lazy"><figcaption>Tři stoly (aplikace na Android TV)</figcaption></figure>
+<figure><img src="screenshots/predavka/mobile/01-plac-nestihame.png" alt="Displej placu na telefonu" loading="lazy"><figcaption>Na telefonu číšníka</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Obsluha hlas z kuchyně neslyší, má hlučný plac a nemá čas číst. Proto jde o jeden velký displej bez ovládání, čitelný na několik metrů: <strong>stůl → co na něj jde → za kolik minut</strong>.</p>
+<ul>
+<li><strong>Hotové stoly jsou nahoře</strong> zeleně, i s časem, jak dlouho už čekají. Pak stoly, které budou „za chvíli“, a pod nimi zbytek podle toho, kdy bude hotovo.</li>
+<li><strong>Odhad se nehoupe.</strong> Minuty se na placu mění nejvýš jednou za půl minuty, takže když číšník hostovi řekne „za deset minut“, displej mu to za chvíli nevyvrátí.</li>
+<li><strong>Částečně hotový stůl</strong> se ukazuje jako „částečně 1/2“: nést se ještě nemá, ale bude to brzy.</li>
+<li>Stejný pohled funguje i na telefonu číšníka v prohlížeči, bez instalace.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="hlas">Hlas — co a kdy se říká</h2>
+<div class="feat">
+<div class="feat-text">
+<p>Reproduktor stojí na předávce, kde je víc slyšet než u odsávání. Mluví jen krátkými větami a číslo stolu je vždycky první:</p>
+<ul>
+<li><strong>Nová objednávka:</strong> „Stůl sedm: dvě svíčkové, jeden řízek.“ (s úpravou: „…, s úpravou.“)</li>
+<li><strong>Čeká na kuchaře</strong> (nikdo jídlo nevzal 2 minuty): „Stůl sedm, gril, čeká na kuchaře.“ Ozve se jednou za stůl a stanici.</li>
+<li><strong>Kompletní:</strong> „Stůl sedm, kompletní.“</li>
+<li><strong>Stárne na předávce</strong> (hotové jídlo stojí 3 minuty): „Stůl sedm hotovo, na předávce tři minuty.“ Opakuje se, dokud si ho někdo nevezme.</li>
+<li><strong>Další chod:</strong> „Stůl sedm, připravit hlavní.“</li>
+</ul>
+<p>Hlášky jdou za sebou s pauzou a podle důležitosti: zopakování a urgence mají přednost před novou objednávkou. Dvě stejné urgence se sloučí. Nová objednávka, která by se dostala ke slovu až po dvou minutách, se už nečte, protože ji kuchaři dávno vidí ve frontě. Každá hláška se zároveň ukáže jako titulek na displejích. <strong>Tichý režim</strong> (třeba na klidný večer) hlas vypne, ale titulky a upozornění do telefonu nebo na hodinky běží dál.</p>
+<p>Hlas vzniká přímo v restauraci, bez internetu. V testech byl připravený k přehrání do 0,2 sekundy od události. Do více reproduktorů v kuchyni jde jeden synchronizovaný zvuk po síti, bez Bluetooth.</p>
+</div>
+</div>
+
+<h2 id="chody">Chody, které dorazí najednou</h2>
+<div class="feat">
+<div class="feat-text">
+<p>Polévka, hlavní jídlo, dezert. Vyšší chody čekají a do kuchyně se pošlou, až když je předchozí chod u stolu. Načasování počítá s tím, jak dlouho trvá nejpomalejší jídlo dalšího chodu, takže hlavní dorazí zhruba po nastavené pauze. Pauzu nastavuje restaurace, výchozí je deset minut. Expedient může chod poslat i ručně a automatiku jde v nastavení vypnout.</p>
+<p>V rámci jednoho chodu fronta radí kuchařům, kdy začít s rychlejšími jídly („začít za 5 min“), aby celý stůl došel na předávku zároveň.</p>
+</div>
+</div>
+
+<h2 id="vecer">Tři momenty večera</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/predavka/desktop/08-plac-prazdno.png" alt="Plac bez stolů: Vše vydáno" loading="lazy"><figcaption>15:07 — vše vydáno</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/09-kuchyn-prazdno.png" alt="Prázdná fronta grilu" loading="lazy"><figcaption>Prázdná fronta</figcaption></figure>
+</div>
+<div class="feat-text">
+<p><strong>Prázdná fronta (odpoledne).</strong> Poslední stůl odešel. Displeje jsou klidné, nic nesvítí a nic nemluví.</p>
+</div>
+</div>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/predavka/desktop/05-plac-malo.png" alt="Plac se třemi stoly" loading="lazy"><figcaption>17:54 — plac</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/06-kuchyn-tepla-malo.png" alt="Teplá kuchyně s jedním jídlem" loading="lazy"><figcaption>Teplá</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/07-predavka-malo.png" alt="Předávka se třemi stoly" loading="lazy"><figcaption>Předávka</figcaption></figure>
+</div>
+<div class="feat-text">
+<p><strong>Pár stolů (začátek večera).</strong> Stůl 2 je hotový a čeká na vyzvednutí, stůl 4 bude za minutu a stůl 9 přišel před chvílí. Obsluha ví, že může nejdřív odnést dvojku. Kuchař na teplé má jen jedno jídlo.</p>
+</div>
+</div>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/predavka/desktop/01-plac-nestihame.png" alt="Plac ve špičce" loading="lazy"><figcaption>19:30 — plac</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/02-kuchyn-gril-nestihame.png" alt="Gril ve špičce" loading="lazy"><figcaption>Gril</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/04-kuchyn-tepla-nestihame.png" alt="Teplá kuchyně ve špičce" loading="lazy"><figcaption>Teplá</figcaption></figure>
+<figure><img src="screenshots/predavka/desktop/03-predavka-nestihame.png" alt="Předávka ve špičce" loading="lazy"><figcaption>Předávka</figcaption></figure>
+</div>
+<div class="feat-text">
+<p><strong>Nestíháme! (sobota 19:30).</strong> Plno, jedenáct stolů během deseti minut, gril je úzké hrdlo a obsluha nestíhá vynášet. V tomhle stavu je Předávka nejužitečnější:</p>
+<ul>
+<li>Na placu svítí nahoře stoly 14 a 3, které stojí na předávce osm a pět minut. Hlas je připomíná, dokud si je někdo nevezme.</li>
+<li>Gril vidí, že má devět jídel bez kuchaře, a odhady pro nové stoly se podle toho prodlužují (stůl 20 „za 32 min“). Obsluha to může hostům říct hned, ne až po půl hodině.</li>
+<li>Teplá a studená stíhají. Kdo se na předávce podívá na displej, vidí, že pomoc je potřeba na grilu.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="odhady">Odhady, které se učí</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/predavka/desktop/13-nastaveni.png" alt="Nastavení: prahy, hlas a doby přípravy" loading="lazy"><figcaption>Doby přípravy: odhad a naměřeno</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Na začátku zadá šéfkuchař ke každému jídlu, jak dlouho obvykle trvá a jak dlouho trvá v horším případě. Zabere to pár minut. Pak Předávka měří každé vaření od převzetí po hotovo a po pěti měřeních začne místo odhadu používat skutečný střed posledních padesáti vaření v této kuchyni. Nastavení ukazuje obojí vedle sebe.</p>
+<p>Odhad pro stůl počítá s tím, co je ve frontě stanice před ním a kolik jídel stanice zvládne vařit zároveň. Jakmile si kuchař jídlo vezme, odhad se počítá od té chvíle.</p>
+</div>
+</div>
+
+<h2 id="objednavky">Odkud chodí objednávky</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="screenshots/predavka/desktop/12-tablet-objednavka.png" alt="Zadání objednávky na tabletu obsluhy" loading="lazy"><figcaption>Tablet obsluhy</figcaption></figure>
+<figure><img src="screenshots/predavka/mobile/03-objednavka.png" alt="Zadání objednávky na telefonu" loading="lazy"><figcaption>Totéž na telefonu</figcaption></figure>
+</div>
+<div class="feat-text">
+<ul>
+<li><strong>Z pokladny přes bonovací tiskárnu.</strong> Předávka se zapojí do sítě mezi pokladnu a kuchyňskou tiskárnu. Bon se vytiskne jako dosud a Předávka si z něj přečte stůl, jídla, počty a poznámky. Funguje to s pokladnami, které tisknou bony po síti, a nevyžaduje žádnou spolupráci výrobce pokladny. Názvy jídel z bonu se přiřadí k menu, a to i se zkratkami, které pokladna používá.</li>
+<li><strong>Z tabletu nebo telefonu obsluhy</strong> v prohlížeči: menu po chodech, číslo stolu, poznámka, odeslat.</li>
+<li><strong>Přímo z pokladny přes její rozhraní</strong> se dá doplnit u pokladen, které ho nabízejí. Server má pro objednávky jednoduché API.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="nastaveni">Nastavení</h2>
+<div class="feat">
+<div class="feat-text">
+<p>Všechny prahy jsou v jedné obrazovce a mění se za provozu: za jak dlouho se ozvat, když jídlo nikdo nevzal (výchozí 2 min), kdy jídlo na předávce „stárne“ (3 min) a jak často to opakovat, pauza mezi chody, minimální mezera mezi hláškami (20 s), jak často se smí měnit odhad na placu a tichý režim. Menu, stanice a výslovnost jídel („jedna svíčková / dvě svíčkové / pět svíčkových“) se nastaví jednou při instalaci.</p>
+</div>
+</div>
+
+<h2 id="provoz">Provoz a instalace</h2>
+<div class="feat">
+<div class="feat-text">
+<ul>
+<li><strong>Jeden malý počítač v kuchyni</strong> (mini PC za pár tisíc), na kterém běží všechno: příjem objednávek, fronta, hlas a displeje. Žádný cloud, žádný internet, žádné měsíční poplatky za servery.</li>
+<li><strong>Displeje:</strong> aplikace pro Android TV a tablety, nebo jakýkoli prohlížeč (televize, starý tablet, telefon). Při výpadku spojení displej zřetelně ukáže, že nemá aktuální data, a sám se znovu připojí.</li>
+<li><strong>Nic se neztratí.</strong> Každá změna se zapisuje do deníku událostí. Po restartu nebo výpadku proudu se stav služby obnoví přesně tam, kde byl.</li>
+<li><strong>Reproduktor</strong> na předávce, volitelně další v kuchyni: jeden synchronizovaný zvuk po síti.</li>
+<li><strong>Upozornění na hodinky nebo telefon</strong> přes push notifikace, třeba pro obsluhu, která displej nevidí, nebo pro tichý režim.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="stav">Stav projektu</h2>
+<div class="feat">
+<div class="feat-text">
+<p>Předávka je <strong>funkční prototyp</strong>. Hotové a otestované v simulaci provozu: server, české hlášky, odposlech bonovací tiskárny, fronty, převzetí, odhady a jejich učení, chody, upozornění, nastavení a všechny displeje.</p>
+<p><strong>Zatím neověřené v ostrém provozu:</strong> srozumitelnost hlasu v hluku odsávání, ozvučení kuchyně více reproduktory, výkon na cílovém mini PC a čitelnost na skutečných televizích. To je náplň pilotu v jedné restauraci.</p>
+<p>Simulace špičky ukázala dvě věci, které se doladí před pilotem:</p>
+<ul>
+<li>Když se stejná stanice zasekne u více stolů najednou, hlášky „čeká na kuchaře“ se mají sloučit do jedné („Gril, čeká pět stolů“), aby nezablokovaly hlas na minutu a půl.</li>
+<li>Televize na placu se vejde zhruba šest stolů. Pro velké večery bude potřeba kompaktnější režim, aby byly vidět všechny.</li>
+</ul>
+</div>
+</div>
