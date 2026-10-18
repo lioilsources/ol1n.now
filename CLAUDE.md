@@ -441,6 +441,16 @@ at 390 px, not the Flutter app. The page text is sourced from that repo's `PLAN.
 `docs/04-user-testing.md` and `docs/runbooks/launch.md`; refresh the status section when the pilot
 moves.
 
+**predavka** (Předávka, added 2026-10-18) is a client pitch for a kitchen/floor coordination
+prototype (repo `lioilsources/Kitchen`, public, no releases). `repo:` is empty on purpose so the
+page carries no GitHub link, and `i18n/cs.tsv` rewords `sec.downloads` / `dl.empty` (installed on
+site, not downloadable). Its screenshots are the real displays — the built-in web pages and the
+Flutter app's web build — fed by `go run ./tools/scenarios -serve :8093 -scenario rush -app
+apps/display/build/web` in that repo (scenarios `empty`, `few`, `rush`, clock frozen), shot with
+`scripts/shoot.mjs` at 1280×800 @2x and 402×874 @3x. `pages/features.html` ("Jak to funguje")
+borrows them by path; its status section lists what the pilot still has to verify — update it
+when the pilot happens.
+
 **webtoon** (added 2026-10-18) is an unreleased project (Go backend + Flutter app + Python
 prototype in the public repo `lioilsources/Webtoon`, no releases), so `repo:` is empty and
 `desktop: Web` only produces the badge; `i18n/cs.tsv` rewords downloads and the empty desktop

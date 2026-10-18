@@ -3,7 +3,7 @@ slug: webtoon
 name: Webtoon
 repo:
 tagline: Interaktivní webtoon — čtenář na konci dílu volí, jak příběh pokračuje, a další díl se nakreslí
-order: 26
+order: 27
 featured: false
 desktop: Web
 mobile:
