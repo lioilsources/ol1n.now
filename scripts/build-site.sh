@@ -156,7 +156,9 @@ badges_html() {
 }
 
 # download buttons from the manifest dist/downloads/<slug>.tsv
-# (links point directly at GitHub Release assets; nothing is re-hosted)
+# (links point directly at GitHub Release assets; nothing is re-hosted).
+# $2 non-empty = the app has store links, so an empty manifest is not
+# "builds coming soon" and the dl.empty line is withheld.
 downloads_html() {
   _slug="$1"; _manifest="$DIST/downloads/$_slug.tsv"; _any=0
   if [ -f "$_manifest" ]; then
@@ -173,7 +175,7 @@ downloads_html() {
       _any=1
     done < "$_manifest"
   fi
-  [ "$_any" = 0 ] && printf '<p class="dl-empty">%s</p>\n' "$(esc "$(t dl.empty)")"
+  [ "$_any" = 0 ] && [ -z "${2:-}" ] && printf '<p class="dl-empty">%s</p>\n' "$(esc "$(t dl.empty)")"
   return 0
 }
 
@@ -1066,8 +1068,9 @@ while IFS="$TAB" read -r ord meta; do
 </section>
 HERO
       printf '<section class="section"><h2>%s</h2><div class="downloads">\n' "$(esc "$(t sec.downloads)")"
-      downloads_html "$slug"
-      store_links_html "$meta"
+      store_links="$(store_links_html "$meta")"
+      downloads_html "$slug" "$store_links"
+      [ -n "$store_links" ] && printf '%s\n' "$store_links"
       echo '</div></section>'
       # explicit `if` (not `&&`): under `set -e` a failing guard as the last
       # command of this group would truncate the page

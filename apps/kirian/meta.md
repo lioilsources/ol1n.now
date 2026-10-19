@@ -8,8 +8,9 @@ langs: cs,ja
 featured: true
 desktop: macos,windows,linux
 mobile: android,ios
-appstore:
-playstore:
+artifacts: macos,windows,linux
+appstore: https://apps.apple.com/app/id6774868017
+playstore: https://play.google.com/store/apps/details?id=com.ab.kiran
 testflight:
 ---
 Letíš sám nekonečným koridorem nepřátel, po jednom šedesátivteřinovém

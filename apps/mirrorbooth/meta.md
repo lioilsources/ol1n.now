@@ -7,7 +7,7 @@ order: 4
 featured: false
 desktop: macos,windows,linux
 mobile: android,ios
-appstore:
+appstore: https://apps.apple.com/app/id6767824892
 playstore:
 testflight:
 ---

@@ -388,6 +388,19 @@ version (matching that repo's other workflows), and it has `workflow_dispatch` s
 can be smoke-tested without burning a tag. It ships macOS only — `app/windows` and
 `app/linux` do not exist.
 
+**Store links.** `appstore:` / `playstore:` in the front-matter render as secondary
+buttons after the download buttons. **kirian**, **poetrystream** and **puff** are on
+Google Play, so their Android APK is not offered any more: kirian and poetrystream set
+`artifacts: macos,windows,linux`, puff (mobile only) sets `artifacts: none`, which makes
+`make fetch` write no manifest at all. An app with store links and no manifest shows
+just the store buttons — `downloads_html` withholds "Buildy brzy k dispozici" when
+`store_links_html` has anything. App Store ids (seller "Olin Vorechovsky"): kirian
+6774868017, poetrystream 6767237393 ("Poesie Simona Clinae"), puff 6808586613, lexify
+6784602743, mirrorbooth 6767824892 ("Mirror Booth Photos"); the `apps.apple.com/app/id…`
+form is used so Apple picks the visitor's storefront. Play ids: `com.ab.kiran`,
+`com.ab.PoetryStreamSC`, `com.ol1n.puff` (developer "A+B"). Lexify and MirrorBooth are
+not on Play (2026-10-19), so they keep the APK button.
+
 All are standalone binaries except **doggiowars**, which runs inside Luanti (ex-Minetest) —
 no per-platform executable, so it sets `artifacts: mod` (a platform-agnostic `.zip` bucket in
 `fetch-artifacts.sh`, opt-in because that pattern would otherwise match the Flutter apps'

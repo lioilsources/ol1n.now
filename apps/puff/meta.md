@@ -7,9 +7,9 @@ order: 14
 featured: true
 desktop:
 mobile: android,ios
-artifacts: android
-appstore:
-playstore:
+artifacts: none
+appstore: https://apps.apple.com/app/id6808586613
+playstore: https://play.google.com/store/apps/details?id=com.ol1n.puff
 testflight:
 ---
 Držíš prst na displeji a pod ním roste tlakový oblak. Táhneš ho, kam

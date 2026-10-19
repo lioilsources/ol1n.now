@@ -114,6 +114,13 @@ for m in "$APPS"/*/meta.md; do
   [ -n "$repo" ] || { echo "  - $slug: no repo in meta.md, skipping"; continue; }
   buckets="$(fm_get "$m" artifacts | tr ',' ' ')"
   [ -n "$buckets" ] || buckets="$DEFAULT_BUCKETS"
+  # `artifacts: none` — the app is distributed through the stores only
+  # (appstore:/playstore: in meta.md); no release asset gets a download button.
+  if [ "$buckets" = "none" ]; then
+    rm -f "$OUT/$slug.tsv"
+    echo "  - $slug: artifacts: none (store links only)"
+    continue
+  fi
   fetch_app "$repo" "$slug" "$buckets"
 done
 echo "Done."

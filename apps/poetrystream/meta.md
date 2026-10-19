@@ -7,8 +7,9 @@ order: 1
 featured: true
 desktop: macos,windows,linux
 mobile: android,ios
-appstore:
-playstore:
+artifacts: macos,windows,linux
+appstore: https://apps.apple.com/app/id6767237393
+playstore: https://play.google.com/store/apps/details?id=com.ab.PoetryStreamSC
 testflight:
 ---
 StreamPoetry promění klasickou českou poezii v meditativní zážitek. Verše plynou

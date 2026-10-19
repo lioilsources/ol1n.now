@@ -8,7 +8,7 @@ featured: false
 langs: cs,en,de,it,fr,pl,pt-BR,ja,ko,vi,ru,uk
 desktop: macos,windows,linux
 mobile: android,ios
-appstore:
+appstore: https://apps.apple.com/app/id6784602743
 playstore:
 testflight:
 ---
