@@ -388,8 +388,10 @@ version (matching that repo's other workflows), and it has `workflow_dispatch` s
 can be smoke-tested without burning a tag. It ships macOS only — `app/windows` and
 `app/linux` do not exist.
 
-**Store links.** `appstore:` / `playstore:` in the front-matter render as secondary
-buttons after the download buttons. **kirian**, **poetrystream** and **puff** are on
+**Store links.** `appstore:` / `playstore:` in the front-matter render after the download
+buttons as home-screen style tiles (`assets/img/store-{appstore,playstore}.svg`, hand-drawn
+look-alikes, name underneath, `.store-icon` in `store.css`); `testflight:` / `contentdb:`
+stay plain secondary buttons. **kirian**, **poetrystream** and **puff** are on
 Google Play, so their Android APK is not offered any more: kirian and poetrystream set
 `artifacts: macos,windows,linux`, puff (mobile only) sets `artifacts: none`, which makes
 `make fetch` write no manifest at all. An app with store links and no manifest shows
