@@ -181,19 +181,22 @@ downloads_html() {
 
 # external store links. App Store and Google Play are home-screen style icons
 # (assets/img/store-<key>.svg, label underneath); the rest stay plain buttons.
+# The icons sit in one `.store-icons` group so they wrap as a unit and never
+# end up scattered between the download buttons on a phone.
 store_links_html() {
-  _meta="$1"
+  _meta="$1"; _icons=""
   for kv in "appstore:App Store" "playstore:Google Play" "testflight:TestFlight" "contentdb:ContentDB"; do
     key="${kv%%:*}"; label="${kv#*:}"
     url="$(fm_get "$_meta" "$key")"
     [ -n "$url" ] || continue
     case "$key" in
       appstore|playstore)
-        printf '<a class="store-icon" href="%s" title="%s"><img src="assets/img/store-%s.svg" alt="" width="64" height="64"><span>%s</span></a>\n' \
-          "$url" "$label" "$key" "$label" ;;
+        _icons="$_icons$(printf '<a class="store-icon" href="%s" title="%s"><img src="assets/img/store-%s.svg" alt="" width="64" height="64"><span>%s</span></a>' \
+          "$url" "$label" "$key" "$label")" ;;
       *) printf '<a class="dl-btn secondary" href="%s">%s</a>\n' "$url" "$label" ;;
     esac
   done
+  [ -n "$_icons" ] && printf '<div class="store-icons">%s</div>\n' "$_icons"
   return 0
 }
 
