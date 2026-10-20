@@ -179,13 +179,20 @@ downloads_html() {
   return 0
 }
 
-# external store links (App Store / Google Play / TestFlight)
+# external store links. App Store and Google Play are home-screen style icons
+# (assets/img/store-<key>.svg, label underneath); the rest stay plain buttons.
 store_links_html() {
   _meta="$1"
   for kv in "appstore:App Store" "playstore:Google Play" "testflight:TestFlight" "contentdb:ContentDB"; do
     key="${kv%%:*}"; label="${kv#*:}"
     url="$(fm_get "$_meta" "$key")"
-    [ -n "$url" ] && printf '<a class="dl-btn secondary" href="%s">%s</a>\n' "$url" "$label"
+    [ -n "$url" ] || continue
+    case "$key" in
+      appstore|playstore)
+        printf '<a class="store-icon" href="%s" title="%s"><img src="assets/img/store-%s.svg" alt="" width="64" height="64"><span>%s</span></a>\n' \
+          "$url" "$label" "$key" "$label" ;;
+      *) printf '<a class="dl-btn secondary" href="%s">%s</a>\n' "$url" "$label" ;;
+    esac
   done
   return 0
 }

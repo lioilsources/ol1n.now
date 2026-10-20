@@ -171,7 +171,7 @@ a:hover { text-decoration: underline; }
 .shots-empty { color: var(--text-dim); font-size: 14px; }
 
 /* Downloads */
-.downloads { display: flex; flex-wrap: wrap; gap: 12px; }
+.downloads { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 12px; }
 .dl-btn {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--accent); color: #fff; font-weight: 600; font-size: 14px;
@@ -180,6 +180,18 @@ a:hover { text-decoration: underline; }
 .dl-btn:hover { text-decoration: none; filter: brightness(1.08); }
 .dl-btn.secondary { background: var(--bg-soft); color: var(--text); border: 1px solid var(--border); }
 .dl-meta { font-weight: 400; font-size: 12px; opacity: 0.75; }
+/* App Store / Google Play as home-screen tiles: icon with its name underneath */
+.store-icon {
+  display: inline-flex; flex-direction: column; align-items: center; gap: 6px;
+  color: var(--text); font-size: 12px; line-height: 1.2; text-decoration: none;
+}
+.store-icon img {
+  width: 64px; height: 64px; border-radius: 14px; display: block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  transition: transform 0.15s ease;
+}
+.store-icon:hover { text-decoration: none; }
+.store-icon:hover img { transform: scale(1.06); }
 .dl-empty { color: var(--text-dim); font-size: 14px; }
 
 .app-desc { max-width: 680px; }
