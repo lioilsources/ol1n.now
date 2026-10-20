@@ -180,7 +180,10 @@ a:hover { text-decoration: underline; }
 .dl-btn:hover { text-decoration: none; filter: brightness(1.08); }
 .dl-btn.secondary { background: var(--bg-soft); color: var(--text); border: 1px solid var(--border); }
 .dl-meta { font-weight: 400; font-size: 12px; opacity: 0.75; }
-/* App Store / Google Play as home-screen tiles: icon with its name underneath */
+/* App Store / Google Play as home-screen tiles: icon with its name underneath.
+   One flex group, so the pair wraps together instead of splitting around the
+   download buttons on a phone. */
+.store-icons { display: flex; gap: 16px; }
 .store-icon {
   display: inline-flex; flex-direction: column; align-items: center; gap: 6px;
   color: var(--text); font-size: 12px; line-height: 1.2; text-decoration: none;
