@@ -225,6 +225,11 @@ implementation drifts from the engine the first time a curve changes.
 
 ## App subpages (OrbitronTactics rules)
 
+The app is **named Archion on the page** since 2026-10-20; the slug, the URLs and the
+repo (`lioilsources/OrbitronTactics`) keep the old name, as does this file. The former
+"Pocta originálu" section (Orbitron: Space Academy on Steam) was replaced by the single
+line "Ripped friendship with @DK" on request.
+
 `apps/<slug>/pages/<name>.html` is a hand-written body fragment that becomes
 `dist/<slug>-<name>.html` (base language only), with a link section on the app page
 taken from its `<!-- title: -->` and `<!-- intro: -->` header comments. Today that is
