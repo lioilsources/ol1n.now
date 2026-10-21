@@ -549,8 +549,10 @@ unless `SCREENSHOT_DIR` is set: `SCREENSHOT_DIR=<dir> flutter test test/screensh
 The catalog, mixer and voice screens are the bundled catalog; the player state and the two
 parent voices are fixtures. Its page lists all ten tales, but as of 2026-10-21 only Červená
 Karkulka and Zlatovláska are `gold` — the other eight are `draft` and a release build hides
-them; the page says so, drop that sentence once they are reviewed. No release and no icon
-yet (default Flutter logo), so no download buttons and a letter tile.
+them; the page says so, drop that sentence once they are reviewed. `icon.png` is
+`app/assets/icon/icon.png` from that repo at 512 px. Its first release had not been tagged
+yet: `release-android.yml` there names the APK `hajanek-<tag>.apk`, and the download
+button appears on the next `make fetch`.
 
 `storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
 default Flutter logo, which is not worth shipping, so they fall back to the store's
