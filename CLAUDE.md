@@ -354,7 +354,7 @@ is a Cloudflare redirect rule to `olin.now/business`.
 ## App Catalog
 
 Current apps (in `apps/`): audioscanner, beenhere (Been Here), djfy, doggiowars, doodlebugs,
-elftonplayer (Elfton Player, repo `ol1nplay`), handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
+elftonplayer (Elfton Player, repo `ol1nplay`), hajanek (Hajánek), handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
 poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, webtoon.
 
@@ -542,6 +542,15 @@ run it there with `--update-goldens` and copy `test/screenshots/*.png` over. Two
 features have no shot because nothing real was available to show: a Knihovník answer
 (the only capture is a 90-character fragment) and the Story Studio keyframe review
 (needs keyframes of a real job).
+
+**hajanek** is shot the same way (8 files in `raw/mobile/ios/`, `NN-<screen>.png`, 390×844 @3x).
+Its harness is `app/test/screenshots_test.dart` in the Hajanek repo and writes PNGs, skipped
+unless `SCREENSHOT_DIR` is set: `SCREENSHOT_DIR=<dir> flutter test test/screenshots_test.dart`.
+The catalog, mixer and voice screens are the bundled catalog; the player state and the two
+parent voices are fixtures. Its page lists all ten tales, but as of 2026-10-21 only Červená
+Karkulka and Zlatovláska are `gold` — the other eight are `draft` and a release build hides
+them; the page says so, drop that sentence once they are reviewed. No release and no icon
+yet (default Flutter logo), so no download buttons and a letter tile.
 
 `storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
 default Flutter logo, which is not worth shipping, so they fall back to the store's
