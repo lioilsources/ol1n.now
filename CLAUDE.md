@@ -360,7 +360,9 @@ is a Cloudflare redirect rule to `olin.now/business`.
 Current apps (in `apps/`): audioscanner, beenhere (Been Here), djfy, doggiowars, doodlebugs,
 elftonplayer (Elfton Player, repo `ol1nplay`), hajanek (Hajánek), handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
-poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, webtoon.
+poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, webtoon,
+chess4princesses (Šachové království), rattleramp (repo `ChrestysSkatepark`),
+fotballsimulator (Fotball Simulator).
 
 Five were added on 2026-10-04 for their artwork rather than for a build, and their pages
 lean on the visuals gallery. None has a real app screenshot: what sits in
@@ -378,7 +380,7 @@ own art (the Flutter projects still carry the default logo). **kittens**, **muta
 promise builds.
 
 **storyteller** was private until 2026-09-26 and is now public, so `make fetch` resolves it
-like any other app. Its default branch is **`master`**, not `main` — the only one in the
+like any other app. Its default branch is **`master`**, not `main` — as is fotballsimulator's, the only two in the
 catalog.
 
 While it was private it **took the whole deploy down**, and the trap is worth keeping in mind
@@ -496,6 +498,38 @@ LLM wrote — verbatim, including its mistakes) and `editor` (screen-by-screen w
 `.feat-shots` borrowing `screenshots/webtoon/mobile/*.png` by path). Their CSS is the `.wt-*`
 block in `store.css`; no script. When episode 2 gets panels, the gamebook branches can show
 them instead of the script.
+
+**chess4princesses**, **rattleramp** and **fotballsimulator** (added 2026-10-25) are early
+alphas. Chess has no release yet (`i18n/cs.tsv` rewords downloads); RattleRamp ships
+`v0.x-alpha` pre-releases with a macOS zip + APK, Fotball an APK (both also push to TestFlight,
+which the page does not link). Fotball's `master` default branch is the second one in the
+catalog. Fotball still carries the default Flutter icon, so it gets the letter tile.
+RattleRamp is a landscape tablet game for the U Chřestýše bar kiosk, so its shots sit under
+`raw/desktop/tablet/` and the empty mobile section is reworded. The Fotball repo is a Godot
+project; the store builds and screenshots are of its Flutter port in `flutter_app/`.
+
+## Screenshots from a throwaway web build
+
+All three were shot with `scripts/shoot.mjs` from a **Flutter web build of a copy** of each
+repo (`rsync` to a scratch dir, `flutter create --platforms web .`, `flutter build web`, serve,
+shoot) — none of the three repos has a web target, and nothing was committed to them. Chess
+at 402×874 @3x with `"locale": "cs-CZ"`, progress seeded into `localStorage`
+(`flutter.progress_v1`, modules 0–1 done) and routes opened by hash (`#/lesson/m02_l04`);
+RattleRamp at 1194×834 @2x with `"motion": true` (with reduced motion Flutter finishes the
+avatar picker's 5 s countdown instantly); Fotball at 402×874 @3x.
+
+Two of the copies needed hand edits that exist only in that scratch copy, re-do them to
+refresh the shots:
+
+- **fotball** does not compile for the web: its PCG32 serve RNG uses 64-bit integer
+  literals and `nextInt(1 << 32)` (0 in JS). The copy swaps `Pcg32` for `dart:math` Random.
+  It also gets a `?seed=&stop=window|freeze|flight|result&ox=&oy=&curve=&ft=` hook in
+  `game_screen.dart` that draws a synthetic swipe and releases it at the ideal moment, then
+  stops the ticker — a real-time kick cannot be timed over DevTools. Physics, contact model
+  and rendering are the app's own; results vary a few ms run to run, so take several.
+- **rattleramp** gets `?bot=<seconds>`, which lets the attract loop's own `_botTick` play a
+  real (non-autopilot) ride with the HUD for that long — again because a release has to land
+  within ±tens of ms of the coping.
 
 ## Screenshots without a device
 

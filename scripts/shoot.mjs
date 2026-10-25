@@ -110,7 +110,9 @@ try {
   }
   await send("Emulation.setEmulatedMedia", { features: [
     { name: "prefers-color-scheme", value: plan.dark === false ? "light" : "dark" },
-    { name: "prefers-reduced-motion", value: "reduce" }] });
+    // "motion": true for apps whose timers ride on animations (Flutter finishes
+    // an AnimationController at once when motion is reduced)
+    { name: "prefers-reduced-motion", value: plan.motion ? "no-preference" : "reduce" }] });
 
   for (const s of plan.steps) {
     if (s.goto) {
