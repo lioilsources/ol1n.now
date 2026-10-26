@@ -1,5 +1,5 @@
 <!-- title: AI en software voor kleine teams | Olin Vořechovský -->
-<!-- description: Privé-AI-studio voor bureaus en games, adviseur voor webshops, verhuur voor makelaars, een rustige keuken voor restaurants, urenregistratie en stambomen. -->
+<!-- description: Privé-AI-studio voor bureaus en games, adviseur voor webshops, verhuur, keuken voor restaurants, urenregistratie, stambomen en AI op eigen GPU. -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
@@ -14,7 +14,7 @@
 
 <header class="biz-hero">
   <h1>Ik bouw AI en software voor kleine teams. Het draait bij u, het is van u en u weet vooraf wat het kost.</h1>
-  <p class="biz-lead">Ik ben Olin Vořechovský. Op mijn kantoor draait mijn eigen AI-studio, met daaromheen tools die ik elke dag gebruik. Wat voor mij werkt, bouw ik ook voor bureaus, gamestudio’s, webshops, makelaars, restaurants, scholen en kleine bedrijven.</p>
+  <p class="biz-lead">Ik ben Olin Vořechovský. Op mijn kantoor draait mijn eigen AI-studio, met daaromheen tools die ik elke dag gebruik. Wat voor mij werkt, bouw ik ook voor bureaus, gamestudio’s, webshops, makelaars, restaurants, scholen, kleine bedrijven en bedrijven met een eigen GPU-server.</p>
   <ul class="biz-rules">
     <li><b>Uw gegevens blijven bij u</b>Waar het kan, draait alles op uw eigen machine of onder uw eigen account.</li>
     <li><b>Vaste prijs</b>Geen credits en geen kosten per gebruiker. De prijslijst staat op deze pagina.</li>
@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Stamboom</span><span class="y">Voorouders teruggevonden in parochieregisters</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Makelaars en verhuurbeheerders</span><span class="y">Verhuur van advertentie tot betaalde huur</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Restaurants</span><span class="y">De keuken hoort de bestellingen, de bediening weet wanneer wat te brengen</span></a>
+    <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Bedrijven met een eigen GPU-server</span><span class="y">Documenten, gesprekken en data zonder cloud-API’s</span></a>
   </div>
 
   <!-- ============ PR agentury ============ -->
@@ -612,6 +613,81 @@
       </div>
     </div>
   </div>
+
+  <!-- ============ Vlastní GPU server ============ -->
+  <div class="skin-panel" id="panel-gpu" role="tabpanel" aria-labelledby="tab-gpu" data-skin="gpu">
+    <header class="offer-head">
+      <h2>Eén GPU in plaats van een rekening voor cloud-API’s</h2>
+      <p>Ik richt uw gehuurde of eigen GPU-server in en geef hem werk: gegevens uit documenten halen, gesprekken uitschrijven en sorteren, een AI-API voor uw teams en batchverwerking van honderdduizenden records. Voor elke ingebruikname meet ik op uw data de nauwkeurigheid, de doorvoer en de prijs per duizend stuks.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Wat het oplost</h3>
+        <ul>
+          <li><strong>Data die niet naar buiten mag.</strong> Contracten, facturen, gespreksopnames en interne documenten blijven op een server die u zelf in de hand hebt.</li>
+          <li><strong>Een rekening die meegroeit met het gebruik.</strong> Voor cloud-API’s betaalt u per token. De server kost hetzelfde, of hij nu duizend pagina’s verwerkt of honderdduizend.</li>
+          <li><strong>Een dure GPU die staat te niksen.</strong> De server draait op volle toeren: overdag bedient hij mensen, ’s nachts verwerkt hij batches.</li>
+        </ul>
+        <h3>Wat u krijgt</h3>
+        <ul>
+          <li>Inrichting van de server: taal- en beeldmodellen, spraakherkenning, het genereren van afbeeldingen en video. Wisselen tussen modelsets met één commando, want alles tegelijk past niet in het GPU-geheugen.</li>
+          <li>Monitoring in Grafana: belasting en geheugen van de GPU, temperaturen, wachtrijen van verzoeken, responstijden en stroomverbruik.</li>
+          <li>Gegevens uit documenten: facturen, contracten en scans naar gestructureerde JSON. In de test 944 pagina’s per uur, met 100% correcte velden.</li>
+          <li>Gespreksanalyse: transcriptie per kanaal, onderwerp, sentiment, identiteitscontrole en vervolgstap. In de test ruim 1.100 gesprekken per uur op één GPU.</li>
+          <li>Een AI-API voor meerdere teams: sleutels, limieten op gelijktijdige verzoeken, toegestane modellen en tokenafrekening per team. De chatbot reageert binnen 133 ms, ook als er ernaast een batch draait.</li>
+          <li>Batchverwerking: honderdduizenden records in één nacht, bijvoorbeeld het classificeren van contracten uit het Tsjechische openbare contractenregister, ruim 150.000 per uur.</li>
+          <li>Een model afstemmen op uw data. Bij het uitlezen van handgeschreven parochieregisters bracht 17 minuten training de nauwkeurigheid van de velden van 24 naar 67%.</li>
+          <li>Back-ups, documentatie en scripts die de server vanaf nul opnieuw kunnen opbouwen.</li>
+        </ul>
+        <h3>Waar ik aan werk</h3>
+        <ul>
+          <li>Stemklonen op een eigen server, zodat stemopnames het bedrijf niet verlaten.</li>
+          <li>Beeldmodellen trainen op een stijl of product, in plaats van ze alleen te gebruiken.</li>
+          <li>Afbeeldingen in bulk omzetten naar 3D-modellen, en vergelijkende tests van het genereren van beeld, video en audio.</li>
+          <li>Game-agents trainen met reinforcement learning en schaakquizzen genereren.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Eerlijk gezegd</h3>
+          <ul>
+            <li>De cijfers hierboven komen uit tests op synthetische en openbare data. Op uw data meten we ze in de eerste stap, en pas daarna beloof ik een resultaat.</li>
+            <li>De server zit niet in de prijs. Die huurt of koopt u zelf. Ik help met kiezen en reken uit wanneer hij voordeliger is dan een API.</li>
+            <li>Op één GPU met 48 GB geheugen past één groot model, of een paar kleinere. Wat er niet op past, draait in een andere set, en tussen de sets wordt gewisseld.</li>
+            <li>Open modellen zijn niet in alles zo goed als de beste betaalde. Zonder afstemming lezen ze in handschriften maar ongeveer een derde van de velden correct.</li>
+            <li>Spraakherkenning voor Tsjechisch zit bij 8–12% van de woorden fout. Voor het sorteren van gesprekken en statistiek is dat genoeg, voor een letterlijk verslag niet.</li>
+          </ul>
+        </div>
+        <h3>Prijs</h3>
+        <table class="price">
+          <tr><th>Benchmark: één taak op uw data, rapport met nauwkeurigheid, doorvoer en prijs per duizend stuks</th><td>CZK 25.000<span class="sub">wordt verrekend met de implementatie</span></td></tr>
+          <tr><th>Inrichting van de server: modellen, monitoring, back-ups, API</th><td>CZK 60.000</td></tr>
+          <tr><th>Taak op maat: documenten, gesprekken of batchverwerking</th><td>vanaf CZK 45.000</td></tr>
+          <tr><th>AI-API voor teams: sleutels, limieten en afrekening</th><td>vanaf CZK 40.000</td></tr>
+          <tr><th>Een model afstemmen op uw data</th><td>vanaf CZK 30.000</td></tr>
+          <tr><th>Beheer en onderhoud</th><td>CZK 15.000 per maand<span class="sub">minimaal 6 maanden</span></td></tr>
+        </table>
+        <p class="price-note">Prijzen excl. btw.</p>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Eerste stap: een benchmark op uw data</h3>
+      <p>U kiest één taak en stuurt een steekproef van uw data, bijvoorbeeld honderd facturen of tien uur aan gesprekken. Binnen twee weken krijgt u een rapport: hoe nauwkeurig het model het doet, hoeveel het per uur aankan en wat duizend stuks u kosten op de server tegenover een cloud-API.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=Benchmark%20op%20eigen%20GPU">Mail mij over een benchmark</a>
+    </div>
+    <div class="tech">
+      <h3>Technologie</h3>
+      <dl>
+        <div><dt>Server</dt><dd>NVIDIA L40S met 48 GB, Ubuntu, Docker Compose, NVIDIA Container Toolkit, wisselen tussen modelsets met een script; toegang alleen via een SSH-tunnel</dd></div>
+        <div><dt>Taalmodellen</dt><dd>vLLM; Qwen3 32B, Qwen3 30B-A3B (MoE) voor grote batches, Qwen3-VL voor documenten en scans; uitvoer afgedwongen met een JSON-schema, prefix caching</dd></div>
+        <div><dt>Spraak</dt><dd>Whisper large-v3-turbo met spraakdetectie, transcriptie per kanaal; Piper voor een Tsjechische stem</dd></div>
+        <div><dt>API voor teams</dt><dd>gateway in Go met sleutels, limieten en tokenmeting, ook bij streaming; LiteLLM; interface compatibel met de OpenAI-API</dd></div>
+        <div><dt>Afstemming</dt><dd>QLoRA via Unsloth, gewichten samenvoegen en uitrollen in vLLM; evaluatie op data die het model tijdens de training niet heeft gezien</dd></div>
+        <div><dt>Beeld en video</dt><dd>ComfyUI, FLUX, Wan 2.2</dd></div>
+        <div><dt>Monitoring</dt><dd>Prometheus, Grafana, NVIDIA DCGM, node-exporter; GPU-log bij elke meting en resultaten in JSON</dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
 <section class="biz-steps">
@@ -653,7 +729,7 @@
   "url": "__URL__",
   "inLanguage": "__LANG__",
   "image": "__OGIMAGE__",
-  "description": "Privé-AI-studio voor bureaus en gamestudio’s, adviseur voor webshops, een verhuurplatform voor woningen, een rustige keuken voor restaurants, urenregistratie voor teams op locatie, flashcards voor scholen en stambomen uit parochieregisters. Vaste prijzen, eerst een kleine betaalde pilot.",
+  "description": "Privé-AI-studio voor bureaus en gamestudio’s, adviseur voor webshops, een verhuurplatform voor woningen, een rustige keuken voor restaurants, urenregistratie voor teams op locatie, flashcards voor scholen, stambomen uit parochieregisters en AI op een eigen GPU-server. Vaste prijzen, eerst een kleine betaalde pilot.",
   "founder": { "@type": "Person", "name": "Olin Vořechovský" },
   "priceRange": "CZK 1.900–140.000",
   "hasOfferCatalog": {
@@ -667,7 +743,8 @@
       { "@type": "Offer", "name": "Flashcardset op maat voor scholen", "price": "3500", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Stamboom: één lijn, 4 generaties", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilot verhuurplatform voor woningen", "price": "25000", "priceCurrency": "CZK" },
-      { "@type": "Offer", "name": "Pilot Předávka voor restaurants", "price": "15000", "priceCurrency": "CZK" }
+      { "@type": "Offer", "name": "Pilot Předávka voor restaurants", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Benchmark van een AI-taak op een eigen GPU-server", "price": "25000", "priceCurrency": "CZK" }
     ]
   }
 }

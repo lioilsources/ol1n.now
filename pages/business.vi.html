@@ -1,5 +1,5 @@
 <!-- title: AI và phần mềm cho nhóm nhỏ | Olin Vořechovský -->
-<!-- description: Studio AI cho agency và game, tư vấn cho e-shop, nền tảng cho thuê cho môi giới, bếp bình tĩnh cho nhà hàng, chấm công, thẻ từ vựng, gia phả. Giá cố định. -->
+<!-- description: Studio AI cho agency và game, tư vấn e-shop, cho thuê nhà, bếp cho nhà hàng, chấm công, thẻ từ vựng, gia phả và AI trên GPU riêng. Giá cố định. -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
@@ -14,7 +14,7 @@
 
 <header class="biz-hero">
   <h1>Tôi làm AI và phần mềm cho các nhóm nhỏ. Chạy ngay tại chỗ bạn, thuộc về bạn, và bạn biết trước chi phí.</h1>
-  <p class="biz-lead">Tôi là Olin Vořechovský. Trong văn phòng của tôi có một studio AI riêng đang chạy, cùng với các công cụ tôi dùng hằng ngày. Cái gì hiệu quả với tôi, tôi cũng làm cho agency, studio game, cửa hàng online, công ty bất động sản, nhà hàng, trường học và doanh nghiệp nhỏ.</p>
+  <p class="biz-lead">Tôi là Olin Vořechovský. Trong văn phòng của tôi có một studio AI riêng đang chạy, cùng với các công cụ tôi dùng hằng ngày. Cái gì hiệu quả với tôi, tôi cũng làm cho agency, studio game, cửa hàng online, công ty bất động sản, nhà hàng, trường học, doanh nghiệp nhỏ và doanh nghiệp có máy chủ GPU riêng.</p>
   <ul class="biz-rules">
     <li><b>Dữ liệu ở lại chỗ bạn</b>Khi có thể, mọi thứ đều chạy trên máy của bạn hoặc dưới tài khoản của bạn.</li>
     <li><b>Giá cố định</b>Không mua credit, không tính phí theo số người dùng. Bảng giá có ngay trên trang này.</li>
@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Gia phả</span><span class="y">Tìm lại tổ tiên trong sổ bộ giáo xứ</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Môi giới và quản lý cho thuê</span><span class="y">Cho thuê từ tin đăng đến tiền thuê đã trả</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Nhà hàng</span><span class="y">Bếp nghe được order, khu phục vụ biết khi nào mang gì</span></a>
+    <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Doanh nghiệp có máy chủ GPU riêng</span><span class="y">Tài liệu, cuộc gọi và dữ liệu không qua API đám mây</span></a>
   </div>
 
   <!-- ============ PR agentury ============ -->
@@ -612,6 +613,81 @@
       </div>
     </div>
   </div>
+
+  <!-- ============ Vlastní GPU server ============ -->
+  <div class="skin-panel" id="panel-gpu" role="tabpanel" aria-labelledby="tab-gpu" data-skin="gpu">
+    <header class="offer-head">
+      <h2>Một GPU thay cho hóa đơn API đám mây</h2>
+      <p>Tôi dựng máy chủ GPU bạn thuê hoặc tự sở hữu và giao cho nó đủ việc: trích xuất dữ liệu từ tài liệu, chép lời và phân loại cuộc gọi, API AI cho các nhóm của bạn và xử lý theo lô hàng trăm nghìn bản ghi. Trước mỗi lần triển khai, tôi đo độ chính xác, thông lượng và chi phí cho mỗi nghìn mục trên dữ liệu của bạn.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Giải quyết vấn đề gì</h3>
+        <ul>
+          <li><strong>Dữ liệu không được phép ra ngoài.</strong> Hợp đồng, hóa đơn, bản ghi âm cuộc gọi và tài liệu nội bộ nằm lại trên máy chủ do bạn kiểm soát.</li>
+          <li><strong>Hóa đơn tăng theo lưu lượng.</strong> Với API đám mây, bạn trả tiền cho từng token. Máy chủ thì tốn như nhau, dù xử lý một nghìn trang hay một trăm nghìn trang.</li>
+          <li><strong>GPU đắt tiền mà ngồi không.</strong> Máy chủ sẽ chạy hết công suất: ban ngày phục vụ con người, ban đêm xử lý các lô.</li>
+        </ul>
+        <h3>Bạn nhận được gì</h3>
+        <ul>
+          <li>Dựng máy chủ: mô hình ngôn ngữ và mô hình hình ảnh, chuyển giọng nói thành văn bản, tạo ảnh và video. Chuyển giữa các bộ mô hình bằng một lệnh, vì bộ nhớ GPU không chứa được tất cả cùng lúc.</li>
+          <li>Giám sát trong Grafana: mức tải và bộ nhớ GPU, nhiệt độ, hàng đợi yêu cầu, thời gian phản hồi và điện năng tiêu thụ.</li>
+          <li>Trích xuất tài liệu: hóa đơn, hợp đồng và bản scan thành JSON có cấu trúc. Trong thử nghiệm, 944 trang mỗi giờ với độ chính xác trường dữ liệu 100%.</li>
+          <li>Phân tích cuộc gọi: chép lời theo từng kênh, chủ đề, thái độ, xác minh danh tính và bước tiếp theo. Trong thử nghiệm, hơn 1.100 cuộc gọi mỗi giờ trên một GPU.</li>
+          <li>API AI cho nhiều nhóm: khóa, giới hạn truy cập đồng thời, mô hình được phép dùng và tính token theo từng nhóm. Chatbot giữ thời gian phản hồi dưới 133 ms, kể cả khi bên cạnh đang chạy một lô.</li>
+          <li>Xử lý theo lô: hàng trăm nghìn bản ghi qua một đêm, ví dụ phân loại hợp đồng từ sổ đăng ký hợp đồng công khai của Séc (Registr smluv) với tốc độ hơn 150 nghìn mỗi giờ.</li>
+          <li>Tinh chỉnh mô hình trên dữ liệu của bạn. Với việc chép sổ bộ giáo xứ viết tay, 17 phút huấn luyện đã nâng độ chính xác trường dữ liệu từ 24% lên 67%.</li>
+          <li>Sao lưu, tài liệu và script có thể dựng lại máy chủ từ đầu.</li>
+        </ul>
+        <h3>Tôi đang làm gì</h3>
+        <ul>
+          <li>Nhân bản giọng nói trên máy chủ riêng, để bản ghi giọng nói không rời khỏi công ty.</li>
+          <li>Huấn luyện mô hình hình ảnh theo một phong cách hoặc sản phẩm, thay vì chỉ sử dụng chúng.</li>
+          <li>Chuyển hàng loạt ảnh thành mô hình 3D và thử nghiệm so sánh việc tạo ảnh, video và âm thanh.</li>
+          <li>Huấn luyện agent chơi game bằng học tăng cường và tạo câu đố cờ vua.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Nói thẳng</h3>
+          <ul>
+            <li>Các con số trên lấy từ thử nghiệm với dữ liệu tổng hợp và dữ liệu công khai. Trên dữ liệu của bạn, chúng ta đo ở bước đầu tiên, và chỉ sau đó tôi mới hứa kết quả.</li>
+            <li>Máy chủ không nằm trong giá. Bạn tự thuê hoặc tự mua. Tôi giúp chọn và tính xem khi nào nó có lợi hơn API.</li>
+            <li>Một GPU với 48 GB bộ nhớ chứa được một mô hình lớn hoặc vài mô hình nhỏ hơn. Cái gì không vừa sẽ chạy trong một bộ khác, và phải chuyển qua lại giữa các bộ.</li>
+            <li>Mô hình mở không phải mặt nào cũng ngang các mô hình trả phí tốt nhất. Chưa tinh chỉnh, chúng chỉ đọc chính xác khoảng một phần ba số trường trên chữ viết tay.</li>
+            <li>Chép lời tiếng Séc sai 8–12% số từ. Đủ để phân loại và thống kê cuộc gọi, nhưng không đủ cho bản ghi nguyên văn.</li>
+          </ul>
+        </div>
+        <h3>Giá</h3>
+        <table class="price">
+          <tr><th>Benchmark: một tác vụ trên dữ liệu của bạn, báo cáo độ chính xác, thông lượng và chi phí cho mỗi nghìn mục</th><td>25.000 CZK<span class="sub">được trừ vào phí triển khai</span></td></tr>
+          <tr><th>Dựng máy chủ: mô hình, giám sát, sao lưu, API</th><td>60.000 CZK</td></tr>
+          <tr><th>Tác vụ làm riêng: tài liệu, cuộc gọi hoặc xử lý theo lô</th><td>từ 45.000 CZK</td></tr>
+          <tr><th>API AI cho các nhóm: khóa, giới hạn và tính phí</th><td>từ 40.000 CZK</td></tr>
+          <tr><th>Tinh chỉnh mô hình trên dữ liệu của bạn</th><td>từ 30.000 CZK</td></tr>
+          <tr><th>Vận hành và bảo trì</th><td>15.000 CZK mỗi tháng<span class="sub">tối thiểu 6 tháng</span></td></tr>
+        </table>
+        <p class="price-note">Giá chưa gồm VAT.</p>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Bước đầu tiên: benchmark trên dữ liệu của bạn</h3>
+      <p>Bạn chọn một tác vụ và gửi một mẫu dữ liệu, chẳng hạn một trăm hóa đơn hoặc mười giờ cuộc gọi. Sau hai tuần, bạn nhận được báo cáo: mô hình làm chính xác đến đâu, xử lý được bao nhiêu trong một giờ, và một nghìn mục trên máy chủ tốn bao nhiêu so với API đám mây.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=Benchmark%20tr%C3%AAn%20GPU%20ri%C3%AAng">Hỏi về benchmark</a>
+    </div>
+    <div class="tech">
+      <h3>Công nghệ</h3>
+      <dl>
+        <div><dt>Máy chủ</dt><dd>NVIDIA L40S với 48 GB, Ubuntu, Docker Compose, NVIDIA Container Toolkit, chuyển bộ mô hình bằng script; chỉ truy cập qua SSH tunnel</dd></div>
+        <div><dt>Mô hình ngôn ngữ</dt><dd>vLLM; Qwen3 32B, Qwen3 30B-A3B (MoE) cho các lô lớn, Qwen3-VL cho tài liệu và bản scan; đầu ra ép theo JSON schema, prefix caching</dd></div>
+        <div><dt>Giọng nói</dt><dd>Whisper large-v3-turbo với phát hiện giọng nói, chép lời theo từng kênh; Piper cho giọng tiếng Séc</dd></div>
+        <div><dt>API cho các nhóm</dt><dd>gateway viết bằng Go với khóa, giới hạn và đo token, kể cả khi stream; LiteLLM; giao diện tương thích OpenAI API</dd></div>
+        <div><dt>Tinh chỉnh</dt><dd>QLoRA qua Unsloth, gộp trọng số và triển khai vào vLLM; đánh giá trên dữ liệu mô hình chưa thấy khi huấn luyện</dd></div>
+        <div><dt>Hình ảnh và video</dt><dd>ComfyUI, FLUX, Wan 2.2</dd></div>
+        <div><dt>Giám sát</dt><dd>Prometheus, Grafana, NVIDIA DCGM, node-exporter; log GPU ở mỗi lần đo và kết quả dạng JSON</dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
 <section class="biz-steps">
@@ -653,7 +729,7 @@
   "url": "__URL__",
   "inLanguage": "__LANG__",
   "image": "__OGIMAGE__",
-  "description": "Studio AI riêng cho agency và studio game, trợ lý tư vấn cho cửa hàng online, nền tảng cho thuê căn hộ, bếp bình tĩnh cho nhà hàng, chấm công cho đội hiện trường, thẻ từ vựng cho trường học và gia phả từ sổ bộ giáo xứ. Giá cố định, bắt đầu bằng một đợt thí điểm nhỏ có trả phí.",
+  "description": "Studio AI riêng cho agency và studio game, trợ lý tư vấn cho cửa hàng online, nền tảng cho thuê căn hộ, bếp bình tĩnh cho nhà hàng, chấm công cho đội hiện trường, thẻ từ vựng cho trường học, gia phả từ sổ bộ giáo xứ và AI trên máy chủ GPU riêng. Giá cố định, bắt đầu bằng một đợt thí điểm nhỏ có trả phí.",
   "founder": { "@type": "Person", "name": "Olin Vořechovský" },
   "priceRange": "1.900–140.000 CZK",
   "hasOfferCatalog": {
@@ -667,7 +743,8 @@
       { "@type": "Offer", "name": "Bộ thẻ từ vựng làm riêng cho trường học", "price": "3500", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Gia phả: một dòng, 4 thế hệ", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Thí điểm nền tảng cho thuê căn hộ", "price": "25000", "priceCurrency": "CZK" },
-      { "@type": "Offer", "name": "Thí điểm Předávka cho nhà hàng", "price": "15000", "priceCurrency": "CZK" }
+      { "@type": "Offer", "name": "Thí điểm Předávka cho nhà hàng", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Benchmark tác vụ AI trên máy chủ GPU riêng", "price": "25000", "priceCurrency": "CZK" }
     ]
   }
 }

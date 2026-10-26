@@ -1,5 +1,5 @@
 <!-- title: MI és szoftver kis csapatoknak | Olin Vořechovský -->
-<!-- description: MI-stúdió ügynökségeknek és játékoknak, webshop-tanácsadó, bérbeadás ingatlanirodáknak, nyugodt konyha éttermeknek, munkaidő, szókártyák, családfa. Fix árak. -->
+<!-- description: MI-stúdió ügynökségeknek és játékoknak, webshop-tanácsadó, bérbeadás, konyha éttermeknek, munkaidő, szókártyák, családfa, MI saját GPU-n. Fix árak. -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
@@ -14,7 +14,7 @@
 
 <header class="biz-hero">
   <h1>MI-megoldásokat és szoftvereket fejlesztek kis csapatoknak. Önnél fut, az Öné, és előre tudja, mennyibe kerül.</h1>
-  <p class="biz-lead">Olin Vořechovský vagyok. Az irodámban saját MI-stúdió fut, körülötte pedig olyan eszközök, amelyeket naponta használok. Ami nálam bevált, azt megépítem ügynökségeknek, játékstúdióknak, webshopoknak, ingatlanirodáknak, éttermeknek, iskoláknak és kisvállalkozásoknak is.</p>
+  <p class="biz-lead">Olin Vořechovský vagyok. Az irodámban saját MI-stúdió fut, körülötte pedig olyan eszközök, amelyeket naponta használok. Ami nálam bevált, azt megépítem ügynökségeknek, játékstúdióknak, webshopoknak, ingatlanirodáknak, éttermeknek, iskoláknak, kisvállalkozásoknak és saját GPU-szerverrel rendelkező cégeknek is.</p>
   <ul class="biz-rules">
     <li><b>Az adatok Önnél maradnak</b>Ahol lehet, minden az Ön gépén vagy az Ön fiókjában fut.</li>
     <li><b>Fix ár</b>Nincsenek kreditek, sem felhasználónkénti díjak. Az árlistát itt, ezen az oldalon találja.</li>
@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Családfa</span><span class="y">Egyházi anyakönyvekből felkutatott ősök</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Ingatlanirodák és bérleménykezelők</span><span class="y">Bérbeadás a hirdetéstől a kifizetett bérleti díjig</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Éttermek</span><span class="y">A konyha hallja a rendeléseket, a felszolgálók tudják, mikor mit vigyenek</span></a>
+    <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Saját GPU-szerverrel rendelkező cégek</span><span class="y">Dokumentumok, hívások és adatok felhős API-k nélkül</span></a>
   </div>
 
   <!-- ============ PR agentury ============ -->
@@ -612,6 +613,81 @@
       </div>
     </div>
   </div>
+
+  <!-- ============ Vlastní GPU server ============ -->
+  <div class="skin-panel" id="panel-gpu" role="tabpanel" aria-labelledby="tab-gpu" data-skin="gpu">
+    <header class="offer-head">
+      <h2>Egy GPU a felhős API-k számlája helyett</h2>
+      <p>Üzembe helyezem bérelt vagy saját GPU-szerverét, és munkával töltöm meg: adatkinyerés dokumentumokból, hívások átírása és osztályozása, MI-API a csapatainak és több százezer rekord kötegelt feldolgozása. Minden bevezetés előtt az Ön adatain mérem meg a pontosságot, az áteresztőképességet és az ezer darabra jutó költséget.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Mit old meg</h3>
+        <ul>
+          <li><strong>Adatok, amelyek nem kerülhetnek ki.</strong> A szerződések, számlák, hívásfelvételek és belső dokumentumok egy olyan szerveren maradnak, amely az Ön ellenőrzése alatt áll.</li>
+          <li><strong>Számla, amely a forgalommal együtt nő.</strong> A felhős API-kért minden tokenért fizet. A szerver ugyanannyiba kerül, akár ezer oldalt dolgoz fel, akár százezret.</li>
+          <li><strong>Drága GPU, amely tétlenül áll.</strong> A szerver teljes gőzzel dolgozik: napközben embereket szolgál ki, éjjel kötegeket dolgoz fel.</li>
+        </ul>
+        <h3>Mit kap</h3>
+        <ul>
+          <li>A szerver üzembe helyezését: nyelvi és képi modellek, beszédfelismerés, kép- és videógenerálás. A modellösszeállítások között egyetlen paranccsal lehet váltani, mert egyszerre nem fér el minden a GPU memóriájában.</li>
+          <li>Felügyeletet a Grafanában: a GPU terhelése és memóriája, hőmérsékletek, kérési sorok, válaszidők és fogyasztás.</li>
+          <li>Adatkinyerést dokumentumokból: számlák, szerződések és szkennelt iratok strukturált JSON-ba. A tesztben óránként 944 oldal, a mezők 100%-os pontosságával.</li>
+          <li>Híváselemzést: átírás csatornánként, téma, hangulat, személyazonosság-ellenőrzés és következő lépés. A tesztben óránként több mint 1 100 hívás egyetlen GPU-n.</li>
+          <li>MI-API-t több csapatnak: kulcsok, egyidejűségi korlátok, engedélyezett modellek és tokenelszámolás csapatonként. A chatbot 133 ms-on belül válaszol akkor is, ha mellette köteg fut.</li>
+          <li>Kötegelt feldolgozást: több százezer rekord egy éjszaka alatt, például a cseh nyilvános szerződésregiszter szerződéseinek osztályozása óránként több mint 150 ezres tempóban.</li>
+          <li>Modellfinomhangolást az Ön adatain. Kézzel írt egyházi anyakönyvek átírásánál 17 perc tanítás 24-ről 67%-ra emelte a mezők pontosságát.</li>
+          <li>Mentéseket, dokumentációt és szkripteket, amelyekkel a szerver a nulláról újraépíthető.</li>
+        </ul>
+        <h3>Min dolgozom</h3>
+        <ul>
+          <li>Hangklónozás saját szerveren, hogy a hangfelvételek ne hagyják el a céget.</li>
+          <li>Képmodellek tanítása egy stílusra vagy termékre, nem csak a használatuk.</li>
+          <li>Képek tömeges átalakítása 3D-modellekké, valamint a kép-, videó- és hanggenerálás összehasonlító tesztjei.</li>
+          <li>Játékágensek tanítása megerősítéses tanulással és sakk-kvízek generálása.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Őszintén szólva</h3>
+          <ul>
+            <li>A fenti számok szintetikus és nyilvános adatokon végzett tesztekből származnak. Az Ön adatain az első lépésben mérjük meg őket, és csak utána ígérek eredményt.</li>
+            <li>A szerver nincs benne az árban. Azt Ön béreli vagy vásárolja meg. Segítek kiválasztani, és kiszámolom, mikor éri meg jobban, mint az API.</li>
+            <li>Egy 48 GB memóriájú GPU egy nagy modellt bír el, vagy több kisebbet. Ami nem fér el, másik összeállításban fut, és az összeállítások között váltani kell.</li>
+            <li>A nyílt modellek nem mindenben érik el a legjobb fizetős modellek szintjét. Finomhangolás nélkül a kézírásos iratok mezőinek csak nagyjából egyharmadát olvassák be pontosan.</li>
+            <li>A cseh beszéd átírásában a szavak 8–12%-a hibás. A hívások osztályozására és statisztikákra ez elég, szó szerinti leiratra nem.</li>
+          </ul>
+        </div>
+        <h3>Árak</h3>
+        <table class="price">
+          <tr><th>Benchmark: egy feladat az Ön adatain, jelentés a pontosságról, az áteresztőképességről és az ezer darabra jutó költségről</th><td>25 000 CZK<span class="sub">levonjuk a bevezetés árából</span></td></tr>
+          <tr><th>A szerver üzembe helyezése: modellek, felügyelet, mentések, API</th><td>60 000 CZK</td></tr>
+          <tr><th>Egyedi feladat: dokumentumok, hívások vagy kötegelt feldolgozás</th><td>45 000 CZK-tól</td></tr>
+          <tr><th>MI-API csapatoknak: kulcsok, korlátok és elszámolás</th><td>40 000 CZK-tól</td></tr>
+          <tr><th>Modellfinomhangolás az Ön adatain</th><td>30 000 CZK-tól</td></tr>
+          <tr><th>Üzemeltetés és karbantartás</th><td>havi 15 000 CZK<span class="sub">legalább 6 hónapra</span></td></tr>
+        </table>
+        <p class="price-note">Nettó árak (ÁFA nélkül).</p>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Első lépés: benchmark az Ön adatain</h3>
+      <p>Kiválaszt egy feladatot, és küld egy adatmintát, például száz számlát vagy tíz óra hívást. Két héten belül megkapja a jelentést: milyen pontosan boldogul a modell, mennyit végez el egy óra alatt, és mennyibe kerül ezer darab a szerveren a felhős API-hoz képest.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=Benchmark%20saj%C3%A1t%20GPU-n">Írjon a benchmark ügyében</a>
+    </div>
+    <div class="tech">
+      <h3>Technológia</h3>
+      <dl>
+        <div><dt>Szerver</dt><dd>NVIDIA L40S 48 GB-tal, Ubuntu, Docker Compose, NVIDIA Container Toolkit, a modellösszeállítások váltása szkripttel; hozzáférés csak SSH-alagúton</dd></div>
+        <div><dt>Nyelvi modellek</dt><dd>vLLM; Qwen3 32B, Qwen3 30B-A3B (MoE) a nagy kötegekhez, Qwen3-VL dokumentumokhoz és szkennelt iratokhoz; JSON-sémával kikényszerített kimenet, prefix caching</dd></div>
+        <div><dt>Beszéd</dt><dd>Whisper large-v3-turbo beszédészleléssel, átírás csatornánként; Piper a cseh hanghoz</dd></div>
+        <div><dt>API csapatoknak</dt><dd>Go nyelvű gateway kulcsokkal, korlátokkal és tokenméréssel, streamelésnél is; LiteLLM; az OpenAI API-val kompatibilis felület</dd></div>
+        <div><dt>Finomhangolás</dt><dd>QLoRA Unslothtal, a súlyok összevonása és telepítés vLLM-be; kiértékelés olyan adatokon, amelyeket a modell a tanítás során nem látott</dd></div>
+        <div><dt>Kép és videó</dt><dd>ComfyUI, FLUX, Wan 2.2</dd></div>
+        <div><dt>Felügyelet</dt><dd>Prometheus, Grafana, NVIDIA DCGM, node-exporter; GPU-napló minden mérésnél és eredmények JSON-ban</dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
 <section class="biz-steps">
@@ -653,7 +729,7 @@
   "url": "__URL__",
   "inLanguage": "__LANG__",
   "image": "__OGIMAGE__",
-  "description": "Privát MI-stúdió ügynökségeknek és játékstúdióknak, tanácsadó webshopoknak, lakásbérlési platform, nyugodt konyha éttermeknek, munkaidő-nyilvántartás terepen dolgozó cégeknek, szókártyák iskoláknak és családfa egyházi anyakönyvekből. Fix árak, előbb egy kis fizetős pilotprojekt.",
+  "description": "Privát MI-stúdió ügynökségeknek és játékstúdióknak, tanácsadó webshopoknak, lakásbérlési platform, nyugodt konyha éttermeknek, munkaidő-nyilvántartás terepen dolgozó cégeknek, szókártyák iskoláknak, családfa egyházi anyakönyvekből és MI saját GPU-szerveren. Fix árak, előbb egy kis fizetős pilotprojekt.",
   "founder": { "@type": "Person", "name": "Olin Vořechovský" },
   "priceRange": "1 900–140 000 CZK",
   "hasOfferCatalog": {
@@ -667,7 +743,8 @@
       { "@type": "Offer", "name": "Egyedi szókártyapakli iskoláknak", "price": "3500", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Családfa: egy vonal, 4 nemzedék", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Lakásbérlési platform pilotprojekt", "price": "25000", "priceCurrency": "CZK" },
-      { "@type": "Offer", "name": "Předávka pilotprojekt éttermeknek", "price": "15000", "priceCurrency": "CZK" }
+      { "@type": "Offer", "name": "Předávka pilotprojekt éttermeknek", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "MI-feladat benchmarkja saját GPU-szerveren", "price": "25000", "priceCurrency": "CZK" }
     ]
   }
 }

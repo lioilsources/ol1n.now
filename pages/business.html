@@ -1,5 +1,5 @@
 <!-- title: AI a software pro malé týmy | Olin Vořechovský -->
-<!-- description: AI studio pro agentury a hry, poradce pro e-shopy, pronájmy pro realitky, klidná kuchyně pro restaurace, docházka, kartičky a rodokmen. Pevné ceny. -->
+<!-- description: AI studio pro agentury a hry, poradce pro e-shopy, pronájmy, kuchyně pro restaurace, docházka, kartičky, rodokmen a AI na vlastní GPU. Pevné ceny. -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
@@ -14,7 +14,7 @@
 
 <header class="biz-hero">
   <h1>Dělám AI a software pro malé týmy. Běží u vás, patří vám a předem víte, kolik stojí.</h1>
-  <p class="biz-lead">Jsem Olin Vořechovský. V kanceláři mi běží vlastní AI studio a kolem něj nástroje, které denně používám. Co funguje mně, stavím i pro agentury, herní studia, e-shopy, realitky, restaurace, školy a malé firmy.</p>
+  <p class="biz-lead">Jsem Olin Vořechovský. V kanceláři mi běží vlastní AI studio a kolem něj nástroje, které denně používám. Co funguje mně, stavím i pro agentury, herní studia, e-shopy, realitky, restaurace, školy, malé firmy a firmy s vlastním GPU serverem.</p>
   <ul class="biz-rules">
     <li><b>Data zůstávají u vás</b>Kde to jde, běží všechno na vašem stroji nebo pod vaším účtem.</li>
     <li><b>Pevná cena</b>Žádné kredity ani platby za uživatele. Ceník máte na téhle stránce.</li>
@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Rodokmen</span><span class="y">Předci dohledaní v matrikách</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Realitky a správci nájmů</span><span class="y">Pronájem od inzerátu po zaplacený nájem</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Restaurace</span><span class="y">Kuchyň slyší objednávky, plac ví, kdy co nést</span></a>
+    <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Firmy s vlastním GPU serverem</span><span class="y">Dokumenty, hovory a data bez cloudových API</span></a>
   </div>
 
   <!-- ============ PR agentury ============ -->
@@ -612,6 +613,81 @@
       </div>
     </div>
   </div>
+
+  <!-- ============ Vlastní GPU server ============ -->
+  <div class="skin-panel" id="panel-gpu" role="tabpanel" aria-labelledby="tab-gpu" data-skin="gpu">
+    <header class="offer-head">
+      <h2>Jedna GPU místo účtu za cloudová API</h2>
+      <p>Pronajatý nebo vlastní GPU server zprovozním a naplním prací: vytěžování dokumentů, přepis a třídění hovorů, AI API pro vaše týmy a dávkové zpracování statisíců záznamů. Před každým nasazením změřím přesnost, propustnost a cenu za tisíc kusů na vašich datech.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Co to řeší</h3>
+        <ul>
+          <li><strong>Data, která nesmí ven.</strong> Smlouvy, faktury, nahrávky hovorů a interní dokumenty zůstanou na serveru, který máte pod kontrolou.</li>
+          <li><strong>Účet, který roste s provozem.</strong> Za cloudová API platíte za každý token. Server stojí stejně, ať zpracuje tisíc stran, nebo sto tisíc.</li>
+          <li><strong>Drahá GPU, která se fláká.</strong> Server poběží naplno: přes den obsluhuje lidi, v noci zpracovává dávky.</li>
+        </ul>
+        <h3>Co dostanete</h3>
+        <ul>
+          <li>Zprovoznění serveru: jazykové a obrazové modely, přepis řeči, generování obrázků a videa. Přepínání mezi sestavami modelů jedním příkazem, protože všechno se do paměti GPU nevejde naráz.</li>
+          <li>Dohled v Grafaně: vytížení a paměť GPU, teploty, fronty požadavků, odezvy a spotřeba.</li>
+          <li>Vytěžování dokumentů: faktury, smlouvy a skeny do strukturovaného JSONu. V testu 944 stran za hodinu se 100% přesností polí.</li>
+          <li>Analýzu hovorů: přepis po kanálech, téma, nálada, ověření identity a další krok. V testu přes 1 100 hovorů za hodinu na jedné GPU.</li>
+          <li>AI API pro více týmů: klíče, limity souběhu, povolené modely a vyúčtování tokenů po týmech. Chatbot drží odezvu do 133 ms, i když vedle běží dávka.</li>
+          <li>Dávkové zpracování: statisíce záznamů přes noc, například klasifikace smluv z Registru smluv rychlostí přes 150 tisíc za hodinu.</li>
+          <li>Doladění modelu na vašich datech. U přepisu rukopisných matrik zvedlo 17 minut tréninku přesnost polí z 24 na 67 %.</li>
+          <li>Zálohy, dokumentaci a skripty, které umí server postavit znovu od nuly.</li>
+        </ul>
+        <h3>Na čem pracuji</h3>
+        <ul>
+          <li>Klonování hlasu na vlastním serveru, aby nahrávky hlasu neopustily firmu.</li>
+          <li>Trénink obrazových modelů na styl nebo produkt místo jejich pouhého používání.</li>
+          <li>Hromadný převod obrázků na 3D modely a srovnávací testy generování obrázků, videa a zvuku.</li>
+          <li>Trénink herních agentů posilovaným učením a generování šachových kvízů.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Na rovinu</h3>
+          <ul>
+            <li>Čísla výše jsou z testů na syntetických a veřejných datech. Na vašich datech je změříme v prvním kroku a teprve pak slibuji výsledek.</li>
+            <li>Server v ceně není. Pronajmete si ho, nebo koupíte, sami. Pomůžu vybrat a spočítám, kdy se vyplatí víc než API.</li>
+            <li>Jedna GPU se 48 GB paměti udrží jeden velký model, nebo několik menších. Co se nevejde, běží v jiné sestavě a mezi sestavami se přepíná.</li>
+            <li>Otevřené modely nejsou ve všem na úrovni nejlepších placených. Rukopisy bez doladění přečtou jen zhruba třetinu polí přesně.</li>
+            <li>Přepis české řeči má 8–12 % chybných slov. Na třídění a statistiky hovorů to stačí, na doslovný záznam ne.</li>
+          </ul>
+        </div>
+        <h3>Cena</h3>
+        <table class="price">
+          <tr><th>Benchmark: jedna úloha na vašich datech, report s přesností, propustností a cenou za tisíc kusů</th><td>25 000 Kč<span class="sub">odečte se ze zavedení</span></td></tr>
+          <tr><th>Zprovoznění serveru: modely, dohled, zálohy, API</th><td>60 000 Kč</td></tr>
+          <tr><th>Úloha na míru: dokumenty, hovory nebo dávkové zpracování</th><td>od 45 000 Kč</td></tr>
+          <tr><th>AI API pro týmy: klíče, limity a vyúčtování</th><td>od 40 000 Kč</td></tr>
+          <tr><th>Doladění modelu na vašich datech</th><td>od 30 000 Kč</td></tr>
+          <tr><th>Provoz a údržba</th><td>15 000 Kč měsíčně<span class="sub">nejméně 6 měsíců</span></td></tr>
+        </table>
+        <p class="price-note">Ceny bez DPH.</p>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>První krok: benchmark na vašich datech</h3>
+      <p>Vyberete jednu úlohu a pošlete vzorek dat, třeba sto faktur nebo deset hodin hovorů. Za dva týdny dostanete report: jak přesně to model zvládne, kolik toho stihne za hodinu a kolik vás bude stát tisíc kusů na serveru proti cloudovému API.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=Benchmark%20na%20vlastn%C3%AD%20GPU">Napsat kvůli benchmarku</a>
+    </div>
+    <div class="tech">
+      <h3>Technologie</h3>
+      <dl>
+        <div><dt>Server</dt><dd>NVIDIA L40S se 48 GB, Ubuntu, Docker Compose, NVIDIA Container Toolkit, přepínání sestav modelů skriptem; přístup jen přes SSH tunel</dd></div>
+        <div><dt>Jazykové modely</dt><dd>vLLM; Qwen3 32B, Qwen3 30B-A3B (MoE) pro velké dávky, Qwen3-VL pro dokumenty a skeny; výstup vynucený JSON schématem, prefix caching</dd></div>
+        <div><dt>Řeč</dt><dd>Whisper large-v3-turbo s detekcí řeči, přepis po kanálech; Piper pro český hlas</dd></div>
+        <div><dt>API pro týmy</dt><dd>gateway v Go s klíči, limity a měřením tokenů včetně streamu; LiteLLM; rozhraní kompatibilní s OpenAI API</dd></div>
+        <div><dt>Doladění</dt><dd>QLoRA přes Unsloth, sloučení vah a nasazení do vLLM; vyhodnocení na datech, která model při tréninku neviděl</dd></div>
+        <div><dt>Obraz a video</dt><dd>ComfyUI, FLUX, Wan 2.2</dd></div>
+        <div><dt>Dohled</dt><dd>Prometheus, Grafana, NVIDIA DCGM, node-exporter; log GPU u každého měření a výsledky v JSON</dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
 <section class="biz-steps">
@@ -653,7 +729,7 @@
   "url": "__URL__",
   "inLanguage": "__LANG__",
   "image": "__OGIMAGE__",
-  "description": "Soukromé AI studio pro agentury a herní studia, poradce pro e-shopy, platforma pro pronájem bytů, klidná kuchyně pro restaurace, docházka pro firmy v terénu, kartičky pro školy a rodokmen z matrik. Pevné ceny, nejdřív malý placený pilot.",
+  "description": "Soukromé AI studio pro agentury a herní studia, poradce pro e-shopy, platforma pro pronájem bytů, klidná kuchyně pro restaurace, docházka pro firmy v terénu, kartičky pro školy, rodokmen z matrik a AI na vlastním GPU serveru. Pevné ceny, nejdřív malý placený pilot.",
   "founder": { "@type": "Person", "name": "Olin Vořechovský" },
   "priceRange": "1 900–140 000 CZK",
   "hasOfferCatalog": {
@@ -667,7 +743,8 @@
       { "@type": "Offer", "name": "Balíček kartiček na míru pro školy", "price": "3500", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Rodokmen: jedna linie, 4 generace", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilot platformy pro pronájem bytů", "price": "25000", "priceCurrency": "CZK" },
-      { "@type": "Offer", "name": "Pilot Předávky pro restaurace", "price": "15000", "priceCurrency": "CZK" }
+      { "@type": "Offer", "name": "Pilot Předávky pro restaurace", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Benchmark AI úlohy na vlastním GPU serveru", "price": "25000", "priceCurrency": "CZK" }
     ]
   }
 }

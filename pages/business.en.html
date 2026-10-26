@@ -1,5 +1,5 @@
 <!-- title: AI and software for small teams | Olin Vořechovský -->
-<!-- description: AI studio for agencies and games, e-shop advisor, rentals for estate agents, a calm kitchen for restaurants, attendance, flashcards, family trees. Fixed prices. -->
+<!-- description: AI studio for agencies and games, e-shop advisor, rentals, restaurant kitchens, attendance, flashcards, family trees and AI on your own GPU. Fixed prices. -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
@@ -14,7 +14,7 @@
 
 <header class="biz-hero">
   <h1>I build AI and software for small teams. It runs in-house, it’s yours, and you know the price up front.</h1>
-  <p class="biz-lead">I’m Olin Vořechovský. My own AI studio runs in my office, along with the tools I use every day. What works for me, I also build for agencies, game studios, e-shops, estate agents, restaurants, schools and small businesses.</p>
+  <p class="biz-lead">I’m Olin Vořechovský. My own AI studio runs in my office, along with the tools I use every day. What works for me, I also build for agencies, game studios, e-shops, estate agents, restaurants, schools, small businesses and companies with their own GPU server.</p>
   <ul class="biz-rules">
     <li><b>Your data stays with you</b>Wherever possible, everything runs on your machine or under your account.</li>
     <li><b>Fixed price</b>No credits and no per-user fees. The price list is on this page.</li>
@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Family tree</span><span class="y">Ancestors traced in parish registers</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Estate agents and rental managers</span><span class="y">Renting, from the listing to the paid rent</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Restaurants</span><span class="y">The kitchen hears the orders, the floor knows when to carry what</span></a>
+    <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Companies with their own GPU server</span><span class="y">Documents, calls and data without cloud APIs</span></a>
   </div>
 
   <!-- ============ PR agentury ============ -->
@@ -612,6 +613,81 @@
       </div>
     </div>
   </div>
+
+  <!-- ============ Vlastní GPU server ============ -->
+  <div class="skin-panel" id="panel-gpu" role="tabpanel" aria-labelledby="tab-gpu" data-skin="gpu">
+    <header class="offer-head">
+      <h2>One GPU instead of a bill for cloud APIs</h2>
+      <p>I set up a rented or owned GPU server and give it work: extracting data from documents, transcribing and sorting calls, an AI API for your teams and batch processing of hundreds of thousands of records. Before every deployment I measure accuracy, throughput and the cost per thousand items on your data.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>What it solves</h3>
+        <ul>
+          <li><strong>Data that mustn’t leave.</strong> Contracts, invoices, call recordings and internal documents stay on a server you control.</li>
+          <li><strong>A bill that grows with usage.</strong> With cloud APIs you pay for every token. A server costs the same whether it handles a thousand pages or a hundred thousand.</li>
+          <li><strong>An expensive GPU sitting idle.</strong> The server will run at full load: serving people by day, processing batches at night.</li>
+        </ul>
+        <h3>What you get</h3>
+        <ul>
+          <li>Server setup: language and vision models, speech transcription, image and video generation. Switching between model sets with a single command, because not everything fits into GPU memory at once.</li>
+          <li>Monitoring in Grafana: GPU load and memory, temperatures, request queues, response times and power draw.</li>
+          <li>Document extraction: invoices, contracts and scans into structured JSON. In testing, 944 pages an hour with 100% field accuracy.</li>
+          <li>Call analysis: transcription per channel, topic, sentiment, identity check and next step. In testing, over 1,100 calls an hour on a single GPU.</li>
+          <li>An AI API for several teams: keys, concurrency limits, allowed models and token billing per team. The chatbot keeps response times under 133 ms even with a batch running alongside.</li>
+          <li>Batch processing: hundreds of thousands of records overnight, for example classifying contracts from the Czech public contract register at over 150,000 an hour.</li>
+          <li>Fine-tuning a model on your data. For transcribing handwritten parish registers, 17 minutes of training raised field accuracy from 24 to 67%.</li>
+          <li>Backups, documentation and scripts that can rebuild the server from scratch.</li>
+        </ul>
+        <h3>What I’m working on</h3>
+        <ul>
+          <li>Voice cloning on your own server, so voice recordings never leave the company.</li>
+          <li>Training image models on a style or a product instead of just using them.</li>
+          <li>Bulk conversion of images into 3D models, and comparison tests of image, video and audio generation.</li>
+          <li>Training game agents with reinforcement learning, and generating chess puzzles.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Straight talk</h3>
+          <ul>
+            <li>The numbers above come from tests on synthetic and public data. We measure them on your data in the first step, and only then do I promise a result.</li>
+            <li>The server isn’t included in the price. You rent or buy it yourselves. I’ll help you choose and work out when it pays off better than an API.</li>
+            <li>One GPU with 48 GB of memory holds one large model or several smaller ones. Whatever doesn’t fit runs in another model set, and you switch between sets.</li>
+            <li>Open models aren’t at the level of the best paid ones in everything. Without fine-tuning, they read only about a third of the fields in handwritten records correctly.</li>
+            <li>Czech speech transcription has a word error rate of 8–12%. That’s enough for sorting calls and call statistics, not for a verbatim record.</li>
+          </ul>
+        </div>
+        <h3>Price</h3>
+        <table class="price">
+          <tr><th>Benchmark: one task on your data, a report with accuracy, throughput and cost per thousand items</th><td>CZK 25,000<span class="sub">deducted from the setup fee</span></td></tr>
+          <tr><th>Server setup: models, monitoring, backups, API</th><td>CZK 60,000</td></tr>
+          <tr><th>Custom task: documents, calls or batch processing</th><td>from CZK 45,000</td></tr>
+          <tr><th>AI API for teams: keys, limits and billing</th><td>from CZK 40,000</td></tr>
+          <tr><th>Fine-tuning a model on your data</th><td>from CZK 30,000</td></tr>
+          <tr><th>Operation and maintenance</th><td>CZK 15,000 a month<span class="sub">minimum 6 months</span></td></tr>
+        </table>
+        <p class="price-note">Prices excl. VAT.</p>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>First step: a benchmark on your data</h3>
+      <p>You pick one task and send a sample of data, say a hundred invoices or ten hours of calls. Within two weeks you get a report: how accurately the model handles it, how much it gets through in an hour and what a thousand items will cost you on the server compared with a cloud API.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=Benchmark%20on%20your%20own%20GPU">Ask about a benchmark</a>
+    </div>
+    <div class="tech">
+      <h3>Technology</h3>
+      <dl>
+        <div><dt>Server</dt><dd>NVIDIA L40S with 48 GB, Ubuntu, Docker Compose, NVIDIA Container Toolkit, a script for switching model sets; access only through an SSH tunnel</dd></div>
+        <div><dt>Language models</dt><dd>vLLM; Qwen3 32B, Qwen3 30B-A3B (MoE) for large batches, Qwen3-VL for documents and scans; output enforced by a JSON schema, prefix caching</dd></div>
+        <div><dt>Speech</dt><dd>Whisper large-v3-turbo with voice activity detection, transcription per channel; Piper for a Czech voice</dd></div>
+        <div><dt>API for teams</dt><dd>a gateway in Go with keys, limits and token metering including streams; LiteLLM; an OpenAI-compatible API</dd></div>
+        <div><dt>Fine-tuning</dt><dd>QLoRA via Unsloth, merging the weights and deploying to vLLM; evaluation on data the model didn’t see in training</dd></div>
+        <div><dt>Image and video</dt><dd>ComfyUI, FLUX, Wan 2.2</dd></div>
+        <div><dt>Monitoring</dt><dd>Prometheus, Grafana, NVIDIA DCGM, node-exporter; a GPU log with every measurement and results in JSON</dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
 <section class="biz-steps">
@@ -653,7 +729,7 @@
   "url": "__URL__",
   "inLanguage": "__LANG__",
   "image": "__OGIMAGE__",
-  "description": "Private AI studio for agencies and game studios, e-shop advisor, a flat rental platform, a calm kitchen for restaurants, field time tracking, school flashcards, family trees. Fixed prices, small paid pilot first.",
+  "description": "Private AI studio for agencies and game studios, e-shop advisor, a flat rental platform, a calm kitchen for restaurants, field time tracking, school flashcards, family trees and AI on your own GPU server. Fixed prices, small paid pilot first.",
   "founder": { "@type": "Person", "name": "Olin Vořechovský" },
   "priceRange": "CZK 1,900–140,000",
   "hasOfferCatalog": {
@@ -667,7 +743,8 @@
       { "@type": "Offer", "name": "Custom flashcard deck for schools", "price": "3500", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Family tree: one line, 4 generations", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Flat rental platform pilot", "price": "25000", "priceCurrency": "CZK" },
-      { "@type": "Offer", "name": "Předávka pilot for restaurants", "price": "15000", "priceCurrency": "CZK" }
+      { "@type": "Offer", "name": "Předávka pilot for restaurants", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Benchmark of an AI task on your own GPU server", "price": "25000", "priceCurrency": "CZK" }
     ]
   }
 }

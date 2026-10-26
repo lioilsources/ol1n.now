@@ -1,5 +1,5 @@
 <!-- title: KI und Software für kleine Teams | Olin Vořechovský -->
-<!-- description: KI-Studio für Agenturen und Spiele, Onlineshop-Berater, Vermietung für Makler, ruhige Küche für Restaurants, Zeiterfassung, Lernkarten, Stammbaum. Festpreise. -->
+<!-- description: KI-Studio für Agenturen und Spiele, Onlineshop-Berater, Vermietung, Restaurantküche, Zeiterfassung, Lernkarten, Stammbaum und KI auf eigener GPU. Festpreise. -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
@@ -14,7 +14,7 @@
 
 <header class="biz-hero">
   <h1>Ich baue KI und Software für kleine Teams. Sie läuft bei Ihnen, gehört Ihnen, und Sie wissen vorher, was sie kostet.</h1>
-  <p class="biz-lead">Ich bin Olin Vořechovský. In meinem Büro läuft ein eigenes KI-Studio, dazu Werkzeuge, die ich täglich nutze. Was bei mir funktioniert, baue ich auch für Agenturen, Spielestudios, Onlineshops, Immobilienmakler, Restaurants, Schulen und kleine Firmen.</p>
+  <p class="biz-lead">Ich bin Olin Vořechovský. In meinem Büro läuft ein eigenes KI-Studio, dazu Werkzeuge, die ich täglich nutze. Was bei mir funktioniert, baue ich auch für Agenturen, Spielestudios, Onlineshops, Immobilienmakler, Restaurants, Schulen, kleine Firmen und Firmen mit eigenem GPU-Server.</p>
   <ul class="biz-rules">
     <li><b>Ihre Daten bleiben bei Ihnen</b>Wo es geht, läuft alles auf Ihrem Rechner oder unter Ihrem Konto.</li>
     <li><b>Festpreis</b>Keine Credits und keine Gebühren pro Nutzer. Die Preisliste steht auf dieser Seite.</li>
@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Stammbaum</span><span class="y">Vorfahren, gefunden in Kirchenbüchern</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Makler und Mietverwalter</span><span class="y">Vermietung vom Inserat bis zur bezahlten Miete</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Restaurants</span><span class="y">Die Küche hört die Bestellungen, der Service weiß, wann was rausgeht</span></a>
+    <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Firmen mit eigenem GPU-Server</span><span class="y">Dokumente, Anrufe und Daten ohne Cloud-APIs</span></a>
   </div>
 
   <!-- ============ PR agentury ============ -->
@@ -612,6 +613,81 @@
       </div>
     </div>
   </div>
+
+  <!-- ============ Vlastní GPU server ============ -->
+  <div class="skin-panel" id="panel-gpu" role="tabpanel" aria-labelledby="tab-gpu" data-skin="gpu">
+    <header class="offer-head">
+      <h2>Eine GPU statt einer Rechnung für Cloud-APIs</h2>
+      <p>Ich richte einen gemieteten oder eigenen GPU-Server ein und gebe ihm Arbeit: Daten aus Dokumenten auslesen, Anrufe transkribieren und einordnen, eine KI-API für Ihre Teams und die Stapelverarbeitung von Hunderttausenden Datensätzen. Vor jedem Einsatz messe ich Genauigkeit, Durchsatz und Kosten pro tausend Stück an Ihren Daten.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Was es löst</h3>
+        <ul>
+          <li><strong>Daten, die nicht nach draußen dürfen.</strong> Verträge, Rechnungen, Gesprächsaufzeichnungen und interne Dokumente bleiben auf einem Server, den Sie unter Kontrolle haben.</li>
+          <li><strong>Eine Rechnung, die mit der Nutzung wächst.</strong> Bei Cloud-APIs zahlen Sie für jedes Token. Der Server kostet gleich viel, ob er tausend Seiten verarbeitet oder hunderttausend.</li>
+          <li><strong>Eine teure GPU, die sich langweilt.</strong> Der Server läuft unter Volllast: tagsüber bedient er Menschen, nachts verarbeitet er Stapel.</li>
+        </ul>
+        <h3>Was Sie bekommen</h3>
+        <ul>
+          <li>Einrichtung des Servers: Sprach- und Bildmodelle, Spracherkennung, Bild- und Videogenerierung. Umschalten zwischen Modellsätzen mit einem Befehl, denn nicht alles passt gleichzeitig in den GPU-Speicher.</li>
+          <li>Überwachung in Grafana: Auslastung und Speicher der GPU, Temperaturen, Anfragewarteschlangen, Antwortzeiten und Stromverbrauch.</li>
+          <li>Dokumentenauslese: Rechnungen, Verträge und Scans als strukturiertes JSON. Im Test 944 Seiten pro Stunde bei 100 % Genauigkeit der Felder.</li>
+          <li>Gesprächsanalyse: Transkription je Kanal, Thema, Stimmung, Identitätsprüfung und nächster Schritt. Im Test über 1.100 Anrufe pro Stunde auf einer einzigen GPU.</li>
+          <li>KI-API für mehrere Teams: Schlüssel, Parallelitätslimits, freigegebene Modelle und Token-Abrechnung je Team. Der Chatbot hält die Antwortzeit unter 133 ms, auch wenn daneben ein Stapel läuft.</li>
+          <li>Stapelverarbeitung: Hunderttausende Datensätze über Nacht, zum Beispiel die Klassifizierung von Verträgen aus dem tschechischen Vertragsregister mit über 150.000 pro Stunde.</li>
+          <li>Feinabstimmung eines Modells auf Ihre Daten. Beim Transkribieren handschriftlicher Kirchenbücher haben 17 Minuten Training die Genauigkeit der Felder von 24 auf 67 % gehoben.</li>
+          <li>Backups, Dokumentation und Skripte, die den Server von Grund auf neu aufbauen können.</li>
+        </ul>
+        <h3>Woran ich arbeite</h3>
+        <ul>
+          <li>Stimmklonen auf dem eigenen Server, damit Sprachaufnahmen die Firma nicht verlassen.</li>
+          <li>Training von Bildmodellen auf einen Stil oder ein Produkt, statt sie nur zu nutzen.</li>
+          <li>Massenumwandlung von Bildern in 3D-Modelle und Vergleichstests für die Generierung von Bildern, Videos und Audio.</li>
+          <li>Training von Spielagenten mit bestärkendem Lernen und Generierung von Schachaufgaben.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Klartext</h3>
+          <ul>
+            <li>Die Zahlen oben stammen aus Tests mit synthetischen und öffentlichen Daten. An Ihren Daten messen wir sie im ersten Schritt, und erst dann verspreche ich ein Ergebnis.</li>
+            <li>Der Server ist im Preis nicht enthalten. Sie mieten oder kaufen ihn selbst. Ich helfe bei der Auswahl und rechne aus, ab wann er sich mehr lohnt als eine API.</li>
+            <li>Eine GPU mit 48 GB Speicher hält ein großes Modell oder mehrere kleinere. Was nicht hineinpasst, läuft in einem anderen Modellsatz, und zwischen den Sätzen wird umgeschaltet.</li>
+            <li>Offene Modelle sind nicht in allem auf dem Niveau der besten kostenpflichtigen. Handschriften lesen sie ohne Feinabstimmung nur bei etwa einem Drittel der Felder genau.</li>
+            <li>Die Transkription tschechischer Sprache hat 8–12 % falsche Wörter. Für das Einordnen von Anrufen und Statistiken reicht das, für ein wörtliches Protokoll nicht.</li>
+          </ul>
+        </div>
+        <h3>Preis</h3>
+        <table class="price">
+          <tr><th>Benchmark: eine Aufgabe an Ihren Daten, Bericht mit Genauigkeit, Durchsatz und Kosten pro tausend Stück</th><td>25.000 CZK<span class="sub">wird auf die Einführung angerechnet</span></td></tr>
+          <tr><th>Einrichtung des Servers: Modelle, Überwachung, Backups, API</th><td>60.000 CZK</td></tr>
+          <tr><th>Maßgeschneiderte Aufgabe: Dokumente, Anrufe oder Stapelverarbeitung</th><td>ab 45.000 CZK</td></tr>
+          <tr><th>KI-API für Teams: Schlüssel, Limits und Abrechnung</th><td>ab 40.000 CZK</td></tr>
+          <tr><th>Feinabstimmung eines Modells auf Ihre Daten</th><td>ab 30.000 CZK</td></tr>
+          <tr><th>Betrieb und Wartung</th><td>15.000 CZK pro Monat<span class="sub">mindestens 6 Monate</span></td></tr>
+        </table>
+        <p class="price-note">Preise zzgl. MwSt.</p>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Erster Schritt: ein Benchmark an Ihren Daten</h3>
+      <p>Sie wählen eine Aufgabe und schicken eine Datenprobe, etwa hundert Rechnungen oder zehn Stunden Anrufe. Nach zwei Wochen bekommen Sie einen Bericht: wie genau das Modell die Aufgabe löst, wie viel es pro Stunde schafft und was Sie tausend Stück auf dem Server im Vergleich zur Cloud-API kosten.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=Benchmark%20auf%20eigener%20GPU">Benchmark anfragen</a>
+    </div>
+    <div class="tech">
+      <h3>Technik</h3>
+      <dl>
+        <div><dt>Server</dt><dd>NVIDIA L40S mit 48 GB, Ubuntu, Docker Compose, NVIDIA Container Toolkit, Umschalten der Modellsätze per Skript; Zugriff nur über einen SSH-Tunnel</dd></div>
+        <div><dt>Sprachmodelle</dt><dd>vLLM; Qwen3 32B, Qwen3 30B-A3B (MoE) für große Stapel, Qwen3-VL für Dokumente und Scans; Ausgabe per JSON-Schema erzwungen, Prefix Caching</dd></div>
+        <div><dt>Sprache</dt><dd>Whisper large-v3-turbo mit Sprachaktivitätserkennung, Transkription je Kanal; Piper für die tschechische Stimme</dd></div>
+        <div><dt>API für Teams</dt><dd>Gateway in Go mit Schlüsseln, Limits und Token-Messung auch bei Streams; LiteLLM; OpenAI-kompatible Schnittstelle</dd></div>
+        <div><dt>Feinabstimmung</dt><dd>QLoRA über Unsloth, Zusammenführen der Gewichte und Bereitstellung in vLLM; Auswertung an Daten, die das Modell im Training nicht gesehen hat</dd></div>
+        <div><dt>Bild und Video</dt><dd>ComfyUI, FLUX, Wan 2.2</dd></div>
+        <div><dt>Überwachung</dt><dd>Prometheus, Grafana, NVIDIA DCGM, node-exporter; GPU-Log zu jeder Messung und Ergebnisse in JSON</dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
 <section class="biz-steps">
@@ -653,7 +729,7 @@
   "url": "__URL__",
   "inLanguage": "__LANG__",
   "image": "__OGIMAGE__",
-  "description": "Privates KI-Studio für Agenturen und Spielestudios, Kaufberater für Onlineshops, Plattform für die Wohnungsvermietung, ruhige Küche für Restaurants, Zeiterfassung vor Ort, Lernkarten für Schulen, Ahnenforschung. Festpreise.",
+  "description": "Privates KI-Studio für Agenturen und Spielestudios, Kaufberater für Onlineshops, Plattform für die Wohnungsvermietung, ruhige Küche für Restaurants, Zeiterfassung vor Ort, Lernkarten für Schulen, Ahnenforschung und KI auf dem eigenen GPU-Server. Festpreise.",
   "founder": { "@type": "Person", "name": "Olin Vořechovský" },
   "priceRange": "1.900–140.000 CZK",
   "hasOfferCatalog": {
@@ -667,7 +743,8 @@
       { "@type": "Offer", "name": "Individuelles Lernkartenset für Schulen", "price": "3500", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Stammbaum: eine Linie, 4 Generationen", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilotprojekt: Plattform für die Wohnungsvermietung", "price": "25000", "priceCurrency": "CZK" },
-      { "@type": "Offer", "name": "Pilotprojekt: Předávka für Restaurants", "price": "15000", "priceCurrency": "CZK" }
+      { "@type": "Offer", "name": "Pilotprojekt: Předávka für Restaurants", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Benchmark einer KI-Aufgabe auf dem eigenen GPU-Server", "price": "25000", "priceCurrency": "CZK" }
     ]
   }
 }

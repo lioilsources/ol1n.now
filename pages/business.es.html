@@ -1,5 +1,5 @@
 <!-- title: IA y software para equipos pequeños | Olin Vořechovský -->
-<!-- description: IA privada para agencias y juegos, asesor de tiendas online, alquileres para inmobiliarias, cocina tranquila para restaurantes, fichaje, tarjetas y genealogía. -->
+<!-- description: IA privada para agencias y juegos, asesor de tiendas online, alquileres, cocinas de restaurante, fichaje, tarjetas, genealogía e IA en su propia GPU. -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
@@ -14,7 +14,7 @@
 
 <header class="biz-hero">
   <h1>Hago IA y software para equipos pequeños. Funciona en su empresa, es suyo y sabe de antemano cuánto cuesta.</h1>
-  <p class="biz-lead">Soy Olin Vořechovský. En mi oficina funciona mi propio estudio de IA y, a su alrededor, herramientas que uso a diario. Lo que me funciona a mí lo construyo también para agencias, estudios de videojuegos, tiendas online, inmobiliarias, restaurantes, colegios y pequeñas empresas.</p>
+  <p class="biz-lead">Soy Olin Vořechovský. En mi oficina funciona mi propio estudio de IA y, a su alrededor, herramientas que uso a diario. Lo que me funciona a mí lo construyo también para agencias, estudios de videojuegos, tiendas online, inmobiliarias, restaurantes, colegios, pequeñas empresas y empresas con su propio servidor GPU.</p>
   <ul class="biz-rules">
     <li><b>Los datos se quedan con usted</b>Siempre que se puede, todo funciona en su propio equipo o con su propia cuenta.</li>
     <li><b>Precio fijo</b>Sin créditos ni pagos por usuario. Tiene las tarifas en esta misma página.</li>
@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Árbol genealógico</span><span class="y">Antepasados localizados en los registros parroquiales</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Inmobiliarias y gestores de alquileres</span><span class="y">El alquiler, del anuncio al pago cobrado</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Restaurantes</span><span class="y">La cocina oye los pedidos y la sala sabe cuándo llevar qué</span></a>
+    <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Empresas con su propio servidor GPU</span><span class="y">Documentos, llamadas y datos sin API en la nube</span></a>
   </div>
 
   <!-- ============ PR agentury ============ -->
@@ -612,6 +613,81 @@
       </div>
     </div>
   </div>
+
+  <!-- ============ Vlastní GPU server ============ -->
+  <div class="skin-panel" id="panel-gpu" role="tabpanel" aria-labelledby="tab-gpu" data-skin="gpu">
+    <header class="offer-head">
+      <h2>Una GPU en lugar de una factura de API en la nube</h2>
+      <p>Pongo en marcha un servidor GPU alquilado o propio y le doy trabajo: extracción de datos de documentos, transcripción y clasificación de llamadas, una API de IA para sus equipos y procesamiento por lotes de cientos de miles de registros. Antes de cada implantación mido la precisión, el rendimiento y el coste por cada mil elementos con sus datos.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Qué resuelve</h3>
+        <ul>
+          <li><strong>Datos que no pueden salir.</strong> Contratos, facturas, grabaciones de llamadas y documentos internos se quedan en un servidor que usted controla.</li>
+          <li><strong>Una factura que crece con el uso.</strong> Con las API en la nube paga cada token. El servidor cuesta lo mismo tanto si procesa mil páginas como cien mil.</li>
+          <li><strong>Una GPU cara que está de brazos cruzados.</strong> El servidor trabajará a pleno rendimiento: de día atiende a personas, de noche procesa lotes.</li>
+        </ul>
+        <h3>Qué recibe</h3>
+        <ul>
+          <li>Puesta en marcha del servidor: modelos de lenguaje y de visión, transcripción de voz, generación de imágenes y vídeo. Cambio entre conjuntos de modelos con un solo comando, porque no todo cabe a la vez en la memoria de la GPU.</li>
+          <li>Supervisión en Grafana: carga y memoria de la GPU, temperaturas, colas de peticiones, tiempos de respuesta y consumo.</li>
+          <li>Extracción de documentos: facturas, contratos y escaneos a JSON estructurado. En pruebas, 944 páginas por hora con un 100 % de precisión en los campos.</li>
+          <li>Análisis de llamadas: transcripción por canal, tema, tono, verificación de identidad y siguiente paso. En pruebas, más de 1.100 llamadas por hora en una sola GPU.</li>
+          <li>API de IA para varios equipos: claves, límites de concurrencia, modelos permitidos y facturación de tokens por equipo. El chatbot mantiene la respuesta por debajo de 133 ms aunque al lado corra un lote.</li>
+          <li>Procesamiento por lotes: cientos de miles de registros en una noche, por ejemplo la clasificación de contratos del registro público de contratos checo a más de 150.000 por hora.</li>
+          <li>Ajuste fino de un modelo con sus datos. En la transcripción de registros parroquiales manuscritos, 17 minutos de entrenamiento subieron la precisión de los campos del 24 al 67 %.</li>
+          <li>Copias de seguridad, documentación y scripts capaces de reconstruir el servidor desde cero.</li>
+        </ul>
+        <h3>En qué estoy trabajando</h3>
+        <ul>
+          <li>Clonación de voz en su propio servidor, para que las grabaciones de voz no salgan de la empresa.</li>
+          <li>Entrenamiento de modelos de imagen con un estilo o un producto, en lugar de limitarse a usarlos.</li>
+          <li>Conversión masiva de imágenes en modelos 3D y pruebas comparativas de generación de imagen, vídeo y audio.</li>
+          <li>Entrenamiento de agentes de juego con aprendizaje por refuerzo y generación de problemas de ajedrez.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Sin rodeos</h3>
+          <ul>
+            <li>Las cifras de arriba salen de pruebas con datos sintéticos y públicos. Con sus datos las medimos en el primer paso, y solo entonces prometo un resultado.</li>
+            <li>El servidor no está incluido en el precio. Lo alquila o lo compra usted. Le ayudo a elegirlo y calculo a partir de cuándo sale más a cuenta que una API.</li>
+            <li>Una GPU con 48 GB de memoria aguanta un modelo grande o varios más pequeños. Lo que no cabe funciona en otro conjunto de modelos, y se cambia de un conjunto a otro.</li>
+            <li>Los modelos abiertos no están en todo al nivel de los mejores de pago. Sin ajuste fino, en los manuscritos solo leen bien aproximadamente un tercio de los campos.</li>
+            <li>La transcripción del habla checa tiene un 8–12 % de palabras erróneas. Basta para clasificar llamadas y sacar estadísticas, no para un acta literal.</li>
+          </ul>
+        </div>
+        <h3>Precio</h3>
+        <table class="price">
+          <tr><th>Benchmark: una tarea con sus datos, informe con precisión, rendimiento y coste por cada mil elementos</th><td>25.000 CZK<span class="sub">se descuenta de la implantación</span></td></tr>
+          <tr><th>Puesta en marcha del servidor: modelos, supervisión, copias de seguridad, API</th><td>60.000 CZK</td></tr>
+          <tr><th>Tarea a medida: documentos, llamadas o procesamiento por lotes</th><td>desde 45.000 CZK</td></tr>
+          <tr><th>API de IA para equipos: claves, límites y facturación</th><td>desde 40.000 CZK</td></tr>
+          <tr><th>Ajuste fino de un modelo con sus datos</th><td>desde 30.000 CZK</td></tr>
+          <tr><th>Servicio y mantenimiento</th><td>15.000 CZK al mes<span class="sub">mínimo 6 meses</span></td></tr>
+        </table>
+        <p class="price-note">Precios sin IVA.</p>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Primer paso: un benchmark con sus datos</h3>
+      <p>Elige una tarea y envía una muestra de datos, por ejemplo cien facturas o diez horas de llamadas. En dos semanas recibe un informe: con qué precisión lo resuelve el modelo, cuánto procesa en una hora y cuánto le costarán mil elementos en el servidor frente a una API en la nube.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=Benchmark%20en%20su%20propia%20GPU">Escribir sobre el benchmark</a>
+    </div>
+    <div class="tech">
+      <h3>Tecnología</h3>
+      <dl>
+        <div><dt>Servidor</dt><dd>NVIDIA L40S con 48 GB, Ubuntu, Docker Compose, NVIDIA Container Toolkit, cambio de conjuntos de modelos mediante script; acceso solo por túnel SSH</dd></div>
+        <div><dt>Modelos de lenguaje</dt><dd>vLLM; Qwen3 32B, Qwen3 30B-A3B (MoE) para lotes grandes, Qwen3-VL para documentos y escaneos; salida forzada por un esquema JSON, prefix caching</dd></div>
+        <div><dt>Voz</dt><dd>Whisper large-v3-turbo con detección de voz, transcripción por canal; Piper para la voz checa</dd></div>
+        <div><dt>API para equipos</dt><dd>pasarela en Go con claves, límites y medición de tokens también en streaming; LiteLLM; interfaz compatible con la API de OpenAI</dd></div>
+        <div><dt>Ajuste fino</dt><dd>QLoRA con Unsloth, fusión de los pesos y despliegue en vLLM; evaluación con datos que el modelo no vio durante el entrenamiento</dd></div>
+        <div><dt>Imagen y vídeo</dt><dd>ComfyUI, FLUX, Wan 2.2</dd></div>
+        <div><dt>Supervisión</dt><dd>Prometheus, Grafana, NVIDIA DCGM, node-exporter; registro de la GPU en cada medición y resultados en JSON</dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
 <section class="biz-steps">
@@ -653,7 +729,7 @@
   "url": "__URL__",
   "inLanguage": "__LANG__",
   "image": "__OGIMAGE__",
-  "description": "Estudio de IA privado para agencias y estudios de videojuegos, asesor para tiendas online, plataforma de alquiler de pisos, cocina tranquila para restaurantes, control horario por obra, tarjetas para colegios y árbol genealógico a partir de registros parroquiales. Precio fijo, primero un pequeño piloto de pago.",
+  "description": "Estudio de IA privado para agencias y estudios de videojuegos, asesor para tiendas online, plataforma de alquiler de pisos, cocina tranquila para restaurantes, control horario por obra, tarjetas para colegios, árbol genealógico a partir de registros parroquiales e IA en su propio servidor GPU. Precio fijo, primero un pequeño piloto de pago.",
   "founder": { "@type": "Person", "name": "Olin Vořechovský" },
   "priceRange": "1.900–140.000 CZK",
   "hasOfferCatalog": {
@@ -667,7 +743,8 @@
       { "@type": "Offer", "name": "Mazo de tarjetas a medida para colegios", "price": "3500", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Árbol genealógico: una línea, 4 generaciones", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Piloto de la plataforma de alquiler de pisos", "price": "25000", "priceCurrency": "CZK" },
-      { "@type": "Offer", "name": "Piloto de Předávka para restaurantes", "price": "15000", "priceCurrency": "CZK" }
+      { "@type": "Offer", "name": "Piloto de Předávka para restaurantes", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Benchmark de una tarea de IA en su propio servidor GPU", "price": "25000", "priceCurrency": "CZK" }
     ]
   }
 }

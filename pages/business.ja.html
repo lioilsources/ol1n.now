@@ -1,5 +1,5 @@
 <!-- title: 小規模チームのためのAIとソフトウェア | Olin Vořechovský -->
-<!-- description: 代理店とゲームスタジオ向けのプライベートAIスタジオ、ECサイトの商品アドバイザー、不動産会社向けの賃貸管理、飲食店の落ち着いた厨房、勤怠管理、単語カード、家系調査。料金は固定です。 -->
+<!-- description: 代理店とゲームスタジオ向けのプライベートAIスタジオ、ECサイトの商品アドバイザー、賃貸管理、飲食店の厨房、勤怠管理、単語カード、家系調査、自前のGPUで動くAI。料金は固定です。 -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
@@ -14,7 +14,7 @@
 
 <header class="biz-hero">
   <h1>小規模チームのためのAIとソフトウェアをつくっています。お客様の環境で動き、お客様のものになり、費用は最初からわかります。</h1>
-  <p class="biz-lead">Olin Vořechovský です。オフィスで自前のAIスタジオを動かし、その周りに毎日使うツールをそろえています。自分の役に立っているものを、広告代理店、ゲームスタジオ、ECサイト、不動産会社、飲食店、学校、小さな会社向けにもつくっています。</p>
+  <p class="biz-lead">Olin Vořechovský です。オフィスで自前のAIスタジオを動かし、その周りに毎日使うツールをそろえています。自分の役に立っているものを、広告代理店、ゲームスタジオ、ECサイト、不動産会社、飲食店、学校、小さな会社、自前のGPUサーバーを持つ会社向けにもつくっています。</p>
   <ul class="biz-rules">
     <li><b>データはお客様の手元に</b>可能な限り、すべてお客様のマシン上、またはお客様のアカウントで動かします。</li>
     <li><b>固定料金</b>クレジット制も、ユーザー数に応じた課金もありません。料金表はこのページに載っています。</li>
@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">家系図</span><span class="y">教区簿冊でたどるご先祖</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">不動産会社・賃貸管理会社</span><span class="y">募集から家賃の入金まで</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">飲食店</span><span class="y">厨房は注文を耳で聞き、ホールはいつ何を運ぶかがわかる</span></a>
+    <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">自前のGPUサーバーを持つ会社</span><span class="y">書類も通話もデータも、クラウドAPIなしで</span></a>
   </div>
 
   <!-- ============ PR agentury ============ -->
@@ -612,6 +613,81 @@
       </div>
     </div>
   </div>
+
+  <!-- ============ 自前のGPUサーバー ============ -->
+  <div class="skin-panel" id="panel-gpu" role="tabpanel" aria-labelledby="tab-gpu" data-skin="gpu">
+    <header class="offer-head">
+      <h2>クラウドAPIの請求書の代わりに、GPU 1枚</h2>
+      <p>レンタルでも自社所有でも、GPUサーバーを立ち上げて仕事で埋めます。書類からのデータ抽出、通話の文字起こしと分類、社内チーム向けのAI API、数十万件のレコードのバッチ処理。導入の前には必ず、あなたのデータで精度、処理量、1,000件あたりのコストを測ります。</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>解決すること</h3>
+        <ul>
+          <li><strong>外に出せないデータ。</strong>契約書、請求書、通話の録音、社内文書は、あなたが管理するサーバーから出ません。</li>
+          <li><strong>利用量とともに膨らむ請求。</strong>クラウドAPIはトークンごとに課金されます。サーバーなら、1,000ページでも10万ページでも費用は同じです。</li>
+          <li><strong>遊んでいる高価なGPU。</strong>サーバーをフル稼働させます。昼は人のリクエストに応え、夜はバッチを処理します。</li>
+        </ul>
+        <h3>提供するもの</h3>
+        <ul>
+          <li>サーバーの構築：言語モデルと画像モデル、音声の文字起こし、画像と動画の生成。すべてを一度にGPUメモリに載せることはできないので、モデルの構成はコマンド1つで切り替えられます。</li>
+          <li>Grafana による監視：GPUの使用率とメモリ、温度、リクエストのキュー、応答時間、消費電力。</li>
+          <li>書類からのデータ抽出：請求書、契約書、スキャン画像を構造化されたJSONに。テストでは1時間に944ページ、項目の正確さは100%でした。</li>
+          <li>通話の分析：チャンネルごとの文字起こし、話題、感情、本人確認、次の対応。テストではGPU 1枚で1時間に1,100件を超える通話を処理しました。</li>
+          <li>複数チーム向けのAI API：キー、同時実行数の上限、使えるモデル、チームごとのトークン精算。横でバッチが動いていても、チャットボットの応答は133 ms以内に保たれます。</li>
+          <li>バッチ処理：数十万件のレコードを一晩で。たとえばチェコの公共契約登録簿にある契約書の分類を、1時間に15万件を超える速さで。</li>
+          <li>あなたのデータでのモデルのファインチューニング。手書きの教区簿冊の書き起こしでは、17分の学習で項目の正確さが24%から67%に上がりました。</li>
+          <li>バックアップ、ドキュメント、そしてサーバーをゼロから組み直せるスクリプト。</li>
+        </ul>
+        <h3>取り組んでいること</h3>
+        <ul>
+          <li>自社サーバーでの音声クローン。声の録音を社外に出さずに済みます。</li>
+          <li>画像モデルをただ使うのではなく、スタイルや商品に合わせて学習させること。</li>
+          <li>画像から3Dモデルへの一括変換と、画像・動画・音声の生成の比較テスト。</li>
+          <li>強化学習によるゲームエージェントの学習と、チェスのクイズの生成。</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>率直に言うと</h3>
+          <ul>
+            <li>上の数字は、合成データと公開データでのテスト結果です。あなたのデータでは最初のステップで測り、結果を約束するのはそのあとです。</li>
+            <li>サーバーは料金に含まれません。レンタルするか購入するかは、ご自身で決めていただきます。選ぶお手伝いをし、どの時点でAPIより得になるかを計算します。</li>
+            <li>48 GBのメモリを持つGPU 1枚に載るのは、大きなモデル1つか、小さなモデルいくつかです。収まらないものは別の構成で動かし、構成を切り替えて使います。</li>
+            <li>オープンなモデルは、すべての面で最高の有料モデルに並ぶわけではありません。手書き文書は、ファインチューニングなしでは項目のおよそ3分の1しか正確に読めません。</li>
+            <li>チェコ語音声の文字起こしは、単語の8〜12%が誤ります。通話の分類や統計には十分ですが、一字一句の記録には向きません。</li>
+          </ul>
+        </div>
+        <h3>料金</h3>
+        <table class="price">
+          <tr><th>ベンチマーク：あなたのデータで1つのタスク、精度・処理量・1,000件あたりのコストのレポート</th><td>25,000 CZK<span class="sub">導入費から差し引きます</span></td></tr>
+          <tr><th>サーバーの構築：モデル、監視、バックアップ、API</th><td>60,000 CZK</td></tr>
+          <tr><th>カスタムタスク：書類、通話、またはバッチ処理</th><td>45,000 CZKから</td></tr>
+          <tr><th>チーム向けAI API：キー、上限、精算</th><td>40,000 CZKから</td></tr>
+          <tr><th>あなたのデータでのモデルのファインチューニング</th><td>30,000 CZKから</td></tr>
+          <tr><th>運用・保守</th><td>月15,000 CZK<span class="sub">最低6か月</span></td></tr>
+        </table>
+        <p class="price-note">価格はすべて税抜です。</p>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>最初のステップ：あなたのデータでベンチマーク</h3>
+      <p>タスクを1つ選び、データのサンプルを送ってください。たとえば請求書100枚や、通話10時間分です。2週間後にレポートをお届けします。モデルがどれだけ正確にこなせるか、1時間にどれだけ処理できるか、そして1,000件あたりのコストがサーバーとクラウドAPIでそれぞれいくらになるか。</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=%E8%87%AA%E5%89%8D%E3%81%AEGPU%E3%81%A7%E3%81%AE%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">ベンチマークについて問い合わせる</a>
+    </div>
+    <div class="tech">
+      <h3>使用技術</h3>
+      <dl>
+        <div><dt>サーバー</dt><dd>48 GBの NVIDIA L40S、Ubuntu、Docker Compose、NVIDIA Container Toolkit、スクリプトによるモデル構成の切り替え、アクセスはSSHトンネル経由のみ</dd></div>
+        <div><dt>言語モデル</dt><dd>vLLM、Qwen3 32B、大量バッチ向けの Qwen3 30B-A3B (MoE)、書類とスキャン向けの Qwen3-VL、JSONスキーマによる出力の強制、prefix caching</dd></div>
+        <div><dt>音声</dt><dd>音声区間検出付きの Whisper large-v3-turbo、チャンネルごとの文字起こし、チェコ語音声の Piper</dd></div>
+        <div><dt>チーム向けAPI</dt><dd>キー、上限、ストリームを含むトークン計測を備えた Go 製ゲートウェイ、LiteLLM、OpenAI API 互換のインターフェース</dd></div>
+        <div><dt>ファインチューニング</dt><dd>Unsloth による QLoRA、重みのマージと vLLM へのデプロイ、学習で使っていないデータでの評価</dd></div>
+        <div><dt>画像と動画</dt><dd>ComfyUI、FLUX、Wan 2.2</dd></div>
+        <div><dt>監視</dt><dd>Prometheus、Grafana、NVIDIA DCGM、node-exporter、計測ごとのGPUログとJSON形式の結果</dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
 <section class="biz-steps">
@@ -653,7 +729,7 @@
   "url": "__URL__",
   "inLanguage": "__LANG__",
   "image": "__OGIMAGE__",
-  "description": "広告代理店とゲームスタジオ向けのプライベートAIスタジオ、ECサイトの商品アドバイザー、賃貸管理プラットフォーム、飲食店の落ち着いた厨房、現場チームの勤怠管理、学校向け単語カード、教区簿冊による家系調査。料金は固定で、まずは小さな有料パイロットから始めます。",
+  "description": "広告代理店とゲームスタジオ向けのプライベートAIスタジオ、ECサイトの商品アドバイザー、賃貸管理プラットフォーム、飲食店の落ち着いた厨房、現場チームの勤怠管理、学校向け単語カード、教区簿冊による家系調査、自前のGPUサーバーで動くAI。料金は固定で、まずは小さな有料パイロットから始めます。",
   "founder": { "@type": "Person", "name": "Olin Vořechovský" },
   "priceRange": "1,900〜140,000 CZK",
   "hasOfferCatalog": {
@@ -667,7 +743,8 @@
       { "@type": "Offer", "name": "学校向けオーダーメイド単語カードセット", "price": "3500", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "家系図：1系統、4世代", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "賃貸管理プラットフォームのパイロット", "price": "25000", "priceCurrency": "CZK" },
-      { "@type": "Offer", "name": "飲食店向け Předávka のパイロット", "price": "15000", "priceCurrency": "CZK" }
+      { "@type": "Offer", "name": "飲食店向け Předávka のパイロット", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "自前のGPUサーバーでのAIタスクのベンチマーク", "price": "25000", "priceCurrency": "CZK" }
     ]
   }
 }

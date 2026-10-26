@@ -319,11 +319,11 @@ address as plain text anywhere else in the repo. It is a Cloudflare Email Routin
 
 A sibling `assets/css/<name>.css` is linked after `store.css`. The store's layout is
 all CSS variables, so `business.css` is mostly a palette (black, gold, grey) — the
-cards, chips and badges are the store's own. The eight offers reuse the skins markup
+cards, chips and badges are the store's own. The nine offers reuse the skins markup
 (`.skins`, `.skin-picker`, `.skin-chip[data-skin]`, `.skin-panel`), which is why the
 switching and the `#agentury` / `#hry` / `#eshopy` / `#firmy` / `#skoly` / `#rodokmen` /
-`#reality` / `#gastro` deep links need no JavaScript of their own. `reality` sells the
-TerraReality platform and `gastro` Předávka (both added 2026-10-21); their screenshots are
+`#reality` / `#gastro` / `#gpu` deep links need no JavaScript of their own. `reality` sells the
+TerraReality platform and `gastro` Předávka (both added 2026-10-21), `gpu` provisioning and workloads on an own/rented GPU server (added 2026-10-26, numbers from the L40S sandbox benchmarks, no screenshots); their screenshots are
 borrowed from the store by path (`screenshots/terrareality/…`, `screenshots/predavka/…`), so
 renaming a raw file there breaks the business page too — the build warns about it. The
 Školy panel's SwypeKids shots broke exactly that way when that gallery was renumbered. The catch that comes with it: `show()`

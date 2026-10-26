@@ -1,5 +1,5 @@
 <!-- title: 소규모 팀을 위한 AI와 소프트웨어 | Olin Vořechovský -->
-<!-- description: 대행사와 게임 스튜디오를 위한 프라이빗 AI 스튜디오, 쇼핑몰 상담 도우미, 부동산 중개사무소용 임대 관리, 식당의 차분한 주방, 근태 관리, 단어 카드, 가계도. 가격은 고정입니다. -->
+<!-- description: 대행사와 게임 스튜디오를 위한 프라이빗 AI 스튜디오, 쇼핑몰 상담 도우미, 임대 관리, 식당 주방, 근태 관리, 단어 카드, 가계도, 자체 GPU에서 돌아가는 AI. 가격은 고정입니다. -->
 <!-- email-user: business -->
 <!-- email-domain: olin.now -->
 <div class="biz">
@@ -14,7 +14,7 @@
 
 <header class="biz-hero">
   <h1>소규모 팀을 위한 AI와 소프트웨어를 만듭니다. 고객님의 환경에서 돌아가고, 고객님의 소유가 되며, 비용은 미리 알 수 있습니다.</h1>
-  <p class="biz-lead">저는 Olin Vořechovský입니다. 제 사무실에서는 자체 AI 스튜디오와, 그 곁에서 매일 쓰는 도구들이 돌아가고 있습니다. 제게 효과가 있었던 것을 대행사, 게임 스튜디오, 온라인 쇼핑몰, 부동산 중개사무소, 식당, 학교, 소규모 기업을 위해서도 만듭니다.</p>
+  <p class="biz-lead">저는 Olin Vořechovský입니다. 제 사무실에서는 자체 AI 스튜디오와, 그 곁에서 매일 쓰는 도구들이 돌아가고 있습니다. 제게 효과가 있었던 것을 대행사, 게임 스튜디오, 온라인 쇼핑몰, 부동산 중개사무소, 식당, 학교, 소규모 기업, 자체 GPU 서버를 보유한 기업을 위해서도 만듭니다.</p>
   <ul class="biz-rules">
     <li><b>데이터는 고객님 손에</b>가능한 한 모든 것을 고객님의 장비나 고객님의 계정에서 돌립니다.</li>
     <li><b>고정 가격</b>크레딧 요금도, 사용자당 요금도 없습니다. 가격표는 이 페이지에 있습니다.</li>
@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">가계도</span><span class="y">교구 기록부에서 찾은 조상</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">부동산 중개·임대 관리</span><span class="y">매물 등록부터 월세 입금까지</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">식당</span><span class="y">주방은 주문을 듣고, 홀은 언제 무엇을 낼지 압니다</span></a>
+    <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">자체 GPU 서버를 보유한 기업</span><span class="y">클라우드 API 없이 문서, 통화, 데이터 처리</span></a>
   </div>
 
   <!-- ============ PR agentury ============ -->
@@ -612,6 +613,81 @@
       </div>
     </div>
   </div>
+
+  <!-- ============ 자체 GPU 서버 ============ -->
+  <div class="skin-panel" id="panel-gpu" role="tabpanel" aria-labelledby="tab-gpu" data-skin="gpu">
+    <header class="offer-head">
+      <h2>클라우드 API 청구서 대신 GPU 한 장</h2>
+      <p>임대한 GPU 서버든 직접 보유한 서버든, 구축하고 일거리로 채웁니다. 문서 데이터 추출, 통화 녹취와 분류, 사내 팀을 위한 AI API, 수십만 건 레코드의 일괄 처리까지. 도입 전에는 언제나 귀사 데이터로 정확도, 처리량, 1,000건당 비용을 측정합니다.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>해결하는 문제</h3>
+        <ul>
+          <li><strong>밖으로 나가면 안 되는 데이터.</strong> 계약서, 청구서, 통화 녹음, 내부 문서가 귀사가 관리하는 서버를 벗어나지 않습니다.</li>
+          <li><strong>사용량과 함께 불어나는 청구서.</strong> 클라우드 API는 토큰마다 비용을 냅니다. 서버는 1,000쪽을 처리하든 10만 쪽을 처리하든 비용이 같습니다.</li>
+          <li><strong>놀고 있는 비싼 GPU.</strong> 서버를 쉬지 않고 돌립니다. 낮에는 사람들의 요청을 처리하고, 밤에는 일괄 작업을 돌립니다.</li>
+        </ul>
+        <h3>제공 내용</h3>
+        <ul>
+          <li>서버 구축: 언어 모델과 이미지 모델, 음성 받아쓰기, 이미지와 영상 생성. 모든 모델이 한꺼번에 GPU 메모리에 들어가지는 않으므로, 모델 구성은 명령 하나로 전환합니다.</li>
+          <li>Grafana 모니터링: GPU 사용률과 메모리, 온도, 요청 대기열, 응답 시간, 전력 소비.</li>
+          <li>문서 데이터 추출: 청구서, 계약서, 스캔본을 구조화된 JSON으로. 테스트에서 시간당 944쪽, 필드 정확도 100%였습니다.</li>
+          <li>통화 분석: 채널별 받아쓰기, 주제, 감정, 본인 확인, 다음 조치. 테스트에서 GPU 한 장으로 시간당 1,100건이 넘는 통화를 처리했습니다.</li>
+          <li>여러 팀을 위한 AI API: 키, 동시 요청 한도, 허용 모델, 팀별 토큰 정산. 옆에서 일괄 작업이 돌아가도 챗봇 응답은 133 ms 이내로 유지됩니다.</li>
+          <li>일괄 처리: 수십만 건의 레코드를 하룻밤에. 예를 들어 체코 공공 계약 등록부의 계약서를 시간당 15만 건이 넘는 속도로 분류합니다.</li>
+          <li>귀사 데이터로 모델 파인튜닝. 손으로 쓴 교구 기록부를 옮겨 적는 작업에서는 17분 학습으로 필드 정확도가 24%에서 67%로 올랐습니다.</li>
+          <li>백업, 문서, 그리고 서버를 처음부터 다시 구축할 수 있는 스크립트.</li>
+        </ul>
+        <h3>진행 중인 작업</h3>
+        <ul>
+          <li>자체 서버에서의 음성 복제. 목소리 녹음이 회사 밖으로 나가지 않습니다.</li>
+          <li>이미지 모델을 그냥 쓰는 데서 그치지 않고 스타일이나 제품에 맞게 학습시키기.</li>
+          <li>이미지를 3D 모델로 일괄 변환하기, 그리고 이미지·영상·오디오 생성 비교 테스트.</li>
+          <li>강화 학습으로 게임 에이전트 훈련하기, 체스 퀴즈 생성.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>솔직히 말씀드리면</h3>
+          <ul>
+            <li>위의 수치는 합성 데이터와 공개 데이터로 한 테스트 결과입니다. 귀사 데이터로는 첫 단계에서 측정하고, 결과는 그다음에 약속합니다.</li>
+            <li>서버는 가격에 포함되지 않습니다. 임대할지 구매할지는 직접 정하시면 됩니다. 고르는 것을 돕고, 언제부터 API보다 이득인지 계산해 드립니다.</li>
+            <li>48 GB 메모리의 GPU 한 장에는 큰 모델 하나, 또는 작은 모델 몇 개가 올라갑니다. 들어가지 않는 것은 다른 구성에서 돌리고, 구성 사이를 전환합니다.</li>
+            <li>오픈 모델이 모든 면에서 최고의 유료 모델만큼 좋지는 않습니다. 손글씨 문서는 파인튜닝 없이는 필드의 약 3분의 1만 정확하게 읽습니다.</li>
+            <li>체코어 음성 받아쓰기는 단어의 8~12%가 틀립니다. 통화 분류와 통계에는 충분하지만, 글자 그대로의 기록에는 맞지 않습니다.</li>
+          </ul>
+        </div>
+        <h3>가격</h3>
+        <table class="price">
+          <tr><th>벤치마크: 귀사 데이터로 작업 하나, 정확도·처리량·1,000건당 비용 보고서</th><td>25,000 CZK<span class="sub">도입 비용에서 차감</span></td></tr>
+          <tr><th>서버 구축: 모델, 모니터링, 백업, API</th><td>60,000 CZK</td></tr>
+          <tr><th>맞춤 작업: 문서, 통화 또는 일괄 처리</th><td>45,000 CZK부터</td></tr>
+          <tr><th>팀용 AI API: 키, 한도, 정산</th><td>40,000 CZK부터</td></tr>
+          <tr><th>귀사 데이터로 모델 파인튜닝</th><td>30,000 CZK부터</td></tr>
+          <tr><th>운영 및 유지보수</th><td>월 15,000 CZK<span class="sub">최소 6개월</span></td></tr>
+        </table>
+        <p class="price-note">모든 가격은 부가세 별도입니다.</p>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>첫 단계: 귀사 데이터로 벤치마크</h3>
+      <p>작업을 하나 고르고 데이터 샘플을 보내 주세요. 예를 들어 청구서 100장이나 통화 10시간 분량입니다. 2주 뒤 보고서를 받으십니다. 모델이 얼마나 정확하게 해내는지, 시간당 얼마나 처리하는지, 그리고 1,000건당 비용이 서버와 클라우드 API에서 각각 얼마인지.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=%EC%9E%90%EC%B2%B4%20GPU%20%EB%B2%A4%EC%B9%98%EB%A7%88%ED%81%AC%20%EB%AC%B8%EC%9D%98">벤치마크 문의하기</a>
+    </div>
+    <div class="tech">
+      <h3>사용 기술</h3>
+      <dl>
+        <div><dt>서버</dt><dd>48 GB NVIDIA L40S, Ubuntu, Docker Compose, NVIDIA Container Toolkit, 스크립트로 모델 구성 전환, 접속은 SSH 터널로만</dd></div>
+        <div><dt>언어 모델</dt><dd>vLLM, Qwen3 32B, 대량 일괄 작업용 Qwen3 30B-A3B (MoE), 문서와 스캔본용 Qwen3-VL, JSON 스키마로 강제한 출력, prefix caching</dd></div>
+        <div><dt>음성</dt><dd>음성 구간 감지를 갖춘 Whisper large-v3-turbo, 채널별 받아쓰기, 체코어 음성용 Piper</dd></div>
+        <div><dt>팀용 API</dt><dd>키, 한도, 스트림을 포함한 토큰 측정을 갖춘 Go 게이트웨이, LiteLLM, OpenAI API 호환 인터페이스</dd></div>
+        <div><dt>파인튜닝</dt><dd>Unsloth를 이용한 QLoRA, 가중치 병합과 vLLM 배포, 학습에 쓰지 않은 데이터로 평가</dd></div>
+        <div><dt>이미지와 영상</dt><dd>ComfyUI, FLUX, Wan 2.2</dd></div>
+        <div><dt>모니터링</dt><dd>Prometheus, Grafana, NVIDIA DCGM, node-exporter, 측정마다 GPU 로그와 JSON 결과</dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
 <section class="biz-steps">
@@ -653,7 +729,7 @@
   "url": "__URL__",
   "inLanguage": "__LANG__",
   "image": "__OGIMAGE__",
-  "description": "대행사와 게임 스튜디오를 위한 프라이빗 AI 스튜디오, 온라인 쇼핑몰 상담 도우미, 주택 임대 플랫폼, 식당의 차분한 주방, 현장 업무 기업의 근태 관리, 학교용 단어 카드, 교구 기록부로 찾는 가계도. 고정 가격이며, 먼저 작은 유료 파일럿부터 시작합니다.",
+  "description": "대행사와 게임 스튜디오를 위한 프라이빗 AI 스튜디오, 온라인 쇼핑몰 상담 도우미, 주택 임대 플랫폼, 식당의 차분한 주방, 현장 업무 기업의 근태 관리, 학교용 단어 카드, 교구 기록부로 찾는 가계도, 자체 GPU 서버에서 돌아가는 AI. 고정 가격이며, 먼저 작은 유료 파일럿부터 시작합니다.",
   "founder": { "@type": "Person", "name": "Olin Vořechovský" },
   "priceRange": "1,900~140,000 CZK",
   "hasOfferCatalog": {
@@ -667,7 +743,8 @@
       { "@type": "Offer", "name": "학교용 맞춤 단어 카드 세트", "price": "3500", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "가계도: 한 계통, 4세대", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "주택 임대 플랫폼 파일럿", "price": "25000", "priceCurrency": "CZK" },
-      { "@type": "Offer", "name": "식당용 Předávka 파일럿", "price": "15000", "priceCurrency": "CZK" }
+      { "@type": "Offer", "name": "식당용 Předávka 파일럿", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "자체 GPU 서버에서 AI 작업 벤치마크", "price": "25000", "priceCurrency": "CZK" }
     ]
   }
 }
