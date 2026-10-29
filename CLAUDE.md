@@ -600,7 +600,8 @@ over the last three months, so the dates move with the day the harness runs. The
 fetched live during the test — without `MAPY_API_KEY` that is OpenTopoMap, which the app only
 uses in development; reshoot with the key once the store build has it. The monthly report PNG
 has no shot: it draws with a bare `TextPainter`, which the test environment renders as boxes.
-No release and no icon yet (the user is supplying one), so no download buttons and a letter tile.
+`icon.png` is `assets/icon/icon.png` from that repo at 512 px. No release yet, so no download
+buttons.
 
 `storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
 default Flutter logo, which is not worth shipping, so they fall back to the store's
