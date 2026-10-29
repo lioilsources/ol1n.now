@@ -357,7 +357,7 @@ is a Cloudflare redirect rule to `olin.now/business`.
 
 ## App Catalog
 
-Current apps (in `apps/`): audioscanner, beenhere (Been Here), djfy, doggiowars, doodlebugs,
+Current apps (in `apps/`): audioscanner, beenhere (Been Here), behanek (Běhánek), djfy, doggiowars, doodlebugs,
 elftonplayer (Elfton Player, repo `ol1nplay`), hajanek (Hajánek), handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
 poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, webtoon,
@@ -591,6 +591,16 @@ them; the page says so, drop that sentence once they are reviewed. `icon.png` is
 `app/assets/icon/icon.png` from that repo at 512 px. Its first release had not been tagged
 yet: `release-android.yml` there names the APK `hajanek-<tag>.apk`, and the download
 button appears on the next `make fetch`.
+
+**behanek** too (8 files in `raw/mobile/ios/`, 390×844 @3x), harness
+`test/screenshots_test.dart` in the behanek repo, same `SCREENSHOT_DIR` switch. Its runs are
+generated, not recorded: three Prague loops in `test/fixtures/routes/*.gpx` (walking paths from
+the OSRM foot router, heights from Open-Meteo) are run at a fixed pace curve into nineteen runs
+over the last three months, so the dates move with the day the harness runs. The map tiles are
+fetched live during the test — without `MAPY_API_KEY` that is OpenTopoMap, which the app only
+uses in development; reshoot with the key once the store build has it. The monthly report PNG
+has no shot: it draws with a bare `TextPainter`, which the test environment renders as boxes.
+No release and no icon yet (the user is supplying one), so no download buttons and a letter tile.
 
 `storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
 default Flutter logo, which is not worth shipping, so they fall back to the store's
