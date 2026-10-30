@@ -165,7 +165,7 @@ sfx, music). A category with no manifest rows emits nothing at all — that is h
 ## Visuals gallery
 
 The flat one: categorised artwork, no entities, no audio. `doodlebugs`, `kittens`,
-`mutants`, `memeshorts`, `immunorun`, `handwrittenstickers`, `swypekids` and `webtoon` have one.
+`mutants`, `memeshorts`, `immunorun`, `handwrittenstickers`, `swypekids`, `webtoon` and `kaceny` have one.
 `scripts/import-visuals.sh <slug>` holds one `import_<slug>` function per app — where
 the art lives in that app's checkout, how it is bucketed, the Czech titles — and
 `make build` only copies the result. Gated on `dist/visuals/<slug>/cats.tsv`; emits a
@@ -193,6 +193,12 @@ What deliberately stays out of a gallery, per app:
   `phone-*.png` / `desktop-*.png`; drop the prefix and copy them into
   `raw/mobile/ios` and `raw/desktop/macos`.
 - **immunorun** — the G0 batch is a style test, not production art, and the page says so.
+- **kaceny** — one skin per pack, not all 112: each tile is an animated WebP composed
+  by the import (the pack's background with the skin's Wan 2.2 wing-beat frames on it),
+  so only skins that have frames (`assets/skins/duck/<id>_N.png`) can be shown. The
+  target ideas are read from the game repo's git-ignored `tool/skins/out/target/`, so
+  a fresh checkout drops that category until `tool/skins/generate.py` has run. Phone
+  screenshots and clips come from `tool/store_screenshots.sh <dir>` in the Kaceny repo.
 - **handwrittenstickers** — the stickers are composed by the import script from the
   app's glyph PNGs, in capitals only: without the app's baseline metrics, capitals are
   what bottom-aligns correctly.
@@ -362,7 +368,7 @@ elftonplayer (Elfton Player, repo `ol1nplay`), hajanek (Hajánek), handwrittenst
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
 poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, webtoon,
 chess4princesses (Šachové království), rattleramp (repo `ChrestysSkatepark`),
-fotballsimulator (Fotball Simulator).
+fotballsimulator (Fotball Simulator), kaceny (Kačeny; default branch `master`).
 
 Five were added on 2026-10-04 for their artwork rather than for a build, and their pages
 lean on the visuals gallery. None has a real app screenshot: what sits in
