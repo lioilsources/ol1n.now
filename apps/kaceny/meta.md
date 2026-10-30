@@ -6,7 +6,7 @@ tagline: 90 vteřin, 8 nábojů a hodně kačen. Arkádová střílečka na vý�
 order: 32
 featured: false
 desktop:
-mobile: ios
+mobile: android,ios
 artifacts:
 visuals: {n} ukázek — z každého balíčku jeden skin s mávající kachnou a pár nápadů na další cíle.
 appstore:
@@ -38,4 +38,5 @@ vzniklo z krátkých videí modelem Wan 2.2.
 Základní balíček bude zdarma. Ostatní balíčky se budou prodávat jednotlivě
 nebo všechny najednou. Za peníze se nedá koupit nic, co by pomohlo ve hře.
 
-Zatím jde o testovací build pro iPhone, do App Store ještě nevyšel.
+Zatím jde o testovací build. Pro Android je ke stažení APK, do App Store ani
+Google Play ještě nevyšel.
