@@ -46,6 +46,7 @@ case "$SLUG" in
   swypekids)           SRC="${2:-${SWYPEKIDS_SRC:-$DEV/SwypeKids}}";         PROBE="assets/characters/panda" ;;
   handwrittenstickers) SRC="${2:-${HWS_SRC:-$DEV/HandWritenStickers}}";      PROBE="docs/glyph_sheets_handwriting.png" ;;
   webtoon)             SRC="${2:-${WEBTOON_SRC:-$DEV/Webtoon}}";             PROBE="out/2026-10-18/final_les" ;;
+  kaceny)              SRC="${2:-${KACENY_SRC:-$DEV/Kaceny}}";               PROBE="assets/skins/duck/classic_0.png" ;;
   *) echo "error: no visuals described for '$SLUG'" >&2; exit 1 ;;
 esac
 [ -e "$SRC/$PROBE" ] || { echo "error: no $SLUG checkout at $SRC (missing $PROBE)" >&2; exit 1; }
@@ -441,6 +442,65 @@ import_webtoon() {
     "$MAGICK" "$_d/strip_$s.png" -filter Lanczos -resize '720x>' -strip \
       -define webp:method=6 -quality 80 "$OUT/stripy/$s.webp"
   done
+}
+
+# ---- Kačeny ----------------------------------------------------------------
+# One skin per pack, shown the way the game shows it: the pack's background with
+# its duck flapping on it. The wing beat is the skin's own frame cycle
+# (assets/skins/duck/<id>_N.png, made with Wan 2.2), played at Wan's 16 fps.
+# The target ideas come from the curation output (tool/skins/out/, git-ignored
+# in the game repo), so that category needs a checkout that has run generate.py.
+import_kaceny() {
+  _a="$SRC/assets/skins"
+  emit_cat skiny "Skiny" "Z každého balíčku jeden skin: pozadí a kachna ve stejném stylu. Křídla mávají ve snímcích, které hra opravdu přehrává." portrait
+  n=0
+  while IFS="|" read -r id label; do
+    [ -e "$_a/duck/${id}_0.png" ] || { echo "warning: $id has no wing-beat frames, skipped" >&2; continue; }
+    _tmp="$(mktemp -d)"
+    "$MAGICK" "$_a/bg/$id.jpg" -resize 360x640^ -gravity center -extent 360x640 "$_tmp/bg.png"
+    k=0
+    while [ -e "$_a/duck/${id}_$k.png" ]; do
+      "$MAGICK" "$_tmp/bg.png" \( "$_a/duck/${id}_$k.png" -resize 210x210 \) \
+        -gravity north -geometry +0+170 -composite "$_tmp/f_$(printf %02d $k).png"
+      k=$((k + 1))
+    done
+    mkdir -p "$OUT/skiny"
+    "$MAGICK" -delay 6 -loop 0 "$_tmp"/f_*.png -strip -define webp:method=6 -quality 78 "$OUT/skiny/$id.webp"
+    rm -rf "$_tmp"
+    _wh="$("$MAGICK" identify -format '%w %h' "$OUT/skiny/$id.webp[0]")"
+    n=$((n + 1))
+    printf '%s%s%s%s%s%s%s%s%s%s%s\n' skiny "$TAB" "$n" "$TAB" "$id.webp" "$TAB" "$label" "$TAB" \
+      "${_wh%% *}" "$TAB" "${_wh##* }" >> "$OUT/assets.tsv"
+  done <<'SKINS'
+classic|Základ · Klasika
+pixel8|Retro herna · 8-bit
+popart|Galerie umění · Pop-art
+kawaii|Roztomilé · Kawaii
+stainedglass|Materiály · Vitráž
+cyberpunk|Neon & noc · Cyberpunk
+christmas|Svátky a sezóny · Vánoce
+sumie|Lidové umění světa · Tuš
+robot|Fantasy & sci-fi · Robot
+graffiti|Příroda a realismus · Graffiti
+gold|Luxus · Zlato
+SKINS
+
+  _t="$SRC/tool/skins/out/target"
+  [ -d "$_t" ] || return 0
+  emit_cat cile "Co střílet místo kachen" "Návrhy dalších cílů pro placené balíčky, každý s vlastní mechanikou. Zatím jen nápady, ve hře nejsou." art
+  n=0
+  while IFS="|" read -r id label; do
+    n=$((n + 1)); add cile "$n" "$_t/$id.jpg" "$label" photo 384x
+  done <<'TARGETS'
+bats|Netopýři — noční mód, cik-cak let
+aliens|UFO — sci-fi level
+pumpkins|Dýně — halloweenský event
+presents|Dárky — vánoční event
+bubbles|Bubliny — klidný mód
+toast|Toasty — vyskakují z toustovače
+letters|Písmenka — sestav slovo
+drones|Drony — víc zásahů
+TARGETS
 }
 
 "import_$SLUG"
