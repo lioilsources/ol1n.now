@@ -6,7 +6,7 @@ tagline: Telefon na stole mezi dvěma lidmi — každý mluví svým jazykem a a
 order: 33
 featured: false
 desktop:
-mobile: ios
+mobile: android,ios
 artifacts:
 appstore:
 playstore:
@@ -74,4 +74,4 @@ ne v cizím cloudu. Server zvuk ani texty rozhovorů neukládá a nezapisuje do
 logů. Appka nemá účet, reklamy ani analytiku. Kvůli serveru potřebuje
 připojení k internetu.
 
-Tlumočník je zatím v testování přes TestFlight, jen pro iPhone.
+Tlumočník je zatím v uzavřeném testování: na iPhonu přes TestFlight, na Androidu přes Firebase.
