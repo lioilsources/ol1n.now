@@ -361,6 +361,19 @@ canonical URL) and `dist/robots.txt` pointing at it.
 `business.olin.now` cannot be a second GitHub Pages domain (one `CNAME` per site); it
 is a Cloudflare redirect rule to `olin.now/business`.
 
+**`pass` / `pass.en`** (Ol1n Pass landing, added 2026-11-01) is the second standalone page,
+but it is **not authored here**: `pages/pass.html`, `pages/pass.en.html`, `assets/css/pass.css`
+and `static/pass.json` are copied from the repo `lioilsources/Pass` (`site/` and
+`catalog/apps.json` there) by its `make sync-site`. Edit them in that repo and re-sync; a change
+made here is overwritten by the next sync. The page draws its app list and the "value of every
+unlock today" sum from `pass.json` with a script (the same file the apps' paywalls read), so the
+cards need no markup and the translation checker only sees the `.pass-i18n` label spans.
+
+**`static/`** (same date) is copied into `dist/` as is, right after `assets/`: files served from
+the site root without a page around them. Today only `pass.json`. The catalog lives at
+`olin.now/pass.json` rather than `/pass/apps.json` because a `pass/` directory next to `pass.html`
+would shadow the extensionless `/pass` URL on GitHub Pages.
+
 ## App Catalog
 
 Current apps (in `apps/`): audioscanner, beenhere (Been Here), behanek (Běhánek), djfy, doggiowars, doodlebugs,

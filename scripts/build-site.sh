@@ -438,6 +438,10 @@ mkdir -p "$DIST" "$DIST/icons"
 rm -f "$DIST"/*.html
 rm -rf "$DIST/assets"
 cp -R "$ROOT/assets" "$DIST/assets"
+# static/ holds files served from the site root exactly as committed (pass.json,
+# the Ol1n Pass catalog that the apps' paywalls read). Nothing in it is generated
+# here; the Pass repo writes it with `make sync-site`.
+[ -d "$ROOT/static" ] && cp -R "$ROOT/static"/. "$DIST"/
 touch "$DIST/.nojekyll"
 # GitHub Pages custom domain (served at root). Edit repo-root CNAME to change it.
 [ -f "$ROOT/CNAME" ] && cp "$ROOT/CNAME" "$DIST/CNAME"
