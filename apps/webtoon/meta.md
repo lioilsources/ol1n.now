@@ -1,12 +1,12 @@
 ---
 slug: webtoon
 name: Webtoon
-repo:
+repo: lioilsources/Webtoon
 tagline: Interaktivní webtoon — čtenář na konci dílu volí, jak příběh pokračuje, a další díl se nakreslí
 order: 27
 featured: false
-desktop: Web
-mobile:
+desktop: macos
+mobile: android
 visuals: {n} obrázků — panely pěti dětských příběhů, srovnání dvou stylů a character sheety.
 appstore:
 playstore:
