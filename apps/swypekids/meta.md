@@ -8,7 +8,7 @@ featured: false
 desktop: macos,windows,linux
 mobile: android,ios
 visuals: {n} obrázků — Pandička v deseti pózách, 294 nálepek místo emoji a kola revizí, ze kterých vzešly.
-appstore:
+appstore: https://apps.apple.com/app/id6785485866
 playstore:
 testflight:
 ---

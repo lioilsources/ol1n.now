@@ -8,8 +8,9 @@ featured: false
 langs: cs,en,de,it,fr,pl,pt-BR,ja,ko,vi,ru,uk
 desktop: macos,windows,linux
 mobile: android,ios
+artifacts: macos,windows,linux
 appstore: https://apps.apple.com/app/id6784602743
-playstore:
+playstore: https://play.google.com/store/apps/details?id=com.ab.duolingoCards
 testflight:
 ---
 Lexify je aplikace na učení slovíček pomocí kartiček ve stylu Duolingo.
