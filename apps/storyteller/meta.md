@@ -8,9 +8,9 @@ featured: false
 desktop:
 mobile: android,ios
 langs: cs,en,de,it,fr,pl,pt-BR,ja,ko,vi,ru,uk
-artifacts: android
-appstore:
-playstore:
+artifacts: none
+appstore: https://apps.apple.com/app/id6816062136
+playstore: https://play.google.com/store/apps/details?id=com.ol1n.storyteller
 testflight:
 ---
 Appka nikdy nevypráví za tebe. Nabídne stavební kameny — postavy, úkol,
