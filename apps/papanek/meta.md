@@ -1,0 +1,61 @@
+---
+slug: papanek
+name: Papánek
+repo: lioilsources/Papanek
+tagline: Kuchařka pro začátečníky — řekne ti, co uvaříš z toho, co máš doma
+order: 34
+featured: false
+desktop:
+mobile: ios
+artifacts:
+appstore:
+playstore:
+testflight:
+---
+Papánek je kuchařka pro lidi, kteří vaří málo nebo vůbec. Napíšeš, co máš
+doma, a appka ti ukáže, co z toho uvaříš hned, čemu chybí jedna věc a na co
+musíš nakoupit. Recept tě pak provede krok po kroku, s časovačem u každého
+kroku, kde se na něco čeká.
+
+### Co uvařím
+
+Hlavní obrazovka řadí recepty podle toho, kolik ti chybí: **Můžeš hned**,
+**Chybí 1 věc**, **Chybí 2–3 věci**. Sůl, pepř, olej a podobné základy appka
+počítá jako samozřejmost, takže tě kvůli nim nepošle do obchodu. Chybějící
+suroviny přidáš jedním klepnutím na nákupní seznam.
+
+### Recepty psané pro začátečníky
+
+Každý krok dělá jednu věc a říká, jak poznáš, že je hotovo: barva, vůně,
+konzistence. U masa a vajec vždycky víš, kdy jsou propečené. Porce
+přepočítáš tlačítky plus a minus a množství se upraví samo.
+
+Recepty píšeme od nuly, nikde je neopisujeme. Každý prošel kontrolou
+češtiny i postupu: jestli sedí množství, časy a pořadí kroků.
+
+### Režim vaření
+
+Velké písmo, jeden krok na obrazovce, tlačítko **Další** a časovač, který
+zavibruje a pípne. Po dovaření ti appka nabídne odebrat použité suroviny
+ze spíže; bez potvrzení nic neodečte.
+
+### Spíž a nákup
+
+Suroviny přidáváš psaním s našeptávačem, který rozumí češtině
+s diakritikou i bez ní („kure“ najde kuře). Spíž je rozdělená podle
+kategorií. Na nákupním seznamu odškrtáváš a tlačítko **Nakoupeno** všechno
+přesune do spíže.
+
+### Obsah
+
+Zdarma je 50 receptů napříč kuchyněmi: česká, italská, vietnamská, asijská,
+mexická a středomořská, rychlovky a rodinná jídla. Další balíčky kuchyní
+s celkem zhruba 1 500 recepty přibudou jako jednorázový nákup; všechno
+bude v telefonu a nákup jen odemyká.
+
+### Offline, bez účtu
+
+Papánek nepotřebuje internet ani registraci a nemá reklamy ani analytiku.
+Recepty i obrázky jsou přímo v appce. Appka je česky i anglicky.
+
+Zatím ve vývoji: první verze míří do TestFlightu pro iPhone.
