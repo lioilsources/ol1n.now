@@ -615,12 +615,14 @@ button appears on the next `make fetch`.
 `test/screenshots_test.dart` in the behanek repo, same `SCREENSHOT_DIR` switch. Its runs are
 generated, not recorded: three Prague loops in `test/fixtures/routes/*.gpx` (walking paths from
 the OSRM foot router, heights from Open-Meteo) are run at a fixed pace curve into nineteen runs
-over the last three months, so the dates move with the day the harness runs. The map tiles are
-fetched live during the test — without `MAPY_API_KEY` that is OpenTopoMap, which the app only
-uses in development; reshoot with the key once the store build has it. The monthly report PNG
-has no shot: it draws with a bare `TextPainter`, which the test environment renders as boxes.
-`icon.png` is `assets/icon/icon.png` from that repo at 512 px. No release yet, so no download
-buttons.
+over the last three months, so the dates move with the day the harness runs (the newest run
+is the 26th, so before the 27th the harness treats the previous month as current). The map
+tiles are fetched live during the test; the shots are made with
+`--dart-define=MAPY_API_KEY=...` (Mapy.com tiles, as in the store build) — without it the app
+falls back to OpenTopoMap, which it only uses in development. The monthly report PNG has no
+shot: it draws with a bare `TextPainter`, which the test environment renders as boxes.
+`icon.png` is `assets/icon/icon.png` from that repo at 512 px. Release v0.1.0 (prerelease)
+carries the APK.
 
 `storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
 default Flutter logo, which is not worth shipping, so they fall back to the store's
