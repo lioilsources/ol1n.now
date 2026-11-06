@@ -8,6 +8,7 @@ featured: false
 desktop:
 mobile: android,ios
 artifacts: android
+langs: cs,en,de,es,fr,it,nl,pl,pt-BR,hu,uk,ru,ja,ko,vi
 appstore:
 playstore:
 testflight:
@@ -26,7 +27,7 @@ pět deset, o pět sekund rychleji“. Hlášení trvá pár vteřin.
 
 Místo řeči můžou hrát jen **tóny**: dva krátké znamenají zrychli, jeden dlouhý
 zpomal a ticho, že jsi v plánu. Hudba v jiné appce se při hlášení jen ztiší,
-nezastaví se. Hlas umí česky a anglicky.
+nezastaví se. Hlas mluví 15 jazyky.
 
 **Duch** je druhý režim. Vybereš si jeden svůj starší běh se startem do 300 m
 od místa, kde zrovna stojíš, a běžíš proti němu: „143 m před duchem“.
@@ -71,5 +72,4 @@ Načte jednotlivé GPX soubory i celý hromadný export ze Stravy (ZIP). Díky t
 pacer formu z čeho počítat hned od prvního běhu. Před zaplacením si zdarma
 prohlédneš, co se naimportuje.
 
-Appka je v češtině, hlášení umí česky i anglicky, vzdálenosti v km nebo mílích.
-Zatím se testuje na telefonech a v obchodech ještě není.
+Appka i hlas jsou v 15 jazycích, vzdálenosti v km nebo mílích.

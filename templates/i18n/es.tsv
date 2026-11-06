@@ -1,0 +1,18 @@
+# Site chrome, Spanish. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. Added for
+# behanek; the skins gallery and deck keys are not translated yet.
+nav.all_apps	← Todas las apps
+nav.back_to	← Volver a %s
+nav.lang	Idioma
+title.app	%s — olin.now
+badge.featured	★ Destacada
+badge.mobile	Móvil
+sec.downloads	Descargas
+sec.description	Descripción
+sec.shots_desktop	Capturas — escritorio
+sec.shots_mobile	Capturas — móvil
+shots.empty.desktop	Todavía no hay capturas de escritorio.
+shots.empty.mobile	Todavía no hay capturas del móvil.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Las versiones llegarán pronto.

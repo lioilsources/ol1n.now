@@ -611,7 +611,7 @@ them; the page says so, drop that sentence once they are reviewed. `icon.png` is
 yet: `release-android.yml` there names the APK `hajanek-<tag>.apk`, and the download
 button appears on the next `make fetch`.
 
-**behanek** too (8 files in `raw/mobile/ios/`, 390×844 @3x), harness
+**behanek** too (8 files in `raw/mobile/ios/`, 440×956 @3x = the App Store 6.9″ size), harness
 `test/screenshots_test.dart` in the behanek repo, same `SCREENSHOT_DIR` switch. Its runs are
 generated, not recorded: three Prague loops in `test/fixtures/routes/*.gpx` (walking paths from
 the OSRM foot router, heights from Open-Meteo) are run at a fixed pace curve into nineteen runs
@@ -622,7 +622,11 @@ tiles are fetched live during the test; the shots are made with
 falls back to OpenTopoMap, which it only uses in development. The monthly report PNG has no
 shot: it draws with a bare `TextPainter`, which the test environment renders as boxes.
 `icon.png` is `assets/icon/icon.png` from that repo at 512 px. Release v0.1.0 (prerelease)
-carries the APK.
+carries the APK. The app ships 15 languages (`langs:` in its meta; `i18n/<lang>.md` are
+translations of the description). The store gallery shows the Czech shots only — the
+harness renders every language (`SCREENSHOT_LANG`), and those go to App Store Connect, but
+the store has no per-language gallery. `es` and `nl` got their chrome catalogs for it.
+`pages/behanek-privacy.html` is the privacy policy linked from App Store Connect.
 
 `storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
 default Flutter logo, which is not worth shipping, so they fall back to the store's

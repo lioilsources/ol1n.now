@@ -1,0 +1,18 @@
+# Site chrome, Dutch. Only the keys that differ from templates/i18n/cs.tsv
+# need to be here; anything missing falls back to the Czech string. Added for
+# behanek; the skins gallery and deck keys are not translated yet.
+nav.all_apps	← Alle apps
+nav.back_to	← Terug naar %s
+nav.lang	Taal
+title.app	%s — olin.now
+badge.featured	★ Uitgelicht
+badge.mobile	Mobiel
+sec.downloads	Downloads
+sec.description	Beschrijving
+sec.shots_desktop	Screenshots — desktop
+sec.shots_mobile	Screenshots — mobiel
+shots.empty.desktop	Nog geen desktop-screenshots.
+shots.empty.mobile	Nog geen mobiele screenshots.
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Builds volgen binnenkort.
