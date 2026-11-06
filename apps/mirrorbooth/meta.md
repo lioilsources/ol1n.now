@@ -8,7 +8,8 @@ featured: false
 desktop: macos,windows,linux
 mobile: android,ios
 appstore: https://apps.apple.com/app/id6767824892
-playstore:
+playstore: https://play.google.com/store/apps/details?id=com.ab.mirrorbooth
+artifacts: macos,windows,linux
 testflight:
 ---
 MirrorBooth vytváří v reálném čase symetrické zrcadlo obličeje ze selfie kamery.
