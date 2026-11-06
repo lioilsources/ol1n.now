@@ -5,9 +5,9 @@ repo: lioilsources/PartyCockpit
 tagline: Party show na velké plátno — hosté posílají z telefonu fotky, vzkazy a tance, ty řídíš, co se ukáže
 order: 35
 featured: false
-desktop: Web
+desktop: windows,linux
 mobile: web
-artifacts:
+artifacts: windows,linux
 appstore:
 playstore:
 testflight:
@@ -52,9 +52,12 @@ navrhují písničky, z mikrofonu u plátna, nebo z ťukání do rytmu v Cockpit
 
 ### Party box
 
-PartyCockpit běží na jednom počítači v síti party, třeba na mini PC u
-televize. Fotky a vzkazy zůstávají na něm a týden po konci party se samy
-smažou. Na styly a tance potřebuje GPU server.
+PartyCockpit běží na jednom počítači v síti party: na notebooku nebo mini
+PC u televize, nebo na Raspberry Pi 5. Stáhni balíček pro Windows nebo
+Linux, spusť ho a v prohlížeči otevři plátno. Telefony se připojí přes
+Wi-Fi, nic se neinstaluje. Fotky a vzkazy zůstávají na tom počítači a
+týden po konci party se samy smažou. Na styly a tance potřebuje GPU server,
+bez něj je jen napodobí.
 
 Zatím ve vývoji: vyzkoušené na testovacích datech, první ostrá party teprve
 přijde.
