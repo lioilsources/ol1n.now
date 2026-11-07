@@ -7,8 +7,8 @@ order: 4
 featured: false
 desktop: macos,windows,linux
 mobile: android,ios
-appstore: https://apps.apple.com/app/id6767824892
-playstore: https://play.google.com/store/apps/details?id=com.ab.mirrorbooth
+appstore: https://apps.apple.com/app/id6767824892?ct=olinnow
+playstore: https://play.google.com/store/apps/details?id=com.ab.mirrorbooth&listing=olinnow
 artifacts: macos,windows,linux
 testflight:
 ---

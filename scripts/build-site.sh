@@ -1067,9 +1067,15 @@ while IFS="$TAB" read -r ord meta; do
 "
     fi
 
+    # Smart App Banner: Safari on iPhone offers the App Store install bar.
+    _asid="$(fm_get "$meta" appstore | sed -n 's|.*/id\([0-9][0-9]*\).*|\1|p')"
+    _head_app="$alt_app"
+    [ -n "$_asid" ] && _head_app="$_head_app
+  <meta name=\"apple-itunes-app\" content=\"app-id=$_asid\">"
+
     # detail page
     {
-      emit_head "$(tf title.app "$lname")" "$alt_app"
+      emit_head "$(tf title.app "$lname")" "$_head_app"
       page_top_html "index.html" "$(t nav.all_apps)" "$lsw_app"
       cat <<HERO
 <section class="app-hero">
