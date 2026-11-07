@@ -6,7 +6,9 @@
 #           kind = desktop|mobile ; platform = macos|windows|linux|android|ios|ipad
 #   output: dist/screenshots/<slug>/<kind>/<name>              (gallery, downscaled)
 #           dist/screenshots/<slug>/<kind>/full/<name>         (lightbox, near-original)
-#           dist/screenshots/<slug>/store/<target>/<name>      (exact store size, images only)
+#           store-screenshots/<slug>/<target>/<name>           (exact store size, images only;
+#                                                       outside dist/, never published;
+#                                                       STORE_SHOTS=0 skips them, as CI does)
 #           dist/screenshots/<slug>/<kind>/<stem>.mp4          (web H.264, videos)
 #           dist/screenshots/<slug>/<kind>/<stem>.poster.jpg   (video poster/thumbnail)
 #
@@ -19,6 +21,10 @@ HERE="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$OLN_ROOT"
 DIST="$ROOT/dist"
 APPS="$ROOT/apps"
+# store-upload copies stay local: no page links them and they would double the
+# Pages artifact (GitHub Pages caps a site at 1 GB)
+STORE_OUT="$ROOT/store-screenshots"
+STORE_SHOTS="${STORE_SHOTS:-1}"
 
 # ImageMagick 7 = `magick`; IM6 (e.g. Ubuntu apt) = `convert`. Both take the
 # same -resize/-extent syntax used below.
@@ -62,8 +68,9 @@ process_app() {
   rawroot="$APPS/$slug/screenshots/raw"
   [ -d "$rawroot" ] || return 0
   outroot="$DIST/screenshots/$slug"
+  storeroot="$STORE_OUT/$slug"
   # clean previous output for this app
-  rm -rf "$outroot"
+  rm -rf "$outroot" "$storeroot"
 
   found=0
   while IFS= read -r img; do
@@ -102,20 +109,20 @@ process_app() {
     fit "$img" "$outroot/$kind/full/$name" "$FULL"
 
     # (2) store-exact copies by platform
-    case "$platform" in
+    [ "$STORE_SHOTS" = 0 ] || case "$platform" in
       android)
-        mkdir -p "$outroot/store/play-phone"
-        fill "$img" "$outroot/store/play-phone/$stem.png" "$PLAY_PHONE" ;;
+        mkdir -p "$storeroot/play-phone"
+        fill "$img" "$storeroot/play-phone/$stem.png" "$PLAY_PHONE" ;;
       ios)
-        mkdir -p "$outroot/store/appstore-iphone-6.9" "$outroot/store/appstore-iphone-6.7"
-        fill "$img" "$outroot/store/appstore-iphone-6.9/$stem.png" "$APPSTORE_IPHONE_69"
-        fill "$img" "$outroot/store/appstore-iphone-6.7/$stem.png" "$APPSTORE_IPHONE_67" ;;
+        mkdir -p "$storeroot/appstore-iphone-6.9" "$storeroot/appstore-iphone-6.7"
+        fill "$img" "$storeroot/appstore-iphone-6.9/$stem.png" "$APPSTORE_IPHONE_69"
+        fill "$img" "$storeroot/appstore-iphone-6.7/$stem.png" "$APPSTORE_IPHONE_67" ;;
       ipad)
-        mkdir -p "$outroot/store/appstore-ipad-13"
-        fill "$img" "$outroot/store/appstore-ipad-13/$stem.png" "$APPSTORE_IPAD_13" ;;
+        mkdir -p "$storeroot/appstore-ipad-13"
+        fill "$img" "$storeroot/appstore-ipad-13/$stem.png" "$APPSTORE_IPAD_13" ;;
       macos)
-        mkdir -p "$outroot/store/mac-appstore"
-        fill "$img" "$outroot/store/mac-appstore/$stem.png" "$MAC_APPSTORE" ;;
+        mkdir -p "$storeroot/mac-appstore"
+        fill "$img" "$storeroot/mac-appstore/$stem.png" "$MAC_APPSTORE" ;;
     esac
 
     count=$((count+1))

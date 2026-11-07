@@ -20,7 +20,7 @@ build: ## Generate the static site into dist/
 fetch: ## Download latest GitHub release artifacts into dist/downloads/
 	@$(SCRIPTS)/fetch-artifacts.sh
 
-screenshots: ## Resize raw screenshots into store sizes in dist/screenshots/
+screenshots: ## Resize raw screenshots: gallery + full/ in dist/, store sizes in store-screenshots/
 	@$(SCRIPTS)/resize-screenshots.sh
 
 import-skins: ## (authoring) Re-encode skin galleries from a local Kiran checkout into apps/kirian/skins/

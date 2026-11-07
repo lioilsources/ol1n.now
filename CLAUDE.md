@@ -136,9 +136,11 @@ back to the gallery copy if there is no `full/` one.
 
 So `make screenshots` writes **two** sizes per image: the gallery copy (capped 800x1500
 mobile / 1920x1080 desktop, sized for the strip) and `full/` (capped 2600x2600, i.e. the
-raw file for nearly everything). The `full/` copies added ~110 MB to `dist/` (510 MB
-total, 2026-10-13) against GitHub Pages' 1 GB limit — the next thing to shrink, if it
-comes to that, is the 245 MB of `store/` upload sizes, which no page links to.
+raw file for nearly everything). The exact store-upload sizes (Play, App Store, Mac App
+Store) go to `store-screenshots/<slug>/<target>/` outside `dist/` (gitignored, never
+published; CI skips them with `STORE_SHOTS=0`). Inside `dist/` they had grown to 358 MB of
+a 730 MB site (2026-11-07) against GitHub Pages' 1 GB limit, and Pages deploys started
+timing out. Nothing uploads them to the stores; that is manual.
 A raw screenshot smaller than its gallery cap gains nothing from the lightbox; ol1nllm's
 are rendered at 3x (1170x2532) for that reason.
 

@@ -35,6 +35,9 @@ jobs:
       - name: Resolve download links + resize screenshots + build
         run: make all
         # make all = fetch + screenshots + build → dist/
+        # store-upload sizes are for manual upload only, never published
+        env:
+          STORE_SHOTS: "0"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

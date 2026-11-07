@@ -3,5 +3,7 @@
 
 # App Store Connect upload assets — generated locally from raw/, not used by the site.
 apps/*/screenshots/appstore/
+# Exact store-size copies from `make screenshots` — for manual upload, not published.
+/store-screenshots/
 
 .DS_Store
