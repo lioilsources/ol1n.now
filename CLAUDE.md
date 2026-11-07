@@ -17,7 +17,12 @@ make import-fleets # (authoring, local only) Re-encode OrbitronTactics fleets + 
 make import-decks  # (authoring, local only) Re-encode Lexify deck samples (5+5 cards per deck) → apps/lexify/decks/
 ```
 
-Tooling: `make screenshots` needs **ImageMagick** (`magick`); **ffmpeg** is only
+Screenshots on the site are **WebP** (gallery + `full/`, q82): PNG made the Pages
+artifact ~360 MB and deploys timed out. Pages may keep linking a screenshot by
+its raw `.png` name; `build-site.sh` (`webp_links`) points the link at the
+`.webp` copy.
+
+Tooling: `make screenshots` needs **ImageMagick** (`magick`, with WebP); **ffmpeg** is only
 required when `raw/` contains videos (transcodes to web mp4 + generates a poster).
 `make fetch` needs `gh` (authenticated) + `jq`.
 `make import-skins` needs ImageMagick **with a WebP delegate** + ffmpeg + a local

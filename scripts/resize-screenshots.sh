@@ -4,8 +4,8 @@
 #
 #   input : apps/<slug>/screenshots/raw/<kind>/<platform>/*.{png,jpg,jpeg,mp4,mov,webm,m4v}
 #           kind = desktop|mobile ; platform = macos|windows|linux|android|ios|ipad
-#   output: dist/screenshots/<slug>/<kind>/<name>              (gallery, downscaled)
-#           dist/screenshots/<slug>/<kind>/full/<name>         (lightbox, near-original)
+#   output: dist/screenshots/<slug>/<kind>/<stem>.webp         (gallery, downscaled)
+#           dist/screenshots/<slug>/<kind>/full/<stem>.webp    (lightbox, near-original)
 #           store-screenshots/<slug>/<target>/<name>           (exact store size, images only;
 #                                                       outside dist/, never published;
 #                                                       STORE_SHOTS=0 skips them, as CI does)
@@ -47,8 +47,28 @@ APPSTORE_IPHONE_67="1290x2796"   # Apple iPhone 6.7"
 APPSTORE_IPAD_13="2064x2752"     # Apple iPad 13"
 MAC_APPSTORE="2880x1800"         # Mac App Store
 
+# Web copies (gallery + full) are WebP: PNG screenshots made the Pages artifact
+# ~360 MB and deploys kept timing out in "syncing_files"; WebP q82 is ~7x
+# smaller with no visible difference. An ImageMagick without the WebP coder
+# keeps the source format, and build-site.sh only rewrites links to .webp
+# copies that exist.
+if "$MAGICK" -list format 2>/dev/null | grep -Eq '^ *WEBP\*? +WEBP +rw'; then
+  WEB_EXT=webp
+else
+  WEB_EXT=""
+  echo "  ! ImageMagick cannot write WebP; web copies stay PNG/JPEG" >&2
+fi
+WEBP_OPTS="-quality 82 -define webp:method=5"
+
 # fit <in> <out> <WxH>   downscale only, preserve aspect (no upscale, no crop)
 fit() { "$MAGICK" "$1" -resize "${3}>" "$2"; }
+# webfit <in> <out> <WxH>  like fit, WebP-encoded when the output ends in .webp
+webfit() {
+  case "$2" in
+    *.webp) "$MAGICK" "$1" -resize "${3}>" $WEBP_OPTS "$2" ;;
+    *)      fit "$1" "$2" "$3" ;;
+  esac
+}
 # fill <in> <out> <WxH>  cover + center-crop to exact pixels
 fill() { "$MAGICK" "$1" -resize "${3}^" -gravity center -extent "$3" "$2"; }
 # vid <in> <out.mp4>     web H.264 + AAC (<=1280px wide, <=15s, faststart)
@@ -98,15 +118,15 @@ process_app() {
         ;;
     esac
 
-    # (1) gallery copy
+    # (1) gallery copy + lightbox copy (same file name, see store.js fullOf)
+    web="$name"; [ -n "$WEB_EXT" ] && web="$stem.$WEB_EXT"
     case "$kind" in
-      desktop) fit "$img" "$outroot/$kind/$name" "$GALLERY_DESKTOP" ;;
-      mobile)  fit "$img" "$outroot/$kind/$name" "$GALLERY_MOBILE" ;;
-      *)       fit "$img" "$outroot/$kind/$name" "$GALLERY_DESKTOP" ;;
+      mobile) webfit "$img" "$outroot/$kind/$web" "$GALLERY_MOBILE" ;;
+      *)      webfit "$img" "$outroot/$kind/$web" "$GALLERY_DESKTOP" ;;
     esac
 
     mkdir -p "$outroot/$kind/full"
-    fit "$img" "$outroot/$kind/full/$name" "$FULL"
+    webfit "$img" "$outroot/$kind/full/$web" "$FULL"
 
     # (2) store-exact copies by platform
     [ "$STORE_SHOTS" = 0 ] || case "$platform" in
