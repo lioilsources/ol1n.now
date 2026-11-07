@@ -200,6 +200,21 @@ store_links_html() {
   return 0
 }
 
+# Hand-written pages name screenshots by their raw file name (.png/.jpg); the
+# web copies are WebP (resize-screenshots.sh). Point each link at the .webp
+# copy when it exists and the original does not.
+webp_links() {
+  grep -oE 'screenshots/[^"'"'"' )]+\.(png|jpe?g)' "$1" | sort -u | while read -r _p; do
+    case "$_p" in *.poster.jpg) continue ;; esac
+    _w="${_p%.*}.webp"
+    if [ -f "$DIST/$_w" ] && [ ! -f "$DIST/$_p" ]; then
+      _pe="$(printf '%s' "$_p" | sed 's/[.[\*^$/]/\\&/g')"
+      sed -i.bak "s/$_pe/$(printf '%s' "$_w" | sed 's/[&/]/\\&/g')/g" "$1" && rm -f "$1.bak"
+    fi
+  done
+  return 0
+}
+
 # screenshot gallery for a kind (desktop|mobile) from dist/screenshots/<slug>/<kind>/
 shots_html() {
   _slug="$1"; _kind="$2"; _dir="$DIST/screenshots/$_slug/$_kind"; _any=0
@@ -1282,6 +1297,7 @@ for page in "$ROOT"/pages/*.html; do
           esac
       emit_foot
     } > "$DIST/$out"
+    webp_links "$DIST/$out"
     # These pages borrow the store's screenshots by path; a renamed raw file
     # would otherwise ship as a broken image without anyone noticing.
     grep -o 'src="[^"]*"' "$DIST/$out" | sed 's/^src="//; s/"$//; s/?.*//' | while read -r _src; do
@@ -1305,6 +1321,9 @@ i18n_load "$I18N_BASE" "$TPL/i18n/$I18N_BASE.tsv"
 } > "$DIST/index.html"
 
 echo "  built index.html"
+
+# App pages, subpages and teasers embed screenshots by path too.
+for _h in "$DIST"/*.html; do webp_links "$_h"; done
 
 # ---- sitemap.xml + robots.txt ----
 # Store pages under the file names they are linked by; standalone pages under
