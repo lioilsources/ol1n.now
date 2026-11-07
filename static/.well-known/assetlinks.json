@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.ab.mirrorbooth",
+      "sha256_cert_fingerprints": [
+        "50:37:63:D8:0D:57:2B:87:B9:79:AC:86:03:25:61:EA:5C:AB:AB:8D:E5:DC:D1:D9:3B:56:81:4D:EC:91:81:9A"
+      ]
+    }
+  }
+]
