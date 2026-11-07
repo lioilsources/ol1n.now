@@ -1,0 +1,25 @@
+<!-- title: Mirror Booth | olin.now -->
+<!-- description: Mirror Booth: see your perfectly symmetric face, live. Free on the App Store and Google Play. -->
+<!--
+  olin.now/mirror: the short address burned into photos and videos shared from
+  Mirror Booth. Sends a phone straight to its store, tagged so the install is
+  counted as coming from a shared post; everything else lands on the app page.
+-->
+<div class="redirect">
+  <h1>Mirror Booth</h1>
+  <p><a id="mirror-ios" href="https://apps.apple.com/app/id6767824892?ct=watermark">App Store</a>
+   · <a id="mirror-android" href="https://play.google.com/store/apps/details?id=com.ab.mirrorbooth&amp;referrer=utm_source%3Dwatermark%26utm_medium%3Dshared_post">Google Play</a>
+   · <a href="mirrorbooth.html">olin.now/mirrorbooth</a></p>
+</div>
+<script>
+(function () {
+  var ua = navigator.userAgent || "";
+  // iPadOS reports itself as a Mac; a touch screen gives it away.
+  var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var android = /Android/.test(ua);
+  var target = ios ? document.getElementById("mirror-ios").href
+    : android ? document.getElementById("mirror-android").href
+    : "mirrorbooth.html";
+  location.replace(target);
+})();
+</script>
