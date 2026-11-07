@@ -628,7 +628,7 @@ carries the APK. The app ships 15 languages (`langs:` in its meta; `i18n/<lang>.
 translations of the description). The store gallery shows the Czech shots only — the
 harness renders every language (`SCREENSHOT_LANG`), and those go to App Store Connect, but
 the store has no per-language gallery. `es` and `nl` got their chrome catalogs for it.
-`pages/behanek-privacy.html` is the privacy policy linked from App Store Connect.
+The privacy policy is on GitHub Pages: `https://lioilsources.github.io/behanek/privacy.html`.
 
 `storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
 default Flutter logo, which is not worth shipping, so they fall back to the store's
