@@ -5,6 +5,7 @@ repo:
 tagline: Z meme šablon vertikální shorty s vlastními postavami
 order: 21
 featured: false
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop: macos,linux
 mobile:
 visuals: {n} portrétů z knihovny postav — čtyři postavy, každá ve dvanácti emocích.
@@ -29,5 +30,5 @@ LLM nebo ho zadáš ručně; titulky se renderují přímo v Go.
 Výstup je 1080×1920, H.264, 30 fps, hlasitost −14 LUFS a označení
 „AI generated“ v obraze i v metadatech.
 
-Zatím běží jen lokálně a zdrojáky nejsou veřejné, takže tu není co stáhnout.
+Zatím běží jen lokálně a nemá vydanou verzi, takže tu není co stáhnout.
 Napsáno v Go, obrázky generuje FLUX.1-schnell na vlastním stroji.
