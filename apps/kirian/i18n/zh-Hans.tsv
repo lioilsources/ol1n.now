@@ -1,0 +1,106 @@
+# Kirian — Chinese (Simplified). Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,zh-Hans}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	单色街机
+label.Vector wireframe	矢量线框
+label.Fixed-formation arcade	固定编队街机
+label.Biomechanical sci-fi	生物机械科幻
+label.16-bit console shooter	16 位主机射击
+label.DOS-era pixel art	DOS 时代像素画
+label.Two-polarity shooter	双极性射击
+label.Neon vector grid	霓虹矢量网格
+label.Chrome fleet shmup	铬金舰队射击
+label.Sepia dogfight	棕褐色空战
+label.Post-apocalyptic	末日废土
+label.Dark neon voxel	暗黑霓虹体素
+label.4-colour console era	4 色主机时代
+label.Kirian original	Kirian 原创
+
+# --- skin notes ---
+label.Subtle CRT phosphor	淡淡的 CRT 荧光
+label.Glow on geometry	几何线条上的辉光
+label.Soft bloom on projectiles	弹幕上的柔和泛光
+label.Neutral bloom	中性泛光
+label.Subtle warm glow	淡淡的暖色辉光
+label.Faithful retro feel	忠实的复古感
+label.Matches the polarity palette	匹配极性调色板
+label.Strongest bloom preset	最强泛光预设
+label.Clean, high-contrast	干净、高对比度
+label.No bloom — flat palette	无泛光——平面调色板
+label.Saturation 0.85, orange tint	饱和度 0.85，橙色色调
+label.High-contrast neon	高对比度霓虹
+label.Ultra-chunky flat sprites	超粗颗粒平面精灵
+label.Hand-crafted baseline	手工基准皮肤
+
+# --- CRT / tint presets ---
+label.neutral	中性
+label.scanlines 0.4, curve 0.01	扫描线 0.4、曲率 0.01
+label.scanlines 0.7, curve 0.02	扫描线 0.7、曲率 0.02
+label.green tint (0.85 / 1.0 / 0.85)	绿色色调（0.85 / 1.0 / 0.85）
+label.cyan tint (0.8 / 1.0 / 1.0)	青色色调（0.8 / 1.0 / 1.0）
+label.cool blue (0.9 / 0.95 / 1.0)	冷蓝（0.9 / 0.95 / 1.0）
+label.warm (1.0 / 0.95 / 0.9)	暖色（1.0 / 0.95 / 0.9）
+label.warm (1.0 / 0.95 / 0.85)	暖色（1.0 / 0.95 / 0.85）
+label.warm yellow (1.0 / 0.9 / 0.7)	暖黄（1.0 / 0.9 / 0.7）
+label.desaturated warm	低饱和暖色
+
+# --- sprite labels ---
+label.Náhled	预览
+label.Loď	机体
+label.Loď 1	机体 1
+label.Loď 2	机体 2
+label.Loď 3	机体 3
+label.Loď 4	机体 4
+label.Loď 5	机体 5
+label.Loď 6	机体 6
+label.Přehled nepřátel	敌人一览
+label.Asteroid 1	小行星 1
+label.Asteroid 2	小行星 2
+label.Asteroid 3	小行星 3
+label.Asteroid 4	小行星 4
+label.Bublina	泡泡
+label.Blaster	爆能枪
+label.Laser	激光
+label.Vulcan	火神炮
+label.Rododendron	杜鹃花
+label.Hvězda	星星
+label.Hvězda (zelená)	星星（绿）
+label.Exploze 1	爆炸 1
+label.Exploze 2	爆炸 2
+label.Exploze 3	爆炸 3
+label.Exploze 4	爆炸 4
+label.Vrstva 0	图层 0
+label.Vrstva 1	图层 1
+label.Vrstva 2	图层 2
+label.Vrstva 3	图层 3
+
+# --- game center (UI) ---
+label.Karta	卡片
+label.Tlačítko	按钮
+label.Aktivní záložka	当前标签页
+label.Kredity	点数
+label.Štít	护盾
+label.Život	生命
+label.Bomba	炸弹
+label.Generátor	发生器
+
+# --- sfx + music ---
+label.Výstřel	射击
+label.Paprsek	光束
+label.Malá exploze	小爆炸
+label.Velká exploze	大爆炸
+label.Zásah trupu	机体受击
+label.Zásah štítu	护盾受击
+label.Nová zbraň	新武器
+label.Sektor dokončen	扇区完成
+label.Konec hry	游戏结束
+label.Bonus	奖励
+label.Intro	开场
+label.Téma 1	主题曲 1
+label.Téma 2	主题曲 2
+label.Téma 3	主题曲 3
+label.Téma 4	主题曲 4
+label.Téma 5 (boss)	主题曲 5（Boss）

@@ -1,0 +1,114 @@
+# Site chrome, Slovenian. Same keys as cs.tsv, in the same order; see the notes there.
+nav.all_apps	← Vse aplikacije
+nav.back_to	← Nazaj na %s
+nav.lang	Jezik
+title.app	%s — olin.now
+title.skins	%s — skini — olin.now
+badge.featured	★ Priporočeno
+badge.mobile	Mobilno
+sec.downloads	Prenosi
+sec.description	Opis
+sec.shots_desktop	Posnetki zaslona — namizje
+sec.shots_mobile	Posnetki zaslona — mobilno
+shots.empty.desktop	Zaenkrat ni posnetkov zaslona (namizje).
+shots.empty.mobile	Zaenkrat ni posnetkov zaslona (mobilno).
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Različice bodo kmalu na voljo.
+skins.title	Skini
+skins.teaser_intro	Vizualne teme: %s — vsaka z lastnimi sprajti, paralaksnim ozadjem, zvoki in glasbo.
+skins.more	Raziščite vse skine →
+skins.page_intro	Vizualne teme: %s, vse za %s. Vsak skin ima lastne ladje, sovražnike, bossa, ozadja, zvoke in prilagodljivo glasbo.
+skins.disclaimer	Skini so svoboden poklon klasičnim streljačinam. %s ni na noben način povezan z njihovimi avtorji ali založniki in ne uporablja njihove izvirne grafike ali zvokov.
+skins.wiki	Wikipedija
+skins.vessels	Ladje: %s
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	odtenek %s
+cat.preview	Predogled
+cat.vessels	Ladje
+cat.enemies	Sovražniki
+cat.boss	Boss
+cat.asteroids	Asteroidi
+cat.fx	Učinki in izstrelki
+cat.ui	Vmesnik igre
+cat.backgrounds	Ozadja
+cat.sfx	Zvoki (SFX)
+cat.music	Glasba
+player.prev	Prejšnja
+player.play	Predvajaj
+player.next	Naslednja
+player.pause	Premor
+decks.title	Kompleti
+decks.intro	Kompleti: %s, vsak narisan v dveh likovnih slogih. Iz vsakega je tu deset vzorčnih kartic: pet v prvem slogu, pet v drugem.
+decks.cards	Kartice: %s
+decks.free	brezplačno
+decks.free_badge	Brezplačno
+decks.tr	Prevod
+visuals.title	Vizuali
+visuals.more	Raziščite vse vizuale →
+fleets.title	Flote
+fleets.teaser_intro	Flote: %s, vsaka s šestimi vrstami ladij.
+fleets.teaser_intro_man	Flote: %s, vsaka s šestimi vrstami ladij. Manevri, ki se rišejo s prstom: %s.
+fleets.more	Raziščite flote in manevre →
+lb.dialog	Posnetek zaslona
+lb.hint	kolešček povečuje · povlecite za premik · Esc zapre
+lb.zoom_out	Pomanjšaj
+lb.zoom_in	Povečaj
+lb.fit	Prilagodi zaslonu
+lb.close	Zapri
+lb.open	Povečaj posnetek zaslona
+foot.logo_alt	Ananas&Bananas — digitalno sadje & tehnologija
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — grafike — olin.now
+title.fleets	%s — flote in manevri — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — grafike
+board.aria	Šahovnica 8×8
+fleets.page_title	Flote
+fleets.page_intro	Flot: %s za %s. Vsaka na novo nariše vseh šest vrst ladij v beli in črni različici — flota je zgolj vizualna, ne spremeni ne potez figur ne boja.
+fleets.default	privzeta
+fleets.white	Bela flota
+fleets.black	Črna flota
+fleets.audio_title	Zvok boja
+fleets.sfx_note	Zvok strela in eksplozije določa element ladje, ne flota: kmet strelja kinetično, skakač z vodo, lovec z ognjem, trdnjava z ledom, dama in kralj z elektriko.
+fleets.music_note	V boju igra tema ladje, ki napada.
+man.title	Manevri
+man.intro	Manevrov: %s — dvanajst družin, ki jih vsaka ladja leti po svoje, in še en lasten. Sprožijo se z gesto, narisano na mrežo 3×3 — kot odklepanje Androida — in stanejo energijo, ki se polni sama. Spodnje poti so vzorčene neposredno iz kataloga igre, zato ladja na platnu leti natanko tako kot v boju.
+man.units	Vrste ladij
+unit.pawn	Kmet
+unit.knight	Skakač
+unit.bishop	Lovec
+unit.rook	Trdnjava
+unit.queen	Dama
+unit.king	Kralj
+unit.pawn.element	kinetični
+unit.knight.element	vodni
+unit.bishop.element	ognjeni
+unit.rook.element	ledeni
+unit.queen.element	električni
+unit.king.element	električni
+man.path	Pot manevra %s
+man.energy	Energija
+man.duration	Trajanje
+man.secs	%s s
+man.shots	Streli
+man.untouchable_title	Izstrelki gredo skozi
+man.untouchable	nedotakljiv
+man.shield_title	Dvigne ščit
+man.shield	ščit
+man.control_title	Krmiljenje ostane pilotu
+man.control	prosto krmiljenje
+man.mirror_title	Zrcalna gesta leti zrcalni manever
+man.mirror	zrcalni
+man.price_title	Cena v kreditih
+man.price	%s kr.
+man.starter	od začetka
+man.wins	zmage: %s
+man.pack	paket %s
+num.decimal	,

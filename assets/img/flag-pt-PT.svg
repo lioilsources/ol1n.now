@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <rect width="900" height="600" fill="#DA291C"/>
+  <rect width="360" height="600" fill="#046A38"/>
+  <!-- Simplified arms: armillary ring and shield -->
+  <circle cx="360" cy="300" r="105" fill="none" stroke="#FFE000" stroke-width="22"/>
+  <path d="M300 225h120v95a60 60 0 0 1-120 0z" fill="#ffffff" stroke="#DA291C" stroke-width="14"/>
+  <g fill="#003399"><rect x="350" y="250" width="20" height="26"/><rect x="322" y="282" width="20" height="26"/><rect x="378" y="282" width="20" height="26"/><rect x="350" y="314" width="20" height="26"/></g>
+</svg>

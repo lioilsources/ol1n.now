@@ -1,11 +1,9 @@
-# Site chrome, Ukrainian. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
-# skins gallery ships this language.
+# Site chrome, Ukrainian. Same keys as cs.tsv, in the same order; see the notes there.
 nav.all_apps	← Усі застосунки
 nav.back_to	← Назад до %s
 nav.lang	Мова
 title.app	%s — olin.now
+title.skins	%s — скіни — olin.now
 badge.featured	★ Рекомендуємо
 badge.mobile	Мобільні
 sec.downloads	Завантаження
@@ -14,12 +12,103 @@ sec.shots_desktop	Знімки екрана — комп'ютер
 sec.shots_mobile	Знімки екрана — телефон
 shots.empty.desktop	Знімків екрана для комп'ютера поки немає.
 shots.empty.mobile	Знімків екрана для телефона поки немає.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Збірки незабаром.
+skins.title	Скіни
+skins.teaser_intro	Візуальних тем: %s — кожна з власними спрайтами, паралакс-фоном, звуками й музикою.
+skins.more	Переглянути всі скіни →
+skins.page_intro	Візуальних тем: %s, усі для %s. Кожен скін має власні кораблі, ворогів, боса, фони, звуки й адаптивну музику.
+skins.disclaimer	Скіни — вільна данина класичним шутерам. %s ніяк не пов'язаний з їхніми авторами чи видавцями й не використовує їхньої оригінальної графіки чи звуків.
+skins.wiki	Вікіпедія
+skins.vessels	Кораблів: %s
+skins.pixelart	піксель-арт
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	відтінок %s
+cat.preview	Попередній перегляд
+cat.vessels	Кораблі
+cat.enemies	Вороги
+cat.boss	Бос
+cat.asteroids	Астероїди
+cat.fx	Ефекти й снаряди
+cat.ui	Ігровий інтерфейс
+cat.backgrounds	Фони
+cat.sfx	Звуки (SFX)
+cat.music	Музика
+player.prev	Попередній
+player.play	Відтворити
+player.next	Наступний
+player.pause	Пауза
 decks.title	Колоди
 decks.intro	%s колод, і кожну намальовано у двох стилях. З кожної тут десять карток: п'ять у першому стилі, п'ять у другому.
 decks.cards	%s карток
 decks.free	безкоштовно
 decks.free_badge	Безкоштовно
 decks.tr	Переклад
+visuals.title	Графіка
+visuals.more	Переглянути всю графіку →
+fleets.title	Флотилії
+fleets.teaser_intro	Флотилій: %s, у кожній шість типів кораблів.
+fleets.teaser_intro_man	Флотилій: %s, у кожній шість типів кораблів. Маневрів, які малюють пальцем: %s.
+fleets.more	Переглянути флотилії й маневри →
+lb.dialog	Знімок екрана
+lb.hint	коліщатко масштабує · перетягуйте, щоб зсунути · Esc закриває
+lb.zoom_out	Зменшити
+lb.zoom_in	Збільшити
+lb.fit	За розміром екрана
+lb.close	Закрити
+lb.open	Збільшити знімок екрана
+foot.logo_alt	Ananas&Bananas — цифрові фрукти & технології
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — візуали — olin.now
+title.fleets	%s — флоти й маневри — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — візуали
+board.aria	Шахівниця 8×8
+fleets.page_title	Флоти
+fleets.page_intro	Флотів: %s для %s. Кожен по-новому малює всі шість типів кораблів у білому й чорному варіанті — флот суто візуальний, він не змінює ні ходів фігур, ні бою.
+fleets.default	типовий
+fleets.white	Білий флот
+fleets.black	Чорний флот
+fleets.audio_title	Звук бою
+fleets.sfx_note	Звук пострілу й вибуху визначає стихія корабля, а не флот: пішак стріляє кінетично, кінь — водою, слон — вогнем, тура — льодом, ферзь і король — електрикою.
+fleets.music_note	У бою звучить тема корабля, що атакує.
+man.title	Маневри
+man.intro	Маневрів: %s — дванадцять родин, які кожен корабель виконує по-своєму, плюс один власний. Запускаються жестом, намальованим на сітці 3×3 — як розблокування Android, — і коштують енергію, що відновлюється сама. Траєкторії нижче взято просто з ігрового каталогу, тож корабель на полотні летить так само, як у бою.
+man.units	Типи кораблів
+unit.pawn	Пішак
+unit.knight	Кінь
+unit.bishop	Слон
+unit.rook	Тура
+unit.queen	Ферзь
+unit.king	Король
+unit.pawn.element	кінетичний
+unit.knight.element	водний
+unit.bishop.element	вогняний
+unit.rook.element	крижаний
+unit.queen.element	електричний
+unit.king.element	електричний
+man.path	Траєкторія маневру %s
+man.energy	Енергія
+man.duration	Тривалість
+man.secs	%s с
+man.shots	Постріли
+man.untouchable_title	Снаряди пролітають крізь корабель
+man.untouchable	невразливий
+man.shield_title	Піднімає щит
+man.shield	щит
+man.control_title	Керування лишається в пілота
+man.control	вільне керування
+man.mirror_title	Дзеркальний жест виконує дзеркальний маневр
+man.mirror	віддзеркалюваний
+man.price_title	Ціна в кредитах
+man.price	%s кр.
+man.starter	від початку
+man.wins	перемог: %s
+man.pack	набір %s
+num.decimal	,

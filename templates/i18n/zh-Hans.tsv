@@ -1,0 +1,114 @@
+# Site chrome, Simplified Chinese. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← 全部应用
+nav.back_to	← 返回 %s
+nav.lang	语言
+title.app	%s — olin.now
+title.skins	%s — 皮肤 — olin.now
+badge.featured	★ 推荐
+badge.mobile	移动端
+sec.downloads	下载
+sec.description	简介
+sec.shots_desktop	截图 — 桌面版
+sec.shots_mobile	截图 — 移动版
+shots.empty.desktop	暂无桌面版截图。
+shots.empty.mobile	暂无移动版截图。
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android（APK）
+dl.mod	Mod（ZIP）
+dl.empty	构建版本即将推出。
+skins.title	皮肤
+skins.teaser_intro	%s 套视觉主题，每套都有专属的精灵图、视差背景、音效和音乐。
+skins.more	浏览全部皮肤 →
+skins.page_intro	%s 套视觉主题，尽在 %s。每款皮肤都有专属的飞船、敌人、Boss、背景、音效和自适应音乐。
+skins.disclaimer	这些皮肤是对经典射击游戏的自由致敬。%s 与原作的开发者或发行商没有任何关联，也未使用其原版美术或音效。
+skins.wiki	维基百科
+skins.vessels	%s 艘飞船
+skins.pixelart	像素风
+skins.bloom	泛光 %s
+skins.crt	CRT %s
+skins.tint	色调 %s
+cat.preview	预览
+cat.vessels	飞船
+cat.enemies	敌人
+cat.boss	Boss
+cat.asteroids	小行星
+cat.fx	特效与子弹
+cat.ui	游戏界面
+cat.backgrounds	背景
+cat.sfx	音效（SFX）
+cat.music	音乐
+player.prev	上一首
+player.play	播放
+player.next	下一首
+player.pause	暂停
+decks.title	卡组
+decks.intro	共 %s 套卡组，每套都以两种画风绘制。这里从每套中各展示十张卡片：五张为第一种风格，五张为第二种。
+decks.cards	%s 张卡片
+decks.free	免费
+decks.free_badge	免费
+decks.tr	翻译
+visuals.title	视觉设计
+visuals.more	浏览全部视觉设计 →
+fleets.title	舰队
+fleets.teaser_intro	共 %s 支舰队，每支包含六种舰船。
+fleets.teaser_intro_man	共 %s 支舰队，每支包含六种舰船，另有 %s 种用手指绘制的战术机动。
+fleets.more	浏览舰队与机动 →
+lb.dialog	截图
+lb.hint	滚轮缩放 · 拖动平移 · Esc 关闭
+lb.zoom_out	缩小
+lb.zoom_in	放大
+lb.fit	适应屏幕
+lb.close	关闭
+lb.open	放大截图
+foot.logo_alt	Ananas&Bananas — 数字水果 & 科技
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — 美术 — olin.now
+title.fleets	%s — 舰队与机动 — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — 美术
+board.aria	8×8 棋盘
+fleets.page_title	舰队
+fleets.page_intro	%s 支舰队，供 %s 使用。每支舰队都以白、黑两个版本重新绘制全部六种舰船——舰队纯属外观，既不改变棋子的走法，也不改变战斗。
+fleets.default	默认
+fleets.white	白方舰队
+fleets.black	黑方舰队
+fleets.audio_title	战斗音效
+fleets.sfx_note	射击和爆炸的声音由舰船的元素决定，而不是舰队：兵发射动能弹，马是水，象是火，车是冰，后和王是电。
+fleets.music_note	战斗中播放进攻方舰船的主题曲。
+man.title	机动
+man.intro	%s 种机动：十二个系列，每艘舰船各有飞法，外加一个专属机动。在 3×3 网格上画出手势即可触发（就像解锁 Android），消耗会自动恢复的能量。下面的轨迹直接采样自游戏目录，所以画布上的舰船飞得和战斗中一模一样。
+man.units	舰船类型
+unit.pawn	兵
+unit.knight	马
+unit.bishop	象
+unit.rook	车
+unit.queen	后
+unit.king	王
+unit.pawn.element	动能
+unit.knight.element	水
+unit.bishop.element	火
+unit.rook.element	冰
+unit.queen.element	电
+unit.king.element	电
+man.path	%s 机动的轨迹
+man.energy	能量
+man.duration	时长
+man.secs	%s 秒
+man.shots	射击次数
+man.untouchable_title	子弹穿身而过
+man.untouchable	无法命中
+man.shield_title	升起护盾
+man.shield	护盾
+man.control_title	操控仍在驾驶员手中
+man.control	自由操控
+man.mirror_title	镜像手势执行镜像机动
+man.mirror	可镜像
+man.price_title	信用点价格
+man.price	%s 信用点
+man.starter	一开始就有
+man.wins	%s 场胜利
+man.pack	%s 包
+num.decimal	.

@@ -1,11 +1,9 @@
-# Site chrome, English. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
-# skins gallery ships this language.
+# Site chrome, English. Same keys as cs.tsv; see the notes there.
 nav.all_apps	← All apps
 nav.back_to	← Back to %s
 nav.lang	Language
 title.app	%s — olin.now
+title.skins	%s — skins — olin.now
 badge.featured	★ Featured
 badge.mobile	Mobile
 sec.downloads	Downloads
@@ -14,12 +12,103 @@ sec.shots_desktop	Screenshots — desktop
 sec.shots_mobile	Screenshots — mobile
 shots.empty.desktop	No desktop screenshots yet.
 shots.empty.mobile	No mobile screenshots yet.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Builds coming soon.
+skins.title	Skins
+skins.teaser_intro	%s visual themes — each with its own sprites, parallax background, sounds and music.
+skins.more	Explore all skins →
+skins.page_intro	%s visual themes for %s. Every skin has its own ships, enemies, bosses, backgrounds, sounds and adaptive music.
+skins.disclaimer	The skins are a loose homage to classic shoot-'em-ups. %s is not affiliated with their creators or publishers in any way and uses none of their original graphics or sounds.
+skins.wiki	Wikipedia
+skins.vessels	%s ships
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	tint %s
+cat.preview	Preview
+cat.vessels	Ships
+cat.enemies	Enemies
+cat.boss	Boss
+cat.asteroids	Asteroids
+cat.fx	Effects & projectiles
+cat.ui	Game interface
+cat.backgrounds	Backgrounds
+cat.sfx	Sounds (SFX)
+cat.music	Music
+player.prev	Previous
+player.play	Play
+player.next	Next
+player.pause	Pause
 decks.title	Decks
 decks.intro	%s decks, each drawn in two art styles. Here are ten sample cards from each: five in the first style, five in the second.
 decks.cards	%s cards
 decks.free	free
 decks.free_badge	Free
 decks.tr	Translation
+visuals.title	Visuals
+visuals.more	Explore all visuals →
+fleets.title	Fleets
+fleets.teaser_intro	%s fleets of six ship types each.
+fleets.teaser_intro_man	%s fleets of six ship types each, plus %s maneuvers you draw with your finger.
+fleets.more	Explore fleets & maneuvers →
+lb.dialog	Screenshot
+lb.hint	scroll to zoom · drag to pan · Esc to close
+lb.zoom_out	Zoom out
+lb.zoom_in	Zoom in
+lb.fit	Fit to screen
+lb.close	Close
+lb.open	Enlarge screenshot
+foot.logo_alt	Ananas&Bananas — digital fruit & technology
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — visuals — olin.now
+title.fleets	%s — fleets & maneuvers — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — visuals
+board.aria	8×8 chessboard
+fleets.page_title	Fleets
+fleets.page_intro	%s fleets for %s. Each one redraws all six ship types in a white and a black version — a fleet is purely visual: it changes neither how the pieces move nor the battle.
+fleets.default	default
+fleets.white	White fleet
+fleets.black	Black fleet
+fleets.audio_title	Battle sound
+fleets.sfx_note	Shot and explosion sounds come from the ship's element, not from the fleet: the pawn fires kinetic rounds, the knight water, the bishop fire, the rook ice, the queen and the king electricity.
+fleets.music_note	A battle plays the theme of the attacking ship.
+man.title	Maneuvers
+man.intro	%s maneuvers: twelve families that every ship flies in its own way, plus one of its own. Each is triggered by a gesture drawn on a 3×3 grid — like unlocking an Android phone — and costs energy that recharges by itself. The paths below are sampled straight from the game's catalog, so the ship on the canvas flies exactly what it flies in battle.
+man.units	Ship types
+unit.pawn	Pawn
+unit.knight	Knight
+unit.bishop	Bishop
+unit.rook	Rook
+unit.queen	Queen
+unit.king	King
+unit.pawn.element	kinetic
+unit.knight.element	water
+unit.bishop.element	fire
+unit.rook.element	ice
+unit.queen.element	electric
+unit.king.element	electric
+man.path	Flight path of the %s maneuver
+man.energy	Energy
+man.duration	Duration
+man.secs	%s s
+man.shots	Shots
+man.untouchable_title	Shots pass through
+man.untouchable	untouchable
+man.shield_title	Raises a shield
+man.shield	shield
+man.control_title	Steering stays with the pilot
+man.control	free steering
+man.mirror_title	A mirrored gesture flies the mirrored maneuver
+man.mirror	mirrorable
+man.price_title	Price in credits
+man.price	%s cr.
+man.starter	from the start
+man.wins	%s wins
+man.pack	pack %s
+num.decimal	.

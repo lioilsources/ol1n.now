@@ -1,0 +1,106 @@
+# Kirian — Swedish. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,sv}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Monokrom arkad
+label.Vector wireframe	Vektor-trådmodell
+label.Fixed-formation arcade	Arkad med fast formation
+label.Biomechanical sci-fi	Biomekanisk sci-fi
+label.16-bit console shooter	16-bitars konsolskjutare
+label.DOS-era pixel art	Pixelkonst från DOS-eran
+label.Two-polarity shooter	Skjutare med två polariteter
+label.Neon vector grid	Neon-vektorrutnät
+label.Chrome fleet shmup	Shmup med kromflotta
+label.Sepia dogfight	Luftstrid i sepia
+label.Post-apocalyptic	Postapokalyptisk
+label.Dark neon voxel	Mörk neon-voxel
+label.4-colour console era	4-färgskonsolernas era
+label.Kirian original	Kirian-original
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Diskret CRT-fosfor
+label.Glow on geometry	Glöd på geometrin
+label.Soft bloom on projectiles	Mjuk bloom på projektiler
+label.Neutral bloom	Neutral bloom
+label.Subtle warm glow	Diskret varm glöd
+label.Faithful retro feel	Trogen retrokänsla
+label.Matches the polarity palette	Matchar polaritetspaletten
+label.Strongest bloom preset	Starkaste bloom-förinställningen
+label.Clean, high-contrast	Rent, hög kontrast
+label.No bloom — flat palette	Ingen bloom — platt palett
+label.Saturation 0.85, orange tint	Mättnad 0.85, orange ton
+label.High-contrast neon	Neon med hög kontrast
+label.Ultra-chunky flat sprites	Extremt grova platta sprites
+label.Hand-crafted baseline	Handgjord grundversion
+
+# --- CRT / tint presets ---
+label.neutral	neutral
+label.scanlines 0.4, curve 0.01	scanlines 0.4, krökning 0.01
+label.scanlines 0.7, curve 0.02	scanlines 0.7, krökning 0.02
+label.green tint (0.85 / 1.0 / 0.85)	grön ton (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	cyan ton (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	sval blå (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	varm (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	varm (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	varm gul (1.0 / 0.9 / 0.7)
+label.desaturated warm	avmättad varm
+
+# --- sprite labels ---
+label.Náhled	Förhandsvisning
+label.Loď	Skepp
+label.Loď 1	Skepp 1
+label.Loď 2	Skepp 2
+label.Loď 3	Skepp 3
+label.Loď 4	Skepp 4
+label.Loď 5	Skepp 5
+label.Loď 6	Skepp 6
+label.Přehled nepřátel	Översikt över fiender
+label.Asteroid 1	Asteroid 1
+label.Asteroid 2	Asteroid 2
+label.Asteroid 3	Asteroid 3
+label.Asteroid 4	Asteroid 4
+label.Bublina	Bubbla
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Rododendron
+label.Hvězda	Stjärna
+label.Hvězda (zelená)	Stjärna (grön)
+label.Exploze 1	Explosion 1
+label.Exploze 2	Explosion 2
+label.Exploze 3	Explosion 3
+label.Exploze 4	Explosion 4
+label.Vrstva 0	Lager 0
+label.Vrstva 1	Lager 1
+label.Vrstva 2	Lager 2
+label.Vrstva 3	Lager 3
+
+# --- game center (UI) ---
+label.Karta	Kort
+label.Tlačítko	Knapp
+label.Aktivní záložka	Aktiv flik
+label.Kredity	Krediter
+label.Štít	Sköld
+label.Život	Liv
+label.Bomba	Bomb
+label.Generátor	Generator
+
+# --- sfx + music ---
+label.Výstřel	Skott
+label.Paprsek	Stråle
+label.Malá exploze	Liten explosion
+label.Velká exploze	Stor explosion
+label.Zásah trupu	Träff i skrovet
+label.Zásah štítu	Träff i skölden
+label.Nová zbraň	Nytt vapen
+label.Sektor dokončen	Sektor avklarad
+label.Konec hry	Spelet slut
+label.Bonus	Bonus
+label.Intro	Intro
+label.Téma 1	Tema 1
+label.Téma 2	Tema 2
+label.Téma 3	Tema 3
+label.Téma 4	Tema 4
+label.Téma 5 (boss)	Tema 5 (boss)

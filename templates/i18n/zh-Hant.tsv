@@ -1,0 +1,114 @@
+# Site chrome, Traditional Chinese (Taiwan). Same keys as cs.tsv; see the notes there.
+nav.all_apps	← 所有 App
+nav.back_to	← 返回 %s
+nav.lang	語言
+title.app	%s — olin.now
+title.skins	%s — 造型 — olin.now
+badge.featured	★ 精選
+badge.mobile	行動版
+sec.downloads	下載
+sec.description	說明
+sec.shots_desktop	螢幕截圖 — 桌面版
+sec.shots_mobile	螢幕截圖 — 行動版
+shots.empty.desktop	尚無桌面版螢幕截圖。
+shots.empty.mobile	尚無行動版螢幕截圖。
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android（APK）
+dl.mod	Mod（ZIP）
+dl.empty	建置版本即將推出。
+skins.title	造型
+skins.teaser_intro	%s 款視覺主題，每款都有專屬的精靈圖、視差背景、音效與音樂。
+skins.more	瀏覽所有造型 →
+skins.page_intro	%s 款視覺主題，盡在 %s。每款造型都有專屬的戰機、敵人、Boss、背景、音效與自適應音樂。
+skins.disclaimer	這些造型是向經典射擊遊戲的自由致敬。%s 與原作的開發者或發行商毫無關聯，也未使用其原始美術或音效。
+skins.wiki	維基百科
+skins.vessels	%s 架戰機
+skins.pixelart	像素風
+skins.bloom	光暈 %s
+skins.crt	CRT %s
+skins.tint	色調 %s
+cat.preview	預覽
+cat.vessels	戰機
+cat.enemies	敵人
+cat.boss	Boss
+cat.asteroids	小行星
+cat.fx	特效與子彈
+cat.ui	遊戲介面
+cat.backgrounds	背景
+cat.sfx	音效（SFX）
+cat.music	音樂
+player.prev	上一首
+player.play	播放
+player.next	下一首
+player.pause	暫停
+decks.title	牌組
+decks.intro	共 %s 套牌組，每套都以兩種畫風繪製。這裡從每套各展示十張卡片：五張為第一種風格，五張為第二種。
+decks.cards	%s 張卡片
+decks.free	免費
+decks.free_badge	免費
+decks.tr	翻譯
+visuals.title	視覺設計
+visuals.more	瀏覽所有視覺設計 →
+fleets.title	艦隊
+fleets.teaser_intro	共 %s 支艦隊，每支包含六種艦艇。
+fleets.teaser_intro_man	共 %s 支艦隊，每支包含六種艦艇，另有 %s 種用手指畫出的戰術機動。
+fleets.more	瀏覽艦隊與機動 →
+lb.dialog	螢幕截圖
+lb.hint	滾輪縮放 · 拖曳平移 · Esc 關閉
+lb.zoom_out	縮小
+lb.zoom_in	放大
+lb.fit	符合螢幕大小
+lb.close	關閉
+lb.open	放大螢幕截圖
+foot.logo_alt	Ananas&Bananas — 數位水果 & 科技
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — 美術 — olin.now
+title.fleets	%s — 艦隊與機動 — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — 美術
+board.aria	8×8 棋盤
+fleets.page_title	艦隊
+fleets.page_intro	%s 支艦隊，供 %s 使用。每支艦隊都以白、黑兩個版本重新繪製全部六種艦船——艦隊純屬外觀，既不改變棋子的走法，也不改變戰鬥。
+fleets.default	預設
+fleets.white	白方艦隊
+fleets.black	黑方艦隊
+fleets.audio_title	戰鬥音效
+fleets.sfx_note	射擊和爆炸的聲音由艦船的元素決定，而不是艦隊：兵發射動能彈，馬是水，象是火，車是冰，后和王是電。
+fleets.music_note	戰鬥中播放進攻方艦船的主題曲。
+man.title	機動
+man.intro	%s 種機動：十二個系列，每艘艦船各有飛法，外加一個專屬機動。在 3×3 網格上畫出手勢即可觸發（就像解鎖 Android），消耗會自動恢復的能量。下面的軌跡直接取樣自遊戲目錄，所以畫布上的艦船飛得和戰鬥中一模一樣。
+man.units	艦船類型
+unit.pawn	兵
+unit.knight	馬
+unit.bishop	象
+unit.rook	車
+unit.queen	后
+unit.king	王
+unit.pawn.element	動能
+unit.knight.element	水
+unit.bishop.element	火
+unit.rook.element	冰
+unit.queen.element	電
+unit.king.element	電
+man.path	%s 機動的軌跡
+man.energy	能量
+man.duration	時長
+man.secs	%s 秒
+man.shots	射擊次數
+man.untouchable_title	子彈穿身而過
+man.untouchable	無法命中
+man.shield_title	升起護盾
+man.shield	護盾
+man.control_title	操控仍在駕駛員手中
+man.control	自由操控
+man.mirror_title	鏡像手勢執行鏡像機動
+man.mirror	可鏡像
+man.price_title	信用點價格
+man.price	%s 信用點
+man.starter	一開始就有
+man.wins	%s 場勝利
+man.pack	%s 包
+num.decimal	.

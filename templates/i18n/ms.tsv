@@ -1,0 +1,114 @@
+# Site chrome, Malay. Same keys as cs.tsv, in the same order; see the notes there.
+nav.all_apps	← Semua aplikasi
+nav.back_to	← Kembali ke %s
+nav.lang	Bahasa
+title.app	%s — olin.now
+title.skins	%s — skin — olin.now
+badge.featured	★ Pilihan
+badge.mobile	Mudah alih
+sec.downloads	Muat turun
+sec.description	Penerangan
+sec.shots_desktop	Tangkapan skrin — desktop
+sec.shots_mobile	Tangkapan skrin — mudah alih
+shots.empty.desktop	Belum ada tangkapan skrin desktop.
+shots.empty.mobile	Belum ada tangkapan skrin mudah alih.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Binaan akan tersedia tidak lama lagi.
+skins.title	Skin
+skins.teaser_intro	%s tema visual — setiap satu dengan sprite, latar belakang parallax, bunyi dan muzik tersendiri.
+skins.more	Terokai semua skin →
+skins.page_intro	%s tema visual untuk %s. Setiap skin mempunyai kapal, musuh, bos, latar belakang, bunyi dan muzik adaptif tersendiri.
+skins.disclaimer	Skin ini ialah penghormatan bebas kepada permainan tembak-menembak klasik. %s tidak mempunyai sebarang kaitan dengan pencipta atau penerbitnya dan tidak menggunakan grafik atau bunyi asalnya.
+skins.wiki	Wikipedia
+skins.vessels	%s kapal
+skins.pixelart	seni piksel
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	rona %s
+cat.preview	Pratonton
+cat.vessels	Kapal
+cat.enemies	Musuh
+cat.boss	Bos
+cat.asteroids	Asteroid
+cat.fx	Kesan dan peluru
+cat.ui	Antara muka permainan
+cat.backgrounds	Latar belakang
+cat.sfx	Bunyi (SFX)
+cat.music	Muzik
+player.prev	Sebelumnya
+player.play	Main
+player.next	Seterusnya
+player.pause	Jeda
+decks.title	Dek
+decks.intro	%s dek, setiap satu dilukis dalam dua gaya seni. Daripada setiap dek ada sepuluh contoh kad: lima dalam gaya pertama, lima dalam gaya kedua.
+decks.cards	%s kad
+decks.free	percuma
+decks.free_badge	Percuma
+decks.tr	Terjemahan
+visuals.title	Visual
+visuals.more	Terokai semua visual →
+fleets.title	Armada
+fleets.teaser_intro	%s armada, setiap satu dengan enam jenis kapal.
+fleets.teaser_intro_man	%s armada, setiap satu dengan enam jenis kapal, dan %s manuver yang dilukis dengan jari.
+fleets.more	Terokai armada dan manuver →
+lb.dialog	Tangkapan skrin
+lb.hint	roda tetikus untuk zum · seret untuk menggerakkan · Esc untuk menutup
+lb.zoom_out	Zum keluar
+lb.zoom_in	Zum masuk
+lb.fit	Muat ke skrin
+lb.close	Tutup
+lb.open	Besarkan tangkapan skrin
+foot.logo_alt	Ananas&Bananas — buah digital & teknologi
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — visual — olin.now
+title.fleets	%s — armada dan manuver — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — visual
+board.aria	Papan catur 8×8
+fleets.page_title	Armada
+fleets.page_intro	%s armada untuk %s. Setiap satu melukis semula keenam-enam jenis kapal dalam versi putih dan hitam — armada hanyalah rupa, tidak mengubah gerakan buah catur mahupun pertempuran.
+fleets.default	lalai
+fleets.white	Armada putih
+fleets.black	Armada hitam
+fleets.audio_title	Bunyi pertempuran
+fleets.sfx_note	Bunyi tembakan dan letupan ditentukan oleh unsur kapal, bukan armada: bidak menembak kinetik, kuda air, gajah api, tir ais, menteri dan raja elektrik.
+fleets.music_note	Dalam pertempuran kedengaran tema kapal yang menyerang.
+man.title	Manuver
+man.intro	%s manuver: dua belas keluarga yang diterbangkan setiap kapal dengan caranya sendiri, ditambah satu miliknya. Dicetuskan dengan gerak isyarat yang dilukis pada grid 3×3 — seperti membuka kunci Android — dan menggunakan tenaga yang terisi sendiri. Laluan di bawah disampel terus daripada katalog permainan, jadi kapal di kanvas terbang sama seperti dalam pertempuran.
+man.units	Jenis kapal
+unit.pawn	Bidak
+unit.knight	Kuda
+unit.bishop	Gajah
+unit.rook	Tir
+unit.queen	Menteri
+unit.king	Raja
+unit.pawn.element	kinetik
+unit.knight.element	air
+unit.bishop.element	api
+unit.rook.element	ais
+unit.queen.element	elektrik
+unit.king.element	elektrik
+man.path	Laluan manuver %s
+man.energy	Tenaga
+man.duration	Tempoh
+man.secs	%s saat
+man.shots	Tembakan
+man.untouchable_title	Peluru menembusi
+man.untouchable	tidak boleh disentuh
+man.shield_title	Menaikkan perisai
+man.shield	perisai
+man.control_title	Kawalan kekal pada juruterbang
+man.control	kawalan bebas
+man.mirror_title	Gerak isyarat cermin menerbangkan manuver cermin
+man.mirror	boleh dicerminkan
+man.price_title	Harga dalam kredit
+man.price	%s kr.
+man.starter	dari awal
+man.wins	%s kemenangan
+man.pack	pek %s
+num.decimal	.

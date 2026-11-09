@@ -1,0 +1,106 @@
+# Kirian — Arabic. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,ar}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	أركيد أحادي اللون
+label.Vector wireframe	هيكل شبكي متّجهي
+label.Fixed-formation arcade	أركيد بتشكيل ثابت
+label.Biomechanical sci-fi	خيال علمي بيوميكانيكي
+label.16-bit console shooter	لعبة تصويب لأجهزة 16 بت
+label.DOS-era pixel art	فن البكسل من عصر DOS
+label.Two-polarity shooter	لعبة تصويب ثنائية القطبية
+label.Neon vector grid	شبكة متّجهية نيون
+label.Chrome fleet shmup	Shmup بأسطول كرومي
+label.Sepia dogfight	معركة جوية بلون السيبيا
+label.Post-apocalyptic	ما بعد نهاية العالم
+label.Dark neon voxel	فوكسل نيون داكن
+label.4-colour console era	عصر أجهزة الألوان الأربعة
+label.Kirian original	أصلي من Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	فوسفور CRT خفيف
+label.Glow on geometry	توهّج على الأشكال
+label.Soft bloom on projectiles	تأثير bloom ناعم على المقذوفات
+label.Neutral bloom	bloom محايد
+label.Subtle warm glow	توهّج دافئ خفيف
+label.Faithful retro feel	إحساس ريترو أصيل
+label.Matches the polarity palette	متوافق مع لوحة ألوان القطبية
+label.Strongest bloom preset	أقوى إعداد bloom
+label.Clean, high-contrast	نظيف وعالي التباين
+label.No bloom — flat palette	بلا bloom — لوحة ألوان مسطّحة
+label.Saturation 0.85, orange tint	التشبّع 0.85، صبغة برتقالية
+label.High-contrast neon	نيون عالي التباين
+label.Ultra-chunky flat sprites	رسوم مسطّحة خشنة جدًا
+label.Hand-crafted baseline	أساس مصنوع يدويًا
+
+# --- CRT / tint presets ---
+label.neutral	محايد
+label.scanlines 0.4, curve 0.01	خطوط المسح 0.4, الانحناء 0.01
+label.scanlines 0.7, curve 0.02	خطوط المسح 0.7, الانحناء 0.02
+label.green tint (0.85 / 1.0 / 0.85)	صبغة خضراء (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	صبغة سماوية (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	أزرق بارد (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	دافئ (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	دافئ (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	أصفر دافئ (1.0 / 0.9 / 0.7)
+label.desaturated warm	دافئ باهت
+
+# --- sprite labels ---
+label.Náhled	معاينة
+label.Loď	مركبة
+label.Loď 1	مركبة 1
+label.Loď 2	مركبة 2
+label.Loď 3	مركبة 3
+label.Loď 4	مركبة 4
+label.Loď 5	مركبة 5
+label.Loď 6	مركبة 6
+label.Přehled nepřátel	نظرة عامة على الأعداء
+label.Asteroid 1	كويكب 1
+label.Asteroid 2	كويكب 2
+label.Asteroid 3	كويكب 3
+label.Asteroid 4	كويكب 4
+label.Bublina	فقاعة
+label.Blaster	بلاستر
+label.Laser	ليزر
+label.Vulcan	فولكان
+label.Rododendron	رودودندرون
+label.Hvězda	نجمة
+label.Hvězda (zelená)	نجمة (خضراء)
+label.Exploze 1	انفجار 1
+label.Exploze 2	انفجار 2
+label.Exploze 3	انفجار 3
+label.Exploze 4	انفجار 4
+label.Vrstva 0	طبقة 0
+label.Vrstva 1	طبقة 1
+label.Vrstva 2	طبقة 2
+label.Vrstva 3	طبقة 3
+
+# --- game center (UI) ---
+label.Karta	بطاقة
+label.Tlačítko	زر
+label.Aktivní záložka	علامة تبويب نشطة
+label.Kredity	الرصيد
+label.Štít	درع
+label.Život	حياة
+label.Bomba	قنبلة
+label.Generátor	مولّد
+
+# --- sfx + music ---
+label.Výstřel	طلقة
+label.Paprsek	شعاع
+label.Malá exploze	انفجار صغير
+label.Velká exploze	انفجار كبير
+label.Zásah trupu	إصابة الهيكل
+label.Zásah štítu	إصابة الدرع
+label.Nová zbraň	سلاح جديد
+label.Sektor dokončen	اكتمل القطاع
+label.Konec hry	انتهت اللعبة
+label.Bonus	مكافأة
+label.Intro	مقدمة
+label.Téma 1	لحن 1
+label.Téma 2	لحن 2
+label.Téma 3	لحن 3
+label.Téma 4	لحن 4
+label.Téma 5 (boss)	لحن 5 (الزعيم)

@@ -5,6 +5,7 @@ repo: lioilsources/BestBet
 tagline: Hokejový model, který ukáže férovou pravděpodobnost zápasu vedle kurzu
 order: 36
 featured: false
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:
 mobile: android,ios
 artifacts:
@@ -35,8 +36,13 @@ kurzu.
 
 ### Stav
 
-Ve vývoji. Hotový je model a jeho testování na švédské HockeyAllsvenskan
-a NHL, appka zatím neexistuje.
+Ve vývoji, appka zatím neexistuje. Hotový je sběr zápasů, brankářů a kurzů
+ze švédské HockeyAllsvenskan a NHL a model, který z nich počítá
+pravděpodobnosti.
+
+První zkouška proti skutečným kurzům nevyšla: v obou ligách je model horší
+než trh. Další krok je model, který vychází z kurzu trhu a upravuje ho
+o brankáře a formu. Dokud neprojde, appka nevznikne.
 
 Jen pro dospělé (18+). Ministerstvo financí varuje: Účastí na hazardní hře
 může vzniknout závislost.

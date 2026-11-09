@@ -8,9 +8,11 @@ featured: false
 desktop:
 mobile: android,ios
 artifacts: android
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 appstore:
 playstore:
 testflight:
+icon_src: app/assets/icon/icon.png
 ---
 Hajánek je appka pro posledních deset minut dne. Pustíš dítěti známou
 pohádku převyprávěnou jako usínací meditaci: nejdřív se uloží a zklidní dech,
@@ -50,9 +52,8 @@ co jsme změnili:
 - **Sněhurka** (5+): bez královny, zrcadla a jablka. Sněhurka najde domeček
   horníčků a usne v jejich postýlkách.
 
-Hotové jsou zatím Červená Karkulka a Zlatovláska. Ostatních osm má napsaný
-text a čeká na poslední přečtení, než pohádku dostanou děti. Nové pohádky
-přibývají v katalogu, appka si je stáhne sama.
+Všech deset pohádek je hotových a zkontrolovaných. Nové pohádky přibývají
+v katalogu, appka si je stáhne sama.
 
 ### Jukebox: přírodní zvuky a ukolébavky
 
@@ -84,8 +85,8 @@ ti nechá vyladit, jak moc má být slyšet vyprávění a jak moc moře.
 
 ### Hlas telefonu, nebo tvůj
 
-Pohádku čte **český hlas telefonu**. Funguje hned a bez internetu. Když
-v telefonu chybí, appka poradí, kde ho doinstalovat (na iPhonu nejlépe Zuzana
+Pohádku čte **hlas telefonu** v jazyce appky. Funguje hned a bez internetu.
+Když v telefonu chybí, appka poradí, kde ho doinstalovat (na iPhonu nejlépe
 ve vylepšené kvalitě).
 
 Pohádku ale může číst i **hlas rodiče**. V appce přečteš nahlas asi třicet
@@ -94,7 +95,20 @@ Z nahrávky se přes noc na našem serveru vytvoří tvůj hlas a appka si stáh
 pohádky přečtené po větách. Věty, které ještě stažené nejsou, zatím přečte
 hlas telefonu. Hlasů může být víc, třeba máma i táta. Nahrávku i hlas jde
 kdykoli smazat, z telefonu i ze serveru. Hlas rodiče je zatím zkušební
-funkce.
+funkce jen v češtině a mají ji testeři. Ve verzi ke stažení i v obchodech je
+vypnutá a appka o mikrofon nežádá.
+
+### Devět jazyků
+
+Appka, všechny pohádky i hlas telefonu jsou v češtině, angličtině, němčině,
+španělštině, francouzštině, brazilské portugalštině, italštině, polštině
+a slovenštině. Pohádky nejsou doslovný překlad, ale převyprávění se stejným
+klidným průběhem. Jazyk se řídí telefonem a v Nastavení ho změníš.
+
+### Na televizi
+
+Na Android TV a Google TV má Hajánek vlastní rozhraní pro dálkový ovladač,
+s pohádkami, podkresem a nastavením. Je stejně tmavé jako v telefonu.
 
 ### Tma v pokoji
 
@@ -110,4 +124,4 @@ Hajánek nemá reklamy, registraci ani analytiku. Pohádky a zvuky jsou
 v telefonu a hrají offline. Síť appka používá jen ke stažení nových pohádek
 a k nahrání tvého hlasu, pokud o něj stojíš.
 
-Appka je v češtině, pro děti zhruba od tří do osmi let.
+Appka je pro děti zhruba od tří do osmi let.

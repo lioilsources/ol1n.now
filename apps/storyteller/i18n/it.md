@@ -1,7 +1,8 @@
 ---
 tagline: La fiaba della buonanotte che racconti tu – 2.795 fiabe da 98 paesi, l’app si limita a suggerire
 ---
-L’app non racconta mai al posto tuo. Ti offre i mattoni della storia –
+Su App Store e Google Play l’app si chiama Pohádkomat (titolo di lavoro
+StoryTeller). Non racconta mai al posto tuo. Ti offre i mattoni della storia –
 personaggi, missione, problema, finale – e poi ti tiene la traccia davanti
 agli occhi. A raccontare sei tu, al tuo bambino, con parole tue.
 
@@ -96,10 +97,12 @@ L’app divide il mondo in quindici regioni e di ognuna dieci fiabe sono gratis 
 
 ### Pacchetti di fiabe
 
-**150 fiabe sono gratis e già nell’app** — dieci per ciascuna delle quindici regioni del mondo, ognuna con le illustrazioni delle scene, i suggerimenti e i propri suoni. Altre fiabe arriveranno a volumi: cinquanta fiabe di una stessa regione. Per ogni paese il mappamondo mostra quante fiabe ha e in quale volume si trovano.
+**150 fiabe sono gratis e già nell’app** — dieci per ciascuna delle quindici regioni del mondo, ognuna con le illustrazioni delle scene, i suggerimenti e i propri suoni. Altre fiabe arrivano a volumi: cinquanta fiabe di una stessa regione con un piccolo acquisto in-app. Per ora sono usciti due volumi di Cechia e Slovacchia. Un volume acquistato si scarica sul telefono e poi funziona anche offline; gli acquisti si possono ripristinare su un nuovo telefono. Per ogni paese il mappamondo mostra quante fiabe ha e in quale volume si trovano.
 
 Il carattere è paffuto e leggibile, i titoli sono «a bolle» – l’app è per i
 bambini e deve anche sembrarlo.
 
 L’intero percorso Mappamondo → Personaggi → Missione → Problema → Finale →
 Traccia → Suggeritore gira sul telefono, senza una sola chiamata a un server.
+Niente pubblicità, account o tracciamento. Interfaccia e fiabe per ora sono solo
+in ceco.

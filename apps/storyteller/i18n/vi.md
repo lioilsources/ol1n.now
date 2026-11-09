@@ -1,7 +1,8 @@
 ---
 tagline: Truyện kể trước giờ ngủ do chính bạn kể — 2.795 truyện cổ tích từ 98 quốc gia, ứng dụng chỉ nhắc khẽ
 ---
-Ứng dụng không bao giờ kể thay bạn. Nó đưa ra những viên gạch dựng truyện —
+Trên App Store và Google Play, ứng dụng có tên Pohádkomat (tên tạm
+StoryTeller). Nó không bao giờ kể thay bạn. Nó đưa ra những viên gạch dựng truyện —
 nhân vật, nhiệm vụ, trở ngại, kết thúc — rồi giữ dàn ý ngay trước mắt bạn.
 Người kể là bạn, kể cho con mình, bằng lời của chính mình.
 
@@ -90,10 +91,12 @@ phát và không ai nói; bạn là người bật âm thanh, khi nó hợp vớ
 
 ### Các gói truyện
 
-**150 truyện miễn phí và có sẵn trong ứng dụng** — mười truyện từ mỗi vùng trong mười lăm vùng của thế giới, truyện nào cũng có tranh minh họa cảnh, gợi ý và âm thanh riêng. Các truyện khác sẽ được thêm dần theo từng tập: năm mươi truyện của một vùng. Với mỗi nước, quả địa cầu cho biết có bao nhiêu truyện và chúng nằm ở tập nào.
+**150 truyện miễn phí và có sẵn trong ứng dụng** — mười truyện từ mỗi vùng trong mười lăm vùng của thế giới, truyện nào cũng có tranh minh họa cảnh, gợi ý và âm thanh riêng. Các truyện khác đang được thêm dần theo từng tập: năm mươi truyện của một vùng với một lần mua nhỏ trong ứng dụng. Hiện đã có hai tập từ Séc và Slovakia. Tập đã mua được tải về điện thoại và dùng tiếp được khi không có mạng; giao dịch mua có thể khôi phục trên điện thoại mới. Với mỗi nước, quả địa cầu cho biết có bao nhiêu truyện và chúng nằm ở tập nào.
 
 Chữ tròn trịa, dễ đọc, tiêu đề kiểu “bong bóng” — ứng dụng dành cho trẻ em thì
 trông cũng phải như vậy.
 
 Toàn bộ hành trình Quả địa cầu → Nhân vật → Nhiệm vụ → Trở ngại → Kết thúc →
 Dàn ý → Nhắc lời chạy ngay trên điện thoại, không một lần gọi lên máy chủ.
+Không quảng cáo, không tài khoản, không theo dõi. Giao diện và truyện hiện chỉ có
+bằng tiếng Séc.

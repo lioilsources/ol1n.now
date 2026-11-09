@@ -2,9 +2,11 @@
 slug: ol1nllm
 name: Ol1nLLM
 repo: lioilsources/Ol1nLLM
-tagline: AI chat s rolemi, Knihovník a Právník, studio na obrázky, video, pohádky a hudbu
+icon_src: ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
+tagline: AI chat s rolemi, Knihovník a Právník, studio na obrázky, video, pohádky, hudbu a hlas
 order: 8
 featured: false
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop: macos,windows,linux
 mobile: android,ios
 appstore:
@@ -12,7 +14,8 @@ playstore:
 testflight:
 ---
 Ol1nLLM je jedna appka nad vlastním serverem: povídá si, hledá v knihovně
-a v zákonech, kreslí, rozhýbe obrázek do videa, natočí pohádku a složí hudbu.
+a v zákonech, kreslí, rozhýbe obrázek do videa, natočí pohádku, složí hudbu
+a odpovědi přečte nahraným hlasem.
 Podrobný průvodce se screenshoty je na stránce
 [Co appka umí](ol1nllm-features.html).
 
@@ -33,8 +36,8 @@ konverzace se dá **větvit** a roli jde změnit uprostřed.
 
 Obrázek vzniká po kolech, která tvoří strom: text → obraz, pak úpravy
 vybrané varianty. Devatenáct modelů (FLUX, SDXL, anime linie), přes
-osmdesát výtvarných **stylů**, šablony **póz**, **LoRA** ze serveru a
-negativní prompt psaný velkými písmeny.
+tři sta výtvarných **stylů** (kultury a epochy, umělci, média), šablony
+**póz**, **LoRA** ze serveru a negativní prompt psaný velkými písmeny.
 
 - **Zachovej pózu** a **Zachovat tvář** — nová postava v postoji z předlohy,
   volitelně i s jejím obličejem.
@@ -57,6 +60,12 @@ jde před animací zkontrolovat a nepovedené nechat překreslit.
 Dáš studiu hudební ukázku — ze souboru nebo nahranou mikrofonem — a ono
 z ní vyčte žánr, tempo a tóninu. **Vibe** složí novou skladbu ve stejném
 duchu, **Groove** přearanžuje tu původní do jiného žánru.
+
+### Voice Studio
+
+Z krátké nahrávky — i ze zvukové stopy videa — vznikne vlastní **hlas**.
+Kterýkoli hlas jde vyzkoušet na libovolné větě a přiřadit roli v chatu.
+Reproduktor pod odpovědí ji pak přečte hlasem té role.
 
 ### Historie
 

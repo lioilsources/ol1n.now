@@ -1,11 +1,9 @@
-# Site chrome, Polish. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
-# skins gallery ships this language.
+# Site chrome, Polish. Same keys as cs.tsv, in the same order; see the notes there.
 nav.all_apps	← Wszystkie aplikacje
 nav.back_to	← Wróć do %s
 nav.lang	Język
 title.app	%s — olin.now
+title.skins	%s — skórki — olin.now
 badge.featured	★ Polecane
 badge.mobile	Mobilne
 sec.downloads	Do pobrania
@@ -14,12 +12,103 @@ sec.shots_desktop	Zrzuty ekranu — komputer
 sec.shots_mobile	Zrzuty ekranu — telefon
 shots.empty.desktop	Na razie brak zrzutów ekranu z komputera.
 shots.empty.mobile	Na razie brak zrzutów ekranu z telefonu.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Wersje wkrótce.
+skins.title	Skórki
+skins.teaser_intro	Motywy wizualne: %s — każdy z własnymi sprite'ami, tłem z paralaksą, dźwiękami i muzyką.
+skins.more	Zobacz wszystkie skórki →
+skins.page_intro	Motywy wizualne: %s, wszystkie dla %s. Każda skórka ma własne statki, wrogów, bossa, tła, dźwięki i adaptacyjną muzykę.
+skins.disclaimer	Skórki to swobodny hołd dla klasycznych strzelanek. %s nie jest w żaden sposób powiązany z ich twórcami ani wydawcami i nie wykorzystuje ich oryginalnej grafiki ani dźwięków.
+skins.wiki	Wikipedia
+skins.vessels	Statki: %s
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	odcień %s
+cat.preview	Podgląd
+cat.vessels	Statki
+cat.enemies	Wrogowie
+cat.boss	Boss
+cat.asteroids	Asteroidy
+cat.fx	Efekty i pociski
+cat.ui	Interfejs gry
+cat.backgrounds	Tła
+cat.sfx	Dźwięki (SFX)
+cat.music	Muzyka
+player.prev	Poprzedni
+player.play	Odtwórz
+player.next	Następny
+player.pause	Wstrzymaj
 decks.title	Talie
 decks.intro	%s talii, każda narysowana w dwóch stylach. Z każdej dziesięć przykładowych kart: pięć w pierwszym stylu, pięć w drugim.
 decks.cards	%s kart
 decks.free	za darmo
 decks.free_badge	Za darmo
 decks.tr	Tłumaczenie
+visuals.title	Oprawa wizualna
+visuals.more	Zobacz całą oprawę wizualną →
+fleets.title	Floty
+fleets.teaser_intro	Floty: %s, każda z sześcioma typami statków.
+fleets.teaser_intro_man	Floty: %s, każda z sześcioma typami statków. Manewry rysowane palcem: %s.
+fleets.more	Zobacz floty i manewry →
+lb.dialog	Zrzut ekranu
+lb.hint	kółko przybliża · przeciągnij, aby przesunąć · Esc zamyka
+lb.zoom_out	Oddal
+lb.zoom_in	Przybliż
+lb.fit	Dopasuj do ekranu
+lb.close	Zamknij
+lb.open	Powiększ zrzut ekranu
+foot.logo_alt	Ananas&Bananas — cyfrowe owoce & technologie
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — grafiki — olin.now
+title.fleets	%s — floty i manewry — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — grafiki
+board.aria	Szachownica 8×8
+fleets.page_title	Floty
+fleets.page_intro	Flot: %s dla %s. Każda przerysowuje wszystkie sześć typów statków w wersji białej i czarnej — flota jest czysto wizualna, nie zmienia ani ruchu figur, ani walki.
+fleets.default	domyślna
+fleets.white	Biała flota
+fleets.black	Czarna flota
+fleets.audio_title	Dźwięk walki
+fleets.sfx_note	Dźwięk strzału i eksplozji zależy od żywiołu statku, nie od floty: pionek strzela kinetycznie, skoczek wodą, goniec ogniem, wieża lodem, hetman i król elektrycznością.
+fleets.music_note	W walce gra motyw atakującego statku.
+man.title	Manewry
+man.intro	Manewrów: %s — dwanaście rodzin, które każdy statek wykonuje po swojemu, plus jeden własny. Uruchamia się je gestem narysowanym na siatce 3×3 — jak przy odblokowywaniu Androida — i kosztują energię, która odnawia się sama. Tory lotu poniżej są próbkowane wprost z katalogu gry, więc statek na płótnie leci dokładnie tak jak w walce.
+man.units	Typy statków
+unit.pawn	Pionek
+unit.knight	Skoczek
+unit.bishop	Goniec
+unit.rook	Wieża
+unit.queen	Hetman
+unit.king	Król
+unit.pawn.element	kinetyczny
+unit.knight.element	wodny
+unit.bishop.element	ognisty
+unit.rook.element	lodowy
+unit.queen.element	elektryczny
+unit.king.element	elektryczny
+man.path	Tor lotu manewru %s
+man.energy	Energia
+man.duration	Czas trwania
+man.secs	%s s
+man.shots	Strzały
+man.untouchable_title	Pociski przelatują na wylot
+man.untouchable	nietykalny
+man.shield_title	Podnosi tarczę
+man.shield	tarcza
+man.control_title	Sterowanie zostaje przy pilocie
+man.control	swobodne sterowanie
+man.mirror_title	Lustrzany gest wykonuje lustrzany manewr
+man.mirror	odwracalny
+man.price_title	Cena w kredytach
+man.price	%s kr.
+man.starter	od początku
+man.wins	zwycięstwa: %s
+man.pack	pakiet %s
+num.decimal	,

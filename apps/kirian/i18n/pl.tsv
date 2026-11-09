@@ -1,0 +1,106 @@
+# Kirian — Polish. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,pl}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Monochromatyczny automat
+label.Vector wireframe	Wektorowa siatka
+label.Fixed-formation arcade	Automat ze stałą formacją
+label.Biomechanical sci-fi	Biomechaniczne sci-fi
+label.16-bit console shooter	Strzelanka z konsoli 16-bit
+label.DOS-era pixel art	Pixel art z ery DOS
+label.Two-polarity shooter	Strzelanka dwóch biegunów
+label.Neon vector grid	Neonowa siatka wektorowa
+label.Chrome fleet shmup	Shmup z chromowaną flotą
+label.Sepia dogfight	Walka powietrzna w sepii
+label.Post-apocalyptic	Postapokaliptyczny
+label.Dark neon voxel	Mroczne neonowe woksele
+label.4-colour console era	Era konsol 4-kolorowych
+label.Kirian original	Oryginał Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Subtelny luminofor CRT
+label.Glow on geometry	Poświata na geometrii
+label.Soft bloom on projectiles	Miękki bloom na pociskach
+label.Neutral bloom	Neutralny bloom
+label.Subtle warm glow	Subtelna ciepła poświata
+label.Faithful retro feel	Wierny klimat retro
+label.Matches the polarity palette	Dopasowany do palety biegunów
+label.Strongest bloom preset	Najmocniejszy preset bloomu
+label.Clean, high-contrast	Czysty, wysoki kontrast
+label.No bloom — flat palette	Bez bloomu — płaska paleta
+label.Saturation 0.85, orange tint	Nasycenie 0.85, pomarańczowy odcień
+label.High-contrast neon	Neon o wysokim kontraście
+label.Ultra-chunky flat sprites	Bardzo grube płaskie sprite'y
+label.Hand-crafted baseline	Ręcznie zrobiona baza
+
+# --- CRT / tint presets ---
+label.neutral	neutralny
+label.scanlines 0.4, curve 0.01	linie skanowania 0.4, krzywizna 0.01
+label.scanlines 0.7, curve 0.02	linie skanowania 0.7, krzywizna 0.02
+label.green tint (0.85 / 1.0 / 0.85)	zielony odcień (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	cyjanowy odcień (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	chłodny niebieski (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	ciepły (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	ciepły (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	ciepły żółty (1.0 / 0.9 / 0.7)
+label.desaturated warm	ciepły, odbarwiony
+
+# --- sprite labels ---
+label.Náhled	Podgląd
+label.Loď	Statek
+label.Loď 1	Statek 1
+label.Loď 2	Statek 2
+label.Loď 3	Statek 3
+label.Loď 4	Statek 4
+label.Loď 5	Statek 5
+label.Loď 6	Statek 6
+label.Přehled nepřátel	Przegląd wrogów
+label.Asteroid 1	Asteroida 1
+label.Asteroid 2	Asteroida 2
+label.Asteroid 3	Asteroida 3
+label.Asteroid 4	Asteroida 4
+label.Bublina	Bąbel
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Rododendron
+label.Hvězda	Gwiazda
+label.Hvězda (zelená)	Gwiazda (zielona)
+label.Exploze 1	Eksplozja 1
+label.Exploze 2	Eksplozja 2
+label.Exploze 3	Eksplozja 3
+label.Exploze 4	Eksplozja 4
+label.Vrstva 0	Warstwa 0
+label.Vrstva 1	Warstwa 1
+label.Vrstva 2	Warstwa 2
+label.Vrstva 3	Warstwa 3
+
+# --- game center (UI) ---
+label.Karta	Karta
+label.Tlačítko	Przycisk
+label.Aktivní záložka	Aktywna zakładka
+label.Kredity	Kredyty
+label.Štít	Osłona
+label.Život	Życie
+label.Bomba	Bomba
+label.Generátor	Generator
+
+# --- sfx + music ---
+label.Výstřel	Strzał
+label.Paprsek	Promień
+label.Malá exploze	Mała eksplozja
+label.Velká exploze	Duża eksplozja
+label.Zásah trupu	Trafienie w kadłub
+label.Zásah štítu	Trafienie w osłonę
+label.Nová zbraň	Nowa broń
+label.Sektor dokončen	Sektor ukończony
+label.Konec hry	Koniec gry
+label.Bonus	Bonus
+label.Intro	Intro
+label.Téma 1	Motyw 1
+label.Téma 2	Motyw 2
+label.Téma 3	Motyw 3
+label.Téma 4	Motyw 4
+label.Téma 5 (boss)	Motyw 5 (boss)

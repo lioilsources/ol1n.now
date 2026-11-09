@@ -1,0 +1,106 @@
+# Kirian — Punjabi. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,pa}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	ਮੋਨੋਕ੍ਰੋਮ ਆਰਕੇਡ
+label.Vector wireframe	ਵੈਕਟਰ ਵਾਇਰਫ੍ਰੇਮ
+label.Fixed-formation arcade	ਸਥਿਰ ਫਾਰਮੇਸ਼ਨ ਆਰਕੇਡ
+label.Biomechanical sci-fi	ਬਾਇਓਮਕੈਨੀਕਲ ਸਾਇ-ਫਾਈ
+label.16-bit console shooter	16-ਬਿੱਟ ਕੰਸੋਲ ਸ਼ੂਟਰ
+label.DOS-era pixel art	DOS ਦੌਰ ਦੀ ਪਿਕਸਲ ਆਰਟ
+label.Two-polarity shooter	ਦੋ ਧਰੁਵਾਂ ਵਾਲਾ ਸ਼ੂਟਰ
+label.Neon vector grid	ਨੀਓਨ ਵੈਕਟਰ ਗਰਿੱਡ
+label.Chrome fleet shmup	ਕ੍ਰੋਮ ਬੇੜੇ ਵਾਲਾ shmup
+label.Sepia dogfight	ਸੇਪੀਆ ਹਵਾਈ ਲੜਾਈ
+label.Post-apocalyptic	ਪਰਲੋ ਤੋਂ ਬਾਅਦ ਦੀ ਦੁਨੀਆ
+label.Dark neon voxel	ਗੂੜ੍ਹਾ ਨੀਓਨ ਵੌਕਸਲ
+label.4-colour console era	4-ਰੰਗੀ ਕੰਸੋਲ ਦਾ ਦੌਰ
+label.Kirian original	Kirian ਓਰੀਜਨਲ
+
+# --- skin notes ---
+label.Subtle CRT phosphor	ਹਲਕਾ CRT ਫਾਸਫੋਰ
+label.Glow on geometry	ਜਿਓਮੈਟਰੀ 'ਤੇ ਚਮਕ
+label.Soft bloom on projectiles	ਗੋਲੀਆਂ 'ਤੇ ਨਰਮ bloom
+label.Neutral bloom	ਨਿਰਪੱਖ bloom
+label.Subtle warm glow	ਹਲਕੀ ਨਿੱਘੀ ਚਮਕ
+label.Faithful retro feel	ਅਸਲ ਵਰਗਾ ਰੈਟਰੋ ਅਹਿਸਾਸ
+label.Matches the polarity palette	ਧਰੁਵੀ ਪੈਲੇਟ ਨਾਲ ਮੇਲ
+label.Strongest bloom preset	ਸਭ ਤੋਂ ਤੇਜ਼ bloom ਪ੍ਰੀਸੈੱਟ
+label.Clean, high-contrast	ਸਾਫ਼, ਉੱਚ ਕੰਟ੍ਰਾਸਟ
+label.No bloom — flat palette	bloom ਨਹੀਂ — ਸਪਾਟ ਪੈਲੇਟ
+label.Saturation 0.85, orange tint	ਸੈਚੁਰੇਸ਼ਨ 0.85, ਸੰਤਰੀ ਰੰਗਤ
+label.High-contrast neon	ਉੱਚ ਕੰਟ੍ਰਾਸਟ ਨੀਓਨ
+label.Ultra-chunky flat sprites	ਬਹੁਤ ਮੋਟੇ ਸਪਾਟ ਸਪ੍ਰਾਈਟ
+label.Hand-crafted baseline	ਹੱਥੀਂ ਬਣਿਆ ਬੇਸ
+
+# --- CRT / tint presets ---
+label.neutral	ਨਿਰਪੱਖ
+label.scanlines 0.4, curve 0.01	ਸਕੈਨਲਾਈਨਾਂ 0.4, ਵਕਰਤਾ 0.01
+label.scanlines 0.7, curve 0.02	ਸਕੈਨਲਾਈਨਾਂ 0.7, ਵਕਰਤਾ 0.02
+label.green tint (0.85 / 1.0 / 0.85)	ਹਰੀ ਰੰਗਤ (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	ਸਿਆਨ ਰੰਗਤ (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	ਠੰਢਾ ਨੀਲਾ (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	ਨਿੱਘਾ (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	ਨਿੱਘਾ (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	ਨਿੱਘਾ ਪੀਲਾ (1.0 / 0.9 / 0.7)
+label.desaturated warm	ਫਿੱਕਾ ਨਿੱਘਾ
+
+# --- sprite labels ---
+label.Náhled	ਪੂਰਵਦਰਸ਼ਨ
+label.Loď	ਜਹਾਜ਼
+label.Loď 1	ਜਹਾਜ਼ 1
+label.Loď 2	ਜਹਾਜ਼ 2
+label.Loď 3	ਜਹਾਜ਼ 3
+label.Loď 4	ਜਹਾਜ਼ 4
+label.Loď 5	ਜਹਾਜ਼ 5
+label.Loď 6	ਜਹਾਜ਼ 6
+label.Přehled nepřátel	ਦੁਸ਼ਮਣਾਂ ਦੀ ਝਲਕ
+label.Asteroid 1	ਛੋਟਾ ਗ੍ਰਹਿ 1
+label.Asteroid 2	ਛੋਟਾ ਗ੍ਰਹਿ 2
+label.Asteroid 3	ਛੋਟਾ ਗ੍ਰਹਿ 3
+label.Asteroid 4	ਛੋਟਾ ਗ੍ਰਹਿ 4
+label.Bublina	ਬੁਲਬੁਲਾ
+label.Blaster	ਬਲਾਸਟਰ
+label.Laser	ਲੇਜ਼ਰ
+label.Vulcan	ਵਲਕਨ
+label.Rododendron	ਰੋਡੋਡੈਂਡਰਨ
+label.Hvězda	ਤਾਰਾ
+label.Hvězda (zelená)	ਤਾਰਾ (ਹਰਾ)
+label.Exploze 1	ਧਮਾਕਾ 1
+label.Exploze 2	ਧਮਾਕਾ 2
+label.Exploze 3	ਧਮਾਕਾ 3
+label.Exploze 4	ਧਮਾਕਾ 4
+label.Vrstva 0	ਪਰਤ 0
+label.Vrstva 1	ਪਰਤ 1
+label.Vrstva 2	ਪਰਤ 2
+label.Vrstva 3	ਪਰਤ 3
+
+# --- game center (UI) ---
+label.Karta	ਕਾਰਡ
+label.Tlačítko	ਬਟਨ
+label.Aktivní záložka	ਸਰਗਰਮ ਟੈਬ
+label.Kredity	ਕ੍ਰੈਡਿਟ
+label.Štít	ਸ਼ੀਲਡ
+label.Život	ਜਾਨ
+label.Bomba	ਬੰਬ
+label.Generátor	ਜਨਰੇਟਰ
+
+# --- sfx + music ---
+label.Výstřel	ਫ਼ਾਇਰ
+label.Paprsek	ਕਿਰਨ
+label.Malá exploze	ਛੋਟਾ ਧਮਾਕਾ
+label.Velká exploze	ਵੱਡਾ ਧਮਾਕਾ
+label.Zásah trupu	ਢਾਂਚੇ 'ਤੇ ਵਾਰ
+label.Zásah štítu	ਸ਼ੀਲਡ 'ਤੇ ਵਾਰ
+label.Nová zbraň	ਨਵਾਂ ਹਥਿਆਰ
+label.Sektor dokončen	ਸੈਕਟਰ ਪੂਰਾ
+label.Konec hry	ਖੇਡ ਖ਼ਤਮ
+label.Bonus	ਬੋਨਸ
+label.Intro	ਇੰਟਰੋ
+label.Téma 1	ਥੀਮ 1
+label.Téma 2	ਥੀਮ 2
+label.Téma 3	ਥੀਮ 3
+label.Téma 4	ਥੀਮ 4
+label.Téma 5 (boss)	ਥੀਮ 5 (ਬੌਸ)

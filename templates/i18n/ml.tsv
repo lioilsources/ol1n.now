@@ -1,0 +1,114 @@
+# Site chrome, Malayalam. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← എല്ലാ ആപ്പുകളും
+nav.back_to	← %s-ലേക്ക് മടങ്ങുക
+nav.lang	ഭാഷ
+title.app	%s — olin.now
+title.skins	%s — സ്കിനുകൾ — olin.now
+badge.featured	★ ശുപാർശ
+badge.mobile	മൊബൈൽ
+sec.downloads	ഡൗൺലോഡുകൾ
+sec.description	വിവരണം
+sec.shots_desktop	സ്ക്രീൻഷോട്ടുകൾ — ഡെസ്ക്ടോപ്പ്
+sec.shots_mobile	സ്ക്രീൻഷോട്ടുകൾ — മൊബൈൽ
+shots.empty.desktop	ഡെസ്ക്ടോപ്പ് സ്ക്രീൻഷോട്ടുകൾ ഇതുവരെ ഇല്ല.
+shots.empty.mobile	മൊബൈൽ സ്ക്രീൻഷോട്ടുകൾ ഇതുവരെ ഇല്ല.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	ബിൽഡുകൾ ഉടൻ ലഭ്യമാകും.
+skins.title	സ്കിനുകൾ
+skins.teaser_intro	%s വിഷ്വൽ തീമുകൾ — ഓരോന്നിനും സ്വന്തം സ്പ്രൈറ്റുകൾ, പാരലാക്സ് പശ്ചാത്തലം, ശബ്ദങ്ങൾ, സംഗീതം.
+skins.more	എല്ലാ സ്കിനുകളും കാണുക →
+skins.page_intro	%s വിഷ്വൽ തീമുകൾ — %s-നായി. ഓരോ സ്കിനിനും സ്വന്തം കപ്പലുകൾ, ശത്രുക്കൾ, ബോസ്, പശ്ചാത്തലങ്ങൾ, ശബ്ദങ്ങൾ, അഡാപ്റ്റീവ് സംഗീതം എന്നിവയുണ്ട്.
+skins.disclaimer	ക്ലാസിക് ഷൂട്ടർ ഗെയിമുകൾക്കുള്ള സ്വതന്ത്രമായ ആദരമാണ് ഈ സ്കിനുകൾ. %s-ന് അവയുടെ സ്രഷ്ടാക്കളുമായോ പ്രസാധകരുമായോ യാതൊരു ബന്ധവുമില്ല, അവയുടെ യഥാർത്ഥ ഗ്രാഫിക്സോ ശബ്ദങ്ങളോ ഉപയോഗിക്കുന്നുമില്ല.
+skins.wiki	വിക്കിപീഡിയ
+skins.vessels	കപ്പലുകൾ: %s
+skins.pixelart	പിക്സൽ ആർട്ട്
+skins.bloom	ബ്ലൂം %s
+skins.crt	CRT %s
+skins.tint	ടിന്റ് %s
+cat.preview	പ്രിവ്യൂ
+cat.vessels	കപ്പലുകൾ
+cat.enemies	ശത്രുക്കൾ
+cat.boss	ബോസ്
+cat.asteroids	ഛിന്നഗ്രഹങ്ങൾ
+cat.fx	ഇഫക്റ്റുകളും വെടിയുണ്ടകളും
+cat.ui	ഗെയിം ഇന്റർഫേസ്
+cat.backgrounds	പശ്ചാത്തലങ്ങൾ
+cat.sfx	ശബ്ദ ഇഫക്റ്റുകൾ (SFX)
+cat.music	സംഗീതം
+player.prev	മുമ്പത്തേത്
+player.play	പ്ലേ ചെയ്യുക
+player.next	അടുത്തത്
+player.pause	താൽക്കാലികമായി നിർത്തുക
+decks.title	ഡെക്കുകൾ
+decks.intro	%s ഡെക്കുകൾ, ഓരോന്നും രണ്ട് ചിത്രശൈലികളിൽ വരച്ചത്. ഓരോന്നിൽ നിന്നും പത്ത് സാമ്പിൾ കാർഡുകൾ: അഞ്ചെണ്ണം ആദ്യ ശൈലിയിൽ, അഞ്ചെണ്ണം രണ്ടാമത്തേതിൽ.
+decks.cards	%s കാർഡുകൾ
+decks.free	സൗജന്യം
+decks.free_badge	സൗജന്യം
+decks.tr	വിവർത്തനം
+visuals.title	വിഷ്വലുകൾ
+visuals.more	എല്ലാ വിഷ്വലുകളും കാണുക →
+fleets.title	കപ്പൽപ്പടകൾ
+fleets.teaser_intro	കപ്പൽപ്പടകൾ: %s, ഓരോന്നിലും ആറ് തരം കപ്പലുകൾ.
+fleets.teaser_intro_man	കപ്പൽപ്പടകൾ: %s, ഓരോന്നിലും ആറ് തരം കപ്പലുകൾ. വിരൽ കൊണ്ട് വരയ്ക്കുന്ന നീക്കങ്ങൾ: %s.
+fleets.more	കപ്പൽപ്പടകളും നീക്കങ്ങളും കാണുക →
+lb.dialog	സ്ക്രീൻഷോട്ട്
+lb.hint	വീൽ കൊണ്ട് സൂം · വലിച്ച് നീക്കുക · Esc അടയ്ക്കും
+lb.zoom_out	സൂം ഔട്ട്
+lb.zoom_in	സൂം ഇൻ
+lb.fit	സ്ക്രീനിൽ ഒതുക്കുക
+lb.close	അടയ്ക്കുക
+lb.open	സ്ക്രീൻഷോട്ട് വലുതാക്കുക
+foot.logo_alt	Ananas&Bananas — ഡിജിറ്റൽ പഴങ്ങൾ & സാങ്കേതികവിദ്യ
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — ദൃശ്യങ്ങൾ — olin.now
+title.fleets	%s — കപ്പൽപ്പടകളും അഭ്യാസങ്ങളും — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — ദൃശ്യങ്ങൾ
+board.aria	8×8 ചതുരംഗപ്പലക
+fleets.page_title	കപ്പൽപ്പടകൾ
+fleets.page_intro	കപ്പൽപ്പടകൾ: %s, %s-നായി. ഓരോന്നും ആറ് തരം കപ്പലുകളെയും വെള്ളയിലും കറുപ്പിലും പുതുതായി വരയ്ക്കുന്നു — കപ്പൽപ്പട വെറും രൂപമാണ്, കരുക്കളുടെ നീക്കമോ യുദ്ധമോ മാറ്റുന്നില്ല.
+fleets.default	സ്ഥിരം
+fleets.white	വെള്ളപ്പട
+fleets.black	കറുപ്പുപ്പട
+fleets.audio_title	യുദ്ധത്തിന്റെ ശബ്ദം
+fleets.sfx_note	വെടിയുടെയും സ്ഫോടനത്തിന്റെയും ശബ്ദം തീരുമാനിക്കുന്നത് പടയല്ല, കപ്പലിന്റെ മൂലകമാണ്: കാലാൾ ഗതികമായി വെടിവയ്ക്കുന്നു, കുതിര വെള്ളം, ആന തീ, തേര് ഐസ്, മന്ത്രിയും രാജാവും വൈദ്യുതി.
+fleets.music_note	യുദ്ധത്തിൽ ആക്രമിക്കുന്ന കപ്പലിന്റെ തീം കേൾക്കാം.
+man.title	അഭ്യാസങ്ങൾ
+man.intro	%s അഭ്യാസങ്ങൾ: ഓരോ കപ്പലും സ്വന്തം രീതിയിൽ പറത്തുന്ന പന്ത്രണ്ട് കുടുംബങ്ങളും അതിന്റെ സ്വന്തമായ ഒന്നും. 3×3 ഗ്രിഡിൽ വരയ്ക്കുന്ന ആംഗ്യം കൊണ്ട് ഇവ തുടങ്ങുന്നു — Android അൺലോക്ക് ചെയ്യുന്നതുപോലെ — തനിയെ നിറയുന്ന ഊർജം ചെലവാക്കുന്നു. താഴെയുള്ള പാതകൾ നേരിട്ട് കളിയുടെ കാറ്റലോഗിൽ നിന്ന് എടുത്തതാണ്, അതിനാൽ ക്യാൻവാസിലെ കപ്പൽ യുദ്ധത്തിലേതുപോലെ തന്നെ പറക്കുന്നു.
+man.units	കപ്പൽ തരങ്ങൾ
+unit.pawn	കാലാൾ
+unit.knight	കുതിര
+unit.bishop	ആന
+unit.rook	തേര്
+unit.queen	മന്ത്രി
+unit.king	രാജാവ്
+unit.pawn.element	ഗതിക
+unit.knight.element	ജലം
+unit.bishop.element	അഗ്നി
+unit.rook.element	ഹിമം
+unit.queen.element	വൈദ്യുത
+unit.king.element	വൈദ്യുത
+man.path	%s അഭ്യാസത്തിന്റെ പാത
+man.energy	ഊർജം
+man.duration	ദൈർഘ്യം
+man.secs	%s സെ.
+man.shots	വെടികൾ
+man.untouchable_title	വെടിയുണ്ടകൾ കടന്നുപോകും
+man.untouchable	സ്പർശിക്കാനാവാത്ത
+man.shield_title	പരിച ഉയർത്തുന്നു
+man.shield	പരിച
+man.control_title	നിയന്ത്രണം പൈലറ്റിൽ തന്നെ
+man.control	സ്വതന്ത്ര നിയന്ത്രണം
+man.mirror_title	പ്രതിബിംബിച്ച ആംഗ്യം പ്രതിബിംബിച്ച അഭ്യാസം പറത്തും
+man.mirror	പ്രതിബിംബിക്കാവുന്ന
+man.price_title	ക്രെഡിറ്റിലെ വില
+man.price	%s ക്രെഡിറ്റ്
+man.starter	തുടക്കം മുതൽ
+man.wins	ജയങ്ങൾ: %s
+man.pack	പായ്ക്ക് %s
+num.decimal	.

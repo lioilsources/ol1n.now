@@ -1,0 +1,106 @@
+# Kirian — Slovak. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,sk}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Monochromatický automat
+label.Vector wireframe	Vektorový drôtový model
+label.Fixed-formation arcade	Automat s pevnou formáciou
+label.Biomechanical sci-fi	Biomechanické sci-fi
+label.16-bit console shooter	Strieľačka zo 16-bitovej konzoly
+label.DOS-era pixel art	Pixel art z éry DOS
+label.Two-polarity shooter	Strieľačka dvoch polarít
+label.Neon vector grid	Neónová vektorová mriežka
+label.Chrome fleet shmup	Shmup s chrómovou flotilou
+label.Sepia dogfight	Letecký súboj v sépii
+label.Post-apocalyptic	Postapokalyptický
+label.Dark neon voxel	Tmavé neónové voxely
+label.4-colour console era	Éra 4-farebných konzol
+label.Kirian original	Kirian originál
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Jemný CRT luminofor
+label.Glow on geometry	Žiara na geometrii
+label.Soft bloom on projectiles	Jemný bloom na projektiloch
+label.Neutral bloom	Neutrálny bloom
+label.Subtle warm glow	Jemná teplá žiara
+label.Faithful retro feel	Verný retro pocit
+label.Matches the polarity palette	Ladí s paletou polarít
+label.Strongest bloom preset	Najsilnejšie nastavenie bloomu
+label.Clean, high-contrast	Čisté, vysoký kontrast
+label.No bloom — flat palette	Bez bloomu — plochá paleta
+label.Saturation 0.85, orange tint	Sýtosť 0.85, oranžový nádych
+label.High-contrast neon	Neón s vysokým kontrastom
+label.Ultra-chunky flat sprites	Extrémne hrubé ploché sprity
+label.Hand-crafted baseline	Ručne robený základ
+
+# --- CRT / tint presets ---
+label.neutral	neutrálny
+label.scanlines 0.4, curve 0.01	riadkovanie 0.4, zakrivenie 0.01
+label.scanlines 0.7, curve 0.02	riadkovanie 0.7, zakrivenie 0.02
+label.green tint (0.85 / 1.0 / 0.85)	zelený nádych (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	azúrový nádych (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	studená modrá (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	teplý (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	teplý (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	teplá žltá (1.0 / 0.9 / 0.7)
+label.desaturated warm	teplý odfarbený
+
+# --- sprite labels ---
+label.Náhled	Náhľad
+label.Loď	Loď
+label.Loď 1	Loď 1
+label.Loď 2	Loď 2
+label.Loď 3	Loď 3
+label.Loď 4	Loď 4
+label.Loď 5	Loď 5
+label.Loď 6	Loď 6
+label.Přehled nepřátel	Prehľad nepriateľov
+label.Asteroid 1	Asteroid 1
+label.Asteroid 2	Asteroid 2
+label.Asteroid 3	Asteroid 3
+label.Asteroid 4	Asteroid 4
+label.Bublina	Bublina
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Rododendron
+label.Hvězda	Hviezda
+label.Hvězda (zelená)	Hviezda (zelená)
+label.Exploze 1	Explózia 1
+label.Exploze 2	Explózia 2
+label.Exploze 3	Explózia 3
+label.Exploze 4	Explózia 4
+label.Vrstva 0	Vrstva 0
+label.Vrstva 1	Vrstva 1
+label.Vrstva 2	Vrstva 2
+label.Vrstva 3	Vrstva 3
+
+# --- game center (UI) ---
+label.Karta	Karta
+label.Tlačítko	Tlačidlo
+label.Aktivní záložka	Aktívna záložka
+label.Kredity	Kredity
+label.Štít	Štít
+label.Život	Život
+label.Bomba	Bomba
+label.Generátor	Generátor
+
+# --- sfx + music ---
+label.Výstřel	Výstrel
+label.Paprsek	Lúč
+label.Malá exploze	Malá explózia
+label.Velká exploze	Veľká explózia
+label.Zásah trupu	Zásah trupu
+label.Zásah štítu	Zásah štítu
+label.Nová zbraň	Nová zbraň
+label.Sektor dokončen	Sektor dokončený
+label.Konec hry	Koniec hry
+label.Bonus	Bonus
+label.Intro	Intro
+label.Téma 1	Téma 1
+label.Téma 2	Téma 2
+label.Téma 3	Téma 3
+label.Téma 4	Téma 4
+label.Téma 5 (boss)	Téma 5 (boss)

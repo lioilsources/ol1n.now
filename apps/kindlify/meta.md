@@ -5,8 +5,10 @@ repo: lioilsources/Kindlify
 tagline: Nelineární čtečka starověkých textů — 92 děl, české souhrny a originál
 order: 7
 featured: false
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop: macos
 mobile: android,ios
+icon_src: ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 appstore:
 playstore:
 testflight:

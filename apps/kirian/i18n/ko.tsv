@@ -1,0 +1,106 @@
+# Kirian — Korean. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,ko}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	흑백 아케이드
+label.Vector wireframe	벡터 와이어프레임
+label.Fixed-formation arcade	고정 편대 아케이드
+label.Biomechanical sci-fi	바이오메카닉 SF
+label.16-bit console shooter	16비트 콘솔 슈팅
+label.DOS-era pixel art	DOS 시대 픽셀 아트
+label.Two-polarity shooter	양극성 슈팅
+label.Neon vector grid	네온 벡터 그리드
+label.Chrome fleet shmup	크롬 함대 슈팅
+label.Sepia dogfight	세피아 공중전
+label.Post-apocalyptic	포스트 아포칼립스
+label.Dark neon voxel	다크 네온 복셀
+label.4-colour console era	4색 콘솔 시대
+label.Kirian original	Kirian 오리지널
+
+# --- skin notes ---
+label.Subtle CRT phosphor	은은한 CRT 형광
+label.Glow on geometry	도형 위의 글로우
+label.Soft bloom on projectiles	탄환에 부드러운 블룸
+label.Neutral bloom	중립 블룸
+label.Subtle warm glow	은은한 따뜻한 글로우
+label.Faithful retro feel	충실한 레트로 감성
+label.Matches the polarity palette	극성 팔레트에 맞춤
+label.Strongest bloom preset	가장 강한 블룸 프리셋
+label.Clean, high-contrast	깔끔한 고대비
+label.No bloom — flat palette	블룸 없음 — 플랫 팔레트
+label.Saturation 0.85, orange tint	채도 0.85, 주황색 색조
+label.High-contrast neon	고대비 네온
+label.Ultra-chunky flat sprites	극도로 굵은 플랫 스프라이트
+label.Hand-crafted baseline	직접 만든 기본 스킨
+
+# --- CRT / tint presets ---
+label.neutral	중립
+label.scanlines 0.4, curve 0.01	주사선 0.4, 곡률 0.01
+label.scanlines 0.7, curve 0.02	주사선 0.7, 곡률 0.02
+label.green tint (0.85 / 1.0 / 0.85)	녹색 색조 (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	청록색 색조 (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	차가운 파랑 (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	따뜻한 톤 (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	따뜻한 톤 (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	따뜻한 노랑 (1.0 / 0.9 / 0.7)
+label.desaturated warm	채도를 낮춘 따뜻한 톤
+
+# --- sprite labels ---
+label.Náhled	미리보기
+label.Loď	기체
+label.Loď 1	기체 1
+label.Loď 2	기체 2
+label.Loď 3	기체 3
+label.Loď 4	기체 4
+label.Loď 5	기체 5
+label.Loď 6	기체 6
+label.Přehled nepřátel	적 목록
+label.Asteroid 1	소행성 1
+label.Asteroid 2	소행성 2
+label.Asteroid 3	소행성 3
+label.Asteroid 4	소행성 4
+label.Bublina	버블
+label.Blaster	블래스터
+label.Laser	레이저
+label.Vulcan	벌컨
+label.Rododendron	로도덴드론
+label.Hvězda	스타
+label.Hvězda (zelená)	스타 (녹색)
+label.Exploze 1	폭발 1
+label.Exploze 2	폭발 2
+label.Exploze 3	폭발 3
+label.Exploze 4	폭발 4
+label.Vrstva 0	레이어 0
+label.Vrstva 1	레이어 1
+label.Vrstva 2	레이어 2
+label.Vrstva 3	레이어 3
+
+# --- game center (UI) ---
+label.Karta	카드
+label.Tlačítko	버튼
+label.Aktivní záložka	활성 탭
+label.Kredity	크레딧
+label.Štít	실드
+label.Život	라이프
+label.Bomba	폭탄
+label.Generátor	제너레이터
+
+# --- sfx + music ---
+label.Výstřel	사격
+label.Paprsek	빔
+label.Malá exploze	작은 폭발
+label.Velká exploze	큰 폭발
+label.Zásah trupu	기체 피격
+label.Zásah štítu	실드 피격
+label.Nová zbraň	새 무기
+label.Sektor dokončen	섹터 클리어
+label.Konec hry	게임 오버
+label.Bonus	보너스
+label.Intro	인트로
+label.Téma 1	테마 1
+label.Téma 2	테마 2
+label.Téma 3	테마 3
+label.Téma 4	테마 4
+label.Téma 5 (boss)	테마 5 (보스)

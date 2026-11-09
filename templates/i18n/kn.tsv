@@ -1,0 +1,114 @@
+# Site chrome, Kannada. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← ಎಲ್ಲಾ ಆ್ಯಪ್‌ಗಳು
+nav.back_to	← %s ಗೆ ಹಿಂತಿರುಗಿ
+nav.lang	ಭಾಷೆ
+title.app	%s — olin.now
+title.skins	%s — ಸ್ಕಿನ್‌ಗಳು — olin.now
+badge.featured	★ ಶಿಫಾರಸು
+badge.mobile	ಮೊಬೈಲ್
+sec.downloads	ಡೌನ್‌ಲೋಡ್‌ಗಳು
+sec.description	ವಿವರಣೆ
+sec.shots_desktop	ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳು — ಡೆಸ್ಕ್‌ಟಾಪ್
+sec.shots_mobile	ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳು — ಮೊಬೈಲ್
+shots.empty.desktop	ಇನ್ನೂ ಡೆಸ್ಕ್‌ಟಾಪ್ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳಿಲ್ಲ.
+shots.empty.mobile	ಇನ್ನೂ ಮೊಬೈಲ್ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳಿಲ್ಲ.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	ಬಿಲ್ಡ್‌ಗಳು ಶೀಘ್ರದಲ್ಲೇ ಲಭ್ಯವಾಗಲಿವೆ.
+skins.title	ಸ್ಕಿನ್‌ಗಳು
+skins.teaser_intro	%s ದೃಶ್ಯ ಥೀಮ್‌ಗಳು — ಪ್ರತಿಯೊಂದಕ್ಕೂ ತನ್ನದೇ ಸ್ಪ್ರೈಟ್‌ಗಳು, ಪ್ಯಾರಲಾಕ್ಸ್ ಹಿನ್ನೆಲೆ, ಧ್ವನಿಗಳು ಮತ್ತು ಸಂಗೀತ.
+skins.more	ಎಲ್ಲಾ ಸ್ಕಿನ್‌ಗಳನ್ನು ನೋಡಿ →
+skins.page_intro	%s ದೃಶ್ಯ ಥೀಮ್‌ಗಳು — %s ಗಾಗಿ. ಪ್ರತಿ ಸ್ಕಿನ್‌ಗೂ ತನ್ನದೇ ಹಡಗುಗಳು, ಶತ್ರುಗಳು, ಬಾಸ್, ಹಿನ್ನೆಲೆಗಳು, ಧ್ವನಿಗಳು ಮತ್ತು ಅಡಾಪ್ಟಿವ್ ಸಂಗೀತವಿದೆ.
+skins.disclaimer	ಸ್ಕಿನ್‌ಗಳು ಕ್ಲಾಸಿಕ್ ಶೂಟರ್ ಆಟಗಳಿಗೆ ಸಲ್ಲಿಸಿದ ಮುಕ್ತ ಗೌರವ. %s ಗೆ ಅವುಗಳ ರಚನಾಕಾರರು ಅಥವಾ ಪ್ರಕಾಶಕರೊಂದಿಗೆ ಯಾವುದೇ ಸಂಬಂಧವಿಲ್ಲ ಮತ್ತು ಅದು ಅವುಗಳ ಮೂಲ ಗ್ರಾಫಿಕ್ಸ್ ಅಥವಾ ಧ್ವನಿಗಳನ್ನು ಬಳಸುವುದಿಲ್ಲ.
+skins.wiki	ವಿಕಿಪೀಡಿಯ
+skins.vessels	ಹಡಗುಗಳು: %s
+skins.pixelart	ಪಿಕ್ಸೆಲ್ ಆರ್ಟ್
+skins.bloom	ಬ್ಲೂಮ್ %s
+skins.crt	CRT %s
+skins.tint	ಟಿಂಟ್ %s
+cat.preview	ಮುನ್ನೋಟ
+cat.vessels	ಹಡಗುಗಳು
+cat.enemies	ಶತ್ರುಗಳು
+cat.boss	ಬಾಸ್
+cat.asteroids	ಕ್ಷುದ್ರಗ್ರಹಗಳು
+cat.fx	ಎಫೆಕ್ಟ್‌ಗಳು ಮತ್ತು ಗುಂಡುಗಳು
+cat.ui	ಆಟದ ಇಂಟರ್‌ಫೇಸ್
+cat.backgrounds	ಹಿನ್ನೆಲೆಗಳು
+cat.sfx	ಧ್ವನಿ ಪರಿಣಾಮಗಳು (SFX)
+cat.music	ಸಂಗೀತ
+player.prev	ಹಿಂದಿನದು
+player.play	ಪ್ಲೇ ಮಾಡಿ
+player.next	ಮುಂದಿನದು
+player.pause	ವಿರಾಮ
+decks.title	ಡೆಕ್‌ಗಳು
+decks.intro	%s ಡೆಕ್‌ಗಳು, ಪ್ರತಿಯೊಂದನ್ನೂ ಎರಡು ಕಲಾ ಶೈಲಿಗಳಲ್ಲಿ ಬಿಡಿಸಲಾಗಿದೆ. ಪ್ರತಿಯೊಂದರಿಂದ ಹತ್ತು ಮಾದರಿ ಕಾರ್ಡ್‌ಗಳು: ಐದು ಮೊದಲ ಶೈಲಿಯಲ್ಲಿ, ಐದು ಎರಡನೆಯದರಲ್ಲಿ.
+decks.cards	%s ಕಾರ್ಡ್‌ಗಳು
+decks.free	ಉಚಿತ
+decks.free_badge	ಉಚಿತ
+decks.tr	ಅನುವಾದ
+visuals.title	ದೃಶ್ಯಗಳು
+visuals.more	ಎಲ್ಲಾ ದೃಶ್ಯಗಳನ್ನು ನೋಡಿ →
+fleets.title	ನೌಕಾಪಡೆಗಳು
+fleets.teaser_intro	ನೌಕಾಪಡೆಗಳು: %s, ಪ್ರತಿಯೊಂದರಲ್ಲೂ ಆರು ಬಗೆಯ ಹಡಗುಗಳು.
+fleets.teaser_intro_man	ನೌಕಾಪಡೆಗಳು: %s, ಪ್ರತಿಯೊಂದರಲ್ಲೂ ಆರು ಬಗೆಯ ಹಡಗುಗಳು. ಬೆರಳಿನಿಂದ ಬಿಡಿಸುವ ಕುಶಲ ನಡೆಗಳು: %s.
+fleets.more	ನೌಕಾಪಡೆಗಳು ಮತ್ತು ನಡೆಗಳನ್ನು ನೋಡಿ →
+lb.dialog	ಸ್ಕ್ರೀನ್‌ಶಾಟ್
+lb.hint	ಚಕ್ರದಿಂದ ಜೂಮ್ · ಎಳೆದು ಸರಿಸಿ · Esc ಮುಚ್ಚುತ್ತದೆ
+lb.zoom_out	ಜೂಮ್ ಔಟ್
+lb.zoom_in	ಜೂಮ್ ಇನ್
+lb.fit	ಪರದೆಗೆ ಹೊಂದಿಸಿ
+lb.close	ಮುಚ್ಚಿ
+lb.open	ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ದೊಡ್ಡದಾಗಿಸಿ
+foot.logo_alt	Ananas&Bananas — ಡಿಜಿಟಲ್ ಹಣ್ಣು & ತಂತ್ರಜ್ಞಾನ
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — ದೃಶ್ಯಗಳು — olin.now
+title.fleets	%s — ನೌಕಾಪಡೆಗಳು ಮತ್ತು ಕಸರತ್ತುಗಳು — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — ದೃಶ್ಯಗಳು
+board.aria	8×8 ಚದುರಂಗದ ಹಲಗೆ
+fleets.page_title	ನೌಕಾಪಡೆಗಳು
+fleets.page_intro	ನೌಕಾಪಡೆಗಳು: %s, %s ಗಾಗಿ. ಪ್ರತಿಯೊಂದೂ ಆರೂ ಬಗೆಯ ಹಡಗುಗಳನ್ನು ಬಿಳಿ ಮತ್ತು ಕಪ್ಪು ಆವೃತ್ತಿಯಲ್ಲಿ ಹೊಸದಾಗಿ ಚಿತ್ರಿಸುತ್ತದೆ — ನೌಕಾಪಡೆ ಕೇವಲ ನೋಟ, ಕಾಯಿಗಳ ನಡೆ ಅಥವಾ ಯುದ್ಧವನ್ನು ಅದು ಬದಲಿಸುವುದಿಲ್ಲ.
+fleets.default	ಡೀಫಾಲ್ಟ್
+fleets.white	ಬಿಳಿ ನೌಕಾಪಡೆ
+fleets.black	ಕಪ್ಪು ನೌಕಾಪಡೆ
+fleets.audio_title	ಯುದ್ಧದ ಧ್ವನಿ
+fleets.sfx_note	ಗುಂಡು ಮತ್ತು ಸ್ಫೋಟದ ಧ್ವನಿಯನ್ನು ನೌಕಾಪಡೆಯಲ್ಲ, ಹಡಗಿನ ಧಾತು ನಿರ್ಧರಿಸುತ್ತದೆ: ಕಾಲಾಳು ಚಲನಶೀಲ ಗುಂಡು, ಕುದುರೆ ನೀರು, ಒಂಟೆ ಬೆಂಕಿ, ಆನೆ ಹಿಮ, ಮಂತ್ರಿ ಮತ್ತು ರಾಜ ವಿದ್ಯುತ್ ಹಾರಿಸುತ್ತಾರೆ.
+fleets.music_note	ಯುದ್ಧದಲ್ಲಿ ದಾಳಿ ಮಾಡುವ ಹಡಗಿನ ಥೀಮ್ ನುಡಿಯುತ್ತದೆ.
+man.title	ಕಸರತ್ತುಗಳು
+man.intro	%s ಕಸರತ್ತುಗಳು: ಪ್ರತಿ ಹಡಗು ತನ್ನದೇ ರೀತಿಯಲ್ಲಿ ಹಾರಿಸುವ ಹನ್ನೆರಡು ಕುಟುಂಬಗಳು, ಜೊತೆಗೆ ಅದರದೇ ಒಂದು. 3×3 ಜಾಲದಲ್ಲಿ ಎಳೆದ ಸನ್ನೆಯಿಂದ ಇವು ಆರಂಭವಾಗುತ್ತವೆ — Android ಅನ್‌ಲಾಕ್ ಮಾಡಿದಂತೆ — ಮತ್ತು ತಾನಾಗಿ ತುಂಬುವ ಶಕ್ತಿಯನ್ನು ಬಳಸುತ್ತವೆ. ಕೆಳಗಿನ ದಾರಿಗಳನ್ನು ನೇರವಾಗಿ ಆಟದ ಪಟ್ಟಿಯಿಂದ ಮಾದರಿ ತೆಗೆಯಲಾಗಿದೆ, ಹಾಗಾಗಿ ಕ್ಯಾನ್ವಾಸ್‌ನಲ್ಲಿನ ಹಡಗು ಯುದ್ಧದಲ್ಲಿ ಹಾರುವಂತೆಯೇ ಹಾರುತ್ತದೆ.
+man.units	ಹಡಗುಗಳ ಬಗೆಗಳು
+unit.pawn	ಕಾಲಾಳು
+unit.knight	ಕುದುರೆ
+unit.bishop	ಒಂಟೆ
+unit.rook	ಆನೆ
+unit.queen	ಮಂತ್ರಿ
+unit.king	ರಾಜ
+unit.pawn.element	ಚಲನಶೀಲ
+unit.knight.element	ನೀರು
+unit.bishop.element	ಬೆಂಕಿ
+unit.rook.element	ಹಿಮ
+unit.queen.element	ವಿದ್ಯುತ್
+unit.king.element	ವಿದ್ಯುತ್
+man.path	%s ಕಸರತ್ತಿನ ದಾರಿ
+man.energy	ಶಕ್ತಿ
+man.duration	ಅವಧಿ
+man.secs	%s ಸೆ.
+man.shots	ಗುಂಡುಗಳು
+man.untouchable_title	ಗುಂಡುಗಳು ಹಾದುಹೋಗುತ್ತವೆ
+man.untouchable	ಸ್ಪರ್ಶಾತೀತ
+man.shield_title	ಗುರಾಣಿ ಎತ್ತುತ್ತದೆ
+man.shield	ಗುರಾಣಿ
+man.control_title	ಚಾಲನೆ ಪೈಲಟ್ ಬಳಿಯೇ ಇರುತ್ತದೆ
+man.control	ಮುಕ್ತ ಚಾಲನೆ
+man.mirror_title	ಪ್ರತಿಬಿಂಬಿತ ಸನ್ನೆ ಪ್ರತಿಬಿಂಬಿತ ಕಸರತ್ತನ್ನು ಹಾರಿಸುತ್ತದೆ
+man.mirror	ಪ್ರತಿಬಿಂಬಿಸಬಹುದು
+man.price_title	ಕ್ರೆಡಿಟ್‌ಗಳಲ್ಲಿ ಬೆಲೆ
+man.price	%s ಕ್ರೆಡಿಟ್
+man.starter	ಆರಂಭದಿಂದಲೇ
+man.wins	ಗೆಲುವುಗಳು: %s
+man.pack	ಪ್ಯಾಕ್ %s
+num.decimal	.

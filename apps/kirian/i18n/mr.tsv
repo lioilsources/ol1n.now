@@ -1,0 +1,106 @@
+# Kirian — Marathi. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,mr}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	मोनोक्रोम आर्केड
+label.Vector wireframe	व्हेक्टर वायरफ्रेम
+label.Fixed-formation arcade	स्थिर फॉर्मेशन आर्केड
+label.Biomechanical sci-fi	बायोमेकॅनिकल साय-फाय
+label.16-bit console shooter	16-बिट कन्सोल शूटर
+label.DOS-era pixel art	DOS काळातील पिक्सेल आर्ट
+label.Two-polarity shooter	दोन ध्रुवांचा शूटर
+label.Neon vector grid	निऑन व्हेक्टर ग्रिड
+label.Chrome fleet shmup	क्रोम ताफ्याचा shmup
+label.Sepia dogfight	सेपिया हवाई लढाई
+label.Post-apocalyptic	प्रलयोत्तर जग
+label.Dark neon voxel	गडद निऑन व्हॉक्सेल
+label.4-colour console era	4-रंगी कन्सोलचा काळ
+label.Kirian original	Kirian ओरिजिनल
+
+# --- skin notes ---
+label.Subtle CRT phosphor	हलका CRT फॉस्फर
+label.Glow on geometry	भूमितीवर चमक
+label.Soft bloom on projectiles	गोळ्यांवर मऊ bloom
+label.Neutral bloom	तटस्थ bloom
+label.Subtle warm glow	हलकी उबदार चमक
+label.Faithful retro feel	अस्सल रेट्रो अनुभव
+label.Matches the polarity palette	ध्रुव पॅलेटशी जुळणारे
+label.Strongest bloom preset	सर्वात तीव्र bloom प्रीसेट
+label.Clean, high-contrast	स्वच्छ, उच्च कॉन्ट्रास्ट
+label.No bloom — flat palette	bloom नाही — सपाट पॅलेट
+label.Saturation 0.85, orange tint	सॅचुरेशन 0.85, नारिंगी छटा
+label.High-contrast neon	उच्च कॉन्ट्रास्ट निऑन
+label.Ultra-chunky flat sprites	अतिशय जाड सपाट स्प्राइट्स
+label.Hand-crafted baseline	हाताने बनवलेला आधार
+
+# --- CRT / tint presets ---
+label.neutral	तटस्थ
+label.scanlines 0.4, curve 0.01	स्कॅनलाइन्स 0.4, वक्रता 0.01
+label.scanlines 0.7, curve 0.02	स्कॅनलाइन्स 0.7, वक्रता 0.02
+label.green tint (0.85 / 1.0 / 0.85)	हिरवी छटा (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	सायन छटा (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	थंड निळा (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	उबदार (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	उबदार (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	उबदार पिवळा (1.0 / 0.9 / 0.7)
+label.desaturated warm	फिकट उबदार
+
+# --- sprite labels ---
+label.Náhled	पूर्वावलोकन
+label.Loď	जहाज
+label.Loď 1	जहाज 1
+label.Loď 2	जहाज 2
+label.Loď 3	जहाज 3
+label.Loď 4	जहाज 4
+label.Loď 5	जहाज 5
+label.Loď 6	जहाज 6
+label.Přehled nepřátel	शत्रूंचा आढावा
+label.Asteroid 1	लघुग्रह 1
+label.Asteroid 2	लघुग्रह 2
+label.Asteroid 3	लघुग्रह 3
+label.Asteroid 4	लघुग्रह 4
+label.Bublina	बुडबुडा
+label.Blaster	ब्लास्टर
+label.Laser	लेझर
+label.Vulcan	व्हल्कन
+label.Rododendron	र्‍होडोडेंड्रॉन
+label.Hvězda	तारा
+label.Hvězda (zelená)	तारा (हिरवा)
+label.Exploze 1	स्फोट 1
+label.Exploze 2	स्फोट 2
+label.Exploze 3	स्फोट 3
+label.Exploze 4	स्फोट 4
+label.Vrstva 0	स्तर 0
+label.Vrstva 1	स्तर 1
+label.Vrstva 2	स्तर 2
+label.Vrstva 3	स्तर 3
+
+# --- game center (UI) ---
+label.Karta	कार्ड
+label.Tlačítko	बटण
+label.Aktivní záložka	सक्रिय टॅब
+label.Kredity	क्रेडिट्स
+label.Štít	शील्ड
+label.Život	जीव
+label.Bomba	बॉम्ब
+label.Generátor	जनरेटर
+
+# --- sfx + music ---
+label.Výstřel	गोळीबार
+label.Paprsek	किरण
+label.Malá exploze	लहान स्फोट
+label.Velká exploze	मोठा स्फोट
+label.Zásah trupu	सांगाड्यावर आघात
+label.Zásah štítu	शील्डवर आघात
+label.Nová zbraň	नवीन शस्त्र
+label.Sektor dokončen	सेक्टर पूर्ण
+label.Konec hry	खेळ संपला
+label.Bonus	बोनस
+label.Intro	इंट्रो
+label.Téma 1	थीम 1
+label.Téma 2	थीम 2
+label.Téma 3	थीम 3
+label.Téma 4	थीम 4
+label.Téma 5 (boss)	थीम 5 (बॉस)

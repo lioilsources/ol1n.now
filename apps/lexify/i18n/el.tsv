@@ -1,0 +1,25 @@
+# Lexify — deck titles and style names for the deck gallery. Czech comes from
+# the DuolingoCards packs via `make import-decks`; these are the other languages.
+# The words on the cards themselves live in apps/lexify/words.tsv.
+deck.numbers-1-10	Αριθμοί 1–50
+deck.colors-basic	Βασικά χρώματα
+deck.animals-pets	Κατοικίδια
+deck.animals-birds	Πουλιά
+deck.animals-farm	Ζώα της φάρμας
+deck.animals-insects	Έντομα
+deck.animals-reptiles	Ερπετά και αμφίβια
+deck.animals-sea	Θαλάσσια ζώα
+deck.animals-wild	Άγρια ζώα
+deck.body-parts	Μέρη του σώματος
+deck.emotions	Συναισθήματα
+deck.food-fruits	Φρούτα
+deck.food-vegetables	Λαχανικά
+deck.weather	Καιρός
+style.photo	Φωτογραφία
+style.photo.desc	Καθαρή φωτογραφία, η πιο κοντινή στην πραγματικότητα
+style.ink	Πινέλο και μελάνι
+style.ink.desc	Πινελιές, λευκό χαρτί, μία πινελιά χρώματος
+style.pastel	Παστέλ
+style.pastel.desc	Ξηρό παστέλ σε χρωματιστό χαρτί
+style.watercolor	Ακουαρέλα
+style.watercolor.desc	Απλωμένες διάφανες πινελιές, χαρτί που διακρίνεται από κάτω

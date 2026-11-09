@@ -8,7 +8,7 @@ PORT ?= 8099
 
 .DEFAULT_GOAL := help
 
-.PHONY: help build fetch screenshots import-skins import-visuals import-fleets import-decks og all deploy serve clean
+.PHONY: help build fetch screenshots import-skins import-visuals import-fleets import-decks og store-icons all deploy serve clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -34,6 +34,9 @@ import-fleets: ## (authoring) Re-encode OrbitronTactics fleets + maneuvers into 
 
 import-decks: ## (authoring) Re-encode Lexify deck samples (5+5 cards per deck) into apps/lexify/decks/
 	@LEXIFY_SRC=$${LEXIFY_SRC:-$(CURDIR)/../DuolingoCards} $(SCRIPTS)/import-decks.sh
+
+store-icons: ## (authoring) Export store icons (App Store 1024 no-alpha, Play 512) from meta.md icon_src into store-screenshots/<slug>/icons/ (APP=<slug>, UPDATE_SITE_ICON=1)
+	@$(SCRIPTS)/store-icons.sh $(APP)
 
 og: ## (authoring) Render Open Graph images of standalone pages into assets/img/og/ (needs Chrome)
 	@$(SCRIPTS)/og-images.sh

@@ -1,11 +1,9 @@
-# Site chrome, Croatian. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery and deck keys are not translated yet: no app with those galleries
-# ships this language.
+# Site chrome, Croatian. Same keys as cs.tsv, in the same order; see the notes there.
 nav.all_apps	← Sve aplikacije
 nav.back_to	← Natrag na %s
 nav.lang	Jezik
 title.app	%s — olin.now
+title.skins	%s — skinovi — olin.now
 badge.featured	★ Preporučeno
 badge.mobile	Mobilno
 sec.downloads	Preuzimanja
@@ -14,6 +12,103 @@ sec.shots_desktop	Snimke zaslona — računalo
 sec.shots_mobile	Snimke zaslona — mobitel
 shots.empty.desktop	Zasad nema snimki zaslona s računala.
 shots.empty.mobile	Zasad nema snimki zaslona s mobitela.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Verzije uskoro.
+skins.title	Skinovi
+skins.teaser_intro	Vizualne teme: %s — svaka s vlastitim spriteovima, paralaksnom pozadinom, zvukovima i glazbom.
+skins.more	Istraži sve skinove →
+skins.page_intro	Vizualne teme: %s, sve za %s. Svaki skin ima vlastite brodove, neprijatelje, bossa, pozadine, zvukove i adaptivnu glazbu.
+skins.disclaimer	Skinovi su slobodan hommage klasičnim pucačinama. %s nije ni na koji način povezan s njihovim autorima ni izdavačima i ne koristi njihovu izvornu grafiku ni zvukove.
+skins.wiki	Wikipedija
+skins.vessels	Brodovi: %s
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	nijansa %s
+cat.preview	Pregled
+cat.vessels	Brodovi
+cat.enemies	Neprijatelji
+cat.boss	Boss
+cat.asteroids	Asteroidi
+cat.fx	Efekti i projektili
+cat.ui	Sučelje igre
+cat.backgrounds	Pozadine
+cat.sfx	Zvukovi (SFX)
+cat.music	Glazba
+player.prev	Prethodno
+player.play	Reproduciraj
+player.next	Sljedeće
+player.pause	Pauziraj
+decks.title	Špilovi
+decks.intro	Špilovi: %s, svaki nacrtan u dva likovna stila. Iz svakog je ovdje deset primjera kartica: pet u prvom stilu, pet u drugom.
+decks.cards	Kartice: %s
+decks.free	besplatno
+decks.free_badge	Besplatno
+decks.tr	Prijevod
+visuals.title	Vizuali
+visuals.more	Istraži sve vizuale →
+fleets.title	Flote
+fleets.teaser_intro	Flote: %s, svaka sa šest vrsta brodova.
+fleets.teaser_intro_man	Flote: %s, svaka sa šest vrsta brodova. Manevri koji se crtaju prstom: %s.
+fleets.more	Istraži flote i manevre →
+lb.dialog	Snimka zaslona
+lb.hint	kotačić zumira · povlačenjem pomičeš · Esc zatvara
+lb.zoom_out	Umanji
+lb.zoom_in	Uvećaj
+lb.fit	Prilagodi zaslonu
+lb.close	Zatvori
+lb.open	Uvećaj snimku zaslona
+foot.logo_alt	Ananas&Bananas — digitalno voće & tehnologija
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — vizuali — olin.now
+title.fleets	%s — flote i manevri — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — vizuali
+board.aria	Šahovska ploča 8×8
+fleets.page_title	Flote
+fleets.page_intro	Flota: %s za %s. Svaka iznova crta svih šest tipova brodova u bijeloj i crnoj inačici — flota je čisto vizualna, ne mijenja ni kretanje figura ni borbu.
+fleets.default	zadana
+fleets.white	Bijela flota
+fleets.black	Crna flota
+fleets.audio_title	Zvuk borbe
+fleets.sfx_note	Zvuk pucnja i eksplozije određuje element broda, a ne flota: pješak puca kinetički, skakač vodom, lovac vatrom, top ledom, dama i kralj elektricitetom.
+fleets.music_note	U borbi svira tema broda koji napada.
+man.title	Manevri
+man.intro	Manevara: %s — dvanaest obitelji koje svaki brod izvodi na svoj način, plus jedan vlastiti. Pokreću se gestom nacrtanom na mreži 3×3 — kao otključavanje Androida — i troše energiju koja se sama puni. Putanje ispod uzorkovane su izravno iz kataloga igre, pa brod na platnu leti točno ono što leti u borbi.
+man.units	Tipovi brodova
+unit.pawn	Pješak
+unit.knight	Skakač
+unit.bishop	Lovac
+unit.rook	Top
+unit.queen	Dama
+unit.king	Kralj
+unit.pawn.element	kinetički
+unit.knight.element	vodeni
+unit.bishop.element	vatreni
+unit.rook.element	ledeni
+unit.queen.element	električni
+unit.king.element	električni
+man.path	Putanja manevra %s
+man.energy	Energija
+man.duration	Trajanje
+man.secs	%s s
+man.shots	Hici
+man.untouchable_title	Projektili prolaze kroz brod
+man.untouchable	nedodirljiv
+man.shield_title	Podiže štit
+man.shield	štit
+man.control_title	Upravljanje ostaje pilotu
+man.control	slobodno upravljanje
+man.mirror_title	Zrcaljena gesta leti zrcaljeni manevar
+man.mirror	zrcalljiv
+man.price_title	Cijena u kreditima
+man.price	%s kr.
+man.starter	od početka
+man.wins	pobjede: %s
+man.pack	paket %s
+num.decimal	,

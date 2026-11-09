@@ -1,0 +1,106 @@
+# Kirian — Hebrew. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,he}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	ארקייד מונוכרומטי
+label.Vector wireframe	מסגרת תיל וקטורית
+label.Fixed-formation arcade	ארקייד במבנה קבוע
+label.Biomechanical sci-fi	מדע בדיוני ביו־מכני
+label.16-bit console shooter	משחק יריות של קונסולת 16 ביט
+label.DOS-era pixel art	פיקסל־ארט מתקופת DOS
+label.Two-polarity shooter	משחק יריות של שתי קוטביות
+label.Neon vector grid	רשת וקטורית ניאון
+label.Chrome fleet shmup	Shmup עם צי כרום
+label.Sepia dogfight	קרב אוויר בספיה
+label.Post-apocalyptic	פוסט־אפוקליפטי
+label.Dark neon voxel	ווקסל ניאון כהה
+label.4-colour console era	עידן קונסולות 4 הצבעים
+label.Kirian original	המקור של Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	זרחן CRT עדין
+label.Glow on geometry	זוהר על הגיאומטריה
+label.Soft bloom on projectiles	bloom רך על הקליעים
+label.Neutral bloom	bloom ניטרלי
+label.Subtle warm glow	זוהר חם עדין
+label.Faithful retro feel	תחושת רטרו נאמנה
+label.Matches the polarity palette	מותאם לפלטת הקוטביות
+label.Strongest bloom preset	הגדרת ה־bloom החזקה ביותר
+label.Clean, high-contrast	נקי, ניגודיות גבוהה
+label.No bloom — flat palette	בלי bloom — פלטה שטוחה
+label.Saturation 0.85, orange tint	רוויה 0.85, גוון כתום
+label.High-contrast neon	ניאון בניגודיות גבוהה
+label.Ultra-chunky flat sprites	ספרייטים שטוחים גסים במיוחד
+label.Hand-crafted baseline	בסיס בעבודת יד
+
+# --- CRT / tint presets ---
+label.neutral	ניטרלי
+label.scanlines 0.4, curve 0.01	קווי סריקה 0.4, עקמומיות 0.01
+label.scanlines 0.7, curve 0.02	קווי סריקה 0.7, עקמומיות 0.02
+label.green tint (0.85 / 1.0 / 0.85)	גוון ירוק (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	גוון ציאן (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	כחול קריר (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	חם (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	חם (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	צהוב חם (1.0 / 0.9 / 0.7)
+label.desaturated warm	חם דהוי
+
+# --- sprite labels ---
+label.Náhled	תצוגה מקדימה
+label.Loď	חללית
+label.Loď 1	חללית 1
+label.Loď 2	חללית 2
+label.Loď 3	חללית 3
+label.Loď 4	חללית 4
+label.Loď 5	חללית 5
+label.Loď 6	חללית 6
+label.Přehled nepřátel	סקירת אויבים
+label.Asteroid 1	אסטרואיד 1
+label.Asteroid 2	אסטרואיד 2
+label.Asteroid 3	אסטרואיד 3
+label.Asteroid 4	אסטרואיד 4
+label.Bublina	בועה
+label.Blaster	בלאסטר
+label.Laser	לייזר
+label.Vulcan	וולקן
+label.Rododendron	רודודנדרון
+label.Hvězda	כוכב
+label.Hvězda (zelená)	כוכב (ירוק)
+label.Exploze 1	פיצוץ 1
+label.Exploze 2	פיצוץ 2
+label.Exploze 3	פיצוץ 3
+label.Exploze 4	פיצוץ 4
+label.Vrstva 0	שכבה 0
+label.Vrstva 1	שכבה 1
+label.Vrstva 2	שכבה 2
+label.Vrstva 3	שכבה 3
+
+# --- game center (UI) ---
+label.Karta	כרטיס
+label.Tlačítko	כפתור
+label.Aktivní záložka	לשונית פעילה
+label.Kredity	קרדיטים
+label.Štít	מגן
+label.Život	חיים
+label.Bomba	פצצה
+label.Generátor	גנרטור
+
+# --- sfx + music ---
+label.Výstřel	ירייה
+label.Paprsek	קרן
+label.Malá exploze	פיצוץ קטן
+label.Velká exploze	פיצוץ גדול
+label.Zásah trupu	פגיעה בגוף
+label.Zásah štítu	פגיעה במגן
+label.Nová zbraň	נשק חדש
+label.Sektor dokončen	הגזרה הושלמה
+label.Konec hry	המשחק נגמר
+label.Bonus	בונוס
+label.Intro	פתיחה
+label.Téma 1	נעימה 1
+label.Téma 2	נעימה 2
+label.Téma 3	נעימה 3
+label.Téma 4	נעימה 4
+label.Téma 5 (boss)	נעימה 5 (בוס)

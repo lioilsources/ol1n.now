@@ -1,7 +1,8 @@
 ---
 tagline: A história para dormir que quem conta é você — 2.795 contos de 98 países, o app só dá a deixa
 ---
-O app nunca conta a história por você. Ele oferece as peças — personagens,
+Na App Store e no Google Play o app se chama Pohádkomat (nome provisório
+StoryTeller). Ele nunca conta a história por você. Ele oferece as peças — personagens,
 missão, problema, final — e depois mantém o roteiro diante dos seus olhos.
 Quem conta é você, para a sua criança, com as suas palavras.
 
@@ -92,10 +93,11 @@ O app divide o mundo em quinze regiões, e dez contos de cada uma são grátis e
 
 ### Pacotes de contos
 
-**150 contos são grátis e já vêm no app** — dez de cada uma das quinze regiões do mundo, cada um com ilustrações das cenas, dicas e seus próprios sons. Mais contos chegarão em volumes: cinquenta contos de uma mesma região. Para cada país, o globo mostra quantos contos ele tem e em que volume estão.
+**150 contos são grátis e já vêm no app** — dez de cada uma das quinze regiões do mundo, cada um com ilustrações das cenas, dicas e seus próprios sons. Mais contos vão chegando em volumes: cinquenta contos de uma mesma região por uma pequena compra no app. Por enquanto saíram dois volumes da Tchéquia e da Eslováquia. O volume comprado é baixado no celular e continua funcionando sem internet; as compras podem ser restauradas em um celular novo. Para cada país, o globo mostra quantos contos ele tem e em que volume estão.
 
 A fonte é gordinha e legível, os títulos são em letras “de bolha” — o app é
 para crianças e tem que parecer isso.
 
 Todo o percurso Globo → Personagens → Missão → Problema → Final → Roteiro →
-Ponto roda no celular, sem uma única chamada ao servidor.
+Ponto roda no celular, sem uma única chamada ao servidor. Sem anúncios, contas
+nem rastreamento. Por enquanto, a interface e os contos estão só em tcheco.

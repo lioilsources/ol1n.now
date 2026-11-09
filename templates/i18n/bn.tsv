@@ -1,0 +1,114 @@
+# Site chrome, Bengali. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← সব অ্যাপ
+nav.back_to	← %s-এ ফিরে যান
+nav.lang	ভাষা
+title.app	%s — olin.now
+title.skins	%s — স্কিন — olin.now
+badge.featured	★ বিশেষ
+badge.mobile	মোবাইল
+sec.downloads	ডাউনলোড
+sec.description	বিবরণ
+sec.shots_desktop	স্ক্রিনশট — ডেস্কটপ
+sec.shots_mobile	স্ক্রিনশট — মোবাইল
+shots.empty.desktop	এখনও ডেস্কটপের কোনো স্ক্রিনশট নেই।
+shots.empty.mobile	এখনও মোবাইলের কোনো স্ক্রিনশট নেই।
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	বিল্ড শিগগিরই আসছে।
+skins.title	স্কিন
+skins.teaser_intro	%sটি ভিজ্যুয়াল থিম — প্রতিটিতে নিজস্ব স্প্রাইট, প্যারালাক্স ব্যাকগ্রাউন্ড, সাউন্ড আর মিউজিক।
+skins.more	সব স্কিন দেখুন →
+skins.page_intro	%sটি ভিজ্যুয়াল থিম — %s-এর জন্য। প্রতিটি স্কিনে আছে নিজস্ব জাহাজ, শত্রু, বস, ব্যাকগ্রাউন্ড, সাউন্ড আর অ্যাডাপটিভ মিউজিক।
+skins.disclaimer	স্কিনগুলো ক্লাসিক শুটার গেমের প্রতি এক মুক্ত শ্রদ্ধাঞ্জলি। সেগুলোর নির্মাতা বা প্রকাশকদের সঙ্গে %s-এর কোনো সম্পর্ক নেই, আর এটি তাদের আসল গ্রাফিক্স বা সাউন্ড ব্যবহার করে না।
+skins.wiki	উইকিপিডিয়া
+skins.vessels	জাহাজ: %s
+skins.pixelart	পিক্সেল আর্ট
+skins.bloom	ব্লুম %s
+skins.crt	CRT %s
+skins.tint	টিন্ট %s
+cat.preview	প্রিভিউ
+cat.vessels	জাহাজ
+cat.enemies	শত্রু
+cat.boss	বস
+cat.asteroids	গ্রহাণু
+cat.fx	ইফেক্ট ও গোলা
+cat.ui	গেম ইন্টারফেস
+cat.backgrounds	ব্যাকগ্রাউন্ড
+cat.sfx	সাউন্ড ইফেক্ট (SFX)
+cat.music	মিউজিক
+player.prev	আগের
+player.play	চালান
+player.next	পরের
+player.pause	থামান
+decks.title	ডেক
+decks.intro	%sটি ডেক, প্রতিটি দুটি শিল্পশৈলীতে আঁকা। প্রতিটি থেকে দশটি নমুনা কার্ড: পাঁচটি প্রথম শৈলীতে, পাঁচটি দ্বিতীয়টিতে।
+decks.cards	%sটি কার্ড
+decks.free	বিনামূল্যে
+decks.free_badge	বিনামূল্যে
+decks.tr	অনুবাদ
+visuals.title	ভিজ্যুয়াল
+visuals.more	সব ভিজ্যুয়াল দেখুন →
+fleets.title	বহর
+fleets.teaser_intro	%sটি বহর, প্রতিটিতে ছয় ধরনের জাহাজ।
+fleets.teaser_intro_man	%sটি বহর, প্রতিটিতে ছয় ধরনের জাহাজ, আর %sটি কৌশল যা আঙুল দিয়ে আঁকা হয়।
+fleets.more	বহর ও কৌশল দেখুন →
+lb.dialog	স্ক্রিনশট
+lb.hint	চাকা ঘুরিয়ে জুম · টেনে সরান · Esc দিয়ে বন্ধ
+lb.zoom_out	জুম আউট
+lb.zoom_in	জুম ইন
+lb.fit	স্ক্রিনে মানানসই
+lb.close	বন্ধ করুন
+lb.open	স্ক্রিনশট বড় করুন
+foot.logo_alt	Ananas&Bananas — ডিজিটাল ফল & প্রযুক্তি
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — ভিজ্যুয়াল — olin.now
+title.fleets	%s — বহর ও কসরত — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — ভিজ্যুয়াল
+board.aria	৮×৮ দাবার বোর্ড
+fleets.page_title	বহর
+fleets.page_intro	বহর: %s, %s-এর জন্য। প্রতিটি বহর ছয় ধরনের জাহাজই সাদা ও কালো সংস্করণে নতুন করে আঁকে — বহর শুধুই চেহারা, ঘুঁটির চাল বা লড়াই কিছুই বদলায় না।
+fleets.default	ডিফল্ট
+fleets.white	সাদা বহর
+fleets.black	কালো বহর
+fleets.audio_title	লড়াইয়ের শব্দ
+fleets.sfx_note	গুলি আর বিস্ফোরণের শব্দ ঠিক করে জাহাজের উপাদান, বহর নয়: বোড়ে গতিজ গুলি ছোড়ে, ঘোড়া জল, হাতি আগুন, নৌকা বরফ, মন্ত্রী আর রাজা বিদ্যুৎ।
+fleets.music_note	লড়াইয়ে আক্রমণকারী জাহাজের থিম বাজে।
+man.title	কসরত
+man.intro	%s কসরত: বারোটি পরিবার, যা প্রতিটি জাহাজ নিজের মতো করে ওড়ায়, আর একটি তার নিজস্ব। ৩×৩ গ্রিডে আঁকা ইশারায় এগুলো চালু হয় — ঠিক Android-এর লক খোলার মতো — আর নিজে নিজে ভরে ওঠা শক্তি খরচ করে। নিচের পথগুলো সরাসরি গেমের তালিকা থেকে নমুনা নেওয়া, তাই ক্যানভাসে জাহাজ ঠিক লড়াইয়ের মতোই ওড়ে।
+man.units	জাহাজের ধরন
+unit.pawn	বোড়ে
+unit.knight	ঘোড়া
+unit.bishop	হাতি
+unit.rook	নৌকা
+unit.queen	মন্ত্রী
+unit.king	রাজা
+unit.pawn.element	গতিজ
+unit.knight.element	জল
+unit.bishop.element	আগুন
+unit.rook.element	বরফ
+unit.queen.element	বিদ্যুৎ
+unit.king.element	বিদ্যুৎ
+man.path	%s কসরতের পথ
+man.energy	শক্তি
+man.duration	সময়কাল
+man.secs	%s সে.
+man.shots	গুলি
+man.untouchable_title	গোলা ভেদ করে চলে যায়
+man.untouchable	অস্পর্শ্য
+man.shield_title	ঢাল তোলে
+man.shield	ঢাল
+man.control_title	চালনা পাইলটের হাতেই থাকে
+man.control	মুক্ত চালনা
+man.mirror_title	উল্টো ইশারায় উল্টো কসরত হয়
+man.mirror	উল্টানো যায়
+man.price_title	ক্রেডিটে দাম
+man.price	%s ক্রেডিট
+man.starter	শুরু থেকেই
+man.wins	জয়: %s
+man.pack	প্যাক %s
+num.decimal	.

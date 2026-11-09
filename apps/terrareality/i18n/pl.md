@@ -97,6 +97,16 @@ eskalacja.
 Żadnych rachunków powierniczych (escrow), żadnych kryptowalut — płatności
 trafiają bezpośrednio z konta najemcy na konto właściciela.
 
+### Przejęcie istniejących najmów
+
+Właściciel, który ma mieszkania już wynajęte na papierową umowę, nie musi
+niczego podpisywać od nowa. Najem przejmuje jako podpisany poza platformą,
+wgrywa skan umowy, a płatności są śledzone od daty przejęcia: starsze
+zaległości trafiają do salda początkowego, wpłacona kaucja zostaje
+zaewidencjonowana i zostaje też dotychczasowy symbol zmienny płatności.
+Najemcy nic nie dostają, dopóki właściciel nie zaprosi ich do portalu najemcy.
+Wiele najmów naraz można zaimportować z arkusza.
+
 ### Portfel nieruchomości w wielu miastach i ryzyko najmu
 
 Dla właścicieli i zarządców z kilkoma mieszkaniami: wszystkie najmy według
@@ -157,10 +167,11 @@ i dopasowaną płatnością, portfel nieruchomości, promowanie z fakturą,
 zgłoszenie DSA, backoffice). Sprawdzono również odtwarzanie bazy danych
 z kopii zapasowej.
 
-**Trwa dopracowywanie przed pilotażem**: usprawnienia bezpieczeństwa
-i eksploatacji zalecone w przeglądzie kodu, powiadomienia dotyczące wniosków,
-umów i płatności oraz środowisko testowe. Na prawdziwym serwerze nic jeszcze
-nie działa — wdrożenie czeka na konta i dostępy (zob. niżej).
+Gotowe są też usprawnienia bezpieczeństwa i eksploatacji zalecone
+w przeglądzie kodu oraz powiadomienia push dotyczące wniosków, umów i płatności.
+Zamknięta beta działa na własnym serwerze z przykładowymi ogłoszeniami dla
+Pragi i okolic, które są w niej oznaczone. Wdrożenie produkcyjne na Hetznerze
+czeka na konta i dostępy (zob. niżej).
 
 Testy z prawdziwymi ludźmi przebiegają w pięciu fazach. Każda kończy się
 bramką, na której wspólnie decydujemy, czy idziemy dalej:

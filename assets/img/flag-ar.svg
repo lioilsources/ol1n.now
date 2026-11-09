@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <rect width="900" height="600" fill="#006C35"/>
+  <!-- Simplified: the sword only, no shahada text -->
+  <path d="M230 400h400l40 12-40 12H230z" fill="#ffffff"/>
+  <rect x="215" y="388" width="22" height="48" rx="6" fill="#ffffff"/>
+  <rect x="170" y="404" width="50" height="16" rx="8" fill="#ffffff"/>
+</svg>

@@ -1,7 +1,8 @@
 ---
 tagline: A bedtime story that you tell — 2,795 tales from 98 countries, the app only prompts
 ---
-The app never tells the story for you. It hands you the building blocks —
+In the App Store and on Google Play the app is called Pohádkomat (working
+title StoryTeller). It never tells the story for you. It hands you the building blocks —
 characters, a quest, a problem, an ending — and then keeps the outline in
 front of your eyes. You do the telling, to your own child, in your own words.
 
@@ -93,10 +94,11 @@ The app divides the world into fifteen regions, and ten tales from each are free
 
 ### Story packs
 
-**150 tales are free and come with the app** — ten from each of the world’s fifteen regions, every one with scene illustrations, hints and its own sounds. More tales will arrive in parts: fifty tales from one region. For every country the globe shows how many tales it has and which part holds them.
+**150 tales are free and come with the app** — ten from each of the world’s fifteen regions, every one with scene illustrations, hints and its own sounds. More tales keep arriving in parts: fifty tales from one region for one small in-app purchase. So far two parts from Czechia and Slovakia are out. A purchased part downloads to the phone and keeps working offline; purchases can be restored on a new phone. For every country the globe shows how many tales it has and which part holds them.
 
 The typeface is chubby and easy to read, the headings “bubbly” — the app is
 for children, and it should look the part.
 
 The whole flow Globe → Characters → Quest → Problem → Ending → Outline →
-Prompter runs on the phone, without a single call to a server.
+Prompter runs on the phone, without a single call to a server. No ads, no
+accounts, no tracking. The interface and the tales are in Czech only for now.

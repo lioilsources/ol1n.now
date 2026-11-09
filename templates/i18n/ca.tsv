@@ -1,0 +1,114 @@
+# Site chrome, Catalan. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← Totes les aplicacions
+nav.back_to	← Torna a %s
+nav.lang	Idioma
+title.app	%s — olin.now
+title.skins	%s — skins — olin.now
+badge.featured	★ Destacada
+badge.mobile	Mòbil
+sec.downloads	Baixades
+sec.description	Descripció
+sec.shots_desktop	Captures — escriptori
+sec.shots_mobile	Captures — mòbil
+shots.empty.desktop	Encara no hi ha captures d'escriptori.
+shots.empty.mobile	Encara no hi ha captures del mòbil.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Les versions arribaran aviat.
+skins.title	Skins
+skins.teaser_intro	%s temes visuals, cadascun amb els seus sprites, fons parallax, sons i música.
+skins.more	Explora totes les skins →
+skins.page_intro	%s temes visuals per a %s. Cada skin té les seves naus, enemics, caps finals, fons, sons i música adaptativa.
+skins.disclaimer	Les skins són un homenatge lliure als jocs de naus clàssics. %s no té cap relació amb els seus autors ni editors i no fa servir els seus gràfics ni sons originals.
+skins.wiki	Viquipèdia
+skins.vessels	%s naus
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	tint %s
+cat.preview	Previsualització
+cat.vessels	Naus
+cat.enemies	Enemics
+cat.boss	Cap final
+cat.asteroids	Asteroides
+cat.fx	Efectes i projectils
+cat.ui	Interfície del joc
+cat.backgrounds	Fons
+cat.sfx	Sons (SFX)
+cat.music	Música
+player.prev	Anterior
+player.play	Reprodueix
+player.next	Següent
+player.pause	Pausa
+decks.title	Baralles
+decks.intro	%s baralles, cadascuna dibuixada en dos estils. De cada una, deu cartes de mostra: cinc en el primer estil i cinc en el segon.
+decks.cards	%s cartes
+decks.free	gratis
+decks.free_badge	Gratis
+decks.tr	Traducció
+visuals.title	Visuals
+visuals.more	Explora tots els visuals →
+fleets.title	Flotes
+fleets.teaser_intro	%s flotes de sis tipus de nau cadascuna.
+fleets.teaser_intro_man	%s flotes de sis tipus de nau cadascuna i %s maniobres que es dibuixen amb el dit.
+fleets.more	Explora flotes i maniobres →
+lb.dialog	Captura
+lb.hint	la roda amplia · arrossega per moure · Esc tanca
+lb.zoom_out	Allunya
+lb.zoom_in	Apropa
+lb.fit	Ajusta a la pantalla
+lb.close	Tanca
+lb.open	Amplia la captura
+foot.logo_alt	Ananas&Bananas — fruita digital & tecnologia
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — visuals — olin.now
+title.fleets	%s — flotes i maniobres — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — visuals
+board.aria	Tauler d'escacs 8×8
+fleets.page_title	Flotes
+fleets.page_intro	%s flotes per a %s. Cadascuna redibuixa els sis tipus de nau en versió blanca i negra; la flota és purament visual: no canvia ni el moviment de les peces ni el combat.
+fleets.default	per defecte
+fleets.white	Flota blanca
+fleets.black	Flota negra
+fleets.audio_title	So del combat
+fleets.sfx_note	El so del tret i de l'explosió el decideix l'element de la nau, no la flota: el peó dispara cinètic, el cavall aigua, l'alfil foc, la torre gel, la dama i el rei electricitat.
+fleets.music_note	En el combat sona el tema de la nau atacant.
+man.title	Maniobres
+man.intro	%s maniobres: dotze famílies que cada nau vola a la seva manera, més una de pròpia. S'activen amb un gest dibuixat en una quadrícula de 3×3 —com quan desbloqueges un Android— i costen energia, que es recarrega sola. Les trajectòries de sota estan mostrejades directament del catàleg del joc, de manera que la nau del llenç vola igual que en combat.
+man.units	Tipus de nau
+unit.pawn	Peó
+unit.knight	Cavall
+unit.bishop	Alfil
+unit.rook	Torre
+unit.queen	Dama
+unit.king	Rei
+unit.pawn.element	cinètic
+unit.knight.element	aigua
+unit.bishop.element	foc
+unit.rook.element	gel
+unit.queen.element	elèctric
+unit.king.element	elèctric
+man.path	Trajectòria de la maniobra %s
+man.energy	Energia
+man.duration	Durada
+man.secs	%s s
+man.shots	Trets
+man.untouchable_title	Els projectils la travessen
+man.untouchable	intocable
+man.shield_title	Aixeca un escut
+man.shield	escut
+man.control_title	El pilot conserva el control
+man.control	control lliure
+man.mirror_title	Un gest reflectit vola la maniobra reflectida
+man.mirror	reflectible
+man.price_title	Preu en crèdits
+man.price	%s cr.
+man.starter	des del principi
+man.wins	victòries: %s
+man.pack	paquet %s
+num.decimal	,

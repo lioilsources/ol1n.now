@@ -1,0 +1,25 @@
+# Lexify — deck titles and style names for the deck gallery. Czech comes from
+# the DuolingoCards packs via `make import-decks`; these are the other languages.
+# The words on the cards themselves live in apps/lexify/words.tsv.
+deck.numbers-1-10	Brojevi 1–50
+deck.colors-basic	Osnovne boje
+deck.animals-pets	Kućni ljubimci
+deck.animals-birds	Ptice
+deck.animals-farm	Domaće životinje
+deck.animals-insects	Kukci
+deck.animals-reptiles	Gmazovi i vodozemci
+deck.animals-sea	Morske životinje
+deck.animals-wild	Divlje životinje
+deck.body-parts	Dijelovi tijela
+deck.emotions	Emocije
+deck.food-fruits	Voće
+deck.food-vegetables	Povrće
+deck.weather	Vrijeme
+style.photo	Fotografija
+style.photo.desc	Oštra fotografija, najbliža stvarnosti
+style.ink	Kist i tuš
+style.ink.desc	Potezi kistom, prazan papir, jedan naglasak boje
+style.pastel	Pastel
+style.pastel.desc	Suhi pastel na toniranom papiru
+style.watercolor	Akvarel
+style.watercolor.desc	Razlivene lazure, papir koji prosijava

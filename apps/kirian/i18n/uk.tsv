@@ -1,0 +1,106 @@
+# Kirian — Ukrainian. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,uk}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Монохромна аркада
+label.Vector wireframe	Векторний каркас
+label.Fixed-formation arcade	Аркада з фіксованим строєм
+label.Biomechanical sci-fi	Біомеханічна фантастика
+label.16-bit console shooter	Шутер 16-бітних консолей
+label.DOS-era pixel art	Піксель-арт епохи DOS
+label.Two-polarity shooter	Шутер двох полярностей
+label.Neon vector grid	Неонова векторна сітка
+label.Chrome fleet shmup	Shmup із хромованим флотом
+label.Sepia dogfight	Повітряний бій у сепії
+label.Post-apocalyptic	Постапокаліпсис
+label.Dark neon voxel	Темний неоновий воксель
+label.4-colour console era	Епоха 4-кольорових консолей
+label.Kirian original	Оригінал Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Ледь помітний люмінофор CRT
+label.Glow on geometry	Світіння на геометрії
+label.Soft bloom on projectiles	М'який bloom на снарядах
+label.Neutral bloom	Нейтральний bloom
+label.Subtle warm glow	Ледь помітне тепле світіння
+label.Faithful retro feel	Вірний ретро-настрій
+label.Matches the polarity palette	Під палітру полярностей
+label.Strongest bloom preset	Найсильніший пресет bloom
+label.Clean, high-contrast	Чисто, висока контрастність
+label.No bloom — flat palette	Без bloom — пласка палітра
+label.Saturation 0.85, orange tint	Насиченість 0.85, помаранчевий відтінок
+label.High-contrast neon	Висококонтрастний неон
+label.Ultra-chunky flat sprites	Дуже грубі пласкі спрайти
+label.Hand-crafted baseline	Ручна базова версія
+
+# --- CRT / tint presets ---
+label.neutral	нейтральний
+label.scanlines 0.4, curve 0.01	лінії розгортки 0.4, кривизна 0.01
+label.scanlines 0.7, curve 0.02	лінії розгортки 0.7, кривизна 0.02
+label.green tint (0.85 / 1.0 / 0.85)	зелений відтінок (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	блакитний відтінок (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	холодний синій (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	теплий (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	теплий (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	теплий жовтий (1.0 / 0.9 / 0.7)
+label.desaturated warm	теплий знебарвлений
+
+# --- sprite labels ---
+label.Náhled	Попередній перегляд
+label.Loď	Корабель
+label.Loď 1	Корабель 1
+label.Loď 2	Корабель 2
+label.Loď 3	Корабель 3
+label.Loď 4	Корабель 4
+label.Loď 5	Корабель 5
+label.Loď 6	Корабель 6
+label.Přehled nepřátel	Огляд ворогів
+label.Asteroid 1	Астероїд 1
+label.Asteroid 2	Астероїд 2
+label.Asteroid 3	Астероїд 3
+label.Asteroid 4	Астероїд 4
+label.Bublina	Бульбашка
+label.Blaster	Бластер
+label.Laser	Лазер
+label.Vulcan	Вулкан
+label.Rododendron	Рододендрон
+label.Hvězda	Зірка
+label.Hvězda (zelená)	Зірка (зелена)
+label.Exploze 1	Вибух 1
+label.Exploze 2	Вибух 2
+label.Exploze 3	Вибух 3
+label.Exploze 4	Вибух 4
+label.Vrstva 0	Шар 0
+label.Vrstva 1	Шар 1
+label.Vrstva 2	Шар 2
+label.Vrstva 3	Шар 3
+
+# --- game center (UI) ---
+label.Karta	Картка
+label.Tlačítko	Кнопка
+label.Aktivní záložka	Активна вкладка
+label.Kredity	Кредити
+label.Štít	Щит
+label.Život	Життя
+label.Bomba	Бомба
+label.Generátor	Генератор
+
+# --- sfx + music ---
+label.Výstřel	Постріл
+label.Paprsek	Промінь
+label.Malá exploze	Малий вибух
+label.Velká exploze	Великий вибух
+label.Zásah trupu	Влучання в корпус
+label.Zásah štítu	Влучання в щит
+label.Nová zbraň	Нова зброя
+label.Sektor dokončen	Сектор пройдено
+label.Konec hry	Кінець гри
+label.Bonus	Бонус
+label.Intro	Інтро
+label.Téma 1	Тема 1
+label.Téma 2	Тема 2
+label.Téma 3	Тема 3
+label.Téma 4	Тема 4
+label.Téma 5 (boss)	Тема 5 (бос)

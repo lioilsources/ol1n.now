@@ -1,0 +1,106 @@
+# Kirian — Odia. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,or}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	ମୋନୋକ୍ରୋମ୍ ଆର୍କେଡ୍
+label.Vector wireframe	ଭେକ୍ଟର୍ ୱାୟାରଫ୍ରେମ୍
+label.Fixed-formation arcade	ସ୍ଥିର ଫର୍ମେସନ୍ ଆର୍କେଡ୍
+label.Biomechanical sci-fi	ବାୟୋମେକାନିକାଲ୍ ସାଇ-ଫାଇ
+label.16-bit console shooter	16-ବିଟ୍ କନସୋଲ୍ ଶୁଟର୍
+label.DOS-era pixel art	DOS ଯୁଗର ପିକ୍ସେଲ୍ ଆର୍ଟ
+label.Two-polarity shooter	ଦୁଇ ମେରୁର ଶୁଟର୍
+label.Neon vector grid	ନିୟନ୍ ଭେକ୍ଟର୍ ଗ୍ରିଡ୍
+label.Chrome fleet shmup	କ୍ରୋମ୍ ଜାହାଜବାହିନୀର shmup
+label.Sepia dogfight	ସେପିଆ ଆକାଶ ଯୁଦ୍ଧ
+label.Post-apocalyptic	ପ୍ରଳୟ ପରବର୍ତ୍ତୀ
+label.Dark neon voxel	ଗାଢ଼ ନିୟନ୍ ଭକ୍ସେଲ୍
+label.4-colour console era	4-ରଙ୍ଗ କନସୋଲ୍ ଯୁଗ
+label.Kirian original	Kirian ମୂଳ
+
+# --- skin notes ---
+label.Subtle CRT phosphor	ହାଲୁକା CRT ଫସଫର୍
+label.Glow on geometry	ଜ୍ୟାମିତି ଉପରେ ଝଲକ
+label.Soft bloom on projectiles	ଗୁଳି ଉପରେ ନରମ bloom
+label.Neutral bloom	ନିରପେକ୍ଷ bloom
+label.Subtle warm glow	ହାଲୁକା ଉଷ୍ମ ଝଲକ
+label.Faithful retro feel	ବିଶ୍ୱସ୍ତ ରେଟ୍ରୋ ଅନୁଭବ
+label.Matches the polarity palette	ମେରୁ ପ୍ୟାଲେଟ୍ ସହ ମେଳ
+label.Strongest bloom preset	ସବୁଠାରୁ ଶକ୍ତିଶାଳୀ bloom ପ୍ରିସେଟ୍
+label.Clean, high-contrast	ସଫା, ଉଚ୍ଚ କଣ୍ଟ୍ରାଷ୍ଟ
+label.No bloom — flat palette	bloom ନାହିଁ — ସମତଳ ପ୍ୟାଲେଟ୍
+label.Saturation 0.85, orange tint	ସାଚୁରେସନ୍ 0.85, କମଳା ଆଭା
+label.High-contrast neon	ଉଚ୍ଚ କଣ୍ଟ୍ରାଷ୍ଟ ନିୟନ୍
+label.Ultra-chunky flat sprites	ଅତି ମୋଟା ସମତଳ ସ୍ପ୍ରାଇଟ୍
+label.Hand-crafted baseline	ହାତତିଆରି ମୂଳ
+
+# --- CRT / tint presets ---
+label.neutral	ନିରପେକ୍ଷ
+label.scanlines 0.4, curve 0.01	ସ୍କାନଲାଇନ୍ 0.4, ବକ୍ରତା 0.01
+label.scanlines 0.7, curve 0.02	ସ୍କାନଲାଇନ୍ 0.7, ବକ୍ରତା 0.02
+label.green tint (0.85 / 1.0 / 0.85)	ସବୁଜ ଆଭା (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	ସାୟାନ୍ ଆଭା (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	ଶୀତଳ ନୀଳ (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	ଉଷ୍ମ (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	ଉଷ୍ମ (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	ଉଷ୍ମ ହଳଦିଆ (1.0 / 0.9 / 0.7)
+label.desaturated warm	ଫିକା ଉଷ୍ମ
+
+# --- sprite labels ---
+label.Náhled	ପ୍ରିଭ୍ୟୁ
+label.Loď	ଜାହାଜ
+label.Loď 1	ଜାହାଜ 1
+label.Loď 2	ଜାହାଜ 2
+label.Loď 3	ଜାହାଜ 3
+label.Loď 4	ଜାହାଜ 4
+label.Loď 5	ଜାହାଜ 5
+label.Loď 6	ଜାହାଜ 6
+label.Přehled nepřátel	ଶତ୍ରୁଙ୍କ ସମୀକ୍ଷା
+label.Asteroid 1	ଗ୍ରହାଣୁ 1
+label.Asteroid 2	ଗ୍ରହାଣୁ 2
+label.Asteroid 3	ଗ୍ରହାଣୁ 3
+label.Asteroid 4	ଗ୍ରହାଣୁ 4
+label.Bublina	ବୁଦବୁଦ
+label.Blaster	ବ୍ଲାଷ୍ଟର୍
+label.Laser	ଲେଜର୍
+label.Vulcan	ଭଲକାନ୍
+label.Rododendron	ରୋଡୋଡେଣ୍ଡ୍ରନ୍
+label.Hvězda	ତାରା
+label.Hvězda (zelená)	ତାରା (ସବୁଜ)
+label.Exploze 1	ବିସ୍ଫୋରଣ 1
+label.Exploze 2	ବିସ୍ଫୋରଣ 2
+label.Exploze 3	ବିସ୍ଫୋରଣ 3
+label.Exploze 4	ବିସ୍ଫୋରଣ 4
+label.Vrstva 0	ସ୍ତର 0
+label.Vrstva 1	ସ୍ତର 1
+label.Vrstva 2	ସ୍ତର 2
+label.Vrstva 3	ସ୍ତର 3
+
+# --- game center (UI) ---
+label.Karta	କାର୍ଡ
+label.Tlačítko	ବଟନ୍
+label.Aktivní záložka	ସକ୍ରିୟ ଟ୍ୟାବ୍
+label.Kredity	କ୍ରେଡିଟ୍
+label.Štít	ଶିଲ୍ଡ
+label.Život	ଜୀବନ
+label.Bomba	ବୋମା
+label.Generátor	ଜେନେରେଟର୍
+
+# --- sfx + music ---
+label.Výstřel	ଗୁଳି
+label.Paprsek	ରଶ୍ମି
+label.Malá exploze	ଛୋଟ ବିସ୍ଫୋରଣ
+label.Velká exploze	ବଡ଼ ବିସ୍ଫୋରଣ
+label.Zásah trupu	ଢାଞ୍ଚାରେ ଆଘାତ
+label.Zásah štítu	ଶିଲ୍ଡରେ ଆଘାତ
+label.Nová zbraň	ନୂଆ ଅସ୍ତ୍ର
+label.Sektor dokončen	ସେକ୍ଟର ସମ୍ପୂର୍ଣ୍ଣ
+label.Konec hry	ଖେଳ ଶେଷ
+label.Bonus	ବୋନସ୍
+label.Intro	ଇଣ୍ଟ୍ରୋ
+label.Téma 1	ଥିମ୍ 1
+label.Téma 2	ଥିମ୍ 2
+label.Téma 3	ଥିମ୍ 3
+label.Téma 4	ଥିମ୍ 4
+label.Téma 5 (boss)	ଥିମ୍ 5 (ବସ୍)

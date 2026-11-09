@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <rect y="0" width="900" height="43.4" fill="#CC0001"/>
+  <rect y="42.9" width="900" height="43.4" fill="#ffffff"/>
+  <rect y="85.7" width="900" height="43.4" fill="#CC0001"/>
+  <rect y="128.6" width="900" height="43.4" fill="#ffffff"/>
+  <rect y="171.4" width="900" height="43.4" fill="#CC0001"/>
+  <rect y="214.3" width="900" height="43.4" fill="#ffffff"/>
+  <rect y="257.1" width="900" height="43.4" fill="#CC0001"/>
+  <rect y="300" width="900" height="43.4" fill="#ffffff"/>
+  <rect y="342.9" width="900" height="43.4" fill="#CC0001"/>
+  <rect y="385.7" width="900" height="43.4" fill="#ffffff"/>
+  <rect y="428.6" width="900" height="43.4" fill="#CC0001"/>
+  <rect y="471.4" width="900" height="43.4" fill="#ffffff"/>
+  <rect y="514.3" width="900" height="43.4" fill="#CC0001"/>
+  <rect y="557.1" width="900" height="43.4" fill="#ffffff"/>
+  <rect width="450" height="342.9" fill="#010066"/>
+  <circle cx="165" cy="171" r="110" fill="#FFCC00"/>
+  <circle cx="195" cy="171" r="95" fill="#010066"/>
+  <polygon points="310,86 318.5,133.7 346.9,94.4 333.8,141.1 376.5,118 344.5,154.4 392.9,152.1 348.2,171 392.9,189.9 344.5,187.6 376.5,224 333.8,200.9 346.9,247.6 318.5,208.3 310,256 301.5,208.3 273.1,247.6 286.2,200.9 243.5,224 275.5,187.6 227.1,189.9 271.8,171 227.1,152.1 275.5,154.4 243.5,118 286.2,141.1 273.1,94.4 301.5,133.7" fill="#FFCC00"/>
+</svg>

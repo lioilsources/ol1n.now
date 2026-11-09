@@ -1,11 +1,9 @@
-# Site chrome, Italian. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
-# skins gallery ships this language.
+# Site chrome, Italian. Same keys as cs.tsv; see the notes there.
 nav.all_apps	← Tutte le app
 nav.back_to	← Torna a %s
 nav.lang	Lingua
 title.app	%s — olin.now
+title.skins	%s — skin — olin.now
 badge.featured	★ In evidenza
 badge.mobile	Mobile
 sec.downloads	Download
@@ -14,12 +12,103 @@ sec.shots_desktop	Screenshot — desktop
 sec.shots_mobile	Screenshot — mobile
 shots.empty.desktop	Ancora nessuno screenshot desktop.
 shots.empty.mobile	Ancora nessuno screenshot mobile.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Build in arrivo.
+skins.title	Skin
+skins.teaser_intro	%s temi visivi, ognuno con sprite, sfondo parallax, suoni e musica propri.
+skins.more	Esplora tutte le skin →
+skins.page_intro	%s temi visivi per %s. Ogni skin ha navi, nemici, boss, sfondi, suoni e musica adattiva propri.
+skins.disclaimer	Le skin sono un libero omaggio agli sparatutto classici. %s non è in alcun modo legato ai loro autori o editori e non usa la loro grafica né i loro suoni originali.
+skins.wiki	Wikipedia
+skins.vessels	%s navi
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	tinta %s
+cat.preview	Anteprima
+cat.vessels	Navi
+cat.enemies	Nemici
+cat.boss	Boss
+cat.asteroids	Asteroidi
+cat.fx	Effetti e proiettili
+cat.ui	Interfaccia di gioco
+cat.backgrounds	Sfondi
+cat.sfx	Suoni (SFX)
+cat.music	Musica
+player.prev	Precedente
+player.play	Riproduci
+player.next	Successivo
+player.pause	Pausa
 decks.title	Mazzi
 decks.intro	%s mazzi, ognuno disegnato in due stili. Da ciascuno, dieci carte di esempio: cinque nel primo stile, cinque nel secondo.
 decks.cards	%s carte
 decks.free	gratis
 decks.free_badge	Gratis
 decks.tr	Traduzione
+visuals.title	Visual
+visuals.more	Esplora tutti i visual →
+fleets.title	Flotte
+fleets.teaser_intro	%s flotte, ciascuna con sei tipi di nave.
+fleets.teaser_intro_man	%s flotte, ciascuna con sei tipi di nave, e %s manovre da disegnare con il dito.
+fleets.more	Esplora flotte e manovre →
+lb.dialog	Screenshot
+lb.hint	rotella per lo zoom · trascina per spostare · Esc per chiudere
+lb.zoom_out	Riduci
+lb.zoom_in	Ingrandisci
+lb.fit	Adatta allo schermo
+lb.close	Chiudi
+lb.open	Ingrandisci screenshot
+foot.logo_alt	Ananas&Bananas — frutta digitale & tecnologia
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — immagini — olin.now
+title.fleets	%s — flotte e manovre — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — immagini
+board.aria	Scacchiera 8×8
+fleets.page_title	Flotte
+fleets.page_intro	%s flotte per %s. Ognuna ridisegna tutti e sei i tipi di nave in versione bianca e nera: la flotta è puramente estetica, non cambia né il movimento dei pezzi né il combattimento.
+fleets.default	predefinita
+fleets.white	Flotta bianca
+fleets.black	Flotta nera
+fleets.audio_title	Suono del combattimento
+fleets.sfx_note	Il suono dello sparo e dell'esplosione dipende dall'elemento della nave, non dalla flotta: il pedone spara colpi cinetici, il cavallo acqua, l'alfiere fuoco, la torre ghiaccio, la regina e il re elettricità.
+fleets.music_note	Durante il combattimento suona il tema della nave che attacca.
+man.title	Manovre
+man.intro	%s manovre: dodici famiglie che ogni nave esegue a modo suo, più una tutta sua. Si attivano con un gesto tracciato su una griglia 3×3 — come per sbloccare un Android — e costano energia, che si ricarica da sola. Le traiettorie qui sotto sono campionate direttamente dal catalogo del gioco, quindi la nave sulla tela vola esattamente come in combattimento.
+man.units	Tipi di nave
+unit.pawn	Pedone
+unit.knight	Cavallo
+unit.bishop	Alfiere
+unit.rook	Torre
+unit.queen	Regina
+unit.king	Re
+unit.pawn.element	cinetico
+unit.knight.element	acqua
+unit.bishop.element	fuoco
+unit.rook.element	ghiaccio
+unit.queen.element	elettrico
+unit.king.element	elettrico
+man.path	Traiettoria della manovra %s
+man.energy	Energia
+man.duration	Durata
+man.secs	%s s
+man.shots	Colpi
+man.untouchable_title	I colpi la attraversano
+man.untouchable	intoccabile
+man.shield_title	Alza uno scudo
+man.shield	scudo
+man.control_title	Il pilota mantiene i comandi
+man.control	guida libera
+man.mirror_title	Un gesto speculare esegue la manovra speculare
+man.mirror	speculare
+man.price_title	Prezzo in crediti
+man.price	%s cr.
+man.starter	dall'inizio
+man.wins	vittorie: %s
+man.pack	pacchetto %s
+num.decimal	,

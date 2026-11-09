@@ -62,6 +62,10 @@
     box.hidden = true; document.documentElement.style.overflow = "";
     if (opener) opener.focus();
   }
+  // labels: data-lb-* on the footer (build-site.sh), Czech when absent
+  var foot = document.querySelector(".site-footer");
+  var T = (foot && foot.dataset) || {};
+  function tr(k, cs) { return T[k] || cs; }
   function btn(label, text, fn) {
     var b = document.createElement("button");
     b.type = "button"; b.textContent = text; b.setAttribute("aria-label", label); b.title = label;
@@ -72,18 +76,18 @@
     box = document.createElement("div");
     box.className = "lb"; box.hidden = true;
     box.setAttribute("role", "dialog"); box.setAttribute("aria-modal", "true");
-    box.setAttribute("aria-label", "Screenshot");
+    box.setAttribute("aria-label", tr("lbDialog", "Screenshot"));
     img = document.createElement("img"); img.className = "lb-img"; img.alt = ""; img.draggable = false;
     var hint = document.createElement("div"); hint.className = "lb-hint";
-    hint.textContent = "kolečko přibližuje · tažením posouváš · Esc zavře";
+    hint.textContent = tr("lbHint", "kolečko přibližuje · tažením posouváš · Esc zavře");
     var bar = document.createElement("div"); bar.className = "lb-bar";
     pct = document.createElement("span"); pct.className = "lb-pct";
     var mid = function (k) { zoomAt(innerWidth / 2, innerHeight / 2, k); };
-    bar.appendChild(btn("Oddálit", "−", function () { mid(1 / 1.4); }));
+    bar.appendChild(btn(tr("lbZoomOut", "Oddálit"), "−", function () { mid(1 / 1.4); }));
     bar.appendChild(pct);
-    bar.appendChild(btn("Přiblížit", "+", function () { mid(1.4); }));
-    bar.appendChild(btn("Na celou obrazovku", "⤢", fitView));
-    bar.appendChild(btn("Zavřít", "×", close));
+    bar.appendChild(btn(tr("lbZoomIn", "Přiblížit"), "+", function () { mid(1.4); }));
+    bar.appendChild(btn(tr("lbFit", "Na celou obrazovku"), "⤢", fitView));
+    bar.appendChild(btn(tr("lbClose", "Zavřít"), "×", close));
     box.appendChild(img); box.appendChild(hint); box.appendChild(bar);
     document.body.appendChild(box);
 
@@ -150,7 +154,7 @@
 
   [].forEach.call(document.querySelectorAll(SEL), function (el) {
     el.tabIndex = 0; el.setAttribute("role", "button");
-    if (!el.alt) el.setAttribute("aria-label", "Zvětšit screenshot");
+    if (!el.alt) el.setAttribute("aria-label", tr("lbOpen", "Zvětšit screenshot"));
     el.addEventListener("click", function () { open(el); });
     el.addEventListener("keydown", function (e) {
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(el); }

@@ -1,0 +1,106 @@
+# Kirian — Turkish. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,tr}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Tek renkli arcade
+label.Vector wireframe	Vektör tel kafes
+label.Fixed-formation arcade	Sabit formasyonlu arcade
+label.Biomechanical sci-fi	Biyomekanik bilim kurgu
+label.16-bit console shooter	16 bit konsol nişancısı
+label.DOS-era pixel art	DOS dönemi piksel sanatı
+label.Two-polarity shooter	İki kutuplu nişancı
+label.Neon vector grid	Neon vektör ızgara
+label.Chrome fleet shmup	Krom filo shmup
+label.Sepia dogfight	Sepya it dalaşı
+label.Post-apocalyptic	Kıyamet sonrası
+label.Dark neon voxel	Karanlık neon voksel
+label.4-colour console era	4 renkli konsol dönemi
+label.Kirian original	Kirian orijinali
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Hafif CRT fosforu
+label.Glow on geometry	Geometri üzerinde parıltı
+label.Soft bloom on projectiles	Mermilerde yumuşak bloom
+label.Neutral bloom	Nötr bloom
+label.Subtle warm glow	Hafif sıcak parıltı
+label.Faithful retro feel	Sadık retro hissi
+label.Matches the polarity palette	Kutup paletine uygun
+label.Strongest bloom preset	En güçlü bloom ön ayarı
+label.Clean, high-contrast	Temiz, yüksek kontrast
+label.No bloom — flat palette	Bloom yok — düz palet
+label.Saturation 0.85, orange tint	Doygunluk 0.85, turuncu ton
+label.High-contrast neon	Yüksek kontrastlı neon
+label.Ultra-chunky flat sprites	Aşırı iri düz sprite'lar
+label.Hand-crafted baseline	El yapımı temel sürüm
+
+# --- CRT / tint presets ---
+label.neutral	nötr
+label.scanlines 0.4, curve 0.01	tarama çizgileri 0.4, eğrilik 0.01
+label.scanlines 0.7, curve 0.02	tarama çizgileri 0.7, eğrilik 0.02
+label.green tint (0.85 / 1.0 / 0.85)	yeşil ton (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	camgöbeği ton (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	soğuk mavi (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	sıcak (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	sıcak (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	sıcak sarı (1.0 / 0.9 / 0.7)
+label.desaturated warm	doygunluğu azaltılmış sıcak
+
+# --- sprite labels ---
+label.Náhled	Önizleme
+label.Loď	Gemi
+label.Loď 1	Gemi 1
+label.Loď 2	Gemi 2
+label.Loď 3	Gemi 3
+label.Loď 4	Gemi 4
+label.Loď 5	Gemi 5
+label.Loď 6	Gemi 6
+label.Přehled nepřátel	Düşmanlara genel bakış
+label.Asteroid 1	Asteroit 1
+label.Asteroid 2	Asteroit 2
+label.Asteroid 3	Asteroit 3
+label.Asteroid 4	Asteroit 4
+label.Bublina	Baloncuk
+label.Blaster	Blaster
+label.Laser	Lazer
+label.Vulcan	Vulcan
+label.Rododendron	Ormangülü
+label.Hvězda	Yıldız
+label.Hvězda (zelená)	Yıldız (yeşil)
+label.Exploze 1	Patlama 1
+label.Exploze 2	Patlama 2
+label.Exploze 3	Patlama 3
+label.Exploze 4	Patlama 4
+label.Vrstva 0	Katman 0
+label.Vrstva 1	Katman 1
+label.Vrstva 2	Katman 2
+label.Vrstva 3	Katman 3
+
+# --- game center (UI) ---
+label.Karta	Kart
+label.Tlačítko	Düğme
+label.Aktivní záložka	Etkin sekme
+label.Kredity	Krediler
+label.Štít	Kalkan
+label.Život	Can
+label.Bomba	Bomba
+label.Generátor	Jeneratör
+
+# --- sfx + music ---
+label.Výstřel	Atış
+label.Paprsek	Işın
+label.Malá exploze	Küçük patlama
+label.Velká exploze	Büyük patlama
+label.Zásah trupu	Gövde isabeti
+label.Zásah štítu	Kalkan isabeti
+label.Nová zbraň	Yeni silah
+label.Sektor dokončen	Sektör tamamlandı
+label.Konec hry	Oyun bitti
+label.Bonus	Bonus
+label.Intro	Giriş
+label.Téma 1	Tema 1
+label.Téma 2	Tema 2
+label.Téma 3	Tema 3
+label.Téma 4	Tema 4
+label.Téma 5 (boss)	Tema 5 (boss)

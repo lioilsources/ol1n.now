@@ -1,0 +1,114 @@
+# Site chrome, Romanian. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← Toate aplicațiile
+nav.back_to	← Înapoi la %s
+nav.lang	Limbă
+title.app	%s — olin.now
+title.skins	%s — skinuri — olin.now
+badge.featured	★ Recomandată
+badge.mobile	Mobil
+sec.downloads	Descărcări
+sec.description	Descriere
+sec.shots_desktop	Capturi de ecran — desktop
+sec.shots_mobile	Capturi de ecran — mobil
+shots.empty.desktop	Încă nu există capturi de ecran pentru desktop.
+shots.empty.mobile	Încă nu există capturi de ecran pentru mobil.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Versiunile vor fi disponibile în curând.
+skins.title	Skinuri
+skins.teaser_intro	Teme vizuale: %s — fiecare cu sprite-uri proprii, fundal parallax, sunete și muzică.
+skins.more	Explorează toate skinurile →
+skins.page_intro	Teme vizuale: %s, pentru %s. Fiecare skin are propriile nave, inamici, boși, fundaluri, sunete și muzică adaptivă.
+skins.disclaimer	Skinurile sunt un omagiu liber adus jocurilor shoot-'em-up clasice. %s nu are nicio legătură cu autorii sau editorii acestora și nu folosește grafica ori sunetele lor originale.
+skins.wiki	Wikipedia
+skins.vessels	Nave: %s
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	nuanță %s
+cat.preview	Previzualizare
+cat.vessels	Nave
+cat.enemies	Inamici
+cat.boss	Boss
+cat.asteroids	Asteroizi
+cat.fx	Efecte și proiectile
+cat.ui	Interfața jocului
+cat.backgrounds	Fundaluri
+cat.sfx	Sunete (SFX)
+cat.music	Muzică
+player.prev	Anterior
+player.play	Redă
+player.next	Următor
+player.pause	Pauză
+decks.title	Pachete
+decks.intro	Pachete: %s, fiecare desenat în două stiluri. Din fiecare, zece cartonașe de exemplu: cinci în primul stil, cinci în al doilea.
+decks.cards	Cartonașe: %s
+decks.free	gratuit
+decks.free_badge	Gratuit
+decks.tr	Traducere
+visuals.title	Vizualuri
+visuals.more	Explorează toate vizualurile →
+fleets.title	Flote
+fleets.teaser_intro	Flote: %s, fiecare cu șase tipuri de nave.
+fleets.teaser_intro_man	Flote: %s, fiecare cu șase tipuri de nave. Manevre desenate cu degetul: %s.
+fleets.more	Explorează flotele și manevrele →
+lb.dialog	Captură de ecran
+lb.hint	rotița mărește · trage pentru a muta · Esc închide
+lb.zoom_out	Micșorează
+lb.zoom_in	Mărește
+lb.fit	Potrivește pe ecran
+lb.close	Închide
+lb.open	Mărește captura de ecran
+foot.logo_alt	Ananas&Bananas — fructe digitale & tehnologie
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — grafică — olin.now
+title.fleets	%s — flote și manevre — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — grafică
+board.aria	Tablă de șah 8×8
+fleets.page_title	Flote
+fleets.page_intro	%s flote pentru %s. Fiecare redesenează toate cele șase tipuri de nave în variantă albă și neagră — flota e pur vizuală, nu schimbă nici mutările pieselor, nici lupta.
+fleets.default	implicită
+fleets.white	Flota albă
+fleets.black	Flota neagră
+fleets.audio_title	Sunetul luptei
+fleets.sfx_note	Sunetul împușcăturii și al exploziei îl dă elementul navei, nu flota: pionul trage cinetic, calul cu apă, nebunul cu foc, turnul cu gheață, regina și regele cu electricitate.
+fleets.music_note	În luptă se aude tema navei care atacă.
+man.title	Manevre
+man.intro	%s manevre: douăsprezece familii pe care fiecare navă le zboară în felul ei, plus una proprie. Se declanșează cu un gest desenat pe o grilă 3×3 — ca la deblocarea unui Android — și costă energie, care se reîncarcă singură. Traiectoriile de mai jos sunt eșantionate direct din catalogul jocului, așa că nava de pe pânză zboară exact ca în luptă.
+man.units	Tipuri de nave
+unit.pawn	Pion
+unit.knight	Cal
+unit.bishop	Nebun
+unit.rook	Turn
+unit.queen	Regină
+unit.king	Rege
+unit.pawn.element	cinetic
+unit.knight.element	apă
+unit.bishop.element	foc
+unit.rook.element	gheață
+unit.queen.element	electric
+unit.king.element	electric
+man.path	Traiectoria manevrei %s
+man.energy	Energie
+man.duration	Durată
+man.secs	%s s
+man.shots	Focuri
+man.untouchable_title	Proiectilele trec prin ea
+man.untouchable	de neatins
+man.shield_title	Ridică un scut
+man.shield	scut
+man.control_title	Pilotul păstrează controlul
+man.control	control liber
+man.mirror_title	Un gest în oglindă zboară manevra în oglindă
+man.mirror	oglindibil
+man.price_title	Preț în credite
+man.price	%s cr.
+man.starter	de la început
+man.wins	victorii: %s
+man.pack	pachet %s
+num.decimal	,

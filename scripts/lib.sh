@@ -34,8 +34,16 @@ html_escape() {
 # md_to_html  (stdin markdown -> stdout HTML): minimal converter.
 # Supports: paragraphs (blank-line separated), `### podnadpis` (-> <h3>),
 # `1.` / `-` seznamy (-> <ol>/<ul>), **bold**, `code`, [text](url).
+#
+# A soft line break inside a paragraph or list item becomes a space, except
+# between two Chinese/Japanese or Thai characters: those scripts put no spaces
+# between words, so a translator's line wrap must not show up as a gap. The
+# test is on UTF-8 bytes (LC_ALL=C, awk is not UTF-8 aware everywhere):
+# lead byte E3-E9 = U+3000-U+9FFF (CJK punctuation, kana, ideographs),
+# EF BC/BD = fullwidth forms, E0 B8/B9 = Thai. Hangul (EA-ED) is left out on
+# purpose: Korean separates words with spaces.
 md_to_html() {
-  awk '
+  LC_ALL=C awk '
     # Inline spans run on the whole joined paragraph, not per line — otherwise
     # a **bold** or `code` span that wraps across a line break never pairs up
     # and renders with its literal markers.
@@ -58,6 +66,18 @@ md_to_html() {
         s = substr(s, 1, RSTART-1) "<code>" t "</code>" substr(s, RSTART+RLENGTH)
       }
       return s
+    }
+    function nospace(c,   b1, b2) {
+      b1 = substr(c, 1, 1); b2 = substr(c, 2, 1)
+      return (b1 >= "\343" && b1 <= "\351") || (b1 == "\357" && (b2 == "\274" || b2 == "\275")) ||
+             (b1 == "\340" && (b2 == "\270" || b2 == "\271"))
+    }
+    # join <text so far> <next line>: a space, or none between two CJK/Thai characters
+    function join(a, b,   t, u) {
+      if (a == "") return b
+      t = a; sub(/[ \t]+$/, "", t); u = b; sub(/^[ \t]+/, "", u)
+      if (length(t) >= 3 && nospace(substr(t, length(t) - 2, 3)) && nospace(substr(u, 1, 3))) return t u
+      return a " " b
     }
     function flush() {
       if (buf != "") { print "<p>" inline(buf) "</p>"; buf = "" }
@@ -97,11 +117,11 @@ md_to_html() {
     # inside a list a plain line continues the current item, not a new paragraph
     listtag != "" {
       sub(/^[ \t]+/, "", line)
-      item = (item == "" ? line : item " " line)
+      item = join(item, line)
       next
     }
     {
-      buf = (buf == "" ? line : buf " " line)
+      buf = join(buf, line)
     }
     END { flush(); endlist() }
   '

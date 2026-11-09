@@ -1,0 +1,25 @@
+# Lexify — deck titles and style names for the deck gallery. Czech comes from
+# the DuolingoCards packs via `make import-decks`; these are the other languages.
+# The words on the cards themselves live in apps/lexify/words.tsv.
+deck.numbers-1-10	Angka 1–50
+deck.colors-basic	Warna dasar
+deck.animals-pets	Hewan peliharaan
+deck.animals-birds	Burung
+deck.animals-farm	Hewan ternak
+deck.animals-insects	Serangga
+deck.animals-reptiles	Reptil dan amfibi
+deck.animals-sea	Hewan laut
+deck.animals-wild	Hewan liar
+deck.body-parts	Bagian tubuh
+deck.emotions	Emosi
+deck.food-fruits	Buah-buahan
+deck.food-vegetables	Sayuran
+deck.weather	Cuaca
+style.photo	Foto
+style.photo.desc	Foto tajam, paling dekat dengan aslinya
+style.ink	Kuas dan tinta
+style.ink.desc	Sapuan kuas, kertas polos, satu aksen warna
+style.pastel	Pastel
+style.pastel.desc	Pastel kering di atas kertas berwarna
+style.watercolor	Cat air
+style.watercolor.desc	Sapuan warna yang meresap, kertas yang tembus pandang

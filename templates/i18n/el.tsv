@@ -1,0 +1,114 @@
+# Site chrome, Greek. Same keys as cs.tsv, in the same order; see the notes there.
+nav.all_apps	← Όλες οι εφαρμογές
+nav.back_to	← Πίσω στο %s
+nav.lang	Γλώσσα
+title.app	%s — olin.now
+title.skins	%s — skins — olin.now
+badge.featured	★ Προτεινόμενη
+badge.mobile	Κινητό
+sec.downloads	Λήψεις
+sec.description	Περιγραφή
+sec.shots_desktop	Στιγμιότυπα — υπολογιστής
+sec.shots_mobile	Στιγμιότυπα — κινητό
+shots.empty.desktop	Δεν υπάρχουν ακόμη στιγμιότυπα (υπολογιστής).
+shots.empty.mobile	Δεν υπάρχουν ακόμη στιγμιότυπα (κινητό).
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Οι εκδόσεις έρχονται σύντομα.
+skins.title	Skins
+skins.teaser_intro	%s οπτικά θέματα — το καθένα με δικά του sprites, φόντο parallax, ήχους και μουσική.
+skins.more	Δείτε όλα τα skins →
+skins.page_intro	%s οπτικά θέματα για το %s. Κάθε skin έχει δικά του σκάφη, εχθρούς, bosses, φόντα, ήχους και προσαρμοστική μουσική.
+skins.disclaimer	Τα skins είναι ένας ελεύθερος φόρος τιμής στα κλασικά shoot 'em up. Το %s δεν συνδέεται με κανέναν τρόπο με τους δημιουργούς ή τους εκδότες τους και δεν χρησιμοποιεί τα πρωτότυπα γραφικά ή τους ήχους τους.
+skins.wiki	Βικιπαίδεια
+skins.vessels	Σκάφη: %s
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	απόχρωση %s
+cat.preview	Προεπισκόπηση
+cat.vessels	Σκάφη
+cat.enemies	Εχθροί
+cat.boss	Boss
+cat.asteroids	Αστεροειδείς
+cat.fx	Εφέ και βλήματα
+cat.ui	Διεπαφή παιχνιδιού
+cat.backgrounds	Φόντα
+cat.sfx	Ήχοι (SFX)
+cat.music	Μουσική
+player.prev	Προηγούμενο
+player.play	Αναπαραγωγή
+player.next	Επόμενο
+player.pause	Παύση
+decks.title	Πακέτα
+decks.intro	%s πακέτα, το καθένα σχεδιασμένο σε δύο εικαστικά στυλ. Από το καθένα υπάρχουν εδώ δέκα δείγματα καρτών: πέντε στο πρώτο στυλ, πέντε στο δεύτερο.
+decks.cards	%s κάρτες
+decks.free	δωρεάν
+decks.free_badge	Δωρεάν
+decks.tr	Μετάφραση
+visuals.title	Γραφικά
+visuals.more	Δείτε όλα τα γραφικά →
+fleets.title	Στόλοι
+fleets.teaser_intro	%s στόλοι με έξι τύπους σκαφών ο καθένας.
+fleets.teaser_intro_man	%s στόλοι με έξι τύπους σκαφών ο καθένας και %s ελιγμοί που σχεδιάζονται με το δάχτυλο.
+fleets.more	Δείτε τους στόλους και τους ελιγμούς →
+lb.dialog	Στιγμιότυπο
+lb.hint	ροδέλα για ζουμ · σύρετε για μετακίνηση · Esc για κλείσιμο
+lb.zoom_out	Σμίκρυνση
+lb.zoom_in	Μεγέθυνση
+lb.fit	Προσαρμογή στην οθόνη
+lb.close	Κλείσιμο
+lb.open	Μεγέθυνση στιγμιότυπου
+foot.logo_alt	Ananas&Bananas — ψηφιακά φρούτα & τεχνολογία
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — γραφικά — olin.now
+title.fleets	%s — στόλοι και ελιγμοί — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — γραφικά
+board.aria	Σκακιέρα 8×8
+fleets.page_title	Στόλοι
+fleets.page_intro	%s στόλοι για το %s. Ο καθένας ξανασχεδιάζει και τους έξι τύπους σκαφών σε λευκή και μαύρη εκδοχή — ο στόλος είναι καθαρά οπτικός και δεν αλλάζει ούτε τις κινήσεις των πεσσών ούτε τη μάχη.
+fleets.default	προεπιλογή
+fleets.white	Λευκός στόλος
+fleets.black	Μαύρος στόλος
+fleets.audio_title	Ήχος μάχης
+fleets.sfx_note	Τον ήχο της βολής και της έκρηξης τον ορίζει το στοιχείο του σκάφους, όχι ο στόλος: το πιόνι ρίχνει κινητικά, ο ίππος νερό, ο αξιωματικός φωτιά, ο πύργος πάγο, η βασίλισσα και ο βασιλιάς ηλεκτρισμό.
+fleets.music_note	Στη μάχη παίζει το θέμα του σκάφους που επιτίθεται.
+man.title	Ελιγμοί
+man.intro	%s ελιγμοί: δώδεκα οικογένειες που κάθε σκάφος πετά με τον δικό του τρόπο, συν έναν δικό του. Ενεργοποιούνται με μια χειρονομία σε πλέγμα 3×3 — όπως το ξεκλείδωμα ενός Android — και κοστίζουν ενέργεια που αναπληρώνεται μόνη της. Οι τροχιές παρακάτω είναι δείγματα κατευθείαν από τον κατάλογο του παιχνιδιού, άρα το σκάφος στον καμβά πετά ακριβώς όπως στη μάχη.
+man.units	Τύποι σκαφών
+unit.pawn	Πιόνι
+unit.knight	Ίππος
+unit.bishop	Αξιωματικός
+unit.rook	Πύργος
+unit.queen	Βασίλισσα
+unit.king	Βασιλιάς
+unit.pawn.element	κινητικό
+unit.knight.element	νερό
+unit.bishop.element	φωτιά
+unit.rook.element	πάγος
+unit.queen.element	ηλεκτρικό
+unit.king.element	ηλεκτρικό
+man.path	Τροχιά του ελιγμού %s
+man.energy	Ενέργεια
+man.duration	Διάρκεια
+man.secs	%s δλ
+man.shots	Βολές
+man.untouchable_title	Τα βλήματα περνούν μέσα του
+man.untouchable	άτρωτο
+man.shield_title	Σηκώνει ασπίδα
+man.shield	ασπίδα
+man.control_title	Ο έλεγχος μένει στον πιλότο
+man.control	ελεύθερος έλεγχος
+man.mirror_title	Μια κατοπτρική χειρονομία εκτελεί τον κατοπτρικό ελιγμό
+man.mirror	κατοπτρικός
+man.price_title	Τιμή σε μονάδες
+man.price	%s μον.
+man.starter	από την αρχή
+man.wins	νίκες: %s
+man.pack	πακέτο %s
+num.decimal	,

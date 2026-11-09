@@ -1,0 +1,106 @@
+# Kirian — Greek. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,el}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Μονόχρωμο arcade
+label.Vector wireframe	Διανυσματικό συρματόπλεγμα
+label.Fixed-formation arcade	Arcade σταθερού σχηματισμού
+label.Biomechanical sci-fi	Βιο-μηχανική επιστημονική φαντασία
+label.16-bit console shooter	Shooter κονσόλας 16-bit
+label.DOS-era pixel art	Pixel art της εποχής DOS
+label.Two-polarity shooter	Shooter δύο πολικοτήτων
+label.Neon vector grid	Διανυσματικό πλέγμα νέον
+label.Chrome fleet shmup	Shmup χρωμιωμένου στόλου
+label.Sepia dogfight	Αερομαχία σε σέπια
+label.Post-apocalyptic	Μεταποκαλυπτικό
+label.Dark neon voxel	Σκοτεινό voxel νέον
+label.4-colour console era	Εποχή κονσολών 4 χρωμάτων
+label.Kirian original	Πρωτότυπο Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Διακριτικός φώσφορος CRT
+label.Glow on geometry	Λάμψη στη γεωμετρία
+label.Soft bloom on projectiles	Απαλό bloom στα βλήματα
+label.Neutral bloom	Ουδέτερο bloom
+label.Subtle warm glow	Διακριτική ζεστή λάμψη
+label.Faithful retro feel	Πιστή ρετρό αίσθηση
+label.Matches the polarity palette	Ταιριάζει με την παλέτα πολικότητας
+label.Strongest bloom preset	Η πιο έντονη ρύθμιση bloom
+label.Clean, high-contrast	Καθαρό, υψηλή αντίθεση
+label.No bloom — flat palette	Χωρίς bloom — επίπεδη παλέτα
+label.Saturation 0.85, orange tint	Κορεσμός 0.85, πορτοκαλί απόχρωση
+label.High-contrast neon	Νέον υψηλής αντίθεσης
+label.Ultra-chunky flat sprites	Εξαιρετικά χοντροκομμένα επίπεδα sprites
+label.Hand-crafted baseline	Χειροποίητη βάση
+
+# --- CRT / tint presets ---
+label.neutral	ουδέτερο
+label.scanlines 0.4, curve 0.01	γραμμές σάρωσης 0.4, καμπυλότητα 0.01
+label.scanlines 0.7, curve 0.02	γραμμές σάρωσης 0.7, καμπυλότητα 0.02
+label.green tint (0.85 / 1.0 / 0.85)	πράσινη απόχρωση (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	κυανή απόχρωση (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	ψυχρό μπλε (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	ζεστό (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	ζεστό (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	ζεστό κίτρινο (1.0 / 0.9 / 0.7)
+label.desaturated warm	ζεστό αποκορεσμένο
+
+# --- sprite labels ---
+label.Náhled	Προεπισκόπηση
+label.Loď	Σκάφος
+label.Loď 1	Σκάφος 1
+label.Loď 2	Σκάφος 2
+label.Loď 3	Σκάφος 3
+label.Loď 4	Σκάφος 4
+label.Loď 5	Σκάφος 5
+label.Loď 6	Σκάφος 6
+label.Přehled nepřátel	Επισκόπηση εχθρών
+label.Asteroid 1	Αστεροειδής 1
+label.Asteroid 2	Αστεροειδής 2
+label.Asteroid 3	Αστεροειδής 3
+label.Asteroid 4	Αστεροειδής 4
+label.Bublina	Φυσαλίδα
+label.Blaster	Blaster
+label.Laser	Λέιζερ
+label.Vulcan	Vulcan
+label.Rododendron	Ροδόδεντρο
+label.Hvězda	Αστέρι
+label.Hvězda (zelená)	Αστέρι (πράσινο)
+label.Exploze 1	Έκρηξη 1
+label.Exploze 2	Έκρηξη 2
+label.Exploze 3	Έκρηξη 3
+label.Exploze 4	Έκρηξη 4
+label.Vrstva 0	Επίπεδο 0
+label.Vrstva 1	Επίπεδο 1
+label.Vrstva 2	Επίπεδο 2
+label.Vrstva 3	Επίπεδο 3
+
+# --- game center (UI) ---
+label.Karta	Κάρτα
+label.Tlačítko	Κουμπί
+label.Aktivní záložka	Ενεργή καρτέλα
+label.Kredity	Credits
+label.Štít	Ασπίδα
+label.Život	Ζωή
+label.Bomba	Βόμβα
+label.Generátor	Γεννήτρια
+
+# --- sfx + music ---
+label.Výstřel	Βολή
+label.Paprsek	Ακτίνα
+label.Malá exploze	Μικρή έκρηξη
+label.Velká exploze	Μεγάλη έκρηξη
+label.Zásah trupu	Χτύπημα στο σκάφος
+label.Zásah štítu	Χτύπημα στην ασπίδα
+label.Nová zbraň	Νέο όπλο
+label.Sektor dokončen	Ο τομέας ολοκληρώθηκε
+label.Konec hry	Τέλος παιχνιδιού
+label.Bonus	Μπόνους
+label.Intro	Εισαγωγή
+label.Téma 1	Θέμα 1
+label.Téma 2	Θέμα 2
+label.Téma 3	Θέμα 3
+label.Téma 4	Θέμα 4
+label.Téma 5 (boss)	Θέμα 5 (boss)

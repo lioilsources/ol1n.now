@@ -2,9 +2,11 @@
 slug: elftonplayer
 name: Elfton Player
 repo: lioilsources/ol1nplay
+icon_src: app_desktop/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png
 tagline: Bit-perfect přehrávač pro USB DAC — soubor, RAM, ASIO a nic mezi tím
 order: 24
 featured: false
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop: windows
 mobile: android
 appstore:

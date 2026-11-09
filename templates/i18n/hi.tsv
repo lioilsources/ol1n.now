@@ -1,0 +1,114 @@
+# Site chrome, Hindi. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← सभी ऐप्स
+nav.back_to	← %s पर वापस जाएँ
+nav.lang	भाषा
+title.app	%s — olin.now
+title.skins	%s — स्किन — olin.now
+badge.featured	★ विशेष
+badge.mobile	मोबाइल
+sec.downloads	डाउनलोड
+sec.description	विवरण
+sec.shots_desktop	स्क्रीनशॉट — डेस्कटॉप
+sec.shots_mobile	स्क्रीनशॉट — मोबाइल
+shots.empty.desktop	अभी डेस्कटॉप के स्क्रीनशॉट नहीं हैं।
+shots.empty.mobile	अभी मोबाइल के स्क्रीनशॉट नहीं हैं।
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	बिल्ड जल्द ही उपलब्ध होंगे।
+skins.title	स्किन
+skins.teaser_intro	%s विज़ुअल थीम — हर एक के अपने स्प्राइट, पैरालैक्स बैकग्राउंड, साउंड और म्यूज़िक।
+skins.more	सभी स्किन देखें →
+skins.page_intro	%s विज़ुअल थीम — %s के लिए। हर स्किन के अपने जहाज़, दुश्मन, बॉस, बैकग्राउंड, साउंड और अडैप्टिव म्यूज़िक हैं।
+skins.disclaimer	ये स्किन क्लासिक शूटर गेम्स को एक स्वतंत्र श्रद्धांजलि हैं। %s का उनके रचनाकारों या प्रकाशकों से कोई संबंध नहीं है और यह उनके मूल ग्राफ़िक्स या साउंड का उपयोग नहीं करता।
+skins.wiki	विकिपीडिया
+skins.vessels	जहाज़: %s
+skins.pixelart	पिक्सेल आर्ट
+skins.bloom	ब्लूम %s
+skins.crt	CRT %s
+skins.tint	टिंट %s
+cat.preview	पूर्वावलोकन
+cat.vessels	जहाज़
+cat.enemies	दुश्मन
+cat.boss	बॉस
+cat.asteroids	क्षुद्रग्रह
+cat.fx	इफ़ेक्ट और गोलियाँ
+cat.ui	गेम इंटरफ़ेस
+cat.backgrounds	बैकग्राउंड
+cat.sfx	साउंड इफ़ेक्ट (SFX)
+cat.music	म्यूज़िक
+player.prev	पिछला
+player.play	चलाएँ
+player.next	अगला
+player.pause	रोकें
+decks.title	डेक
+decks.intro	%s डेक, हर एक दो कला शैलियों में बना है। हर डेक से दस नमूना कार्ड: पाँच पहली शैली में, पाँच दूसरी में।
+decks.cards	%s कार्ड
+decks.free	मुफ़्त
+decks.free_badge	मुफ़्त
+decks.tr	अनुवाद
+visuals.title	विज़ुअल्स
+visuals.more	सभी विज़ुअल्स देखें →
+fleets.title	बेड़े
+fleets.teaser_intro	बेड़े: %s, हर एक में छह तरह के जहाज़।
+fleets.teaser_intro_man	बेड़े: %s, हर एक में छह तरह के जहाज़। उँगली से बनाए जाने वाले पैंतरे: %s।
+fleets.more	बेड़े और पैंतरे देखें →
+lb.dialog	स्क्रीनशॉट
+lb.hint	व्हील से ज़ूम · खींचकर सरकाएँ · Esc से बंद करें
+lb.zoom_out	ज़ूम आउट
+lb.zoom_in	ज़ूम इन
+lb.fit	स्क्रीन में फ़िट करें
+lb.close	बंद करें
+lb.open	स्क्रीनशॉट बड़ा करें
+foot.logo_alt	Ananas&Bananas — डिजिटल फल & टेक्नोलॉजी
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — विज़ुअल — olin.now
+title.fleets	%s — बेड़े और करतब — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — विज़ुअल
+board.aria	8×8 शतरंज की बिसात
+fleets.page_title	बेड़े
+fleets.page_intro	बेड़े: %s, %s के लिए। हर बेड़ा छहों प्रकार के जहाज़ों को सफ़ेद और काले रूप में नए सिरे से बनाता है — बेड़ा सिर्फ़ दिखावट है, यह मोहरों की चाल या लड़ाई नहीं बदलता।
+fleets.default	डिफ़ॉल्ट
+fleets.white	सफ़ेद बेड़ा
+fleets.black	काला बेड़ा
+fleets.audio_title	लड़ाई की आवाज़
+fleets.sfx_note	गोली और धमाके की आवाज़ बेड़ा नहीं, जहाज़ का तत्व तय करता है: प्यादा गतिज गोली चलाता है, घोड़ा पानी, ऊँट आग, हाथी बर्फ़, वज़ीर और राजा बिजली।
+fleets.music_note	लड़ाई में हमलावर जहाज़ की धुन बजती है।
+man.title	करतब
+man.intro	%s करतब: बारह परिवार, जिन्हें हर जहाज़ अपने ढंग से उड़ाता है, और एक उसका अपना। इन्हें 3×3 ग्रिड पर बनाए इशारे से चलाया जाता है — जैसे Android का लॉक खोलना — और ये अपने-आप भरने वाली ऊर्जा खर्च करते हैं। नीचे के रास्ते सीधे खेल की सूची से लिए गए हैं, इसलिए कैनवस पर जहाज़ वैसे ही उड़ता है जैसे लड़ाई में।
+man.units	जहाज़ों के प्रकार
+unit.pawn	प्यादा
+unit.knight	घोड़ा
+unit.bishop	ऊँट
+unit.rook	हाथी
+unit.queen	वज़ीर
+unit.king	राजा
+unit.pawn.element	गतिज
+unit.knight.element	जल
+unit.bishop.element	अग्नि
+unit.rook.element	हिम
+unit.queen.element	विद्युत
+unit.king.element	विद्युत
+man.path	करतब %s का रास्ता
+man.energy	ऊर्जा
+man.duration	अवधि
+man.secs	%s से.
+man.shots	गोलियाँ
+man.untouchable_title	गोलियाँ आर-पार निकल जाती हैं
+man.untouchable	अछूता
+man.shield_title	ढाल उठाता है
+man.shield	ढाल
+man.control_title	स्टीयरिंग पायलट के पास रहती है
+man.control	मुक्त स्टीयरिंग
+man.mirror_title	उल्टा इशारा उल्टा करतब उड़ाता है
+man.mirror	उलटने योग्य
+man.price_title	क्रेडिट में क़ीमत
+man.price	%s क्रेडिट
+man.starter	शुरू से
+man.wins	जीत: %s
+man.pack	पैक %s
+num.decimal	.

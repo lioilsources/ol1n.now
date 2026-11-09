@@ -2,6 +2,7 @@
 slug: djfy
 name: DJfy
 repo: lioilsources/DJfy
+icon_src: ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: DJ deck s chytrým playlistem a párty režimem, kde hudbu vybírají hosté z mobilu
 order: 9
 featured: false
@@ -10,6 +11,7 @@ mobile: android,ios
 appstore:
 playstore:
 testflight:
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 ---
 DJfy je mobilní DJ aplikace s chytrým generováním playlistů. Zadáš
 interpreta a aplikace k němu poskládá skladby podle tempa a doporučení.
@@ -37,6 +39,10 @@ prohlížeči. Nepotřebují aplikaci ani účet, stačí zadat jméno.
 - **Auto-DJ.** Skladby na sebe navazují plynulým crossfadem. Když se
   tempa liší nejvýš o 8 %, aplikace během přechodu sladí BPM a pak se
   vrátí k původní rychlosti.
+- **Párty nekončí.** Když ve frontě dojdou skladby, aplikace sama přidá
+  další, podobnou těm, které hrály naposledy, a označí ji jako Auto.
+  Skladby od hostů mají vždy přednost a vetované se už nevrátí. Dá se to
+  vypnout přepínačem vedle Auto-DJ.
 - **Hostitel má poslední slovo.** Může skladbu vetovat, jmenovat
   spolu-DJe, který smí zasahovat do fronty, nebo hosta vyhodit.
 - **Zvuk kamkoli.** Telefon hraje do sluchátek, do reproduktoru přes

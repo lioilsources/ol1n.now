@@ -1,11 +1,9 @@
-# Site chrome, German. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
-# skins gallery ships this language.
+# Site chrome, German. Same keys as cs.tsv; see the notes there.
 nav.all_apps	← Alle Apps
 nav.back_to	← Zurück zu %s
 nav.lang	Sprache
 title.app	%s — olin.now
+title.skins	%s — Skins — olin.now
 badge.featured	★ Empfohlen
 badge.mobile	Mobil
 sec.downloads	Downloads
@@ -14,12 +12,103 @@ sec.shots_desktop	Screenshots — Desktop
 sec.shots_mobile	Screenshots — Mobil
 shots.empty.desktop	Noch keine Desktop-Screenshots.
 shots.empty.mobile	Noch keine Mobil-Screenshots.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Builds folgen in Kürze.
+skins.title	Skins
+skins.teaser_intro	%s visuelle Themes — jedes mit eigenen Sprites, Parallax-Hintergrund, Sounds und Musik.
+skins.more	Alle Skins entdecken →
+skins.page_intro	%s visuelle Themes für %s. Jeder Skin hat eigene Schiffe, Gegner, Bosse, Hintergründe, Sounds und adaptive Musik.
+skins.disclaimer	Die Skins sind eine freie Hommage an klassische Shoot-'em-ups. %s steht in keiner Verbindung zu deren Entwicklern oder Publishern und verwendet weder ihre Originalgrafiken noch ihre Sounds.
+skins.wiki	Wikipedia
+skins.vessels	%s Schiffe
+skins.pixelart	Pixel-Art
+skins.bloom	Bloom %s
+skins.crt	CRT %s
+skins.tint	Tönung %s
+cat.preview	Vorschau
+cat.vessels	Schiffe
+cat.enemies	Gegner
+cat.boss	Boss
+cat.asteroids	Asteroiden
+cat.fx	Effekte & Projektile
+cat.ui	Spieloberfläche
+cat.backgrounds	Hintergründe
+cat.sfx	Sounds (SFX)
+cat.music	Musik
+player.prev	Zurück
+player.play	Abspielen
+player.next	Weiter
+player.pause	Pause
 decks.title	Kartendecks
 decks.intro	%s Kartendecks, jedes in zwei Zeichenstilen. Aus jedem hier zehn Beispielkarten: fünf im ersten Stil, fünf im zweiten.
 decks.cards	%s Karten
 decks.free	kostenlos
 decks.free_badge	Kostenlos
 decks.tr	Übersetzung
+visuals.title	Visuals
+visuals.more	Alle Visuals entdecken →
+fleets.title	Flotten
+fleets.teaser_intro	%s Flotten mit je sechs Schiffstypen.
+fleets.teaser_intro_man	%s Flotten mit je sechs Schiffstypen und %s Manöver, die man mit dem Finger zeichnet.
+fleets.more	Flotten & Manöver entdecken →
+lb.dialog	Screenshot
+lb.hint	Mausrad zoomt · Ziehen verschiebt · Esc schließt
+lb.zoom_out	Verkleinern
+lb.zoom_in	Vergrößern
+lb.fit	An Bildschirm anpassen
+lb.close	Schließen
+lb.open	Screenshot vergrößern
+foot.logo_alt	Ananas&Bananas — digitales Obst & Technologie
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — Visuals — olin.now
+title.fleets	%s — Flotten und Manöver — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — Visuals
+board.aria	Schachbrett 8×8
+fleets.page_title	Flotten
+fleets.page_intro	%s Flotten für %s. Jede zeichnet alle sechs Schiffstypen in einer weißen und einer schwarzen Variante neu — eine Flotte ist rein optisch, an der Bewegung der Figuren und am Kampf ändert sie nichts.
+fleets.default	Standard
+fleets.white	Weiße Flotte
+fleets.black	Schwarze Flotte
+fleets.audio_title	Kampfsound
+fleets.sfx_note	Schuss- und Explosionsgeräusch bestimmt das Element des Schiffs, nicht die Flotte: Der Bauer schießt kinetisch, der Springer mit Wasser, der Läufer mit Feuer, der Turm mit Eis, Dame und König mit Elektrizität.
+fleets.music_note	Im Kampf läuft das Thema des angreifenden Schiffs.
+man.title	Manöver
+man.intro	%s Manöver: zwölf Familien, die jedes Schiff auf seine Art fliegt, plus ein eigenes. Ausgelöst wird jedes mit einer Geste auf einem 3×3-Raster — wie beim Entsperren eines Android-Handys — und es kostet Energie, die sich von selbst auflädt. Die Flugbahnen unten sind direkt aus dem Spielkatalog abgetastet, das Schiff auf der Leinwand fliegt also genau das, was es im Kampf fliegt.
+man.units	Schiffstypen
+unit.pawn	Bauer
+unit.knight	Springer
+unit.bishop	Läufer
+unit.rook	Turm
+unit.queen	Dame
+unit.king	König
+unit.pawn.element	kinetisch
+unit.knight.element	Wasser
+unit.bishop.element	Feuer
+unit.rook.element	Eis
+unit.queen.element	elektrisch
+unit.king.element	elektrisch
+man.path	Flugbahn des Manövers %s
+man.energy	Energie
+man.duration	Dauer
+man.secs	%s s
+man.shots	Schüsse
+man.untouchable_title	Geschosse fliegen hindurch
+man.untouchable	unverwundbar
+man.shield_title	Hebt einen Schild
+man.shield	Schild
+man.control_title	Die Steuerung bleibt beim Piloten
+man.control	freie Steuerung
+man.mirror_title	Eine gespiegelte Geste fliegt das gespiegelte Manöver
+man.mirror	spiegelbar
+man.price_title	Preis in Credits
+man.price	%s Cr.
+man.starter	von Anfang an
+man.wins	Siege: %s
+man.pack	Paket %s
+num.decimal	,

@@ -34,8 +34,51 @@ lang_name() {
     vi) echo "Tiếng Việt" ;;
     ko) echo "한국어" ;;
     ru) echo "Русский" ;;
+    ar) echo "العربية" ;;
+    ca) echo "Català" ;;
+    da) echo "Dansk" ;;
+    el) echo "Ελληνικά" ;;
+    fi) echo "Suomi" ;;
+    he) echo "עברית" ;;
+    hi) echo "हिन्दी" ;;
+    id) echo "Bahasa Indonesia" ;;
+    ms) echo "Bahasa Melayu" ;;
+    nb) echo "Norsk bokmål" ;;
+    pt-PT) echo "Português (Portugal)" ;;
+    ro) echo "Română" ;;
+    sk) echo "Slovenčina" ;;
+    sl) echo "Slovenščina" ;;
+    sv) echo "Svenska" ;;
+    th) echo "ไทย" ;;
+    tr) echo "Türkçe" ;;
+    zh-Hans) echo "简体中文" ;;
+    zh-Hant) echo "繁體中文" ;;
+    bn) echo "বাংলা" ;;
+    gu) echo "ગુજરાતી" ;;
+    kn) echo "ಕನ್ನಡ" ;;
+    ml) echo "മലയാളം" ;;
+    mr) echo "मराठी" ;;
+    or) echo "ଓଡ଼ିଆ" ;;
+    pa) echo "ਪੰਜਾਬੀ" ;;
+    ta) echo "தமிழ்" ;;
+    te) echo "తెలుగు" ;;
+    ur) echo "اردو" ;;
     *)  echo "$1" ;;
   esac
+}
+
+# lang_rtl <code> -> success for a right-to-left script; the page then gets
+# <html dir="rtl"> and store.css mirrors itself through logical properties
+lang_rtl() {
+  case "$1" in ar|he|ur|fa) return 0 ;; *) return 1 ;; esac
+}
+
+# lang_sort <code>... -> the codes one per line in menu order: the base
+# language, English, then the rest alphabetically by code (duplicates dropped)
+lang_sort() {
+  printf '%s\n' "$@" | awk -v base="$I18N_BASE" '
+    NF && !seen[$0]++ { r = ($0 == base) ? 0 : ($0 == "en") ? 1 : 2; print r "\t" tolower($0) "\t" $0 }
+  ' | LC_ALL=C sort -t "$I18N_TAB" -k1,1n -k2,2 | cut -f3
 }
 
 # i18n_key <key> -> sets _i18n_key to the shell variable name for that key.

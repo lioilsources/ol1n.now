@@ -1,19 +1,21 @@
 ---
 slug: storyteller
-name: StoryTeller
+name: Pohádkomat
 repo: lioilsources/storyteller
+icon_src: app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Pohádka na dobrou noc, kterou vyprávíš ty — 2 795 pohádek z 98 zemí, appka jen napovídá
 order: 15
 featured: false
 desktop:
 mobile: android,ios
-langs: cs,en,de,it,fr,pl,pt-BR,ja,ko,vi,ru,uk
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 artifacts: none
 appstore: https://apps.apple.com/app/id6816062136
 playstore: https://play.google.com/store/apps/details?id=com.ol1n.storyteller
 testflight:
 ---
-Appka nikdy nevypráví za tebe. Nabídne stavební kameny — postavy, úkol,
+V App Storu a na Google Play se appka jmenuje Pohádkomat (pracovně
+StoryTeller). Nikdy nevypráví za tebe. Nabídne stavební kameny — postavy, úkol,
 problém, konec — a pak ti drží osnovu před očima. Vyprávíš ty, svému dítěti,
 svými slovy.
 
@@ -96,10 +98,11 @@ Svět je v appce rozdělený na patnáct regionů a z každého je deset poháde
 
 ### Balíčky pohádek
 
-**150 pohádek je zdarma a rovnou v appce** — deset z každého z patnácti regionů světa, každá s ilustracemi scén, nápovědami a vlastními zvuky. Další pohádky budou přibývat po dílech: padesát pohádek z jednoho regionu. Globus u každé země ukáže, kolik pohádek z ní je a ve kterém dílu je najdeš.
+**150 pohádek je zdarma a rovnou v appce** — deset z každého z patnácti regionů světa, každá s ilustracemi scén, nápovědami a vlastními zvuky. Další pohádky přibývají po dílech: padesát pohádek z jednoho regionu za jednu drobnou platbu v appce. Zatím jsou venku dva díly z Česka a Slovenska. Koupený díl se stáhne do telefonu a dál funguje bez připojení; nákupy jdou obnovit na novém telefonu. Globus u každé země ukáže, kolik pohádek z ní je a ve kterém dílu je najdeš.
 
 Písmo je baculaté a čitelné, nadpisy „bublinkové“ — appka je pro děti a má
 tak i vypadat.
 
 Celý průchod Globus → Postavy → Úkol → Problém → Konec → Osnova → Suflér
-běží v telefonu, bez jediného volání na server.
+běží v telefonu, bez jediného volání na server. Bez reklam, účtů a sledování.
+Rozhraní i pohádky jsou zatím jen česky.

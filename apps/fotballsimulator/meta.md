@@ -11,6 +11,8 @@ artifacts: android
 appstore:
 playstore:
 testflight:
+icon_src: icon.svg
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 ---
 Fotball Simulator je simulátor jednoho jediného pohybu: voleje. Míč přiskáče
 před hráče, pokaždé jinak, a hráč ho jedním tahem prstu kopne do brány. Žádný

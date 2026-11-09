@@ -103,6 +103,17 @@ eszkaláció következik.
 Nincs letéti számla, nincs kriptovaluta — a fizetések közvetlenül a bérlő
 számlájáról a bérbeadó számlájára érkeznek.
 
+### Meglévő bérletek átvétele
+
+Annak a bérbeadónak, akinek a lakásai már papíralapú szerződéssel ki vannak
+adva, semmit sem kell újra aláírnia. A bérletet a platformon kívül aláírtként
+veszi át, feltölti a szerződés szkennelt példányát, a fizetéseket pedig az
+átvétel napjától követi a rendszer: a korábbi tartozás a nyitóegyenlegbe kerül,
+a letétbe helyezett kauciót nyilvántartásba veszi, és a korábbi változó
+szimbólum (fizetési azonosító) is megmarad. A bérlők semmit sem kapnak, amíg a
+bérbeadó meg nem hívja őket a bérlői portálra. Több bérlet egyszerre is
+importálható táblázatból.
+
 ### Portfólió városokon átívelően és a bérletek kockázata
 
 Több lakással rendelkező bérbeadóknak és kezelőknek: az összes bérlet
@@ -165,10 +176,11 @@ aláírással és párosított fizetéssel, portfólió, kiemelés számlával,
 DSA-bejelentés, backoffice). Az adatbázis mentésből való visszaállítását is
 ellenőriztük.
 
-**Folyamatban van a pilot előtti megerősítés**: a kódellenőrzés során javasolt
-biztonsági és üzemeltetési fejlesztések, értesítések a jelentkezésekhez,
-szerződésekhez és fizetésekhez, valamint a tesztkörnyezet. Valódi szerveren
-még semmi sem fut — a telepítés fiókokra és hozzáférésekre vár (lásd alább).
+Elkészültek a kódellenőrzés során javasolt biztonsági és üzemeltetési
+fejlesztések, valamint a jelentkezésekről, szerződésekről és fizetésekről szóló
+push-értesítések is. Zárt béta fut saját szerveren, Prágára és környékére
+szóló mintahirdetésekkel, amelyek ott meg vannak jelölve. Az éles telepítés a
+Hetzneren fiókokra és hozzáférésekre vár (lásd alább).
 
 A valódi emberekkel végzett tesztelés öt szakaszban zajlik. Mindegyik egy
 kapuval zárul, ahol közösen döntünk arról, hogy továbblépünk-e:

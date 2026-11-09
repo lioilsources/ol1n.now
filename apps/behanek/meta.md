@@ -2,13 +2,14 @@
 slug: behanek
 name: Běhánek
 repo: lioilsources/behanek
+icon_src: assets/icon/icon.png
 tagline: Běžecká appka, která ti do sluchátek řekne, jak jsi na tom proti své formě. Bez účtu a bez reklam
 order: 31
 featured: false
 desktop:
 mobile: android,ios
 artifacts: android
-langs: cs,en,de,es,fr,it,nl,pl,pt-BR,hu,uk,ru,ja,ko,vi
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 appstore:
 playstore:
 testflight:

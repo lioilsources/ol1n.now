@@ -1,0 +1,114 @@
+# Site chrome, Marathi. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← सर्व ॲप्स
+nav.back_to	← %s कडे परत जा
+nav.lang	भाषा
+title.app	%s — olin.now
+title.skins	%s — स्किन्स — olin.now
+badge.featured	★ निवडक
+badge.mobile	मोबाइल
+sec.downloads	डाउनलोड
+sec.description	वर्णन
+sec.shots_desktop	स्क्रीनशॉट — डेस्कटॉप
+sec.shots_mobile	स्क्रीनशॉट — मोबाइल
+shots.empty.desktop	अद्याप डेस्कटॉप स्क्रीनशॉट नाहीत.
+shots.empty.mobile	अद्याप मोबाइल स्क्रीनशॉट नाहीत.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	बिल्ड लवकरच उपलब्ध होतील.
+skins.title	स्किन्स
+skins.teaser_intro	%s व्हिज्युअल थीम — प्रत्येकीचे स्वतःचे स्प्राइट्स, पॅरलॅक्स पार्श्वभूमी, आवाज आणि संगीत.
+skins.more	सर्व स्किन्स पाहा →
+skins.page_intro	%s व्हिज्युअल थीम — %s साठी. प्रत्येक स्किनची स्वतःची जहाजे, शत्रू, बॉस, पार्श्वभूमी, आवाज आणि ॲडॅप्टिव्ह संगीत आहे.
+skins.disclaimer	स्किन्स ही क्लासिक शूटर गेम्सना दिलेली मुक्त आदरांजली आहे. %s चा त्यांच्या निर्मात्यांशी किंवा प्रकाशकांशी कोणताही संबंध नाही आणि ते त्यांचे मूळ ग्राफिक्स किंवा आवाज वापरत नाही.
+skins.wiki	विकिपीडिया
+skins.vessels	जहाजे: %s
+skins.pixelart	पिक्सेल आर्ट
+skins.bloom	ब्लूम %s
+skins.crt	CRT %s
+skins.tint	टिंट %s
+cat.preview	पूर्वावलोकन
+cat.vessels	जहाजे
+cat.enemies	शत्रू
+cat.boss	बॉस
+cat.asteroids	लघुग्रह
+cat.fx	इफेक्ट्स आणि गोळ्या
+cat.ui	गेम इंटरफेस
+cat.backgrounds	पार्श्वभूमी
+cat.sfx	ध्वनी इफेक्ट्स (SFX)
+cat.music	संगीत
+player.prev	मागील
+player.play	प्ले करा
+player.next	पुढील
+player.pause	थांबवा
+decks.title	डेक
+decks.intro	%s डेक, प्रत्येक दोन कलाशैलींमध्ये रेखाटलेला. प्रत्येकातून दहा नमुना कार्ड: पाच पहिल्या शैलीत, पाच दुसऱ्या शैलीत.
+decks.cards	%s कार्ड
+decks.free	मोफत
+decks.free_badge	मोफत
+decks.tr	भाषांतर
+visuals.title	व्हिज्युअल्स
+visuals.more	सर्व व्हिज्युअल्स पाहा →
+fleets.title	ताफे
+fleets.teaser_intro	ताफे: %s, प्रत्येकात सहा प्रकारची जहाजे.
+fleets.teaser_intro_man	ताफे: %s, प्रत्येकात सहा प्रकारची जहाजे. बोटाने रेखाटायचे डावपेच: %s.
+fleets.more	ताफे आणि डावपेच पाहा →
+lb.dialog	स्क्रीनशॉट
+lb.hint	चाकाने झूम · ओढून हलवा · Esc ने बंद
+lb.zoom_out	झूम आउट
+lb.zoom_in	झूम इन
+lb.fit	स्क्रीनमध्ये बसवा
+lb.close	बंद करा
+lb.open	स्क्रीनशॉट मोठा करा
+foot.logo_alt	Ananas&Bananas — डिजिटल फळे & तंत्रज्ञान
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — दृश्ये — olin.now
+title.fleets	%s — ताफे आणि कसरती — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — दृश्ये
+board.aria	8×8 बुद्धिबळाचा पट
+fleets.page_title	ताफे
+fleets.page_intro	ताफे: %s, %s साठी. प्रत्येक ताफा सहाही प्रकारची जहाजे पांढऱ्या आणि काळ्या आवृत्तीत नव्याने रेखाटतो — ताफा केवळ रूप आहे, सोंगट्यांच्या चाली किंवा लढाई बदलत नाही.
+fleets.default	डीफॉल्ट
+fleets.white	पांढरा ताफा
+fleets.black	काळा ताफा
+fleets.audio_title	लढाईचा आवाज
+fleets.sfx_note	गोळी आणि स्फोटाचा आवाज ताफा नव्हे तर जहाजाचे तत्त्व ठरवते: प्यादे गतिज गोळी झाडते, घोडा पाणी, उंट आग, हत्ती बर्फ, वजीर आणि राजा वीज.
+fleets.music_note	लढाईत हल्ला करणाऱ्या जहाजाची धून वाजते.
+man.title	कसरती
+man.intro	%s कसरती: प्रत्येक जहाज आपल्या पद्धतीने उडवते अशी बारा कुटुंबे, आणि एक त्याची स्वतःची. 3×3 ग्रिडवर काढलेल्या इशाऱ्याने त्या सुरू होतात — Android अनलॉक करण्यासारखे — आणि आपोआप भरणारी ऊर्जा खर्च करतात. खालील मार्ग थेट खेळाच्या सूचीतून घेतलेले नमुने आहेत, त्यामुळे कॅनव्हासवरचे जहाज लढाईत उडते तसेच उडते.
+man.units	जहाजांचे प्रकार
+unit.pawn	प्यादे
+unit.knight	घोडा
+unit.bishop	उंट
+unit.rook	हत्ती
+unit.queen	वजीर
+unit.king	राजा
+unit.pawn.element	गतिज
+unit.knight.element	जल
+unit.bishop.element	अग्नी
+unit.rook.element	हिम
+unit.queen.element	विद्युत
+unit.king.element	विद्युत
+man.path	%s कसरतीचा मार्ग
+man.energy	ऊर्जा
+man.duration	कालावधी
+man.secs	%s से.
+man.shots	गोळ्या
+man.untouchable_title	गोळ्या आरपार जातात
+man.untouchable	अस्पर्श्य
+man.shield_title	ढाल उभारते
+man.shield	ढाल
+man.control_title	सुकाणू वैमानिकाकडेच राहते
+man.control	मुक्त सुकाणू
+man.mirror_title	उलट इशारा उलट कसरत उडवतो
+man.mirror	उलटता येणारी
+man.price_title	क्रेडिटमधील किंमत
+man.price	%s क्रेडिट
+man.starter	सुरुवातीपासून
+man.wins	विजय: %s
+man.pack	पॅक %s
+num.decimal	.

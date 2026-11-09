@@ -1,5 +1,4 @@
-# Site chrome, Japanese. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string.
+# Site chrome, Japanese. Same keys as cs.tsv; see the notes there.
 nav.all_apps	← すべてのアプリ
 nav.back_to	← %s に戻る
 nav.lang	言語
@@ -13,6 +12,9 @@ sec.shots_desktop	スクリーンショット — デスクトップ
 sec.shots_mobile	スクリーンショット — モバイル
 shots.empty.desktop	デスクトップのスクリーンショットはまだありません。
 shots.empty.mobile	モバイルのスクリーンショットはまだありません。
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android（APK）
 dl.mod	Mod（ZIP）
 dl.empty	ビルドは近日公開予定です。
@@ -47,3 +49,66 @@ decks.cards	%s枚のカード
 decks.free	無料
 decks.free_badge	無料
 decks.tr	訳語
+visuals.title	ビジュアル
+visuals.more	すべてのビジュアルを見る →
+fleets.title	艦隊
+fleets.teaser_intro	全%s艦隊、それぞれ6種類の艦で構成されています。
+fleets.teaser_intro_man	全%s艦隊、それぞれ6種類の艦で構成。さらに指で描いて繰り出す%s種類のマニューバーも。
+fleets.more	艦隊とマニューバーを見る →
+lb.dialog	スクリーンショット
+lb.hint	ホイールでズーム · ドラッグで移動 · Escで閉じる
+lb.zoom_out	縮小
+lb.zoom_in	拡大
+lb.fit	画面に合わせる
+lb.close	閉じる
+lb.open	スクリーンショットを拡大
+foot.logo_alt	Ananas&Bananas — デジタルフルーツ & テクノロジー
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — ビジュアル — olin.now
+title.fleets	%s — 艦隊とマニューバ — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — ビジュアル
+board.aria	8×8のチェス盤
+fleets.page_title	艦隊
+fleets.page_intro	艦隊は %s 種（%s 用）。どの艦隊も6種類の艦すべてを白と黒の2バージョンで描き直します。艦隊は見た目だけで、駒の動きもバトルも変わりません。
+fleets.default	既定
+fleets.white	白の艦隊
+fleets.black	黒の艦隊
+fleets.audio_title	バトルのサウンド
+fleets.sfx_note	射撃音と爆発音を決めるのは艦隊ではなく艦の属性です。ポーンは運動弾、ナイトは水、ビショップは炎、ルークは氷、クイーンとキングは電気で撃ちます。
+fleets.music_note	バトル中は攻撃側の艦のテーマが流れます。
+man.title	マニューバ
+man.intro	マニューバは %s 種。どの艦も自分なりに飛ぶ12のファミリーに、固有のものが1つ加わります。3×3のグリッドにジェスチャーを描いて発動し（Androidのロック解除と同じ）、自然に回復するエネルギーを消費します。下の軌道はゲームのカタログから直接サンプリングしているので、キャンバスの艦はバトルとまったく同じように飛びます。
+man.units	艦の種類
+unit.pawn	ポーン
+unit.knight	ナイト
+unit.bishop	ビショップ
+unit.rook	ルーク
+unit.queen	クイーン
+unit.king	キング
+unit.pawn.element	運動
+unit.knight.element	水
+unit.bishop.element	炎
+unit.rook.element	氷
+unit.queen.element	電気
+unit.king.element	電気
+man.path	マニューバ「%s」の軌道
+man.energy	エネルギー
+man.duration	時間
+man.secs	%s 秒
+man.shots	射撃数
+man.untouchable_title	弾がすり抜ける
+man.untouchable	無敵
+man.shield_title	シールドを張る
+man.shield	シールド
+man.control_title	操縦はパイロットのまま
+man.control	自由操縦
+man.mirror_title	左右反転のジェスチャーで反転したマニューバになる
+man.mirror	反転可
+man.price_title	クレジットでの価格
+man.price	%s cr.
+man.starter	最初から
+man.wins	%s 勝で解放
+man.pack	パック %s
+num.decimal	.

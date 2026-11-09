@@ -1,0 +1,106 @@
+# Kirian — Hungarian. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,hu}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Monokróm arcade
+label.Vector wireframe	Vektoros drótváz
+label.Fixed-formation arcade	Fix alakzatos arcade
+label.Biomechanical sci-fi	Biomechanikus sci-fi
+label.16-bit console shooter	16 bites konzolos lövölde
+label.DOS-era pixel art	DOS-korszakbeli pixel art
+label.Two-polarity shooter	Kétpólusú lövölde
+label.Neon vector grid	Neon vektorrács
+label.Chrome fleet shmup	Krómflottás shmup
+label.Sepia dogfight	Szépia légiharc
+label.Post-apocalyptic	Posztapokaliptikus
+label.Dark neon voxel	Sötét neon voxel
+label.4-colour console era	4 színű konzolok korszaka
+label.Kirian original	Kirian eredeti
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Visszafogott CRT-foszfor
+label.Glow on geometry	Ragyogás a geometrián
+label.Soft bloom on projectiles	Lágy bloom a lövedékeken
+label.Neutral bloom	Semleges bloom
+label.Subtle warm glow	Visszafogott meleg ragyogás
+label.Faithful retro feel	Hű retró hangulat
+label.Matches the polarity palette	Illeszkedik a polaritás palettájához
+label.Strongest bloom preset	A legerősebb bloom beállítás
+label.Clean, high-contrast	Tiszta, nagy kontrasztú
+label.No bloom — flat palette	Nincs bloom — lapos paletta
+label.Saturation 0.85, orange tint	Telítettség 0.85, narancs árnyalat
+label.High-contrast neon	Nagy kontrasztú neon
+label.Ultra-chunky flat sprites	Rendkívül durva, lapos sprite-ok
+label.Hand-crafted baseline	Kézzel készített alap
+
+# --- CRT / tint presets ---
+label.neutral	semleges
+label.scanlines 0.4, curve 0.01	pásztázó vonalak 0.4, görbület 0.01
+label.scanlines 0.7, curve 0.02	pásztázó vonalak 0.7, görbület 0.02
+label.green tint (0.85 / 1.0 / 0.85)	zöld árnyalat (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	cián árnyalat (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	hideg kék (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	meleg (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	meleg (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	meleg sárga (1.0 / 0.9 / 0.7)
+label.desaturated warm	telítetlen meleg
+
+# --- sprite labels ---
+label.Náhled	Előnézet
+label.Loď	Hajó
+label.Loď 1	Hajó 1
+label.Loď 2	Hajó 2
+label.Loď 3	Hajó 3
+label.Loď 4	Hajó 4
+label.Loď 5	Hajó 5
+label.Loď 6	Hajó 6
+label.Přehled nepřátel	Ellenségek áttekintése
+label.Asteroid 1	Aszteroida 1
+label.Asteroid 2	Aszteroida 2
+label.Asteroid 3	Aszteroida 3
+label.Asteroid 4	Aszteroida 4
+label.Bublina	Buborék
+label.Blaster	Blaster
+label.Laser	Lézer
+label.Vulcan	Vulcan
+label.Rododendron	Rododendron
+label.Hvězda	Csillag
+label.Hvězda (zelená)	Csillag (zöld)
+label.Exploze 1	Robbanás 1
+label.Exploze 2	Robbanás 2
+label.Exploze 3	Robbanás 3
+label.Exploze 4	Robbanás 4
+label.Vrstva 0	Réteg 0
+label.Vrstva 1	Réteg 1
+label.Vrstva 2	Réteg 2
+label.Vrstva 3	Réteg 3
+
+# --- game center (UI) ---
+label.Karta	Kártya
+label.Tlačítko	Gomb
+label.Aktivní záložka	Aktív fül
+label.Kredity	Kreditek
+label.Štít	Pajzs
+label.Život	Élet
+label.Bomba	Bomba
+label.Generátor	Generátor
+
+# --- sfx + music ---
+label.Výstřel	Lövés
+label.Paprsek	Sugár
+label.Malá exploze	Kis robbanás
+label.Velká exploze	Nagy robbanás
+label.Zásah trupu	Találat a hajótesten
+label.Zásah štítu	Találat a pajzson
+label.Nová zbraň	Új fegyver
+label.Sektor dokončen	Szektor teljesítve
+label.Konec hry	Játék vége
+label.Bonus	Bónusz
+label.Intro	Intró
+label.Téma 1	Téma 1
+label.Téma 2	Téma 2
+label.Téma 3	Téma 3
+label.Téma 4	Téma 4
+label.Téma 5 (boss)	Téma 5 (főellenség)

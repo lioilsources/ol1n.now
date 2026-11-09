@@ -1,0 +1,106 @@
+# Kirian — Telugu. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,te}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	మోనోక్రోమ్ ఆర్కేడ్
+label.Vector wireframe	వెక్టర్ వైర్‌ఫ్రేమ్
+label.Fixed-formation arcade	స్థిర వ్యూహ ఆర్కేడ్
+label.Biomechanical sci-fi	బయోమెకానికల్ సైన్స్ ఫిక్షన్
+label.16-bit console shooter	16-బిట్ కన్సోల్ షూటర్
+label.DOS-era pixel art	DOS కాలపు పిక్సెల్ ఆర్ట్
+label.Two-polarity shooter	రెండు ధ్రువాల షూటర్
+label.Neon vector grid	నియాన్ వెక్టర్ గ్రిడ్
+label.Chrome fleet shmup	క్రోమ్ నౌకాదళ shmup
+label.Sepia dogfight	సెపియా వైమానిక పోరు
+label.Post-apocalyptic	ప్రళయానంతర ప్రపంచం
+label.Dark neon voxel	ముదురు నియాన్ వోక్సెల్
+label.4-colour console era	4-రంగుల కన్సోల్ యుగం
+label.Kirian original	Kirian ఒరిజినల్
+
+# --- skin notes ---
+label.Subtle CRT phosphor	సున్నితమైన CRT ఫాస్ఫర్
+label.Glow on geometry	జ్యామితిపై మెరుపు
+label.Soft bloom on projectiles	తూటాలపై మృదువైన bloom
+label.Neutral bloom	తటస్థ bloom
+label.Subtle warm glow	సున్నితమైన వెచ్చని మెరుపు
+label.Faithful retro feel	నమ్మకమైన రెట్రో అనుభూతి
+label.Matches the polarity palette	ధ్రువ పాలెట్‌కు సరిపోతుంది
+label.Strongest bloom preset	అత్యంత బలమైన bloom ప్రీసెట్
+label.Clean, high-contrast	స్పష్టమైన, అధిక కాంట్రాస్ట్
+label.No bloom — flat palette	bloom లేదు — సమతల పాలెట్
+label.Saturation 0.85, orange tint	సంతృప్తత 0.85, నారింజ ఛాయ
+label.High-contrast neon	అధిక కాంట్రాస్ట్ నియాన్
+label.Ultra-chunky flat sprites	అతి ముతక సమతల స్ప్రైట్‌లు
+label.Hand-crafted baseline	చేతితో చేసిన ప్రాథమికం
+
+# --- CRT / tint presets ---
+label.neutral	తటస్థం
+label.scanlines 0.4, curve 0.01	స్కాన్‌లైన్‌లు 0.4, వక్రత 0.01
+label.scanlines 0.7, curve 0.02	స్కాన్‌లైన్‌లు 0.7, వక్రత 0.02
+label.green tint (0.85 / 1.0 / 0.85)	ఆకుపచ్చ ఛాయ (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	సయాన్ ఛాయ (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	చల్లని నీలం (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	వెచ్చని (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	వెచ్చని (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	వెచ్చని పసుపు (1.0 / 0.9 / 0.7)
+label.desaturated warm	మసక వెచ్చని
+
+# --- sprite labels ---
+label.Náhled	ప్రివ్యూ
+label.Loď	ఓడ
+label.Loď 1	ఓడ 1
+label.Loď 2	ఓడ 2
+label.Loď 3	ఓడ 3
+label.Loď 4	ఓడ 4
+label.Loď 5	ఓడ 5
+label.Loď 6	ఓడ 6
+label.Přehled nepřátel	శత్రువుల అవలోకనం
+label.Asteroid 1	గ్రహశకలం 1
+label.Asteroid 2	గ్రహశకలం 2
+label.Asteroid 3	గ్రహశకలం 3
+label.Asteroid 4	గ్రహశకలం 4
+label.Bublina	బుడగ
+label.Blaster	బ్లాస్టర్
+label.Laser	లేజర్
+label.Vulcan	వల్కన్
+label.Rododendron	రోడోడెండ్రాన్
+label.Hvězda	నక్షత్రం
+label.Hvězda (zelená)	నక్షత్రం (ఆకుపచ్చ)
+label.Exploze 1	పేలుడు 1
+label.Exploze 2	పేలుడు 2
+label.Exploze 3	పేలుడు 3
+label.Exploze 4	పేలుడు 4
+label.Vrstva 0	పొర 0
+label.Vrstva 1	పొర 1
+label.Vrstva 2	పొర 2
+label.Vrstva 3	పొర 3
+
+# --- game center (UI) ---
+label.Karta	కార్డ్
+label.Tlačítko	బటన్
+label.Aktivní záložka	సక్రియ ట్యాబ్
+label.Kredity	క్రెడిట్‌లు
+label.Štít	షీల్డ్
+label.Život	ప్రాణం
+label.Bomba	బాంబు
+label.Generátor	జనరేటర్
+
+# --- sfx + music ---
+label.Výstřel	కాల్పు
+label.Paprsek	కిరణం
+label.Malá exploze	చిన్న పేలుడు
+label.Velká exploze	పెద్ద పేలుడు
+label.Zásah trupu	కవచానికి దెబ్బ
+label.Zásah štítu	షీల్డ్‌కు దెబ్బ
+label.Nová zbraň	కొత్త ఆయుధం
+label.Sektor dokončen	సెక్టార్ పూర్తయింది
+label.Konec hry	ఆట ముగిసింది
+label.Bonus	బోనస్
+label.Intro	పరిచయం
+label.Téma 1	థీమ్ 1
+label.Téma 2	థీమ్ 2
+label.Téma 3	థీమ్ 3
+label.Téma 4	థీమ్ 4
+label.Téma 5 (boss)	థీమ్ 5 (బాస్)

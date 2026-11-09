@@ -1,0 +1,106 @@
+# Kirian — Urdu. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,ur}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	یک رنگی آرکیڈ
+label.Vector wireframe	ویکٹر وائر فریم
+label.Fixed-formation arcade	مقررہ فارمیشن آرکیڈ
+label.Biomechanical sci-fi	بایومکینیکل سائنس فکشن
+label.16-bit console shooter	16 بٹ کنسول شوٹر
+label.DOS-era pixel art	DOS دور کا پکسل آرٹ
+label.Two-polarity shooter	دو قطبی شوٹر
+label.Neon vector grid	نیون ویکٹر گرڈ
+label.Chrome fleet shmup	کروم بیڑے والا shmup
+label.Sepia dogfight	سیپیا فضائی معرکہ
+label.Post-apocalyptic	قیامت کے بعد کی دنیا
+label.Dark neon voxel	گہرا نیون ووکسل
+label.4-colour console era	4 رنگی کنسول کا دور
+label.Kirian original	Kirian اوریجنل
+
+# --- skin notes ---
+label.Subtle CRT phosphor	ہلکا CRT فاسفر
+label.Glow on geometry	جیومیٹری پر چمک
+label.Soft bloom on projectiles	گولیوں پر نرم bloom
+label.Neutral bloom	غیر جانبدار bloom
+label.Subtle warm glow	ہلکی گرم چمک
+label.Faithful retro feel	اصل جیسا ریٹرو احساس
+label.Matches the polarity palette	قطبی پیلیٹ سے ہم آہنگ
+label.Strongest bloom preset	سب سے تیز bloom پری سیٹ
+label.Clean, high-contrast	صاف، زیادہ کنٹراسٹ
+label.No bloom — flat palette	bloom نہیں — سادہ پیلیٹ
+label.Saturation 0.85, orange tint	سیچوریشن 0.85، نارنجی رنگت
+label.High-contrast neon	زیادہ کنٹراسٹ والا نیون
+label.Ultra-chunky flat sprites	انتہائی موٹے سادہ اسپرائٹس
+label.Hand-crafted baseline	ہاتھ سے بنی بنیادی اسکن
+
+# --- CRT / tint presets ---
+label.neutral	غیر جانبدار
+label.scanlines 0.4, curve 0.01	اسکین لائنز 0.4, خمیدگی 0.01
+label.scanlines 0.7, curve 0.02	اسکین لائنز 0.7, خمیدگی 0.02
+label.green tint (0.85 / 1.0 / 0.85)	سبز رنگت (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	فیروزی رنگت (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	ٹھنڈا نیلا (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	گرم (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	گرم (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	گرم پیلا (1.0 / 0.9 / 0.7)
+label.desaturated warm	مدھم گرم
+
+# --- sprite labels ---
+label.Náhled	پیش منظر
+label.Loď	جہاز
+label.Loď 1	جہاز 1
+label.Loď 2	جہاز 2
+label.Loď 3	جہاز 3
+label.Loď 4	جہاز 4
+label.Loď 5	جہاز 5
+label.Loď 6	جہاز 6
+label.Přehled nepřátel	دشمنوں کا جائزہ
+label.Asteroid 1	سیارچہ 1
+label.Asteroid 2	سیارچہ 2
+label.Asteroid 3	سیارچہ 3
+label.Asteroid 4	سیارچہ 4
+label.Bublina	بلبلہ
+label.Blaster	بلاسٹر
+label.Laser	لیزر
+label.Vulcan	ولکن
+label.Rododendron	روڈوڈینڈرون
+label.Hvězda	ستارہ
+label.Hvězda (zelená)	ستارہ (سبز)
+label.Exploze 1	دھماکہ 1
+label.Exploze 2	دھماکہ 2
+label.Exploze 3	دھماکہ 3
+label.Exploze 4	دھماکہ 4
+label.Vrstva 0	تہہ 0
+label.Vrstva 1	تہہ 1
+label.Vrstva 2	تہہ 2
+label.Vrstva 3	تہہ 3
+
+# --- game center (UI) ---
+label.Karta	کارڈ
+label.Tlačítko	بٹن
+label.Aktivní záložka	فعال ٹیب
+label.Kredity	کریڈٹس
+label.Štít	ڈھال
+label.Život	زندگی
+label.Bomba	بم
+label.Generátor	جنریٹر
+
+# --- sfx + music ---
+label.Výstřel	فائر
+label.Paprsek	شعاع
+label.Malá exploze	چھوٹا دھماکہ
+label.Velká exploze	بڑا دھماکہ
+label.Zásah trupu	ڈھانچے پر ضرب
+label.Zásah štítu	ڈھال پر ضرب
+label.Nová zbraň	نیا ہتھیار
+label.Sektor dokončen	سیکٹر مکمل
+label.Konec hry	کھیل ختم
+label.Bonus	بونس
+label.Intro	تعارف
+label.Téma 1	دھن 1
+label.Téma 2	دھن 2
+label.Téma 3	دھن 3
+label.Téma 4	دھن 4
+label.Téma 5 (boss)	دھن 5 (باس)

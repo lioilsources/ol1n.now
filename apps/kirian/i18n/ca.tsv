@@ -1,0 +1,106 @@
+# Kirian — Catalan. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,ca}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Arcade monocrom
+label.Vector wireframe	Wireframe vectorial
+label.Fixed-formation arcade	Arcade de formació fixa
+label.Biomechanical sci-fi	Ciència-ficció biomecànica
+label.16-bit console shooter	Shooter de consola de 16 bits
+label.DOS-era pixel art	Pixel art de l'era DOS
+label.Two-polarity shooter	Shooter de dues polaritats
+label.Neon vector grid	Graella vectorial de neó
+label.Chrome fleet shmup	Shmup de flota cromada
+label.Sepia dogfight	Combat aeri en sèpia
+label.Post-apocalyptic	Postapocalíptic
+label.Dark neon voxel	Vòxel de neó fosc
+label.4-colour console era	Era de les consoles de 4 colors
+label.Kirian original	Original de Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Fòsfor CRT subtil
+label.Glow on geometry	Brillantor sobre la geometria
+label.Soft bloom on projectiles	Bloom suau als projectils
+label.Neutral bloom	Bloom neutre
+label.Subtle warm glow	Brillantor càlida subtil
+label.Faithful retro feel	Sensació retro fidel
+label.Matches the polarity palette	D'acord amb la paleta de polaritat
+label.Strongest bloom preset	El preset de bloom més intens
+label.Clean, high-contrast	Net, d'alt contrast
+label.No bloom — flat palette	Sense bloom — paleta plana
+label.Saturation 0.85, orange tint	Saturació 0.85, to taronja
+label.High-contrast neon	Neó d'alt contrast
+label.Ultra-chunky flat sprites	Sprites plans ultrapixelats
+label.Hand-crafted baseline	Base feta a mà
+
+# --- CRT / tint presets ---
+label.neutral	neutre
+label.scanlines 0.4, curve 0.01	línies d'escaneig 0.4, curvatura 0.01
+label.scanlines 0.7, curve 0.02	línies d'escaneig 0.7, curvatura 0.02
+label.green tint (0.85 / 1.0 / 0.85)	to verd (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	to cian (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	blau fred (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	càlid (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	càlid (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	groc càlid (1.0 / 0.9 / 0.7)
+label.desaturated warm	càlid dessaturat
+
+# --- sprite labels ---
+label.Náhled	Previsualització
+label.Loď	Nau
+label.Loď 1	Nau 1
+label.Loď 2	Nau 2
+label.Loď 3	Nau 3
+label.Loď 4	Nau 4
+label.Loď 5	Nau 5
+label.Loď 6	Nau 6
+label.Přehled nepřátel	Resum d'enemics
+label.Asteroid 1	Asteroide 1
+label.Asteroid 2	Asteroide 2
+label.Asteroid 3	Asteroide 3
+label.Asteroid 4	Asteroide 4
+label.Bublina	Bombolla
+label.Blaster	Blàster
+label.Laser	Làser
+label.Vulcan	Vulcan
+label.Rododendron	Rododèndron
+label.Hvězda	Estrella
+label.Hvězda (zelená)	Estrella (verda)
+label.Exploze 1	Explosió 1
+label.Exploze 2	Explosió 2
+label.Exploze 3	Explosió 3
+label.Exploze 4	Explosió 4
+label.Vrstva 0	Capa 0
+label.Vrstva 1	Capa 1
+label.Vrstva 2	Capa 2
+label.Vrstva 3	Capa 3
+
+# --- game center (UI) ---
+label.Karta	Targeta
+label.Tlačítko	Botó
+label.Aktivní záložka	Pestanya activa
+label.Kredity	Crèdits
+label.Štít	Escut
+label.Život	Vida
+label.Bomba	Bomba
+label.Generátor	Generador
+
+# --- sfx + music ---
+label.Výstřel	Tret
+label.Paprsek	Raig
+label.Malá exploze	Explosió petita
+label.Velká exploze	Explosió gran
+label.Zásah trupu	Impacte al buc
+label.Zásah štítu	Impacte a l'escut
+label.Nová zbraň	Arma nova
+label.Sektor dokončen	Sector completat
+label.Konec hry	Fi de la partida
+label.Bonus	Bonus
+label.Intro	Intro
+label.Téma 1	Tema 1
+label.Téma 2	Tema 2
+label.Téma 3	Tema 3
+label.Téma 4	Tema 4
+label.Téma 5 (boss)	Tema 5 (cap final)

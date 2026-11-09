@@ -4,11 +4,12 @@ name: Kirian
 repo: lioilsources/Kiran
 tagline: Vertikální arkádová střílečka s roguelike smyčkou
 order: 5
-langs: cs,ja
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 featured: true
 desktop: macos,windows,linux
 mobile: android,ios
 artifacts: macos,windows,linux
+icon_src: tyrian_mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 appstore: https://apps.apple.com/app/id6774868017
 playstore: https://play.google.com/store/apps/details?id=com.ab.kiran
 testflight:

@@ -1,0 +1,106 @@
+# Kirian — Malayalam. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,ml}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	മോണോക്രോം ആർക്കേഡ്
+label.Vector wireframe	വെക്ടർ വയർഫ്രെയിം
+label.Fixed-formation arcade	സ്ഥിര വിന്യാസ ആർക്കേഡ്
+label.Biomechanical sci-fi	ബയോമെക്കാനിക്കൽ സയൻസ് ഫിക്ഷൻ
+label.16-bit console shooter	16-ബിറ്റ് കൺസോൾ ഷൂട്ടർ
+label.DOS-era pixel art	DOS കാലത്തെ പിക്സൽ ആർട്ട്
+label.Two-polarity shooter	രണ്ട് ധ്രുവങ്ങളുള്ള ഷൂട്ടർ
+label.Neon vector grid	നിയോൺ വെക്ടർ ഗ്രിഡ്
+label.Chrome fleet shmup	ക്രോം കപ്പൽപ്പടയുടെ shmup
+label.Sepia dogfight	സെപിയ വ്യോമയുദ്ധം
+label.Post-apocalyptic	പ്രളയാനന്തരം
+label.Dark neon voxel	ഇരുണ്ട നിയോൺ വോക്സൽ
+label.4-colour console era	4-നിറ കൺസോൾ കാലം
+label.Kirian original	Kirian ഒറിജിനൽ
+
+# --- skin notes ---
+label.Subtle CRT phosphor	നേരിയ CRT ഫോസ്ഫർ
+label.Glow on geometry	ജ്യാമിതിയിൽ തിളക്കം
+label.Soft bloom on projectiles	വെടിയുണ്ടകളിൽ മൃദുവായ bloom
+label.Neutral bloom	നിഷ്പക്ഷ bloom
+label.Subtle warm glow	നേരിയ ഊഷ്മള തിളക്കം
+label.Faithful retro feel	യഥാർത്ഥ റെട്രോ അനുഭവം
+label.Matches the polarity palette	ധ്രുവ പാലറ്റിനോട് യോജിക്കുന്നു
+label.Strongest bloom preset	ഏറ്റവും ശക്തമായ bloom പ്രീസെറ്റ്
+label.Clean, high-contrast	വൃത്തിയുള്ള, ഉയർന്ന കോൺട്രാസ്റ്റ്
+label.No bloom — flat palette	bloom ഇല്ല — പരന്ന പാലറ്റ്
+label.Saturation 0.85, orange tint	സാച്ചുറേഷൻ 0.85, ഓറഞ്ച് ഛായ
+label.High-contrast neon	ഉയർന്ന കോൺട്രാസ്റ്റ് നിയോൺ
+label.Ultra-chunky flat sprites	അതിപരുക്കൻ പരന്ന സ്പ്രൈറ്റുകൾ
+label.Hand-crafted baseline	കൈകൊണ്ട് നിർമ്മിച്ച അടിസ്ഥാനം
+
+# --- CRT / tint presets ---
+label.neutral	നിഷ്പക്ഷം
+label.scanlines 0.4, curve 0.01	സ്കാൻലൈനുകൾ 0.4, വക്രത 0.01
+label.scanlines 0.7, curve 0.02	സ്കാൻലൈനുകൾ 0.7, വക്രത 0.02
+label.green tint (0.85 / 1.0 / 0.85)	പച്ച ഛായ (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	സയാൻ ഛായ (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	തണുത്ത നീല (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	ഊഷ്മളം (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	ഊഷ്മളം (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	ഊഷ്മള മഞ്ഞ (1.0 / 0.9 / 0.7)
+label.desaturated warm	മങ്ങിയ ഊഷ്മളം
+
+# --- sprite labels ---
+label.Náhled	പ്രിവ്യൂ
+label.Loď	കപ്പൽ
+label.Loď 1	കപ്പൽ 1
+label.Loď 2	കപ്പൽ 2
+label.Loď 3	കപ്പൽ 3
+label.Loď 4	കപ്പൽ 4
+label.Loď 5	കപ്പൽ 5
+label.Loď 6	കപ്പൽ 6
+label.Přehled nepřátel	ശത്രുക്കളുടെ അവലോകനം
+label.Asteroid 1	ഛിന്നഗ്രഹം 1
+label.Asteroid 2	ഛിന്നഗ്രഹം 2
+label.Asteroid 3	ഛിന്നഗ്രഹം 3
+label.Asteroid 4	ഛിന്നഗ്രഹം 4
+label.Bublina	കുമിള
+label.Blaster	ബ്ലാസ്റ്റർ
+label.Laser	ലേസർ
+label.Vulcan	വൾക്കൻ
+label.Rododendron	റോഡോഡെൻഡ്രോൺ
+label.Hvězda	നക്ഷത്രം
+label.Hvězda (zelená)	നക്ഷത്രം (പച്ച)
+label.Exploze 1	സ്ഫോടനം 1
+label.Exploze 2	സ്ഫോടനം 2
+label.Exploze 3	സ്ഫോടനം 3
+label.Exploze 4	സ്ഫോടനം 4
+label.Vrstva 0	പാളി 0
+label.Vrstva 1	പാളി 1
+label.Vrstva 2	പാളി 2
+label.Vrstva 3	പാളി 3
+
+# --- game center (UI) ---
+label.Karta	കാർഡ്
+label.Tlačítko	ബട്ടൺ
+label.Aktivní záložka	സജീവ ടാബ്
+label.Kredity	ക്രെഡിറ്റുകൾ
+label.Štít	ഷീൽഡ്
+label.Život	ജീവൻ
+label.Bomba	ബോംബ്
+label.Generátor	ജനറേറ്റർ
+
+# --- sfx + music ---
+label.Výstřel	വെടി
+label.Paprsek	രശ്മി
+label.Malá exploze	ചെറിയ സ്ഫോടനം
+label.Velká exploze	വലിയ സ്ഫോടനം
+label.Zásah trupu	പുറംചട്ടയിൽ ഏറ്റ ഇടി
+label.Zásah štítu	ഷീൽഡിൽ ഏറ്റ ഇടി
+label.Nová zbraň	പുതിയ ആയുധം
+label.Sektor dokončen	സെക്ടർ പൂർത്തിയായി
+label.Konec hry	കളി കഴിഞ്ഞു
+label.Bonus	ബോണസ്
+label.Intro	ആമുഖം
+label.Téma 1	തീം 1
+label.Téma 2	തീം 2
+label.Téma 3	തീം 3
+label.Téma 4	തീം 4
+label.Téma 5 (boss)	തീം 5 (ബോസ്)

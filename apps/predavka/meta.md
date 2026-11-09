@@ -10,6 +10,7 @@ mobile: android
 appstore:
 playstore:
 testflight:
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 ---
 Ve špičce se v restauraci ztrácí čas mezi kuchyní a placem. Bony se vrší na
 lince, obsluha chodí do kuchyně zjišťovat, kdy bude stůl sedm, a jídlo,
@@ -60,6 +61,14 @@ Objednávky umí převzít z bonovací tiskárny: Předávka se zapojí mezi pok
 a tiskárnu, bon se vytiskne jako dřív a ona si z něj přečte stůl a jídla.
 Nepotřebuje tedy žádné napojení na konkrétní pokladnu. Objednávky jde zadávat
 i přímo z tabletu obsluhy.
+
+### Obrázky jídel
+
+Položka menu může mít obrázek nebo emoji. Displeje v prohlížeči je ukazují
+na tlačítkách objednávky, na kartách v kuchyni, na předávce i na placu.
+Stejný systém jde pustit i doma jako hru na dětskou restauraci: jedna
+kuchyň, dětské menu s obrázky, počítač slouží jako server i reproduktor
+a ostatní zařízení jen otevřou prohlížeč na stejné Wi-Fi.
 
 Podrobný popis funkcí a průchodů službou je na stránce **Jak to funguje**
 níže, včetně tří momentů večera: prázdná fronta, pár stolů a „nestíháme!“.
