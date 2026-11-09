@@ -5,9 +5,11 @@ repo: lioilsources/Papanek
 tagline: Kuchařka pro začátečníky — řekne ti, co uvaříš z toho, co máš doma
 order: 34
 featured: false
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
+icon_src: app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 desktop:
-mobile: ios
-artifacts:
+mobile: android,ios
+artifacts: android
 appstore:
 playstore:
 testflight:
@@ -58,4 +60,5 @@ bude v telefonu a nákup jen odemyká.
 Papánek nepotřebuje internet ani registraci a nemá reklamy ani analytiku.
 Recepty i obrázky jsou přímo v appce. Appka je česky i anglicky.
 
-Zatím ve vývoji: první verze míří do TestFlightu pro iPhone.
+Zatím ve vývoji: první testovací verze 0.1 je v TestFlightu pro iPhone
+a jako APK pro Android v sekci **Ke stažení**.
