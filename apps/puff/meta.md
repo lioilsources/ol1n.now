@@ -2,9 +2,11 @@
 slug: puff
 name: Puff
 repo: lioilsources/puff
+icon_src: assets/icon/icon.png
 tagline: Neonová fyzikální hra — podrž, táhni, pusť
 order: 14
 featured: true
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:
 mobile: android,ios
 artifacts: none
@@ -38,6 +40,30 @@ zbyde jako prach.
 Do toho pět modifikátorů, které převracejí pravidla: **imploze** táhne místo
 tlačí, **magnet** a **gravitační studna** ohýbají dráhy, **řetězová jiskra**
 přeskakuje od tvaru k tvaru. Zásahy v řadě za sebou nabalují násobič skóre.
+
+### Hra přitvrzuje
+
+Čím déle hra běží, tím víc se rozjíždí: tvary jsou větší, rychlejší a víc z nich
+je kovových, rány i efekty sílí. Displej ohlásí každý stupeň — HEAT II, HEAT III,
+OVERDRIVE. Zhruba po minutě a půl se objeví **Kolos**, velký mnohoúhelník, se kterým
+rána skoro nehne — musíš ho rozlousknout. Ve vyšších stupních přilétají tvary
+v salvách.
+
+### Hudba
+
+Každé prostředí má svoje dvě skladby, menu a konec hry ještě vlastní. Při novém
+pokusu hudba nepřeskočí na začátek, další skladbu pustíš z pauzy. Hudba má
+vlastní vypínač vedle zvuků.
+
+### Žebříčky a týdenní výzva
+
+Na iPhonu jsou v Game Center žebříčky pro každé prostředí zvlášť a 14 úspěchů.
+**Týdenní výzva** dá všem stejné prostředí, modifikátor i stejné rozložení
+tvarů, takže se skóre dají férově porovnat. Výsledek se dá sdílet jako obrázek.
+
+Barevných palet je šest, v sezóně přibude sváteční. Je tu přepínač
+**méně záblesků** (zapne se sám, když má systém omezený pohyb). Hra je
+v 15 jazycích.
 
 Postaveno ve Flutteru na Flame a Forge2D (Box2D v3), vykreslování přes
 fragment shadery na Impelleru. Běží na mobilu.
