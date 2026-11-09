@@ -1,0 +1,25 @@
+# Lexify — deck titles and style names for the deck gallery. Czech comes from
+# the DuolingoCards packs via `make import-decks`; these are the other languages.
+# The words on the cards themselves live in apps/lexify/words.tsv.
+deck.numbers-1-10	ਅੰਕ 1–50
+deck.colors-basic	ਮੂਲ ਰੰਗ
+deck.animals-pets	ਪਾਲਤੂ ਜਾਨਵਰ
+deck.animals-birds	ਪੰਛੀ
+deck.animals-farm	ਖੇਤ ਦੇ ਜਾਨਵਰ
+deck.animals-insects	ਕੀੜੇ-ਮਕੌੜੇ
+deck.animals-reptiles	ਰੀਂਗਣ ਵਾਲੇ ਅਤੇ ਜਲ-ਥਲੀ ਜੀਵ
+deck.animals-sea	ਸਮੁੰਦਰੀ ਜੀਵ
+deck.animals-wild	ਜੰਗਲੀ ਜਾਨਵਰ
+deck.body-parts	ਸਰੀਰ ਦੇ ਅੰਗ
+deck.emotions	ਭਾਵਨਾਵਾਂ
+deck.food-fruits	ਫਲ
+deck.food-vegetables	ਸਬਜ਼ੀਆਂ
+deck.weather	ਮੌਸਮ
+style.photo	ਫ਼ੋਟੋ
+style.photo.desc	ਸਾਫ਼ ਫ਼ੋਟੋ, ਅਸਲੀਅਤ ਦੇ ਸਭ ਤੋਂ ਨੇੜੇ
+style.ink	ਬੁਰਸ਼ ਅਤੇ ਸਿਆਹੀ
+style.ink.desc	ਬੁਰਸ਼ ਦੀਆਂ ਲਕੀਰਾਂ, ਖ਼ਾਲੀ ਕਾਗ਼ਜ਼, ਇੱਕ ਰੰਗ ਦੀ ਛੋਹ
+style.pastel	ਪੇਸਟਲ
+style.pastel.desc	ਰੰਗੀਨ ਕਾਗ਼ਜ਼ ਉੱਤੇ ਸੁੱਕਾ ਪੇਸਟਲ
+style.watercolor	ਵਾਟਰਕਲਰ
+style.watercolor.desc	ਫੈਲਦੀਆਂ ਰੰਗਾਂ ਦੀਆਂ ਪਰਤਾਂ, ਝਲਕਦਾ ਕਾਗ਼ਜ਼
