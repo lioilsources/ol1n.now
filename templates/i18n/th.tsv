@@ -1,0 +1,114 @@
+# Site chrome, Thai. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← แอปทั้งหมด
+nav.back_to	← กลับไปที่ %s
+nav.lang	ภาษา
+title.app	%s — olin.now
+title.skins	%s — สกิน — olin.now
+badge.featured	★ แนะนำ
+badge.mobile	มือถือ
+sec.downloads	ดาวน์โหลด
+sec.description	รายละเอียด
+sec.shots_desktop	ภาพหน้าจอ — เดสก์ท็อป
+sec.shots_mobile	ภาพหน้าจอ — มือถือ
+shots.empty.desktop	ยังไม่มีภาพหน้าจอสำหรับเดสก์ท็อป
+shots.empty.mobile	ยังไม่มีภาพหน้าจอสำหรับมือถือ
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	บิลด์จะพร้อมให้ดาวน์โหลดเร็ว ๆ นี้
+skins.title	สกิน
+skins.teaser_intro	ธีมภาพ %s แบบ — แต่ละแบบมีสไปรต์ ฉากหลังพารัลแลกซ์ เสียงเอฟเฟกต์ และเพลงเป็นของตัวเอง
+skins.more	สำรวจสกินทั้งหมด →
+skins.page_intro	ธีมภาพ %s แบบสำหรับ %s แต่ละสกินมียาน ศัตรู บอส ฉากหลัง เสียงเอฟเฟกต์ และเพลงที่ปรับตามเกมเป็นของตัวเอง
+skins.disclaimer	สกินเหล่านี้เป็นการคารวะเกมยิงยานคลาสสิกอย่างอิสระ %s ไม่มีส่วนเกี่ยวข้องใด ๆ กับผู้สร้างหรือผู้จัดจำหน่ายเกมต้นฉบับ และไม่ได้ใช้กราฟิกหรือเสียงต้นฉบับของเกมเหล่านั้น
+skins.wiki	วิกิพีเดีย
+skins.vessels	ยาน %s ลำ
+skins.pixelart	พิกเซลอาร์ต
+skins.bloom	บลูม %s
+skins.crt	CRT %s
+skins.tint	โทนสี %s
+cat.preview	ตัวอย่าง
+cat.vessels	ยาน
+cat.enemies	ศัตรู
+cat.boss	บอส
+cat.asteroids	ดาวเคราะห์น้อย
+cat.fx	เอฟเฟกต์และกระสุน
+cat.ui	อินเทอร์เฟซเกม
+cat.backgrounds	ฉากหลัง
+cat.sfx	เสียงเอฟเฟกต์ (SFX)
+cat.music	เพลง
+player.prev	ก่อนหน้า
+player.play	เล่น
+player.next	ถัดไป
+player.pause	หยุดชั่วคราว
+decks.title	ชุดการ์ด
+decks.intro	ชุดการ์ด %s ชุด แต่ละชุดวาดด้วยสไตล์ภาพสองแบบ ที่นี่มีการ์ดตัวอย่างชุดละสิบใบ: ห้าใบในสไตล์แรก และห้าใบในสไตล์ที่สอง
+decks.cards	การ์ด %s ใบ
+decks.free	ฟรี
+decks.free_badge	ฟรี
+decks.tr	คำแปล
+visuals.title	งานภาพ
+visuals.more	สำรวจงานภาพทั้งหมด →
+fleets.title	กองยาน
+fleets.teaser_intro	กองยาน %s กอง แต่ละกองมียานหกประเภท
+fleets.teaser_intro_man	กองยาน %s กอง แต่ละกองมียานหกประเภท และท่าการรบ %s ท่าที่วาดได้ด้วยนิ้ว
+fleets.more	สำรวจกองยานและท่าการรบ →
+lb.dialog	ภาพหน้าจอ
+lb.hint	หมุนล้อเมาส์เพื่อซูม · ลากเพื่อเลื่อน · Esc เพื่อปิด
+lb.zoom_out	ซูมออก
+lb.zoom_in	ซูมเข้า
+lb.fit	พอดีหน้าจอ
+lb.close	ปิด
+lb.open	ขยายภาพหน้าจอ
+foot.logo_alt	Ananas&Bananas — ผลไม้ดิจิทัล & เทคโนโลยี
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — ภาพ — olin.now
+title.fleets	%s — กองยานและท่าบิน — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — ภาพ
+board.aria	กระดานหมากรุก 8×8
+fleets.page_title	กองยาน
+fleets.page_intro	กองยาน %s กองสำหรับ %s แต่ละกองวาดยานทั้งหกประเภทใหม่ทั้งแบบขาวและดำ — กองยานเป็นแค่หน้าตา ไม่เปลี่ยนการเดินหมากหรือการต่อสู้
+fleets.default	ค่าเริ่มต้น
+fleets.white	กองยานขาว
+fleets.black	กองยานดำ
+fleets.audio_title	เสียงการต่อสู้
+fleets.sfx_note	เสียงยิงและเสียงระเบิดขึ้นกับธาตุของยาน ไม่ใช่กองยาน: เบี้ยยิงพลังจลน์ ม้ายิงน้ำ บิชอปยิงไฟ เรือยิงน้ำแข็ง ควีนและคิงยิงไฟฟ้า
+fleets.music_note	ระหว่างต่อสู้จะเล่นธีมของยานฝ่ายบุก
+man.title	ท่าบิน
+man.intro	ท่าบิน %s ท่า: สิบสองตระกูลที่ยานแต่ละลำบินในแบบของตัวเอง บวกอีกหนึ่งท่าเฉพาะตัว เรียกใช้ด้วยท่าทางที่วาดบนตาราง 3×3 — เหมือนปลดล็อก Android — และใช้พลังงานที่ฟื้นเองได้ เส้นทางด้านล่างสุ่มตัวอย่างจากแคตตาล็อกของเกมโดยตรง ยานบนผืนผ้าใบจึงบินแบบเดียวกับในการต่อสู้
+man.units	ประเภทยาน
+unit.pawn	เบี้ย
+unit.knight	ม้า
+unit.bishop	บิชอป
+unit.rook	เรือ
+unit.queen	ควีน
+unit.king	คิง
+unit.pawn.element	จลน์
+unit.knight.element	น้ำ
+unit.bishop.element	ไฟ
+unit.rook.element	น้ำแข็ง
+unit.queen.element	ไฟฟ้า
+unit.king.element	ไฟฟ้า
+man.path	เส้นทางของท่า %s
+man.energy	พลังงาน
+man.duration	ระยะเวลา
+man.secs	%s วินาที
+man.shots	จำนวนนัด
+man.untouchable_title	กระสุนทะลุผ่าน
+man.untouchable	แตะต้องไม่ได้
+man.shield_title	ยกโล่ขึ้น
+man.shield	โล่
+man.control_title	ผู้บังคับยังควบคุมอยู่
+man.control	บังคับอิสระ
+man.mirror_title	ท่าทางกลับด้านจะบินท่ากลับด้าน
+man.mirror	กลับด้านได้
+man.price_title	ราคาเป็นเครดิต
+man.price	%s เครดิต
+man.starter	ตั้งแต่เริ่ม
+man.wins	ชนะ %s ครั้ง
+man.pack	แพ็ก %s
+num.decimal	.

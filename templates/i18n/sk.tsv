@@ -1,0 +1,114 @@
+# Site chrome, Slovak. Same keys as cs.tsv, in the same order; see the notes there.
+nav.all_apps	← Všetky aplikácie
+nav.back_to	← Späť na %s
+nav.lang	Jazyk
+title.app	%s — olin.now
+title.skins	%s — skiny — olin.now
+badge.featured	★ Odporúčané
+badge.mobile	Mobil
+sec.downloads	Na stiahnutie
+sec.description	Popis
+sec.shots_desktop	Snímky obrazovky — desktop
+sec.shots_mobile	Snímky obrazovky — mobil
+shots.empty.desktop	Zatiaľ bez snímok obrazovky (desktop).
+shots.empty.mobile	Zatiaľ bez snímok obrazovky (mobil).
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Buildy budú čoskoro k dispozícii.
+skins.title	Skiny
+skins.teaser_intro	Vizuálne témy: %s — každá s vlastnými spritmi, parallax pozadím, zvukmi a hudbou.
+skins.more	Preskúmať všetky skiny →
+skins.page_intro	Vizuálne témy: %s, všetky pre %s. Každý skin má vlastné lode, nepriateľov, bossa, pozadia, zvuky aj adaptívnu hudbu.
+skins.disclaimer	Skiny sú voľnou poctou klasickým strieľačkám. %s nie je nijako spojený s ich autormi ani vydavateľmi a nepoužíva ich pôvodnú grafiku ani zvuky.
+skins.wiki	Wikipédia
+skins.vessels	Lode: %s
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	odtieň %s
+cat.preview	Náhľad
+cat.vessels	Lode
+cat.enemies	Nepriatelia
+cat.boss	Boss
+cat.asteroids	Asteroidy
+cat.fx	Efekty a projektily
+cat.ui	Herné rozhranie
+cat.backgrounds	Pozadia
+cat.sfx	Zvuky (SFX)
+cat.music	Hudba
+player.prev	Predchádzajúca
+player.play	Prehrať
+player.next	Ďalšia
+player.pause	Pozastaviť
+decks.title	Balíčky
+decks.intro	Balíčky: %s, každý nakreslený v dvoch výtvarných štýloch. Z každého je tu ukážka desiatich kartičiek: päť v prvom štýle, päť v druhom.
+decks.cards	Kartičky: %s
+decks.free	zadarmo
+decks.free_badge	Zadarmo
+decks.tr	Preklad
+visuals.title	Vizuály
+visuals.more	Preskúmať všetky vizuály →
+fleets.title	Flotily
+fleets.teaser_intro	Flotily: %s, každá so šiestimi typmi lodí.
+fleets.teaser_intro_man	Flotily: %s, každá so šiestimi typmi lodí. Manévre, ktoré sa kreslia prstom: %s.
+fleets.more	Preskúmať flotily a manévre →
+lb.dialog	Snímka obrazovky
+lb.hint	koliesko približuje · ťahaním posúvaš · Esc zavrie
+lb.zoom_out	Oddialiť
+lb.zoom_in	Priblížiť
+lb.fit	Prispôsobiť obrazovke
+lb.close	Zavrieť
+lb.open	Zväčšiť snímku obrazovky
+foot.logo_alt	Ananas&Bananas — digitálne ovocie & technológie
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — vizuály — olin.now
+title.fleets	%s — flotily a manévre — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — vizuály
+board.aria	Šachovnica 8×8
+fleets.page_title	Flotily
+fleets.page_intro	Flotíl: %s pre %s. Každá prekresľuje všetkých šesť typov lodí v bielej aj čiernej variante — flotila je čisto vizuálna, nemení ťahy figúr ani súboj.
+fleets.default	predvolená
+fleets.white	Biela flotila
+fleets.black	Čierna flotila
+fleets.audio_title	Zvuk súboja
+fleets.sfx_note	Zvuk výstrelu aj explózie určuje element lode, nie flotila: pešiak strieľa kineticky, jazdec vodou, strelec ohňom, veža ľadom, dáma a kráľ elektrinou.
+fleets.music_note	V súboji hrá téma útočiacej lode.
+man.title	Manévre
+man.intro	Manévrov: %s — dvanásť rodín, ktoré každá loď lieta po svojom, plus jeden vlastný. Spúšťajú sa gestom nakresleným do mriežky 3×3 — ako odomykanie Androidu — a stoja energiu, ktorá sa sama dobíja. Dráhy nižšie sú vzorkované priamo z herného katalógu, takže loď na plátne letí to, čo letí v súboji.
+man.units	Typy lodí
+unit.pawn	Pešiak
+unit.knight	Jazdec
+unit.bishop	Strelec
+unit.rook	Veža
+unit.queen	Dáma
+unit.king	Kráľ
+unit.pawn.element	kinetický
+unit.knight.element	vodný
+unit.bishop.element	ohnivý
+unit.rook.element	ľadový
+unit.queen.element	elektrický
+unit.king.element	elektrický
+man.path	Dráha manévru %s
+man.energy	Energia
+man.duration	Trvanie
+man.secs	%s s
+man.shots	Výstrely
+man.untouchable_title	Strely prechádzajú skrz
+man.untouchable	nezasiahnuteľný
+man.shield_title	Dvíha štít
+man.shield	štít
+man.control_title	Riadenie zostáva pilotovi
+man.control	voľné riadenie
+man.mirror_title	Zrkadlové gesto letí zrkadlový manéver
+man.mirror	zrkadliteľný
+man.price_title	Cena v kreditoch
+man.price	%s kr.
+man.starter	od začiatku
+man.wins	výhry: %s
+man.pack	balíček %s
+num.decimal	,

@@ -1,10 +1,9 @@
-# Site chrome, Spanish. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. Added for
-# behanek; the skins gallery and deck keys are not translated yet.
+# Site chrome, Spanish. Same keys as cs.tsv; see the notes there.
 nav.all_apps	← Todas las apps
 nav.back_to	← Volver a %s
 nav.lang	Idioma
 title.app	%s — olin.now
+title.skins	%s — skins — olin.now
 badge.featured	★ Destacada
 badge.mobile	Móvil
 sec.downloads	Descargas
@@ -13,6 +12,103 @@ sec.shots_desktop	Capturas — escritorio
 sec.shots_mobile	Capturas — móvil
 shots.empty.desktop	Todavía no hay capturas de escritorio.
 shots.empty.mobile	Todavía no hay capturas del móvil.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Las versiones llegarán pronto.
+skins.title	Skins
+skins.teaser_intro	%s temas visuales, cada uno con sus propios sprites, fondo parallax, sonidos y música.
+skins.more	Ver todas las skins →
+skins.page_intro	%s temas visuales para %s. Cada skin tiene sus propias naves, enemigos, jefes, fondos, sonidos y música adaptativa.
+skins.disclaimer	Las skins son un libre homenaje a los matamarcianos clásicos. %s no tiene ninguna relación con sus autores ni editores y no usa sus gráficos ni sonidos originales.
+skins.wiki	Wikipedia
+skins.vessels	%s naves
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	tinte %s
+cat.preview	Vista previa
+cat.vessels	Naves
+cat.enemies	Enemigos
+cat.boss	Jefe
+cat.asteroids	Asteroides
+cat.fx	Efectos y proyectiles
+cat.ui	Interfaz del juego
+cat.backgrounds	Fondos
+cat.sfx	Sonidos (SFX)
+cat.music	Música
+player.prev	Anterior
+player.play	Reproducir
+player.next	Siguiente
+player.pause	Pausa
+decks.title	Barajas
+decks.intro	%s barajas, cada una dibujada en dos estilos. De cada una, diez cartas de muestra: cinco en el primer estilo y cinco en el segundo.
+decks.cards	%s cartas
+decks.free	gratis
+decks.free_badge	Gratis
+decks.tr	Traducción
+visuals.title	Visuales
+visuals.more	Ver todos los visuales →
+fleets.title	Flotas
+fleets.teaser_intro	%s flotas de seis tipos de nave cada una.
+fleets.teaser_intro_man	%s flotas de seis tipos de nave cada una y %s maniobras que se dibujan con el dedo.
+fleets.more	Ver flotas y maniobras →
+lb.dialog	Captura
+lb.hint	la rueda amplía · arrastra para mover · Esc cierra
+lb.zoom_out	Alejar
+lb.zoom_in	Acercar
+lb.fit	Ajustar a la pantalla
+lb.close	Cerrar
+lb.open	Ampliar captura
+foot.logo_alt	Ananas&Bananas — fruta digital & tecnología
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — visuales — olin.now
+title.fleets	%s — flotas y maniobras — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — visuales
+board.aria	Tablero de ajedrez 8×8
+fleets.page_title	Flotas
+fleets.page_intro	%s flotas para %s. Cada una redibuja los seis tipos de nave en versión blanca y negra; la flota es puramente visual: no cambia ni el movimiento de las piezas ni el combate.
+fleets.default	predeterminada
+fleets.white	Flota blanca
+fleets.black	Flota negra
+fleets.audio_title	Sonido del combate
+fleets.sfx_note	El sonido del disparo y de la explosión lo decide el elemento de la nave, no la flota: el peón dispara cinético, el caballo agua, el alfil fuego, la torre hielo, la dama y el rey electricidad.
+fleets.music_note	En el combate suena el tema de la nave atacante.
+man.title	Maniobras
+man.intro	%s maniobras: doce familias que cada nave vuela a su manera, más una propia. Se activan con un gesto dibujado en una cuadrícula de 3×3 —como al desbloquear un Android— y cuestan energía, que se recarga sola. Las trayectorias de abajo están muestreadas directamente del catálogo del juego, así que la nave del lienzo vuela lo mismo que en combate.
+man.units	Tipos de nave
+unit.pawn	Peón
+unit.knight	Caballo
+unit.bishop	Alfil
+unit.rook	Torre
+unit.queen	Dama
+unit.king	Rey
+unit.pawn.element	cinético
+unit.knight.element	agua
+unit.bishop.element	fuego
+unit.rook.element	hielo
+unit.queen.element	eléctrico
+unit.king.element	eléctrico
+man.path	Trayectoria de la maniobra %s
+man.energy	Energía
+man.duration	Duración
+man.secs	%s s
+man.shots	Disparos
+man.untouchable_title	Los proyectiles la atraviesan
+man.untouchable	intocable
+man.shield_title	Levanta un escudo
+man.shield	escudo
+man.control_title	El piloto conserva el control
+man.control	control libre
+man.mirror_title	Un gesto reflejado vuela la maniobra reflejada
+man.mirror	reflejable
+man.price_title	Precio en créditos
+man.price	%s cr.
+man.starter	desde el principio
+man.wins	victorias: %s
+man.pack	paquete %s
+num.decimal	,

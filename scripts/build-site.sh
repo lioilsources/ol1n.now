@@ -20,6 +20,9 @@ hashf() { if command -v md5 >/dev/null 2>&1; then md5 -q "$1"; else md5sum "$1" 
 CSSVER="$(hashf "$ROOT/assets/css/store.css")"
 JSVER="$(hashf "$ROOT/assets/js/store.js")"
 
+# translator-supplied text going into an attribute
+attr() { printf '%s' "$1" | sed -e 's/&/\&amp;/g' -e 's/"/\&quot;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g'; }
+
 # emit_head <title> [<link rel="alternate"> lines]
 # awk and not sed: a title like "Ananas&Bananas" is data, and every regex-based
 # substitution in this file would have to escape it. The __ALTS__ line is
@@ -27,7 +30,8 @@ JSVER="$(hashf "$ROOT/assets/js/store.js")"
 emit_head() {
   # ENVIRON and not -v: awk runs backslash escapes over a -v value, and the
   # alternates arrive as several lines
-  HEAD_TITLE="$1" HEAD_ALTS="${2:-}" HEAD_CSSVER="$CSSVER" HEAD_LANG="$I18N_LANG" \
+  _hdir=""; if lang_rtl "$I18N_LANG"; then _hdir=' dir="rtl"'; fi
+  HEAD_TITLE="$1" HEAD_ALTS="${2:-}" HEAD_CSSVER="$CSSVER" HEAD_LANG="$I18N_LANG" HEAD_DIR="$_hdir" \
   awk '
     function repl(str, from, to,   out, i) {
       while ((i = index(str, from)) > 0) { out = out substr(str, 1, i - 1) to; str = substr(str, i + length(from)) }
@@ -38,11 +42,34 @@ emit_head() {
       $0 = repl($0, "__TITLE__", ENVIRON["HEAD_TITLE"])
       $0 = repl($0, "__CSSVER__", ENVIRON["HEAD_CSSVER"])
       $0 = repl($0, "__LANG__", ENVIRON["HEAD_LANG"])
+      $0 = repl($0, "__DIR__", ENVIRON["HEAD_DIR"])
       print repl($0, "__BASE__", "")
     }
   ' "$TPL/head.html"
 }
-emit_foot() { sed -e "s|__JSVER__|$JSVER|g" -e "s|__BASE__||g" "$TPL/foot.html"; }
+# The lightbox (store.js) builds its toolbar in script, so its labels ride on
+# the footer as data attributes. The base language emits none: store.js has the
+# Czech strings built in, and the Czech pages stay as they were.
+emit_foot() {
+  _fdata=""
+  if [ "$I18N_LANG" != "$I18N_BASE" ]; then
+    for _fk in dialog hint zoom_out zoom_in fit close open; do
+      _fdata="$_fdata data-lb-$(printf '%s' "$_fk" | tr _ -)=\"$(attr "$(t "lb.$_fk")")\""
+    done
+  fi
+  FOOT_JSVER="$JSVER" FOOT_DATA="$_fdata" FOOT_ALT="$(attr "$(t foot.logo_alt)")" awk '
+    function repl(str, from, to,   out, i) {
+      while ((i = index(str, from)) > 0) { out = out substr(str, 1, i - 1) to; str = substr(str, i + length(from)) }
+      return out str
+    }
+    {
+      $0 = repl($0, "__JSVER__", ENVIRON["FOOT_JSVER"])
+      $0 = repl($0, "__FOOTDATA__", ENVIRON["FOOT_DATA"])
+      $0 = repl($0, "__LOGO_ALT__", ENVIRON["FOOT_ALT"])
+      print repl($0, "__BASE__", "")
+    }
+  ' "$TPL/foot.html"
+}
 
 # ---- languages ----
 # An app declares the languages it ships in its front-matter (`langs: cs,ja`)
@@ -137,10 +164,13 @@ icon_html() {
 }
 
 # platform badges from desktop/mobile front-matter fields
-badges_html() {
-  _meta="$1"; _featured="$2"; _out=""
+badges_html() { badges_from "$2" "$(fm_get "$1" desktop)" "$(fm_get "$1" mobile)"; }
+
+# badges_from <featured> <desktop csv> <mobile> -> the same badges without
+# re-reading meta.md (the localized indexes call it once per app and language)
+badges_from() {
+  _featured="$1"; _d="$2"; _m="$3"; _out=""
   [ "$_featured" = "true" ] && _out="$_out<span class=\"badge featured\">$(esc "$(t badge.featured)")</span>"
-  _d="$(fm_get "$_meta" desktop)"
   if [ -n "$_d" ]; then
     OLDIFS="$IFS"; IFS=','
     for p in $_d; do
@@ -149,7 +179,6 @@ badges_html() {
     done
     IFS="$OLDIFS"
   fi
-  _m="$(fm_get "$_meta" mobile)"
   [ -n "$_m" ] && _out="$_out<span class=\"badge\">$(esc "$(t badge.mobile)")</span>"
   printf '%s' "$_out"
   return 0
@@ -514,15 +543,23 @@ visuals_grid() { case "$1" in pixel) ;; *) printf '%s' "$1" ;; esac; }
 # {n} for the number of pieces) - what a gallery holds is not something the
 # store can word for every app.
 visuals_teaser_html() {
-  _slug="$1"; _meta="$2"
+  _slug="$1"; _meta="$2"; _bmeta="${3:-$2}"
   _total="$(grep -c . "$DIST/visuals/$_slug/assets.tsv" || true)"
   _first="$(head -1 "$DIST/visuals/$_slug/cats.tsv")"
   _cat="$(printf '%s' "$_first" | cut -f1)"; _kind="$(printf '%s' "$_first" | cut -f4)"
   _grid="$(visuals_grid "$_kind")"
   case "$_kind" in sheet|wide) _max=1 ;; hero|portrait) _max=6 ;; *) _max=8 ;; esac
-  _intro="$(fm_get "$_meta" visuals | sed "s/{n}/$_total/g")"
-  printf '<section class="section"><h2>Vizuály</h2>\n'
-  [ -n "$_intro" ] && printf '<p class="skins-intro">%s</p>\n' "$(esc "$_intro")"
+  # `visuals:` is the app's own sentence; a translated meta.md may carry it, and
+  # when it does not, the Czech one is marked as such (an RTL page would
+  # otherwise reorder its punctuation)
+  _intro="$(fm_get "$_meta" visuals)"; _ilang=""
+  if [ -z "$_intro" ]; then
+    _intro="$(fm_get "$_bmeta" visuals)"
+    [ "$I18N_LANG" = "$I18N_BASE" ] || _ilang=" lang=\"$I18N_BASE\" dir=\"ltr\""
+  fi
+  _intro="$(printf '%s' "$_intro" | sed "s/{n}/$_total/g")"
+  printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t visuals.title)")"
+  [ -n "$_intro" ] && printf '<p class="skins-intro"%s>%s</p>\n' "$_ilang" "$(esc "$_intro")"
   printf '<div class="visuals-cat" data-pixelart="%s"><div class="sprite-grid%s">' \
     "$(visuals_px "$_kind")" "${_grid:+ $_grid}"
   _n=0
@@ -535,7 +572,7 @@ visuals_teaser_html() {
 $(visuals_rows "$_slug" "$_cat")
 EOF
   printf '</div></div>\n'
-  printf '<p class="skins-more"><a href="%s-visuals.html">Prozkoumat všechny vizuály →</a></p>\n' "$_slug"
+  printf '<p class="skins-more"><a href="%s-visuals.html">%s</a></p>\n' "$_slug" "$(esc "$(t visuals.more)")"
   printf '</section>\n'
   return 0
 }
@@ -784,10 +821,12 @@ fleet_maneuvers_html() {
 fleets_teaser_html() {
   _slug="$1"; _n="$(grep -c . "$DIST/fleets/$_slug/fleets.tsv")"
   _m="$(if [ -f "$DIST/fleets/$_slug/maneuvers.tsv" ]; then grep -c . "$DIST/fleets/$_slug/maneuvers.tsv"; else echo 0; fi)"
-  printf '<section class="section"><h2>Flotily</h2>\n'
-  printf '<p class="skins-intro">%s flotil po šesti typech lodí' "$_n"
-  [ "$_m" != 0 ] && printf ' a %s manévrů, které se kreslí prstem' "$_m"
-  printf '.</p>\n'
+  printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t fleets.title)")"
+  if [ "$_m" != 0 ]; then
+    printf '<p class="skins-intro">%s</p>\n' "$(esc "$(tf fleets.teaser_intro_man "$_n" "$_m")")"
+  else
+    printf '<p class="skins-intro">%s</p>\n' "$(esc "$(tf fleets.teaser_intro "$_n")")"
+  fi
   printf '<div class="skin-picker">'
   while IFS="$SEP" read -r f_id f_name f_theme f_note f_def; do
     [ -n "${f_id:-}" ] || continue
@@ -797,7 +836,7 @@ fleets_teaser_html() {
 $(fl_rows "$_slug")
 EOF
   printf '</div>\n'
-  printf '<p class="skins-more"><a href="%s-fleets.html">Prozkoumat flotily a manévry →</a></p>\n' "$_slug"
+  printf '<p class="skins-more"><a href="%s-fleets.html">%s</a></p>\n' "$_slug" "$(esc "$(t fleets.more)")"
   printf '</section>\n'
   return 0
 }
@@ -1044,6 +1083,11 @@ done | sort -n -k1,1)"
 # once per language it declares, and the index (one shared page) is built from
 # the base language only.
 CARDS=""
+# Index cards of the other languages, one file per app and language, plus the
+# pieces of the Czech card that a language the app does not ship falls back to.
+CARDTMP="$(mktemp -d "${TMPDIR:-/tmp}/oln-cards.XXXXXX")"
+trap 'rm -rf "$CARDTMP"' EXIT
+INDEX_LANGS="$I18N_BASE"; INDEX_SLUGS=""
 while IFS="$TAB" read -r ord meta; do
   [ -n "${meta:-}" ] || continue
   appdir="$(dirname "$meta")"
@@ -1052,6 +1096,11 @@ while IFS="$TAB" read -r ord meta; do
   featured="$(fm_get "$meta" featured)"
   icon="$(icon_html "$slug" "$name")"
   langs="$(app_langs "$meta")"
+  INDEX_LANGS="$INDEX_LANGS $langs"; INDEX_SLUGS="$INDEX_SLUGS $slug"
+  {
+    printf '%s\n' "$featured" "$(fm_get "$meta" desktop)" "$(fm_get "$meta" mobile)"
+    printf '%s\n' "$(fm_get "$meta" name)" "$(fm_get "$meta" tagline)" "$icon"
+  } > "$CARDTMP/$slug.fb"
 
   for lang in $langs; do
     # base catalog first, then the language, then whatever this app overrides:
@@ -1061,6 +1110,10 @@ while IFS="$TAB" read -r ord meta; do
     lname="$(fm_get_l "$lmeta" "$meta" name)"
     tagline="$(fm_get_l "$lmeta" "$meta" tagline)"
     badges="$(badges_html "$meta" "$featured")"
+    # a language the app declares but has no meta translation for yet shows
+    # the Czech text; say so, for screen readers and for the RTL layout
+    clang=""
+    if [ "$lang" != "$I18N_BASE" ] && [ "$lmeta" = "$meta" ]; then clang=" lang=\"$I18N_BASE\" dir=\"ltr\""; fi
 
     GSFX=""
     if [ "$lang" != "$I18N_BASE" ]; then
@@ -1080,6 +1133,14 @@ while IFS="$TAB" read -r ord meta; do
   <div class=\"badges\">$badges</div>
 </a>
 "
+    else
+      printf '%s' "<a class=\"app-card\" href=\"$(page_name "$slug")\">
+  <div class=\"icon\">$icon</div>
+  <h3 class=\"name\">$lname</h3>
+  <p class=\"tagline\"$clang>$tagline</p>
+  <div class=\"badges\">$badges</div>
+</a>
+" > "$CARDTMP/$slug.$lang"
     fi
 
     # Smart App Banner: Safari on iPhone offers the App Store install bar.
@@ -1091,13 +1152,13 @@ while IFS="$TAB" read -r ord meta; do
     # detail page
     {
       emit_head "$(tf title.app "$lname")" "$_head_app"
-      page_top_html "index.html" "$(t nav.all_apps)" "$lsw_app"
+      page_top_html "$(page_name index "" "$lang")" "$(t nav.all_apps)" "$lsw_app"
       cat <<HERO
 <section class="app-hero">
   <div class="icon">$icon</div>
   <div>
     <h1>$lname</h1>
-    <p class="tagline">$tagline</p>
+    <p class="tagline"$clang>$tagline</p>
     <div class="badges">$badges</div>
   </div>
 </section>
@@ -1111,7 +1172,7 @@ HERO
       # command of this group would truncate the page
       if [ "$lang" = "$I18N_BASE" ]; then app_pages_teaser_html "$slug"; fi
       if skins_have "$slug"; then skins_teaser_html "$slug"; fi
-      if visuals_have "$slug"; then visuals_teaser_html "$slug" "$meta"; fi
+      if visuals_have "$slug"; then visuals_teaser_html "$slug" "$lmeta" "$meta"; fi
       if fleets_have "$slug"; then fleets_teaser_html "$slug"; fi
       if decks_have "$slug"; then decks_html "$slug"; fi
       printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t sec.shots_desktop)")"
@@ -1120,7 +1181,7 @@ HERO
       printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(t sec.shots_mobile)")"
       shots_html "$slug" mobile
       echo '</section>'
-      printf '<section class="section"><h2>%s</h2><div class="app-desc">\n' "$(esc "$(t sec.description)")"
+      printf '<section class="section"><h2>%s</h2><div class="app-desc"%s>\n' "$(esc "$(t sec.description)")" "$clang"
       fm_body "$lmeta" | md_to_html
       echo '</div></section>'
       emit_foot
@@ -1207,8 +1268,6 @@ page_canon() { if [ "$2" = "$I18N_BASE" ]; then printf '%s/%s' "$SITE" "$1"; els
 og_locale()  { case "$1" in cs) echo cs_CZ ;; en) echo en_GB ;; de) echo de_DE ;; fr) echo fr_FR ;;
   es) echo es_ES ;; it) echo it_IT ;; pl) echo pl_PL ;; pt-BR) echo pt_BR ;; ja) echo ja_JP ;;
   nl) echo nl_NL ;; hu) echo hu_HU ;; uk) echo uk_UA ;; vi) echo vi_VN ;; ko) echo ko_KR ;; *) echo "$1" ;; esac; }
-# translator-supplied text going into an attribute
-attr() { printf '%s' "$1" | sed -e 's/&/\&amp;/g' -e 's/"/\&quot;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g'; }
 PAGE_OUTS=""; PAGE_URLS=""
 
 for page in "$ROOT"/pages/*.html; do
@@ -1273,7 +1332,8 @@ for page in "$ROOT"/pages/*.html; do
       menu="$menu</ul></details>"
     fi
 
-    I18N_LANG="$l"   # emit_head writes it into <html lang>
+    # emit_head writes the language into <html lang>; the catalog is for the footer
+    i18n_load "$l" "$TPL/i18n/$I18N_BASE.tsv" "$TPL/i18n/$l.tsv"
     {
       emit_head "$ptitle" "$head"
       grep -v -e '^<!-- title: ' -e '^<!-- description: ' -e '^<!-- email-' "$src" \
@@ -1311,16 +1371,36 @@ done
 I18N_LANG="$I18N_BASE"
 
 # ---- build index ----
-i18n_load "$I18N_BASE" "$TPL/i18n/$I18N_BASE.tsv"
-{
-  emit_head "Ananas&Bananas — olin.now"
-  echo '<section class="app-grid">'
-  printf '%s' "$CARDS"
-  echo '</section>'
-  emit_foot
-} > "$DIST/index.html"
-
-echo "  built index.html"
+# One index per language that at least one app ships: index.html stays the
+# Czech one, index.<lang>.html lists every app with the card in that language,
+# or with the Czech card (and a link to the Czech page) for an app that does
+# not ship it. Without any translated app the Czech index has no menu at all.
+INDEX_LANGS="$(lang_sort $INDEX_LANGS | tr '\n' ' ')"
+for lang in $INDEX_LANGS; do
+  i18n_load "$lang" "$TPL/i18n/$I18N_BASE.tsv" "$TPL/i18n/$lang.tsv"
+  menu="$(lang_switch_html index "" $INDEX_LANGS)"
+  {
+    emit_head "Ananas&Bananas — olin.now" "$(alts_html index "" $INDEX_LANGS)"
+    if [ -n "$menu" ]; then printf '<div class="page-top index-top">%s</div>\n' "$menu"; fi
+    echo '<section class="app-grid">'
+    if [ "$lang" = "$I18N_BASE" ]; then
+      printf '%s' "$CARDS"
+    else
+      for slug in $INDEX_SLUGS; do
+        if [ -f "$CARDTMP/$slug.$lang" ]; then cat "$CARDTMP/$slug.$lang"; continue; fi
+        { IFS= read -r fb_feat; IFS= read -r fb_desk; IFS= read -r fb_mob
+          IFS= read -r fb_name; IFS= read -r fb_tag; IFS= read -r fb_icon; } < "$CARDTMP/$slug.fb"
+        printf '<a class="app-card" href="%s" hreflang="%s">\n  <div class="icon">%s</div>\n  <h3 class="name">%s</h3>\n  <p class="tagline" lang="%s" dir="ltr">%s</p>\n  <div class="badges">%s</div>\n</a>\n' \
+          "$(page_name "$slug" "" "$I18N_BASE")" "$I18N_BASE" "$fb_icon" "$fb_name" "$I18N_BASE" "$fb_tag" \
+          "$(badges_from "$fb_feat" "$fb_desk" "$fb_mob")"
+      done
+    fi
+    echo '</section>'
+    emit_foot
+  } > "$DIST/$(page_name index "" "$lang")"
+  echo "  built $(page_name index "" "$lang")"
+done
+I18N_LANG="$I18N_BASE"
 
 # App pages, subpages and teasers embed screenshots by path too.
 for _h in "$DIST"/*.html; do webp_links "$_h"; done

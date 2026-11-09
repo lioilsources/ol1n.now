@@ -1,0 +1,114 @@
+# Site chrome, Tamil. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← அனைத்து ஆப்ஸ்
+nav.back_to	← %s-க்குத் திரும்பு
+nav.lang	மொழி
+title.app	%s — olin.now
+title.skins	%s — ஸ்கின்கள் — olin.now
+badge.featured	★ சிறப்பு
+badge.mobile	மொபைல்
+sec.downloads	பதிவிறக்கங்கள்
+sec.description	விளக்கம்
+sec.shots_desktop	ஸ்கிரீன்ஷாட்கள் — டெஸ்க்டாப்
+sec.shots_mobile	ஸ்கிரீன்ஷாட்கள் — மொபைல்
+shots.empty.desktop	டெஸ்க்டாப் ஸ்கிரீன்ஷாட்கள் இன்னும் இல்லை.
+shots.empty.mobile	மொபைல் ஸ்கிரீன்ஷாட்கள் இன்னும் இல்லை.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	பில்டுகள் விரைவில் கிடைக்கும்.
+skins.title	ஸ்கின்கள்
+skins.teaser_intro	%s காட்சித் தீம்கள் — ஒவ்வொன்றுக்கும் சொந்த ஸ்ப்ரைட்டுகள், பேரலாக்ஸ் பின்னணி, ஒலிகள், இசை.
+skins.more	அனைத்து ஸ்கின்களையும் பார் →
+skins.page_intro	%s காட்சித் தீம்கள் — %s-க்காக. ஒவ்வொரு ஸ்கினுக்கும் சொந்தக் கப்பல்கள், எதிரிகள், பாஸ், பின்னணிகள், ஒலிகள், அடாப்டிவ் இசை உண்டு.
+skins.disclaimer	ஸ்கின்கள் கிளாசிக் ஷூட்டர் கேம்களுக்கான ஒரு சுதந்திரமான அஞ்சலி. %s-க்கு அவற்றின் உருவாக்குநர்களுடனோ வெளியீட்டாளர்களுடனோ எந்தத் தொடர்பும் இல்லை; அவற்றின் அசல் கிராஃபிக்ஸையோ ஒலிகளையோ இது பயன்படுத்துவதும் இல்லை.
+skins.wiki	விக்கிப்பீடியா
+skins.vessels	கப்பல்கள்: %s
+skins.pixelart	பிக்சல் ஆர்ட்
+skins.bloom	ப்ளூம் %s
+skins.crt	CRT %s
+skins.tint	டின்ட் %s
+cat.preview	முன்னோட்டம்
+cat.vessels	கப்பல்கள்
+cat.enemies	எதிரிகள்
+cat.boss	பாஸ்
+cat.asteroids	சிறுகோள்கள்
+cat.fx	எஃபெக்ட்களும் குண்டுகளும்
+cat.ui	கேம் இடைமுகம்
+cat.backgrounds	பின்னணிகள்
+cat.sfx	ஒலி எஃபெக்ட்கள் (SFX)
+cat.music	இசை
+player.prev	முந்தையது
+player.play	இயக்கு
+player.next	அடுத்தது
+player.pause	இடைநிறுத்து
+decks.title	டெக்குகள்
+decks.intro	%s டெக்குகள், ஒவ்வொன்றும் இரண்டு ஓவியப் பாணிகளில் வரையப்பட்டது. ஒவ்வொன்றிலிருந்தும் பத்து மாதிரி கார்டுகள்: ஐந்து முதல் பாணியில், ஐந்து இரண்டாவது பாணியில்.
+decks.cards	%s கார்டுகள்
+decks.free	இலவசம்
+decks.free_badge	இலவசம்
+decks.tr	மொழிபெயர்ப்பு
+visuals.title	காட்சிகள்
+visuals.more	அனைத்து காட்சிகளையும் பார் →
+fleets.title	கப்பற்படைகள்
+fleets.teaser_intro	கப்பற்படைகள்: %s, ஒவ்வொன்றிலும் ஆறு வகைக் கப்பல்கள்.
+fleets.teaser_intro_man	கப்பற்படைகள்: %s, ஒவ்வொன்றிலும் ஆறு வகைக் கப்பல்கள். விரலால் வரையும் நகர்வுகள்: %s.
+fleets.more	கப்பற்படைகளையும் நகர்வுகளையும் பார் →
+lb.dialog	ஸ்கிரீன்ஷாட்
+lb.hint	வீலால் ஜூம் · இழுத்து நகர்த்து · Esc மூடும்
+lb.zoom_out	ஜூம் அவுட்
+lb.zoom_in	ஜூம் இன்
+lb.fit	திரைக்குப் பொருத்து
+lb.close	மூடு
+lb.open	ஸ்கிரீன்ஷாட்டைப் பெரிதாக்கு
+foot.logo_alt	Ananas&Bananas — டிஜிட்டல் பழம் & தொழில்நுட்பம்
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — காட்சிகள் — olin.now
+title.fleets	%s — கப்பற்படைகளும் சாகசங்களும் — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — காட்சிகள்
+board.aria	8×8 சதுரங்கப் பலகை
+fleets.page_title	கப்பற்படைகள்
+fleets.page_intro	கப்பற்படைகள்: %s, %s-க்காக. ஒவ்வொன்றும் ஆறு வகைக் கப்பல்களையும் வெள்ளை, கருப்பு பதிப்புகளில் புதிதாக வரைகிறது — கப்பற்படை வெறும் தோற்றம்; காய்களின் நகர்வையோ போரையோ அது மாற்றாது.
+fleets.default	இயல்புநிலை
+fleets.white	வெள்ளைப் படை
+fleets.black	கருப்புப் படை
+fleets.audio_title	போரின் ஒலி
+fleets.sfx_note	சுடும் ஒலியையும் வெடிப்பொலியையும் தீர்மானிப்பது படை அல்ல, கப்பலின் தனிமம்: சிப்பாய் இயக்க ஆற்றலால், குதிரை நீரால், மந்திரி நெருப்பால், கோட்டை பனியால், ராணியும் ராஜாவும் மின்சாரத்தால் சுடுகின்றனர்.
+fleets.music_note	போரில் தாக்கும் கப்பலின் இசைக்கரு ஒலிக்கிறது.
+man.title	சாகசங்கள்
+man.intro	%s சாகசங்கள்: ஒவ்வொரு கப்பலும் தன் பாணியில் பறக்கும் பன்னிரண்டு குடும்பங்கள், கூடவே அதற்கே உரிய ஒன்று. 3×3 கட்டத்தில் வரையும் சைகையால் இவை தொடங்குகின்றன — Android பூட்டைத் திறப்பது போல — தானாக நிரம்பும் ஆற்றலைச் செலவழிக்கின்றன. கீழே உள்ள பாதைகள் நேரடியாக விளையாட்டின் பட்டியலிலிருந்து மாதிரி எடுக்கப்பட்டவை; எனவே கேன்வாஸில் கப்பல் போரில் பறப்பது போலவே பறக்கிறது.
+man.units	கப்பல் வகைகள்
+unit.pawn	சிப்பாய்
+unit.knight	குதிரை
+unit.bishop	மந்திரி
+unit.rook	கோட்டை
+unit.queen	ராணி
+unit.king	ராஜா
+unit.pawn.element	இயக்க
+unit.knight.element	நீர்
+unit.bishop.element	நெருப்பு
+unit.rook.element	பனி
+unit.queen.element	மின்
+unit.king.element	மின்
+man.path	%s சாகசத்தின் பாதை
+man.energy	ஆற்றல்
+man.duration	கால அளவு
+man.secs	%s வி.
+man.shots	சுடுதல்கள்
+man.untouchable_title	குண்டுகள் ஊடுருவிச் செல்லும்
+man.untouchable	தொட முடியாதது
+man.shield_title	கேடயத்தை உயர்த்தும்
+man.shield	கேடயம்
+man.control_title	கட்டுப்பாடு விமானியிடமே இருக்கும்
+man.control	சுதந்திரக் கட்டுப்பாடு
+man.mirror_title	பிரதிபலித்த சைகை பிரதிபலித்த சாகசத்தைப் பறக்கும்
+man.mirror	பிரதிபலிக்கக்கூடியது
+man.price_title	கிரெடிட்டில் விலை
+man.price	%s கிரெடிட்
+man.starter	தொடக்கத்திலிருந்தே
+man.wins	வெற்றிகள்: %s
+man.pack	தொகுப்பு %s
+num.decimal	.

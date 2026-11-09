@@ -1,0 +1,114 @@
+# Site chrome, Odia. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← ସମସ୍ତ ଆପ୍
+nav.back_to	← %sକୁ ଫେରନ୍ତୁ
+nav.lang	ଭାଷା
+title.app	%s — olin.now
+title.skins	%s — ସ୍କିନ୍ — olin.now
+badge.featured	★ ବିଶେଷ
+badge.mobile	ମୋବାଇଲ୍
+sec.downloads	ଡାଉନଲୋଡ୍
+sec.description	ବିବରଣୀ
+sec.shots_desktop	ସ୍କ୍ରିନସଟ୍ — ଡେସ୍କଟପ୍
+sec.shots_mobile	ସ୍କ୍ରିନସଟ୍ — ମୋବାଇଲ୍
+shots.empty.desktop	ଏପର୍ଯ୍ୟନ୍ତ ଡେସ୍କଟପ୍ ସ୍କ୍ରିନସଟ୍ ନାହିଁ।
+shots.empty.mobile	ଏପର୍ଯ୍ୟନ୍ତ ମୋବାଇଲ୍ ସ୍କ୍ରିନସଟ୍ ନାହିଁ।
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	ବିଲ୍ଡ ଶୀଘ୍ର ଉପଲବ୍ଧ ହେବ।
+skins.title	ସ୍କିନ୍
+skins.teaser_intro	%sଟି ଭିଜୁଆଲ୍ ଥିମ୍ — ପ୍ରତ୍ୟେକର ନିଜସ୍ୱ ସ୍ପ୍ରାଇଟ୍, ପାରାଲାକ୍ସ ପୃଷ୍ଠଭୂମି, ଧ୍ୱନି ଓ ସଙ୍ଗୀତ।
+skins.more	ସମସ୍ତ ସ୍କିନ୍ ଦେଖନ୍ତୁ →
+skins.page_intro	%sଟି ଭିଜୁଆଲ୍ ଥିମ୍ — %s ପାଇଁ। ପ୍ରତ୍ୟେକ ସ୍କିନ୍‌ର ନିଜସ୍ୱ ଜାହାଜ, ଶତ୍ରୁ, ବସ୍, ପୃଷ୍ଠଭୂମି, ଧ୍ୱନି ଓ ଆଡାପ୍ଟିଭ୍ ସଙ୍ଗୀତ ଅଛି।
+skins.disclaimer	ସ୍କିନ୍‌ଗୁଡ଼ିକ କ୍ଲାସିକ୍ ସୁଟର୍ ଗେମ୍ ପ୍ରତି ଏକ ମୁକ୍ତ ଶ୍ରଦ୍ଧାଞ୍ଜଳି। ସେଗୁଡ଼ିକର ନିର୍ମାତା କିମ୍ବା ପ୍ରକାଶକଙ୍କ ସହ %sର କୌଣସି ସମ୍ପର୍କ ନାହିଁ ଏବଂ ଏହା ସେମାନଙ୍କର ମୂଳ ଗ୍ରାଫିକ୍ସ କିମ୍ବା ଧ୍ୱନି ବ୍ୟବହାର କରେ ନାହିଁ।
+skins.wiki	ଉଇକିପିଡ଼ିଆ
+skins.vessels	ଜାହାଜ: %s
+skins.pixelart	ପିକ୍ସେଲ୍ ଆର୍ଟ
+skins.bloom	ବ୍ଲୁମ୍ %s
+skins.crt	CRT %s
+skins.tint	ଟିଣ୍ଟ୍ %s
+cat.preview	ପୂର୍ବାବଲୋକନ
+cat.vessels	ଜାହାଜ
+cat.enemies	ଶତ୍ରୁ
+cat.boss	ବସ୍
+cat.asteroids	ଗ୍ରହାଣୁ
+cat.fx	ଇଫେକ୍ଟ ଓ ଗୁଳି
+cat.ui	ଗେମ୍ ଇଣ୍ଟରଫେସ୍
+cat.backgrounds	ପୃଷ୍ଠଭୂମି
+cat.sfx	ଧ୍ୱନି ଇଫେକ୍ଟ (SFX)
+cat.music	ସଙ୍ଗୀତ
+player.prev	ପୂର୍ବବର୍ତ୍ତୀ
+player.play	ଚଲାନ୍ତୁ
+player.next	ପରବର୍ତ୍ତୀ
+player.pause	ବିରତି
+decks.title	ଡେକ୍
+decks.intro	%sଟି ଡେକ୍, ପ୍ରତ୍ୟେକଟି ଦୁଇଟି କଳାଶୈଳୀରେ ଅଙ୍କା। ପ୍ରତ୍ୟେକରୁ ଦଶଟି ନମୁନା କାର୍ଡ: ପାଞ୍ଚଟି ପ୍ରଥମ ଶୈଳୀରେ, ପାଞ୍ଚଟି ଦ୍ୱିତୀୟରେ।
+decks.cards	%sଟି କାର୍ଡ
+decks.free	ମାଗଣା
+decks.free_badge	ମାଗଣା
+decks.tr	ଅନୁବାଦ
+visuals.title	ଭିଜୁଆଲ୍
+visuals.more	ସମସ୍ତ ଭିଜୁଆଲ୍ ଦେଖନ୍ତୁ →
+fleets.title	ନୌବହର
+fleets.teaser_intro	%sଟି ନୌବହର, ପ୍ରତ୍ୟେକରେ ଛଅ ପ୍ରକାରର ଜାହାଜ।
+fleets.teaser_intro_man	%sଟି ନୌବହର, ପ୍ରତ୍ୟେକରେ ଛଅ ପ୍ରକାରର ଜାହାଜ, ଏବଂ ଆଙ୍ଗୁଠିରେ ଅଙ୍କାଯାଉଥିବା %sଟି କୌଶଳ।
+fleets.more	ନୌବହର ଓ କୌଶଳ ଦେଖନ୍ତୁ →
+lb.dialog	ସ୍କ୍ରିନସଟ୍
+lb.hint	ଚକରେ ଜୁମ୍ · ଟାଣି ଘୁଞ୍ଚାନ୍ତୁ · Esc ବନ୍ଦ କରେ
+lb.zoom_out	ଜୁମ୍ ଆଉଟ୍
+lb.zoom_in	ଜୁମ୍ ଇନ୍
+lb.fit	ସ୍କ୍ରିନରେ ଫିଟ୍ କରନ୍ତୁ
+lb.close	ବନ୍ଦ କରନ୍ତୁ
+lb.open	ସ୍କ୍ରିନସଟ୍ ବଡ଼ କରନ୍ତୁ
+foot.logo_alt	Ananas&Bananas — ଡିଜିଟାଲ୍ ଫଳ & ପ୍ରଯୁକ୍ତି
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — ଦୃଶ୍ୟ — olin.now
+title.fleets	%s — ନୌବହର ଓ କସରତ — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — ଦୃଶ୍ୟ
+board.aria	8×8 ଚେସ୍ ବୋର୍ଡ
+fleets.page_title	ନୌବହର
+fleets.page_intro	ନୌବହର: %s, %s ପାଇଁ। ପ୍ରତ୍ୟେକ ନୌବହର ଛଅ ପ୍ରକାରର ଜାହାଜକୁ ଧଳା ଓ କଳା ସଂସ୍କରଣରେ ନୂଆ କରି ଆଙ୍କେ — ନୌବହର କେବଳ ରୂପ, ଗୋଟିର ଚାଲି କିମ୍ବା ଯୁଦ୍ଧ ବଦଳାଏ ନାହିଁ।
+fleets.default	ଡିଫଲ୍ଟ
+fleets.white	ଧଳା ନୌବହର
+fleets.black	କଳା ନୌବହର
+fleets.audio_title	ଯୁଦ୍ଧର ଶବ୍ଦ
+fleets.sfx_note	ଗୁଳି ଓ ବିସ୍ଫୋରଣର ଶବ୍ଦ ନୌବହର ନୁହେଁ, ଜାହାଜର ଉପାଦାନ ସ୍ଥିର କରେ: ପଦାତିକ ଗତିଜ ଗୁଳି, ଘୋଡ଼ା ପାଣି, ଓଟ ନିଆଁ, ହାତୀ ବରଫ, ମନ୍ତ୍ରୀ ଓ ରାଜା ବିଦ୍ୟୁତ୍ ଚଳାନ୍ତି।
+fleets.music_note	ଯୁଦ୍ଧରେ ଆକ୍ରମଣକାରୀ ଜାହାଜର ଥିମ୍ ବାଜେ।
+man.title	କସରତ
+man.intro	%s କସରତ: ବାରଟି ପରିବାର, ଯାହାକୁ ପ୍ରତ୍ୟେକ ଜାହାଜ ନିଜ ଢଙ୍ଗରେ ଉଡ଼ାଏ, ଆଉ ଗୋଟିଏ ତାର ନିଜସ୍ୱ। 3×3 ଗ୍ରିଡ୍‌ରେ ଆଙ୍କିଥିବା ଇଙ୍ଗିତରେ ଏଗୁଡ଼ିକ ଆରମ୍ଭ ହୁଏ — Android ଅନଲକ୍ କଲା ଭଳି — ଏବଂ ନିଜେ ଭରିଯାଉଥିବା ଶକ୍ତି ଖର୍ଚ୍ଚ କରେ। ତଳର ପଥଗୁଡ଼ିକ ସିଧା ଖେଳର ତାଲିକାରୁ ନିଆଯାଇଛି, ତେଣୁ କ୍ୟାନଭାସ୍‌ରେ ଜାହାଜ ଯୁଦ୍ଧ ଭଳି ହିଁ ଉଡ଼େ।
+man.units	ଜାହାଜର ପ୍ରକାର
+unit.pawn	ପଦାତିକ
+unit.knight	ଘୋଡ଼ା
+unit.bishop	ଓଟ
+unit.rook	ହାତୀ
+unit.queen	ମନ୍ତ୍ରୀ
+unit.king	ରାଜା
+unit.pawn.element	ଗତିଜ
+unit.knight.element	ଜଳ
+unit.bishop.element	ଅଗ୍ନି
+unit.rook.element	ହିମ
+unit.queen.element	ବିଦ୍ୟୁତ୍
+unit.king.element	ବିଦ୍ୟୁତ୍
+man.path	%s କସରତର ପଥ
+man.energy	ଶକ୍ତି
+man.duration	ଅବଧି
+man.secs	%s ସେ.
+man.shots	ଗୁଳି
+man.untouchable_title	ଗୁଳି ଆରପାର ହୋଇଯାଏ
+man.untouchable	ଅସ୍ପୃଶ୍ୟ
+man.shield_title	ଢାଲ ଉଠାଏ
+man.shield	ଢାଲ
+man.control_title	ଚାଳନା ପାଇଲଟଙ୍କ ପାଖରେ ରହେ
+man.control	ମୁକ୍ତ ଚାଳନା
+man.mirror_title	ଓଲଟା ଇଙ୍ଗିତ ଓଲଟା କସରତ ଉଡ଼ାଏ
+man.mirror	ଓଲଟାଯାଇପାରେ
+man.price_title	କ୍ରେଡିଟ୍‌ରେ ମୂଲ୍ୟ
+man.price	%s କ୍ରେଡିଟ୍
+man.starter	ଆରମ୍ଭରୁ
+man.wins	ଜିତ: %s
+man.pack	ପ୍ୟାକ୍ %s
+num.decimal	.

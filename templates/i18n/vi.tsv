@@ -1,11 +1,9 @@
-# Site chrome, Vietnamese. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
-# skins gallery ships this language.
+# Site chrome, Vietnamese. Same keys as cs.tsv, in the same order; see the notes there.
 nav.all_apps	← Tất cả ứng dụng
 nav.back_to	← Quay lại %s
 nav.lang	Ngôn ngữ
 title.app	%s — olin.now
+title.skins	%s — skin — olin.now
 badge.featured	★ Nổi bật
 badge.mobile	Di động
 sec.downloads	Tải về
@@ -14,12 +12,103 @@ sec.shots_desktop	Ảnh chụp màn hình — máy tính
 sec.shots_mobile	Ảnh chụp màn hình — di động
 shots.empty.desktop	Chưa có ảnh chụp màn hình trên máy tính.
 shots.empty.mobile	Chưa có ảnh chụp màn hình trên di động.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Bản dựng sắp ra mắt.
+skins.title	Skin
+skins.teaser_intro	%s chủ đề hình ảnh — mỗi chủ đề có sprite, nền parallax, âm thanh và nhạc riêng.
+skins.more	Khám phá tất cả skin →
+skins.page_intro	%s chủ đề hình ảnh cho %s. Mỗi skin có phi thuyền, kẻ địch, trùm, hình nền, âm thanh và nhạc thích ứng riêng.
+skins.disclaimer	Các skin là sự tri ân tự do dành cho những game bắn súng cổ điển. %s không hề liên kết với tác giả hay nhà phát hành của các game đó và không sử dụng đồ họa hay âm thanh gốc của chúng.
+skins.wiki	Wikipedia
+skins.vessels	%s phi thuyền
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	sắc màu %s
+cat.preview	Xem trước
+cat.vessels	Phi thuyền
+cat.enemies	Kẻ địch
+cat.boss	Trùm
+cat.asteroids	Thiên thạch
+cat.fx	Hiệu ứng và đạn
+cat.ui	Giao diện trong game
+cat.backgrounds	Hình nền
+cat.sfx	Âm thanh (SFX)
+cat.music	Âm nhạc
+player.prev	Trước
+player.play	Phát
+player.next	Tiếp
+player.pause	Tạm dừng
 decks.title	Bộ thẻ
 decks.intro	%s bộ thẻ, mỗi bộ được vẽ theo hai phong cách. Đây là mười thẻ mẫu từ mỗi bộ: năm thẻ theo phong cách thứ nhất, năm thẻ theo phong cách thứ hai.
 decks.cards	%s thẻ
 decks.free	miễn phí
 decks.free_badge	Miễn phí
 decks.tr	Bản dịch
+visuals.title	Hình ảnh
+visuals.more	Khám phá tất cả hình ảnh →
+fleets.title	Hạm đội
+fleets.teaser_intro	%s hạm đội, mỗi hạm đội có sáu loại phi thuyền.
+fleets.teaser_intro_man	%s hạm đội, mỗi hạm đội có sáu loại phi thuyền, cùng %s thế cơ động vẽ bằng ngón tay.
+fleets.more	Khám phá hạm đội và thế cơ động →
+lb.dialog	Ảnh chụp màn hình
+lb.hint	lăn chuột để phóng to · kéo để di chuyển · Esc để đóng
+lb.zoom_out	Thu nhỏ
+lb.zoom_in	Phóng to
+lb.fit	Vừa màn hình
+lb.close	Đóng
+lb.open	Phóng to ảnh chụp màn hình
+foot.logo_alt	Ananas&Bananas — trái cây số & công nghệ
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — hình ảnh — olin.now
+title.fleets	%s — hạm đội và thao tác bay — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — hình ảnh
+board.aria	Bàn cờ 8×8
+fleets.page_title	Hạm đội
+fleets.page_intro	%s hạm đội cho %s. Mỗi hạm đội vẽ lại cả sáu loại tàu ở bản trắng và bản đen — hạm đội chỉ là giao diện, không đổi cách quân cờ di chuyển hay trận đấu.
+fleets.default	mặc định
+fleets.white	Hạm đội trắng
+fleets.black	Hạm đội đen
+fleets.audio_title	Âm thanh trận đấu
+fleets.sfx_note	Tiếng bắn và tiếng nổ do nguyên tố của tàu quyết định, không phải hạm đội: tốt bắn động năng, mã bắn nước, tượng bắn lửa, xe bắn băng, hậu và vua bắn điện.
+fleets.music_note	Trong trận đấu vang lên nhạc chủ đề của tàu tấn công.
+man.title	Thao tác bay
+man.intro	%s thao tác bay: mười hai nhóm mà mỗi tàu bay theo cách riêng, cộng một thao tác riêng của nó. Kích hoạt bằng cử chỉ vẽ trên lưới 3×3 — như mở khóa Android — và tốn năng lượng tự hồi lại. Các quỹ đạo bên dưới được lấy mẫu trực tiếp từ danh mục của trò chơi, nên con tàu trên khung vẽ bay đúng như trong trận.
+man.units	Các loại tàu
+unit.pawn	Tốt
+unit.knight	Mã
+unit.bishop	Tượng
+unit.rook	Xe
+unit.queen	Hậu
+unit.king	Vua
+unit.pawn.element	động năng
+unit.knight.element	nước
+unit.bishop.element	lửa
+unit.rook.element	băng
+unit.queen.element	điện
+unit.king.element	điện
+man.path	Quỹ đạo của thao tác %s
+man.energy	Năng lượng
+man.duration	Thời lượng
+man.secs	%s giây
+man.shots	Số phát bắn
+man.untouchable_title	Đạn bay xuyên qua
+man.untouchable	bất khả xâm phạm
+man.shield_title	Bật khiên
+man.shield	khiên
+man.control_title	Phi công vẫn điều khiển
+man.control	điều khiển tự do
+man.mirror_title	Cử chỉ lật gương bay thao tác lật gương
+man.mirror	lật gương được
+man.price_title	Giá bằng tín dụng
+man.price	%s tín dụng
+man.starter	từ đầu
+man.wins	%s trận thắng
+man.pack	gói %s
+num.decimal	,

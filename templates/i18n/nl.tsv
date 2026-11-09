@@ -1,10 +1,9 @@
-# Site chrome, Dutch. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. Added for
-# behanek; the skins gallery and deck keys are not translated yet.
+# Site chrome, Dutch. Same keys as cs.tsv; see the notes there.
 nav.all_apps	← Alle apps
 nav.back_to	← Terug naar %s
 nav.lang	Taal
 title.app	%s — olin.now
+title.skins	%s — skins — olin.now
 badge.featured	★ Uitgelicht
 badge.mobile	Mobiel
 sec.downloads	Downloads
@@ -13,6 +12,103 @@ sec.shots_desktop	Screenshots — desktop
 sec.shots_mobile	Screenshots — mobiel
 shots.empty.desktop	Nog geen desktop-screenshots.
 shots.empty.mobile	Nog geen mobiele screenshots.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Builds volgen binnenkort.
+skins.title	Skins
+skins.teaser_intro	%s visuele thema's, elk met eigen sprites, parallax-achtergrond, geluiden en muziek.
+skins.more	Bekijk alle skins →
+skins.page_intro	%s visuele thema's voor %s. Elke skin heeft eigen schepen, vijanden, bazen, achtergronden, geluiden en adaptieve muziek.
+skins.disclaimer	De skins zijn een vrije hommage aan klassieke shoot-'em-ups. %s is op geen enkele manier verbonden aan hun makers of uitgevers en gebruikt geen originele graphics of geluiden.
+skins.wiki	Wikipedia
+skins.vessels	%s schepen
+skins.pixelart	pixelart
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	tint %s
+cat.preview	Voorbeeld
+cat.vessels	Schepen
+cat.enemies	Vijanden
+cat.boss	Baas
+cat.asteroids	Asteroïden
+cat.fx	Effecten & projectielen
+cat.ui	Spelinterface
+cat.backgrounds	Achtergronden
+cat.sfx	Geluiden (SFX)
+cat.music	Muziek
+player.prev	Vorige
+player.play	Afspelen
+player.next	Volgende
+player.pause	Pauzeren
+decks.title	Decks
+decks.intro	%s decks, elk getekend in twee stijlen. Van elk deck hier tien voorbeeldkaarten: vijf in de eerste stijl, vijf in de tweede.
+decks.cards	%s kaarten
+decks.free	gratis
+decks.free_badge	Gratis
+decks.tr	Vertaling
+visuals.title	Visuals
+visuals.more	Bekijk alle visuals →
+fleets.title	Vloten
+fleets.teaser_intro	%s vloten van elk zes scheepstypen.
+fleets.teaser_intro_man	%s vloten van elk zes scheepstypen en %s manoeuvres die je met je vinger tekent.
+fleets.more	Bekijk vloten & manoeuvres →
+lb.dialog	Screenshot
+lb.hint	scrollwiel zoomt · slepen verschuift · Esc sluit
+lb.zoom_out	Uitzoomen
+lb.zoom_in	Inzoomen
+lb.fit	Passend in scherm
+lb.close	Sluiten
+lb.open	Screenshot vergroten
+foot.logo_alt	Ananas&Bananas — digitaal fruit & technologie
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — visuals — olin.now
+title.fleets	%s — vloten en manoeuvres — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — visuals
+board.aria	Schaakbord 8×8
+fleets.page_title	Vloten
+fleets.page_intro	%s vloten voor %s. Elke vloot tekent alle zes scheepstypen opnieuw in een witte en een zwarte versie — een vloot is puur visueel: de zetten van de stukken en het gevecht blijven gelijk.
+fleets.default	standaard
+fleets.white	Witte vloot
+fleets.black	Zwarte vloot
+fleets.audio_title	Geluid van het gevecht
+fleets.sfx_note	Het geluid van schot en explosie hangt af van het element van het schip, niet van de vloot: de pion schiet kinetisch, het paard met water, de loper met vuur, de toren met ijs, dame en koning met elektriciteit.
+fleets.music_note	In een gevecht klinkt het thema van het aanvallende schip.
+man.title	Manoeuvres
+man.intro	%s manoeuvres: twaalf families die elk schip op zijn eigen manier vliegt, plus één eigen manoeuvre. Je start ze met een gebaar op een raster van 3×3 — zoals bij het ontgrendelen van een Android — en ze kosten energie die vanzelf weer oplaadt. De banen hieronder zijn rechtstreeks uit de catalogus van het spel gesampled, dus het schip op het canvas vliegt precies wat het in een gevecht vliegt.
+man.units	Scheepstypen
+unit.pawn	Pion
+unit.knight	Paard
+unit.bishop	Loper
+unit.rook	Toren
+unit.queen	Dame
+unit.king	Koning
+unit.pawn.element	kinetisch
+unit.knight.element	water
+unit.bishop.element	vuur
+unit.rook.element	ijs
+unit.queen.element	elektrisch
+unit.king.element	elektrisch
+man.path	Vliegbaan van de manoeuvre %s
+man.energy	Energie
+man.duration	Duur
+man.secs	%s s
+man.shots	Schoten
+man.untouchable_title	Kogels gaan erdoorheen
+man.untouchable	onraakbaar
+man.shield_title	Zet een schild op
+man.shield	schild
+man.control_title	De piloot houdt het stuur
+man.control	vrij sturen
+man.mirror_title	Een gespiegeld gebaar vliegt de gespiegelde manoeuvre
+man.mirror	spiegelbaar
+man.price_title	Prijs in credits
+man.price	%s cr.
+man.starter	vanaf het begin
+man.wins	overwinningen: %s
+man.pack	pakket %s
+num.decimal	,

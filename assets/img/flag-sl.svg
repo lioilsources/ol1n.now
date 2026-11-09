@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <rect y="0" width="900" height="200.5" fill="#ffffff"/>
+  <rect y="200" width="900" height="200.5" fill="#0057B8"/>
+  <rect y="400" width="900" height="200.5" fill="#ED1C24"/>
+  <!-- Simplified arms: Triglav on a blue shield, no stars -->
+  <path d="M170 110h160v130a80 80 0 0 1-160 0z" fill="#0057B8" stroke="#ED1C24" stroke-width="10"/>
+  <path d="M180 260l40-60 30 30 30-30 40 60c-20 30-120 30-140 0z" fill="#ffffff"/>
+</svg>

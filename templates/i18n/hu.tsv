@@ -1,11 +1,9 @@
-# Site chrome, Hungarian. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery and deck keys are not translated yet: no app with those galleries
-# ships this language.
+# Site chrome, Hungarian. Same keys as cs.tsv, in the same order; see the notes there.
 nav.all_apps	← Összes alkalmazás
 nav.back_to	← Vissza ide: %s
 nav.lang	Nyelv
 title.app	%s — olin.now
+title.skins	%s — skinek — olin.now
 badge.featured	★ Ajánlott
 badge.mobile	Mobil
 sec.downloads	Letöltések
@@ -14,6 +12,103 @@ sec.shots_desktop	Képernyőképek — asztali gép
 sec.shots_mobile	Képernyőképek — mobil
 shots.empty.desktop	Még nincsenek asztali képernyőképek.
 shots.empty.mobile	Még nincsenek mobilos képernyőképek.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	A buildek hamarosan elérhetők.
+skins.title	Skinek
+skins.teaser_intro	%s vizuális téma — mindegyik saját sprite-okkal, parallaxos háttérrel, hangokkal és zenével.
+skins.more	Az összes skin megtekintése →
+skins.page_intro	%s vizuális téma ehhez: %s. Minden skinnek saját hajói, ellenségei, bossa, hátterei, hangjai és adaptív zenéje van.
+skins.disclaimer	A skinek szabad tisztelgések a klasszikus lövöldözős játékok előtt. A(z) %s semmilyen kapcsolatban nem áll azok szerzőivel vagy kiadóival, és nem használja eredeti grafikájukat vagy hangjaikat.
+skins.wiki	Wikipédia
+skins.vessels	%s hajó
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	árnyalat %s
+cat.preview	Előnézet
+cat.vessels	Hajók
+cat.enemies	Ellenségek
+cat.boss	Boss
+cat.asteroids	Aszteroidák
+cat.fx	Effektek és lövedékek
+cat.ui	Játékfelület
+cat.backgrounds	Hátterek
+cat.sfx	Hangeffektek (SFX)
+cat.music	Zene
+player.prev	Előző
+player.play	Lejátszás
+player.next	Következő
+player.pause	Szünet
+decks.title	Paklik
+decks.intro	%s pakli, mindegyik két rajzstílusban. Mindegyikből tíz mintakártya látható: öt az első, öt a második stílusban.
+decks.cards	%s kártya
+decks.free	ingyenes
+decks.free_badge	Ingyenes
+decks.tr	Fordítás
+visuals.title	Látványvilág
+visuals.more	A teljes látványvilág megtekintése →
+fleets.title	Flották
+fleets.teaser_intro	%s flotta, mindegyikben hat hajótípus.
+fleets.teaser_intro_man	%s flotta, mindegyikben hat hajótípus, és %s ujjal rajzolható manőver.
+fleets.more	Flották és manőverek megtekintése →
+lb.dialog	Képernyőkép
+lb.hint	görgő: nagyítás · húzás: mozgatás · Esc: bezárás
+lb.zoom_out	Kicsinyítés
+lb.zoom_in	Nagyítás
+lb.fit	Igazítás a képernyőhöz
+lb.close	Bezárás
+lb.open	Képernyőkép nagyítása
+foot.logo_alt	Ananas&Bananas — digitális gyümölcs & technológia
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — grafikák — olin.now
+title.fleets	%s — flották és manőverek — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — grafikák
+board.aria	8×8-as sakktábla
+fleets.page_title	Flották
+fleets.page_intro	%s flotta a(z) %s játékhoz. Mindegyik újrarajzolja mind a hat hajótípust fehér és fekete változatban — a flotta csak külsőség, sem a bábuk lépését, sem a csatát nem változtatja meg.
+fleets.default	alapértelmezett
+fleets.white	Fehér flotta
+fleets.black	Fekete flotta
+fleets.audio_title	A csata hangja
+fleets.sfx_note	A lövés és a robbanás hangját a hajó eleme határozza meg, nem a flotta: a gyalog kinetikusan lő, a huszár vízzel, a futó tűzzel, a bástya jéggel, a vezér és a király elektromossággal.
+fleets.music_note	A csatában a támadó hajó témája szól.
+man.title	Manőverek
+man.intro	%s manőver: tizenkét család, amelyet minden hajó a maga módján repül, plusz egy saját. Egy 3×3-as rácsra rajzolt mozdulattal indulnak — mint egy androidos telefon feloldása —, és energiába kerülnek, amely magától töltődik. A lenti pályák közvetlenül a játék katalógusából vett minták, így a vásznon a hajó pontosan azt repüli, amit a csatában.
+man.units	Hajótípusok
+unit.pawn	Gyalog
+unit.knight	Huszár
+unit.bishop	Futó
+unit.rook	Bástya
+unit.queen	Vezér
+unit.king	Király
+unit.pawn.element	kinetikus
+unit.knight.element	víz
+unit.bishop.element	tűz
+unit.rook.element	jég
+unit.queen.element	elektromos
+unit.king.element	elektromos
+man.path	A(z) %s manőver pályája
+man.energy	Energia
+man.duration	Időtartam
+man.secs	%s mp
+man.shots	Lövések
+man.untouchable_title	A lövedékek áthaladnak rajta
+man.untouchable	sebezhetetlen
+man.shield_title	Pajzsot emel
+man.shield	pajzs
+man.control_title	A kormány a pilótánál marad
+man.control	szabad irányítás
+man.mirror_title	A tükrözött mozdulat a tükrözött manővert repüli
+man.mirror	tükrözhető
+man.price_title	Ár kreditben
+man.price	%s kr.
+man.starter	kezdettől
+man.wins	győzelmek: %s
+man.pack	%s csomag
+num.decimal	,

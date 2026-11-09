@@ -1,0 +1,114 @@
+# Site chrome, Urdu. Same keys as cs.tsv; see the notes there.
+nav.all_apps	→ تمام ایپس
+nav.back_to	→ %s پر واپس جائیں
+nav.lang	زبان
+title.app	%s — olin.now
+title.skins	%s — اسکنز — olin.now
+badge.featured	★ نمایاں
+badge.mobile	موبائل
+sec.downloads	ڈاؤن لوڈز
+sec.description	تفصیل
+sec.shots_desktop	اسکرین شاٹس — ڈیسک ٹاپ
+sec.shots_mobile	اسکرین شاٹس — موبائل
+shots.empty.desktop	ابھی ڈیسک ٹاپ کے اسکرین شاٹس نہیں ہیں۔
+shots.empty.mobile	ابھی موبائل کے اسکرین شاٹس نہیں ہیں۔
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	بلڈز جلد دستیاب ہوں گے۔
+skins.title	اسکنز
+skins.teaser_intro	بصری تھیمز: %s — ہر ایک کے اپنے اسپرائٹس، پیرالیکس پس منظر، آوازیں اور موسیقی۔
+skins.more	تمام اسکنز دیکھیں ←
+skins.page_intro	بصری تھیمز: %s، خاص طور پر %s کے لیے۔ ہر اسکن کے اپنے جہاز، دشمن، باس، پس منظر، آوازیں اور موافق موسیقی ہے۔
+skins.disclaimer	یہ اسکنز کلاسک شوٹر گیمز کو آزادانہ خراجِ تحسین ہیں۔ %s کا ان کے تخلیق کاروں یا ناشرین سے کوئی تعلق نہیں، اور یہ ان کے اصل گرافکس یا آوازیں استعمال نہیں کرتا۔
+skins.wiki	ویکیپیڈیا
+skins.vessels	جہاز: %s
+skins.pixelart	پکسل آرٹ
+skins.bloom	بلوم %s
+skins.crt	CRT %s
+skins.tint	رنگت %s
+cat.preview	پیش نظارہ
+cat.vessels	جہاز
+cat.enemies	دشمن
+cat.boss	باس
+cat.asteroids	سیارچے
+cat.fx	ایفیکٹس اور گولے
+cat.ui	گیم انٹرفیس
+cat.backgrounds	پس منظر
+cat.sfx	صوتی اثرات (SFX)
+cat.music	موسیقی
+player.prev	پچھلا
+player.play	چلائیں
+player.next	اگلا
+player.pause	روکیں
+decks.title	ڈیکس
+decks.intro	ڈیکس: %s، اور ہر ایک دو فنی انداز میں بنایا گیا ہے۔ یہاں ہر ڈیک سے دس نمونہ کارڈز ہیں: پانچ پہلے انداز میں، پانچ دوسرے میں۔
+decks.cards	کارڈز: %s
+decks.free	مفت
+decks.free_badge	مفت
+decks.tr	ترجمہ
+visuals.title	بصری مواد
+visuals.more	تمام بصری مواد دیکھیں ←
+fleets.title	بیڑے
+fleets.teaser_intro	بیڑے: %s، ہر ایک میں چھ قسم کے جہاز۔
+fleets.teaser_intro_man	بیڑے: %s، ہر ایک میں چھ قسم کے جہاز۔ چالیں: %s، جو انگلی سے بنائی جاتی ہیں۔
+fleets.more	بیڑے اور چالیں دیکھیں ←
+lb.dialog	اسکرین شاٹ
+lb.hint	وہیل سے زوم · گھسیٹ کر ہٹائیں · Esc سے بند کریں
+lb.zoom_out	چھوٹا کریں
+lb.zoom_in	بڑا کریں
+lb.fit	اسکرین کے مطابق
+lb.close	بند کریں
+lb.open	اسکرین شاٹ بڑا کریں
+foot.logo_alt	Ananas&Bananas — ڈیجیٹل پھل & ٹیکنالوجی
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	←
+title.visuals	%s — بصری مواد — olin.now
+title.fleets	%s — بیڑے اور کرتب — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — بصری مواد
+board.aria	8×8 شطرنج کی بساط
+fleets.page_title	بیڑے
+fleets.page_intro	بیڑے: %s، %s کے لیے۔ ہر بیڑا جہازوں کی چھے اقسام کو سفید اور سیاہ دونوں صورتوں میں نئے سرے سے بناتا ہے — بیڑا صرف ظاہری ہے، نہ مہروں کی چال بدلتا ہے نہ لڑائی۔
+fleets.default	طے شدہ
+fleets.white	سفید بیڑا
+fleets.black	سیاہ بیڑا
+fleets.audio_title	لڑائی کی آواز
+fleets.sfx_note	گولی اور دھماکے کی آواز بیڑا نہیں بلکہ جہاز کا عنصر طے کرتا ہے: پیادہ حرکی گولی چلاتا ہے، گھوڑا پانی، فیل آگ، رخ برف، وزیر اور بادشاہ بجلی۔
+fleets.music_note	لڑائی میں حملہ آور جہاز کی دھن بجتی ہے۔
+man.title	کرتب
+man.intro	%s کرتب: بارہ خاندان جنہیں ہر جہاز اپنے انداز میں اڑاتا ہے، اور ایک اس کا اپنا۔ انہیں 3×3 جالی پر بنائے گئے اشارے سے چلایا جاتا ہے — جیسے اینڈرائیڈ کا لاک کھولنا — اور یہ خود بخود بھرنے والی توانائی خرچ کرتے ہیں۔ نیچے کے راستے سیدھے کھیل کی فہرست سے لیے گئے ہیں، اس لیے کینوس پر جہاز ویسے ہی اڑتا ہے جیسے لڑائی میں۔
+man.units	جہازوں کی اقسام
+unit.pawn	پیادہ
+unit.knight	گھوڑا
+unit.bishop	فیل
+unit.rook	رخ
+unit.queen	وزیر
+unit.king	بادشاہ
+unit.pawn.element	حرکی
+unit.knight.element	آبی
+unit.bishop.element	آتشی
+unit.rook.element	برفانی
+unit.queen.element	برقی
+unit.king.element	برقی
+man.path	کرتب %s کا راستہ
+man.energy	توانائی
+man.duration	دورانیہ
+man.secs	%s سیکنڈ
+man.shots	گولیاں
+man.untouchable_title	گولیاں آر پار گزر جاتی ہیں
+man.untouchable	ناقابلِ ضرب
+man.shield_title	ڈھال اٹھاتا ہے
+man.shield	ڈھال
+man.control_title	اسٹیئرنگ پائلٹ کے پاس رہتی ہے
+man.control	آزاد اسٹیئرنگ
+man.mirror_title	الٹا اشارہ الٹا کرتب اڑاتا ہے
+man.mirror	الٹایا جا سکتا ہے
+man.price_title	کریڈٹ میں قیمت
+man.price	%s کریڈٹ
+man.starter	شروع سے
+man.wins	جیتیں: %s
+man.pack	پیک %s
+num.decimal	.

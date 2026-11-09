@@ -25,10 +25,82 @@ body {
   line-height: 1.55;
 }
 
-html[lang="ja"] body {
+/* Script fallbacks, system fonts only. The system UI font goes first so Latin
+   (app names, platform badges) keeps one look; the script's own faces follow
+   in the order Apple / Windows / Android-Linux ship them. The selector also
+   hits a lone element in another language (a language menu entry, a deck
+   translation), not just the whole page. */
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(ja) {
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN",
                "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
 }
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(ko) {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic",
+               "Noto Sans KR", "Noto Sans CJK KR", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(zh-Hans) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+               "Noto Sans SC", "Noto Sans CJK SC", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(zh-Hant) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei",
+               "Noto Sans TC", "Noto Sans CJK TC", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(ar) {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Arabic", "Geeza Pro", "Segoe UI", Tahoma,
+               "Noto Sans Arabic", "Noto Naskh Arabic", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(ur) {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Nastaliq Urdu", "Urdu Typesetting",
+               "Jameel Noori Nastaleeq", "Geeza Pro", "Segoe UI", Tahoma, "Noto Naskh Arabic", sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(he) {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Hebrew", "Arial Hebrew", "Segoe UI", Arial,
+               "Noto Sans Hebrew", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(th) {
+  font-family: -apple-system, BlinkMacSystemFont, Thonburi, "Sukhumvit Set", "Leelawadee UI", Tahoma,
+               "Noto Sans Thai", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):is(:lang(hi), :lang(mr)) {
+  font-family: -apple-system, BlinkMacSystemFont, "Kohinoor Devanagari", "Devanagari Sangam MN",
+               "Nirmala UI", Mangal, "Noto Sans Devanagari", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(bn) {
+  font-family: -apple-system, BlinkMacSystemFont, "Kohinoor Bangla", "Bangla Sangam MN",
+               "Nirmala UI", Vrinda, "Noto Sans Bengali", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(gu) {
+  font-family: -apple-system, BlinkMacSystemFont, "Kohinoor Gujarati", "Gujarati Sangam MN",
+               "Nirmala UI", Shruti, "Noto Sans Gujarati", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(kn) {
+  font-family: -apple-system, BlinkMacSystemFont, "Kannada Sangam MN", "Nirmala UI", Tunga,
+               "Noto Sans Kannada", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(ml) {
+  font-family: -apple-system, BlinkMacSystemFont, "Malayalam Sangam MN", "Nirmala UI", Kartika,
+               "Noto Sans Malayalam", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(or) {
+  font-family: -apple-system, BlinkMacSystemFont, "Oriya Sangam MN", "Nirmala UI", Kalinga,
+               "Noto Sans Oriya", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(pa) {
+  font-family: -apple-system, BlinkMacSystemFont, "Gurmukhi Sangam MN", "Gurmukhi MN", "Nirmala UI", Raavi,
+               "Noto Sans Gurmukhi", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(ta) {
+  font-family: -apple-system, BlinkMacSystemFont, "Tamil Sangam MN", InaiMathi, "Nirmala UI", Latha,
+               "Noto Sans Tamil", "Segoe UI", Roboto, sans-serif;
+}
+:is(body, a[lang], button[lang], span[lang], p[lang]):lang(te) {
+  font-family: -apple-system, BlinkMacSystemFont, "Telugu Sangam MN", "Kohinoor Telugu", "Nirmala UI", Gautami,
+               "Noto Sans Telugu", "Segoe UI", Roboto, sans-serif;
+}
+/* tall stacked vowel marks need more room between lines */
+html:is(:lang(th), :lang(hi), :lang(mr), :lang(bn), :lang(gu), :lang(kn), :lang(ml), :lang(or), :lang(pa), :lang(ta), :lang(te)) body { line-height: 1.7; }
+html:lang(ur) body { line-height: 1.9; }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -145,11 +217,11 @@ a:hover { text-decoration: underline; }
   font-size: 14px; background: var(--card);
 }
 .lang-menu summary::-webkit-details-marker { display: none; }
-.lang-menu summary::after { content: ""; width: 6px; height: 6px; margin-left: 2px; border: solid var(--text-dim);
+.lang-menu summary::after { content: ""; width: 6px; height: 6px; margin-inline-start: 2px; border: solid var(--text-dim);
   border-width: 0 1.5px 1.5px 0; transform: translateY(-2px) rotate(45deg); }
 .lang-menu[open] summary { border-color: var(--accent); }
 .lang-menu ul {
-  position: absolute; right: 0; top: calc(100% + 6px); z-index: 30; min-width: 200px;
+  position: absolute; inset-inline-end: 0; top: calc(100% + 6px); z-index: 30; min-width: 200px;
   list-style: none; margin: 0; padding: 6px;
   background: var(--card); border: 1px solid var(--border); border-radius: 12px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, .14);
@@ -158,6 +230,8 @@ a:hover { text-decoration: underline; }
 .lang-menu li a { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; color: var(--text); }
 .lang-menu li a:hover { background: var(--card-hover); text-decoration: none; }
 .lang-menu li a[aria-current="true"] { color: var(--accent); font-weight: 600; }
+/* the localized indexes have no back-link, so the menu sits at the row's end */
+.index-top { justify-content: flex-end; }
 .lang-menu img { display: block; width: 18px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .18); }
 
 .section { margin-top: 40px; }
@@ -201,7 +275,7 @@ a:hover { text-decoration: underline; }
 .app-desc p { margin: 0 0 14px; }
 .app-desc h3 { font-size: 16px; margin: 26px 0 10px; letter-spacing: -0.01em; }
 .app-desc h3:first-child { margin-top: 0; }
-.app-desc ol, .app-desc ul { margin: 0 0 14px; padding-left: 22px; }
+.app-desc ol, .app-desc ul { margin: 0 0 14px; padding-inline-start: 22px; }
 .app-desc li { margin: 0 0 8px; }
 
 /* ---- Skins ---- */
@@ -390,7 +464,7 @@ a:hover { text-decoration: underline; }
 /* Translation switch — same pill as .lang-switch, but buttons, and it wraps */
 .tr-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 16px 0 0; }
 .tr-pick[hidden] { display: none; }
-.tr-label { font-size: 13px; color: var(--text-dim); margin-right: 2px; }
+.tr-label { font-size: 13px; color: var(--text-dim); margin-inline-end: 2px; }
 .tr-pick button {
   appearance: none; cursor: pointer; font: inherit;
   display: inline-flex; align-items: center; gap: 6px;
@@ -420,12 +494,12 @@ a:hover { text-decoration: underline; }
 .rules h2 { font-size: 22px; margin: 44px 0 12px; letter-spacing: -0.01em; scroll-margin-top: 16px; }
 .rules h3 { font-size: 15px; margin: 0 0 6px; }
 .rules p, .rules li { max-width: 700px; }
-.rules ul { padding-left: 22px; margin: 0 0 14px; }
+.rules ul { padding-inline-start: 22px; margin: 0 0 14px; }
 .rules li { margin: 0 0 6px; }
 .rules .lead { font-size: 17px; color: var(--text-dim); }
 .rules .callout {
-  background: var(--accent-soft); border-left: 3px solid var(--accent);
-  padding: 12px 16px; border-radius: 0 10px 10px 0; font-weight: 600;
+  background: var(--accent-soft); border-inline-start: 3px solid var(--accent);
+  padding: 12px 16px; border-start-end-radius: 10px; border-end-end-radius: 10px; font-weight: 600;
 }
 .rules-toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; }
 .rules-toc a {
@@ -449,15 +523,15 @@ a:hover { text-decoration: underline; }
 .wt-stories, .wt-choices { display: grid; gap: 10px; margin: 0 0 16px; }
 .wt-story, .wt-choice { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
 .wt-story > summary, .wt-choice > summary { cursor: pointer; padding: 12px 16px; list-style-position: inside; }
-.wt-story > summary span { display: block; font-size: 13px; color: var(--text-dim); margin-left: 18px; }
+.wt-story > summary span { display: block; font-size: 13px; color: var(--text-dim); margin-inline-start: 18px; }
 .wt-story[open] > summary, .wt-choice[open] > summary { border-bottom: 1px solid var(--border); }
 .wt-story .wt-strip { margin: 14px auto; padding: 0 10px; }
 .wt-choice > summary { font-weight: 600; color: var(--accent); }
 .wt-branch { padding: 4px 16px 12px; }
 .wt-branch h3 { font-size: 16px; margin: 12px 0 8px; }
-.wt-script { padding-left: 0; list-style: none; margin: 0 0 10px; }
+.wt-script { padding-inline-start: 0; list-style: none; margin: 0 0 10px; }
 .wt-script > li { margin: 0 0 10px; }
-.wt-script ul { margin: 2px 0 0; padding-left: 18px; }
+.wt-script ul { margin: 2px 0 0; padding-inline-start: 18px; }
 .wt-shot { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-dim); }
 .wt-next { margin: 8px 0 2px; font-weight: 600; }
 .wt-next-list { margin: 0; }
@@ -487,14 +561,14 @@ a:hover { text-decoration: underline; }
 .board .pc.black { fill: #2a2f22; stroke: #c9cdb8; stroke-width: 0.055; paint-order: stroke; }
 .board .pc.self { fill: #ffd95a; }
 .legend { font-size: 13px; color: var(--text-dim); }
-.legend .lg { display: inline-block; width: 12px; height: 12px; margin: 0 5px 0 12px; vertical-align: -1px; border-radius: 50%; background: #7fd08a; }
-.legend .lg:first-child { margin-left: 0; }
+.legend .lg { display: inline-block; width: 12px; height: 12px; margin-block: 0; margin-inline: 12px 5px; vertical-align: -1px; border-radius: 50%; background: #7fd08a; }
+.legend .lg:first-child { margin-inline-start: 0; }
 .legend .lg.jp { background: none; border: 2px dashed #5fae6b; }
 .legend .lg.cap { background: rgba(232, 90, 70, .22); border: 2px solid #e85a46; border-radius: 3px; }
 
 .table-wrap { overflow-x: auto; margin: 0 0 16px; }
 .rules-table { border-collapse: collapse; width: 100%; font-size: 14px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
-.rules-table th, .rules-table td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.rules-table th, .rules-table td { padding: 9px 12px; text-align: start; border-bottom: 1px solid var(--border); vertical-align: middle; }
 .rules-table th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-dim); font-weight: 600; }
 .rules-table tr:last-child td { border-bottom: 0; }
 .rules-table.maneuvers td:nth-child(2) { font-weight: 600; white-space: nowrap; }
@@ -506,3 +580,10 @@ a:hover { text-decoration: underline; }
   .board-grid.small { grid-template-columns: repeat(4, 1fr); }
   .board-grid.small figcaption { display: none; }
 }
+
+/* ---- Right-to-left (ar, he, ur: <html dir="rtl">) ----
+   Layout mirrors through logical properties and flex/grid direction; what
+   is left is letter-spacing, which tears Arabic letters out of their joins. */
+html[dir="rtl"] body *, html[dir="rtl"] .decks .skin-cat h4 { letter-spacing: normal; }
+/* Latin-only bits read left to right inside the mirrored page */
+html[dir="rtl"] .dl-meta, html[dir="rtl"] .lb-pct { direction: ltr; unicode-bidi: isolate; }

@@ -1,0 +1,114 @@
+# Site chrome, Hebrew. Same keys as cs.tsv; see the notes there.
+nav.all_apps	→ כל האפליקציות
+nav.back_to	→ חזרה אל %s
+nav.lang	שפה
+title.app	%s — olin.now
+title.skins	%s — סקינים — olin.now
+badge.featured	★ מומלץ
+badge.mobile	נייד
+sec.downloads	הורדות
+sec.description	תיאור
+sec.shots_desktop	צילומי מסך — מחשב
+sec.shots_mobile	צילומי מסך — נייד
+shots.empty.desktop	אין עדיין צילומי מסך למחשב.
+shots.empty.mobile	אין עדיין צילומי מסך לנייד.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	גרסאות יהיו זמינות בקרוב.
+skins.title	סקינים
+skins.teaser_intro	ערכות עיצוב: %s — לכל אחת ספרייטים, רקע פרלקסה, צלילים ומוזיקה משלה.
+skins.more	לכל הסקינים ←
+skins.page_intro	ערכות עיצוב: %s, עבור %s. לכל סקין חלליות, אויבים, בוס, רקעים, צלילים ומוזיקה אדפטיבית משלו.
+skins.disclaimer	הסקינים הם מחווה חופשית למשחקי יריות קלאסיים. %s אינו קשור בשום אופן ליוצריהם או למפיציהם, ואינו משתמש בגרפיקה או בצלילים המקוריים שלהם.
+skins.wiki	ויקיפדיה
+skins.vessels	חלליות: %s
+skins.pixelart	פיקסל ארט
+skins.bloom	בלום %s
+skins.crt	CRT %s
+skins.tint	גוון %s
+cat.preview	תצוגה מקדימה
+cat.vessels	חלליות
+cat.enemies	אויבים
+cat.boss	בוס
+cat.asteroids	אסטרואידים
+cat.fx	אפקטים וקליעים
+cat.ui	ממשק המשחק
+cat.backgrounds	רקעים
+cat.sfx	אפקטים קוליים (SFX)
+cat.music	מוזיקה
+player.prev	הקודם
+player.play	נגן
+player.next	הבא
+player.pause	השהה
+decks.title	חפיסות
+decks.intro	חפיסות: %s, וכל אחת מאוירת בשני סגנונות. מכל חפיסה מוצגים כאן עשרה קלפים לדוגמה: חמישה בסגנון הראשון וחמישה בשני.
+decks.cards	קלפים: %s
+decks.free	חינם
+decks.free_badge	חינם
+decks.tr	תרגום
+visuals.title	עיצוב חזותי
+visuals.more	לכל העיצובים ←
+fleets.title	ציים
+fleets.teaser_intro	ציים: %s, בכל אחד שישה סוגי ספינות.
+fleets.teaser_intro_man	ציים: %s, בכל אחד שישה סוגי ספינות. תמרונים: %s, ומציירים אותם באצבע.
+fleets.more	לציים ולתמרונים ←
+lb.dialog	צילום מסך
+lb.hint	גלגלת לזום · גרירה להזזה · Esc לסגירה
+lb.zoom_out	הקטנה
+lb.zoom_in	הגדלה
+lb.fit	התאמה למסך
+lb.close	סגירה
+lb.open	הגדלת צילום המסך
+foot.logo_alt	Ananas&Bananas — פירות דיגיטליים & טכנולוגיה
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	←
+title.visuals	%s — גרפיקה — olin.now
+title.fleets	%s — ציים ותמרונים — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — גרפיקה
+board.aria	לוח שחמט 8×8
+fleets.page_title	ציים
+fleets.page_intro	%s ציים עבור %s. כל צי מצייר מחדש את כל ששת סוגי הספינות בגרסה לבנה ושחורה — הצי הוא מראה בלבד, ואינו משנה לא את תנועת הכלים ולא את הקרב.
+fleets.default	ברירת מחדל
+fleets.white	הצי הלבן
+fleets.black	הצי השחור
+fleets.audio_title	צליל הקרב
+fleets.sfx_note	את צליל הירייה והפיצוץ קובע היסוד של הספינה, לא הצי: הרגלי יורה קינטית, הפרש מים, הרץ אש, הצריח קרח, המלכה והמלך חשמל.
+fleets.music_note	בקרב מתנגן הנושא של הספינה התוקפת.
+man.title	תמרונים
+man.intro	%s תמרונים: שתים־עשרה משפחות שכל ספינה מבצעת בדרכה, ועוד אחד משלה. מפעילים אותם במחווה שמציירים על רשת 3×3 — כמו בפתיחת נעילה של אנדרואיד — והם עולים אנרגיה שמתמלאת מעצמה. המסלולים למטה נדגמו ישירות מקטלוג המשחק, כך שהספינה על הקנבס טסה בדיוק כמו בקרב.
+man.units	סוגי ספינות
+unit.pawn	רגלי
+unit.knight	פרש
+unit.bishop	רץ
+unit.rook	צריח
+unit.queen	מלכה
+unit.king	מלך
+unit.pawn.element	קינטי
+unit.knight.element	מים
+unit.bishop.element	אש
+unit.rook.element	קרח
+unit.queen.element	חשמלי
+unit.king.element	חשמלי
+man.path	מסלול התמרון %s
+man.energy	אנרגיה
+man.duration	משך
+man.secs	%s שנ׳
+man.shots	יריות
+man.untouchable_title	הקליעים עוברים דרכה
+man.untouchable	בלתי פגיעה
+man.shield_title	מרימה מגן
+man.shield	מגן
+man.control_title	השליטה נשארת אצל הטייס
+man.control	היגוי חופשי
+man.mirror_title	מחווה הפוכה מבצעת את התמרון ההפוך
+man.mirror	הפיך
+man.price_title	מחיר בקרדיטים
+man.price	%s קרדיטים
+man.starter	מההתחלה
+man.wins	ניצחונות: %s
+man.pack	חבילה %s
+num.decimal	.

@@ -1,0 +1,114 @@
+# Site chrome, Turkish. Same keys as cs.tsv, in the same order; see the notes there.
+nav.all_apps	← Tüm uygulamalar
+nav.back_to	← %s sayfasına dön
+nav.lang	Dil
+title.app	%s — olin.now
+title.skins	%s — skinler — olin.now
+badge.featured	★ Öne çıkan
+badge.mobile	Mobil
+sec.downloads	İndirmeler
+sec.description	Açıklama
+sec.shots_desktop	Ekran görüntüleri — masaüstü
+sec.shots_mobile	Ekran görüntüleri — mobil
+shots.empty.desktop	Henüz masaüstü ekran görüntüsü yok.
+shots.empty.mobile	Henüz mobil ekran görüntüsü yok.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Derlemeler yakında geliyor.
+skins.title	Skinler
+skins.teaser_intro	%s görsel tema — her birinin kendi sprite'ları, parallax arka planı, sesleri ve müziği var.
+skins.more	Tüm skinleri keşfet →
+skins.page_intro	%s görsel tema, hepsi %s için. Her skinin kendi gemileri, düşmanları, boss'ları, arka planları, sesleri ve uyarlanabilir müziği var.
+skins.disclaimer	Skinler klasik shoot 'em up oyunlarına serbest bir saygı duruşudur. %s, bu oyunların yapımcıları veya yayıncılarıyla hiçbir şekilde bağlantılı değildir ve orijinal grafiklerini ya da seslerini kullanmaz.
+skins.wiki	Vikipedi
+skins.vessels	%s gemi
+skins.pixelart	piksel sanatı
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	ton %s
+cat.preview	Önizleme
+cat.vessels	Gemiler
+cat.enemies	Düşmanlar
+cat.boss	Boss
+cat.asteroids	Asteroitler
+cat.fx	Efektler ve mermiler
+cat.ui	Oyun arayüzü
+cat.backgrounds	Arka planlar
+cat.sfx	Sesler (SFX)
+cat.music	Müzik
+player.prev	Önceki
+player.play	Oynat
+player.next	Sonraki
+player.pause	Duraklat
+decks.title	Desteler
+decks.intro	%s deste, her biri iki farklı çizim tarzında. Her desteden on örnek kart var: beşi birinci tarzda, beşi ikinci tarzda.
+decks.cards	%s kart
+decks.free	ücretsiz
+decks.free_badge	Ücretsiz
+decks.tr	Çeviri
+visuals.title	Görseller
+visuals.more	Tüm görselleri keşfet →
+fleets.title	Filolar
+fleets.teaser_intro	%s filo, her birinde altı gemi türü.
+fleets.teaser_intro_man	%s filo, her birinde altı gemi türü ve parmakla çizilen %s manevra.
+fleets.more	Filoları ve manevraları keşfet →
+lb.dialog	Ekran görüntüsü
+lb.hint	tekerlek yakınlaştırır · sürükleyerek kaydır · Esc kapatır
+lb.zoom_out	Uzaklaştır
+lb.zoom_in	Yakınlaştır
+lb.fit	Ekrana sığdır
+lb.close	Kapat
+lb.open	Ekran görüntüsünü büyüt
+foot.logo_alt	Ananas&Bananas — dijital meyve & teknoloji
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — görseller — olin.now
+title.fleets	%s — filolar ve manevralar — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — görseller
+board.aria	8×8 satranç tahtası
+fleets.page_title	Filolar
+fleets.page_intro	%s filo, hepsi %s için. Her biri altı gemi türünün hepsini beyaz ve siyah sürümüyle yeniden çizer — filo tamamen görseldir; ne taşların hareketini ne de savaşı değiştirir.
+fleets.default	varsayılan
+fleets.white	Beyaz filo
+fleets.black	Siyah filo
+fleets.audio_title	Savaş sesi
+fleets.sfx_note	Atış ve patlama sesini filo değil, geminin elementi belirler: piyon kinetik, at su, fil ateş, kale buz, vezir ve şah elektrik ateşler.
+fleets.music_note	Savaşta saldıran geminin teması çalar.
+man.title	Manevralar
+man.intro	%s manevra: her geminin kendi tarzında uçtuğu on iki aile ve bir de kendine özgü olanı. 3×3 ızgaraya çizilen bir hareketle başlatılır — Android kilidini açar gibi — ve kendiliğinden dolan enerji harcar. Aşağıdaki yörüngeler doğrudan oyunun kataloğundan örneklenmiştir; tuvaldeki gemi savaşta nasıl uçuyorsa öyle uçar.
+man.units	Gemi türleri
+unit.pawn	Piyon
+unit.knight	At
+unit.bishop	Fil
+unit.rook	Kale
+unit.queen	Vezir
+unit.king	Şah
+unit.pawn.element	kinetik
+unit.knight.element	su
+unit.bishop.element	ateş
+unit.rook.element	buz
+unit.queen.element	elektrik
+unit.king.element	elektrik
+man.path	%s manevrasının yörüngesi
+man.energy	Enerji
+man.duration	Süre
+man.secs	%s sn
+man.shots	Atışlar
+man.untouchable_title	Mermiler içinden geçer
+man.untouchable	dokunulmaz
+man.shield_title	Kalkan kaldırır
+man.shield	kalkan
+man.control_title	Kontrol pilotta kalır
+man.control	serbest kontrol
+man.mirror_title	Aynalanmış hareket aynalanmış manevrayı uçar
+man.mirror	aynalanabilir
+man.price_title	Kredi cinsinden fiyat
+man.price	%s kr.
+man.starter	baştan itibaren
+man.wins	%s galibiyet
+man.pack	%s paketi
+num.decimal	,

@@ -1,0 +1,114 @@
+# Site chrome, Arabic. Same keys as cs.tsv; see the notes there.
+nav.all_apps	→ كل التطبيقات
+nav.back_to	→ العودة إلى %s
+nav.lang	اللغة
+title.app	%s — olin.now
+title.skins	%s — المظاهر — olin.now
+badge.featured	★ مميّز
+badge.mobile	الجوّال
+sec.downloads	التنزيلات
+sec.description	الوصف
+sec.shots_desktop	لقطات الشاشة — سطح المكتب
+sec.shots_mobile	لقطات الشاشة — الجوّال
+shots.empty.desktop	لا توجد لقطات شاشة لسطح المكتب بعد.
+shots.empty.mobile	لا توجد لقطات شاشة للجوّال بعد.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	ستتوفر الإصدارات قريبًا.
+skins.title	المظاهر
+skins.teaser_intro	عدد السمات البصرية: %s — لكلٍّ منها رسومها الخاصة وخلفية بتأثير المنظور (parallax) وأصوات وموسيقى.
+skins.more	استكشف كل المظاهر ←
+skins.page_intro	عدد السمات البصرية: %s، صُممت خصيصًا لـ %s. لكل مظهر سفنه وأعداؤه وزعيمه وخلفياته وأصواته وموسيقاه التكيفية الخاصة.
+skins.disclaimer	المظاهر تحية حرة لألعاب التصويب الكلاسيكية. لا يرتبط %s بأي شكل بمطوّريها أو ناشريها، ولا يستخدم رسوماتها أو أصواتها الأصلية.
+skins.wiki	ويكيبيديا
+skins.vessels	السفن: %s
+skins.pixelart	فن البكسل
+skins.bloom	توهج %s
+skins.crt	CRT %s
+skins.tint	تلوين %s
+cat.preview	معاينة
+cat.vessels	السفن
+cat.enemies	الأعداء
+cat.boss	الزعيم
+cat.asteroids	الكويكبات
+cat.fx	المؤثرات والمقذوفات
+cat.ui	واجهة اللعبة
+cat.backgrounds	الخلفيات
+cat.sfx	المؤثرات الصوتية (SFX)
+cat.music	الموسيقى
+player.prev	السابق
+player.play	تشغيل
+player.next	التالي
+player.pause	إيقاف مؤقت
+decks.title	مجموعات البطاقات
+decks.intro	عدد المجموعات: %s، وكل منها مرسومة بأسلوبين فنيين. إليك عشر بطاقات نموذجية من كل مجموعة: خمس بالأسلوب الأول وخمس بالثاني.
+decks.cards	البطاقات: %s
+decks.free	مجانًا
+decks.free_badge	مجاني
+decks.tr	الترجمة
+visuals.title	المرئيات
+visuals.more	استكشف كل المرئيات ←
+fleets.title	الأساطيل
+fleets.teaser_intro	عدد الأساطيل: %s، ويضم كل منها ستة أنواع من السفن.
+fleets.teaser_intro_man	عدد الأساطيل: %s، ويضم كل منها ستة أنواع من السفن. عدد المناورات: %s، وتُرسم بالإصبع.
+fleets.more	استكشف الأساطيل والمناورات ←
+lb.dialog	لقطة شاشة
+lb.hint	العجلة للتكبير · اسحب للتحريك · Esc للإغلاق
+lb.zoom_out	تصغير
+lb.zoom_in	تكبير
+lb.fit	ملاءمة الشاشة
+lb.close	إغلاق
+lb.open	تكبير لقطة الشاشة
+foot.logo_alt	Ananas&Bananas — فاكهة رقمية & تقنية
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	←
+title.visuals	%s — المرئيات — olin.now
+title.fleets	%s — الأساطيل والمناورات — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — المرئيات
+board.aria	رقعة شطرنج 8×8
+fleets.page_title	الأساطيل
+fleets.page_intro	%s أسطولًا للعبة %s. يعيد كل أسطول رسم أنواع السفن الستة بنسختين بيضاء وسوداء — الأسطول مظهر فقط، لا يغيّر حركة القطع ولا المعركة.
+fleets.default	الافتراضي
+fleets.white	الأسطول الأبيض
+fleets.black	الأسطول الأسود
+fleets.audio_title	صوت المعركة
+fleets.sfx_note	صوت الطلقة والانفجار يحدده عنصر السفينة لا الأسطول: البيدق يطلق طلقات حركية، والحصان ماءً، والفيل نارًا، والقلعة جليدًا، والوزير والملك كهرباء.
+fleets.music_note	في المعركة يُعزف لحن السفينة المهاجِمة.
+man.title	المناورات
+man.intro	%s مناورة: اثنتا عشرة عائلة تنفّذها كل سفينة على طريقتها، وواحدة خاصة بها. تُطلق بإيماءة تُرسم على شبكة 3×3 — كفتح قفل هاتف أندرويد — وتستهلك طاقة تتجدد وحدها. المسارات أدناه مأخوذة مباشرة من كتالوج اللعبة، فتطير السفينة على اللوحة كما تطير في المعركة تمامًا.
+man.units	أنواع السفن
+unit.pawn	بيدق
+unit.knight	حصان
+unit.bishop	فيل
+unit.rook	قلعة
+unit.queen	وزير
+unit.king	ملك
+unit.pawn.element	حركي
+unit.knight.element	مائي
+unit.bishop.element	ناري
+unit.rook.element	جليدي
+unit.queen.element	كهربائي
+unit.king.element	كهربائي
+man.path	مسار المناورة %s
+man.energy	الطاقة
+man.duration	المدة
+man.secs	%s ث
+man.shots	الطلقات
+man.untouchable_title	القذائف تخترقها
+man.untouchable	لا تُصاب
+man.shield_title	ترفع درعًا
+man.shield	درع
+man.control_title	يبقى التوجيه بيد الطيار
+man.control	توجيه حر
+man.mirror_title	الإيماءة المعكوسة تنفّذ المناورة المعكوسة
+man.mirror	قابلة للعكس
+man.price_title	السعر بالرصيد
+man.price	%s رصيد
+man.starter	منذ البداية
+man.wins	الانتصارات: %s
+man.pack	الحزمة %s
+num.decimal	.

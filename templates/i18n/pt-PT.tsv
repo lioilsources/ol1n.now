@@ -1,0 +1,114 @@
+# Site chrome, European Portuguese. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← Todas as aplicações
+nav.back_to	← Voltar a %s
+nav.lang	Idioma
+title.app	%s — olin.now
+title.skins	%s — skins — olin.now
+badge.featured	★ Em destaque
+badge.mobile	Telemóvel
+sec.downloads	Transferências
+sec.description	Descrição
+sec.shots_desktop	Capturas de ecrã — computador
+sec.shots_mobile	Capturas de ecrã — telemóvel
+shots.empty.desktop	Ainda sem capturas de ecrã para computador.
+shots.empty.mobile	Ainda sem capturas de ecrã para telemóvel.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Versões disponíveis em breve.
+skins.title	Skins
+skins.teaser_intro	%s temas visuais, cada um com sprites, fundo parallax, sons e música próprios.
+skins.more	Explorar todas as skins →
+skins.page_intro	%s temas visuais para %s. Cada skin tem naves, inimigos, bosses, fundos, sons e música adaptativa próprios.
+skins.disclaimer	As skins são uma homenagem livre aos jogos de naves clássicos. %s não tem qualquer ligação aos seus autores ou editoras e não utiliza os seus gráficos nem sons originais.
+skins.wiki	Wikipédia
+skins.vessels	%s naves
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	tom %s
+cat.preview	Pré-visualização
+cat.vessels	Naves
+cat.enemies	Inimigos
+cat.boss	Boss
+cat.asteroids	Asteroides
+cat.fx	Efeitos e projéteis
+cat.ui	Interface do jogo
+cat.backgrounds	Fundos
+cat.sfx	Sons (SFX)
+cat.music	Música
+player.prev	Anterior
+player.play	Reproduzir
+player.next	Seguinte
+player.pause	Pausa
+decks.title	Baralhos
+decks.intro	%s baralhos, cada um desenhado em dois estilos. De cada um, dez cartas de exemplo: cinco no primeiro estilo, cinco no segundo.
+decks.cards	%s cartas
+decks.free	grátis
+decks.free_badge	Grátis
+decks.tr	Tradução
+visuals.title	Visuais
+visuals.more	Explorar todos os visuais →
+fleets.title	Frotas
+fleets.teaser_intro	%s frotas com seis tipos de nave cada.
+fleets.teaser_intro_man	%s frotas com seis tipos de nave cada e %s manobras que se desenham com o dedo.
+fleets.more	Explorar frotas e manobras →
+lb.dialog	Captura de ecrã
+lb.hint	a roda faz zoom · arraste para mover · Esc fecha
+lb.zoom_out	Reduzir
+lb.zoom_in	Ampliar
+lb.fit	Ajustar ao ecrã
+lb.close	Fechar
+lb.open	Ampliar captura de ecrã
+foot.logo_alt	Ananas&Bananas — fruta digital & tecnologia
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — visuais — olin.now
+title.fleets	%s — frotas e manobras — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — visuais
+board.aria	Tabuleiro de xadrez 8×8
+fleets.page_title	Frotas
+fleets.page_intro	%s frotas para %s. Cada uma redesenha os seis tipos de nave em versão branca e preta — a frota é puramente visual: não muda nem o movimento das peças nem o combate.
+fleets.default	predefinida
+fleets.white	Frota branca
+fleets.black	Frota preta
+fleets.audio_title	Som do combate
+fleets.sfx_note	O som do disparo e da explosão vem do elemento da nave, não da frota: o peão dispara cinético, o cavalo água, o bispo fogo, a torre gelo, a dama e o rei eletricidade.
+fleets.music_note	No combate ouve-se o tema da nave atacante.
+man.title	Manobras
+man.intro	%s manobras: doze famílias que cada nave executa à sua maneira, mais uma própria. São ativadas por um gesto desenhado numa grelha 3×3 — como desbloquear um Android — e custam energia, que se recarrega sozinha. As trajetórias abaixo são amostradas diretamente do catálogo do jogo, por isso a nave na tela voa exatamente como em combate.
+man.units	Tipos de nave
+unit.pawn	Peão
+unit.knight	Cavalo
+unit.bishop	Bispo
+unit.rook	Torre
+unit.queen	Dama
+unit.king	Rei
+unit.pawn.element	cinético
+unit.knight.element	água
+unit.bishop.element	fogo
+unit.rook.element	gelo
+unit.queen.element	elétrico
+unit.king.element	elétrico
+man.path	Trajetória da manobra %s
+man.energy	Energia
+man.duration	Duração
+man.secs	%s s
+man.shots	Disparos
+man.untouchable_title	Os projéteis atravessam
+man.untouchable	intocável
+man.shield_title	Ergue um escudo
+man.shield	escudo
+man.control_title	O piloto mantém o controlo
+man.control	controlo livre
+man.mirror_title	Um gesto espelhado executa a manobra espelhada
+man.mirror	espelhável
+man.price_title	Preço em créditos
+man.price	%s cr.
+man.starter	desde o início
+man.wins	vitórias: %s
+man.pack	pacote %s
+num.decimal	,

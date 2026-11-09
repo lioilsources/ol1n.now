@@ -1,11 +1,9 @@
-# Site chrome, French. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
-# skins gallery ships this language.
+# Site chrome, French. Same keys as cs.tsv; see the notes there.
 nav.all_apps	← Toutes les applis
 nav.back_to	← Retour à %s
 nav.lang	Langue
 title.app	%s — olin.now
+title.skins	%s — skins — olin.now
 badge.featured	★ À la une
 badge.mobile	Mobile
 sec.downloads	Téléchargements
@@ -14,12 +12,103 @@ sec.shots_desktop	Captures d'écran — ordinateur
 sec.shots_mobile	Captures d'écran — mobile
 shots.empty.desktop	Pas encore de captures d'écran pour ordinateur.
 shots.empty.mobile	Pas encore de captures d'écran pour mobile.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Versions bientôt disponibles.
+skins.title	Skins
+skins.teaser_intro	%s thèmes visuels, chacun avec ses propres sprites, son fond en parallaxe, ses sons et sa musique.
+skins.more	Découvrir tous les skins →
+skins.page_intro	%s thèmes visuels pour %s. Chaque skin a ses propres vaisseaux, ennemis, boss, fonds, sons et sa musique adaptative.
+skins.disclaimer	Les skins sont un libre hommage aux shoot'em up classiques. %s n'a aucun lien avec leurs auteurs ou éditeurs et n'utilise ni leurs graphismes ni leurs sons d'origine.
+skins.wiki	Wikipédia
+skins.vessels	%s vaisseaux
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	teinte %s
+cat.preview	Aperçu
+cat.vessels	Vaisseaux
+cat.enemies	Ennemis
+cat.boss	Boss
+cat.asteroids	Astéroïdes
+cat.fx	Effets et projectiles
+cat.ui	Interface de jeu
+cat.backgrounds	Fonds
+cat.sfx	Sons (SFX)
+cat.music	Musique
+player.prev	Précédent
+player.play	Lecture
+player.next	Suivant
+player.pause	Pause
 decks.title	Paquets
 decks.intro	%s paquets de cartes, chacun dessiné dans deux styles. Voici dix cartes de chacun : cinq dans le premier style, cinq dans le second.
 decks.cards	%s cartes
 decks.free	gratuit
 decks.free_badge	Gratuit
 decks.tr	Traduction
+visuals.title	Visuels
+visuals.more	Découvrir tous les visuels →
+fleets.title	Flottes
+fleets.teaser_intro	%s flottes de six types de vaisseaux chacune.
+fleets.teaser_intro_man	%s flottes de six types de vaisseaux chacune et %s manœuvres à dessiner du doigt.
+fleets.more	Découvrir les flottes et manœuvres →
+lb.dialog	Capture d'écran
+lb.hint	molette pour zoomer · glisser pour déplacer · Échap pour fermer
+lb.zoom_out	Zoom arrière
+lb.zoom_in	Zoom avant
+lb.fit	Ajuster à l'écran
+lb.close	Fermer
+lb.open	Agrandir la capture d'écran
+foot.logo_alt	Ananas&Bananas — fruits numériques & technologie
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — visuels — olin.now
+title.fleets	%s — flottes et manœuvres — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — visuels
+board.aria	Échiquier 8×8
+fleets.page_title	Flottes
+fleets.page_intro	%s flottes pour %s. Chacune redessine les six types de vaisseaux en version blanche et noire — une flotte est purement visuelle : elle ne change ni le déplacement des pièces ni le combat.
+fleets.default	par défaut
+fleets.white	Flotte blanche
+fleets.black	Flotte noire
+fleets.audio_title	Son du combat
+fleets.sfx_note	Le son du tir et de l'explosion dépend de l'élément du vaisseau, pas de la flotte : le pion tire en cinétique, le cavalier à l'eau, le fou au feu, la tour à la glace, la dame et le roi à l'électricité.
+fleets.music_note	Pendant le combat, on entend le thème du vaisseau attaquant.
+man.title	Manœuvres
+man.intro	%s manœuvres : douze familles que chaque vaisseau exécute à sa façon, plus une qui lui est propre. On les déclenche par un geste tracé sur une grille 3×3 — comme pour déverrouiller un Android — et elles coûtent de l'énergie, qui se recharge toute seule. Les trajectoires ci-dessous sont échantillonnées directement dans le catalogue du jeu : le vaisseau sur le canevas vole exactement comme en combat.
+man.units	Types de vaisseaux
+unit.pawn	Pion
+unit.knight	Cavalier
+unit.bishop	Fou
+unit.rook	Tour
+unit.queen	Dame
+unit.king	Roi
+unit.pawn.element	cinétique
+unit.knight.element	eau
+unit.bishop.element	feu
+unit.rook.element	glace
+unit.queen.element	électrique
+unit.king.element	électrique
+man.path	Trajectoire de la manœuvre %s
+man.energy	Énergie
+man.duration	Durée
+man.secs	%s s
+man.shots	Tirs
+man.untouchable_title	Les projectiles le traversent
+man.untouchable	intouchable
+man.shield_title	Lève un bouclier
+man.shield	bouclier
+man.control_title	Le pilote garde les commandes
+man.control	pilotage libre
+man.mirror_title	Un geste en miroir exécute la manœuvre en miroir
+man.mirror	symétrisable
+man.price_title	Prix en crédits
+man.price	%s cr.
+man.starter	dès le début
+man.wins	victoires : %s
+man.pack	pack %s
+num.decimal	,

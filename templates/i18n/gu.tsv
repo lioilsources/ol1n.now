@@ -1,0 +1,114 @@
+# Site chrome, Gujarati. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← બધી ઍપ્સ
+nav.back_to	← %s પર પાછા જાઓ
+nav.lang	ભાષા
+title.app	%s — olin.now
+title.skins	%s — સ્કિન — olin.now
+badge.featured	★ વિશેષ
+badge.mobile	મોબાઇલ
+sec.downloads	ડાઉનલોડ
+sec.description	વર્ણન
+sec.shots_desktop	સ્ક્રીનશૉટ — ડેસ્કટૉપ
+sec.shots_mobile	સ્ક્રીનશૉટ — મોબાઇલ
+shots.empty.desktop	હજી ડેસ્કટૉપના સ્ક્રીનશૉટ નથી.
+shots.empty.mobile	હજી મોબાઇલના સ્ક્રીનશૉટ નથી.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	બિલ્ડ ટૂંક સમયમાં ઉપલબ્ધ થશે.
+skins.title	સ્કિન
+skins.teaser_intro	%s વિઝ્યુઅલ થીમ — દરેકમાં પોતાના સ્પ્રાઇટ, પેરેલૅક્સ બૅકગ્રાઉન્ડ, અવાજ અને સંગીત.
+skins.more	બધી સ્કિન જુઓ →
+skins.page_intro	%s વિઝ્યુઅલ થીમ — %s માટે. દરેક સ્કિનમાં પોતાનાં જહાજ, દુશ્મનો, બૉસ, બૅકગ્રાઉન્ડ, અવાજ અને ઍડૅપ્ટિવ સંગીત છે.
+skins.disclaimer	સ્કિન ક્લાસિક શૂટર ગેમ્સને એક મુક્ત અંજલિ છે. %sનો તેમના સર્જકો કે પ્રકાશકો સાથે કોઈ સંબંધ નથી અને તે તેમના મૂળ ગ્રાફિક્સ કે અવાજોનો ઉપયોગ કરતું નથી.
+skins.wiki	વિકિપીડિયા
+skins.vessels	જહાજ: %s
+skins.pixelart	પિક્સેલ આર્ટ
+skins.bloom	બ્લૂમ %s
+skins.crt	CRT %s
+skins.tint	ટિન્ટ %s
+cat.preview	પૂર્વાવલોકન
+cat.vessels	જહાજ
+cat.enemies	દુશ્મનો
+cat.boss	બૉસ
+cat.asteroids	લઘુગ્રહો
+cat.fx	ઇફેક્ટ અને ગોળીઓ
+cat.ui	ગેમ ઇન્ટરફેસ
+cat.backgrounds	બૅકગ્રાઉન્ડ
+cat.sfx	સાઉન્ડ ઇફેક્ટ (SFX)
+cat.music	સંગીત
+player.prev	પાછલું
+player.play	ચલાવો
+player.next	આગલું
+player.pause	થોભાવો
+decks.title	ડેક
+decks.intro	%s ડેક, દરેક બે કલાશૈલીમાં દોરેલું. દરેકમાંથી દસ નમૂના કાર્ડ: પાંચ પહેલી શૈલીમાં, પાંચ બીજીમાં.
+decks.cards	%s કાર્ડ
+decks.free	મફત
+decks.free_badge	મફત
+decks.tr	અનુવાદ
+visuals.title	વિઝ્યુઅલ્સ
+visuals.more	બધા વિઝ્યુઅલ્સ જુઓ →
+fleets.title	કાફલા
+fleets.teaser_intro	કાફલા: %s, દરેકમાં છ પ્રકારનાં જહાજ.
+fleets.teaser_intro_man	કાફલા: %s, દરેકમાં છ પ્રકારનાં જહાજ. આંગળીથી દોરાતા દાવપેચ: %s.
+fleets.more	કાફલા અને દાવપેચ જુઓ →
+lb.dialog	સ્ક્રીનશૉટ
+lb.hint	વ્હીલથી ઝૂમ · ખેંચીને ખસેડો · Esc થી બંધ
+lb.zoom_out	ઝૂમ આઉટ
+lb.zoom_in	ઝૂમ ઇન
+lb.fit	સ્ક્રીનમાં ફિટ કરો
+lb.close	બંધ કરો
+lb.open	સ્ક્રીનશૉટ મોટો કરો
+foot.logo_alt	Ananas&Bananas — ડિજિટલ ફળ & ટેક્નોલોજી
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — વિઝ્યુઅલ — olin.now
+title.fleets	%s — કાફલા અને દાવપેચ — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — વિઝ્યુઅલ
+board.aria	8×8 શતરંજનું પાટિયું
+fleets.page_title	કાફલા
+fleets.page_intro	કાફલા: %s, %s માટે. દરેક કાફલો જહાજના છએ પ્રકાર સફેદ અને કાળા સંસ્કરણમાં નવેસરથી દોરે છે — કાફલો માત્ર દેખાવ છે, તે મહોરાંની ચાલ કે લડાઈ બદલતો નથી.
+fleets.default	ડિફૉલ્ટ
+fleets.white	સફેદ કાફલો
+fleets.black	કાળો કાફલો
+fleets.audio_title	લડાઈનો અવાજ
+fleets.sfx_note	ગોળી અને વિસ્ફોટનો અવાજ કાફલો નહીં, જહાજનું તત્વ નક્કી કરે છે: પ્યાદું ગતિજ ગોળી છોડે છે, ઘોડો પાણી, ઊંટ આગ, હાથી બરફ, વજીર અને રાજા વીજળી.
+fleets.music_note	લડાઈમાં હુમલો કરનાર જહાજની ધૂન વાગે છે.
+man.title	દાવપેચ
+man.intro	%s દાવપેચ: બાર પરિવાર, જે દરેક જહાજ પોતાની રીતે ઉડાડે છે, અને એક તેનો પોતાનો. 3×3 ગ્રિડ પર દોરેલા ઇશારાથી તે શરૂ થાય છે — Androidનું લૉક ખોલવા જેવું — અને જાતે ભરાતી ઊર્જા વાપરે છે. નીચેના માર્ગ સીધા રમતની સૂચિમાંથી લીધેલા નમૂના છે, એટલે કૅનવાસ પરનું જહાજ લડાઈ જેવું જ ઊડે છે.
+man.units	જહાજના પ્રકાર
+unit.pawn	પ્યાદું
+unit.knight	ઘોડો
+unit.bishop	ઊંટ
+unit.rook	હાથી
+unit.queen	વજીર
+unit.king	રાજા
+unit.pawn.element	ગતિજ
+unit.knight.element	પાણી
+unit.bishop.element	અગ્નિ
+unit.rook.element	બરફ
+unit.queen.element	વિદ્યુત
+unit.king.element	વિદ્યુત
+man.path	દાવપેચ %sનો માર્ગ
+man.energy	ઊર્જા
+man.duration	સમયગાળો
+man.secs	%s સે.
+man.shots	ગોળીઓ
+man.untouchable_title	ગોળા આરપાર જાય છે
+man.untouchable	અસ્પૃશ્ય
+man.shield_title	ઢાલ ઊંચી કરે છે
+man.shield	ઢાલ
+man.control_title	સ્ટિયરિંગ પાઇલટ પાસે જ રહે છે
+man.control	મુક્ત સ્ટિયરિંગ
+man.mirror_title	ઊલટો ઇશારો ઊલટો દાવપેચ ઉડાડે છે
+man.mirror	ઊલટાવી શકાય
+man.price_title	ક્રેડિટમાં કિંમત
+man.price	%s ક્રેડિટ
+man.starter	શરૂઆતથી
+man.wins	જીત: %s
+man.pack	પૅક %s
+num.decimal	.

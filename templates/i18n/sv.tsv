@@ -1,0 +1,114 @@
+# Site chrome, Swedish. Same keys as cs.tsv, in the same order; see the notes there.
+nav.all_apps	← Alla appar
+nav.back_to	← Tillbaka till %s
+nav.lang	Språk
+title.app	%s — olin.now
+title.skins	%s — skins — olin.now
+badge.featured	★ Utvald
+badge.mobile	Mobil
+sec.downloads	Nedladdningar
+sec.description	Beskrivning
+sec.shots_desktop	Skärmbilder — dator
+sec.shots_mobile	Skärmbilder — mobil
+shots.empty.desktop	Inga skärmbilder än (dator).
+shots.empty.mobile	Inga skärmbilder än (mobil).
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Byggen kommer snart.
+skins.title	Skins
+skins.teaser_intro	%s visuella teman — vart och ett med egna sprites, parallaxbakgrund, ljud och musik.
+skins.more	Utforska alla skins →
+skins.page_intro	%s visuella teman för %s. Varje skin har egna skepp, fiender, bossar, bakgrunder, ljud och adaptiv musik.
+skins.disclaimer	Skinsen är en fri hyllning till klassiska shoot 'em up-spel. %s har ingen koppling till deras skapare eller utgivare och använder inte deras originalgrafik eller ljud.
+skins.wiki	Wikipedia
+skins.vessels	Skepp: %s
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	färgton %s
+cat.preview	Förhandsvisning
+cat.vessels	Skepp
+cat.enemies	Fiender
+cat.boss	Boss
+cat.asteroids	Asteroider
+cat.fx	Effekter och projektiler
+cat.ui	Spelgränssnitt
+cat.backgrounds	Bakgrunder
+cat.sfx	Ljud (SFX)
+cat.music	Musik
+player.prev	Föregående
+player.play	Spela
+player.next	Nästa
+player.pause	Pausa
+decks.title	Kortlekar
+decks.intro	%s kortlekar, alla ritade i två bildstilar. Här är tio exempelkort från varje: fem i den första stilen, fem i den andra.
+decks.cards	%s kort
+decks.free	gratis
+decks.free_badge	Gratis
+decks.tr	Översättning
+visuals.title	Grafik
+visuals.more	Utforska all grafik →
+fleets.title	Flottor
+fleets.teaser_intro	%s flottor med sex skeppstyper vardera.
+fleets.teaser_intro_man	%s flottor med sex skeppstyper vardera och %s manövrar som ritas med fingret.
+fleets.more	Utforska flottor och manövrar →
+lb.dialog	Skärmbild
+lb.hint	hjulet zoomar · dra för att flytta · Esc stänger
+lb.zoom_out	Zooma ut
+lb.zoom_in	Zooma in
+lb.fit	Anpassa till skärmen
+lb.close	Stäng
+lb.open	Förstora skärmbild
+foot.logo_alt	Ananas&Bananas — digital frukt & teknik
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — grafik — olin.now
+title.fleets	%s — flottor och manövrar — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — grafik
+board.aria	Schackbräde 8×8
+fleets.page_title	Flottor
+fleets.page_intro	%s flottor för %s. Var och en ritar om alla sex skeppstyper i en vit och en svart version — en flotta är bara grafik och ändrar varken hur pjäserna går eller striden.
+fleets.default	standard
+fleets.white	Vit flotta
+fleets.black	Svart flotta
+fleets.audio_title	Stridsljud
+fleets.sfx_note	Ljudet av skott och explosion styrs av skeppets element, inte av flottan: bonden skjuter kinetiskt, springaren vatten, löparen eld, tornet is, damen och kungen elektricitet.
+fleets.music_note	I striden spelas det anfallande skeppets tema.
+man.title	Manövrar
+man.intro	%s manövrar: tolv familjer som varje skepp flyger på sitt eget sätt, plus en egen. De utlöses med en gest ritad i ett 3×3-rutnät — som när man låser upp en Android — och kostar energi som laddas upp av sig själv. Banorna nedan är samplade direkt ur spelets katalog, så skeppet på duken flyger exakt som i strid.
+man.units	Skeppstyper
+unit.pawn	Bonde
+unit.knight	Springare
+unit.bishop	Löpare
+unit.rook	Torn
+unit.queen	Dam
+unit.king	Kung
+unit.pawn.element	kinetisk
+unit.knight.element	vatten
+unit.bishop.element	eld
+unit.rook.element	is
+unit.queen.element	elektrisk
+unit.king.element	elektrisk
+man.path	Banan för manövern %s
+man.energy	Energi
+man.duration	Varaktighet
+man.secs	%s s
+man.shots	Skott
+man.untouchable_title	Skott går igenom
+man.untouchable	oträffbar
+man.shield_title	Höjer en sköld
+man.shield	sköld
+man.control_title	Styrningen stannar hos piloten
+man.control	fri styrning
+man.mirror_title	En spegelvänd gest flyger den spegelvända manövern
+man.mirror	spegelbar
+man.price_title	Pris i krediter
+man.price	%s kr.
+man.starter	från start
+man.wins	segrar: %s
+man.pack	paket %s
+num.decimal	,

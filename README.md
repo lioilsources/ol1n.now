@@ -45,6 +45,8 @@ Volitelně přidej `apps/<slug>/icon.png` (čtvercová ikona). Hotovo — build 
 | `artifacts` | CSV bucketů pro `make fetch`; default `macos,windows,linux,android`. `mod` = platformově neutrální `.zip` (Luanti mod) |
 | `appstore` / `playstore` / `testflight` / `contentdb` | URL na obchody (volitelné) |
 | `langs` | CSV jazyků aplikace, např. `cs,ja`; default `cs` (viz [Jazyky](#jazyky)) |
+| `icon_src` | cesta k největší čtvercové ikoně v repu aplikace (pro `make store-icons`) |
+| `visuals` | věta nad galerií vizuálů (`{n}` = počet); smí být i v `i18n/<lang>.md` |
 
 ## Jazyky
 
@@ -76,8 +78,41 @@ Galerie se překládá na úrovni dat, ne šablony: řádky s klíčem
 herního repa, aniž by překlad zneplatnil; buňka bez řádku projde beze změny —
 což je přesně to, co vlastní jména (`Falcon X`, `Bouncer`, názvy skinů) chtějí.
 
-Dnes má druhý jazyk (japonštinu) jen **kirian**. Podstránky vizuálů a flotil mají
-nadpisy pořád ve skriptu, takže se staví jen v základním jazyce.
+Web zná **45 jazyků** (sada App Store bez regionálních variant, kódy BCP 47:
+`nb`, `pt-PT`, `zh-Hans`, `zh-Hant`). Každý má katalog `templates/i18n/<lang>.tsv`
+se všemi klíči z `cs.tsv`, vlaječku `assets/img/flag-<lang>.svg` a vlastní název v
+`lang_name` (`scripts/i18n.sh`). Poznámky k překládání (formáty `%s`, šipky v RTL)
+jsou v hlavičce `cs.tsv`; nový klíč patří do `cs.tsv` i do všech ostatních katalogů.
+
+- **RTL:** `ar`, `he`, `ur` dostanou `<html dir="rtl">` (`lang_rtl`); `store.css`
+  používá logické vlastnosti (`inset-inline-end`, `padding-inline-start` …), takže se
+  zrcadlí samo. Šipky „zpět/dál“ jsou v jejich katalozích otočené.
+- **Písma:** jen systémová; `store.css` má pro CJK, arabštinu, urdštinu, hebrejštinu,
+  thajštinu a indická písma vlastní fallbacky přes `:lang()`.
+- **Index:** `index.html` zůstává český; pro každý jazyk, který má aspoň jedna aplikace,
+  vznikne `index.<lang>.html`. Karta aplikace s tím jazykem je přeložená a vede na
+  `<slug>.<lang>.html`, ostatní mají český tagline a vedou na českou stránku. Na všech
+  indexech je jazykové menu a `<link rel="alternate">`.
+- Jazyk, který appka deklaruje, ale nemá k němu `i18n/<lang>.md`, ukáže český popis
+  označený `lang="cs"`.
+- Lightbox (`store.js`) bere popisky z `data-lb-*` na patičce; čeština je zabudovaná.
+
+Podstránky vizuálů, flotil a `apps/<slug>/pages/` se dál staví jen česky
+(nadpisy jsou ve skriptu); upoutávky na ně na stránce aplikace jsou přeložené.
+
+## Ikony do obchodů
+
+`make store-icons` (jen lokálně, na CI ne) stáhne pro každou aplikaci s `repo:` a
+`icon_src:` ikonu přes `gh api` a vyrobí do `store-screenshots/<slug>/icons/`:
+
+- `appstore-1024.png` — 1024×1024, sRGB, **bez alfa kanálu** (zploštěno na barvu levého
+  horního rohu, u průhledného rohu na bílou),
+- `play-512.png` — 512×512, 32bit PNG.
+
+Zdroj menší než 1024 px se zvětší s hláškou `WARN`, nečtvercový se doplní na čtverec.
+`make store-icons APP="kirian lexify"` omezí běh na vybrané aplikace,
+`UPDATE_SITE_ICON=1` navíc přepíše `apps/<slug>/icon.png` (512×512, jen ze zdroje
+≥ 512 px). `store-screenshots/` je v `.gitignore`; nahrávání do obchodů je ruční.
 
 ## Screenshoty
 
@@ -185,7 +220,7 @@ je potřeba přeložit znovu. `make og` vyrobí náhledové obrázky pro sdílen
 ## Závislosti
 
 - `bash`, `awk`, `sed` (běžné)
-- `gh` CLI (pro `make fetch`)
+- `gh` CLI (pro `make fetch` a `make store-icons`)
 - ImageMagick `magick` (pro `make screenshots`, `make import-skins`, `make import-fleets`) — `brew install imagemagick`
   (pro skiny je potřeba WebP delegát: `magick -list format | grep WEBP`)
 - `ffmpeg` (videa v galerii + audio skinů a flotil) — `brew install ffmpeg`

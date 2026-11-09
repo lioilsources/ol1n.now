@@ -1,0 +1,114 @@
+# Site chrome, Telugu. Same keys as cs.tsv; see the notes there.
+nav.all_apps	← అన్ని యాప్‌లు
+nav.back_to	← %sకు తిరిగి వెళ్ళండి
+nav.lang	భాష
+title.app	%s — olin.now
+title.skins	%s — స్కిన్‌లు — olin.now
+badge.featured	★ ప్రత్యేకం
+badge.mobile	మొబైల్
+sec.downloads	డౌన్‌లోడ్‌లు
+sec.description	వివరణ
+sec.shots_desktop	స్క్రీన్‌షాట్‌లు — డెస్క్‌టాప్
+sec.shots_mobile	స్క్రీన్‌షాట్‌లు — మొబైల్
+shots.empty.desktop	డెస్క్‌టాప్ స్క్రీన్‌షాట్‌లు ఇంకా లేవు.
+shots.empty.mobile	మొబైల్ స్క్రీన్‌షాట్‌లు ఇంకా లేవు.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	బిల్డ్‌లు త్వరలో అందుబాటులోకి వస్తాయి.
+skins.title	స్కిన్‌లు
+skins.teaser_intro	%s విజువల్ థీమ్‌లు — ప్రతిదానికీ సొంత స్ప్రైట్‌లు, పారలాక్స్ బ్యాక్‌గ్రౌండ్, సౌండ్‌లు, సంగీతం.
+skins.more	అన్ని స్కిన్‌లను చూడండి →
+skins.page_intro	%s విజువల్ థీమ్‌లు — %s కోసం. ప్రతి స్కిన్‌కూ సొంత నౌకలు, శత్రువులు, బాస్, బ్యాక్‌గ్రౌండ్‌లు, సౌండ్‌లు, అడాప్టివ్ సంగీతం ఉన్నాయి.
+skins.disclaimer	స్కిన్‌లు క్లాసిక్ షూటర్ గేమ్‌లకు ఒక స్వేచ్ఛా నివాళి. %sకు వాటి సృష్టికర్తలతో గానీ ప్రచురణకర్తలతో గానీ ఎలాంటి సంబంధం లేదు, వాటి అసలు గ్రాఫిక్స్‌ను లేదా సౌండ్‌లను ఇది ఉపయోగించదు.
+skins.wiki	వికీపీడియా
+skins.vessels	నౌకలు: %s
+skins.pixelart	పిక్సెల్ ఆర్ట్
+skins.bloom	బ్లూమ్ %s
+skins.crt	CRT %s
+skins.tint	టింట్ %s
+cat.preview	ప్రివ్యూ
+cat.vessels	నౌకలు
+cat.enemies	శత్రువులు
+cat.boss	బాస్
+cat.asteroids	గ్రహశకలాలు
+cat.fx	ఎఫెక్ట్‌లు, తూటాలు
+cat.ui	గేమ్ ఇంటర్‌ఫేస్
+cat.backgrounds	బ్యాక్‌గ్రౌండ్‌లు
+cat.sfx	సౌండ్ ఎఫెక్ట్‌లు (SFX)
+cat.music	సంగీతం
+player.prev	మునుపటి
+player.play	ప్లే చేయి
+player.next	తదుపరి
+player.pause	పాజ్
+decks.title	డెక్‌లు
+decks.intro	%s డెక్‌లు, ప్రతిదీ రెండు చిత్ర శైలుల్లో గీసినది. ప్రతిదాని నుంచి పది నమూనా కార్డులు: ఐదు మొదటి శైలిలో, ఐదు రెండో శైలిలో.
+decks.cards	%s కార్డులు
+decks.free	ఉచితం
+decks.free_badge	ఉచితం
+decks.tr	అనువాదం
+visuals.title	విజువల్స్
+visuals.more	అన్ని విజువల్స్ చూడండి →
+fleets.title	నౌకాదళాలు
+fleets.teaser_intro	నౌకాదళాలు: %s, ఒక్కోదానిలో ఆరు రకాల నౌకలు.
+fleets.teaser_intro_man	నౌకాదళాలు: %s, ఒక్కోదానిలో ఆరు రకాల నౌకలు. వేలితో గీసే విన్యాసాలు: %s.
+fleets.more	నౌకాదళాలు, విన్యాసాలు చూడండి →
+lb.dialog	స్క్రీన్‌షాట్
+lb.hint	వీల్‌తో జూమ్ · లాగి కదపండి · Esc మూసివేస్తుంది
+lb.zoom_out	జూమ్ అవుట్
+lb.zoom_in	జూమ్ ఇన్
+lb.fit	స్క్రీన్‌కు సరిపెట్టు
+lb.close	మూసివేయి
+lb.open	స్క్రీన్‌షాట్‌ను పెద్దది చేయి
+foot.logo_alt	Ananas&Bananas — డిజిటల్ పండ్లు & సాంకేతికత
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — దృశ్యాలు — olin.now
+title.fleets	%s — నౌకాదళాలు, విన్యాసాలు — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — దృశ్యాలు
+board.aria	8×8 చదరంగపు బల్ల
+fleets.page_title	నౌకాదళాలు
+fleets.page_intro	నౌకాదళాలు: %s, %s కోసం. ప్రతి దళం ఆరు రకాల నౌకలనూ తెలుపు, నలుపు రూపాల్లో కొత్తగా గీస్తుంది — దళం కేవలం రూపమే; పావుల కదలికను గానీ యుద్ధాన్ని గానీ మార్చదు.
+fleets.default	డిఫాల్ట్
+fleets.white	తెల్ల దళం
+fleets.black	నల్ల దళం
+fleets.audio_title	యుద్ధ ధ్వని
+fleets.sfx_note	కాల్పు, పేలుడు శబ్దాన్ని నిర్ణయించేది దళం కాదు, నౌక మూలకం: బంటు గతిజ తూటాలు, గుర్రం నీరు, ఏనుగు నిప్పు, శకటం మంచు, మంత్రి, రాజు విద్యుత్ కాలుస్తారు.
+fleets.music_note	యుద్ధంలో దాడి చేసే నౌక థీమ్ వినిపిస్తుంది.
+man.title	విన్యాసాలు
+man.intro	%s విన్యాసాలు: ప్రతి నౌక తనదైన రీతిలో ఎగిరే పన్నెండు కుటుంబాలు, దానికే సొంతమైన ఒకటి. 3×3 గ్రిడ్‌పై గీసిన సంజ్ఞతో ఇవి మొదలవుతాయి — Android అన్‌లాక్ చేసినట్టు — తనంతట తానే నిండే శక్తిని ఖర్చు చేస్తాయి. కింది మార్గాలు నేరుగా ఆట జాబితా నుంచి తీసిన నమూనాలు, కాబట్టి కాన్వాస్‌పై నౌక యుద్ధంలో ఎగిరినట్టే ఎగురుతుంది.
+man.units	నౌకల రకాలు
+unit.pawn	బంటు
+unit.knight	గుర్రం
+unit.bishop	ఏనుగు
+unit.rook	శకటం
+unit.queen	మంత్రి
+unit.king	రాజు
+unit.pawn.element	గతిజ
+unit.knight.element	జల
+unit.bishop.element	అగ్ని
+unit.rook.element	హిమ
+unit.queen.element	విద్యుత్
+unit.king.element	విద్యుత్
+man.path	%s విన్యాసం మార్గం
+man.energy	శక్తి
+man.duration	వ్యవధి
+man.secs	%s సె.
+man.shots	కాల్పులు
+man.untouchable_title	తూటాలు దూసుకుపోతాయి
+man.untouchable	తాకలేనిది
+man.shield_title	కవచం ఎత్తుతుంది
+man.shield	కవచం
+man.control_title	నియంత్రణ పైలట్ వద్దే ఉంటుంది
+man.control	స్వేచ్ఛా నియంత్రణ
+man.mirror_title	ప్రతిబింబ సంజ్ఞ ప్రతిబింబ విన్యాసాన్ని ఎగురవేస్తుంది
+man.mirror	ప్రతిబింబించదగినది
+man.price_title	క్రెడిట్లలో ధర
+man.price	%s క్రెడిట్
+man.starter	మొదటి నుంచే
+man.wins	గెలుపులు: %s
+man.pack	ప్యాక్ %s
+num.decimal	.

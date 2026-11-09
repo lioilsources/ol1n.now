@@ -1,0 +1,114 @@
+# Site chrome, Danish. Same keys as cs.tsv, in the same order; see the notes there.
+nav.all_apps	← Alle apps
+nav.back_to	← Tilbage til %s
+nav.lang	Sprog
+title.app	%s — olin.now
+title.skins	%s — skins — olin.now
+badge.featured	★ Udvalgt
+badge.mobile	Mobil
+sec.downloads	Downloads
+sec.description	Beskrivelse
+sec.shots_desktop	Skærmbilleder — computer
+sec.shots_mobile	Skærmbilleder — mobil
+shots.empty.desktop	Ingen skærmbilleder endnu (computer).
+shots.empty.mobile	Ingen skærmbilleder endnu (mobil).
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Builds kommer snart.
+skins.title	Skins
+skins.teaser_intro	%s visuelle temaer — hvert med egne sprites, parallakse-baggrund, lyde og musik.
+skins.more	Udforsk alle skins →
+skins.page_intro	%s visuelle temaer til %s. Hvert skin har sine egne skibe, fjender, bosser, baggrunde, lyde og adaptiv musik.
+skins.disclaimer	Disse skins er en fri hyldest til klassiske shoot 'em up-spil. %s er på ingen måde tilknyttet deres skabere eller udgivere og bruger ikke deres originale grafik eller lyde.
+skins.wiki	Wikipedia
+skins.vessels	Skibe: %s
+skins.pixelart	pixel art
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	farvetone %s
+cat.preview	Forhåndsvisning
+cat.vessels	Skibe
+cat.enemies	Fjender
+cat.boss	Boss
+cat.asteroids	Asteroider
+cat.fx	Effekter og projektiler
+cat.ui	Spilgrænseflade
+cat.backgrounds	Baggrunde
+cat.sfx	Lyde (SFX)
+cat.music	Musik
+player.prev	Forrige
+player.play	Afspil
+player.next	Næste
+player.pause	Pause
+decks.title	Kortsæt
+decks.intro	%s kortsæt, hvert tegnet i to stilarter. Her er ti eksempelkort fra hvert: fem i den første stil, fem i den anden.
+decks.cards	%s kort
+decks.free	gratis
+decks.free_badge	Gratis
+decks.tr	Oversættelse
+visuals.title	Grafik
+visuals.more	Udforsk al grafik →
+fleets.title	Flåder
+fleets.teaser_intro	%s flåder med seks skibstyper hver.
+fleets.teaser_intro_man	%s flåder med seks skibstyper hver og %s manøvrer, der tegnes med fingeren.
+fleets.more	Udforsk flåder og manøvrer →
+lb.dialog	Skærmbillede
+lb.hint	hjulet zoomer · træk for at flytte · Esc lukker
+lb.zoom_out	Zoom ud
+lb.zoom_in	Zoom ind
+lb.fit	Tilpas til skærmen
+lb.close	Luk
+lb.open	Forstør skærmbillede
+foot.logo_alt	Ananas&Bananas — digital frugt & teknologi
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — grafik — olin.now
+title.fleets	%s — flåder og manøvrer — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — grafik
+board.aria	Skakbræt 8×8
+fleets.page_title	Flåder
+fleets.page_intro	%s flåder til %s. Hver tegner alle seks skibstyper om i en hvid og en sort udgave — en flåde er ren grafik og ændrer hverken brikkernes træk eller kampen.
+fleets.default	standard
+fleets.white	Hvid flåde
+fleets.black	Sort flåde
+fleets.audio_title	Kamplyd
+fleets.sfx_note	Lyden af skud og eksplosion bestemmes af skibets element, ikke af flåden: bonden skyder kinetisk, springeren med vand, løberen med ild, tårnet med is, dronningen og kongen med elektricitet.
+fleets.music_note	Under kampen spiller det angribende skibs tema.
+man.title	Manøvrer
+man.intro	%s manøvrer: tolv familier, som hvert skib flyver på sin egen måde, plus én af dets egne. De udløses med en gestus tegnet i et 3×3-gitter — som når man låser en Android op — og koster energi, der genoplades af sig selv. Banerne nedenfor er samplet direkte fra spillets katalog, så skibet på lærredet flyver præcis det, det flyver i kamp.
+man.units	Skibstyper
+unit.pawn	Bonde
+unit.knight	Springer
+unit.bishop	Løber
+unit.rook	Tårn
+unit.queen	Dronning
+unit.king	Konge
+unit.pawn.element	kinetisk
+unit.knight.element	vand
+unit.bishop.element	ild
+unit.rook.element	is
+unit.queen.element	elektrisk
+unit.king.element	elektrisk
+man.path	Manøvren %s’ bane
+man.energy	Energi
+man.duration	Varighed
+man.secs	%s s
+man.shots	Skud
+man.untouchable_title	Skud går igennem
+man.untouchable	urørlig
+man.shield_title	Hæver et skjold
+man.shield	skjold
+man.control_title	Styringen bliver hos piloten
+man.control	fri styring
+man.mirror_title	En spejlvendt gestus flyver den spejlvendte manøvre
+man.mirror	spejlbar
+man.price_title	Pris i credits
+man.price	%s cr.
+man.starter	fra start
+man.wins	sejre: %s
+man.pack	pakke %s
+num.decimal	,

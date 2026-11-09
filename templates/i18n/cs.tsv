@@ -1,6 +1,16 @@
 # Site chrome, base language. Every other catalog falls back to this one,
 # key by key, so a language only has to carry what it actually changes.
 # Format: <key>TAB<value>. Lines starting with # are comments.
+#
+# Notes for translators (scripts/build-site.sh is the only reader):
+# - %s / %d are printf arguments (`tf`): keep every one, in the same order.
+#   Numbers arrive as digits; in an inflecting language word the sentence so
+#   that any count reads right ("Lodě: %s" rather than "%s lodí"). Czech gets
+#   real plurals from code (plural_ship, plural_card), not from this file.
+# - The arrows are visual direction: "←" = back, "→" = onward. In an RTL
+#   language (ar, he, ur) flip them: back is "→" at the start, onward "←" at the end.
+# - Values are plain text; the build HTML-escapes them (write "&", not "&amp;").
+# - title.* end up in <title>; keep " — olin.now" as is.
 nav.all_apps	← Všechny aplikace
 nav.back_to	← Zpět na %s
 nav.lang	Jazyk
@@ -14,23 +24,31 @@ sec.shots_desktop	Screenshoty — desktop
 sec.shots_mobile	Screenshoty — mobil
 shots.empty.desktop	Zatím bez screenshotů (desktop).
 shots.empty.mobile	Zatím bez screenshotů (mobil).
+# download button labels; platform names stay as they are
 dl.macos	macOS
 dl.windows	Windows
 dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Buildy brzy k dispozici.
+# skins gallery (kirian): teaser on the app page + the -skins subpage
 skins.title	Skiny
+# %s = number of skins
 skins.teaser_intro	%s vizuálních témat — každé s vlastními sprity, parallax pozadím, zvuky a hudbou.
 skins.more	Prozkoumat všechny skiny →
+# %s = number of skins, %s = app name
 skins.page_intro	%s vizuálních témat pro %s. Každý skin má vlastní lodě, nepřátele, bosse, pozadí, zvuky i adaptivní hudbu.
+# %s = app name
 skins.disclaimer	Skiny jsou volnou poctou klasickým střílečkám. %s není nijak spojen s jejich autory ani vydavateli a nepoužívá jejich původní grafiku ani zvuky.
 skins.wiki	Wikipedie
+# %s = number of player ships (Czech ignores this key and inflects in code)
 skins.vessels	%s lodí
 skins.pixelart	pixel art
+# badge, %s = a setting value such as "high" or a number
 skins.bloom	bloom %s
 skins.crt	CRT %s
 skins.tint	tint %s
+# skin asset categories (small uppercase headings)
 cat.preview	Náhled
 cat.vessels	Lodě
 cat.enemies	Nepřátelé
@@ -41,13 +59,89 @@ cat.ui	Game center
 cat.backgrounds	Pozadí
 cat.sfx	Zvuky (SFX)
 cat.music	Hudba
+# music player buttons (aria-label)
 player.prev	Předchozí
 player.play	Přehrát
 player.next	Další
 player.pause	Pozastavit
+# decks gallery (lexify)
 decks.title	Balíčky
+# %s = number of decks
 decks.intro	%s balíčků a každý je nakreslený ve dvou výtvarných stylech. Z každého tu je ukázka deseti kartiček: pět v prvním stylu, pět ve druhém.
+# %s = number of cards in a deck (Czech inflects in code)
 decks.cards	%s kartiček
+# the free deck, lowercase under its tile / capitalised badge
 decks.free	zdarma
 decks.free_badge	Zdarma
+# label of the translation switch above the cards ("Translation:")
 decks.tr	Překlad
+# visuals teaser on the app page (the sentence under it is the app's own `visuals:`)
+visuals.title	Vizuály
+visuals.more	Prozkoumat všechny vizuály →
+# fleets teaser on the app page (orbitrontactics); the subpage strings are at the end
+fleets.title	Flotily
+# %s = number of fleets
+fleets.teaser_intro	%s flotil po šesti typech lodí.
+# %s = number of fleets, %s = number of maneuvers
+fleets.teaser_intro_man	%s flotil po šesti typech lodí a %s manévrů, které se kreslí prstem.
+fleets.more	Prozkoumat flotily a manévry →
+# screenshot lightbox (store.js): dialog name, hint line, toolbar buttons, and
+# the aria-label of a screenshot that opens it
+lb.dialog	Screenshot
+lb.hint	kolečko přibližuje · tažením posouváš · Esc zavře
+lb.zoom_out	Oddálit
+lb.zoom_in	Přiblížit
+lb.fit	Na celou obrazovku
+lb.close	Zavřít
+lb.open	Zvětšit screenshot
+# footer logo alt text
+foot.logo_alt	Ananas&Bananas — digitální ovoce & technologie
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — vizuály — olin.now
+title.fleets	%s — flotily a manévry — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — vizuály
+board.aria	Šachovnice 8×8
+fleets.page_title	Flotily
+fleets.page_intro	%s flotil pro %s. Každá překresluje všech šest typů lodí v bílé i černé variantě — flotila je čistě vizuální, pohyb figur ani souboj se s ní nemění.
+fleets.default	výchozí
+fleets.white	Bílá flotila
+fleets.black	Černá flotila
+fleets.audio_title	Zvuk souboje
+fleets.sfx_note	Zvuk výstřelu i exploze určuje element lodi, ne flotila: pěšec střílí kineticky, jezdec vodou, střelec ohněm, věž ledem, dáma a král elektřinou.
+fleets.music_note	Souboji hraje téma útočící lodi.
+man.title	Manévry
+man.intro	%s manévrů: dvanáct rodin, které umí každá loď po svém, plus jeden vlastní. Spouští se gestem nakresleným do mřížky 3×3 — jako odemykání Androidu — a stojí energii, která se sama dobíjí. Dráhy níž jsou vzorkované přímo z herního katalogu, takže loď na plátně letí to, co letí v souboji.
+man.units	Typy lodí
+unit.pawn	Pěšec
+unit.knight	Jezdec
+unit.bishop	Střelec
+unit.rook	Věž
+unit.queen	Dáma
+unit.king	Král
+unit.pawn.element	kinetický
+unit.knight.element	vodní
+unit.bishop.element	ohnivý
+unit.rook.element	ledový
+unit.queen.element	elektrický
+unit.king.element	elektrický
+man.path	Dráha manévru %s
+man.energy	Energie
+man.duration	Trvání
+man.secs	%s s
+man.shots	Výstřely
+man.untouchable_title	Střely procházejí skrz
+man.untouchable	nezasažitelný
+man.shield_title	Zvedá štít
+man.shield	štít
+man.control_title	Řízení zůstává na pilotovi
+man.control	volné řízení
+man.mirror_title	Zrcadlené gesto letí zrcadlený manévr
+man.mirror	zrcadlitelný
+man.price_title	Cena v kreditech
+man.price	%s kr.
+man.starter	od začátku
+man.wins	%s výher
+man.pack	balíček %s
+num.decimal	,

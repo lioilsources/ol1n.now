@@ -1,0 +1,114 @@
+# Site chrome, Punjabi (Gurmukhi). Same keys as cs.tsv; see the notes there.
+nav.all_apps	← ਸਾਰੀਆਂ ਐਪਾਂ
+nav.back_to	← %s 'ਤੇ ਵਾਪਸ ਜਾਓ
+nav.lang	ਭਾਸ਼ਾ
+title.app	%s — olin.now
+title.skins	%s — ਸਕਿਨ — olin.now
+badge.featured	★ ਖ਼ਾਸ
+badge.mobile	ਮੋਬਾਈਲ
+sec.downloads	ਡਾਊਨਲੋਡ
+sec.description	ਵੇਰਵਾ
+sec.shots_desktop	ਸਕ੍ਰੀਨਸ਼ਾਟ — ਡੈਸਕਟਾਪ
+sec.shots_mobile	ਸਕ੍ਰੀਨਸ਼ਾਟ — ਮੋਬਾਈਲ
+shots.empty.desktop	ਅਜੇ ਡੈਸਕਟਾਪ ਦੇ ਸਕ੍ਰੀਨਸ਼ਾਟ ਨਹੀਂ ਹਨ।
+shots.empty.mobile	ਅਜੇ ਮੋਬਾਈਲ ਦੇ ਸਕ੍ਰੀਨਸ਼ਾਟ ਨਹੀਂ ਹਨ।
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	ਬਿਲਡ ਜਲਦੀ ਉਪਲਬਧ ਹੋਣਗੇ।
+skins.title	ਸਕਿਨ
+skins.teaser_intro	%s ਵਿਜ਼ੂਅਲ ਥੀਮ — ਹਰੇਕ ਦੇ ਆਪਣੇ ਸਪ੍ਰਾਈਟ, ਪੈਰਾਲੈਕਸ ਬੈਕਗ੍ਰਾਊਂਡ, ਆਵਾਜ਼ਾਂ ਅਤੇ ਸੰਗੀਤ।
+skins.more	ਸਾਰੀਆਂ ਸਕਿਨ ਵੇਖੋ →
+skins.page_intro	%s ਵਿਜ਼ੂਅਲ ਥੀਮ — %s ਲਈ। ਹਰ ਸਕਿਨ ਦੇ ਆਪਣੇ ਜਹਾਜ਼, ਦੁਸ਼ਮਣ, ਬੌਸ, ਬੈਕਗ੍ਰਾਊਂਡ, ਆਵਾਜ਼ਾਂ ਅਤੇ ਅਡੈਪਟਿਵ ਸੰਗੀਤ ਹਨ।
+skins.disclaimer	ਇਹ ਸਕਿਨ ਕਲਾਸਿਕ ਸ਼ੂਟਰ ਗੇਮਾਂ ਨੂੰ ਇੱਕ ਖੁੱਲ੍ਹੀ ਸ਼ਰਧਾਂਜਲੀ ਹਨ। %s ਦਾ ਉਨ੍ਹਾਂ ਦੇ ਸਿਰਜਕਾਂ ਜਾਂ ਪ੍ਰਕਾਸ਼ਕਾਂ ਨਾਲ ਕੋਈ ਸਬੰਧ ਨਹੀਂ ਹੈ ਅਤੇ ਇਹ ਉਨ੍ਹਾਂ ਦੇ ਅਸਲ ਗ੍ਰਾਫਿਕਸ ਜਾਂ ਆਵਾਜ਼ਾਂ ਨਹੀਂ ਵਰਤਦਾ।
+skins.wiki	ਵਿਕੀਪੀਡੀਆ
+skins.vessels	ਜਹਾਜ਼: %s
+skins.pixelart	ਪਿਕਸਲ ਆਰਟ
+skins.bloom	ਬਲੂਮ %s
+skins.crt	CRT %s
+skins.tint	ਟਿੰਟ %s
+cat.preview	ਝਲਕ
+cat.vessels	ਜਹਾਜ਼
+cat.enemies	ਦੁਸ਼ਮਣ
+cat.boss	ਬੌਸ
+cat.asteroids	ਐਸਟਰਾਇਡ
+cat.fx	ਇਫੈਕਟ ਅਤੇ ਗੋਲੀਆਂ
+cat.ui	ਗੇਮ ਇੰਟਰਫੇਸ
+cat.backgrounds	ਬੈਕਗ੍ਰਾਊਂਡ
+cat.sfx	ਸਾਊਂਡ ਇਫੈਕਟ (SFX)
+cat.music	ਸੰਗੀਤ
+player.prev	ਪਿਛਲਾ
+player.play	ਚਲਾਓ
+player.next	ਅਗਲਾ
+player.pause	ਰੋਕੋ
+decks.title	ਡੈੱਕ
+decks.intro	%s ਡੈੱਕ, ਹਰੇਕ ਦੋ ਕਲਾ ਸ਼ੈਲੀਆਂ ਵਿੱਚ ਬਣਿਆ। ਹਰੇਕ ਵਿੱਚੋਂ ਦਸ ਨਮੂਨਾ ਕਾਰਡ: ਪੰਜ ਪਹਿਲੀ ਸ਼ੈਲੀ ਵਿੱਚ, ਪੰਜ ਦੂਜੀ ਵਿੱਚ।
+decks.cards	%s ਕਾਰਡ
+decks.free	ਮੁਫ਼ਤ
+decks.free_badge	ਮੁਫ਼ਤ
+decks.tr	ਅਨੁਵਾਦ
+visuals.title	ਵਿਜ਼ੂਅਲ
+visuals.more	ਸਾਰੇ ਵਿਜ਼ੂਅਲ ਵੇਖੋ →
+fleets.title	ਬੇੜੇ
+fleets.teaser_intro	ਬੇੜੇ: %s, ਹਰੇਕ ਵਿੱਚ ਛੇ ਕਿਸਮ ਦੇ ਜਹਾਜ਼।
+fleets.teaser_intro_man	ਬੇੜੇ: %s, ਹਰੇਕ ਵਿੱਚ ਛੇ ਕਿਸਮ ਦੇ ਜਹਾਜ਼। ਉਂਗਲ ਨਾਲ ਬਣਾਏ ਜਾਣ ਵਾਲੇ ਦਾਅ-ਪੇਚ: %s।
+fleets.more	ਬੇੜੇ ਅਤੇ ਦਾਅ-ਪੇਚ ਵੇਖੋ →
+lb.dialog	ਸਕ੍ਰੀਨਸ਼ਾਟ
+lb.hint	ਵ੍ਹੀਲ ਨਾਲ ਜ਼ੂਮ · ਖਿੱਚ ਕੇ ਹਿਲਾਓ · Esc ਨਾਲ ਬੰਦ
+lb.zoom_out	ਜ਼ੂਮ ਆਊਟ
+lb.zoom_in	ਜ਼ੂਮ ਇਨ
+lb.fit	ਸਕ੍ਰੀਨ ਵਿੱਚ ਫਿੱਟ ਕਰੋ
+lb.close	ਬੰਦ ਕਰੋ
+lb.open	ਸਕ੍ਰੀਨਸ਼ਾਟ ਵੱਡਾ ਕਰੋ
+foot.logo_alt	Ananas&Bananas — ਡਿਜੀਟਲ ਫਲ & ਤਕਨਾਲੋਜੀ
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — ਵਿਜ਼ੁਅਲ — olin.now
+title.fleets	%s — ਬੇੜੇ ਅਤੇ ਕਰਤਬ — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — ਵਿਜ਼ੁਅਲ
+board.aria	8×8 ਸ਼ਤਰੰਜ ਦੀ ਬਿਸਾਤ
+fleets.page_title	ਬੇੜੇ
+fleets.page_intro	ਬੇੜੇ: %s, %s ਲਈ। ਹਰ ਬੇੜਾ ਛੇ ਕਿਸਮ ਦੇ ਜਹਾਜ਼ਾਂ ਨੂੰ ਚਿੱਟੇ ਅਤੇ ਕਾਲੇ ਰੂਪ ਵਿੱਚ ਨਵੇਂ ਸਿਰੇ ਤੋਂ ਬਣਾਉਂਦਾ ਹੈ — ਬੇੜਾ ਸਿਰਫ਼ ਦਿੱਖ ਹੈ, ਮੋਹਰਿਆਂ ਦੀ ਚਾਲ ਜਾਂ ਲੜਾਈ ਨਹੀਂ ਬਦਲਦਾ।
+fleets.default	ਡਿਫ਼ੌਲਟ
+fleets.white	ਚਿੱਟਾ ਬੇੜਾ
+fleets.black	ਕਾਲਾ ਬੇੜਾ
+fleets.audio_title	ਲੜਾਈ ਦੀ ਆਵਾਜ਼
+fleets.sfx_note	ਗੋਲੀ ਅਤੇ ਧਮਾਕੇ ਦੀ ਆਵਾਜ਼ ਬੇੜਾ ਨਹੀਂ, ਜਹਾਜ਼ ਦਾ ਤੱਤ ਤੈਅ ਕਰਦਾ ਹੈ: ਪਿਆਦਾ ਗਤੀਜ ਗੋਲੀ ਚਲਾਉਂਦਾ ਹੈ, ਘੋੜਾ ਪਾਣੀ, ਊਠ ਅੱਗ, ਹਾਥੀ ਬਰਫ਼, ਵਜ਼ੀਰ ਅਤੇ ਰਾਜਾ ਬਿਜਲੀ।
+fleets.music_note	ਲੜਾਈ ਵਿੱਚ ਹਮਲਾ ਕਰਨ ਵਾਲੇ ਜਹਾਜ਼ ਦੀ ਧੁਨ ਵੱਜਦੀ ਹੈ।
+man.title	ਕਰਤਬ
+man.intro	%s ਕਰਤਬ: ਬਾਰਾਂ ਪਰਿਵਾਰ, ਜਿਨ੍ਹਾਂ ਨੂੰ ਹਰ ਜਹਾਜ਼ ਆਪਣੇ ਢੰਗ ਨਾਲ ਉਡਾਉਂਦਾ ਹੈ, ਅਤੇ ਇੱਕ ਉਸਦਾ ਆਪਣਾ। ਇਹ 3×3 ਗਰਿੱਡ ਉੱਤੇ ਬਣਾਏ ਇਸ਼ਾਰੇ ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦੇ ਹਨ — Android ਦਾ ਲਾਕ ਖੋਲ੍ਹਣ ਵਾਂਗ — ਅਤੇ ਆਪਣੇ-ਆਪ ਭਰਨ ਵਾਲੀ ਊਰਜਾ ਖ਼ਰਚਦੇ ਹਨ। ਹੇਠਾਂ ਦੇ ਰਸਤੇ ਸਿੱਧੇ ਖੇਡ ਦੀ ਸੂਚੀ ਤੋਂ ਲਏ ਨਮੂਨੇ ਹਨ, ਇਸ ਲਈ ਕੈਨਵਸ ਉੱਤੇ ਜਹਾਜ਼ ਲੜਾਈ ਵਾਂਗ ਹੀ ਉੱਡਦਾ ਹੈ।
+man.units	ਜਹਾਜ਼ਾਂ ਦੀਆਂ ਕਿਸਮਾਂ
+unit.pawn	ਪਿਆਦਾ
+unit.knight	ਘੋੜਾ
+unit.bishop	ਊਠ
+unit.rook	ਹਾਥੀ
+unit.queen	ਵਜ਼ੀਰ
+unit.king	ਰਾਜਾ
+unit.pawn.element	ਗਤੀਜ
+unit.knight.element	ਜਲ
+unit.bishop.element	ਅਗਨੀ
+unit.rook.element	ਹਿਮ
+unit.queen.element	ਬਿਜਲਈ
+unit.king.element	ਬਿਜਲਈ
+man.path	ਕਰਤਬ %s ਦਾ ਰਸਤਾ
+man.energy	ਊਰਜਾ
+man.duration	ਮਿਆਦ
+man.secs	%s ਸ.
+man.shots	ਗੋਲੀਆਂ
+man.untouchable_title	ਗੋਲੀਆਂ ਆਰ-ਪਾਰ ਲੰਘ ਜਾਂਦੀਆਂ ਹਨ
+man.untouchable	ਅਛੂਤਾ
+man.shield_title	ਢਾਲ ਚੁੱਕਦਾ ਹੈ
+man.shield	ਢਾਲ
+man.control_title	ਸਟੀਅਰਿੰਗ ਪਾਇਲਟ ਕੋਲ ਰਹਿੰਦੀ ਹੈ
+man.control	ਖੁੱਲ੍ਹੀ ਸਟੀਅਰਿੰਗ
+man.mirror_title	ਉਲਟਾ ਇਸ਼ਾਰਾ ਉਲਟਾ ਕਰਤਬ ਉਡਾਉਂਦਾ ਹੈ
+man.mirror	ਉਲਟਾਉਣਯੋਗ
+man.price_title	ਕ੍ਰੈਡਿਟ ਵਿੱਚ ਕੀਮਤ
+man.price	%s ਕ੍ਰੈਡਿਟ
+man.starter	ਸ਼ੁਰੂ ਤੋਂ
+man.wins	ਜਿੱਤਾਂ: %s
+man.pack	ਪੈਕ %s
+num.decimal	.

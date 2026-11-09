@@ -1,11 +1,9 @@
-# Site chrome, Russian. Only the keys that differ from templates/i18n/cs.tsv
-# need to be here; anything missing falls back to the Czech string. The skins
-# gallery keys (skins.*, cat.*, player.*) are not translated yet: no app with a
-# skins gallery ships this language.
+# Site chrome, Russian. Same keys as cs.tsv, in the same order; see the notes there.
 nav.all_apps	← Все приложения
 nav.back_to	← Назад к %s
 nav.lang	Язык
 title.app	%s — olin.now
+title.skins	%s — скины — olin.now
 badge.featured	★ Рекомендуем
 badge.mobile	Мобильные
 sec.downloads	Загрузки
@@ -14,12 +12,103 @@ sec.shots_desktop	Скриншоты — компьютер
 sec.shots_mobile	Скриншоты — телефон
 shots.empty.desktop	Скриншотов для компьютера пока нет.
 shots.empty.mobile	Скриншотов для телефона пока нет.
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Сборки скоро появятся.
+skins.title	Скины
+skins.teaser_intro	Визуальных тем: %s — у каждой свои спрайты, параллакс-фон, звуки и музыка.
+skins.more	Смотреть все скины →
+skins.page_intro	Визуальных тем: %s, все для %s. У каждого скина свои корабли, враги, босс, фоны, звуки и адаптивная музыка.
+skins.disclaimer	Скины — вольная дань уважения классическим шутерам. %s никак не связан с их авторами или издателями и не использует их оригинальную графику или звуки.
+skins.wiki	Википедия
+skins.vessels	Кораблей: %s
+skins.pixelart	пиксель-арт
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	оттенок %s
+cat.preview	Превью
+cat.vessels	Корабли
+cat.enemies	Враги
+cat.boss	Босс
+cat.asteroids	Астероиды
+cat.fx	Эффекты и снаряды
+cat.ui	Игровой интерфейс
+cat.backgrounds	Фоны
+cat.sfx	Звуки (SFX)
+cat.music	Музыка
+player.prev	Предыдущий
+player.play	Воспроизвести
+player.next	Следующий
+player.pause	Пауза
 decks.title	Колоды
 decks.intro	%s колод, и каждая нарисована в двух стилях. Из каждой здесь десять карточек: пять в первом стиле, пять во втором.
 decks.cards	%s карточек
 decks.free	бесплатно
 decks.free_badge	Бесплатно
 decks.tr	Перевод
+visuals.title	Графика
+visuals.more	Смотреть всю графику →
+fleets.title	Флотилии
+fleets.teaser_intro	Флотилий: %s, в каждой шесть типов кораблей.
+fleets.teaser_intro_man	Флотилий: %s, в каждой шесть типов кораблей. Манёвров, которые рисуют пальцем: %s.
+fleets.more	Смотреть флотилии и манёвры →
+lb.dialog	Скриншот
+lb.hint	колесо масштабирует · перетаскивание сдвигает · Esc закрывает
+lb.zoom_out	Уменьшить
+lb.zoom_in	Увеличить
+lb.fit	По размеру экрана
+lb.close	Закрыть
+lb.open	Увеличить скриншот
+foot.logo_alt	Ananas&Bananas — цифровые фрукты & технологии
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — визуалы — olin.now
+title.fleets	%s — флоты и манёвры — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — визуалы
+board.aria	Шахматная доска 8×8
+fleets.page_title	Флоты
+fleets.page_intro	Флотов: %s для %s. Каждый заново рисует все шесть типов кораблей в белом и чёрном варианте — флот чисто визуальный, он не меняет ни ходы фигур, ни бой.
+fleets.default	по умолчанию
+fleets.white	Белый флот
+fleets.black	Чёрный флот
+fleets.audio_title	Звук боя
+fleets.sfx_note	Звук выстрела и взрыва определяет стихия корабля, а не флот: пешка стреляет кинетически, конь — водой, слон — огнём, ладья — льдом, ферзь и король — электричеством.
+fleets.music_note	В бою звучит тема атакующего корабля.
+man.title	Манёвры
+man.intro	Манёвров: %s — двенадцать семейств, которые каждый корабль выполняет по-своему, плюс один собственный. Запускаются жестом, нарисованным на сетке 3×3 — как разблокировка Android, — и стоят энергию, которая восстанавливается сама. Траектории ниже взяты прямо из игрового каталога, так что корабль на холсте летит так же, как в бою.
+man.units	Типы кораблей
+unit.pawn	Пешка
+unit.knight	Конь
+unit.bishop	Слон
+unit.rook	Ладья
+unit.queen	Ферзь
+unit.king	Король
+unit.pawn.element	кинетический
+unit.knight.element	водный
+unit.bishop.element	огненный
+unit.rook.element	ледяной
+unit.queen.element	электрический
+unit.king.element	электрический
+man.path	Траектория манёвра %s
+man.energy	Энергия
+man.duration	Длительность
+man.secs	%s с
+man.shots	Выстрелы
+man.untouchable_title	Снаряды пролетают насквозь
+man.untouchable	неуязвимый
+man.shield_title	Поднимает щит
+man.shield	щит
+man.control_title	Управление остаётся у пилота
+man.control	свободное управление
+man.mirror_title	Зеркальный жест выполняет зеркальный манёвр
+man.mirror	отражаемый
+man.price_title	Цена в кредитах
+man.price	%s кр.
+man.starter	с самого начала
+man.wins	побед: %s
+man.pack	набор %s
+num.decimal	,

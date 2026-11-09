@@ -1,0 +1,114 @@
+# Site chrome, Finnish. Same keys as cs.tsv, in the same order; see the notes there.
+nav.all_apps	← Kaikki sovellukset
+nav.back_to	← Takaisin: %s
+nav.lang	Kieli
+title.app	%s — olin.now
+title.skins	%s — skinit — olin.now
+badge.featured	★ Suositeltu
+badge.mobile	Mobiili
+sec.downloads	Lataukset
+sec.description	Kuvaus
+sec.shots_desktop	Kuvakaappaukset — tietokone
+sec.shots_mobile	Kuvakaappaukset — mobiili
+shots.empty.desktop	Ei vielä kuvakaappauksia (tietokone).
+shots.empty.mobile	Ei vielä kuvakaappauksia (mobiili).
+dl.macos	macOS
+dl.windows	Windows
+dl.linux	Linux
+dl.android	Android (APK)
+dl.mod	Mod (ZIP)
+dl.empty	Koontiversiot tulossa pian.
+skins.title	Skinit
+skins.teaser_intro	%s visuaalista teemaa — jokaisella omat spritet, parallax-tausta, äänet ja musiikki.
+skins.more	Tutustu kaikkiin skineihin →
+skins.page_intro	%s visuaalista teemaa pelille %s. Jokaisella skinillä on omat aluksensa, vihollisensa, bossinsa, taustansa, äänensä ja mukautuva musiikkinsa.
+skins.disclaimer	Skinit ovat vapaa kunnianosoitus klassisille räiskintäpeleille. %s ei ole millään tavalla yhteydessä niiden tekijöihin tai julkaisijoihin eikä käytä niiden alkuperäistä grafiikkaa tai ääniä.
+skins.wiki	Wikipedia
+skins.vessels	Aluksia: %s
+skins.pixelart	pikseligrafiikka
+skins.bloom	bloom %s
+skins.crt	CRT %s
+skins.tint	sävy %s
+cat.preview	Esikatselu
+cat.vessels	Alukset
+cat.enemies	Viholliset
+cat.boss	Boss
+cat.asteroids	Asteroidit
+cat.fx	Efektit ja ammukset
+cat.ui	Pelin käyttöliittymä
+cat.backgrounds	Taustat
+cat.sfx	Äänet (SFX)
+cat.music	Musiikki
+player.prev	Edellinen
+player.play	Toista
+player.next	Seuraava
+player.pause	Tauko
+decks.title	Pakat
+decks.intro	%s pakkaa, ja jokainen on piirretty kahdella kuvitustyylillä. Jokaisesta on tässä kymmenen esimerkkikorttia: viisi ensimmäisellä tyylillä, viisi toisella.
+decks.cards	Kortteja: %s
+decks.free	ilmainen
+decks.free_badge	Ilmainen
+decks.tr	Käännös
+visuals.title	Grafiikka
+visuals.more	Tutustu kaikkeen grafiikkaan →
+fleets.title	Laivastot
+fleets.teaser_intro	%s laivastoa, jokaisessa kuusi alustyyppiä.
+fleets.teaser_intro_man	%s laivastoa, jokaisessa kuusi alustyyppiä, ja %s manööveriä, jotka piirretään sormella.
+fleets.more	Tutustu laivastoihin ja manöövereihin →
+lb.dialog	Kuvakaappaus
+lb.hint	rulla zoomaa · vedä siirtääksesi · Esc sulkee
+lb.zoom_out	Loitonna
+lb.zoom_in	Lähennä
+lb.fit	Sovita näyttöön
+lb.close	Sulje
+lb.open	Suurenna kuvakaappaus
+foot.logo_alt	Ananas&Bananas — digitaalisia hedelmiä & teknologiaa
+# subpages: visuals, fleets & maneuvers (orbitrontactics), app pages
+nav.onward	→
+title.visuals	%s — grafiikka — olin.now
+title.fleets	%s — laivastot ja liikkeet — olin.now
+title.page	%s — %s — olin.now
+visuals.page_h1	%s — grafiikka
+board.aria	Shakkilauta 8×8
+fleets.page_title	Laivastot
+fleets.page_intro	Laivastoja %s pelille %s. Jokainen piirtää kaikki kuusi alustyyppiä uudelleen valkoisena ja mustana versiona — laivasto on pelkkää ulkoasua, eikä se muuta nappuloiden liikkeitä eikä taistelua.
+fleets.default	oletus
+fleets.white	Valkoinen laivasto
+fleets.black	Musta laivasto
+fleets.audio_title	Taistelun äänet
+fleets.sfx_note	Laukauksen ja räjähdyksen äänen määrää aluksen elementti, ei laivasto: sotilas ampuu kineettisesti, ratsu vedellä, lähetti tulella, torni jäällä, kuningatar ja kuningas sähköllä.
+fleets.music_note	Taistelussa soi hyökkäävän aluksen teema.
+man.title	Liikkeet
+man.intro	Liikkeitä %s: kaksitoista perhettä, jotka jokainen alus lentää omalla tavallaan, ja yksi oma. Ne käynnistetään 3×3-ruudukkoon piirretyllä eleellä — kuin Android-puhelimen avaus — ja ne kuluttavat itsestään latautuvaa energiaa. Alla olevat radat on näytteistetty suoraan pelin katalogista, joten alus kankaalla lentää täsmälleen kuten taistelussa.
+man.units	Alustyypit
+unit.pawn	Sotilas
+unit.knight	Ratsu
+unit.bishop	Lähetti
+unit.rook	Torni
+unit.queen	Kuningatar
+unit.king	Kuningas
+unit.pawn.element	kineettinen
+unit.knight.element	vesi
+unit.bishop.element	tuli
+unit.rook.element	jää
+unit.queen.element	sähkö
+unit.king.element	sähkö
+man.path	Liikkeen %s lentorata
+man.energy	Energia
+man.duration	Kesto
+man.secs	%s s
+man.shots	Laukaukset
+man.untouchable_title	Ammukset menevät läpi
+man.untouchable	koskematon
+man.shield_title	Nostaa kilven
+man.shield	kilpi
+man.control_title	Ohjaus pysyy lentäjällä
+man.control	vapaa ohjaus
+man.mirror_title	Peilattu ele lentää peilatun liikkeen
+man.mirror	peilattava
+man.price_title	Hinta krediitteinä
+man.price	%s kr.
+man.starter	alusta asti
+man.wins	voittoja: %s
+man.pack	paketti %s
+num.decimal	,

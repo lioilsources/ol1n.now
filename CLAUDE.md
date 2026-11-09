@@ -15,6 +15,7 @@ make import-skins # (authoring, local only) Re-encode Kiran skin galleries → a
 make import-visuals APP=<slug> # (authoring, local only) Re-encode one app's artwork → apps/<slug>/visuals/
 make import-fleets # (authoring, local only) Re-encode OrbitronTactics fleets + maneuvers → apps/orbitrontactics/fleets/ (+ rules diagrams → pages/boards.tsv)
 make import-decks  # (authoring, local only) Re-encode Lexify deck samples (5+5 cards per deck) → apps/lexify/decks/
+make store-icons   # (authoring, local only) meta.md icon_src → store-screenshots/<slug>/icons/ (App Store 1024 no alpha, Play 512); see README
 ```
 
 Screenshots on the site are **WebP** (gallery + `full/`, q82): PNG made the Pages
@@ -37,7 +38,7 @@ maneuver catalog; without it the committed dump is kept.
 
 ```
 apps/<slug>/
-  meta.md              # YAML front-matter (name, repo, platforms, store links) + Markdown description
+  meta.md              # YAML front-matter (name, repo, platforms, store links, icon_src) + Markdown description
   icon.png             # REQUIRED. 512x512. Missing = silent first-letter fallback, build stays green
   i18n/                # Optional, app-owned translations (see "Languages")
     <lang>.md          #   front-matter overrides (tagline, name) + translated description
@@ -119,16 +120,18 @@ Czech grammar that a format string cannot express stays in code: `plural_ship`
 picks loď/lodě/lodí, and `vessels_label` hands every other language a plain
 format (`skins.vessels`) instead.
 
-Three apps ship more than Czech: **kirian** (Japanese), **terrareality** (en de pl hu hr —
-`hu` and `hr` got their chrome catalogs for it) and **lexify** (en de it fr pl
-pt-BR ja ko vi ru uk). Past three languages the flag row next to the back-link turns
-into the business page's `<details class="lang-menu">` dropdown (its CSS lives in
-`store.css`; `business.css` only re-tints it), so kirian's pages stay as they were.
-The ten catalogs added for lexify translate only the keys an app page uses; the
-skins keys (`skins.*`, `cat.*`, `player.*`) fall back to Czech until an app with a
-skins gallery ships that language. The visuals and fleets
-subpages still have their headings in the scripts, so they are built for the base
-language only — localising them means moving those strings into the catalogs first.
+**45 languages** (Apple's set without regional variants, BCP 47 codes: `nb`, `pt-PT`,
+`zh-Hans`, `zh-Hant`), each with a **complete** catalog (every `cs.tsv` key), a flag and a
+`lang_name`. A new chrome key goes into all 45 catalogs; translator notes (`%s`, RTL arrows)
+are in the header of `cs.tsv`. `ar he ur` are RTL (`lang_rtl` → `<html dir="rtl">`;
+`store.css` uses logical properties, keep it that way). Fonts are system-only, per-script
+fallbacks via `:lang()` in `store.css`. `index.html` stays Czech; every language any app
+ships gets `index.<lang>.html` (translated card where the app has the language, Czech card
+otherwise) with a lang menu — the Czech index differs from before only by that menu and the
+alternates. Lightbox labels ride on `data-lb-*` of the footer (none on Czech pages).
+Past three languages the flag row turns into `<details class="lang-menu">`. The visuals and
+fleets subpages and `apps/<slug>/pages/` are still base-language only (headings in the
+scripts); their teasers on the app page are translated. Details: README „Jazyky“.
 
 ## Screenshot lightbox and the footer logo
 
