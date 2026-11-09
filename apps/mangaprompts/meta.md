@@ -2,20 +2,35 @@
 slug: mangaprompts
 name: TsumikiMangaBot
 repo: lioilsources/MangaPrompts
-tagline: Telegram bot, který z bloků poskládá prompt a rovnou vygeneruje mangu
+tagline: Telegram bot na mangu z bloků, restyle fotky, nový účes a animaci fotky
 order: 11
 featured: false
 desktop: macos,windows,linux
 mobile: android,ios
+icon_src: assets/icon/app_icon.png
 appstore:
 playstore:
 testflight:
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 ---
 TsumikiMangaBot (dřív MangaPrompts) skládá prompty pro AI generování obrázků
 ve stylu LEGO — vybíráš stavební bloky zhruba na pětadvaceti osách (médium,
 výtvarná tradice, styl hlavy, manga styl, historické období) a z nich vznikne
-kompletní prompt. Nově se u toho nezastaví: prompt rovnou pošle do generování
+kompletní prompt. U toho se nezastaví: prompt rovnou pošle do generování
 a obrázek ti pošle zpátky.
+
+### Další karty
+
+Vedle skladače má Mini App přepínač karet:
+
+- **Restyle fotky** — nahraješ fotku, vybereš styl a dostaneš stejného
+  člověka ve stejné póze v tom stylu. Přepínačem foto / ilustrace volíš
+  médium, stylů je přes devadesát v šesti skupinách (populární, malíři,
+  výtvarné tradice podle regionů).
+- **Zkus účes** — překreslí jen vlasy na portrétu, volitelně i s novou
+  barvou. Každý účes má náhled na stejné tváři, takže porovnáváš jen vlasy.
+- **Rozpohybuj fotku** — z fotky a vybrané scény vznikne krátké video,
+  které přijde do chatu.
 
 ### Jak to rozjet
 
@@ -35,7 +50,9 @@ protože Telegram botovi nedovolí napsat první.
 
 **Tři generování zdarma za každých 24 hodin.** Pak 1 kredit = 1 obrázek a
 kredity se kupují za **Telegram Stars** přímo v appce — 10 kreditů za 25 ⭐,
-50 za 100 ⭐, 250 za 400 ⭐. Když generování selže, kredit se vrací zpátky.
+50 za 100 ⭐, 250 za 400 ⭐. Restyle a účes se platí stejně jako obrázek,
+účes až poté, co rozbor fotku přijme. Animace má vlastní počítadlo: jedna
+denně zdarma, další za 10 ⭐. Když generování selže, kredit se vrací zpátky.
 S potížemi kolem platby pomůže příkaz `/paysupport`, vrácení peněz řeším
 do 48 hodin.
 
@@ -44,7 +61,9 @@ do 48 hodin.
 Mini App je Flutter web na Cloudflare Pages. Prompt z ní putuje na backend
 (FastAPI + aiogram) běžící na domácím NASu a odtud do **ComfyUI** — podle
 zvolené šablony se vybere workflow (FLUX, Pony, Juggernaut XL Lightning nebo
-WAI Illustrious). Kredity i platby drží SQLite na straně backendu.
+WAI Illustrious). Restyle drží tvář přes PuLID nebo InstantID a pózu přes
+depth ControlNet, animace běží na Wan 2.2. Kredity i platby drží SQLite na
+straně backendu.
 
 ### Nativní aplikace
 
