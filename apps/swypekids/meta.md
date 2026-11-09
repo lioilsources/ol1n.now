@@ -2,14 +2,17 @@
 slug: swypekids
 name: SwypeKids
 repo: lioilsources/SwypeKids
+icon_src: ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Děti 5–9 let se učí číst přejížděním prstem po obrázcích
 order: 2
 featured: false
 desktop: macos,windows,linux
 mobile: android,ios
+artifacts: macos,windows,linux
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 visuals: {n} obrázků — Pandička v deseti pózách, 294 nálepek místo emoji a kola revizí, ze kterých vzešly.
 appstore: https://apps.apple.com/app/id6785485866
-playstore:
+playstore: https://play.google.com/store/apps/details?id=com.ab.SwypeKids
 testflight:
 ---
 Dítě přejíždí prstem po klávesnici s obrázky a skládá slabiky a slova — tak,
@@ -21,6 +24,10 @@ francouzština, portugalština, čínština (pinyin) a japonština (hiragana). M
 se drží školy — čeština analyticko-syntetická, angličtina fonetika, ostatní
 slabikové. Od slabik přes slova k poslechu bez textu, doplňovačkám, rýmům a
 opakování toho, co jde nejhůř; naučená slova jdou rovnou do věty a do Mé knížky.
+
+Menu, nápověda, rodičovský koutek a úvod můžou být v **jazyce rodiny** —
+kterémkoli z 12 jazyků: k devíti výše přibyla ukrajinština, ruština
+a vietnamština. Dítě, které doma mluví jinak, se tak může učit číst třeba česky.
 
 Hrou provází **Pandička**. Stojí přímo na ploše, dá se prstem odsunout, jásá,
 čte, v noci spí a na ťuknutí zamává. Systémové emoji nahradilo 294 ilustrovaných
