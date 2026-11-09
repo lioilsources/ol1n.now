@@ -104,6 +104,17 @@ Eskalation.
 Treuhandkonto, keine Kryptowährungen – Zahlungen gehen direkt vom Konto des
 Mieters auf das Konto des Vermieters.
 
+### Übernahme bestehender Mietverhältnisse
+
+Wer seine Wohnungen bereits mit einem Mietvertrag auf Papier vermietet hat,
+muss nichts neu unterschreiben. Das Mietverhältnis wird als außerhalb der
+Plattform unterschrieben übernommen, ein Scan des Vertrags wird hochgeladen und
+die Zahlungen werden ab dem Übernahmedatum verfolgt: Ältere Rückstände gehen in
+den Anfangssaldo, die hinterlegte Kaution wird erfasst und auch die bisherige
+Zahlungsreferenz (variables Symbol) bleibt erhalten. Die Mieter bekommen nichts,
+bis der Vermieter sie ins Mieterportal einlädt. Mehrere Mietverhältnisse lassen
+sich auf einmal aus einer Tabelle importieren.
+
 ### Portfolio über Städte hinweg und Mietrisiko
 
 Für Vermieter und Verwalter mit mehreren Wohnungen: alle Mietverhältnisse nach
@@ -167,10 +178,12 @@ zugeordneter Zahlung, Portfolio, Hervorhebung mit Rechnung, DSA-Meldung,
 Backoffice). Auch die Wiederherstellung der Datenbank aus einem Backup wurde
 geprüft.
 
-**Derzeit läuft die Härtung vor dem Pilotbetrieb**: Sicherheits- und
-Betriebsverbesserungen aus dem Code-Review, Benachrichtigungen zu Bewerbungen,
-Mietverträgen und Zahlungen sowie die Testumgebung. Noch läuft nichts auf einem
-echten Server – die Bereitstellung wartet auf Konten und Zugänge (siehe unten).
+Fertig sind auch die im Code-Review empfohlenen Sicherheits- und
+Betriebsverbesserungen sowie Push-Benachrichtigungen zu Bewerbungen,
+Mietverträgen und Zahlungen. Eine geschlossene Beta läuft auf einem eigenen
+Server mit Beispielinseraten für Prag und Umgebung, die dort als solche
+gekennzeichnet sind. Der Produktivbetrieb auf Hetzner wartet auf Konten und
+Zugänge (siehe unten).
 
 Die Tests mit echten Menschen laufen in fünf Phasen. Jede endet mit einem Gate,
 an dem wir gemeinsam entscheiden, ob es weitergeht:

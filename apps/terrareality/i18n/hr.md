@@ -95,6 +95,15 @@ sedam dana slijedi eskalacija.
 posredničkog (escrow) računa, bez kriptovaluta — plaćanja idu izravno s računa
 najmoprimca na račun najmodavca.
 
+### Preuzimanje postojećih najmova
+
+Najmodavac koji već ima stanove iznajmljene na papirnati ugovor ne mora ništa
+ponovno potpisivati. Najam preuzima kao potpisan izvan platforme, učita sken
+ugovora, a plaćanja se prate od datuma preuzimanja: stariji dug ide u početno
+stanje, primljeni polog se evidentira, a ostaje i dosadašnji poziv na broj.
+Najmoprimci ne dobivaju ništa dok ih najmodavac ne pozove na portal za
+najmoprimce. Više najmova odjednom može se uvesti iz tablice.
+
 ### Portfelj u više gradova i rizik najma
 
 Za najmodavce i upravitelje s više stanova: svi najmovi po općinama, mjesečno
@@ -153,10 +162,11 @@ i end-to-end testovima koji u pregledniku prolaze kroz cjelovite scenarije
 portfelj, promocija s računom, prijava prema DSA-u, backoffice). Provjereno je
 i vraćanje baze podataka iz sigurnosne kopije.
 
-**U tijeku je završno učvršćivanje prije pilota**: sigurnosna i operativna
-poboljšanja preporučena u pregledu koda, obavijesti za prijave, ugovore
-i plaćanja te testno okruženje. Zasad ništa ne radi na stvarnom poslužitelju —
-postavljanje čeka korisničke račune i pristupe (vidi dolje).
+Gotova su i sigurnosna i operativna poboljšanja preporučena u pregledu koda
+te push obavijesti za prijave, ugovore i plaćanja. Zatvorena beta radi na
+vlastitom poslužitelju s oglednim oglasima za Prag i okolicu, koji su u njoj
+označeni. Produkcijsko postavljanje na Hetzneru čeka korisničke račune
+i pristupe (vidi dolje).
 
 Testiranje sa stvarnim ljudima odvija se u pet faza. Svaka završava kontrolnom
 točkom na kojoj zajedno odlučujemo hoćemo li krenuti dalje:

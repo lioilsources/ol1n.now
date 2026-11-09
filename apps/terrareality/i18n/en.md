@@ -94,6 +94,16 @@ due date reminders go out, and after seven days an escalation.
 **TerraReality never holds or forwards tenants' money.** No escrow, no crypto —
 payments go directly from the tenant's account to the landlord's.
 
+### Taking over existing tenancies
+
+A landlord whose flats are already let on a paper lease does not have to sign
+anything again. The tenancy is taken over as signed outside the platform, a scan
+of the lease is uploaded and payments are tracked from the takeover date: older
+debt goes into the opening balance, the deposit held is recorded and the
+existing variable symbol stays. Tenants receive nothing until the landlord
+invites them to the tenant portal. Several tenancies can be imported at once
+from a spreadsheet.
+
 ### Portfolio across cities and lease risk
 
 For landlords and managers with several flats: all tenancies by municipality,
@@ -149,10 +159,11 @@ lease with signature and a matched payment, portfolio, promotion with invoice,
 DSA report, backoffice). Restoring the database from a backup has been verified
 as well.
 
-**A hardening pass before the pilot is under way**: security and operational
-improvements recommended by the code review, notifications for applications,
-leases and payments, and the test environment. Nothing runs on a real server
-yet — deployment waits for accounts and access (see below).
+The security and operational improvements recommended by the code review and
+push notifications for applications, leases and payments are done as well. A
+closed beta runs on our own server with sample listings for Prague and its
+surroundings, clearly marked as such. Production deployment on Hetzner waits for
+accounts and access (see below).
 
 Testing with real people runs in five phases. Each ends with a gate where we
 decide together whether to move on:

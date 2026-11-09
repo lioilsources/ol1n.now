@@ -7,7 +7,7 @@ order: 25
 featured: false
 desktop: Web
 mobile: android,ios
-langs: cs,en,de,pl,hu,hr
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 appstore:
 playstore:
 testflight:
@@ -95,6 +95,15 @@ a po sedmi dnech eskalace.
 **TerraReality nikdy nedrží ani nepřeposílá peníze nájemníků.** Žádná úschova,
 žádné kryptoměny — platby jdou rovnou z účtu nájemníka na účet majitele.
 
+### Převzetí existujících nájmů
+
+Majitel, který má byty už pronajaté na papírovou smlouvu, nemusí nic
+podepisovat znovu. Nájem převezme jako podepsaný mimo platformu, nahraje sken
+smlouvy a platby se sledují od data převzetí: starší dluh jde do počátečního
+zůstatku, držená kauce se zaeviduje a zůstane i dosavadní variabilní symbol.
+Nájemníkům nic nepřijde, dokud je majitel nepozve do nájemního portálu. Víc
+nájmů naráz jde naimportovat z tabulky.
+
 ### Portfolio napříč městy a riziko nájmů
 
 Pro majitele a správce s více byty: přehled všech nájmů po obcích, měsíční
@@ -148,10 +157,10 @@ které v prohlížeči proklikají celé scénáře (inzerát, zprávy, skupinov
 smlouva s podpisem a spárovanou platbou, portfolio, propagace s fakturou,
 nahlášení podle DSA, backoffice). Ověřená je i obnova databáze ze zálohy.
 
-**Teď probíhá dotažení před pilotem**: bezpečnostní a provozní úpravy doporučené
-při revizi kódu, notifikace pro žádosti, smlouvy a platby a příprava
-testovacího prostředí. Na skutečném serveru zatím nic neběží — nasazení čeká na
-účty a přístupy (viz níže).
+Hotové jsou i bezpečnostní a provozní úpravy doporučené při revizi kódu
+a push notifikace pro žádosti, smlouvy a platby. Uzavřená beta běží na
+vlastním serveru s ukázkovými inzeráty pro Prahu a okolí, které jsou v ní
+označené. Produkční nasazení na Hetzneru čeká na účty a přístupy (viz níže).
 
 Testování se živými lidmi jde v pěti fázích. Každá končí bránou, kde se společně
 rozhodne, jestli se jde dál:
