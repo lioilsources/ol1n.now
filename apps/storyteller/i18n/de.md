@@ -1,7 +1,8 @@
 ---
 tagline: Die Gutenachtgeschichte, die du selbst erzählst – 2.795 Märchen aus 98 Ländern, die App souffliert nur
 ---
-Die App erzählt nie an deiner Stelle. Sie gibt dir die Bausteine an die Hand –
+Im App Store und bei Google Play heißt die App Pohádkomat (Arbeitstitel
+StoryTeller). Sie erzählt nie an deiner Stelle. Sie gibt dir die Bausteine an die Hand –
 Figuren, Aufgabe, Problem, Ende – und hält dir dann das Gerüst vor Augen.
 Erzählen tust du: deinem Kind, mit deinen eigenen Worten.
 
@@ -94,10 +95,11 @@ Die App teilt die Welt in fünfzehn Regionen, und aus jeder sind zehn Märchen g
 
 ### Märchenpakete
 
-**150 Märchen sind gratis und gleich in der App** — zehn aus jeder der fünfzehn Weltregionen, jedes mit Szenenbildern, Hinweisen und eigenen Klängen. Weitere Märchen kommen in Teilen hinzu: fünfzig Märchen aus einer Region. Der Globus zeigt bei jedem Land, wie viele Märchen es von dort gibt und in welchem Teil sie stecken.
+**150 Märchen sind gratis und gleich in der App** — zehn aus jeder der fünfzehn Weltregionen, jedes mit Szenenbildern, Hinweisen und eigenen Klängen. Weitere Märchen kommen in Teilen hinzu: fünfzig Märchen aus einer Region für einen kleinen In-App-Kauf. Bisher sind zwei Teile aus Tschechien und der Slowakei erschienen. Ein gekaufter Teil wird aufs Handy geladen und funktioniert danach auch offline; Käufe lassen sich auf einem neuen Handy wiederherstellen. Der Globus zeigt bei jedem Land, wie viele Märchen es von dort gibt und in welchem Teil sie stecken.
 
 Die Schrift ist rundlich und gut lesbar, die Überschriften kommen im
 „Bubble“-Look daher – die App ist für Kinder und soll auch so aussehen.
 
 Der gesamte Ablauf Globus → Figuren → Aufgabe → Problem → Ende → Gerüst →
-Souffleur läuft auf dem Handy, ohne einen einzigen Serveraufruf.
+Souffleur läuft auf dem Handy, ohne einen einzigen Serveraufruf. Ohne Werbung,
+Konten und Tracking. Oberfläche und Märchen gibt es vorerst nur auf Tschechisch.

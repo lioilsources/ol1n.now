@@ -1,7 +1,8 @@
 ---
 tagline: L’histoire du soir que tu racontes toi-même – 2 795 contes de 98 pays, l’appli se contente de souffler
 ---
-L’appli ne raconte jamais à ta place. Elle te tend les briques de l’histoire –
+Sur l’App Store et Google Play, l’appli s’appelle Pohádkomat (nom de travail
+StoryTeller). Elle ne raconte jamais à ta place. Elle te tend les briques de l’histoire –
 des personnages, une quête, un problème, une fin – puis garde la trame sous
 tes yeux. C’est toi qui racontes, à ton enfant, avec tes mots à toi.
 
@@ -96,10 +97,12 @@ L’appli découpe le monde en quinze régions, et dix contes de chacune sont gr
 
 ### Packs de contes
 
-**150 contes sont gratuits et livrés avec l’appli** — dix pour chacune des quinze régions du monde, chacun avec ses illustrations de scènes, ses indices et ses propres sons. D’autres contes arriveront par volumes : cinquante contes d’une même région. Pour chaque pays, le globe indique combien de contes il compte et dans quel volume les trouver.
+**150 contes sont gratuits et livrés avec l’appli** — dix pour chacune des quinze régions du monde, chacun avec ses illustrations de scènes, ses indices et ses propres sons. D’autres contes arrivent par volumes : cinquante contes d’une même région pour un petit achat intégré. Pour l’instant, deux volumes de Tchéquie et de Slovaquie sont sortis. Un volume acheté se télécharge sur le téléphone et fonctionne ensuite hors connexion ; les achats peuvent être restaurés sur un nouveau téléphone. Pour chaque pays, le globe indique combien de contes il compte et dans quel volume les trouver.
 
 La police est ronde et lisible, les titres sont « en bulles » – l’appli est
 faite pour les enfants, et cela doit se voir.
 
 Tout le parcours Globe → Personnages → Quête → Problème → Fin → Trame →
-Souffleur se déroule sur le téléphone, sans un seul appel à un serveur.
+Souffleur se déroule sur le téléphone, sans un seul appel à un serveur. Sans
+publicité, sans compte, sans pistage. L’interface et les contes ne sont pour
+l’instant qu’en tchèque.

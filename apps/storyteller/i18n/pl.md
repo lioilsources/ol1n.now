@@ -1,7 +1,8 @@
 ---
 tagline: Bajka na dobranoc, którą opowiadasz ty — 2795 bajek z 98 krajów, aplikacja tylko podpowiada
 ---
-Aplikacja nigdy nie opowiada za ciebie. Podsuwa klocki — postacie, zadanie,
+W App Store i Google Play aplikacja nazywa się Pohádkomat (roboczo
+StoryTeller). Nigdy nie opowiada za ciebie. Podsuwa klocki — postacie, zadanie,
 problem, zakończenie — a potem trzyma ci plan przed oczami. Opowiadasz ty,
 swojemu dziecku, własnymi słowami.
 
@@ -91,10 +92,11 @@ Aplikacja dzieli świat na piętnaście regionów, a z każdego dziesięć bajek
 
 ### Paczki bajek
 
-**150 bajek jest za darmo i od razu w aplikacji** — po dziesięć z każdego z piętnastu regionów świata, każda z ilustracjami scen, podpowiedziami i własnymi dźwiękami. Kolejne bajki będą przybywać częściami: pięćdziesiąt bajek z jednego regionu. Przy każdym kraju globus pokazuje, ile jest z niego bajek i w której części je znajdziesz.
+**150 bajek jest za darmo i od razu w aplikacji** — po dziesięć z każdego z piętnastu regionów świata, każda z ilustracjami scen, podpowiedziami i własnymi dźwiękami. Kolejne bajki przybywają częściami: pięćdziesiąt bajek z jednego regionu za jeden drobny zakup w aplikacji. Na razie wyszły dwie części z Czech i Słowacji. Kupiona część pobiera się do telefonu i dalej działa bez internetu; zakupy można przywrócić na nowym telefonie. Przy każdym kraju globus pokazuje, ile jest z niego bajek i w której części je znajdziesz.
 
 Czcionka jest pulchna i czytelna, nagłówki „bąbelkowe” — aplikacja jest dla
 dzieci i tak też ma wyglądać.
 
 Całe przejście Globus → Postacie → Zadanie → Problem → Zakończenie → Plan →
-Sufler działa w telefonie, bez ani jednego zapytania do serwera.
+Sufler działa w telefonie, bez ani jednego zapytania do serwera. Bez reklam,
+kont i śledzenia. Interfejs i bajki są na razie tylko po czesku.
