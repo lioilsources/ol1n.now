@@ -2,6 +2,7 @@
 slug: doggiowars
 name: DoggioWars
 repo: lioilsources/DoggioWars
+icon_src: menu/icon.png
 tagline: Voxel dogfight na vzdušných ostrovech (samostatná hra pro Luanti)
 order: 12
 featured: false
@@ -12,6 +13,7 @@ appstore:
 playstore:
 testflight:
 contentdb: https://content.luanti.org/packages/lioilsources/doggiowars_game/
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 ---
 Jsi stíhačka. Ne pilot ve stíhačce — samotný stroj. V DoggioWars se nechodí
 pěšky, nic se netěží a nestaví: od první vteřiny letíš.
@@ -21,6 +23,19 @@ sopky s lávou přetékající přes kráter, ledovcové mesy s rampouchy, atolo
 laguny, obří houby, zářící krystalové věže. Generují se z čísla, kterému se
 říká seed, takže dva světy nejsou stejné, a ostrovy jsou **rozbitné**:
 tvoje střely z nich odlamují kusy, které se pak sypou do prázdna.
+
+### Kdo létá kolem
+
+Nebe není prázdné. Kolem svých ostrovů krouží **hadí draci** pěti živlů —
+ohnivý nad sopkami a popelem, ledový nad ledovci, vodní nad atoly, bahenní
+nad bažinami a elektrický nad krystaly. Pouštěmi proplouvají **píseční
+červi** jako delfíni, nad pustými ostrovy hlídá **kamenný strážce**, nad
+zelenými se vznášejí svítící **medúzy** a s trochou štěstí potkáš **nebeskou
+velrybu**. Všichni jsou zatím mírumilovní: neublíží ti a ty jim taky ne.
+Stejný seed dá stejnou osádku.
+
+Klávesa **Z** nebo příkaz `/map` otevře mapu světa přes celou obrazovku:
+ostrovy obarvené podle biomu, tečky tvorů a tvoje loď se směrem letu.
 
 ### Dva stroje v jednom
 
@@ -49,6 +64,15 @@ Myš a klávesnice fungují, ale hra je dělaná pro **gamepad** — Xbox 360 i 
 DualShock přes nativní joystick v Luanti, žádný externí mapovač. Levá páčka
 letadlo řídí, pravá míří zbraní nezávisle na tom, kam letíš. Náklon a sklon
 ukazuje vodováha v HUD, protože horizontem Luanti naklánět neumí.
+
+### Twitch chat
+
+Hra má v sobě volitelné napojení na Twitch přes službu
+[chatbridge](https://github.com/lioilsources/chatbridge): diváci příkazy
+v chatu (`!drak`, `!velryba`, `!meduzy`…) přivolávají tvory do světa
+streamera. Chat umí jen přidat tvory, kteří po sobě uklidí, terénu se nedotkne,
+a `/chatoff` ho okamžitě vypne. Bez nastavení v `minetest.conf` je napojení
+vypnuté.
 
 ### Instalace
 
