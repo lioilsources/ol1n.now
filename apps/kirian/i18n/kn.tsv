@@ -1,0 +1,106 @@
+# Kirian — Kannada. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,kn}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	ಮೊನೊಕ್ರೋಮ್ ಆರ್ಕೇಡ್
+label.Vector wireframe	ವೆಕ್ಟರ್ ವೈರ್‌ಫ್ರೇಮ್
+label.Fixed-formation arcade	ಸ್ಥಿರ ವ್ಯೂಹದ ಆರ್ಕೇಡ್
+label.Biomechanical sci-fi	ಬಯೋಮೆಕ್ಯಾನಿಕಲ್ ಸೈ-ಫೈ
+label.16-bit console shooter	16-ಬಿಟ್ ಕನ್ಸೋಲ್ ಶೂಟರ್
+label.DOS-era pixel art	DOS ಯುಗದ ಪಿಕ್ಸೆಲ್ ಆರ್ಟ್
+label.Two-polarity shooter	ಎರಡು ಧ್ರುವಗಳ ಶೂಟರ್
+label.Neon vector grid	ನಿಯಾನ್ ವೆಕ್ಟರ್ ಗ್ರಿಡ್
+label.Chrome fleet shmup	ಕ್ರೋಮ್ ನೌಕಾಪಡೆಯ shmup
+label.Sepia dogfight	ಸೆಪಿಯಾ ವಾಯು ಕಾಳಗ
+label.Post-apocalyptic	ಪ್ರಳಯಾನಂತರದ ಜಗತ್ತು
+label.Dark neon voxel	ಗಾಢ ನಿಯಾನ್ ವೋಕ್ಸೆಲ್
+label.4-colour console era	4-ಬಣ್ಣದ ಕನ್ಸೋಲ್ ಯುಗ
+label.Kirian original	Kirian ಮೂಲ
+
+# --- skin notes ---
+label.Subtle CRT phosphor	ಸೌಮ್ಯ CRT ಫಾಸ್ಫರ್
+label.Glow on geometry	ಜ್ಯಾಮಿತಿಯ ಮೇಲೆ ಹೊಳಪು
+label.Soft bloom on projectiles	ಗುಂಡುಗಳ ಮೇಲೆ ಮೃದು bloom
+label.Neutral bloom	ತಟಸ್ಥ bloom
+label.Subtle warm glow	ಸೌಮ್ಯ ಬೆಚ್ಚನೆಯ ಹೊಳಪು
+label.Faithful retro feel	ನಿಷ್ಠಾವಂತ ರೆಟ್ರೊ ಅನುಭವ
+label.Matches the polarity palette	ಧ್ರುವ ಪ್ಯಾಲೆಟ್‌ಗೆ ಹೊಂದುವಂತೆ
+label.Strongest bloom preset	ಅತ್ಯಂತ ಪ್ರಬಲ bloom ಪ್ರಿಸೆಟ್
+label.Clean, high-contrast	ಸ್ವಚ್ಛ, ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್
+label.No bloom — flat palette	bloom ಇಲ್ಲ — ಸಮತಟ್ಟು ಪ್ಯಾಲೆಟ್
+label.Saturation 0.85, orange tint	ಸ್ಯಾಚುರೇಶನ್ 0.85, ಕಿತ್ತಳೆ ಛಾಯೆ
+label.High-contrast neon	ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್ ನಿಯಾನ್
+label.Ultra-chunky flat sprites	ಅತಿ ದಪ್ಪ ಸಮತಟ್ಟು ಸ್ಪ್ರೈಟ್‌ಗಳು
+label.Hand-crafted baseline	ಕೈಯಿಂದ ಮಾಡಿದ ಮೂಲ
+
+# --- CRT / tint presets ---
+label.neutral	ತಟಸ್ಥ
+label.scanlines 0.4, curve 0.01	ಸ್ಕ್ಯಾನ್‌ಲೈನ್‌ಗಳು 0.4, ವಕ್ರತೆ 0.01
+label.scanlines 0.7, curve 0.02	ಸ್ಕ್ಯಾನ್‌ಲೈನ್‌ಗಳು 0.7, ವಕ್ರತೆ 0.02
+label.green tint (0.85 / 1.0 / 0.85)	ಹಸಿರು ಛಾಯೆ (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	ಸಯಾನ್ ಛಾಯೆ (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	ತಂಪು ನೀಲಿ (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	ಬೆಚ್ಚನೆ (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	ಬೆಚ್ಚನೆ (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	ಬೆಚ್ಚನೆಯ ಹಳದಿ (1.0 / 0.9 / 0.7)
+label.desaturated warm	ಮಂದ ಬೆಚ್ಚನೆ
+
+# --- sprite labels ---
+label.Náhled	ಮುನ್ನೋಟ
+label.Loď	ಹಡಗು
+label.Loď 1	ಹಡಗು 1
+label.Loď 2	ಹಡಗು 2
+label.Loď 3	ಹಡಗು 3
+label.Loď 4	ಹಡಗು 4
+label.Loď 5	ಹಡಗು 5
+label.Loď 6	ಹಡಗು 6
+label.Přehled nepřátel	ಶತ್ರುಗಳ ಅವಲೋಕನ
+label.Asteroid 1	ಕ್ಷುದ್ರಗ್ರಹ 1
+label.Asteroid 2	ಕ್ಷುದ್ರಗ್ರಹ 2
+label.Asteroid 3	ಕ್ಷುದ್ರಗ್ರಹ 3
+label.Asteroid 4	ಕ್ಷುದ್ರಗ್ರಹ 4
+label.Bublina	ಗುಳ್ಳೆ
+label.Blaster	ಬ್ಲಾಸ್ಟರ್
+label.Laser	ಲೇಸರ್
+label.Vulcan	ವಲ್ಕನ್
+label.Rododendron	ರೋಡೋಡೆಂಡ್ರಾನ್
+label.Hvězda	ನಕ್ಷತ್ರ
+label.Hvězda (zelená)	ನಕ್ಷತ್ರ (ಹಸಿರು)
+label.Exploze 1	ಸ್ಫೋಟ 1
+label.Exploze 2	ಸ್ಫೋಟ 2
+label.Exploze 3	ಸ್ಫೋಟ 3
+label.Exploze 4	ಸ್ಫೋಟ 4
+label.Vrstva 0	ಪದರ 0
+label.Vrstva 1	ಪದರ 1
+label.Vrstva 2	ಪದರ 2
+label.Vrstva 3	ಪದರ 3
+
+# --- game center (UI) ---
+label.Karta	ಕಾರ್ಡ್
+label.Tlačítko	ಬಟನ್
+label.Aktivní záložka	ಸಕ್ರಿಯ ಟ್ಯಾಬ್
+label.Kredity	ಕ್ರೆಡಿಟ್‌ಗಳು
+label.Štít	ಶೀಲ್ಡ್
+label.Život	ಜೀವ
+label.Bomba	ಬಾಂಬ್
+label.Generátor	ಜನರೇಟರ್
+
+# --- sfx + music ---
+label.Výstřel	ಗುಂಡು
+label.Paprsek	ಕಿರಣ
+label.Malá exploze	ಸಣ್ಣ ಸ್ಫೋಟ
+label.Velká exploze	ದೊಡ್ಡ ಸ್ಫೋಟ
+label.Zásah trupu	ಕವಚಕ್ಕೆ ಹೊಡೆತ
+label.Zásah štítu	ಶೀಲ್ಡ್‌ಗೆ ಹೊಡೆತ
+label.Nová zbraň	ಹೊಸ ಆಯುಧ
+label.Sektor dokončen	ಸೆಕ್ಟರ್ ಪೂರ್ಣ
+label.Konec hry	ಆಟ ಮುಗಿಯಿತು
+label.Bonus	ಬೋನಸ್
+label.Intro	ಪರಿಚಯ
+label.Téma 1	ಥೀಮ್ 1
+label.Téma 2	ಥೀಮ್ 2
+label.Téma 3	ಥೀಮ್ 3
+label.Téma 4	ಥೀಮ್ 4
+label.Téma 5 (boss)	ಥೀಮ್ 5 (ಬಾಸ್)

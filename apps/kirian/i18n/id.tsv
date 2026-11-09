@@ -1,0 +1,106 @@
+# Kirian — Indonesian. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,id}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Arcade monokrom
+label.Vector wireframe	Wireframe vektor
+label.Fixed-formation arcade	Arcade formasi tetap
+label.Biomechanical sci-fi	Fiksi ilmiah biomekanik
+label.16-bit console shooter	Shooter konsol 16-bit
+label.DOS-era pixel art	Pixel art era DOS
+label.Two-polarity shooter	Shooter dua polaritas
+label.Neon vector grid	Kisi vektor neon
+label.Chrome fleet shmup	Shmup armada krom
+label.Sepia dogfight	Duel udara sepia
+label.Post-apocalyptic	Pascaapokaliptik
+label.Dark neon voxel	Voxel neon gelap
+label.4-colour console era	Era konsol 4 warna
+label.Kirian original	Orisinal Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Fosfor CRT halus
+label.Glow on geometry	Cahaya pada geometri
+label.Soft bloom on projectiles	Bloom lembut pada proyektil
+label.Neutral bloom	Bloom netral
+label.Subtle warm glow	Cahaya hangat halus
+label.Faithful retro feel	Nuansa retro yang setia
+label.Matches the polarity palette	Selaras dengan palet polaritas
+label.Strongest bloom preset	Preset bloom terkuat
+label.Clean, high-contrast	Bersih, kontras tinggi
+label.No bloom — flat palette	Tanpa bloom — palet datar
+label.Saturation 0.85, orange tint	Saturasi 0.85, rona oranye
+label.High-contrast neon	Neon kontras tinggi
+label.Ultra-chunky flat sprites	Sprite datar sangat kasar
+label.Hand-crafted baseline	Dasar buatan tangan
+
+# --- CRT / tint presets ---
+label.neutral	netral
+label.scanlines 0.4, curve 0.01	garis pindai 0.4, lengkungan 0.01
+label.scanlines 0.7, curve 0.02	garis pindai 0.7, lengkungan 0.02
+label.green tint (0.85 / 1.0 / 0.85)	rona hijau (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	rona sian (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	biru sejuk (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	hangat (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	hangat (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	kuning hangat (1.0 / 0.9 / 0.7)
+label.desaturated warm	hangat pudar
+
+# --- sprite labels ---
+label.Náhled	Pratinjau
+label.Loď	Kapal
+label.Loď 1	Kapal 1
+label.Loď 2	Kapal 2
+label.Loď 3	Kapal 3
+label.Loď 4	Kapal 4
+label.Loď 5	Kapal 5
+label.Loď 6	Kapal 6
+label.Přehled nepřátel	Ikhtisar musuh
+label.Asteroid 1	Asteroid 1
+label.Asteroid 2	Asteroid 2
+label.Asteroid 3	Asteroid 3
+label.Asteroid 4	Asteroid 4
+label.Bublina	Gelembung
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Rhododendron
+label.Hvězda	Bintang
+label.Hvězda (zelená)	Bintang (hijau)
+label.Exploze 1	Ledakan 1
+label.Exploze 2	Ledakan 2
+label.Exploze 3	Ledakan 3
+label.Exploze 4	Ledakan 4
+label.Vrstva 0	Lapisan 0
+label.Vrstva 1	Lapisan 1
+label.Vrstva 2	Lapisan 2
+label.Vrstva 3	Lapisan 3
+
+# --- game center (UI) ---
+label.Karta	Kartu
+label.Tlačítko	Tombol
+label.Aktivní záložka	Tab aktif
+label.Kredity	Kredit
+label.Štít	Perisai
+label.Život	Nyawa
+label.Bomba	Bom
+label.Generátor	Generator
+
+# --- sfx + music ---
+label.Výstřel	Tembakan
+label.Paprsek	Sinar
+label.Malá exploze	Ledakan kecil
+label.Velká exploze	Ledakan besar
+label.Zásah trupu	Lambung terkena
+label.Zásah štítu	Perisai terkena
+label.Nová zbraň	Senjata baru
+label.Sektor dokončen	Sektor selesai
+label.Konec hry	Permainan berakhir
+label.Bonus	Bonus
+label.Intro	Intro
+label.Téma 1	Tema 1
+label.Téma 2	Tema 2
+label.Téma 3	Tema 3
+label.Téma 4	Tema 4
+label.Téma 5 (boss)	Tema 5 (bos)

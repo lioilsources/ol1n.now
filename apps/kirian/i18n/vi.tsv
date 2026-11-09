@@ -1,0 +1,106 @@
+# Kirian — Vietnamese. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,vi}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Arcade đơn sắc
+label.Vector wireframe	Khung dây vector
+label.Fixed-formation arcade	Arcade đội hình cố định
+label.Biomechanical sci-fi	Khoa học viễn tưởng cơ sinh học
+label.16-bit console shooter	Bắn súng máy console 16-bit
+label.DOS-era pixel art	Pixel art thời DOS
+label.Two-polarity shooter	Bắn súng hai cực
+label.Neon vector grid	Lưới vector neon
+label.Chrome fleet shmup	Shmup hạm đội chrome
+label.Sepia dogfight	Không chiến tông nâu sepia
+label.Post-apocalyptic	Hậu tận thế
+label.Dark neon voxel	Voxel neon tối
+label.4-colour console era	Thời máy console 4 màu
+label.Kirian original	Bản gốc Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Lân quang CRT nhẹ
+label.Glow on geometry	Phát sáng trên hình khối
+label.Soft bloom on projectiles	Bloom dịu trên đạn
+label.Neutral bloom	Bloom trung tính
+label.Subtle warm glow	Ánh sáng ấm nhẹ
+label.Faithful retro feel	Cảm giác retro chân thực
+label.Matches the polarity palette	Khớp với bảng màu hai cực
+label.Strongest bloom preset	Mức bloom mạnh nhất
+label.Clean, high-contrast	Sạch, tương phản cao
+label.No bloom — flat palette	Không bloom — bảng màu phẳng
+label.Saturation 0.85, orange tint	Độ bão hòa 0.85, sắc cam
+label.High-contrast neon	Neon tương phản cao
+label.Ultra-chunky flat sprites	Sprite phẳng cực thô
+label.Hand-crafted baseline	Bản cơ sở làm thủ công
+
+# --- CRT / tint presets ---
+label.neutral	trung tính
+label.scanlines 0.4, curve 0.01	đường quét 0.4, độ cong 0.01
+label.scanlines 0.7, curve 0.02	đường quét 0.7, độ cong 0.02
+label.green tint (0.85 / 1.0 / 0.85)	sắc xanh lá (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	sắc lục lam (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	xanh dương lạnh (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	ấm (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	ấm (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	vàng ấm (1.0 / 0.9 / 0.7)
+label.desaturated warm	ấm, giảm bão hòa
+
+# --- sprite labels ---
+label.Náhled	Xem trước
+label.Loď	Tàu
+label.Loď 1	Tàu 1
+label.Loď 2	Tàu 2
+label.Loď 3	Tàu 3
+label.Loď 4	Tàu 4
+label.Loď 5	Tàu 5
+label.Loď 6	Tàu 6
+label.Přehled nepřátel	Tổng quan kẻ thù
+label.Asteroid 1	Tiểu hành tinh 1
+label.Asteroid 2	Tiểu hành tinh 2
+label.Asteroid 3	Tiểu hành tinh 3
+label.Asteroid 4	Tiểu hành tinh 4
+label.Bublina	Bong bóng
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Đỗ quyên
+label.Hvězda	Ngôi sao
+label.Hvězda (zelená)	Ngôi sao (xanh lá)
+label.Exploze 1	Vụ nổ 1
+label.Exploze 2	Vụ nổ 2
+label.Exploze 3	Vụ nổ 3
+label.Exploze 4	Vụ nổ 4
+label.Vrstva 0	Lớp 0
+label.Vrstva 1	Lớp 1
+label.Vrstva 2	Lớp 2
+label.Vrstva 3	Lớp 3
+
+# --- game center (UI) ---
+label.Karta	Thẻ
+label.Tlačítko	Nút
+label.Aktivní záložka	Tab đang mở
+label.Kredity	Tín dụng
+label.Štít	Khiên
+label.Život	Mạng
+label.Bomba	Bom
+label.Generátor	Máy phát
+
+# --- sfx + music ---
+label.Výstřel	Phát bắn
+label.Paprsek	Tia
+label.Malá exploze	Vụ nổ nhỏ
+label.Velká exploze	Vụ nổ lớn
+label.Zásah trupu	Trúng thân tàu
+label.Zásah štítu	Trúng khiên
+label.Nová zbraň	Vũ khí mới
+label.Sektor dokončen	Hoàn thành khu vực
+label.Konec hry	Kết thúc trò chơi
+label.Bonus	Thưởng
+label.Intro	Mở đầu
+label.Téma 1	Nhạc nền 1
+label.Téma 2	Nhạc nền 2
+label.Téma 3	Nhạc nền 3
+label.Téma 4	Nhạc nền 4
+label.Téma 5 (boss)	Nhạc nền 5 (trùm)

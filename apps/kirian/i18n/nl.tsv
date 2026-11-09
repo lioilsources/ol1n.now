@@ -1,0 +1,106 @@
+# Kirian — Dutch. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,nl}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Monochrome arcade
+label.Vector wireframe	Vector-draadmodel
+label.Fixed-formation arcade	Arcade met vaste formatie
+label.Biomechanical sci-fi	Biomechanische sciencefiction
+label.16-bit console shooter	16-bit-consoleshooter
+label.DOS-era pixel art	Pixelart uit het DOS-tijdperk
+label.Two-polarity shooter	Shooter met twee polariteiten
+label.Neon vector grid	Neon-vectorraster
+label.Chrome fleet shmup	Shmup met chromen vloot
+label.Sepia dogfight	Luchtgevecht in sepia
+label.Post-apocalyptic	Postapocalyptisch
+label.Dark neon voxel	Donkere neon-voxels
+label.4-colour console era	Tijdperk van 4-kleurenconsoles
+label.Kirian original	Kirian-origineel
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Subtiele CRT-fosfor
+label.Glow on geometry	Gloed op de geometrie
+label.Soft bloom on projectiles	Zachte bloom op projectielen
+label.Neutral bloom	Neutrale bloom
+label.Subtle warm glow	Subtiele warme gloed
+label.Faithful retro feel	Getrouw retrogevoel
+label.Matches the polarity palette	Past bij het polariteitspalet
+label.Strongest bloom preset	Sterkste bloom-preset
+label.Clean, high-contrast	Strak, hoog contrast
+label.No bloom — flat palette	Geen bloom — vlak palet
+label.Saturation 0.85, orange tint	Verzadiging 0.85, oranje tint
+label.High-contrast neon	Neon met hoog contrast
+label.Ultra-chunky flat sprites	Extreem grove vlakke sprites
+label.Hand-crafted baseline	Handgemaakte basis
+
+# --- CRT / tint presets ---
+label.neutral	neutraal
+label.scanlines 0.4, curve 0.01	scanlines 0.4, kromming 0.01
+label.scanlines 0.7, curve 0.02	scanlines 0.7, kromming 0.02
+label.green tint (0.85 / 1.0 / 0.85)	groene tint (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	cyaan tint (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	koel blauw (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	warm (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	warm (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	warm geel (1.0 / 0.9 / 0.7)
+label.desaturated warm	onverzadigd warm
+
+# --- sprite labels ---
+label.Náhled	Voorbeeld
+label.Loď	Schip
+label.Loď 1	Schip 1
+label.Loď 2	Schip 2
+label.Loď 3	Schip 3
+label.Loď 4	Schip 4
+label.Loď 5	Schip 5
+label.Loď 6	Schip 6
+label.Přehled nepřátel	Overzicht van vijanden
+label.Asteroid 1	Asteroïde 1
+label.Asteroid 2	Asteroïde 2
+label.Asteroid 3	Asteroïde 3
+label.Asteroid 4	Asteroïde 4
+label.Bublina	Bel
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Rododendron
+label.Hvězda	Ster
+label.Hvězda (zelená)	Ster (groen)
+label.Exploze 1	Explosie 1
+label.Exploze 2	Explosie 2
+label.Exploze 3	Explosie 3
+label.Exploze 4	Explosie 4
+label.Vrstva 0	Laag 0
+label.Vrstva 1	Laag 1
+label.Vrstva 2	Laag 2
+label.Vrstva 3	Laag 3
+
+# --- game center (UI) ---
+label.Karta	Kaart
+label.Tlačítko	Knop
+label.Aktivní záložka	Actief tabblad
+label.Kredity	Credits
+label.Štít	Schild
+label.Život	Leven
+label.Bomba	Bom
+label.Generátor	Generator
+
+# --- sfx + music ---
+label.Výstřel	Schot
+label.Paprsek	Straal
+label.Malá exploze	Kleine explosie
+label.Velká exploze	Grote explosie
+label.Zásah trupu	Rompinslag
+label.Zásah štítu	Schildinslag
+label.Nová zbraň	Nieuw wapen
+label.Sektor dokončen	Sector voltooid
+label.Konec hry	Game over
+label.Bonus	Bonus
+label.Intro	Intro
+label.Téma 1	Thema 1
+label.Téma 2	Thema 2
+label.Téma 3	Thema 3
+label.Téma 4	Thema 4
+label.Téma 5 (boss)	Thema 5 (baas)

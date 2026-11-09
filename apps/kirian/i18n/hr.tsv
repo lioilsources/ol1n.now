@@ -1,0 +1,106 @@
+# Kirian — Croatian. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,hr}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Jednobojni arkadni automat
+label.Vector wireframe	Vektorski žičani model
+label.Fixed-formation arcade	Arkada s fiksnom formacijom
+label.Biomechanical sci-fi	Biomehanička znanstvena fantastika
+label.16-bit console shooter	Pucačina s 16-bitne konzole
+label.DOS-era pixel art	Pikselna umjetnost DOS ere
+label.Two-polarity shooter	Pucačina s dva polariteta
+label.Neon vector grid	Neonska vektorska mreža
+label.Chrome fleet shmup	Shmup s kromiranom flotom
+label.Sepia dogfight	Zračna borba u sepiji
+label.Post-apocalyptic	Postapokaliptično
+label.Dark neon voxel	Tamni neonski vokseli
+label.4-colour console era	Era konzola s 4 boje
+label.Kirian original	Kirian original
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Suptilni CRT fosfor
+label.Glow on geometry	Sjaj na geometriji
+label.Soft bloom on projectiles	Mekani bloom na projektilima
+label.Neutral bloom	Neutralni bloom
+label.Subtle warm glow	Suptilni topli sjaj
+label.Faithful retro feel	Vjeran retro ugođaj
+label.Matches the polarity palette	U skladu s paletom polariteta
+label.Strongest bloom preset	Najjača postavka bloom efekta
+label.Clean, high-contrast	Čisto, visok kontrast
+label.No bloom — flat palette	Bez blooma — ravna paleta
+label.Saturation 0.85, orange tint	Zasićenost 0.85, narančasti ton
+label.High-contrast neon	Neon visokog kontrasta
+label.Ultra-chunky flat sprites	Krajnje grubi ravni spriteovi
+label.Hand-crafted baseline	Ručno izrađena osnova
+
+# --- CRT / tint presets ---
+label.neutral	neutralno
+label.scanlines 0.4, curve 0.01	linije skeniranja 0.4, zakrivljenost 0.01
+label.scanlines 0.7, curve 0.02	linije skeniranja 0.7, zakrivljenost 0.02
+label.green tint (0.85 / 1.0 / 0.85)	zeleni ton (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	cijan ton (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	hladna plava (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	toplo (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	toplo (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	topla žuta (1.0 / 0.9 / 0.7)
+label.desaturated warm	toplo, desaturirano
+
+# --- sprite labels ---
+label.Náhled	Pregled
+label.Loď	Brod
+label.Loď 1	Brod 1
+label.Loď 2	Brod 2
+label.Loď 3	Brod 3
+label.Loď 4	Brod 4
+label.Loď 5	Brod 5
+label.Loď 6	Brod 6
+label.Přehled nepřátel	Pregled neprijatelja
+label.Asteroid 1	Asteroid 1
+label.Asteroid 2	Asteroid 2
+label.Asteroid 3	Asteroid 3
+label.Asteroid 4	Asteroid 4
+label.Bublina	Mjehurić
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Rododendron
+label.Hvězda	Zvijezda
+label.Hvězda (zelená)	Zvijezda (zelena)
+label.Exploze 1	Eksplozija 1
+label.Exploze 2	Eksplozija 2
+label.Exploze 3	Eksplozija 3
+label.Exploze 4	Eksplozija 4
+label.Vrstva 0	Sloj 0
+label.Vrstva 1	Sloj 1
+label.Vrstva 2	Sloj 2
+label.Vrstva 3	Sloj 3
+
+# --- game center (UI) ---
+label.Karta	Kartica
+label.Tlačítko	Gumb
+label.Aktivní záložka	Aktivna kartica
+label.Kredity	Krediti
+label.Štít	Štit
+label.Život	Život
+label.Bomba	Bomba
+label.Generátor	Generator
+
+# --- sfx + music ---
+label.Výstřel	Pucanj
+label.Paprsek	Zraka
+label.Malá exploze	Mala eksplozija
+label.Velká exploze	Velika eksplozija
+label.Zásah trupu	Pogodak u trup
+label.Zásah štítu	Pogodak u štit
+label.Nová zbraň	Novo oružje
+label.Sektor dokončen	Sektor završen
+label.Konec hry	Kraj igre
+label.Bonus	Bonus
+label.Intro	Uvod
+label.Téma 1	Tema 1
+label.Téma 2	Tema 2
+label.Téma 3	Tema 3
+label.Téma 4	Tema 4
+label.Téma 5 (boss)	Tema 5 (boss)

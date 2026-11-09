@@ -1,0 +1,106 @@
+# Kirian — Bengali. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,bn}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	মনোক্রোম আর্কেড
+label.Vector wireframe	ভেক্টর ওয়্যারফ্রেম
+label.Fixed-formation arcade	স্থির ফর্মেশন আর্কেড
+label.Biomechanical sci-fi	বায়োমেকানিক্যাল সায়েন্স ফিকশন
+label.16-bit console shooter	16-বিট কনসোল শুটার
+label.DOS-era pixel art	DOS যুগের পিক্সেল আর্ট
+label.Two-polarity shooter	দুই মেরুর শুটার
+label.Neon vector grid	নিয়ন ভেক্টর গ্রিড
+label.Chrome fleet shmup	ক্রোম বহরের shmup
+label.Sepia dogfight	সেপিয়া আকাশযুদ্ধ
+label.Post-apocalyptic	প্রলয়-পরবর্তী
+label.Dark neon voxel	গাঢ় নিয়ন ভক্সেল
+label.4-colour console era	4-রঙা কনসোলের যুগ
+label.Kirian original	Kirian অরিজিনাল
+
+# --- skin notes ---
+label.Subtle CRT phosphor	হালকা CRT ফসফর
+label.Glow on geometry	জ্যামিতির উপর আভা
+label.Soft bloom on projectiles	গোলায় নরম bloom
+label.Neutral bloom	নিরপেক্ষ bloom
+label.Subtle warm glow	হালকা উষ্ণ আভা
+label.Faithful retro feel	বিশ্বস্ত রেট্রো অনুভূতি
+label.Matches the polarity palette	মেরু প্যালেটের সাথে মানানসই
+label.Strongest bloom preset	সবচেয়ে জোরালো bloom প্রিসেট
+label.Clean, high-contrast	পরিষ্কার, উচ্চ কনট্রাস্ট
+label.No bloom — flat palette	bloom নেই — সমতল প্যালেট
+label.Saturation 0.85, orange tint	স্যাচুরেশন 0.85, কমলা আভা
+label.High-contrast neon	উচ্চ কনট্রাস্ট নিয়ন
+label.Ultra-chunky flat sprites	অত্যন্ত মোটা সমতল স্প্রাইট
+label.Hand-crafted baseline	হাতে বানানো বেস
+
+# --- CRT / tint presets ---
+label.neutral	নিরপেক্ষ
+label.scanlines 0.4, curve 0.01	স্ক্যানলাইন 0.4, বক্রতা 0.01
+label.scanlines 0.7, curve 0.02	স্ক্যানলাইন 0.7, বক্রতা 0.02
+label.green tint (0.85 / 1.0 / 0.85)	সবুজ আভা (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	সায়ান আভা (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	শীতল নীল (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	উষ্ণ (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	উষ্ণ (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	উষ্ণ হলুদ (1.0 / 0.9 / 0.7)
+label.desaturated warm	ফিকে উষ্ণ
+
+# --- sprite labels ---
+label.Náhled	প্রিভিউ
+label.Loď	জাহাজ
+label.Loď 1	জাহাজ 1
+label.Loď 2	জাহাজ 2
+label.Loď 3	জাহাজ 3
+label.Loď 4	জাহাজ 4
+label.Loď 5	জাহাজ 5
+label.Loď 6	জাহাজ 6
+label.Přehled nepřátel	শত্রুদের তালিকা
+label.Asteroid 1	গ্রহাণু 1
+label.Asteroid 2	গ্রহাণু 2
+label.Asteroid 3	গ্রহাণু 3
+label.Asteroid 4	গ্রহাণু 4
+label.Bublina	বুদবুদ
+label.Blaster	ব্লাস্টার
+label.Laser	লেজার
+label.Vulcan	ভালকান
+label.Rododendron	রডোডেনড্রন
+label.Hvězda	তারা
+label.Hvězda (zelená)	তারা (সবুজ)
+label.Exploze 1	বিস্ফোরণ 1
+label.Exploze 2	বিস্ফোরণ 2
+label.Exploze 3	বিস্ফোরণ 3
+label.Exploze 4	বিস্ফোরণ 4
+label.Vrstva 0	স্তর 0
+label.Vrstva 1	স্তর 1
+label.Vrstva 2	স্তর 2
+label.Vrstva 3	স্তর 3
+
+# --- game center (UI) ---
+label.Karta	কার্ড
+label.Tlačítko	বোতাম
+label.Aktivní záložka	সক্রিয় ট্যাব
+label.Kredity	ক্রেডিট
+label.Štít	শিল্ড
+label.Život	প্রাণ
+label.Bomba	বোমা
+label.Generátor	জেনারেটর
+
+# --- sfx + music ---
+label.Výstřel	গুলি
+label.Paprsek	রশ্মি
+label.Malá exploze	ছোট বিস্ফোরণ
+label.Velká exploze	বড় বিস্ফোরণ
+label.Zásah trupu	কাঠামোয় আঘাত
+label.Zásah štítu	শিল্ডে আঘাত
+label.Nová zbraň	নতুন অস্ত্র
+label.Sektor dokončen	সেক্টর সম্পূর্ণ
+label.Konec hry	খেলা শেষ
+label.Bonus	বোনাস
+label.Intro	ইন্ট্রো
+label.Téma 1	থিম 1
+label.Téma 2	থিম 2
+label.Téma 3	থিম 3
+label.Téma 4	থিম 4
+label.Téma 5 (boss)	থিম 5 (বস)

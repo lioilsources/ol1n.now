@@ -1,0 +1,106 @@
+# Kirian — Thai. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,th}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	อาร์เคดขาวดำ
+label.Vector wireframe	โครงลวดเวกเตอร์
+label.Fixed-formation arcade	อาร์เคดแบบจัดขบวนคงที่
+label.Biomechanical sci-fi	ไซไฟไบโอแมคานิคอล
+label.16-bit console shooter	เกมยิงคอนโซล 16 บิต
+label.DOS-era pixel art	พิกเซลอาร์ตยุค DOS
+label.Two-polarity shooter	เกมยิงสองขั้ว
+label.Neon vector grid	กริดเวกเตอร์นีออน
+label.Chrome fleet shmup	Shmup กองยานโครเมียม
+label.Sepia dogfight	การรบทางอากาศโทนซีเปีย
+label.Post-apocalyptic	โลกหลังหายนะ
+label.Dark neon voxel	วอกเซลนีออนโทนมืด
+label.4-colour console era	ยุคคอนโซล 4 สี
+label.Kirian original	ต้นฉบับ Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	ฟอสเฟอร์ CRT แบบบางเบา
+label.Glow on geometry	แสงเรืองบนรูปทรง
+label.Soft bloom on projectiles	bloom นุ่มบนกระสุน
+label.Neutral bloom	bloom แบบกลาง
+label.Subtle warm glow	แสงอุ่นแบบบางเบา
+label.Faithful retro feel	ฟีลเรโทรแท้
+label.Matches the polarity palette	เข้ากับพาเลตสองขั้ว
+label.Strongest bloom preset	พรีเซ็ต bloom แรงที่สุด
+label.Clean, high-contrast	คมชัด คอนทราสต์สูง
+label.No bloom — flat palette	ไม่มี bloom — พาเลตแบน
+label.Saturation 0.85, orange tint	ความอิ่มสี 0.85 โทนส้ม
+label.High-contrast neon	นีออนคอนทราสต์สูง
+label.Ultra-chunky flat sprites	สไปรต์แบนหยาบสุดๆ
+label.Hand-crafted baseline	สกินพื้นฐานทำมือ
+
+# --- CRT / tint presets ---
+label.neutral	กลาง
+label.scanlines 0.4, curve 0.01	เส้นสแกน 0.4, ความโค้ง 0.01
+label.scanlines 0.7, curve 0.02	เส้นสแกน 0.7, ความโค้ง 0.02
+label.green tint (0.85 / 1.0 / 0.85)	โทนเขียว (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	โทนฟ้าอมเขียว (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	ฟ้าเย็น (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	โทนอุ่น (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	โทนอุ่น (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	เหลืองอุ่น (1.0 / 0.9 / 0.7)
+label.desaturated warm	โทนอุ่นลดความอิ่มสี
+
+# --- sprite labels ---
+label.Náhled	ตัวอย่าง
+label.Loď	ยาน
+label.Loď 1	ยาน 1
+label.Loď 2	ยาน 2
+label.Loď 3	ยาน 3
+label.Loď 4	ยาน 4
+label.Loď 5	ยาน 5
+label.Loď 6	ยาน 6
+label.Přehled nepřátel	ภาพรวมศัตรู
+label.Asteroid 1	ดาวเคราะห์น้อย 1
+label.Asteroid 2	ดาวเคราะห์น้อย 2
+label.Asteroid 3	ดาวเคราะห์น้อย 3
+label.Asteroid 4	ดาวเคราะห์น้อย 4
+label.Bublina	ฟองสบู่
+label.Blaster	บลาสเตอร์
+label.Laser	เลเซอร์
+label.Vulcan	วัลแคน
+label.Rododendron	กุหลาบพันปี
+label.Hvězda	ดาว
+label.Hvězda (zelená)	ดาว (เขียว)
+label.Exploze 1	ระเบิด 1
+label.Exploze 2	ระเบิด 2
+label.Exploze 3	ระเบิด 3
+label.Exploze 4	ระเบิด 4
+label.Vrstva 0	เลเยอร์ 0
+label.Vrstva 1	เลเยอร์ 1
+label.Vrstva 2	เลเยอร์ 2
+label.Vrstva 3	เลเยอร์ 3
+
+# --- game center (UI) ---
+label.Karta	การ์ด
+label.Tlačítko	ปุ่ม
+label.Aktivní záložka	แท็บที่ใช้งาน
+label.Kredity	เครดิต
+label.Štít	โล่
+label.Život	ชีวิต
+label.Bomba	ระเบิด
+label.Generátor	เครื่องกำเนิดพลังงาน
+
+# --- sfx + music ---
+label.Výstřel	การยิง
+label.Paprsek	ลำแสง
+label.Malá exploze	ระเบิดเล็ก
+label.Velká exploze	ระเบิดใหญ่
+label.Zásah trupu	ตัวยานโดนยิง
+label.Zásah štítu	โล่โดนยิง
+label.Nová zbraň	อาวุธใหม่
+label.Sektor dokončen	ผ่านเซกเตอร์
+label.Konec hry	เกมโอเวอร์
+label.Bonus	โบนัส
+label.Intro	อินโทร
+label.Téma 1	เพลงธีม 1
+label.Téma 2	เพลงธีม 2
+label.Téma 3	เพลงธีม 3
+label.Téma 4	เพลงธีม 4
+label.Téma 5 (boss)	เพลงธีม 5 (บอส)

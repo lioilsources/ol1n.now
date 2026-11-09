@@ -1,0 +1,106 @@
+# Kirian — Romanian. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,ro}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Arcade monocrom
+label.Vector wireframe	Wireframe vectorial
+label.Fixed-formation arcade	Arcade cu formație fixă
+label.Biomechanical sci-fi	SF biomecanic
+label.16-bit console shooter	Shooter de consolă pe 16 biți
+label.DOS-era pixel art	Pixel art din era DOS
+label.Two-polarity shooter	Shooter cu două polarități
+label.Neon vector grid	Grilă vectorială neon
+label.Chrome fleet shmup	Shmup cu flotă cromată
+label.Sepia dogfight	Luptă aeriană în sepia
+label.Post-apocalyptic	Postapocaliptic
+label.Dark neon voxel	Voxel neon întunecat
+label.4-colour console era	Era consolelor cu 4 culori
+label.Kirian original	Original Kirian
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Fosfor CRT discret
+label.Glow on geometry	Strălucire pe geometrie
+label.Soft bloom on projectiles	Bloom fin pe proiectile
+label.Neutral bloom	Bloom neutru
+label.Subtle warm glow	Strălucire caldă discretă
+label.Faithful retro feel	Atmosferă retro fidelă
+label.Matches the polarity palette	Potrivit cu paleta polarităților
+label.Strongest bloom preset	Cel mai puternic preset de bloom
+label.Clean, high-contrast	Curat, contrast ridicat
+label.No bloom — flat palette	Fără bloom — paletă plată
+label.Saturation 0.85, orange tint	Saturație 0.85, nuanță portocalie
+label.High-contrast neon	Neon cu contrast ridicat
+label.Ultra-chunky flat sprites	Sprite-uri plate foarte grosiere
+label.Hand-crafted baseline	Bază lucrată manual
+
+# --- CRT / tint presets ---
+label.neutral	neutru
+label.scanlines 0.4, curve 0.01	linii de scanare 0.4, curbură 0.01
+label.scanlines 0.7, curve 0.02	linii de scanare 0.7, curbură 0.02
+label.green tint (0.85 / 1.0 / 0.85)	nuanță verde (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	nuanță cyan (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	albastru rece (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	cald (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	cald (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	galben cald (1.0 / 0.9 / 0.7)
+label.desaturated warm	cald desaturat
+
+# --- sprite labels ---
+label.Náhled	Previzualizare
+label.Loď	Navă
+label.Loď 1	Navă 1
+label.Loď 2	Navă 2
+label.Loď 3	Navă 3
+label.Loď 4	Navă 4
+label.Loď 5	Navă 5
+label.Loď 6	Navă 6
+label.Přehled nepřátel	Prezentare inamici
+label.Asteroid 1	Asteroid 1
+label.Asteroid 2	Asteroid 2
+label.Asteroid 3	Asteroid 3
+label.Asteroid 4	Asteroid 4
+label.Bublina	Bulă
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Rododendron
+label.Hvězda	Stea
+label.Hvězda (zelená)	Stea (verde)
+label.Exploze 1	Explozie 1
+label.Exploze 2	Explozie 2
+label.Exploze 3	Explozie 3
+label.Exploze 4	Explozie 4
+label.Vrstva 0	Strat 0
+label.Vrstva 1	Strat 1
+label.Vrstva 2	Strat 2
+label.Vrstva 3	Strat 3
+
+# --- game center (UI) ---
+label.Karta	Card
+label.Tlačítko	Buton
+label.Aktivní záložka	Filă activă
+label.Kredity	Credite
+label.Štít	Scut
+label.Život	Viață
+label.Bomba	Bombă
+label.Generátor	Generator
+
+# --- sfx + music ---
+label.Výstřel	Foc
+label.Paprsek	Rază
+label.Malá exploze	Explozie mică
+label.Velká exploze	Explozie mare
+label.Zásah trupu	Lovitură în carenă
+label.Zásah štítu	Lovitură în scut
+label.Nová zbraň	Armă nouă
+label.Sektor dokončen	Sector încheiat
+label.Konec hry	Sfârșitul jocului
+label.Bonus	Bonus
+label.Intro	Intro
+label.Téma 1	Temă 1
+label.Téma 2	Temă 2
+label.Téma 3	Temă 3
+label.Téma 4	Temă 4
+label.Téma 5 (boss)	Temă 5 (boss)

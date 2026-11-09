@@ -1,0 +1,106 @@
+# Kirian — Finnish. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,fi}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Mustavalkoinen arcade
+label.Vector wireframe	Vektorirautalanka
+label.Fixed-formation arcade	Kiinteän muodostelman arcade
+label.Biomechanical sci-fi	Biomekaaninen scifi
+label.16-bit console shooter	16-bittisen konsolin räiskintä
+label.DOS-era pixel art	DOS-ajan pikselitaide
+label.Two-polarity shooter	Kahden polariteetin räiskintä
+label.Neon vector grid	Neonvektoriruudukko
+label.Chrome fleet shmup	Kromilaivaston shmup
+label.Sepia dogfight	Seepiasävyinen ilmataistelu
+label.Post-apocalyptic	Postapokalyptinen
+label.Dark neon voxel	Tumma neonvokseli
+label.4-colour console era	4-värikonsolien aikakausi
+label.Kirian original	Kirian-alkuperäinen
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Hienovarainen CRT-fosfori
+label.Glow on geometry	Hehku geometriassa
+label.Soft bloom on projectiles	Pehmeä bloom ammuksissa
+label.Neutral bloom	Neutraali bloom
+label.Subtle warm glow	Hienovarainen lämmin hehku
+label.Faithful retro feel	Uskollinen retrotunnelma
+label.Matches the polarity palette	Sopii polariteettipalettiin
+label.Strongest bloom preset	Voimakkain bloom-esiasetus
+label.Clean, high-contrast	Selkeä, suuri kontrasti
+label.No bloom — flat palette	Ei bloomia — tasainen paletti
+label.Saturation 0.85, orange tint	Kylläisyys 0.85, oranssi sävy
+label.High-contrast neon	Suuren kontrastin neon
+label.Ultra-chunky flat sprites	Erittäin karkeat tasaiset spritet
+label.Hand-crafted baseline	Käsin tehty perusversio
+
+# --- CRT / tint presets ---
+label.neutral	neutraali
+label.scanlines 0.4, curve 0.01	juovat 0.4, kaarevuus 0.01
+label.scanlines 0.7, curve 0.02	juovat 0.7, kaarevuus 0.02
+label.green tint (0.85 / 1.0 / 0.85)	vihreä sävy (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	syaani sävy (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	viileä sininen (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	lämmin (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	lämmin (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	lämmin keltainen (1.0 / 0.9 / 0.7)
+label.desaturated warm	haalistettu lämmin
+
+# --- sprite labels ---
+label.Náhled	Esikatselu
+label.Loď	Alus
+label.Loď 1	Alus 1
+label.Loď 2	Alus 2
+label.Loď 3	Alus 3
+label.Loď 4	Alus 4
+label.Loď 5	Alus 5
+label.Loď 6	Alus 6
+label.Přehled nepřátel	Viholliset
+label.Asteroid 1	Asteroidi 1
+label.Asteroid 2	Asteroidi 2
+label.Asteroid 3	Asteroidi 3
+label.Asteroid 4	Asteroidi 4
+label.Bublina	Kupla
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Alppiruusu
+label.Hvězda	Tähti
+label.Hvězda (zelená)	Tähti (vihreä)
+label.Exploze 1	Räjähdys 1
+label.Exploze 2	Räjähdys 2
+label.Exploze 3	Räjähdys 3
+label.Exploze 4	Räjähdys 4
+label.Vrstva 0	Taso 0
+label.Vrstva 1	Taso 1
+label.Vrstva 2	Taso 2
+label.Vrstva 3	Taso 3
+
+# --- game center (UI) ---
+label.Karta	Kortti
+label.Tlačítko	Painike
+label.Aktivní záložka	Aktiivinen välilehti
+label.Kredity	Krediitit
+label.Štít	Suoja
+label.Život	Elämä
+label.Bomba	Pommi
+label.Generátor	Generaattori
+
+# --- sfx + music ---
+label.Výstřel	Laukaus
+label.Paprsek	Säde
+label.Malá exploze	Pieni räjähdys
+label.Velká exploze	Suuri räjähdys
+label.Zásah trupu	Osuma runkoon
+label.Zásah štítu	Osuma suojaan
+label.Nová zbraň	Uusi ase
+label.Sektor dokončen	Sektori läpäisty
+label.Konec hry	Peli päättyi
+label.Bonus	Bonus
+label.Intro	Intro
+label.Téma 1	Teema 1
+label.Téma 2	Teema 2
+label.Téma 3	Teema 3
+label.Téma 4	Teema 4
+label.Téma 5 (boss)	Teema 5 (pomo)

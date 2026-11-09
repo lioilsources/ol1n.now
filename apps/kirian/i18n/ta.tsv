@@ -1,0 +1,106 @@
+# Kirian — Tamil. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,ta}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	ஒற்றை நிற ஆர்கேட்
+label.Vector wireframe	வெக்டர் வயர்ஃப்ரேம்
+label.Fixed-formation arcade	நிலையான அணிவகுப்பு ஆர்கேட்
+label.Biomechanical sci-fi	உயிர்-இயந்திர அறிவியல் புனைவு
+label.16-bit console shooter	16-பிட் கன்சோல் ஷூட்டர்
+label.DOS-era pixel art	DOS காலப் பிக்சல் ஆர்ட்
+label.Two-polarity shooter	இரு துருவ ஷூட்டர்
+label.Neon vector grid	நியான் வெக்டர் கிரிட்
+label.Chrome fleet shmup	குரோம் கப்பற்படை shmup
+label.Sepia dogfight	செபியா வான்போர்
+label.Post-apocalyptic	பேரழிவுக்குப் பிந்தைய உலகம்
+label.Dark neon voxel	இருண்ட நியான் வோக்சல்
+label.4-colour console era	4-வண்ண கன்சோல் காலம்
+label.Kirian original	Kirian அசல்
+
+# --- skin notes ---
+label.Subtle CRT phosphor	மென்மையான CRT பாஸ்பர்
+label.Glow on geometry	வடிவியலில் ஒளிர்வு
+label.Soft bloom on projectiles	குண்டுகளில் மென்மையான bloom
+label.Neutral bloom	நடுநிலை bloom
+label.Subtle warm glow	மென்மையான வெதுவெதுப்பான ஒளிர்வு
+label.Faithful retro feel	உண்மையான ரெட்ரோ உணர்வு
+label.Matches the polarity palette	துருவத் தட்டுக்குப் பொருந்தும்
+label.Strongest bloom preset	மிக வலுவான bloom முன்னமைவு
+label.Clean, high-contrast	தெளிவான, அதிக மாறுபாடு
+label.No bloom — flat palette	bloom இல்லை — தட்டையான தட்டு
+label.Saturation 0.85, orange tint	செறிவு 0.85, ஆரஞ்சு சாயல்
+label.High-contrast neon	அதிக மாறுபாட்டு நியான்
+label.Ultra-chunky flat sprites	மிகக் கரடுமுரடான தட்டையான ஸ்ப்ரைட்கள்
+label.Hand-crafted baseline	கையால் செய்த அடிப்படை
+
+# --- CRT / tint presets ---
+label.neutral	நடுநிலை
+label.scanlines 0.4, curve 0.01	ஸ்கேன்லைன்கள் 0.4, வளைவு 0.01
+label.scanlines 0.7, curve 0.02	ஸ்கேன்லைன்கள் 0.7, வளைவு 0.02
+label.green tint (0.85 / 1.0 / 0.85)	பச்சைச் சாயல் (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	சியான் சாயல் (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	குளிர் நீலம் (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	வெதுவெதுப்பு (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	வெதுவெதுப்பு (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	வெதுவெதுப்பான மஞ்சள் (1.0 / 0.9 / 0.7)
+label.desaturated warm	மங்கிய வெதுவெதுப்பு
+
+# --- sprite labels ---
+label.Náhled	முன்னோட்டம்
+label.Loď	கப்பல்
+label.Loď 1	கப்பல் 1
+label.Loď 2	கப்பல் 2
+label.Loď 3	கப்பல் 3
+label.Loď 4	கப்பல் 4
+label.Loď 5	கப்பல் 5
+label.Loď 6	கப்பல் 6
+label.Přehled nepřátel	எதிரிகள் கண்ணோட்டம்
+label.Asteroid 1	சிறுகோள் 1
+label.Asteroid 2	சிறுகோள் 2
+label.Asteroid 3	சிறுகோள் 3
+label.Asteroid 4	சிறுகோள் 4
+label.Bublina	குமிழி
+label.Blaster	பிளாஸ்டர்
+label.Laser	லேசர்
+label.Vulcan	வல்கன்
+label.Rododendron	ரோடோடென்ட்ரான்
+label.Hvězda	நட்சத்திரம்
+label.Hvězda (zelená)	நட்சத்திரம் (பச்சை)
+label.Exploze 1	வெடிப்பு 1
+label.Exploze 2	வெடிப்பு 2
+label.Exploze 3	வெடிப்பு 3
+label.Exploze 4	வெடிப்பு 4
+label.Vrstva 0	அடுக்கு 0
+label.Vrstva 1	அடுக்கு 1
+label.Vrstva 2	அடுக்கு 2
+label.Vrstva 3	அடுக்கு 3
+
+# --- game center (UI) ---
+label.Karta	அட்டை
+label.Tlačítko	பொத்தான்
+label.Aktivní záložka	செயலில் உள்ள தாவல்
+label.Kredity	கிரெடிட்கள்
+label.Štít	கேடயம்
+label.Život	உயிர்
+label.Bomba	குண்டு
+label.Generátor	ஜெனரேட்டர்
+
+# --- sfx + music ---
+label.Výstřel	சுடுதல்
+label.Paprsek	கதிர்
+label.Malá exploze	சிறிய வெடிப்பு
+label.Velká exploze	பெரிய வெடிப்பு
+label.Zásah trupu	உடலில் தாக்கம்
+label.Zásah štítu	கேடயத்தில் தாக்கம்
+label.Nová zbraň	புதிய ஆயுதம்
+label.Sektor dokončen	செக்டர் முடிந்தது
+label.Konec hry	ஆட்டம் முடிந்தது
+label.Bonus	போனஸ்
+label.Intro	அறிமுகம்
+label.Téma 1	தீம் 1
+label.Téma 2	தீம் 2
+label.Téma 3	தீம் 3
+label.Téma 4	தீம் 4
+label.Téma 5 (boss)	தீம் 5 (பாஸ்)

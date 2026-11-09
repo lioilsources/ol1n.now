@@ -1,0 +1,106 @@
+# Kirian — English. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,en}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	Monochrome arcade
+label.Vector wireframe	Vector wireframe
+label.Fixed-formation arcade	Fixed-formation arcade
+label.Biomechanical sci-fi	Biomechanical sci-fi
+label.16-bit console shooter	16-bit console shooter
+label.DOS-era pixel art	DOS-era pixel art
+label.Two-polarity shooter	Two-polarity shooter
+label.Neon vector grid	Neon vector grid
+label.Chrome fleet shmup	Chrome fleet shmup
+label.Sepia dogfight	Sepia dogfight
+label.Post-apocalyptic	Post-apocalyptic
+label.Dark neon voxel	Dark neon voxel
+label.4-colour console era	4-colour console era
+label.Kirian original	Kirian original
+
+# --- skin notes ---
+label.Subtle CRT phosphor	Subtle CRT phosphor
+label.Glow on geometry	Glow on geometry
+label.Soft bloom on projectiles	Soft bloom on projectiles
+label.Neutral bloom	Neutral bloom
+label.Subtle warm glow	Subtle warm glow
+label.Faithful retro feel	Faithful retro feel
+label.Matches the polarity palette	Matches the polarity palette
+label.Strongest bloom preset	Strongest bloom preset
+label.Clean, high-contrast	Clean, high-contrast
+label.No bloom — flat palette	No bloom — flat palette
+label.Saturation 0.85, orange tint	Saturation 0.85, orange tint
+label.High-contrast neon	High-contrast neon
+label.Ultra-chunky flat sprites	Ultra-chunky flat sprites
+label.Hand-crafted baseline	Hand-crafted baseline
+
+# --- CRT / tint presets ---
+label.neutral	neutral
+label.scanlines 0.4, curve 0.01	scanlines 0.4, curve 0.01
+label.scanlines 0.7, curve 0.02	scanlines 0.7, curve 0.02
+label.green tint (0.85 / 1.0 / 0.85)	green tint (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	cyan tint (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	cool blue (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	warm (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	warm (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	warm yellow (1.0 / 0.9 / 0.7)
+label.desaturated warm	desaturated warm
+
+# --- sprite labels ---
+label.Náhled	Preview
+label.Loď	Ship
+label.Loď 1	Ship 1
+label.Loď 2	Ship 2
+label.Loď 3	Ship 3
+label.Loď 4	Ship 4
+label.Loď 5	Ship 5
+label.Loď 6	Ship 6
+label.Přehled nepřátel	Enemy overview
+label.Asteroid 1	Asteroid 1
+label.Asteroid 2	Asteroid 2
+label.Asteroid 3	Asteroid 3
+label.Asteroid 4	Asteroid 4
+label.Bublina	Bubble
+label.Blaster	Blaster
+label.Laser	Laser
+label.Vulcan	Vulcan
+label.Rododendron	Rhododendron
+label.Hvězda	Star
+label.Hvězda (zelená)	Star (green)
+label.Exploze 1	Explosion 1
+label.Exploze 2	Explosion 2
+label.Exploze 3	Explosion 3
+label.Exploze 4	Explosion 4
+label.Vrstva 0	Layer 0
+label.Vrstva 1	Layer 1
+label.Vrstva 2	Layer 2
+label.Vrstva 3	Layer 3
+
+# --- game center (UI) ---
+label.Karta	Card
+label.Tlačítko	Button
+label.Aktivní záložka	Active tab
+label.Kredity	Credits
+label.Štít	Shield
+label.Život	Life
+label.Bomba	Bomb
+label.Generátor	Generator
+
+# --- sfx + music ---
+label.Výstřel	Shot
+label.Paprsek	Beam
+label.Malá exploze	Small explosion
+label.Velká exploze	Large explosion
+label.Zásah trupu	Hull hit
+label.Zásah štítu	Shield hit
+label.Nová zbraň	New weapon
+label.Sektor dokončen	Sector complete
+label.Konec hry	Game over
+label.Bonus	Bonus
+label.Intro	Intro
+label.Téma 1	Theme 1
+label.Téma 2	Theme 2
+label.Téma 3	Theme 3
+label.Téma 4	Theme 4
+label.Téma 5 (boss)	Theme 5 (boss)

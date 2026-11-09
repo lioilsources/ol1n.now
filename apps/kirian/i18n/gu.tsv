@@ -1,0 +1,106 @@
+# Kirian — Gujarati. Kirian owns this file: the store only merges it on top of
+# templates/i18n/{cs,gu}.tsv when building this app's pages.
+#
+# `label.<source>` rows translate the skin gallery manifests (same keys as ja.tsv);
+# anything with no row here — ship and enemy names, skin titles — passes through.
+# --- skin themes ---
+label.Monochrome arcade	મોનોક્રોમ આર્કેડ
+label.Vector wireframe	વેક્ટર વાયરફ્રેમ
+label.Fixed-formation arcade	સ્થિર ફોર્મેશન આર્કેડ
+label.Biomechanical sci-fi	બાયોમિકેનિકલ સાય-ફાય
+label.16-bit console shooter	16-બિટ કન્સોલ શૂટર
+label.DOS-era pixel art	DOS યુગની પિક્સેલ આર્ટ
+label.Two-polarity shooter	બે ધ્રુવીય શૂટર
+label.Neon vector grid	નિયોન વેક્ટર ગ્રિડ
+label.Chrome fleet shmup	ક્રોમ કાફલાવાળો shmup
+label.Sepia dogfight	સેપિયા હવાઈ યુદ્ધ
+label.Post-apocalyptic	પ્રલય પછીની દુનિયા
+label.Dark neon voxel	ઘેરો નિયોન વોક્સેલ
+label.4-colour console era	4-રંગી કન્સોલનો યુગ
+label.Kirian original	Kirian ઓરિજિનલ
+
+# --- skin notes ---
+label.Subtle CRT phosphor	હળવો CRT ફોસ્ફર
+label.Glow on geometry	ભૂમિતિ પર ચમક
+label.Soft bloom on projectiles	ગોળીઓ પર નરમ bloom
+label.Neutral bloom	તટસ્થ bloom
+label.Subtle warm glow	હળવી ગરમ ચમક
+label.Faithful retro feel	અસલ જેવો રેટ્રો અનુભવ
+label.Matches the polarity palette	ધ્રુવીય પેલેટ સાથે મેળ
+label.Strongest bloom preset	સૌથી તીવ્ર bloom પ્રીસેટ
+label.Clean, high-contrast	સ્વચ્છ, ઊંચો કોન્ટ્રાસ્ટ
+label.No bloom — flat palette	bloom નહીં — સપાટ પેલેટ
+label.Saturation 0.85, orange tint	સેચ્યુરેશન 0.85, નારંગી ટિન્ટ
+label.High-contrast neon	ઊંચા કોન્ટ્રાસ્ટવાળો નિયોન
+label.Ultra-chunky flat sprites	અત્યંત જાડા સપાટ સ્પ્રાઇટ
+label.Hand-crafted baseline	હાથથી બનાવેલો બેઝ
+
+# --- CRT / tint presets ---
+label.neutral	તટસ્થ
+label.scanlines 0.4, curve 0.01	સ્કેનલાઇન 0.4, વક્રતા 0.01
+label.scanlines 0.7, curve 0.02	સ્કેનલાઇન 0.7, વક્રતા 0.02
+label.green tint (0.85 / 1.0 / 0.85)	લીલો ટિન્ટ (0.85 / 1.0 / 0.85)
+label.cyan tint (0.8 / 1.0 / 1.0)	સાયન ટિન્ટ (0.8 / 1.0 / 1.0)
+label.cool blue (0.9 / 0.95 / 1.0)	ઠંડો વાદળી (0.9 / 0.95 / 1.0)
+label.warm (1.0 / 0.95 / 0.9)	ગરમ (1.0 / 0.95 / 0.9)
+label.warm (1.0 / 0.95 / 0.85)	ગરમ (1.0 / 0.95 / 0.85)
+label.warm yellow (1.0 / 0.9 / 0.7)	ગરમ પીળો (1.0 / 0.9 / 0.7)
+label.desaturated warm	ઝાંખો ગરમ
+
+# --- sprite labels ---
+label.Náhled	પૂર્વાવલોકન
+label.Loď	જહાજ
+label.Loď 1	જહાજ 1
+label.Loď 2	જહાજ 2
+label.Loď 3	જહાજ 3
+label.Loď 4	જહાજ 4
+label.Loď 5	જહાજ 5
+label.Loď 6	જહાજ 6
+label.Přehled nepřátel	દુશ્મનોની ઝાંખી
+label.Asteroid 1	લઘુગ્રહ 1
+label.Asteroid 2	લઘુગ્રહ 2
+label.Asteroid 3	લઘુગ્રહ 3
+label.Asteroid 4	લઘુગ્રહ 4
+label.Bublina	પરપોટો
+label.Blaster	બ્લાસ્ટર
+label.Laser	લેસર
+label.Vulcan	વલ્કન
+label.Rododendron	રોડોડેન્ડ્રોન
+label.Hvězda	તારો
+label.Hvězda (zelená)	તારો (લીલો)
+label.Exploze 1	વિસ્ફોટ 1
+label.Exploze 2	વિસ્ફોટ 2
+label.Exploze 3	વિસ્ફોટ 3
+label.Exploze 4	વિસ્ફોટ 4
+label.Vrstva 0	સ્તર 0
+label.Vrstva 1	સ્તર 1
+label.Vrstva 2	સ્તર 2
+label.Vrstva 3	સ્તર 3
+
+# --- game center (UI) ---
+label.Karta	કાર્ડ
+label.Tlačítko	બટન
+label.Aktivní záložka	સક્રિય ટેબ
+label.Kredity	ક્રેડિટ
+label.Štít	શીલ્ડ
+label.Život	જીવન
+label.Bomba	બોમ્બ
+label.Generátor	જનરેટર
+
+# --- sfx + music ---
+label.Výstřel	ગોળીબાર
+label.Paprsek	કિરણ
+label.Malá exploze	નાનો વિસ્ફોટ
+label.Velká exploze	મોટો વિસ્ફોટ
+label.Zásah trupu	માળખા પર ફટકો
+label.Zásah štítu	શીલ્ડ પર ફટકો
+label.Nová zbraň	નવું હથિયાર
+label.Sektor dokončen	સેક્ટર પૂર્ણ
+label.Konec hry	રમત પૂરી
+label.Bonus	બોનસ
+label.Intro	ઇન્ટ્રો
+label.Téma 1	થીમ 1
+label.Téma 2	થીમ 2
+label.Téma 3	થીમ 3
+label.Téma 4	થીમ 4
+label.Téma 5 (boss)	થીમ 5 (બોસ)
