@@ -2,9 +2,11 @@
 slug: tlumocnik
 name: Tlumočník
 repo: lioilsources/Translator
+icon_src: app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Telefon na stole mezi dvěma lidmi — každý mluví svým jazykem a appka to druhému nahlas přeloží
 order: 33
 featured: false
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:
 mobile: android,ios
 artifacts:
@@ -66,6 +68,15 @@ a appka pak tvoje věty řekne v cizím jazyce hlasem, který se podobá tvému.
 Hlas je biometrický údaj, proto se nahrává jen se zaškrtnutým souhlasem,
 nahrávat smíš jen sebe a smazáním hlasu se nahrávka ze serveru fyzicky
 odstraní. Hlasů může být nejvýš pět.
+Vlastní hlas je zatím jen pro testery se zvacím kódem.
+
+### Přístup
+
+Appka nemá účet: telefon se při prvním spuštění sám zaregistruje jako
+zařízení. Bez kódu má základní přístup s omezeným časem překladu na den.
+Zvací kód od autora appky odemkne testerský přístup s delším překladem
+a vlastním hlasem. Když dnešní minuty dojdou, appka to řekne a zítra
+překládá zase.
 
 ### Soukromí
 
