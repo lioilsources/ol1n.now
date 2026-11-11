@@ -5,6 +5,7 @@ repo: lioilsources/AlienMatch
 tagline: Seznamka beze slov, kde jsi mimozemšťan a páruješ se podle nálady
 order: 37
 featured: false
+langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:
 mobile: android,ios
 artifacts:
