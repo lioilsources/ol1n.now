@@ -1,5 +1,6 @@
 ---
 tagline: Aplikasi kencan tanpa kata-kata, tempat kamu menjadi alien dan dipasangkan menurut suasana hati
+visuals: 8 wajah rekaan, masing-masing dalam dua varian simetris.
 ---
 AlienMatch melakukan semuanya kebalikan dari aplikasi kencan biasa. Tanpa selfie yang diedit habis-habisan, tanpa bio, tanpa swipe.
 

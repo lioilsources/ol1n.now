@@ -1,5 +1,6 @@
 ---
 tagline: Un’app di incontri senza parole, dove sei un alieno e fai match in base all’umore
+visuals: 8 volti inventati, ognuno in entrambe le varianti simmetriche.
 ---
 AlienMatch fa tutto al contrario delle normali app di incontri. Niente selfie ritoccati, niente bio, niente swipe.
 

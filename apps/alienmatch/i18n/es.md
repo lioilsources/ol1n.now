@@ -1,5 +1,6 @@
 ---
 tagline: Una app de citas sin palabras, donde eres un alienígena y haces match según tu estado de ánimo
+visuals: 8 caras inventadas, cada una en sus dos variantes simétricas.
 ---
 AlienMatch hace todo al revés que las apps de citas habituales. Nada de selfis retocados, nada de bio, nada de deslizar.
 

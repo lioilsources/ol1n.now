@@ -1,5 +1,6 @@
 ---
 tagline: Zoznamka bez slov, kde si mimozemšťan a páruješ sa podľa nálady
+visuals: 8 vymyslených tvárí, každá v oboch symetrických variantoch.
 ---
 AlienMatch robí všetko naopak než bežné zoznamky. Žiadne vyretušované selfie, žiadne bio, žiadne swajpovanie.
 

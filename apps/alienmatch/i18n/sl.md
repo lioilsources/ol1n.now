@@ -1,5 +1,6 @@
 ---
 tagline: Zmenkarska aplikacija brez besed, kjer si nezemljan in se paršeš po razpoloženju
+visuals: 8 izmišljenih obrazov, vsak v obeh simetričnih različicah.
 ---
 AlienMatch dela vse obratno kot običajne zmenkarske aplikacije. Brez retuširanih selfijev, brez bia, brez podrsavanja.
 

@@ -1,5 +1,6 @@
 ---
 tagline: Szavak nélküli társkereső, ahol te vagy az idegen, és hangulat alapján párosodsz
+visuals: 8 kitalált arc, mindegyik mindkét szimmetrikus változatban.
 ---
 Az AlienMatch mindent fordítva csinál, mint a megszokott társkeresők. Nincs retusált szelfi, nincs bemutatkozó szöveg, nincs lapozgatás.
 

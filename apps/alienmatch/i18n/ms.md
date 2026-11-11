@@ -1,5 +1,6 @@
 ---
 tagline: Aplikasi temu janji tanpa kata-kata, tempat anda menjadi makhluk asing dan dipadankan mengikut mood
+visuals: 8 wajah rekaan, setiap satu dalam kedua-dua varian simetri.
 ---
 AlienMatch melakukan segalanya secara terbalik berbanding aplikasi temu janji biasa. Tiada swafoto yang diedit, tiada bio, tiada leret.
 

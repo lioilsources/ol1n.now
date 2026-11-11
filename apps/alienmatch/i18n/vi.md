@@ -1,5 +1,6 @@
 ---
 tagline: Ứng dụng hẹn hò không lời, nơi bạn là người ngoài hành tinh và ghép đôi theo tâm trạng
+visuals: 8 gương mặt hư cấu, mỗi gương mặt ở cả hai biến thể đối xứng.
 ---
 AlienMatch làm mọi thứ ngược lại với các ứng dụng hẹn hò thông thường. Không ảnh selfie chỉnh sửa, không giới thiệu bản thân, không vuốt.
 

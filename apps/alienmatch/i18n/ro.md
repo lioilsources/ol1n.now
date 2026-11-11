@@ -1,5 +1,6 @@
 ---
 tagline: O aplicație de întâlniri fără cuvinte, în care ești extraterestru și faci match după dispoziție
+visuals: 8 chipuri inventate, fiecare în ambele variante simetrice.
 ---
 AlienMatch face totul pe dos față de aplicațiile de întâlniri obișnuite. Fără selfie-uri retușate, fără bio, fără swipe.
 

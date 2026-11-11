@@ -1,5 +1,6 @@
 ---
 tagline: Una app de cites sense paraules, on ets un extraterrestre i fas match segons l’estat d’ànim
+visuals: 8 cares inventades, cadascuna en les dues variants simètriques.
 ---
 AlienMatch fa tot al revés que les apps de cites habituals. Res de selfies retocats, res de bio, res de lliscar el dit.
 

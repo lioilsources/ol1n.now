@@ -1,5 +1,6 @@
 ---
 tagline: Randkowa aplikacja bez słów, w której jesteś kosmitą i parujesz się według nastroju
+visuals: 8 wymyślonych twarzy, każda w obu symetrycznych wariantach.
 ---
 AlienMatch robi wszystko na odwrót niż zwykłe aplikacje randkowe. Żadnych wyretuszowanych selfie, żadnego bio, żadnego przesuwania.
 

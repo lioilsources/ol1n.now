@@ -1,5 +1,6 @@
 ---
 tagline: Aplikacija za spojeve bez riječi, u kojoj si izvanzemaljac i upareni ste prema raspoloženju
+visuals: 8 izmišljenih lica, svako u obje simetrične varijante.
 ---
 AlienMatch sve radi obrnuto od uobičajenih aplikacija za spojeve. Bez retuširanih selfieja, bez biografije, bez swipanja.
 

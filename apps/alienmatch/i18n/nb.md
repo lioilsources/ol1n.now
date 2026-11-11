@@ -1,5 +1,6 @@
 ---
 tagline: En datingapp uten ord, der du er en alien og matcher etter humør
+visuals: 8 oppdiktede ansikter, hvert i begge symmetriske varianter.
 ---
 AlienMatch gjør alt motsatt av vanlige datingapper. Ingen retusjerte selfier, ingen bio, ingen sveiping.
 

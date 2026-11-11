@@ -1,5 +1,6 @@
 ---
 tagline: Sanaton treffisovellus, jossa olet avaruusolio ja pariudut mielialan mukaan
+visuals: 8 keksittyä kasvoa, jokainen molempina symmetrisinä versioina.
 ---
 AlienMatch tekee kaiken päinvastoin kuin tavalliset treffisovellukset. Ei retusoituja selfieitä, ei esittelyä, ei pyyhkäisyä.
 

@@ -1,5 +1,6 @@
 ---
 tagline: Une appli de rencontres sans mots, où tu es un extraterrestre et où tu matches selon ton humeur
+visuals: 8 visages inventés, chacun dans ses deux variantes symétriques.
 ---
 AlienMatch fait tout à l’envers des applis de rencontres habituelles. Pas de selfies retouchés, pas de bio, pas de swipe.
 

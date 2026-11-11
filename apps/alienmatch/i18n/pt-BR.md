@@ -1,5 +1,6 @@
 ---
 tagline: Um app de relacionamento sem palavras, em que você é um alienígena e dá match pelo humor
+visuals: 8 rostos inventados, cada um nas duas variantes simétricas.
 ---
 O AlienMatch faz tudo ao contrário dos apps de relacionamento comuns. Nada de selfies retocadas, nada de bio, nada de deslizar.
 

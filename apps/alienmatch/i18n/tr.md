@@ -1,5 +1,6 @@
 ---
 tagline: Kelimesiz bir flört uygulaması — uzaylısın ve ruh haline göre eşleşiyorsun
+visuals: 8 hayali yüz, her biri iki simetrik varyantıyla.
 ---
 AlienMatch, alışıldık flört uygulamalarının tam tersini yapar. Rötuşlu selfie yok, biyografi yok, kaydırma yok.
 

@@ -1,5 +1,6 @@
 ---
 tagline: A dating app without words, where you are an alien and match by mood
+visuals: 8 made-up faces, each in both symmetric variants.
 ---
 AlienMatch does everything the opposite of ordinary dating apps. No retouched selfies, no bio, no swiping.
 

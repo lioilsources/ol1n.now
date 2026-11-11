@@ -1,5 +1,6 @@
 ---
 tagline: Een datingapp zonder woorden, waarin jij een alien bent en matcht op stemming
+visuals: 8 verzonnen gezichten, elk in beide symmetrische varianten.
 ---
 AlienMatch doet alles omgekeerd aan gewone datingapps. Geen bewerkte selfies, geen bio, geen swipen.
 
