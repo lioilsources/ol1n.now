@@ -61,6 +61,6 @@ Toonfork（暂定名 Webtoon）是一款竖版漫画阅读器，没有网络也�
 
 ### 现状
 
-Toonfork 处于 alpha 阶段：macOS 和 Android 版本可在 GitHub 下载，App Store 和 Google Play 正在准备中。Studio 只连接自己的后端运行（Go，加上 Postgres 中的任务队列），不对公众开放。图片和文字都在我们自己的 GPU 服务器上生成。
+Toonfork 处于 alpha 阶段：Android 版已上架 Google Play，macOS 版本可在 GitHub 下载，App Store 正在准备中。Studio 只连接自己的后端运行（Go，加上 Postgres 中的任务队列），不对公众开放。图片和文字都在我们自己的 GPU 服务器上生成。
 
 截图来自 Studio 的网页版，以手机宽度连接本地后端拍摄。图中的第 2 集只有剧本，画格还在等待绘制。源代码在 [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon)。

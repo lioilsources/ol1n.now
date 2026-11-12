@@ -61,6 +61,6 @@ Un estil és un preset amb nom: checkpoint, sampler, nombre de passos, CFG i tag
 
 ### Estat
 
-Toonfork és en alfa: les builds per a macOS i Android es poden baixar de GitHub, App Store i Google Play estan en preparació. L'Studio només funciona amb el seu propi backend (Go amb una cua de tasques a Postgres) i no és accessible públicament. Les imatges i els textos es creen en un servidor GPU propi.
+Toonfork és en alfa: la versió per a Android és a Google Play, la build per a macOS es pot baixar de GitHub i l'App Store està en preparació. L'Studio només funciona amb el seu propi backend (Go amb una cua de tasques a Postgres) i no és accessible públicament. Les imatges i els textos es creen en un servidor GPU propi.
 
 Les captures són de la versió web de l'Studio amb amplada de mòbil contra un backend local. L'episodi 2 hi té només guió; les vinyetes encara esperen ser dibuixades. El codi font és a [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

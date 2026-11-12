@@ -440,7 +440,8 @@ just the store buttons — `downloads_html` withholds "Buildy brzy k dispozici" 
 6774868017, poetrystream 6767237393 ("Poesie Simona Clinae"), puff 6808586613, lexify
 6784602743, mirrorbooth 6767824892 ("Mirror Booth Photos"); the `apps.apple.com/app/id…`
 form is used so Apple picks the visitor's storefront. Play ids: `com.ab.kiran`,
-`com.ab.PoetryStreamSC`, `com.ol1n.puff` (developer "A+B"). Lexify and MirrorBooth are
+`com.ab.PoetryStreamSC`, `com.ol1n.puff` (developer "A+B"). Toonfork (`webtoon`) is on Play as `com.ol1n.webtoon` since 2026-11-12
+and sets `artifacts: macos`, so the APK button is gone. Lexify and MirrorBooth are
 not on Play (2026-10-19), so they keep the APK button.
 
 All are standalone binaries except **doggiowars**, which runs inside Luanti (ex-Minetest) —

@@ -61,6 +61,6 @@ Phong cách là một preset có tên: checkpoint, sampler, số bước, CFG v�
 
 ### Tình trạng
 
-Toonfork đang ở bản alpha: bản build cho macOS và Android tải được trên GitHub, App Store và Google Play đang được chuẩn bị. Studio chỉ chạy với backend riêng (Go với hàng đợi công việc trong Postgres) và không mở công khai. Hình ảnh và văn bản đều được tạo trên máy chủ GPU riêng.
+Toonfork đang ở bản alpha: bản Android đã có trên Google Play, bản build cho macOS tải được trên GitHub, App Store đang được chuẩn bị. Studio chỉ chạy với backend riêng (Go với hàng đợi công việc trong Postgres) và không mở công khai. Hình ảnh và văn bản đều được tạo trên máy chủ GPU riêng.
 
 Ảnh chụp màn hình lấy từ phiên bản web của Studio ở độ rộng điện thoại, chạy với backend cục bộ. Tập 2 trong đó mới chỉ có kịch bản, khung tranh vẫn đang chờ vẽ. Mã nguồn có tại [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

@@ -61,6 +61,6 @@ Beta 版中有分支編輯器：可以替任何一個選項加上你自己的續
 
 ### 現況
 
-Toonfork 處於 alpha 階段：macOS 和 Android 版本可在 GitHub 下載，App Store 和 Google Play 正在準備中。Studio 只連接自己的後端執行（Go，加上 Postgres 中的工作佇列），不對外公開。圖片和文字都在我們自己的 GPU 伺服器上生成。
+Toonfork 處於 alpha 階段：Android 版已上架 Google Play，macOS 版本可在 GitHub 下載，App Store 正在準備中。Studio 只連接自己的後端執行（Go，加上 Postgres 中的工作佇列），不對外公開。圖片和文字都在我們自己的 GPU 伺服器上生成。
 
 截圖來自 Studio 的網頁版，以手機寬度連接本機後端拍攝。圖中的第 2 集只有劇本，分格還在等待繪製。原始碼在 [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon)。

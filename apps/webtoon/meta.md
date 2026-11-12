@@ -9,9 +9,10 @@ langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,n
 featured: false
 desktop: macos
 mobile: android
+artifacts: macos
 visuals: {n} obrázků — panely pěti dětských příběhů, srovnání dvou stylů a character sheety.
 appstore:
-playstore:
+playstore: https://play.google.com/store/apps/details?id=com.ol1n.webtoon
 testflight:
 ---
 Toonfork (dřív pracovně Webtoon) je čtečka komiksů na výšku, která funguje
@@ -125,8 +126,8 @@ stejný díl v obou stylech vedle sebe.
 
 ### Stav
 
-Toonfork je v alfa verzi: buildy pro macOS a Android jsou ke stažení na
-GitHubu, App Store a Google Play se připravují. Studio běží jen proti
+Toonfork je v alfa verzi: Android verze je na Google Play, build pro macOS je
+ke stažení na GitHubu, App Store se připravuje. Studio běží jen proti
 vlastnímu backendu (Go s frontou úloh v Postgresu), veřejně dostupné není.
 Obrázky i texty vznikají na vlastním GPU serveru.
 

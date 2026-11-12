@@ -61,6 +61,6 @@ En stil er et navngitt preset: checkpoint, sampler, antall steg, CFG og estetisk
 
 ### Status
 
-Toonfork er i alfa: bygg for macOS og Android kan lastes ned fra GitHub, App Store og Google Play er under forberedelse. Studio kjører bare mot sin egen backend (Go med en jobbkø i Postgres) og er ikke offentlig tilgjengelig. Bilder og tekster lages på en egen GPU-server.
+Toonfork er i alfa: Android-versjonen ligger på Google Play, bygget for macOS kan lastes ned fra GitHub, og App Store er under forberedelse. Studio kjører bare mot sin egen backend (Go med en jobbkø i Postgres) og er ikke offentlig tilgjengelig. Bilder og tekster lages på en egen GPU-server.
 
 Skjermbildene er fra nettversjonen av Studio i telefonbredde mot en lokal backend. Episode 2 har der bare manus; rutene venter fortsatt på å bli tegnet. Kildekoden ligger på [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

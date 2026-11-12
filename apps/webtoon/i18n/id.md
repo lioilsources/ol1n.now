@@ -61,6 +61,6 @@ Gaya adalah preset bernama: checkpoint, sampler, jumlah langkah, CFG, dan tag es
 
 ### Status
 
-Toonfork masih alfa: build untuk macOS dan Android bisa diunduh di GitHub, App Store dan Google Play sedang disiapkan. Studio hanya berjalan dengan backend sendiri (Go dengan antrean tugas di Postgres) dan tidak tersedia untuk umum. Gambar dan teks dibuat di server GPU sendiri.
+Toonfork masih alfa: versi Android ada di Google Play, build untuk macOS bisa diunduh di GitHub, dan App Store sedang disiapkan. Studio hanya berjalan dengan backend sendiri (Go dengan antrean tugas di Postgres) dan tidak tersedia untuk umum. Gambar dan teks dibuat di server GPU sendiri.
 
 Tangkapan layar diambil dari versi web Studio selebar ponsel dengan backend lokal. Episode 2 di sana baru berupa naskah; panelnya masih menunggu digambar. Kode sumbernya ada di [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

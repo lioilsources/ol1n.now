@@ -61,6 +61,6 @@ Toonfork (الاسم المؤقت Webtoon) قارئ للقصص المصوّرة 
 
 ### الحالة
 
-Toonfork في مرحلة ألفا: إصدارات macOS وAndroid متاحة للتنزيل من GitHub، وApp Store وGoogle Play قيد التحضير. يعمل Studio فقط مع خادمه الخلفي الخاص (Go مع طابور مهام في Postgres) وليس متاحًا للعامة. تُصنع الصور والنصوص على خادم GPU خاص بنا.
+Toonfork في مرحلة ألفا: نسخة Android متاحة على Google Play، وإصدار macOS متاح للتنزيل من GitHub، وApp Store قيد التحضير. يعمل Studio فقط مع خادمه الخلفي الخاص (Go مع طابور مهام في Postgres) وليس متاحًا للعامة. تُصنع الصور والنصوص على خادم GPU خاص بنا.
 
 لقطات الشاشة من نسخة الويب من Studio بعرض الهاتف، متصلة بخادم خلفي محلي. الحلقات الثانية فيها لا تحوي إلا السيناريو، واللوحات ما زالت تنتظر الرسم. الشيفرة المصدرية على [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

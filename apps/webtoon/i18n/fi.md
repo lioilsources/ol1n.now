@@ -61,6 +61,6 @@ Tyyli on nimetty esiasetus: checkpoint, sampler, askelmäärä, CFG ja esteettis
 
 ### Tilanne
 
-Toonfork on alfavaiheessa: macOS- ja Android-buildit voi ladata GitHubista, App Store ja Google Play ovat valmisteilla. Studio toimii vain omaa backendiaan vasten (Go ja tehtäväjono Postgresissa) eikä ole julkisesti saatavilla. Kuvat ja tekstit syntyvät omalla GPU-palvelimella.
+Toonfork on alfavaiheessa: Android-versio on Google Playssa, macOS-buildin voi ladata GitHubista ja App Store on valmisteilla. Studio toimii vain omaa backendiaan vasten (Go ja tehtäväjono Postgresissa) eikä ole julkisesti saatavilla. Kuvat ja tekstit syntyvät omalla GPU-palvelimella.
 
 Kuvakaappaukset ovat Studion verkkoversiosta puhelimen levyisenä paikallista backendia vasten. Niissä jaksoilla 2 on vasta käsikirjoitus, ruudut odottavat yhä piirtämistä. Lähdekoodi on osoitteessa [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

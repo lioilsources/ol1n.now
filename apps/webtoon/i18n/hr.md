@@ -61,6 +61,6 @@ Stil je imenovani preset: checkpoint, sampler, broj koraka, CFG i estetski tagov
 
 ### Stanje
 
-Toonfork je u alfa verziji: buildovi za macOS i Android mogu se preuzeti s GitHuba, App Store i Google Play su u pripremi. Studio radi samo s vlastitim backendom (Go s redom poslova u Postgresu) i nije javno dostupan. Slike i tekstovi nastaju na vlastitom GPU poslužitelju.
+Toonfork je u alfa verziji: verzija za Android je na Google Playu, build za macOS može se preuzeti s GitHuba, a App Store je u pripremi. Studio radi samo s vlastitim backendom (Go s redom poslova u Postgresu) i nije javno dostupan. Slike i tekstovi nastaju na vlastitom GPU poslužitelju.
 
 Snimke zaslona su iz web verzije Studija u širini telefona, s lokalnim backendom. Epizode 2 na njima imaju samo scenarij, kadrovi još čekaju crtanje. Izvorni kod je na [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

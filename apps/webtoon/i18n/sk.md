@@ -61,6 +61,6 @@ Identitu postavy držia samotné tagy. IP-Adapter je pripravený, ale v prvom me
 
 ### Stav
 
-Toonfork je v alfa verzii: buildy pre macOS a Android sú na stiahnutie na GitHube, App Store a Google Play sa pripravujú. Studio beží len proti vlastnému backendu (Go s frontou úloh v Postgrese), verejne dostupné nie je. Obrázky aj texty vznikajú na vlastnom GPU serveri.
+Toonfork je v alfa verzii: verzia pre Android je na Google Play, build pre macOS je na stiahnutie na GitHube, App Store sa pripravuje. Studio beží len proti vlastnému backendu (Go s frontou úloh v Postgrese), verejne dostupné nie je. Obrázky aj texty vznikajú na vlastnom GPU serveri.
 
 Screenshoty sú z webovej verzie Studia v šírke telefónu proti lokálnemu backendu. Diely 2 na nich majú len scenár, panely na kreslenie ešte čakajú. Zdrojový kód je na [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

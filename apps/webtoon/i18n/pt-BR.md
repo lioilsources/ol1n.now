@@ -61,6 +61,6 @@ Um estilo é um preset com nome: checkpoint, sampler, número de passos, CFG e t
 
 ### Status
 
-O Toonfork está em alfa: os builds para macOS e Android podem ser baixados no GitHub, App Store e Google Play estão em preparação. O Studio roda só contra o próprio backend (Go com fila de tarefas no Postgres) e não está disponível publicamente. Imagens e textos são criados num servidor GPU próprio.
+O Toonfork está em alfa: a versão para Android está no Google Play, o build para macOS pode ser baixado no GitHub e a App Store está em preparação. O Studio roda só contra o próprio backend (Go com fila de tarefas no Postgres) e não está disponível publicamente. Imagens e textos são criados num servidor GPU próprio.
 
 As capturas de tela são da versão web do Studio na largura de um celular, com backend local. Nelas o episódio 2 tem só o roteiro; os quadros ainda esperam para ser desenhados. O código-fonte está em [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

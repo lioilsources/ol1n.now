@@ -61,6 +61,6 @@ A stílus egy elnevezett preset: checkpoint, sampler, lépésszám, CFG és eszt
 
 ### Állapot
 
-A Toonfork alfa állapotban van: a macOS- és Android-buildek letölthetők a GitHubról, az App Store és a Google Play előkészítés alatt áll. A Studio csak a saját backendjével fut (Go, Postgresben tárolt feladatsorral), nyilvánosan nem érhető el. A képek és a szövegek saját GPU-szerveren készülnek.
+A Toonfork alfa állapotban van: az Android-verzió a Google Playen van, a macOS-build letölthető a GitHubról, az App Store előkészítés alatt áll. A Studio csak a saját backendjével fut (Go, Postgresben tárolt feladatsorral), nyilvánosan nem érhető el. A képek és a szövegek saját GPU-szerveren készülnek.
 
 A képernyőképek a Studio webes változatából valók, telefonszélességben, helyi backenddel. A 2. részeknek ezeken még csak forgatókönyvük van, a panelek rajzolásra várnak. A forráskód itt található: [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).
