@@ -2,8 +2,8 @@
 slug: pravdomer
 name: Pravdoměr
 repo: lioilsources/DeepFakes
+icon_src: app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Naměří „teplotu“ článku — emoce a manipulativní techniky, každou doloženou citací
-order: 38
 featured: false
 langs: cs,en
 desktop:

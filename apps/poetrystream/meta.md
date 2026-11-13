@@ -3,7 +3,6 @@ slug: poetrystream
 name: StreamPoetry
 repo: lioilsources/PoetryStream
 tagline: Meditativní stream české poezie
-order: 1
 featured: true
 icon_src: poetry_stream/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 desktop: macos,windows,linux

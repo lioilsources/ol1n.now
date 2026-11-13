@@ -3,7 +3,6 @@ slug: mutants
 name: Mutants
 repo: lioilsources/Mutants
 tagline: Kooperativní karetní hra pro děti — poskládej mutanta
-order: 20
 featured: false
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:

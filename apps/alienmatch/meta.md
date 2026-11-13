@@ -2,8 +2,8 @@
 slug: alienmatch
 name: AlienMatch
 repo: lioilsources/AlienMatch
+icon_src: app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Seznamka beze slov, kde jsi mimozemšťan a páruješ se podle nálady
-order: 37
 featured: false
 visuals: Osm vymyšlených tváří, každá v obou symetrických variantách.
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant

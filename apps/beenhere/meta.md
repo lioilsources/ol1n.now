@@ -4,7 +4,6 @@ name: Been Here
 repo: lioilsources/been-here
 icon_src: assets/icon/icon.png
 tagline: Fotky z místa, kde právě stojíš
-order: 17
 featured: false
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:

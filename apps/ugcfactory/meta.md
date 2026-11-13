@@ -4,7 +4,6 @@ name: UGC Factory
 repo: lioilsources/UGCFactory
 icon_src: app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Továrna na Roblox doplňky — z promptu do 3D modelu bez ruční modelace
-order: 13
 featured: false
 desktop: macos
 mobile: android,ios

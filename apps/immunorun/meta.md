@@ -4,7 +4,6 @@ name: ImmunoRun
 repo: lioilsources/BioDefenseRogue
 tagline: Roguelite, ve kterém hraješ za imunitní systém
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
-order: 22
 featured: false
 desktop:
 mobile: android,ios

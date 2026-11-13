@@ -5,7 +5,6 @@ repo: lioilsources/MirrorBooth
 icon_src: mirrorbooth/ios/Runner/Assets.xcassets/AppIcon.appiconset/icon-1024.png
 tagline: Real-time symetrické zrcadlo obličeje ze selfie kamery
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
-order: 4
 featured: false
 desktop: macos,windows,linux
 mobile: android,ios

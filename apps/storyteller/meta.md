@@ -4,7 +4,6 @@ name: Pohádkomat
 repo: lioilsources/storyteller
 icon_src: app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Pohádka na dobrou noc, kterou vyprávíš ty — 2 795 pohádek z 98 zemí, appka jen napovídá
-order: 15
 featured: false
 desktop:
 mobile: android,ios

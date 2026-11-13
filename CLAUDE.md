@@ -646,6 +646,8 @@ letter tile on purpose.
 ## Adding a New App
 
 1. Create `apps/<slug>/meta.md` with YAML front-matter
+   (the index lists apps alphabetically by `name`, Czech style, `name_key` in
+   `build-site.sh`; there is no `order` field)
 2. Add `apps/<slug>/icon.png` (512x512) — **easy to forget**: without it the
    build silently falls back to the app's first letter instead of failing
 3. Add screenshots to `apps/<slug>/screenshots/raw/`

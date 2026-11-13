@@ -4,7 +4,6 @@ name: Běhánek
 repo: lioilsources/behanek
 icon_src: assets/icon/icon.png
 tagline: Běžecká appka, která ti do sluchátek řekne, jak jsi na tom proti své formě. Bez účtu a bez reklam
-order: 31
 featured: false
 desktop:
 mobile: android,ios

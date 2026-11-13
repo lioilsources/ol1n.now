@@ -4,7 +4,6 @@ name: SwypeKids
 repo: lioilsources/SwypeKids
 icon_src: ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Děti 5–9 let se učí číst přejížděním prstem po obrázcích
-order: 2
 featured: false
 desktop: macos,windows,linux
 mobile: android,ios

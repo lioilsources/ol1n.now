@@ -4,7 +4,6 @@ name: Tlumočník
 repo: lioilsources/Translator
 icon_src: app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Telefon na stole mezi dvěma lidmi — každý mluví svým jazykem a appka to druhému nahlas přeloží
-order: 33
 featured: false
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:
