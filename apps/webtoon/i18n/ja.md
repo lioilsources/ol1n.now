@@ -61,6 +61,6 @@ Toonfork（仮称 Webtoon）は、インターネットがなくても使える�
 
 ### 現状
 
-Toonfork はアルファ版です。macOS 版と Android 版のビルドは GitHub からダウンロードでき、App Store と Google Play は準備中です。Studio は自前のバックエンド（Go と Postgres のジョブキュー）でのみ動作し、一般公開はしていません。画像も文章も自前の GPU サーバーで作られています。
+Toonfork はアルファ版です。Android 版は Google Play で公開中、macOS 版のビルドは GitHub からダウンロードでき、App Store は準備中です。Studio は自前のバックエンド（Go と Postgres のジョブキュー）でのみ動作し、一般公開はしていません。画像も文章も自前の GPU サーバーで作られています。
 
 スクリーンショットは、ローカルのバックエンドにつないだ Studio のウェブ版をスマホの幅で撮ったものです。そこに写っている第2話はまだ脚本だけで、コマは描画待ちです。ソースコードは [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon) にあります。

@@ -61,6 +61,6 @@ Slog je poimenovan preset: checkpoint, sampler, število korakov, CFG in estetsk
 
 ### Stanje
 
-Toonfork je v različici alfa: gradnje za macOS in Android so na voljo za prenos na GitHubu, App Store in Google Play se pripravljata. Studio teče le z lastnim zaledjem (Go z vrsto opravil v Postgresu) in ni javno dostopen. Slike in besedila nastajajo na lastnem strežniku GPU.
+Toonfork je v različici alfa: različica za Android je na Google Play, gradnja za macOS je na voljo za prenos na GitHubu, App Store se pripravlja. Studio teče le z lastnim zaledjem (Go z vrsto opravil v Postgresu) in ni javno dostopen. Slike in besedila nastajajo na lastnem strežniku GPU.
 
 Posnetki zaslona so iz spletne različice Studia v širini telefona z lokalnim zaledjem. Epizode 2 imajo na njih le scenarij, sličice še čakajo na risanje. Izvorna koda je na [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

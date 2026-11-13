@@ -61,6 +61,6 @@ Een stijl is een preset met een naam: checkpoint, sampler, aantal stappen, CFG e
 
 ### Status
 
-Toonfork zit in de alfafase: builds voor macOS en Android zijn te downloaden op GitHub, App Store en Google Play worden voorbereid. De Studio draait alleen tegen een eigen backend (Go met een jobwachtrij in Postgres) en is niet openbaar beschikbaar. Beelden en teksten ontstaan op een eigen GPU-server.
+Toonfork zit in de alfafase: de Android-versie staat op Google Play, de build voor macOS is te downloaden op GitHub en de App Store wordt voorbereid. De Studio draait alleen tegen een eigen backend (Go met een jobwachtrij in Postgres) en is niet openbaar beschikbaar. Beelden en teksten ontstaan op een eigen GPU-server.
 
 De screenshots komen uit de webversie van de Studio op telefoonbreedte tegen een lokale backend. Aflevering 2 heeft daarop alleen een script; de panelen wachten nog om getekend te worden. De broncode staat op [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

@@ -61,6 +61,6 @@ Stil, adı olan bir ön ayardır: checkpoint, sampler, adım sayısı, CFG ve es
 
 ### Durum
 
-Toonfork alfa aşamasında: macOS ve Android sürümleri GitHub'dan indirilebilir, App Store ve Google Play hazırlanıyor. Studio yalnızca kendi backend'iyle çalışır (Postgres'te iş kuyruğu olan Go) ve herkese açık değildir. Görseller ve metinler kendi GPU sunucumuzda üretiliyor.
+Toonfork alfa aşamasında: Android sürümü Google Play'de, macOS sürümü GitHub'dan indirilebilir, App Store hazırlanıyor. Studio yalnızca kendi backend'iyle çalışır (Postgres'te iş kuyruğu olan Go) ve herkese açık değildir. Görseller ve metinler kendi GPU sunucumuzda üretiliyor.
 
 Ekran görüntüleri, Studio'nun web sürümünden telefon genişliğinde ve yerel bir backend'e karşı alındı. Buradaki 2. bölümlerin yalnızca senaryosu var; kareler hâlâ çizilmeyi bekliyor. Kaynak kodu [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon) adresinde.

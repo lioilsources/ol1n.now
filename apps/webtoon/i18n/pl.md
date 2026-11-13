@@ -61,6 +61,6 @@ Styl to nazwany preset: checkpoint, sampler, liczba kroków, CFG i tagi estetycz
 
 ### Stan
 
-Toonfork jest w wersji alfa: buildy na macOS i Androida można pobrać z GitHuba, App Store i Google Play są w przygotowaniu. Studio działa tylko z własnym backendem (Go z kolejką zadań w Postgresie) i nie jest publicznie dostępne. Obrazy i teksty powstają na własnym serwerze GPU.
+Toonfork jest w wersji alfa: wersja na Androida jest w Google Play, build na macOS można pobrać z GitHuba, a App Store jest w przygotowaniu. Studio działa tylko z własnym backendem (Go z kolejką zadań w Postgresie) i nie jest publicznie dostępne. Obrazy i teksty powstają na własnym serwerze GPU.
 
 Zrzuty ekranu pochodzą z webowej wersji Studia w szerokości telefonu, z lokalnym backendem. Odcinki 2 mają na nich tylko scenariusz, kadry wciąż czekają na narysowanie. Kod źródłowy jest na [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

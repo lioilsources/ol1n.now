@@ -61,6 +61,6 @@ Un style est un preset nommé : checkpoint, sampler, nombre d'étapes, CFG et ta
 
 ### État
 
-Toonfork est en alpha : les builds macOS et Android se téléchargent sur GitHub, l'App Store et Google Play sont en préparation. Le Studio ne tourne que sur son propre backend (Go avec une file de tâches dans Postgres) et n'est pas accessible publiquement. Images et textes naissent sur notre propre serveur GPU.
+Toonfork est en alpha : la version Android est sur Google Play, le build macOS se télécharge sur GitHub et l'App Store est en préparation. Le Studio ne tourne que sur son propre backend (Go avec une file de tâches dans Postgres) et n'est pas accessible publiquement. Images et textes naissent sur notre propre serveur GPU.
 
 Les captures viennent de la version web du Studio en largeur de téléphone, sur un backend local. L'épisode 2 n'y a qu'un scénario, ses cases attendent encore d'être dessinées. Le code source est sur [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

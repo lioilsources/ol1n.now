@@ -61,6 +61,6 @@ Toonfork (שם עבודה Webtoon) הוא קורא קומיקס בגלילה א�
 
 ### מצב
 
-Toonfork בגרסת אלפא: בילדים ל-macOS ול-Android זמינים להורדה ב-GitHub, ו-App Store ו-Google Play בהכנה. ה-Studio רץ רק מול הבקאנד שלו (Go עם תור משימות ב-Postgres) ואינו זמין לציבור. התמונות והטקסטים נוצרים בשרת GPU משלנו.
+Toonfork בגרסת אלפא: גרסת ה-Android זמינה ב-Google Play, הבילד ל-macOS זמין להורדה ב-GitHub, ו-App Store בהכנה. ה-Studio רץ רק מול הבקאנד שלו (Go עם תור משימות ב-Postgres) ואינו זמין לציבור. התמונות והטקסטים נוצרים בשרת GPU משלנו.
 
 צילומי המסך לקוחים מגרסת הווב של ה-Studio ברוחב של טלפון, מול בקאנד מקומי. לפרקים 2 שבהם יש רק תסריט, והמשבצות עוד מחכות לציור. קוד המקור נמצא ב-[github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).

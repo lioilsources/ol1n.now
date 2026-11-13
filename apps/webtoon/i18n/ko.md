@@ -61,6 +61,6 @@ Toonfork(가칭 Webtoon)는 인터넷 없이도 작동하는 세로 만화 리�
 
 ### 현황
 
-Toonfork는 알파 버전입니다. macOS와 Android 빌드는 GitHub에서 내려받을 수 있고, App Store와 Google Play는 준비 중입니다. Studio는 자체 백엔드(Go와 Postgres 작업 큐)에서만 동작하며 공개되어 있지 않습니다. 이미지와 텍스트는 자체 GPU 서버에서 만들어집니다.
+Toonfork는 알파 버전입니다. Android 버전은 Google Play에 있고, macOS 빌드는 GitHub에서 내려받을 수 있으며, App Store는 준비 중입니다. Studio는 자체 백엔드(Go와 Postgres 작업 큐)에서만 동작하며 공개되어 있지 않습니다. 이미지와 텍스트는 자체 GPU 서버에서 만들어집니다.
 
 스크린샷은 로컬 백엔드에 연결한 Studio 웹 버전을 휴대폰 너비로 찍은 것입니다. 거기 보이는 2화는 아직 각본만 있고 컷은 그려지기를 기다리고 있습니다. 소스 코드는 [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon)에 있습니다.

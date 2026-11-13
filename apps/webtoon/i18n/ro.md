@@ -61,6 +61,6 @@ Un stil este un preset cu nume: checkpoint, sampler, număr de pași, CFG și ta
 
 ### Stadiu
 
-Toonfork este în alfa: buildurile pentru macOS și Android se pot descărca de pe GitHub, App Store și Google Play sunt în pregătire. Studio rulează doar cu propriul backend (Go cu o coadă de sarcini în Postgres) și nu este disponibil public. Imaginile și textele se nasc pe un server GPU propriu.
+Toonfork este în alfa: versiunea pentru Android este pe Google Play, buildul pentru macOS se poate descărca de pe GitHub, iar App Store este în pregătire. Studio rulează doar cu propriul backend (Go cu o coadă de sarcini în Postgres) și nu este disponibil public. Imaginile și textele se nasc pe un server GPU propriu.
 
 Capturile de ecran sunt din versiunea web a Studio, la lățime de telefon, cu un backend local. Episoadele 2 au acolo doar scenariu; cadrele încă așteaptă să fie desenate. Codul sursă este pe [github.com/lioilsources/Webtoon](https://github.com/lioilsources/Webtoon).
