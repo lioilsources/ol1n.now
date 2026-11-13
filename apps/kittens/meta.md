@@ -3,7 +3,6 @@ slug: kittens
 name: Kittens
 repo: lioilsources/Kittens
 tagline: Rychlá karetní hra s koťaty a bombou
-order: 19
 featured: false
 desktop:
 mobile: android,ios

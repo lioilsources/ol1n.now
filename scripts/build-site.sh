@@ -1071,12 +1071,16 @@ for d in "$APPS"/*/decks; do
   if [ -f "$APPS/$slug/words.tsv" ]; then cp "$APPS/$slug/words.tsv" "$DIST/decks/$slug/words.tsv"; fi
 done
 
-# ordered list of meta files
+# Apps in alphabetical order of their name, Czech style: accents do not count,
+# except that č ř š ž follow c r s z. Done by hand because CI may lack a cs_CZ
+# locale for sort(1).
+name_key() {
+  printf '%s' "$1" | LC_ALL=C sed -e 's/Č/c~/g;s/č/c~/g;s/Ř/r~/g;s/ř/r~/g;s/Š/s~/g;s/š/s~/g;s/Ž/z~/g;s/ž/z~/g;s/Á/a/g;s/á/a/g;s/Ď/d/g;s/ď/d/g;s/É/e/g;s/é/e/g;s/Ě/e/g;s/ě/e/g;s/Í/i/g;s/í/i/g;s/Ň/n/g;s/ň/n/g;s/Ó/o/g;s/ó/o/g;s/Ť/t/g;s/ť/t/g;s/Ú/u/g;s/ú/u/g;s/Ů/u/g;s/ů/u/g;s/Ý/y/g;s/ý/y/g' | LC_ALL=C tr 'A-Z' 'a-z'
+}
 ORDER_LIST="$(for m in "$APPS"/*/meta.md; do
   [ -e "$m" ] || continue
-  ord="$(fm_get "$m" order)"; [ -n "$ord" ] || ord=99
-  printf '%s\t%s\n' "$ord" "$m"
-done | sort -n -k1,1)"
+  printf '%s\t%s\n' "$(name_key "$(fm_get "$m" name)")" "$m"
+done | LC_ALL=C sort -t "$TAB" -k1,1)"
 
 # ---- build per-app pages + accumulate index cards ----
 # The inner loop is the app's language list: every page an app has is built

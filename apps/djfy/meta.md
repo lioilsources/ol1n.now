@@ -4,7 +4,6 @@ name: DJfy
 repo: lioilsources/DJfy
 icon_src: ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: DJ deck s chytrým playlistem a párty režimem, kde hudbu vybírají hosté z mobilu
-order: 9
 featured: false
 desktop: macos
 mobile: android,ios

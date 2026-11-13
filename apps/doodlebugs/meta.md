@@ -4,7 +4,6 @@ name: DoodlebugsRevival
 repo: lioilsources/doodlebugs-revival
 icon_src: Assets/Doodlebugs/Sprites/Icon/AppIcon_1024.png
 tagline: Arkádové souboje dvouplošníků pro partu v jedné místnosti — přes WiFi nebo na jednom počítači
-order: 6
 featured: false
 desktop: windows,macos,linux
 mobile: android,ios

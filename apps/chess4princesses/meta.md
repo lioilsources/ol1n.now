@@ -4,7 +4,6 @@ name: Šachové království
 repo: lioilsources/Chess4Princesses
 icon_src: ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 tagline: Šachy pro pětileté — pohádkové lekce, hlas, který všechno přečte, a bitvy víl s čarodějkami
-order: 28
 featured: false
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:

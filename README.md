@@ -38,7 +38,6 @@ Volitelně přidej `apps/<slug>/icon.png` (čtvercová ikona). Hotovo — build 
 | `name` | Zobrazované jméno |
 | `repo` | `owner/repo` na GitHubu (odkud se tahají release artefakty) |
 | `tagline` | Krátký popisek na kartě |
-| `order` | Pořadí na úvodní stránce (číslo) |
 | `featured` | `true` = badge „Doporučeno" |
 | `desktop` | CSV platforem: `macos,windows,linux` |
 | `mobile` | CSV platforem: `android,ios` |

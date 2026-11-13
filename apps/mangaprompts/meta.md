@@ -3,7 +3,6 @@ slug: mangaprompts
 name: TsumikiMangaBot
 repo: lioilsources/MangaPrompts
 tagline: Telegram bot na mangu z bloků, restyle fotky, nový účes a animaci fotky
-order: 11
 featured: false
 desktop: macos,windows,linux
 mobile: android,ios

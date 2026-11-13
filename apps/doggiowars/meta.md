@@ -4,7 +4,6 @@ name: DoggioWars
 repo: lioilsources/DoggioWars
 icon_src: menu/icon.png
 tagline: Voxel dogfight na vzdušných ostrovech (samostatná hra pro Luanti)
-order: 12
 featured: false
 desktop: macos,windows,linux
 mobile: android

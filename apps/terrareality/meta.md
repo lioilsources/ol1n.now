@@ -3,7 +3,6 @@ slug: terrareality
 name: TerraReality
 repo:
 tagline: Pronájem bytu od hledání na mapě po zaplacený nájem — pro majitele, nájemníky i provozovatele
-order: 25
 featured: false
 desktop: Web
 mobile: android,ios

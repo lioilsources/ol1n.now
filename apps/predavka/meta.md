@@ -3,7 +3,6 @@ slug: predavka
 name: Předávka
 repo:
 tagline: Klidná kuchyně ve špičce — kuchaři slyší objednávky, obsluha vidí, za kolik minut co ponese
-order: 26
 featured: false
 desktop: Web
 mobile: android

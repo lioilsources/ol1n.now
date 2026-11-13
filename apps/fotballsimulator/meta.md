@@ -3,7 +3,6 @@ slug: fotballsimulator
 name: Fotball Simulator
 repo: lioilsources/FotballSimulator
 tagline: Volej jedním tahem prstu — kde nárt potká míč, s jakou falší a v kterou milisekundu
-order: 30
 featured: false
 desktop:
 mobile: android,ios

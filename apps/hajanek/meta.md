@@ -3,7 +3,6 @@ slug: hajanek
 name: Hajánek
 repo: lioilsources/Hajanek
 tagline: Usínací pohádky pro děti — klidný hlas, šum moře a ukolébavka, bez reklam a bez účtu
-order: 25
 featured: false
 desktop:
 mobile: android,ios
