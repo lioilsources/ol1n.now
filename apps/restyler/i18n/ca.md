@@ -19,7 +19,7 @@ color dels cabells o enviar el selfie original directament als estils.
 - **Ulleres:** 26 muntures, graduades i de sol, amb tria d'acabat.
 - **Cabells:** 35 pentinats per a dones i homes i 16 colors. També pots
   deixar el pentinat i canviar només el color.
-- **Estils:** 4, 6 o 8 fotogrames de 90 estils que recorren èpoques, pintors
+- **Estils:** 4, 6 o 8 fotogrames de 300 estils que recorren èpoques, pintors
   i mitjans. Cada estil pot ser pintura o foto. Si no vols triar, agafa una
   barreja ja feta: Galeria, Pop i còmic, Viatge per les èpoques, Àsia, Petjada
   txeca.

@@ -20,7 +20,7 @@ sekadar menukar warna rambut atau terus menghantar swafoto asal ke gaya.
   dengan pilihan kemasan.
 - **Rambut:** 35 gaya rambut untuk wanita dan lelaki serta 16 warna. Anda juga
   boleh kekalkan gaya rambut dan tukar warnanya sahaja.
-- **Gaya:** 4, 6 atau 8 bingkai daripada 90 gaya merentas zaman, pelukis dan
+- **Gaya:** 4, 6 atau 8 bingkai daripada 300 gaya merentas zaman, pelukis dan
   media. Setiap gaya boleh jadi lukisan atau foto. Jika tidak mahu memilih,
   ambil campuran sedia ada: Galeri, Pop dan komik, Kembara merentas zaman,
   Asia, Jejak Czech.

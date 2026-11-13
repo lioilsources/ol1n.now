@@ -18,7 +18,7 @@ alebo rovno poslať pôvodné selfie do štýlov.
 - **Okuliare:** 26 rámov, dioptrické aj slnečné, s výberom prevedenia.
 - **Vlasy:** 35 účesov pre ženy aj mužov a 16 farieb. Dá sa aj nechať účes
   a zmeniť len farbu.
-- **Štýly:** 4, 6 alebo 8 rámčekov z 90 štýlov naprieč epochami, maliarmi
+- **Štýly:** 4, 6 alebo 8 rámčekov z 300 štýlov naprieč epochami, maliarmi
   a médiami. Každý štýl ide ako maľba, alebo ako fotka. Kto nechce vyberať,
   vezme hotový mix: Galéria, Pop a komiks, Cesta epochami, Ázia, Česká stopa.
 

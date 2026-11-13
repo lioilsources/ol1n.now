@@ -20,7 +20,7 @@ saja atau langsung kirim selfie asli ke bagian gaya.
   finishing.
 - **Rambut:** 35 gaya rambut untuk perempuan dan laki-laki serta 16 warna.
   Kamu juga bisa mempertahankan gaya rambut dan mengganti warnanya saja.
-- **Gaya:** 4, 6 atau 8 bingkai dari 90 gaya lintas zaman, pelukis dan media.
+- **Gaya:** 4, 6 atau 8 bingkai dari 300 gaya lintas zaman, pelukis dan media.
   Setiap gaya bisa berupa lukisan atau foto. Kalau tidak mau memilih, ambil
   mix siap pakai: Galeri, Pop dan komik, Perjalanan lintas zaman, Asia, Jejak
   Ceko.

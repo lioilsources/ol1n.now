@@ -19,7 +19,7 @@ cabelo ou mandar a selfie original direto para os estilos.
 - **Óculos:** 26 armações, de grau e de sol, com escolha de acabamento.
 - **Cabelo:** 35 penteados femininos e masculinos e 16 cores. Também dá para
   manter o penteado e mudar só a cor.
-- **Estilos:** 4, 6 ou 8 quadros de 90 estilos passando por épocas, pintores
+- **Estilos:** 4, 6 ou 8 quadros de 300 estilos passando por épocas, pintores
   e mídias. Cada estilo pode ser pintura ou foto. Quem não quer escolher pega
   um mix pronto: Galeria, Pop e quadrinhos, Viagem pelas épocas, Ásia, Toque
   tcheco.

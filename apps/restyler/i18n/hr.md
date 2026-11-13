@@ -18,7 +18,7 @@ odmah poslati originalni selfie u stilove.
 - **Naočale:** 26 okvira, dioptrijske i sunčane, s izborom izvedbe.
 - **Kosa:** 35 frizura za žene i muškarce i 16 boja. Možeš i ostaviti frizuru
   i promijeniti samo boju.
-- **Stilovi:** 4, 6 ili 8 kadrova iz 90 stilova kroz epohe, slikare i medije.
+- **Stilovi:** 4, 6 ili 8 kadrova iz 300 stilova kroz epohe, slikare i medije.
   Svaki stil može biti slika ili fotografija. Tko ne želi birati, uzme gotov
   miks: Galerija, Pop i strip, Putovanje kroz epohe, Azija, Češki trag.
 

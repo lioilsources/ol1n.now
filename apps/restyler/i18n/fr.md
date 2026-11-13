@@ -19,7 +19,7 @@ couleur de tes cheveux ou envoyer directement ton selfie d'origine aux styles.
 - **Lunettes :** 26 montures, de vue et de soleil, avec choix de la finition.
 - **Cheveux :** 35 coiffures pour femmes et hommes et 16 couleurs. Tu peux
   aussi garder ta coiffure et changer seulement la couleur.
-- **Styles :** 4, 6 ou 8 cadres parmi 90 styles à travers les époques, les
+- **Styles :** 4, 6 ou 8 cadres parmi 300 styles à travers les époques, les
   peintres et les médiums. Chaque style existe en peinture ou en photo. Si tu
   ne veux pas choisir, prends un mix tout prêt : Galerie, Pop et BD, Voyage
   à travers les époques, Asie, Touche tchèque.

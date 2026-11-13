@@ -19,7 +19,7 @@ orijinal selfie'yi doğrudan tarzlara gönderebilirsin.
 - **Gözlük:** Numaralı ve güneş gözlüğü olarak 26 çerçeve, kaplama seçimiyle.
 - **Saç:** Kadınlar ve erkekler için 35 saç modeli ve 16 renk. Saç modelini
   koruyup yalnızca rengi de değiştirebilirsin.
-- **Tarzlar:** Dönemler, ressamlar ve teknikler boyunca 90 tarzdan 4, 6 ya da
+- **Tarzlar:** Dönemler, ressamlar ve teknikler boyunca 300 tarzdan 4, 6 ya da
   8 kare. Her tarz tablo ya da fotoğraf olarak gelir. Seçmek istemeyen hazır
   bir karışım alır: Galeri, Pop ve çizgi roman, Çağlar boyunca yolculuk,
   Asya, Çek izi.

@@ -19,7 +19,7 @@ värjätä hiukset tai lähettää alkuperäisen selfien suoraan tyyleihin.
   viimeistelyllä.
 - **Hiukset:** 35 kampausta naisille ja miehille sekä 16 väriä. Voit myös
   pitää kampauksen ja vaihtaa pelkän värin.
-- **Tyylit:** 4, 6 tai 8 ruutua 90 tyylistä eri aikakausilta, maalareilta ja
+- **Tyylit:** 4, 6 tai 8 ruutua 300 tyylistä eri aikakausilta, maalareilta ja
   tekniikoista. Jokaisen tyylin saa maalauksena tai valokuvana. Jos et halua
   valita, ota valmis yhdistelmä: Galleria, Pop ja sarjakuva, Matka
   aikakausien läpi, Aasia, Tšekkiläinen jälki.

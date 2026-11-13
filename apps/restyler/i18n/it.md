@@ -20,7 +20,7 @@ stili.
 - **Occhiali:** 26 montature, da vista e da sole, con scelta della finitura.
 - **Capelli:** 35 acconciature per donna e uomo e 16 colori. Puoi anche
   lasciare l'acconciatura e cambiare solo il colore.
-- **Stili:** 4, 6 o 8 riquadri da 90 stili attraverso epoche, pittori e
+- **Stili:** 4, 6 o 8 riquadri da 300 stili attraverso epoche, pittori e
   tecniche. Ogni stile può essere un dipinto o una foto. Se non vuoi scegliere,
   prendi un mix già pronto: Galleria, Pop e fumetto, Viaggio nelle epoche,
   Asia, Tocco ceco.
