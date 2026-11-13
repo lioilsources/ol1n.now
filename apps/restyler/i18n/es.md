@@ -19,7 +19,7 @@ pelo o mandar el selfie original directamente a los estilos.
 - **Gafas:** 26 monturas, graduadas y de sol, con elección de acabado.
 - **Pelo:** 35 peinados para mujeres y hombres y 16 colores. También puedes
   dejar el peinado y cambiar solo el color.
-- **Estilos:** 4, 6 u 8 fotogramas de 90 estilos que recorren épocas, pintores
+- **Estilos:** 4, 6 u 8 fotogramas de 300 estilos que recorren épocas, pintores
   y medios. Cada estilo puede ser pintura o foto. Si no quieres elegir, coge
   una mezcla ya hecha: Galería, Pop y cómic, Viaje por las épocas, Asia, Huella
   checa.

@@ -19,7 +19,7 @@ sende den oprindelige selfie direkte videre til stilarterne.
 - **Briller:** 26 stel, brille- og solbriller, med valg af udførelse.
 - **Hår:** 35 frisurer til kvinder og mænd og 16 farver. Du kan også beholde
   frisuren og kun skifte farven.
-- **Stilarter:** 4, 6 eller 8 billeder fra 90 stilarter på tværs af epoker,
+- **Stilarter:** 4, 6 eller 8 billeder fra 300 stilarter på tværs af epoker,
   malere og medier. Hver stilart kan være maleri eller foto. Har du ikke lyst
   til at vælge, så tag et færdigt mix: Galleri, Pop og tegneserie, Rejse
   gennem epokerne, Asien, Tjekkisk spor.

@@ -20,7 +20,7 @@ andere kleur geven of je originele selfie meteen naar de stijlen sturen.
   uitvoering.
 - **Haar:** 35 kapsels voor vrouwen en mannen en 16 kleuren. Je kunt ook je
   kapsel houden en alleen de kleur veranderen.
-- **Stijlen:** 4, 6 of 8 kaders uit 90 stijlen door tijdperken, schilders en
+- **Stijlen:** 4, 6 of 8 kaders uit 300 stijlen door tijdperken, schilders en
   media heen. Elke stijl kan als schilderij of als foto. Geen zin om te kiezen?
   Neem een kant-en-klare mix: Galerie, Pop en strip, Reis door de tijd, Azië,
   Tsjechisch spoor.

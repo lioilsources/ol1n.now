@@ -18,7 +18,7 @@ the original selfie straight to the styles.
 - **Glasses:** 26 frames, prescription and sunglasses, with a choice of finish.
 - **Hair:** 35 hairstyles for women and men and 16 colours. You can also keep
   your hairstyle and change only the colour.
-- **Styles:** 4, 6 or 8 frames from 90 styles across eras, painters and media.
+- **Styles:** 4, 6 or 8 frames from 300 styles across eras, painters and media.
   Each style comes as a painting or as a photo. If you don't want to choose,
   take a ready-made mix: Gallery, Pop & Comics, Journey Through the Ages, Asia,
   Czech Trail.

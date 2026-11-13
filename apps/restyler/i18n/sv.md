@@ -18,7 +18,7 @@ eller skicka originalselfien direkt till stilarna.
 - **Glasögon:** 26 bågar, korrigerande och solglasögon, med val av utförande.
 - **Hår:** 35 frisyrer för kvinnor och män och 16 färger. Du kan också behålla
   frisyren och bara byta färg.
-- **Stilar:** 4, 6 eller 8 rutor ur 90 stilar genom epoker, målare och medier.
+- **Stilar:** 4, 6 eller 8 rutor ur 300 stilar genom epoker, målare och medier.
   Varje stil finns som målning eller som foto. Vill du inte välja, ta en färdig
   mix: Galleri, Pop och serier, Resa genom epokerna, Asien, Tjeckiskt spår.
 

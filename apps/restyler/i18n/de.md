@@ -20,7 +20,7 @@ Haare umfärben oder das Original-Selfie direkt zu den Stilen schicken.
   Ausführung.
 - **Haare:** 35 Frisuren für Frauen und Männer und 16 Farben. Du kannst auch
   die Frisur behalten und nur die Farbe ändern.
-- **Stile:** 4, 6 oder 8 Bilder aus 90 Stilen quer durch Epochen, Maler und
+- **Stile:** 4, 6 oder 8 Bilder aus 300 Stilen quer durch Epochen, Maler und
   Medien. Jeder Stil geht als Gemälde oder als Foto. Wer nicht wählen will,
   nimmt einen fertigen Mix: Galerie, Pop & Comic, Reise durch die Epochen,
   Asien, Tschechische Spur.

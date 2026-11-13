@@ -18,7 +18,7 @@ pošlješ izvirni selfi v sloge.
 - **Očala:** 26 okvirjev, korekcijska in sončna, z izbiro izvedbe.
 - **Lasje:** 35 pričesk za ženske in moške ter 16 barv. Lahko pustiš tudi
   pričesko in spremeniš samo barvo.
-- **Slogi:** 4, 6 ali 8 sličic iz 90 slogov skozi obdobja, slikarje in medije.
+- **Slogi:** 4, 6 ali 8 sličic iz 300 slogov skozi obdobja, slikarje in medije.
   Vsak slog gre kot slika ali kot fotografija. Kdor noče izbirati, vzame
   pripravljen miks: Galerija, Pop in strip, Potovanje skozi obdobja, Azija,
   Češka sled.

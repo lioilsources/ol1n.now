@@ -20,7 +20,7 @@ eller sende den opprinnelige selfien rett til stilene.
   utførelse.
 - **Hår:** 35 frisyrer for kvinner og menn og 16 farger. Du kan også beholde
   frisyren og bare bytte farge.
-- **Stiler:** 4, 6 eller 8 ruter fra 90 stiler på tvers av epoker, malere og
+- **Stiler:** 4, 6 eller 8 ruter fra 300 stiler på tvers av epoker, malere og
   medier. Hver stil kan være maleri eller foto. Vil du ikke velge, tar du en
   ferdig miks: Galleri, Pop og tegneserie, Reise gjennom epokene, Asia,
   Tsjekkisk spor.

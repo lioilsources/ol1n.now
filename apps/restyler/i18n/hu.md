@@ -19,7 +19,7 @@ színét is átfestheted, vagy az eredeti szelfit egyből a stílusokhoz küldhe
 - **Szemüveg:** 26 keret, dioptriás és napszemüveg, választható kivitelben.
 - **Haj:** 35 frizura nőknek és férfiaknak, és 16 szín. Meghagyhatod a
   frizurát is, és csak a színét változtatod meg.
-- **Stílusok:** 4, 6 vagy 8 képkocka 90 stílusból korszakokon, festőkön és
+- **Stílusok:** 4, 6 vagy 8 képkocka 300 stílusból korszakokon, festőkön és
   technikákon át. Minden stílus kérhető festményként vagy fotóként. Ha nem
   akarsz választani, vegyél egy kész mixet: Galéria, Pop és képregény,
   Utazás a korokon át, Ázsia, Cseh nyom.

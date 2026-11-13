@@ -31,7 +31,7 @@ rovnou poslat původní selfie do stylů.
 - **Brýle:** 26 obrouček, dioptrické i sluneční, s výběrem provedení.
 - **Vlasy:** 35 účesů pro ženy i muže a 16 barev. Jde i nechat účes a změnit
   jen barvu.
-- **Styly:** 4, 6 nebo 8 rámečků z 90 stylů napříč epochami, malíři a médii.
+- **Styly:** 4, 6 nebo 8 rámečků z 300 stylů napříč epochami, malíři a médii.
   Každý styl jde jako malba, nebo jako fotka. Kdo nechce vybírat, vezme hotový
   mix: Galerie, Pop a komiks, Cesta epochami, Asie, Česká stopa.
 

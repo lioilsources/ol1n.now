@@ -19,7 +19,7 @@ hoặc gửi thẳng tấm selfie gốc sang phần phong cách.
 - **Kính:** 26 gọng, kính cận và kính râm, có chọn kiểu hoàn thiện.
 - **Tóc:** 35 kiểu tóc cho nữ và nam cùng 16 màu. Cũng có thể giữ kiểu tóc
   và chỉ đổi màu.
-- **Phong cách:** 4, 6 hoặc 8 khung từ 90 phong cách xuyên suốt các thời kỳ,
+- **Phong cách:** 4, 6 hoặc 8 khung từ 300 phong cách xuyên suốt các thời kỳ,
   họa sĩ và chất liệu. Mỗi phong cách có thể là tranh hoặc ảnh. Không muốn
   chọn thì lấy bộ trộn có sẵn: Phòng tranh, Pop và truyện tranh, Hành trình
   qua các thời kỳ, Châu Á, Dấu ấn Séc.

@@ -19,7 +19,7 @@ trimiți direct selfie-ul original la stiluri.
 - **Ochelari:** 26 de rame, de vedere și de soare, cu alegerea finisajului.
 - **Păr:** 35 de coafuri pentru femei și bărbați și 16 culori. Poți și să
   păstrezi coafura și să schimbi doar culoarea.
-- **Stiluri:** 4, 6 sau 8 cadre din 90 de stiluri care străbat epoci, pictori
+- **Stiluri:** 4, 6 sau 8 cadre din 300 de stiluri care străbat epoci, pictori
   și tehnici. Fiecare stil poate fi pictură sau fotografie. Dacă nu vrei să
   alegi, iei un mix gata făcut: Galerie, Pop și benzi desenate, Călătorie prin
   epoci, Asia, Amprentă cehă.

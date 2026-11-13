@@ -19,7 +19,7 @@ przefarbować włosy albo od razu wysłać oryginalne selfie do stylów.
   wykończenia.
 - **Włosy:** 35 fryzur dla kobiet i mężczyzn oraz 16 kolorów. Można też
   zostawić fryzurę i zmienić tylko kolor.
-- **Style:** 4, 6 albo 8 klatek z 90 stylów z różnych epok, malarzy i mediów.
+- **Style:** 4, 6 albo 8 klatek z 300 stylów z różnych epok, malarzy i mediów.
   Każdy styl może być obrazem albo zdjęciem. Kto nie chce wybierać, bierze
   gotowy mix: Galeria, Pop i komiks, Podróż przez epoki, Azja, Czeski ślad.
 

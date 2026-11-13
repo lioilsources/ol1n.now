@@ -19,7 +19,7 @@ ou enviar a selfie original diretamente para os estilos.
 - **Óculos:** 26 armações, graduadas e de sol, com escolha de acabamento.
 - **Cabelo:** 35 penteados para mulheres e homens e 16 cores. Também podes
   manter o penteado e mudar só a cor.
-- **Estilos:** 4, 6 ou 8 molduras de 90 estilos que atravessam épocas,
+- **Estilos:** 4, 6 ou 8 molduras de 300 estilos que atravessam épocas,
   pintores e meios. Cada estilo pode ser pintura ou fotografia. Se não quiseres
   escolher, pegas num mix já feito: Galeria, Pop e BD, Viagem pelas épocas,
   Ásia, Toque checo.
