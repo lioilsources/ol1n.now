@@ -408,6 +408,12 @@ own art (the Flutter projects still carry the default logo). **kittens**, **muta
 `make fetch` skips it, and its `i18n/cs.tsv` rewords `dl.empty` so the page does not
 promise builds.
 
+**ol1nllm** is invitation only: every build carries a Cloudflare Access service
+token, so its releases hold no files (Ol1nLLM PR #59) and iOS/Android go out through
+TestFlight and Firebase invites. `desktop:` is empty and `i18n/<lang>.tsv` rewords
+`dl.empty` in every language; the GitHub link stays (the repo is public, the token is not
+in it).
+
 **storyteller** was private until 2026-09-26 and is now public, so `make fetch` resolves it
 like any other app. Its default branch is **`master`**, not `main` — as is fotballsimulator's, the only two in the
 catalog.
