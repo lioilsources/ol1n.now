@@ -30,12 +30,15 @@ Chaque paquet illustré existe en deux styles d'image : photo et un style
 dessiné (pinceau et encre, pastel ou aquarelle). Tu peux changer à tout
 moment.
 
-### Hors ligne et sans pistage
+### Hors ligne, sans compte, sans pub
 
 Les images d'un paquet se téléchargent une fois, puis tout tourne sur
-l'appareil. Pas de compte, pas de pub, pas d'analytics, ta progression ne
-quitte pas ton téléphone. Tu peux signaler une mauvaise traduction ou image
-directement depuis la carte.
+l'appareil. Pas de compte, pas de pub, pas d'outils d'analyse tiers, ta
+progression ne quitte pas ton téléphone. Sur iOS, sur macOS et sur ordinateur,
+l'appli envoie des statistiques d'utilisation anonymes, sans identifiant, au
+propre serveur du développeur, et tu peux les désactiver dans les Réglages ;
+sur Android, elle n'envoie rien. Tu peux signaler une mauvaise traduction ou
+image directement depuis la carte.
 
 Développée avec Flutter (dépôt `DuolingoCards`). Fonctionne sur iOS,
 Android, macOS, Windows et Linux.

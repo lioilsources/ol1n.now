@@ -27,6 +27,6 @@ Ingyen 50 recept jár többféle konyhából: cseh, olasz, vietnámi, ázsiai, m
 
 ### Offline, fiók nélkül
 
-A Papáneknek nem kell se internet, se regisztráció, és nincs benne se reklám, se analitika. A receptek és a képek közvetlenül az appban vannak. Az app cseh és angol nyelvű.
+A Papáneknek nem kell se internet, se regisztráció, és nincs benne se reklám, se harmadik féltől származó analitika. A fejlesztő saját szerverére csak névtelen, azonosítók nélküli használati statisztikák mennek, és ezeket a Beállításokban kikapcsolhatod. A receptek és a képek közvetlenül az appban vannak. Az app cseh és angol nyelvű.
 
 Még fejlesztés alatt: az első, 0.1-es tesztverzió TestFlightban érhető el iPhone-ra, Androidra pedig APK-ként a **Letöltések** részben.

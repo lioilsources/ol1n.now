@@ -27,6 +27,6 @@ Ingredienser lägger du till genom att skriva, med förslag som förstår tjecki
 
 ### Offline, utan konto
 
-Papánek behöver varken internet eller registrering och har varken reklam eller analys. Recepten och bilderna finns direkt i appen. Appen finns på tjeckiska och engelska.
+Papánek behöver varken internet eller registrering och har varken reklam eller tredjepartsanalys. Bara anonym användningsstatistik utan identifierare skickas till utvecklarens egen server, och du kan stänga av den i Inställningar. Recepten och bilderna finns direkt i appen. Appen finns på tjeckiska och engelska.
 
 Fortfarande under utveckling: den första testversionen 0.1 finns i TestFlight för iPhone och som APK för Android i avsnittet **Nedladdningar**.

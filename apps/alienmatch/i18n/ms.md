@@ -22,4 +22,4 @@ Anda boleh menambah sehingga lapan tempat pada profil: perhentian, trem, kafe at
 
 ### Status
 
-Dalam pembangunan. Bahagian belakang dan versi pertama aplikasi sudah siap, tetapi belum ada di kedai aplikasi. Tiada iklan dan tiada penjejakan. Untuk dewasa sahaja (18+).
+Dalam pembangunan. Bahagian belakang dan versi pertama aplikasi sudah siap, tetapi belum ada di kedai aplikasi. Tiada iklan dan tiada analitik pihak ketiga; hanya statistik penggunaan tanpa nama yang tidak mengandungi pengecam dihantar ke pelayan milik pembangun sendiri, dan anda boleh mematikannya dalam Tetapan. Untuk dewasa sahaja (18+).

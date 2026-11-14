@@ -55,4 +55,4 @@ Appen delar in världen i femton regioner, och från var och en finns tio sagor 
 
 Typsnittet är knubbigt och lättläst, rubrikerna ”bubbliga” — appen är för barn och ska se ut så också.
 
-Hela flödet Glob → Figurer → Uppdrag → Problem → Slut → Upplägg → Sufflör körs i telefonen, utan ett enda anrop till en server. Utan reklam, konton och spårning. Gränssnittet och sagorna finns än så länge bara på tjeckiska.
+Hela flödet Glob → Figurer → Uppdrag → Problem → Slut → Upplägg → Sufflör körs i telefonen. Utan reklam, konton och tredjepartsanalys; bara anonym användningsstatistik utan identifierare skickas till utvecklarens egen server, och du kan stänga av den i Inställningar. Gränssnittet och sagorna finns än så länge bara på tjeckiska.

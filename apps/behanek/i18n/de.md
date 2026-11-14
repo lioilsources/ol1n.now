@@ -50,8 +50,10 @@ Ende des Laufs kannst du kürzen, falls du das Stoppen vergessen hast.
 
 ### Deine Daten gehören dir
 
-Běhánek hat kein Konto, keinen Server, keine Analyse und keine Werbung. Die Strecken
-bleiben auf deinem Handy und der Standort wird nirgendwohin geschickt. Die App will den
+Běhánek hat kein Konto, keine Werbung und keine Analytics von Drittanbietern. Die
+Strecken bleiben auf deinem Handy und der Standort wird nirgendwohin geschickt. Nur
+anonyme Nutzungsstatistiken ohne Kennungen gehen an den eigenen Server des Entwicklers,
+und du kannst sie in den Einstellungen abschalten. Die App will den
 Standort nur „beim Verwenden der App“, nie „immer“.
 
 Jeden Lauf kannst du **als GPX exportieren** und alle auf einmal in einem ZIP sichern.

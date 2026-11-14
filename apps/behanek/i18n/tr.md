@@ -46,9 +46,10 @@ unuttuysan koşunun başını ve sonunu kırpabilirsin.
 
 ### Verilerin senindir
 
-Běhánek'in hesabı, sunucusu, analitiği ya da reklamı yoktur. Rotalar telefonunda kalır,
-konumun hiçbir yere gönderilmez. Uygulama konumu yalnızca “uygulama kullanılırken” ister,
-asla “her zaman” değil.
+Běhánek'in hesabı, reklamı ya da üçüncü taraf analitiği yoktur. Rotalar telefonunda kalır,
+konumun hiçbir yere gönderilmez. Geliştiricinin kendi sunucusuna yalnızca tanımlayıcı
+içermeyen anonim kullanım istatistikleri gider ve bunları Ayarlar'dan kapatabilirsin.
+Uygulama konumu yalnızca “uygulama kullanılırken” ister, asla “her zaman” değil.
 
 Her koşu **GPX olarak dışa aktarılabilir** ve hepsi birden bir ZIP'e yedeklenebilir.
 Dışa aktarma her zaman ücretsizdir.

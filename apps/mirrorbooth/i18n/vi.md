@@ -31,6 +31,8 @@ Chậm, Sóc chuột, Tiếng vang, Dưới nước, Robot hoặc Đảo ngượ
 ### Quyền riêng tư
 
 Hình ảnh chỉ được xử lý trên điện thoại của bạn. Không tài khoản, không quảng cáo, không
-phân tích. Ảnh và video không bị gửi đi đâu cả.
+công cụ phân tích của bên thứ ba. Ảnh và video không bị gửi đi đâu cả. Chỉ có thống kê
+sử dụng ẩn danh, không kèm mã định danh, được gửi về máy chủ riêng của nhà phát triển, và
+bạn có thể tắt trong Cài đặt.
 
 Xây dựng bằng Flutter, các bộ lọc là shader GLSL.

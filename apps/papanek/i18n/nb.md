@@ -27,6 +27,6 @@ Ingredienser legger du til ved å skrive, med forslag som forstår tsjekkisk med
 
 ### Offline, uten konto
 
-Papánek trenger verken internett eller registrering og har verken reklame eller analyse. Oppskrifter og bilder ligger rett i appen. Appen er på tsjekkisk og engelsk.
+Papánek trenger verken internett eller registrering og har verken reklame eller tredjepartsanalyse. Bare anonym bruksstatistikk uten identifikatorer sendes til utviklerens egen server, og du kan slå den av i Innstillinger. Oppskrifter og bilder ligger rett i appen. Appen er på tsjekkisk og engelsk.
 
 Fortsatt under utvikling: den første testversjonen 0.1 ligger i TestFlight for iPhone og som APK for Android i delen **Nedlastinger**.

@@ -111,8 +111,10 @@ Màn hình khóa hiển thị tên câu chuyện, đoạn đang được đọc 
 
 ### Không quảng cáo, không tài khoản
 
-Hajánek không có quảng cáo, không cần đăng ký và không có phân tích. Truyện và âm thanh
-nằm trong điện thoại và phát ngoại tuyến. Ứng dụng chỉ dùng mạng để tải truyện mới và để
-tải giọng của bạn lên, nếu bạn muốn.
+Hajánek không có quảng cáo, không cần đăng ký và không có công cụ phân tích của bên thứ
+ba. Truyện và âm thanh nằm trong điện thoại và phát ngoại tuyến. Ứng dụng chỉ dùng mạng
+để tải truyện mới, để tải giọng của bạn lên, nếu bạn muốn, và để gửi thống kê sử dụng ẩn
+danh, không kèm mã định danh, về máy chủ riêng của nhà phát triển; bạn có thể tắt việc
+này trong Cài đặt.
 
 Ứng dụng dành cho trẻ từ khoảng ba đến tám tuổi.

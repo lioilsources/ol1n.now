@@ -55,4 +55,4 @@ Uygulama dünyayı on beş bölgeye ayırır ve her birinden on masal ücretsiz 
 
 Yazı tipi tombul ve okunaklı, başlıklar “baloncuklu” — uygulama çocuklar için ve öyle de görünmeli.
 
-Küre → Karakterler → Görev → Sorun → Son → Taslak → Suflör akışının tamamı telefonda, sunucuya tek bir çağrı yapmadan çalışır. Reklam, hesap ve takip yok. Arayüz ve masallar şimdilik yalnızca Çekçe.
+Küre → Karakterler → Görev → Sorun → Son → Taslak → Suflör akışının tamamı telefonda çalışır. Reklam, hesap ve üçüncü taraf analitik yok; geliştiricinin kendi sunucusuna yalnızca tanımlayıcı içermeyen anonim kullanım istatistikleri gider ve bunları Ayarlar'dan kapatabilirsin. Arayüz ve masallar şimdilik yalnızca Çekçe.

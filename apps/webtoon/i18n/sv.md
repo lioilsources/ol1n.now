@@ -30,7 +30,7 @@ Berättelser, spelböcker och läsarens texter finns på 12 språk: tjeckiska, e
 
 ### Integritet
 
-Inget konto, inga annonser, ingen spårning. Toonfork samlar inte in några personuppgifter; vad du har köpt minns enheten, och köp kan återställas i Inställningar.
+Inget konto, inga annonser, ingen tredjepartsanalys. Toonfork samlar inte in några personuppgifter. Bara anonym användningsstatistik utan identifierare skickas till utvecklarens egen server; du kan stänga av den i Inställningar, och barnprofilen skickar ingenting. Vad du har köpt minns enheten, och köp kan återställas i Inställningar.
 
 ## Studio: så blir berättelserna till
 

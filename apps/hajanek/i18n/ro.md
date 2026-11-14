@@ -110,8 +110,10 @@ apar titlul poveștii, partea care se citește acum și pauza.
 
 ### Fără reclame, fără cont
 
-Hajánek nu are reclame, înregistrare sau analiză. Poveștile și sunetele sunt în telefon
-și merg offline. Aplicația folosește rețeaua doar ca să descarce povești noi și ca să
-încarce vocea ta, dacă o vrei.
+Hajánek nu are reclame, înregistrare sau analize de la terți. Poveștile și sunetele sunt
+în telefon și merg offline. Aplicația folosește rețeaua doar ca să descarce povești noi,
+ca să încarce vocea ta, dacă o vrei, și ca să trimită statistici anonime de utilizare,
+fără identificatori, pe serverul propriu al dezvoltatorului; pe acestea le poți
+dezactiva din Setări.
 
 Aplicația e pentru copii cam de la trei la opt ani.

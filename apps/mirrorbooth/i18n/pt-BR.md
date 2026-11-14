@@ -30,7 +30,9 @@ Esquilo, Eco, Debaixo d’água, Robô ou Ao contrário. O resultado é salvo na
 
 ### Privacidade
 
-A imagem é processada só no seu celular. Sem conta, anúncios ou análises. Fotos
-e vídeos não são enviados para lugar nenhum.
+A imagem é processada só no seu celular. Sem conta, anúncios ou analytics de
+terceiros. Fotos e vídeos não são enviados para lugar nenhum. Só estatísticas de uso
+anônimas, sem identificadores, vão para o servidor próprio do desenvolvedor, e você
+pode desativá-las em Ajustes.
 
 Feito com Flutter, os filtros são shaders GLSL.

@@ -27,6 +27,6 @@ Add ingredients by typing, with suggestions that understand Czech with or withou
 
 ### Offline, no account
 
-Papánek needs no internet and no sign-up, and has no ads or analytics. The recipes and pictures are right inside the app. The app is in Czech and English.
+Papánek needs no internet and no sign-up, and has no ads or third-party analytics. It sends only anonymous usage statistics with no identifiers to the developer's own server, and you can turn them off in Settings. The recipes and pictures are right inside the app. The app is in Czech and English.
 
 Still in development: the first test version 0.1 is on TestFlight for iPhone and available as an APK for Android in the **Downloads** section.

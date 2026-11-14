@@ -41,7 +41,9 @@ modello direttamente sul telefono, come anche le maschere, la stima del colore
 dei capelli, i prompt e la composizione della striscia. Al server va solo una
 foto con le maschere e tornano indietro le immagini finite. Il rendering gira
 su un server GPU nostro, non nel cloud di altri. L'app non ha account,
-pubblicità né pagamenti.
+pubblicità né pagamenti. Oltre a quella foto, al server proprio dello
+sviluppatore arrivano solo statistiche d'uso anonime, senza identificatori, e
+puoi disattivarle nelle Impostazioni.
 
 Restyler è ancora in test chiuso: su iPhone tramite TestFlight, su Android
 tramite Firebase.

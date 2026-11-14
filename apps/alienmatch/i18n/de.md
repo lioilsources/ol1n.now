@@ -22,4 +22,4 @@ Du kannst deinem Profil bis zu acht Orte hinzufügen: deine Haltestelle, deine T
 
 ### Stand
 
-In Entwicklung. Das Backend und die erste Version der App sind fertig, in den Stores ist sie noch nicht. Keine Werbung und kein Tracking. Nur für Erwachsene (18+).
+In Entwicklung. Das Backend und die erste Version der App sind fertig, in den Stores ist sie noch nicht. Keine Werbung und keine Analytics von Drittanbietern; nur anonyme Nutzungsstatistiken ohne Kennungen gehen an den eigenen Server des Entwicklers, und du kannst sie in den Einstellungen abschalten. Nur für Erwachsene (18+).

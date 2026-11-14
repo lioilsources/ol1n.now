@@ -103,6 +103,7 @@ Il carattere è paffuto e leggibile, i titoli sono «a bolle» – l’app è pe
 bambini e deve anche sembrarlo.
 
 L’intero percorso Mappamondo → Personaggi → Missione → Problema → Finale →
-Traccia → Suggeritore gira sul telefono, senza una sola chiamata a un server.
-Niente pubblicità, account o tracciamento. Interfaccia e fiabe per ora sono solo
-in ceco.
+Traccia → Suggeritore gira sul telefono. Niente pubblicità, account o analytics
+di terze parti; al server proprio dello sviluppatore arrivano solo statistiche
+d’uso anonime, senza identificatori, e puoi disattivarle nelle Impostazioni.
+Interfaccia e fiabe per ora sono solo in ceco.

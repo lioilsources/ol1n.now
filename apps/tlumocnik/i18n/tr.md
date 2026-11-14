@@ -39,6 +39,6 @@ Uygulamada hesap yok: ilk açılışta telefon kendini cihaz olarak kaydeder. Ko
 
 ### Gizlilik
 
-Konuşma tanıma, çeviri ve ses, başkasının bulutunda değil, kendi GPU sunucumuzda çalışır. Sunucu ne sesi ne de konuşma metinlerini saklar, günlüklere de yazmaz. Uygulamada hesap, reklam ya da analitik yok. Sunucu nedeniyle internet bağlantısı gerekir.
+Konuşma tanıma, çeviri ve ses, başkasının bulutunda değil, kendi GPU sunucumuzda çalışır. Sunucu ne sesi ne de konuşma metinlerini saklar, günlüklere de yazmaz. Uygulamada hesap, reklam ya da üçüncü taraf analitik yok; geliştiricinin kendi sunucusuna yalnızca tanımlayıcı içermeyen anonim kullanım istatistikleri gider ve bunları Ayarlar'dan kapatabilirsin. Sunucu nedeniyle internet bağlantısı gerekir.
 
 Tlumočník şimdilik kapalı testte: iPhone'da TestFlight üzerinden, Android'de Firebase üzerinden.

@@ -39,6 +39,6 @@ Az appnak nincs fiókja: első indításkor a telefon magától regisztrálja ma
 
 ### Adatvédelem
 
-A beszédfelismerés, a fordítás és a hang is a saját GPU-s szerverünkön fut, nem idegen felhőben. A szerver nem tárolja sem a hangot, sem a beszélgetések szövegét, és nem írja őket naplóba. Az appnak nincs fiókja, reklámja vagy analitikája. A szerver miatt internetkapcsolat kell hozzá.
+A beszédfelismerés, a fordítás és a hang is a saját GPU-s szerverünkön fut, nem idegen felhőben. A szerver nem tárolja sem a hangot, sem a beszélgetések szövegét, és nem írja őket naplóba. Az appnak nincs fiókja, reklámja vagy harmadik féltől származó analitikája; a fejlesztő saját szerverére csak névtelen, azonosítók nélküli használati statisztikák mennek, és ezeket a Beállításokban kikapcsolhatod. A szerver miatt internetkapcsolat kell hozzá.
 
 A Tlumočník egyelőre zárt tesztelésben van: iPhone-on TestFlighton, Androidon Firebase-en keresztül.

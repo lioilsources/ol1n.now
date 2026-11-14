@@ -39,7 +39,9 @@ Lähes kaikki. Kasvot, hiukset, silmät ja parran tunnistaa malli suoraan
 puhelimessa, samoin maskit, hiusten värin arvion, kehotteet ja liuskan
 kokoamisen. Palvelimelle lähtee vain yksi kuva maskeineen, ja takaisin tulevat
 valmiit kuvat. Renderöinti tapahtuu omalla GPU-palvelimella, ei kenenkään
-muun pilvessä. Sovelluksessa ei ole tilejä, mainoksia eikä maksuja.
+muun pilvessä. Sovelluksessa ei ole tilejä, mainoksia eikä maksuja. Tuon kuvan
+lisäksi kehittäjän omalle palvelimelle lähtee vain nimettömiä käyttötilastoja
+ilman tunnisteita, ja ne voi poistaa käytöstä Asetuksista.
 
 Restyler on vielä suljetussa testauksessa: iPhonella TestFlightin kautta,
 Androidilla Firebasen kautta.

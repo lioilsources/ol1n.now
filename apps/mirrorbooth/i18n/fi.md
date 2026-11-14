@@ -30,7 +30,9 @@ Hidastus, Orava, Kaiku, Veden alla, Robotti tai Takaperin. Tulos tallentuu galle
 
 ### Yksityisyys
 
-Kuva käsitellään vain puhelimessasi. Ei tiliä, mainoksia eikä analytiikkaa. Kuvia
-ja videoita ei lähetetä minnekään.
+Kuva käsitellään vain puhelimessasi. Ei tiliä, mainoksia eikä kolmannen osapuolen
+analytiikkaa. Kuvia ja videoita ei lähetetä minnekään. Kehittäjän omalle palvelimelle
+lähtee vain nimettömiä käyttötilastoja ilman tunnisteita, ja ne voi poistaa käytöstä
+Asetuksista.
 
 Tehty Flutterilla, suodattimet ovat GLSL-varjostimia.

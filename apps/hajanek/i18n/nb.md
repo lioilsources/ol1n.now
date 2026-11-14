@@ -111,8 +111,10 @@ leses akkurat nå, og pause.
 
 ### Uten reklame, uten konto
 
-Hajánek har ingen reklame, ingen registrering og ingen analyse. Eventyrene og lydene
-ligger på telefonen og spiller uten nett. Appen bruker bare nettet til å laste ned nye
-eventyr og til å laste opp stemmen din, hvis du ønsker det.
+Hajánek har ingen reklame, ingen registrering og ingen tredjepartsanalyse. Eventyrene
+og lydene ligger på telefonen og spiller uten nett. Appen bruker bare nettet til å laste
+ned nye eventyr, til å laste opp stemmen din, hvis du ønsker det, og til å sende anonym
+bruksstatistikk uten identifikatorer til utviklerens egen server; den kan du slå av i
+Innstillinger.
 
 Appen er for barn fra omtrent tre til åtte år.

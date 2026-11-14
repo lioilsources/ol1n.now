@@ -114,8 +114,10 @@ verrouillage affiche le titre du conte, le passage en cours de lecture et la pau
 
 ### Sans pub, sans compte
 
-Hajánek n'a ni pub, ni inscription, ni statistiques. Les contes et les sons sont sur le
-téléphone et jouent hors ligne. L'appli n'utilise le réseau que pour télécharger de
-nouveaux contes et envoyer ta voix, si tu le souhaites.
+Hajánek n'a ni pub, ni inscription, ni outils d'analyse tiers. Les contes et les sons
+sont sur le téléphone et jouent hors ligne. L'appli n'utilise le réseau que pour
+télécharger de nouveaux contes, envoyer ta voix, si tu le souhaites, et transmettre des
+statistiques d'utilisation anonymes, sans identifiant, au propre serveur du développeur ;
+tu peux les désactiver dans les Réglages.
 
 L'appli s'adresse aux enfants d'environ trois à huit ans.

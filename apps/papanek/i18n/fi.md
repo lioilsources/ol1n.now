@@ -27,6 +27,6 @@ Ilmaiseksi saat 50 reseptiä eri keittiöistä: tšekkiläinen, italialainen, vi
 
 ### Offline, ilman tiliä
 
-Papánek ei tarvitse internetiä eikä rekisteröitymistä, eikä siinä ole mainoksia eikä analytiikkaa. Reseptit ja kuvat ovat suoraan sovelluksessa. Sovellus on tšekiksi ja englanniksi.
+Papánek ei tarvitse internetiä eikä rekisteröitymistä, eikä siinä ole mainoksia eikä kolmannen osapuolen analytiikkaa. Kehittäjän omalle palvelimelle lähtee vain nimettömiä käyttötilastoja ilman tunnisteita, ja ne voi poistaa käytöstä Asetuksista. Reseptit ja kuvat ovat suoraan sovelluksessa. Sovellus on tšekiksi ja englanniksi.
 
 Vielä kehitteillä: ensimmäinen testiversio 0.1 on TestFlightissa iPhonelle ja APK-tiedostona Androidille kohdassa **Lataukset**.

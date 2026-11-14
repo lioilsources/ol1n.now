@@ -30,7 +30,7 @@ Las historias, los librojuegos y los textos del lector están en 12 idiomas: che
 
 ### Privacidad
 
-Sin cuenta, sin anuncios, sin rastreo. Toonfork no recoge datos personales; lo que has comprado lo recuerda el dispositivo y las compras se restauran en Ajustes.
+Sin cuenta, sin anuncios, sin analíticas de terceros. Toonfork no recoge datos personales. Al servidor propio del desarrollador solo llegan estadísticas de uso anónimas, sin identificadores; puedes desactivarlas en Ajustes, y el perfil infantil no envía nada. Lo que has comprado lo recuerda el dispositivo y las compras se restauran en Ajustes.
 
 ## Studio: así nacen las historias
 

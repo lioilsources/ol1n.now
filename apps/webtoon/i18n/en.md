@@ -30,7 +30,7 @@ Stories, gamebooks and the reader's texts come in 12 languages: Czech, English, 
 
 ### Privacy
 
-No account, no ads, no tracking. Toonfork collects no personal data; your device remembers what you bought, and purchases can be restored in Settings.
+No account, no ads, no third-party analytics. Toonfork collects no personal data. It sends only anonymous usage statistics with no identifiers to the developer's own server, you can turn them off in Settings, and the kids' profile sends nothing. Your device remembers what you bought, and purchases can be restored in Settings.
 
 ## Studio: how the stories are made
 

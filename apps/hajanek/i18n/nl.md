@@ -114,8 +114,10 @@ de titel van het sprookje, het deel dat nu wordt voorgelezen en pauze.
 
 ### Geen reclame, geen account
 
-Hajánek heeft geen reclame, geen registratie en geen analytics. De sprookjes en geluiden
-staan op je telefoon en spelen offline. De app gebruikt het netwerk alleen om nieuwe
-sprookjes te downloaden en om je stem te uploaden, als je dat wilt.
+Hajánek heeft geen reclame, geen registratie en geen analytics van derden. De sprookjes
+en geluiden staan op je telefoon en spelen offline. De app gebruikt het netwerk alleen om
+nieuwe sprookjes te downloaden, om je stem te uploaden, als je dat wilt, en om anonieme
+gebruiksstatistieken zonder identificatoren naar de eigen server van de ontwikkelaar te
+sturen; die kun je uitzetten in Instellingen.
 
 De app is voor kinderen van ongeveer drie tot acht jaar.

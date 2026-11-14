@@ -21,6 +21,6 @@ Kaksitoista fonttia, kymmenen väripalettia pehmeästi hehkuvalla tekstillä, ku
 
 ### Yksityisyys
 
-Ei mainoksia, tilejä eikä analytiikkaa. Asetukset pysyvät vain laitteellasi.
+Ei mainoksia, tilejä eikä kolmannen osapuolen analytiikkaa. Asetukset pysyvät vain laitteellasi. Kehittäjän omalle palvelimelle lähtee vain nimettömiä käyttötilastoja ilman tunnisteita, ja ne voi poistaa käytöstä Asetuksista.
 
 Runot puhuvat avoimesti kehosta, seksuaalisuudesta, sairaudesta, kuolemasta ja uskosta, ja paikoin niissä käytetään karkeita ilmauksia. Tehty Flutterilla, toimii tietokoneella ja mobiilissa. Runot ja käyttöliittymä ovat tšekiksi.

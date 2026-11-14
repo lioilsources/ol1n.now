@@ -22,4 +22,4 @@ Profilu lahko dodaš do osem krajev: svojo postajo, tramvaj, kavarno ali fakulte
 
 ### Stanje
 
-V razvoju. Zaledje in prva različica aplikacije sta končana, v trgovinah pa je še ni. Brez oglasov in brez sledenja. Samo za odrasle (18+).
+V razvoju. Zaledje in prva različica aplikacije sta končana, v trgovinah pa je še ni. Brez oglasov in brez analitike tretjih oseb; na lastni strežnik razvijalca gre le anonimna statistika uporabe brez identifikatorjev, ki jo lahko izklopiš v Nastavitvah. Samo za odrasle (18+).

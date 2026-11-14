@@ -27,10 +27,13 @@ Jokaisessa kuvitetussa pakassa on kaksi kuvatyyliä: valokuvat ja yksi
 piirretty tyyli (sivellin ja tussi, pastelli tai vesiväri). Voit vaihtaa
 milloin tahansa.
 
-### Offline ja ilman seurantaa
+### Offline, ilman tiliä ja mainoksia
 
 Pakan kuvat ladataan kerran, sen jälkeen kaikki toimii laitteessa. Ei tiliä,
-ei mainoksia, ei analytiikkaa, eikä edistymisesi poistu puhelimesta. Väärän
+ei mainoksia, ei kolmannen osapuolen analytiikkaa, eikä edistymisesi poistu
+puhelimesta. Sovellus lähettää iOS:llä, macOS:llä ja tietokoneilla kehittäjän
+omalle palvelimelle nimettömiä käyttötilastoja ilman tunnisteita, ja ne voi
+poistaa käytöstä Asetuksista; Androidilla se ei lähetä mitään. Väärän
 käännöksen tai kuvan voit ilmoittaa suoraan kortista.
 
 Tehty Flutterilla (repo `DuolingoCards`). Toimii iOS:llä, Androidilla,

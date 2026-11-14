@@ -46,8 +46,10 @@ stoppe.
 
 ### Dataene dine er dine
 
-Běhánek har ingen konto, ingen server, ingen analyse og ingen reklame. Rutene blir på
-telefonen, og posisjonen din sendes aldri noe sted. Appen ber bare om posisjon «når
+Běhánek har ingen konto, ingen reklame og ingen tredjepartsanalyse. Rutene blir på
+telefonen, og posisjonen din sendes aldri noe sted. Bare anonym bruksstatistikk uten
+identifikatorer sendes til utviklerens egen server, og du kan slå den av i
+Innstillinger. Appen ber bare om posisjon «når
 appen er i bruk», aldri «alltid».
 
 Hver tur kan **eksporteres som GPX**, og alle på én gang kan sikkerhetskopieres til en ZIP.

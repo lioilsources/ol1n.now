@@ -55,4 +55,4 @@ A app divide o mundo em quinze regiões e, de cada uma, há dez contos grátis e
 
 A letra é redondinha e fácil de ler, e os títulos têm ar de «bolha» — a app é para crianças e deve parecê-lo.
 
-Todo o percurso Globo → Personagens → Missão → Problema → Final → Guião → Ponto corre no telemóvel, sem uma única chamada a um servidor. Sem anúncios, contas nem rastreio. A interface e os contos estão, para já, só em checo.
+Todo o percurso Globo → Personagens → Missão → Problema → Final → Guião → Ponto corre no telemóvel. Sem anúncios, contas nem análises de terceiros; para o servidor próprio do programador só seguem estatísticas de utilização anónimas, sem identificadores, e podes desativá-las nas Definições. A interface e os contos estão, para já, só em checo.

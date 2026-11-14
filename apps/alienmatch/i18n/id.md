@@ -22,4 +22,4 @@ Kamu bisa menambahkan hingga delapan tempat ke profil: halte, trem, kafe, atau f
 
 ### Status
 
-Dalam pengembangan. Backend dan versi pertama aplikasi sudah selesai, tetapi belum ada di toko aplikasi. Tanpa iklan dan tanpa pelacakan. Khusus dewasa (18+).
+Dalam pengembangan. Backend dan versi pertama aplikasi sudah selesai, tetapi belum ada di toko aplikasi. Tanpa iklan dan tanpa analitik pihak ketiga; hanya statistik penggunaan anonim tanpa pengenal yang dikirim ke server milik pengembang sendiri, dan itu bisa kamu matikan di Pengaturan. Khusus dewasa (18+).

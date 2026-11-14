@@ -30,7 +30,7 @@ Historier, spilbøger og læserens tekster findes på 12 sprog: tjekkisk, engels
 
 ### Privatliv
 
-Ingen konto, ingen reklamer, ingen sporing. Toonfork indsamler ingen personlige data; det, du har købt, husker enheden, og køb kan gendannes i Indstillinger.
+Ingen konto, ingen reklamer, ingen tredjepartsanalyse. Toonfork indsamler ingen personlige data. Kun anonym brugsstatistik uden identifikatorer sendes til udviklerens egen server; du kan slå den fra i Indstillinger, og børneprofilen sender intet. Det, du har købt, husker enheden, og køb kan gendannes i Indstillinger.
 
 ## Studio: sådan bliver historierne til
 

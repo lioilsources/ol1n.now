@@ -30,7 +30,7 @@ Histoires, livres-jeux et textes de la liseuse existent en 12 langues : tchèque
 
 ### Confidentialité
 
-Aucun compte, aucune pub, aucun pistage. Toonfork ne collecte aucune donnée personnelle ; ce que tu as acheté, c'est l'appareil qui s'en souvient, et les achats se restaurent dans les Réglages.
+Aucun compte, aucune pub, aucun outil d'analyse tiers. Toonfork ne collecte aucune donnée personnelle. Seules des statistiques d'utilisation anonymes, sans identifiant, partent vers le propre serveur du développeur, tu peux les désactiver dans les Réglages, et le profil enfant n'envoie rien. Ce que tu as acheté, c'est l'appareil qui s'en souvient, et les achats se restaurent dans les Réglages.
 
 ## Studio : comment naissent les histoires
 

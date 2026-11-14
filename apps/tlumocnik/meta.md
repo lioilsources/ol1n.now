@@ -81,7 +81,9 @@ překládá zase.
 
 Rozpoznání řeči, překlad i hlas běží na našem vlastním serveru s GPU,
 ne v cizím cloudu. Server zvuk ani texty rozhovorů neukládá a nezapisuje do
-logů. Appka nemá účet, reklamy ani analytiku. Kvůli serveru potřebuje
+logů. Appka nemá účet, reklamy ani analytiku třetích stran; na vlastní server
+vývojáře jdou jen anonymní statistiky používání bez identifikátorů a vypnout je
+jde v nastavení. Kvůli serveru potřebuje
 připojení k internetu.
 
 Tlumočník je zatím v uzavřeném testování: na iPhonu přes TestFlight, na Androidu přes Firebase.

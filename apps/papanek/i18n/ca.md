@@ -27,6 +27,6 @@ Hi ha 50 receptes gratis de diverses cuines: txeca, italiana, vietnamita, asiàt
 
 ### Sense connexió, sense compte
 
-Papánek no necessita internet ni registre, i no té anuncis ni analítica. Les receptes i les imatges són dins l'app. L'app és en txec i anglès.
+Papánek no necessita internet ni registre, i no té anuncis ni analítiques de tercers. Al servidor propi del desenvolupador només hi arriben estadístiques d'ús anònimes, sense identificadors, i les pots desactivar a Configuració. Les receptes i les imatges són dins l'app. L'app és en txec i anglès.
 
 Encara en desenvolupament: la primera versió de prova 0.1 és a TestFlight per a iPhone i com a APK per a Android a la secció **Baixades**.

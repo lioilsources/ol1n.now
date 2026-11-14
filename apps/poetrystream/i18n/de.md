@@ -31,8 +31,10 @@ Papier im Dunkeln.
 
 ### Datenschutz
 
-Keine Werbung, keine Konten, keine Analyse. Die Einstellungen bleiben auf
-deinem Gerät.
+Keine Werbung, keine Konten, keine Analytics von Drittanbietern. Die
+Einstellungen bleiben auf deinem Gerät. Nur anonyme Nutzungsstatistiken ohne
+Kennungen gehen an den eigenen Server des Entwicklers, und du kannst sie in
+den Einstellungen abschalten.
 
 Die Gedichte sprechen offen über Körper, Sexualität, Krankheit, Tod und
 Glauben und verwenden stellenweise derbe Ausdrücke. Gebaut mit Flutter, läuft

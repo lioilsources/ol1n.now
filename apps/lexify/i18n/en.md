@@ -27,10 +27,13 @@ no subscription.
 Every illustrated deck comes in two picture styles: photos and one drawn
 style (brush and ink, pastel or watercolour). You can switch at any time.
 
-### Offline and no tracking
+### Offline, no account, no ads
 
 A deck's pictures download once, then everything runs on your device. No
-account, no ads, no analytics, and your progress never leaves your phone.
+account, no ads, no third-party analytics, and your progress never leaves your
+phone. On iOS, macOS and desktop the app sends anonymous usage statistics with
+no identifiers to the developer's own server, and you can turn them off in
+Settings; on Android it sends nothing.
 You can report a wrong translation or picture straight from the card.
 
 Built with Flutter (repo `DuolingoCards`). Runs on iOS, Android, macOS,

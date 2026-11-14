@@ -97,6 +97,7 @@ Chữ tròn trịa, dễ đọc, tiêu đề kiểu “bong bóng” — ứng d
 trông cũng phải như vậy.
 
 Toàn bộ hành trình Quả địa cầu → Nhân vật → Nhiệm vụ → Trở ngại → Kết thúc →
-Dàn ý → Nhắc lời chạy ngay trên điện thoại, không một lần gọi lên máy chủ.
-Không quảng cáo, không tài khoản, không theo dõi. Giao diện và truyện hiện chỉ có
-bằng tiếng Séc.
+Dàn ý → Nhắc lời chạy ngay trên điện thoại. Không quảng cáo, không tài khoản,
+không công cụ phân tích của bên thứ ba; chỉ có thống kê sử dụng ẩn danh, không kèm
+mã định danh, được gửi về máy chủ riêng của nhà phát triển, và bạn có thể tắt
+trong Cài đặt. Giao diện và truyện hiện chỉ có bằng tiếng Séc.

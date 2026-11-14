@@ -30,7 +30,7 @@ Verhalen, spelboeken en de teksten van de reader zijn er in 12 talen: Tsjechisch
 
 ### Privacy
 
-Geen account, geen advertenties, geen tracking. Toonfork verzamelt geen persoonsgegevens; wat je hebt gekocht onthoudt het apparaat, en aankopen kun je herstellen in Instellingen.
+Geen account, geen advertenties, geen analytics van derden. Toonfork verzamelt geen persoonsgegevens. Alleen anonieme gebruiksstatistieken zonder identificatoren gaan naar de eigen server van de ontwikkelaar; je kunt ze uitzetten in Instellingen, en het kinderprofiel stuurt niets. Wat je hebt gekocht onthoudt het apparaat, en aankopen kun je herstellen in Instellingen.
 
 ## Studio: zo ontstaan de verhalen
 

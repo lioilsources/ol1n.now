@@ -47,8 +47,10 @@ keď si zabudol(a) zastaviť.
 
 ### Tvoje dáta sú tvoje
 
-Běhánek nemá účet, server, analytiku ani reklamy. Trasy zostávajú v telefóne
-a poloha sa nikam neposiela. Appka chce polohu len „počas používania“, nikdy „vždy“.
+Běhánek nemá účet, reklamy ani analytiku tretích strán. Trasy zostávajú v telefóne
+a poloha sa nikam neposiela. Na vlastný server vývojára idú len anonymné štatistiky
+používania bez identifikátorov a dajú sa vypnúť v Nastaveniach. Appka chce polohu len
+„počas používania“, nikdy „vždy“.
 
 Každý beh sa dá **exportovať ako GPX** a všetky naraz zálohovať do ZIPu.
 Export je vždy zadarmo.

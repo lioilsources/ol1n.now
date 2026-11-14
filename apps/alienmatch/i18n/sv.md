@@ -22,4 +22,4 @@ Du kan lägga till upp till åtta platser på profilen: din hållplats, din spå
 
 ### Status
 
-Under utveckling. Backend och appens första version är klara, men den finns inte i butikerna än. Inga annonser och ingen spårning. Endast för vuxna (18+).
+Under utveckling. Backend och appens första version är klara, men den finns inte i butikerna än. Inga annonser och ingen tredjepartsanalys; bara anonym användningsstatistik utan identifierare skickas till utvecklarens egen server, och du kan stänga av den i Inställningar. Endast för vuxna (18+).

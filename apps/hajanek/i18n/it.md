@@ -109,8 +109,9 @@ della fiaba, la parte che si sta leggendo e la pausa.
 
 ### Senza pubblicità, senza account
 
-Hajánek non ha pubblicità, registrazione né statistiche. Fiabe e suoni sono nel telefono
-e funzionano offline. L'app usa la rete solo per scaricare fiabe nuove e per caricare la
-tua voce, se la vuoi.
+Hajánek non ha pubblicità, registrazione né analytics di terze parti. Fiabe e suoni sono
+nel telefono e funzionano offline. L'app usa la rete solo per scaricare fiabe nuove, per
+caricare la tua voce, se la vuoi, e per inviare al server proprio dello sviluppatore
+statistiche d'uso anonime, senza identificatori; puoi disattivarle nelle Impostazioni.
 
 L'app è pensata per bambini più o meno dai tre agli otto anni.

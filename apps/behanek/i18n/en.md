@@ -47,8 +47,9 @@ to stop.
 
 ### Your data is yours
 
-Běhánek has no account, no server, no analytics and no ads. Routes stay on your phone and
-your location is never sent anywhere. The app asks for location only “while using the
+Běhánek has no account, no ads and no third-party analytics. Routes stay on your phone
+and your location is never sent anywhere. Only anonymous usage statistics with no
+identifiers go to the developer's own server, and you can turn them off in Settings. The app asks for location only “while using the
 app”, never “always”.
 
 Every run can be **exported as GPX** and all of them backed up to a ZIP. Export is always

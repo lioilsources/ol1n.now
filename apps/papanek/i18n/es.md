@@ -27,6 +27,6 @@ Hay 50 recetas gratis de distintas cocinas: checa, italiana, vietnamita, asiáti
 
 ### Sin conexión, sin cuenta
 
-Papánek no necesita internet ni registro, y no tiene anuncios ni analítica. Las recetas y las imágenes están dentro de la app. La app está en checo e inglés.
+Papánek no necesita internet ni registro, y no tiene anuncios ni analíticas de terceros. Al servidor propio del desarrollador solo llegan estadísticas de uso anónimas, sin identificadores, y puedes desactivarlas en Ajustes. Las recetas y las imágenes están dentro de la app. La app está en checo e inglés.
 
 Todavía en desarrollo: la primera versión de prueba 0.1 está en TestFlight para iPhone y como APK para Android en la sección **Descargas**.

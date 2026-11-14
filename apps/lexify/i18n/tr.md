@@ -28,10 +28,13 @@ Her resimli destenin iki görsel stili vardır: fotoğraf ve bir çizim stili
 (fırça ve mürekkep, pastel ya da suluboya). İstediğin zaman geçiş
 yapabilirsin.
 
-### Çevrimdışı ve takip yok
+### Çevrimdışı, hesapsız, reklamsız
 
 Bir destenin resimleri bir kez indirilir, sonra her şey cihazda çalışır.
-Hesap yok, reklam yok, analiz yok; ilerlemen telefonundan çıkmaz. Yanlış bir
+Hesap yok, reklam yok, üçüncü taraf analitik yok; ilerlemen telefonundan
+çıkmaz. iOS, macOS ve masaüstünde uygulama, geliştiricinin kendi sunucusuna
+tanımlayıcı içermeyen anonim kullanım istatistikleri gönderir; bunları
+Ayarlar'dan kapatabilirsin. Android'de hiçbir şey göndermez. Yanlış bir
 çeviriyi ya da resmi doğrudan karttan bildirebilirsin.
 
 Flutter ile geliştirildi (depo `DuolingoCards`). iOS, Android, macOS,

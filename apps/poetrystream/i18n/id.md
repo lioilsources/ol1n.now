@@ -21,6 +21,6 @@ Dua belas font, sepuluh palet warna dengan teks yang berpendar lembut, enam ukur
 
 ### Privasi
 
-Tanpa iklan, akun, atau analitik. Pengaturan hanya tersimpan di perangkat.
+Tanpa iklan, akun, atau analitik pihak ketiga. Pengaturan hanya tersimpan di perangkat. Hanya statistik penggunaan anonim tanpa pengenal yang dikirim ke server milik pengembang sendiri, dan itu bisa kamu matikan di Pengaturan.
 
 Puisi-puisinya berbicara terbuka tentang tubuh, seksualitas, penyakit, kematian, dan iman, dan sesekali memakai kata-kata kasar. Dibuat dengan Flutter, berjalan di desktop dan ponsel. Puisi dan antarmukanya berbahasa Ceko.

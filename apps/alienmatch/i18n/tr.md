@@ -22,4 +22,4 @@ Profiline en fazla sekiz yer ekleyebilirsin: durağın, tramvayın, bir kafe ya 
 
 ### Durum
 
-Geliştirme aşamasında. Arka uç ve uygulamanın ilk sürümü hazır, ama henüz mağazalarda değil. Reklam yok, izleme yok. Yalnızca yetişkinler için (18+).
+Geliştirme aşamasında. Arka uç ve uygulamanın ilk sürümü hazır, ama henüz mağazalarda değil. Reklam yok, üçüncü taraf analitik yok; geliştiricinin kendi sunucusuna yalnızca tanımlayıcı içermeyen anonim kullanım istatistikleri gider ve bunları Ayarlar'dan kapatabilirsin. Yalnızca yetişkinler için (18+).

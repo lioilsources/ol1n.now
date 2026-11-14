@@ -28,12 +28,15 @@ Cada baraja ilustrada tiene dos estilos de imagen: fotografía y un estilo
 dibujado (pincel y tinta, pastel o acuarela). Puedes cambiarlo cuando
 quieras.
 
-### Sin conexión y sin rastreo
+### Sin conexión, sin cuenta, sin anuncios
 
 Las imágenes de una baraja se descargan una vez y luego todo funciona en el
-dispositivo. Sin cuenta, sin anuncios, sin analíticas: tu progreso no sale
-del teléfono. Si ves una traducción o una imagen incorrecta, la puedes
-notificar desde la propia tarjeta.
+dispositivo. Sin cuenta, sin anuncios, sin analíticas de terceros: tu
+progreso no sale del teléfono. En iOS, macOS y escritorio, la app envía al
+servidor propio del desarrollador estadísticas de uso anónimas, sin
+identificadores, y puedes desactivarlas en Ajustes; en Android no envía nada.
+Si ves una traducción o una imagen incorrecta, la puedes notificar desde la
+propia tarjeta.
 
 Hecha con Flutter (repositorio `DuolingoCards`). Funciona en iOS, Android,
 macOS, Windows y Linux.

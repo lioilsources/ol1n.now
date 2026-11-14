@@ -30,7 +30,9 @@ Chipmunk, Echo, Onder water, Robot of Achterstevoren. Het resultaat wordt in je 
 
 ### Privacy
 
-Het beeld wordt alleen op je telefoon verwerkt. Geen account, advertenties of analytics.
-Foto’s en video’s worden nergens naartoe gestuurd.
+Het beeld wordt alleen op je telefoon verwerkt. Geen account, advertenties of analytics
+van derden. Foto’s en video’s worden nergens naartoe gestuurd. Alleen anonieme
+gebruiksstatistieken zonder identificatoren gaan naar de eigen server van de ontwikkelaar,
+en je kunt ze uitzetten in Instellingen.
 
 Gebouwd met Flutter, de filters zijn GLSL-shaders.

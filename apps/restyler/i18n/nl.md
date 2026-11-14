@@ -41,7 +41,9 @@ telefoon, net als de maskers, de inschatting van je haarkleur, de prompts en
 het samenstellen van de strook. Naar de server gaat alleen één foto met de
 maskers en de klare beelden komen terug. Het renderen gebeurt op een eigen
 GPU-server, niet in de cloud van een ander. De app heeft geen accounts,
-advertenties of betalingen.
+advertenties of betalingen. Naast die foto gaan alleen anonieme
+gebruiksstatistieken zonder identificatoren naar de eigen server van de
+ontwikkelaar, en je kunt ze uitzetten in Instellingen.
 
 Restyler zit nog in een gesloten test: op iPhone via TestFlight, op Android
 via Firebase.

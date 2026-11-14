@@ -28,10 +28,13 @@ Każda ilustrowana talia ma dwa style obrazków: zdjęcia i jeden styl
 rysowany (pędzel i tusz, pastel albo akwarela). Przełączyć możesz w każdej
 chwili.
 
-### Offline i bez śledzenia
+### Offline, bez konta, bez reklam
 
 Obrazki talii pobierają się raz, potem wszystko działa na urządzeniu. Bez
-konta, bez reklam, bez analityki, twoje postępy nie opuszczają telefonu.
+konta, bez reklam, bez analityki firm trzecich, twoje postępy nie opuszczają
+telefonu. Na iOS, macOS i komputerach aplikacja wysyła na własny serwer twórcy
+anonimowe statystyki użytkowania bez identyfikatorów, które możesz wyłączyć
+w Ustawieniach; na Androidzie nie wysyła niczego.
 Błędne tłumaczenie lub obrazek zgłosisz prosto z fiszki.
 
 Zbudowana we Flutterze (repozytorium `DuolingoCards`). Działa na iOS,

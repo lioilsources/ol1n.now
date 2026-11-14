@@ -30,7 +30,9 @@ Jeka, Pod vodom, Robot ili Unatrag. Rezultat se sprema u galeriju.
 
 ### Privatnost
 
-Slika se obrađuje samo na tvom mobitelu. Bez računa, oglasa i analitike. Fotografije
-i videozapisi nikamo se ne šalju.
+Slika se obrađuje samo na tvom mobitelu. Bez računa, oglasa i analitike trećih
+strana. Fotografije i videozapisi nikamo se ne šalju. Na vlastiti poslužitelj
+razvijatelja šalje se samo anonimna statistika korištenja bez identifikatora, a možeš
+je isključiti u Postavkama.
 
 Izrađeno u Flutteru, filtri su GLSL shaderi.

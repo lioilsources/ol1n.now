@@ -30,7 +30,9 @@ Mókus, Visszhang, Víz alatt, Robot vagy Visszafelé. Az eredmény a galériáb
 
 ### Adatvédelem
 
-A kép feldolgozása csak a telefonodon történik. Nincs fiók, reklám vagy analitika.
-A fotók és videók sehová sem kerülnek el.
+A kép feldolgozása csak a telefonodon történik. Nincs fiók, reklám vagy harmadik
+féltől származó analitika. A fotók és videók sehová sem kerülnek el. A fejlesztő saját
+szerverére csak névtelen, azonosítók nélküli használati statisztikák mennek, és ezeket
+a Beállításokban kikapcsolhatod.
 
 Flutterben készült, a szűrők GLSL shaderek.

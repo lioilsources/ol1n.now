@@ -104,8 +104,9 @@ vypnúť). Na zamknutej obrazovke je názov rozprávky, časť, ktorá sa práve
 
 ### Bez reklám, bez účtu
 
-Hajánek nemá reklamy, registráciu ani analytiku. Rozprávky a zvuky sú v telefóne
-a hrajú offline. Sieť appka používa len na stiahnutie nových rozprávok a na nahranie
-tvojho hlasu, ak oň stojíš.
+Hajánek nemá reklamy, registráciu ani analytiku tretích strán. Rozprávky a zvuky sú
+v telefóne a hrajú offline. Sieť appka používa len na stiahnutie nových rozprávok, na
+nahranie tvojho hlasu, ak oň stojíš, a na odoslanie anonymných štatistík používania bez
+identifikátorov na vlastný server vývojára; tie sa dajú vypnúť v Nastaveniach.
 
 Appka je pre deti zhruba od troch do ôsmich rokov.

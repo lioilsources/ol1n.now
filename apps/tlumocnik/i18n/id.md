@@ -39,6 +39,6 @@ Aplikasi ini tidak punya akun: saat pertama kali dijalankan, ponsel mendaftarkan
 
 ### Privasi
 
-Pengenalan ucapan, terjemahan, dan suara semuanya berjalan di server GPU milik kami sendiri, bukan di cloud pihak lain. Server tidak menyimpan audio maupun teks percakapan dan tidak menuliskannya ke log. Aplikasi ini tidak punya akun, iklan, atau analitik. Karena memakai server, aplikasi butuh koneksi internet.
+Pengenalan ucapan, terjemahan, dan suara semuanya berjalan di server GPU milik kami sendiri, bukan di cloud pihak lain. Server tidak menyimpan audio maupun teks percakapan dan tidak menuliskannya ke log. Aplikasi ini tidak punya akun, iklan, atau analitik pihak ketiga; hanya statistik penggunaan anonim tanpa pengenal yang dikirim ke server milik pengembang sendiri, dan itu bisa kamu matikan di Pengaturan. Karena memakai server, aplikasi butuh koneksi internet.
 
 Tlumočník masih dalam pengujian tertutup: di iPhone lewat TestFlight, di Android lewat Firebase.

@@ -112,8 +112,10 @@ titel, den del, der læses op lige nu, og pause.
 
 ### Uden reklamer, uden konto
 
-Hajánek har ingen reklamer, ingen registrering og ingen analyse. Eventyr og lyde
-ligger på telefonen og spiller offline. Appen bruger kun nettet til at hente nye
-eventyr og til at uploade din stemme, hvis du vil have den.
+Hajánek har ingen reklamer, ingen registrering og ingen tredjepartsanalyse. Eventyr
+og lyde ligger på telefonen og spiller offline. Appen bruger kun nettet til at hente
+nye eventyr, til at uploade din stemme, hvis du vil have den, og til at sende anonym
+brugsstatistik uden identifikatorer til udviklerens egen server; den kan du slå fra i
+Indstillinger.
 
 Appen er til børn fra cirka tre til otte år.

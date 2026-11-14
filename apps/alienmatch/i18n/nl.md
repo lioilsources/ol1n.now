@@ -22,4 +22,4 @@ Je kunt tot acht plekken aan je profiel toevoegen: je halte, je tram, een café 
 
 ### Status
 
-In ontwikkeling. De backend en de eerste versie van de app zijn klaar, maar hij staat nog niet in de winkels. Geen advertenties en geen tracking. Alleen voor volwassenen (18+).
+In ontwikkeling. De backend en de eerste versie van de app zijn klaar, maar hij staat nog niet in de winkels. Geen advertenties en geen analytics van derden; alleen anonieme gebruiksstatistieken zonder identificatoren gaan naar de eigen server van de ontwikkelaar, en je kunt ze uitzetten in Instellingen. Alleen voor volwassenen (18+).
