@@ -31,8 +31,10 @@ tailles et, de temps en temps, de l'italique. Le fond animé et granuleux
 
 ### Confidentialité
 
-Pas de publicité, pas de compte, pas d'analytique. Les réglages restent sur
-ton appareil.
+Pas de publicité, pas de compte, pas d'outils d'analyse tiers. Les réglages
+restent sur ton appareil. Seules des statistiques d'utilisation anonymes, sans
+identifiant, partent vers le propre serveur du développeur, et tu peux les
+désactiver dans les Réglages.
 
 Les poèmes parlent ouvertement du corps, de la sexualité, de la maladie, de
 la mort et de la foi, et emploient parfois des mots crus. Développée avec

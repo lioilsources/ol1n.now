@@ -30,7 +30,7 @@ Poveștile, cărțile-joc și textele cititorului sunt în 12 limbi: cehă, engl
 
 ### Confidențialitate
 
-Fără cont, fără reclame, fără urmărire. Toonfork nu colectează date personale; ce ai cumpărat ține minte dispozitivul, iar cumpărăturile se pot restaura din Setări.
+Fără cont, fără reclame, fără analize de la terți. Toonfork nu colectează date personale. Pe serverul propriu al dezvoltatorului ajung doar statistici anonime de utilizare, fără identificatori, le poți dezactiva din Setări, iar profilul pentru copii nu trimite nimic. Ce ai cumpărat ține minte dispozitivul, iar cumpărăturile se pot restaura din Setări.
 
 ## Studio: cum se nasc poveștile
 

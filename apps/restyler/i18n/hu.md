@@ -39,7 +39,9 @@ Szinte minden. Az arc, a haj, a szem és a szakáll felismerését egy modell
 végzi közvetlenül a telefonon, ugyanígy a maszkokat, a hajszín becslését, a
 promptokat és a csík összeállítását is. A szerverre csak egy fotó megy a
 maszkokkal, vissza pedig a kész képek jönnek. A renderelés saját GPU-szerveren
-fut, nem idegen felhőben. Az appban nincsenek fiókok, hirdetések és fizetés.
+fut, nem idegen felhőben. Az appban nincsenek fiókok, hirdetések és fizetés. Ezen a fotón
+kívül csak névtelen, azonosítók nélküli használati statisztikák mennek a fejlesztő
+saját szerverére, és ezeket a Beállításokban kikapcsolhatod.
 
 A Restyler egyelőre zárt tesztben van: iPhone-on a TestFlighton, Androidon a
 Firebase-en keresztül.

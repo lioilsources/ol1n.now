@@ -39,6 +39,6 @@ Aplikasi ini tiada akaun: pada pelancaran pertama, telefon mendaftarkan dirinya 
 
 ### Privasi
 
-Pengecaman pertuturan, terjemahan dan suara semuanya berjalan pada pelayan GPU kami sendiri, bukan dalam awan pihak lain. Pelayan tidak menyimpan audio atau teks perbualan dan tidak menulisnya ke dalam log. Aplikasi ini tiada akaun, iklan atau analitik. Kerana pelayan, ia memerlukan sambungan internet.
+Pengecaman pertuturan, terjemahan dan suara semuanya berjalan pada pelayan GPU kami sendiri, bukan dalam awan pihak lain. Pelayan tidak menyimpan audio atau teks perbualan dan tidak menulisnya ke dalam log. Aplikasi ini tiada akaun, iklan atau analitik pihak ketiga; hanya statistik penggunaan tanpa nama yang tidak mengandungi pengecam dihantar ke pelayan milik pembangun sendiri, dan anda boleh mematikannya dalam Tetapan. Kerana pelayan, ia memerlukan sambungan internet.
 
 Tlumočník masih dalam ujian tertutup: di iPhone melalui TestFlight, di Android melalui Firebase.

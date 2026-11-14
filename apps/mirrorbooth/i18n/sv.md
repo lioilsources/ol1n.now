@@ -30,7 +30,8 @@ Jordekorre, Eko, Under vatten, Robot eller Baklänges. Resultatet sparas i galle
 
 ### Integritet
 
-Bilden bearbetas bara i din telefon. Inget konto, ingen reklam eller analys. Foton
-och videor skickas ingenstans.
+Bilden bearbetas bara i din telefon. Inget konto, ingen reklam eller tredjepartsanalys.
+Foton och videor skickas ingenstans. Bara anonym användningsstatistik utan identifierare
+skickas till utvecklarens egen server, och du kan stänga av den i Inställningar.
 
 Byggd med Flutter, filtren är GLSL-shaders.

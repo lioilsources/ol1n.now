@@ -30,7 +30,9 @@ Eco, Debaixo de água, Robô ou Ao contrário. O resultado fica guardado na tua 
 
 ### Privacidade
 
-A imagem é processada apenas no teu telemóvel. Sem conta, anúncios ou análises.
-As fotos e os vídeos não são enviados para lado nenhum.
+A imagem é processada apenas no teu telemóvel. Sem conta, anúncios ou análises de
+terceiros. As fotos e os vídeos não são enviados para lado nenhum. Para o servidor
+próprio do programador só seguem estatísticas de utilização anónimas, sem
+identificadores, e podes desativá-las nas Definições.
 
 Feito com Flutter, os filtros são shaders GLSL.

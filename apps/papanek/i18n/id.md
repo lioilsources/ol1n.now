@@ -27,6 +27,6 @@ Gratis 50 resep dari berbagai masakan: Ceko, Italia, Vietnam, Asia, Meksiko, dan
 
 ### Offline, tanpa akun
 
-Papánek tidak butuh internet maupun pendaftaran, dan tidak punya iklan maupun analitik. Resep dan gambar ada langsung di dalam aplikasi. Aplikasi tersedia dalam bahasa Ceko dan Inggris.
+Papánek tidak butuh internet maupun pendaftaran, dan tidak punya iklan maupun analitik pihak ketiga. Aplikasi hanya mengirim statistik penggunaan anonim tanpa pengenal ke server milik pengembang sendiri, dan itu bisa kamu matikan di Pengaturan. Resep dan gambar ada langsung di dalam aplikasi. Aplikasi tersedia dalam bahasa Ceko dan Inggris.
 
 Masih dalam pengembangan: versi uji pertama 0.1 ada di TestFlight untuk iPhone dan sebagai APK untuk Android di bagian **Unduhan**.

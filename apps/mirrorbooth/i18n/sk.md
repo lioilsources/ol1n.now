@@ -30,7 +30,8 @@ Ozvena, Pod vodou, Robot alebo Pospiatky. Výsledok sa uloží do galérie.
 
 ### Súkromie
 
-Obraz sa spracúva len v telefóne. Žiadny účet, reklamy ani analytika. Fotky a videá
-sa nikam neodosielajú.
+Obraz sa spracúva len v telefóne. Žiadny účet, reklamy ani analytika tretích strán.
+Fotky a videá sa nikam neodosielajú. Na vlastný server vývojára idú len anonymné
+štatistiky používania bez identifikátorov a dajú sa vypnúť v Nastaveniach.
 
 Postavené vo Flutteri, filtre sú GLSL shadery.

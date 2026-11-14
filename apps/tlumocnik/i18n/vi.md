@@ -39,6 +39,6 @@ Bản dịch cũng có thể vang lên bằng giọng của bạn. Bạn ghi âm
 
 ### Quyền riêng tư
 
-Nhận dạng giọng nói, dịch và giọng đọc đều chạy trên máy chủ GPU của chính chúng tôi, không phải trên đám mây của bên khác. Máy chủ không lưu âm thanh hay nội dung cuộc trò chuyện và không ghi chúng vào nhật ký. Ứng dụng không có tài khoản, quảng cáo hay công cụ phân tích. Vì dùng máy chủ nên cần có kết nối internet.
+Nhận dạng giọng nói, dịch và giọng đọc đều chạy trên máy chủ GPU của chính chúng tôi, không phải trên đám mây của bên khác. Máy chủ không lưu âm thanh hay nội dung cuộc trò chuyện và không ghi chúng vào nhật ký. Ứng dụng không có tài khoản, quảng cáo hay công cụ phân tích của bên thứ ba; chỉ có thống kê sử dụng ẩn danh, không kèm mã định danh, được gửi về máy chủ riêng của nhà phát triển, và bạn có thể tắt trong Cài đặt. Vì dùng máy chủ nên cần có kết nối internet.
 
 Tlumočník hiện vẫn đang thử nghiệm kín: trên iPhone qua TestFlight, trên Android qua Firebase.

@@ -55,4 +55,4 @@ Sovellus jakaa maailman viiteentoista alueeseen, ja jokaiselta on kymmenen satua
 
 Fontti on pyöreä ja helppolukuinen, otsikot ”kuplamaisia” — sovellus on lapsille, ja sen kuuluu näyttää siltä.
 
-Koko polku Karttapallo → Hahmot → Tehtävä → Ongelma → Loppu → Juoni → Kuiskaaja toimii puhelimessa ilman ainuttakaan palvelinkutsua. Ei mainoksia, tilejä eikä seurantaa. Käyttöliittymä ja sadut ovat toistaiseksi vain tšekiksi.
+Koko polku Karttapallo → Hahmot → Tehtävä → Ongelma → Loppu → Juoni → Kuiskaaja toimii puhelimessa. Ei mainoksia, tilejä eikä kolmannen osapuolen analytiikkaa; kehittäjän omalle palvelimelle lähtee vain nimettömiä käyttötilastoja ilman tunnisteita, ja ne voi poistaa käytöstä Asetuksista. Käyttöliittymä ja sadut ovat toistaiseksi vain tšekiksi.

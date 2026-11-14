@@ -22,4 +22,4 @@ Poți adăuga în profil până la opt locuri: stația ta, tramvaiul tău, o caf
 
 ### Stare
 
-În dezvoltare. Backendul și prima versiune a aplicației sunt gata, dar încă nu e în magazine. Fără reclame și fără urmărire. Doar pentru adulți (18+).
+În dezvoltare. Backendul și prima versiune a aplicației sunt gata, dar încă nu e în magazine. Fără reclame și fără analize de la terți; pe serverul propriu al dezvoltatorului ajung doar statistici anonime de utilizare, fără identificatori, și le poți dezactiva din Setări. Doar pentru adulți (18+).

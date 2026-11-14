@@ -99,5 +99,7 @@ A fonte é gordinha e legível, os títulos são em letras “de bolha” — o 
 para crianças e tem que parecer isso.
 
 Todo o percurso Globo → Personagens → Missão → Problema → Final → Roteiro →
-Ponto roda no celular, sem uma única chamada ao servidor. Sem anúncios, contas
-nem rastreamento. Por enquanto, a interface e os contos estão só em tcheco.
+Ponto roda no celular. Sem anúncios, contas nem analytics de terceiros; só
+estatísticas de uso anônimas, sem identificadores, vão para o servidor próprio
+do desenvolvedor, e você pode desativá-las em Ajustes. Por enquanto, a
+interface e os contos estão só em tcheco.

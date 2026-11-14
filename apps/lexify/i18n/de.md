@@ -30,12 +30,15 @@ Jedes illustrierte Deck gibt es in zwei Bildstilen: Fotos und ein
 gezeichneter Stil (Pinsel und Tusche, Pastell oder Aquarell). Umschalten
 kannst du jederzeit.
 
-### Offline und ohne Tracking
+### Offline, ohne Konto, ohne Werbung
 
 Die Bilder eines Decks werden einmal heruntergeladen, danach läuft alles auf
-dem Gerät. Kein Konto, keine Werbung, keine Analytics, dein Fortschritt
-verlässt das Handy nicht. Eine falsche Übersetzung oder ein falsches Bild
-meldest du direkt von der Karte aus.
+dem Gerät. Kein Konto, keine Werbung, keine Analytics von Drittanbietern, dein
+Fortschritt verlässt das Handy nicht. Unter iOS, macOS und auf dem Desktop
+schickt die App anonyme Nutzungsstatistiken ohne Kennungen an den eigenen
+Server des Entwicklers, und du kannst sie in den Einstellungen abschalten;
+unter Android schickt sie nichts. Eine falsche Übersetzung oder ein falsches
+Bild meldest du direkt von der Karte aus.
 
 Gebaut mit Flutter (Repo `DuolingoCards`). Läuft auf iOS, Android, macOS,
 Windows und Linux.

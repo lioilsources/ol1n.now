@@ -30,7 +30,7 @@ A történetek, a lapozgatós könyvek és az olvasó szövegei 12 nyelven érhe
 
 ### Adatvédelem
 
-Nincs fiók, nincs reklám, nincs követés. A Toonfork nem gyűjt személyes adatokat; hogy mit vettél meg, azt az eszköz jegyzi meg, a vásárlásokat pedig a Beállításokban állíthatod vissza.
+Nincs fiók, nincs reklám, nincs harmadik féltől származó analitika. A Toonfork nem gyűjt személyes adatokat. A fejlesztő saját szerverére csak névtelen, azonosítók nélküli használati statisztikák mennek, ezeket a Beállításokban kikapcsolhatod, és a gyerekprofil semmit sem küld. Hogy mit vettél meg, azt az eszköz jegyzi meg, a vásárlásokat pedig a Beállításokban állíthatod vissza.
 
 ## Studio: így készülnek a történetek
 

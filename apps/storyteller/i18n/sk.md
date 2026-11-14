@@ -55,4 +55,4 @@ Svet je v appke rozdelený na pätnásť regiónov a z každého je desať rozpr
 
 Písmo je bucľaté a čitateľné, nadpisy „bublinkové“ — appka je pre deti a má tak aj vyzerať.
 
-Celý priechod Glóbus → Postavy → Úloha → Problém → Koniec → Osnova → Suflér beží v telefóne, bez jediného volania na server. Bez reklám, účtov a sledovania. Rozhranie aj rozprávky sú zatiaľ len po česky.
+Celý priechod Glóbus → Postavy → Úloha → Problém → Koniec → Osnova → Suflér beží v telefóne. Bez reklám, účtov a analytiky tretích strán; na vlastný server vývojára idú len anonymné štatistiky používania bez identifikátorov a dajú sa vypnúť v Nastaveniach. Rozhranie aj rozprávky sú zatiaľ len po česky.

@@ -27,6 +27,6 @@ Brezplačnih je 50 receptov iz različnih kuhinj: češke, italijanske, vietnams
 
 ### Brez povezave, brez računa
 
-Papánek ne potrebuje interneta ne registracije in nima oglasov ne analitike. Recepti in slike so kar v aplikaciji. Aplikacija je v češčini in angleščini.
+Papánek ne potrebuje interneta ne registracije in nima oglasov ne analitike tretjih oseb. Na lastni strežnik razvijalca gre le anonimna statistika uporabe brez identifikatorjev, ki jo lahko izklopiš v Nastavitvah. Recepti in slike so kar v aplikaciji. Aplikacija je v češčini in angleščini.
 
 Še v razvoju: prva testna različica 0.1 je v TestFlightu za iPhone in kot APK za Android v razdelku **Prenosi**.

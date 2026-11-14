@@ -48,9 +48,10 @@ jeśli zapomnisz zatrzymać.
 
 ### Twoje dane są twoje
 
-Běhánek nie ma konta, serwera, analityki ani reklam. Trasy zostają w telefonie, a lokalizacja
-nigdzie nie jest wysyłana. Aplikacja prosi o lokalizację tylko „podczas używania aplikacji”,
-nigdy „zawsze”.
+Běhánek nie ma konta, reklam ani analityki firm trzecich. Trasy zostają w telefonie,
+a lokalizacja nigdzie nie jest wysyłana. Na własny serwer twórcy trafiają tylko anonimowe
+statystyki użytkowania bez identyfikatorów, a możesz je wyłączyć w Ustawieniach. Aplikacja
+prosi o lokalizację tylko „podczas używania aplikacji”, nigdy „zawsze”.
 
 Każdy bieg możesz **wyeksportować jako GPX**, a wszystkie naraz zapisać w kopii ZIP. Eksport
 jest zawsze darmowy.

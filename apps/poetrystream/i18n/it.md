@@ -31,8 +31,10 @@ ricorda la carta al buio.
 
 ### Privacy
 
-Niente pubblicità, account o analytics. Le impostazioni restano solo sul tuo
-dispositivo.
+Niente pubblicità, account o analytics di terze parti. Le impostazioni restano
+solo sul tuo dispositivo. Al server proprio dello sviluppatore arrivano solo
+statistiche d'uso anonime, senza identificatori, e puoi disattivarle nelle
+Impostazioni.
 
 Le poesie parlano apertamente di corpo, sessualità, malattia, morte e fede,
 e a tratti usano espressioni volgari. Realizzata con Flutter, funziona su

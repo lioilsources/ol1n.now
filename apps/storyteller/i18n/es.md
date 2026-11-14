@@ -55,4 +55,4 @@ La app divide el mundo en quince regiones, y de cada una hay diez cuentos gratis
 
 La letra es redondita y fácil de leer, y los títulos van en estilo «burbuja»: la app es para niños y tiene que parecerlo.
 
-Todo el recorrido Globo → Personajes → Misión → Problema → Final → Guion → Apuntador funciona en el móvil, sin una sola llamada a un servidor. Sin anuncios, cuentas ni rastreo. La interfaz y los cuentos están, por ahora, solo en checo.
+Todo el recorrido Globo → Personajes → Misión → Problema → Final → Guion → Apuntador funciona en el móvil. Sin anuncios, cuentas ni analíticas de terceros; al servidor propio del desarrollador solo llegan estadísticas de uso anónimas, sin identificadores, y puedes desactivarlas en Ajustes. La interfaz y los cuentos están, por ahora, solo en checo.

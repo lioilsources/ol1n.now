@@ -38,7 +38,9 @@ Skoraj vse. Prepoznavanje obraza, las, oči in brade opravi model neposredno
 v telefonu, prav tako maske, oceno barve las, pozive in sestavljanje traku. Na
 strežnik gre samo ena fotografija z maskami, nazaj pa pridejo končane slike.
 Upodabljanje teče na lastnem strežniku GPU, ne v tujem oblaku. Aplikacija
-nima računov, oglasov ali plačil.
+nima računov, oglasov ali plačil. Poleg te fotografije gre na lastni strežnik
+razvijalca le anonimna statistika uporabe brez identifikatorjev, ki jo lahko
+izklopiš v Nastavitvah.
 
 Restyler je zaenkrat v zaprtem testiranju: na iPhonu prek TestFlighta, na
 Androidu prek Firebasea.

@@ -111,8 +111,10 @@ de bloqueig hi ha el títol del conte, la part que s'està llegint i el botó de
 
 ### Sense anuncis, sense compte
 
-Hajánek no té anuncis, registre ni analítica. Els contes i els sons són al telèfon i
-sonen sense connexió. L'app només fa servir la xarxa per descarregar contes nous i
-per pujar la teva veu, si la vols.
+Hajánek no té anuncis, registre ni analítiques de tercers. Els contes i els sons són al
+telèfon i sonen sense connexió. L'app només fa servir la xarxa per descarregar contes
+nous, per pujar la teva veu, si la vols, i per enviar al servidor propi del
+desenvolupador estadístiques d'ús anònimes, sense identificadors; les pots desactivar a
+Configuració.
 
 L'app és per a nens d'uns tres a vuit anys.

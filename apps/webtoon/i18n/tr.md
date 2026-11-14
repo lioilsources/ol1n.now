@@ -30,7 +30,7 @@ Hikâyeler, oyun kitapları ve okuyucunun metinleri 12 dilde: Çekçe, İngilizc
 
 ### Gizlilik
 
-Hesap yok, reklam yok, takip yok. Toonfork kişisel veri toplamaz; neyi satın aldığını cihaz hatırlar ve satın almalar Ayarlar'dan geri yüklenebilir.
+Hesap yok, reklam yok, üçüncü taraf analitik yok. Toonfork kişisel veri toplamaz. Geliştiricinin kendi sunucusuna yalnızca tanımlayıcı içermeyen anonim kullanım istatistikleri gider, bunları Ayarlar'dan kapatabilirsin ve çocuk profili hiçbir şey göndermez. Neyi satın aldığını cihaz hatırlar ve satın almalar Ayarlar'dan geri yüklenebilir.
 
 ## Studio: hikâyeler nasıl doğuyor
 

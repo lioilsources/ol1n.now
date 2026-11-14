@@ -30,7 +30,7 @@ Truyện, sách trò chơi và chữ trong trình đọc có 12 ngôn ngữ: ti�
 
 ### Quyền riêng tư
 
-Không tài khoản, không quảng cáo, không theo dõi. Toonfork không thu thập dữ liệu cá nhân; những gì bạn đã mua được lưu trên thiết bị, và có thể khôi phục giao dịch mua trong Cài đặt.
+Không tài khoản, không quảng cáo, không công cụ phân tích của bên thứ ba. Toonfork không thu thập dữ liệu cá nhân. Ứng dụng chỉ gửi thống kê sử dụng ẩn danh, không kèm mã định danh, về máy chủ riêng của nhà phát triển, bạn có thể tắt trong Cài đặt, và hồ sơ Thiếu nhi không gửi gì cả. Những gì bạn đã mua được lưu trên thiết bị, và có thể khôi phục giao dịch mua trong Cài đặt.
 
 ## Studio: truyện được tạo ra như thế nào
 

@@ -21,6 +21,6 @@ Mười hai phông chữ, mười bảng màu với chữ phát sáng dịu nh�
 
 ### Quyền riêng tư
 
-Không quảng cáo, không tài khoản, không phân tích. Cài đặt chỉ lưu trên thiết bị.
+Không quảng cáo, không tài khoản, không công cụ phân tích của bên thứ ba. Cài đặt chỉ lưu trên thiết bị. Chỉ có thống kê sử dụng ẩn danh, không kèm mã định danh, được gửi về máy chủ riêng của nhà phát triển, và bạn có thể tắt trong Cài đặt.
 
 Các bài thơ nói thẳng về cơ thể, tình dục, bệnh tật, cái chết và đức tin, đôi chỗ dùng từ ngữ thô tục. Được xây dựng bằng Flutter, chạy trên máy tính và điện thoại. Thơ và giao diện đều bằng tiếng Séc.

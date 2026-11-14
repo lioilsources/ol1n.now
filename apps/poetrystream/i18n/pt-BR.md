@@ -31,7 +31,9 @@ escuro.
 
 ### Privacidade
 
-Sem anúncios, contas ou análises. As configurações ficam só no seu aparelho.
+Sem anúncios, contas ou analytics de terceiros. As configurações ficam só no
+seu aparelho. Só estatísticas de uso anônimas, sem identificadores, vão para o
+servidor próprio do desenvolvedor, e você pode desativá-las em Ajustes.
 
 Os poemas falam abertamente sobre corpo, sexualidade, doença, morte e fé,
 e às vezes usam palavrões. Feito em Flutter, roda no desktop e no celular.

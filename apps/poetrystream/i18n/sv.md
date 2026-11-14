@@ -21,6 +21,6 @@ Tolv typsnitt, tio färgpaletter med mjukt glödande text, sex storlekar och då
 
 ### Integritet
 
-Inga annonser, konton eller analys. Inställningarna stannar på din enhet.
+Inga annonser, konton eller tredjepartsanalys. Inställningarna stannar på din enhet. Bara anonym användningsstatistik utan identifierare skickas till utvecklarens egen server, och du kan stänga av den i Inställningar.
 
 Dikterna talar öppet om kropp, sexualitet, sjukdom, död och tro och använder ibland grova ord. Byggd med Flutter, fungerar på dator och mobil. Både dikterna och gränssnittet är på tjeckiska.

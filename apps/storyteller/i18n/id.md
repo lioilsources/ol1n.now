@@ -55,4 +55,4 @@ Aplikasi ini membagi dunia menjadi lima belas wilayah, dan dari setiap wilayah a
 
 Hurufnya gemuk dan mudah dibaca, judulnya bergaya "gelembung" — aplikasi ini untuk anak-anak dan memang harus terlihat begitu.
 
-Seluruh alur Bola dunia → Tokoh → Misi → Masalah → Akhir → Kerangka → Pembisik berjalan di ponsel, tanpa satu pun panggilan ke server. Tanpa iklan, akun, dan pelacakan. Antarmuka dan dongengnya untuk saat ini hanya dalam bahasa Ceko.
+Seluruh alur Bola dunia → Tokoh → Misi → Masalah → Akhir → Kerangka → Pembisik berjalan di ponsel. Tanpa iklan, akun, dan analitik pihak ketiga; hanya statistik penggunaan anonim tanpa pengenal yang dikirim ke server milik pengembang sendiri, dan itu bisa kamu matikan di Pengaturan. Antarmuka dan dongengnya untuk saat ini hanya dalam bahasa Ceko.

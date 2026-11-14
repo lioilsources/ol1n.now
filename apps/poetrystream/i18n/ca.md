@@ -21,6 +21,6 @@ Dotze tipografies, deu paletes de colors amb text de brillantor suau, sis mides 
 
 ### Privadesa
 
-Sense anuncis, comptes ni analítiques. La configuració es queda només al teu dispositiu.
+Sense anuncis, comptes ni analítiques de tercers. La configuració es queda només al teu dispositiu. Al servidor propi del desenvolupador només hi arriben estadístiques d'ús anònimes, sense identificadors, i les pots desactivar a Configuració.
 
 Els poemes parlen obertament del cos, la sexualitat, la malaltia, la mort i la fe, i de vegades fan servir paraules grolleres. Feta amb Flutter, funciona a l'ordinador i al mòbil. Els poemes i la interfície són en txec.

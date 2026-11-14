@@ -42,7 +42,9 @@ Handy, ebenso entstehen dort die Masken, die Schätzung der Haarfarbe, die
 Prompts und das Zusammensetzen des Streifens. Zum Server geht nur ein Foto mit
 den Masken, zurück kommen die fertigen Bilder. Gerendert wird auf einem eigenen
 GPU-Server, nicht in einer fremden Cloud. Die App hat keine Konten, keine
-Werbung und keine Zahlungen.
+Werbung und keine Zahlungen. Außer diesem Foto schickt sie nur anonyme
+Nutzungsstatistiken ohne Kennungen an den eigenen Server des Entwicklers, und
+du kannst sie in den Einstellungen abschalten.
 
 Restyler ist noch im geschlossenen Test: auf dem iPhone über TestFlight, auf
 Android über Firebase.

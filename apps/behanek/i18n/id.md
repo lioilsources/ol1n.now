@@ -49,9 +49,10 @@ kamu lupa berhenti.
 
 ### Datamu milikmu
 
-Běhánek tidak punya akun, server, analitik, maupun iklan. Rute tetap di ponselmu dan
-lokasimu tidak dikirim ke mana pun. Aplikasi hanya meminta lokasi „saat digunakan“,
-tidak pernah „selalu“.
+Běhánek tidak punya akun, iklan, maupun analitik pihak ketiga. Rute tetap di ponselmu
+dan lokasimu tidak dikirim ke mana pun. Hanya statistik penggunaan anonim tanpa pengenal
+yang dikirim ke server milik pengembang sendiri, dan itu bisa kamu matikan di Pengaturan.
+Aplikasi hanya meminta lokasi „saat digunakan“, tidak pernah „selalu“.
 
 Setiap lari bisa **diekspor sebagai GPX** dan semuanya sekaligus dicadangkan ke ZIP.
 Ekspor selalu gratis.

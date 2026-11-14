@@ -103,5 +103,7 @@ Písmo je baculaté a čitelné, nadpisy „bublinkové“ — appka je pro dět
 tak i vypadat.
 
 Celý průchod Globus → Postavy → Úkol → Problém → Konec → Osnova → Suflér
-běží v telefonu, bez jediného volání na server. Bez reklam, účtů a sledování.
+běží v telefonu. Bez reklam, účtů a analytiky třetích stran; na vlastní server
+vývojáře jdou jen anonymní statistiky používání bez identifikátorů a vypnout je
+jde v nastavení.
 Rozhraní i pohádky jsou zatím jen česky.

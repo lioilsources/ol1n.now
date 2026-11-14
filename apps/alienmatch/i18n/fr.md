@@ -22,4 +22,4 @@ Tu peux ajouter à ton profil jusqu’à huit lieux : ton arrêt, ton tram, un c
 
 ### État
 
-En développement. Le backend et la première version de l’appli sont prêts, mais elle n’est pas encore dans les stores. Sans publicité et sans pistage. Réservé aux adultes (18+).
+En développement. Le backend et la première version de l’appli sont prêts, mais elle n’est pas encore dans les stores. Sans publicité et sans outils d’analyse tiers ; seules des statistiques d’utilisation anonymes, sans identifiant, partent vers le propre serveur du développeur, et tu peux les désactiver dans les Réglages. Réservé aux adultes (18+).

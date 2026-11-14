@@ -50,8 +50,10 @@ inkorten als je vergat te stoppen.
 
 ### Jouw data zijn van jou
 
-Běhánek heeft geen account, geen server, geen analytics en geen advertenties. Routes
-blijven op je telefoon en je locatie wordt nergens heen gestuurd. De app vraagt je locatie
+Běhánek heeft geen account, geen advertenties en geen analytics van derden. Routes
+blijven op je telefoon en je locatie wordt nergens heen gestuurd. Alleen anonieme
+gebruiksstatistieken zonder identificatoren gaan naar de eigen server van de ontwikkelaar,
+en je kunt ze uitzetten in Instellingen. De app vraagt je locatie
 alleen „tijdens gebruik van de app”, nooit „altijd”.
 
 Elke run kun je **exporteren als GPX** en alles in één keer back-uppen naar een ZIP.

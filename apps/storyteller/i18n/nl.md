@@ -55,4 +55,4 @@ De app deelt de wereld in vijftien regio’s, en uit elke regio staan tien sproo
 
 Het lettertype is mollig en goed leesbaar, de koppen zijn ‘bubbelig’ — de app is voor kinderen en mag er ook zo uitzien.
 
-De hele route Wereldbol → Personages → Opdracht → Probleem → Einde → Opzet → Souffleur draait op de telefoon, zonder één enkele aanroep naar een server. Zonder advertenties, accounts en tracking. De interface en de sprookjes zijn voorlopig alleen in het Tsjechisch.
+De hele route Wereldbol → Personages → Opdracht → Probleem → Einde → Opzet → Souffleur draait op de telefoon. Zonder advertenties, accounts en analytics van derden; alleen anonieme gebruiksstatistieken zonder identificatoren gaan naar de eigen server van de ontwikkelaar, en je kunt ze uitzetten in Instellingen. De interface en de sprookjes zijn voorlopig alleen in het Tsjechisch.

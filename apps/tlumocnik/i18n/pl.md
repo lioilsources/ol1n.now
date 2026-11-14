@@ -39,6 +39,6 @@ Apka nie ma konta: przy pierwszym uruchomieniu telefon sam rejestruje się jako 
 
 ### Prywatność
 
-Rozpoznawanie mowy, tłumaczenie i głos działają na naszym własnym serwerze z GPU, a nie w cudzej chmurze. Serwer nie zapisuje dźwięku ani tekstów rozmów i nie zapisuje ich w logach. Apka nie ma konta, reklam ani analityki. Ze względu na serwer potrzebuje połączenia z internetem.
+Rozpoznawanie mowy, tłumaczenie i głos działają na naszym własnym serwerze z GPU, a nie w cudzej chmurze. Serwer nie zapisuje dźwięku ani tekstów rozmów i nie zapisuje ich w logach. Apka nie ma konta, reklam ani analityki firm trzecich; na własny serwer twórcy trafiają tylko anonimowe statystyki użytkowania bez identyfikatorów, a możesz je wyłączyć w Ustawieniach. Ze względu na serwer potrzebuje połączenia z internetem.
 
 Tlumočník jest na razie w zamkniętych testach: na iPhonie przez TestFlight, na Androidzie przez Firebase.

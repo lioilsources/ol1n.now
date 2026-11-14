@@ -47,8 +47,10 @@ si t'has oblidat d'aturar-la.
 
 ### Les teves dades són teves
 
-Běhánek no té compte, servidor, analítiques ni anuncis. Els recorreguts es queden al mòbil
-i la ubicació no s'envia enlloc. L'app demana la ubicació només «mentre s'utilitza», mai «sempre».
+Běhánek no té compte, anuncis ni analítiques de tercers. Els recorreguts es queden al mòbil
+i la ubicació no s'envia enlloc. Al servidor propi del desenvolupador només hi arriben
+estadístiques d'ús anònimes, sense identificadors, i les pots desactivar a Configuració.
+L'app demana la ubicació només «mentre s'utilitza», mai «sempre».
 
 Cada cursa es pot **exportar com a GPX** i totes alhora es poden desar en un ZIP.
 L'exportació sempre és gratuïta.

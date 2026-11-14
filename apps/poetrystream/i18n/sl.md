@@ -31,7 +31,9 @@ papir v temi.
 
 ### Zasebnost
 
-Brez oglasov, računov in analitike. Nastavitve ostanejo samo v napravi.
+Brez oglasov, računov in analitike tretjih oseb. Nastavitve ostanejo samo
+v napravi. Na lastni strežnik razvijalca gre le anonimna statistika uporabe brez
+identifikatorjev, ki jo lahko izklopiš v Nastavitvah.
 
 Pesmi odkrito govorijo o telesu, spolnosti, bolezni, smrti in veri ter
 ponekod uporabljajo grobe izraze. Narejeno v Flutterju, deluje na

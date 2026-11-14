@@ -30,7 +30,7 @@ Priče, igraće knjige i tekstovi čitača dostupni su na 12 jezika: češkom, e
 
 ### Privatnost
 
-Bez računa, bez oglasa, bez praćenja. Toonfork ne prikuplja osobne podatke; što si kupio, pamti uređaj, a kupnje se mogu vratiti u Postavkama.
+Bez računa, bez oglasa, bez analitike trećih strana. Toonfork ne prikuplja osobne podatke. Na vlastiti poslužitelj razvijatelja šalje se samo anonimna statistika korištenja bez identifikatora, možeš je isključiti u Postavkama, a dječji profil ne šalje ništa. Što si kupio, pamti uređaj, a kupnje se mogu vratiti u Postavkama.
 
 ## Studio: kako nastaju priče
 

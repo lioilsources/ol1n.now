@@ -110,8 +110,10 @@ läses just nu, och paus.
 
 ### Utan reklam, utan konto
 
-Hajánek har ingen reklam, ingen registrering och ingen analys. Sagorna och ljuden
-finns i telefonen och spelar offline. Appen använder nätet bara för att ladda ner nya
-sagor och för att ladda upp din röst, om du vill det.
+Hajánek har ingen reklam, ingen registrering och ingen tredjepartsanalys. Sagorna och
+ljuden finns i telefonen och spelar offline. Appen använder nätet bara för att ladda ner
+nya sagor, för att ladda upp din röst, om du vill det, och för att skicka anonym
+användningsstatistik utan identifierare till utvecklarens egen server; den kan du
+stänga av i Inställningar.
 
 Appen är för barn från ungefär tre till åtta år.

@@ -27,12 +27,15 @@ per tutte le coppie di lingue e tutti gli stili, senza abbonamento.
 Ogni mazzo illustrato ha due stili di immagine: foto e uno stile disegnato
 (pennello e inchiostro, pastello o acquerello). Puoi cambiarlo quando vuoi.
 
-### Offline e senza tracciamento
+### Offline, senza account, senza pubblicità
 
 Le immagini di un mazzo si scaricano una volta, poi tutto gira sul
-dispositivo. Niente account, niente pubblicità, niente analytics, i tuoi
-progressi non lasciano il telefono. Una traduzione o un'immagine sbagliata la
-segnali direttamente dalla carta.
+dispositivo. Niente account, niente pubblicità, niente analytics di terze
+parti, i tuoi progressi non lasciano il telefono. Su iOS, macOS e desktop
+l'app invia al server proprio dello sviluppatore statistiche d'uso anonime,
+senza identificatori, e puoi disattivarle nelle Impostazioni; su Android non
+invia nulla. Una traduzione o un'immagine sbagliata la segnali direttamente
+dalla carta.
 
 Realizzata in Flutter (repo `DuolingoCards`). Funziona su iOS, Android,
 macOS, Windows e Linux.

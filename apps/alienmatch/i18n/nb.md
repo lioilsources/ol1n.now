@@ -22,4 +22,4 @@ Du kan legge til opptil åtte steder på profilen: holdeplassen din, trikken, en
 
 ### Status
 
-Under utvikling. Backend og første versjon av appen er ferdige, men den er ikke i butikkene ennå. Ingen reklame og ingen sporing. Kun for voksne (18+).
+Under utvikling. Backend og første versjon av appen er ferdige, men den er ikke i butikkene ennå. Ingen reklame og ingen tredjepartsanalyse; bare anonym bruksstatistikk uten identifikatorer sendes til utviklerens egen server, og du kan slå den av i Innstillinger. Kun for voksne (18+).

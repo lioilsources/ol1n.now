@@ -21,6 +21,6 @@ On iki yazı tipi, hafifçe parlayan metinli on renk paleti, altı boyut ve arad
 
 ### Gizlilik
 
-Reklam, hesap ve analiz yok. Ayarlar yalnızca cihazında kalır.
+Reklam, hesap ve üçüncü taraf analitik yok. Ayarlar yalnızca cihazında kalır. Geliştiricinin kendi sunucusuna yalnızca tanımlayıcı içermeyen anonim kullanım istatistikleri gider ve bunları Ayarlar'dan kapatabilirsin.
 
 Şiirler beden, cinsellik, hastalık, ölüm ve inanç hakkında açıkça konuşur ve yer yer kaba ifadeler kullanır. Flutter ile yapıldı, masaüstünde ve mobilde çalışır. Şiirler ve arayüz Çekçedir.

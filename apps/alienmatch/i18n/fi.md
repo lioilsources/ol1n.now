@@ -22,4 +22,4 @@ Voit lisätä profiiliisi enintään kahdeksan paikkaa: oman pysäkkisi, ratikka
 
 ### Tila
 
-Kehitteillä. Taustajärjestelmä ja sovelluksen ensimmäinen versio ovat valmiit, mutta kaupoissa sitä ei vielä ole. Ei mainoksia eikä seurantaa. Vain aikuisille (18+).
+Kehitteillä. Taustajärjestelmä ja sovelluksen ensimmäinen versio ovat valmiit, mutta kaupoissa sitä ei vielä ole. Ei mainoksia eikä kolmannen osapuolen analytiikkaa; kehittäjän omalle palvelimelle lähtee vain nimettömiä käyttötilastoja ilman tunnisteita, ja ne voi poistaa käytöstä Asetuksista. Vain aikuisille (18+).

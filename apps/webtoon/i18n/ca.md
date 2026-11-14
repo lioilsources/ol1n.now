@@ -30,7 +30,7 @@ Les històries, els llibres-joc i els textos del lector estan en 12 idiomes: txe
 
 ### Privadesa
 
-Sense compte, sense anuncis, sense seguiment. Toonfork no recull dades personals; el que has comprat ho recorda el dispositiu, i les compres es poden restaurar a Configuració.
+Sense compte, sense anuncis, sense analítiques de tercers. Toonfork no recull dades personals. Al servidor propi del desenvolupador només hi arriben estadístiques d'ús anònimes, sense identificadors; les pots desactivar a Configuració, i el perfil infantil no envia res. El que has comprat ho recorda el dispositiu, i les compres es poden restaurar a Configuració.
 
 ## Studio: així neixen les històries
 

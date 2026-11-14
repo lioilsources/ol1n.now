@@ -30,7 +30,7 @@ Historie, gry paragrafowe i teksty czytnika są w 12 językach: czeskim, angiels
 
 ### Prywatność
 
-Bez konta, bez reklam, bez śledzenia. Toonfork nie zbiera danych osobowych; to, co kupiłeś, pamięta urządzenie, a zakupy przywrócisz w Ustawieniach.
+Bez konta, bez reklam, bez analityki firm trzecich. Toonfork nie zbiera danych osobowych. Na własny serwer twórcy trafiają tylko anonimowe statystyki użytkowania bez identyfikatorów, możesz je wyłączyć w Ustawieniach, a profil dziecięcy nie wysyła niczego. To, co kupiłeś, pamięta urządzenie, a zakupy przywrócisz w Ustawieniach.
 
 ## Studio: jak powstają historie
 

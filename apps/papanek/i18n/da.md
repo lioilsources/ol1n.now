@@ -27,6 +27,6 @@ Ingredienser tilføjer du ved at skrive, med forslag, der forstår tjekkisk med 
 
 ### Offline, uden konto
 
-Papánek kræver hverken internet eller oprettelse og har hverken reklamer eller analyse. Opskrifter og billeder ligger direkte i appen. Appen findes på tjekkisk og engelsk.
+Papánek kræver hverken internet eller oprettelse og har hverken reklamer eller tredjepartsanalyse. Kun anonym brugsstatistik uden identifikatorer sendes til udviklerens egen server, og du kan slå den fra i Indstillinger. Opskrifter og billeder ligger direkte i appen. Appen findes på tjekkisk og engelsk.
 
 Stadig under udvikling: den første testversion 0.1 ligger i TestFlight til iPhone og som APK til Android i afsnittet **Downloads**.

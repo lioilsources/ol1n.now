@@ -55,4 +55,4 @@ Aplikacija deli svet na petnajst regij, iz vsake pa je deset pravljic brezplačn
 
 Pisava je okrogla in berljiva, naslovi »mehurčkasti« — aplikacija je za otroke in mora biti tudi videti tako.
 
-Celotna pot Globus → Liki → Naloga → Težava → Konec → Osnutek → Šepetalec teče v telefonu, brez enega samega klica na strežnik. Brez oglasov, računov in sledenja. Vmesnik in pravljice so zaenkrat samo v češčini.
+Celotna pot Globus → Liki → Naloga → Težava → Konec → Osnutek → Šepetalec teče v telefonu. Brez oglasov, računov in analitike tretjih oseb; na lastni strežnik razvijalca gre le anonimna statistika uporabe brez identifikatorjev, ki jo lahko izklopiš v Nastavitvah. Vmesnik in pravljice so zaenkrat samo v češčini.

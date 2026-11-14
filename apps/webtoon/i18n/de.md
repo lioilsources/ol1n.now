@@ -30,7 +30,7 @@ Geschichten, Spielbücher und die Texte des Readers gibt es in 12 Sprachen: Tsch
 
 ### Datenschutz
 
-Kein Konto, keine Werbung, kein Tracking. Toonfork sammelt keine persönlichen Daten; was du gekauft hast, merkt sich das Gerät, und Käufe lassen sich in den Einstellungen wiederherstellen.
+Kein Konto, keine Werbung, keine Analytics von Drittanbietern. Toonfork sammelt keine persönlichen Daten. Nur anonyme Nutzungsstatistiken ohne Kennungen gehen an den eigenen Server des Entwicklers, du kannst sie in den Einstellungen abschalten, und das Kinderprofil schickt gar nichts. Was du gekauft hast, merkt sich das Gerät, und Käufe lassen sich in den Einstellungen wiederherstellen.
 
 ## Studio: So entstehen die Geschichten
 

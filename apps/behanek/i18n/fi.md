@@ -50,9 +50,10 @@ unohdit pysäyttää.
 
 ### Tietosi ovat sinun
 
-Běhánekissa ei ole tiliä, palvelinta, analytiikkaa eikä mainoksia. Reitit pysyvät
-puhelimessa, eikä sijaintiasi lähetetä minnekään. Sovellus pyytää sijaintia vain
-”käytön aikana”, ei koskaan ”aina”.
+Běhánekissa ei ole tiliä, mainoksia eikä kolmannen osapuolen analytiikkaa. Reitit pysyvät
+puhelimessa, eikä sijaintiasi lähetetä minnekään. Kehittäjän omalle palvelimelle lähtee
+vain nimettömiä käyttötilastoja ilman tunnisteita, ja ne voi poistaa käytöstä Asetuksista.
+Sovellus pyytää sijaintia vain ”käytön aikana”, ei koskaan ”aina”.
 
 Jokaisen lenkin voi **viedä GPX-muodossa** ja kaikki kerralla varmuuskopioida ZIP-tiedostoon.
 Vienti on aina ilmaista.

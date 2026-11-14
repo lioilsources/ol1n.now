@@ -56,7 +56,9 @@ bude v telefonu a nákup jen odemyká.
 
 ### Offline, bez účtu
 
-Papánek nepotřebuje internet ani registraci a nemá reklamy ani analytiku.
+Papánek nepotřebuje internet ani registraci a nemá reklamy ani analytiku třetích
+stran. Na vlastní server vývojáře posílá jen anonymní statistiky používání bez
+identifikátorů; vypnout je jde v nastavení.
 Recepty i obrázky jsou přímo v appce. Appka je česky i anglicky.
 
 Zatím ve vývoji: první testovací verze 0.1 je v TestFlightu pro iPhone

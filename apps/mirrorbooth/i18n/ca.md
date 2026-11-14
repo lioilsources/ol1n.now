@@ -30,7 +30,9 @@ Esquirol, Eco, Sota l’aigua, Robot o Al revés. El resultat es desa a la galer
 
 ### Privadesa
 
-La imatge es processa només al teu telèfon. Sense compte, anuncis ni analítiques.
-Les fotos i els vídeos no s’envien enlloc.
+La imatge es processa només al teu telèfon. Sense compte, anuncis ni analítiques de
+tercers. Les fotos i els vídeos no s’envien enlloc. Al servidor propi del desenvolupador
+només hi arriben estadístiques d’ús anònimes, sense identificadors, i les pots desactivar
+a Configuració.
 
 Fet amb Flutter, els filtres són shaders GLSL.

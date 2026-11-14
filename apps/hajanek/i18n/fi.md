@@ -113,8 +113,10 @@ nimi, juuri luettava osa ja tauko.
 
 ### Ei mainoksia, ei tiliä
 
-Hajánekissa ei ole mainoksia, rekisteröitymistä eikä analytiikkaa. Sadut ja äänet
-ovat puhelimessa ja soivat offline-tilassa. Sovellus käyttää verkkoa vain uusien
-satujen lataamiseen ja äänesi lähettämiseen, jos haluat sen.
+Hajánekissa ei ole mainoksia, rekisteröitymistä eikä kolmannen osapuolen analytiikkaa.
+Sadut ja äänet ovat puhelimessa ja soivat offline-tilassa. Sovellus käyttää verkkoa
+vain uusien satujen lataamiseen, äänesi lähettämiseen, jos haluat sen, sekä
+nimettömien käyttötilastojen lähettämiseen ilman tunnisteita kehittäjän omalle
+palvelimelle; ne voi poistaa käytöstä Asetuksista.
 
 Sovellus on noin kolme–kahdeksanvuotiaille lapsille.

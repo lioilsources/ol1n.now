@@ -39,6 +39,6 @@ Appen har ingen konto: Ved første oppstart registrerer telefonen seg selv som e
 
 ### Personvern
 
-Talegjenkjenning, oversettelse og stemme kjører på vår egen server med GPU, ikke i noen andres sky. Serveren lagrer verken lyd eller samtaletekster og skriver dem ikke til logger. Appen har ingen konto, reklame eller analyse. På grunn av serveren trenger den internettforbindelse.
+Talegjenkjenning, oversettelse og stemme kjører på vår egen server med GPU, ikke i noen andres sky. Serveren lagrer verken lyd eller samtaletekster og skriver dem ikke til logger. Appen har ingen konto, reklame eller tredjepartsanalyse; bare anonym bruksstatistikk uten identifikatorer sendes til utviklerens egen server, og du kan slå den av i Innstillinger. På grunn av serveren trenger den internettforbindelse.
 
 Tlumočník er fortsatt i lukket testing: på iPhone via TestFlight, på Android via Firebase.
