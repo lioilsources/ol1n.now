@@ -11,6 +11,8 @@ Ol1n Market अवतार एक्सेसरी के 3D मॉडल क�
 पेमेंट जल्द आ रहा है। हर डाउनलोड के साथ एक लाइसेंस और Roblox Studio के स्टेप्स वाली
 README मिलती है।
 
+स्क्रीनशॉट के साथ चरण-दर-चरण गाइड (अंग्रेज़ी में): [Guide for Roblox Studio](ugcmarket-guide.html)।
+
 Ol1n Market, Roblox Corporation से संबद्ध नहीं है, न ही Roblox Corporation द्वारा समर्थित
 या प्रायोजित है। “Roblox”, Roblox Corporation का ट्रेडमार्क है और यहाँ केवल अनुकूलता
 बताने के लिए इस्तेमाल किया गया है।

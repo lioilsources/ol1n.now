@@ -11,6 +11,8 @@ Ol1n Market એ અવતાર માટે 3D એક્સેસરી મો�
 ખરીદી ટૂંક સમયમાં આવી રહી છે. દરેક ડાઉનલોડ સાથે લાઇસન્સ અને Roblox Studio માટેનાં
 પગલાં સાથે README મળે છે.
 
+સ્ક્રીનશૉટ સાથે પગલાં-દર-પગલાં માર્ગદર્શિકા (અંગ્રેજીમાં): [Guide for Roblox Studio](ugcmarket-guide.html).
+
 Ol1n Market, Roblox Corporation સાથે સંકળાયેલું નથી અને Roblox Corporation તેને
 સમર્થન કે પ્રાયોજન આપતું નથી. “Roblox” એ Roblox Corporationનો ટ્રેડમાર્ક છે અને
 અહીં તેનો ઉપયોગ ફક્ત સુસંગતતા દર્શાવવા માટે થયો છે.

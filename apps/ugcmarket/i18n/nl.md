@@ -11,6 +11,8 @@ Een deel van de catalogus is gratis, je logt alleen in met je e-mail. Betalen me
 en bitcoin komt eraan. Bij elke download krijg je een licentie en een README met
 de stappen voor Roblox Studio.
 
+Een stapsgewijze handleiding met screenshots (in het Engels): [Guide for Roblox Studio](ugcmarket-guide.html).
+
 Ol1n Market is niet gelieerd aan, goedgekeurd door of gesponsord door Roblox Corporation.
 “Roblox” is een handelsmerk van Roblox Corporation en wordt hier alleen gebruikt om
 compatibiliteit te beschrijven.

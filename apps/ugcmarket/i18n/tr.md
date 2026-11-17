@@ -11,6 +11,8 @@ Kataloğun bir kısmı ücretsiz, sadece e-postanla giriş yapman yeterli. Kartl
 Bitcoin ile ödeme yakında geliyor. Her indirmede bir lisans ve Roblox Studio için
 adımları anlatan bir README var.
 
+Ekran görüntüleriyle adım adım kılavuz (İngilizce): [Guide for Roblox Studio](ugcmarket-guide.html).
+
 Ol1n Market, Roblox Corporation ile bağlantılı değildir, onun tarafından onaylanmamış
 veya desteklenmemiştir. “Roblox”, Roblox Corporation’ın ticari markasıdır ve burada
 yalnızca uyumluluğu belirtmek için kullanılmaktadır.

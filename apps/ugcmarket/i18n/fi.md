@@ -11,6 +11,8 @@ Osa katalogista on ilmainen, kirjaudut vain sisään sähköpostilla. Maksaminen
 ja bitcoinilla on tulossa. Jokaisen latauksen mukana tulee lisenssi ja README, jossa on
 ohjeet Roblox Studioon.
 
+Vaiheittainen opas kuvakaappauksineen (englanniksi): [Guide for Roblox Studio](ugcmarket-guide.html).
+
 Ol1n Market ei ole sidoksissa Roblox Corporationiin, eikä Roblox Corporation ole
 hyväksynyt tai sponsoroinut sitä. ”Roblox” on Roblox Corporationin tavaramerkki, ja sitä
 käytetään tässä vain yhteensopivuuden kuvaamiseen.

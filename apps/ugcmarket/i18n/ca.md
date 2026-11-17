@@ -11,6 +11,8 @@ Una part del catàleg és gratuïta, només cal iniciar sessió amb el correu. A
 pagar amb targeta i Bitcoin. Cada descàrrega inclou una llicència i un README amb
 els passos per a Roblox Studio.
 
+Una guia pas a pas amb captures de pantalla (en anglès): [Guide for Roblox Studio](ugcmarket-guide.html).
+
 Ol1n Market no està afiliat a Roblox Corporation ni compta amb el seu aval o patrocini.
 «Roblox» és una marca comercial de Roblox Corporation i aquí s'utilitza només per descriure
 la compatibilitat.
