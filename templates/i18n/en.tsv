@@ -2,6 +2,7 @@
 nav.all_apps	← All apps
 nav.back_to	← Back to %s
 nav.lang	Language
+nav.az	Apps by letter
 title.app	%s — olin.now
 title.skins	%s — skins — olin.now
 badge.featured	★ Featured

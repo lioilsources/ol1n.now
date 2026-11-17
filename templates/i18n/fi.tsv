@@ -2,6 +2,7 @@
 nav.all_apps	← Kaikki sovellukset
 nav.back_to	← Takaisin: %s
 nav.lang	Kieli
+nav.az	Sovellukset kirjaimen mukaan
 title.app	%s — olin.now
 title.skins	%s — skinit — olin.now
 badge.featured	★ Suositeltu
