@@ -42,6 +42,7 @@ Volitelně přidej `apps/<slug>/icon.png` (čtvercová ikona). Hotovo — build 
 | `desktop` | CSV platforem: `macos,windows,linux` |
 | `mobile` | CSV platforem: `android,ios` |
 | `artifacts` | CSV bucketů pro `make fetch`; default `macos,windows,linux,android`. `mod` = platformově neutrální `.zip` (Luanti mod) |
+| `web` | URL živé webové appky, tlačítko s názvem hostitele (volitelné) |
 | `appstore` / `playstore` / `testflight` / `contentdb` | URL na obchody (volitelné) |
 | `langs` | CSV jazyků aplikace, např. `cs,ja`; default `cs` (viz [Jazyky](#jazyky)) |
 | `icon_src` | cesta k největší čtvercové ikoně v repu aplikace (pro `make store-icons`) |

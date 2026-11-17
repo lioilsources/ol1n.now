@@ -6,6 +6,7 @@ tagline: Motivy z vlastního AI ateliéru k potisku: trička, hrnky, plakáty, p
 order: 40
 featured: false
 desktop: Web
+web: https://slop.ol1n.com
 mobile:
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 appstore:
