@@ -11,8 +11,6 @@ Sebagian katalog gratis, kamu cukup masuk dengan e-mail. Pembayaran dengan kartu
 dan Bitcoin segera hadir. Setiap unduhan dilengkapi lisensi dan README berisi
 langkah-langkah untuk Roblox Studio.
 
-Panduan langkah demi langkah dengan tangkapan layar (dalam bahasa Inggris): [Guide for Roblox Studio](ugcmarket-guide.html).
-
 Ol1n Market tidak berafiliasi dengan, tidak didukung, dan tidak disponsori oleh
 Roblox Corporation. “Roblox” adalah merek dagang Roblox Corporation dan di sini
 hanya digunakan untuk menjelaskan kompatibilitas.

@@ -11,8 +11,6 @@ Một phần danh mục là miễn phí, bạn chỉ cần đăng nhập bằng 
 và Bitcoin sắp có. Mỗi lần tải về đều kèm giấy phép và một README hướng dẫn
 các bước cho Roblox Studio.
 
-Hướng dẫn từng bước kèm ảnh chụp màn hình (bằng tiếng Anh): [Guide for Roblox Studio](ugcmarket-guide.html).
-
 Ol1n Market không liên kết với, không được Roblox Corporation chứng thực hay tài trợ.
 “Roblox” là nhãn hiệu của Roblox Corporation và ở đây chỉ được dùng để mô tả
 khả năng tương thích.

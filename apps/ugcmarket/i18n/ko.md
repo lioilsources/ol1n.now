@@ -11,8 +11,6 @@ Ol1n Market은 아바타 액세서리 3D 모델을 파는 스토어로,
 곧 지원됩니다. 모든 다운로드에는 라이선스와 Roblox Studio 사용 단계를 담은
 README가 포함됩니다.
 
-스크린샷이 있는 단계별 가이드(영어): [Guide for Roblox Studio](ugcmarket-guide.html).
-
 Ol1n Market은 Roblox Corporation과 제휴 관계가 없으며, Roblox Corporation의 승인이나
 후원을 받지 않았습니다. “Roblox”는 Roblox Corporation의 상표이며, 여기서는
 호환성을 설명하기 위해서만 사용됩니다.

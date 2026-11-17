@@ -57,4 +57,4 @@ les plus fidèles ; sur un foncé, préfère un motif à fond transparent. Pour 
 
 Pour l’instant, le catalogue est une **démo** : les images portent l’étiquette « Demo » et ne sont pas
 à vendre. Au début, les commandes se feront sur demande ; le paiement par carte et la livraison
-viendront plus tard. Nous ajouterons des captures d’écran quand le catalogue sera public.
+viendront plus tard. Essayez-le sur [slop.ol1n.com](https://slop.ol1n.com).

@@ -57,4 +57,4 @@ en varios puntos y añade 5 cm para el recorte.
 
 Por ahora el catálogo es de **muestra**: las imágenes llevan la etiqueta «Demo» y no están
 a la venta. Al principio los pedidos serán bajo consulta; el pago con tarjeta y el envío
-llegarán más adelante. Añadiremos capturas cuando el catálogo sea público.
+llegarán más adelante. Pruébalo en [slop.ol1n.com](https://slop.ol1n.com).

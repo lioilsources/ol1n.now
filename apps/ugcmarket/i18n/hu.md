@@ -11,8 +11,6 @@ A katalógus egy része ingyenes, csak be kell jelentkezned az e-mail-címeddel.
 és Bitcoin-os fizetés hamarosan jön. Minden letöltéshez jár egy licenc és egy README
 a Roblox Studióban követendő lépésekkel.
 
-Lépésről lépésre útmutató képernyőképekkel (angolul): [Guide for Roblox Studio](ugcmarket-guide.html).
-
 Az Ol1n Market nem áll kapcsolatban a Roblox Corporationnel, és azt a Roblox Corporation
 nem támogatja és nem szponzorálja. A „Roblox” a Roblox Corporation védjegye, és itt
 kizárólag a kompatibilitás leírására szolgál.

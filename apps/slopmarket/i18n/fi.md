@@ -58,4 +58,4 @@ mittaa seinä useasta kohdasta ja lisää 5 cm rajausvaraa.
 
 Katalogi on toistaiseksi **esittely**: kuvissa on merkintä ”Demo”, eivätkä ne ole
 myynnissä. Tilaus toimii aluksi tarjouspyyntönä, korttimaksu ja toimitus tulevat
-myöhemmin. Kuvakaappaukset lisätään, kun katalogi on julkinen.
+myöhemmin. Kokeile osoitteessa [slop.ol1n.com](https://slop.ol1n.com).

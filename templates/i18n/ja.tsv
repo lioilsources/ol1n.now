@@ -2,6 +2,7 @@
 nav.all_apps	← すべてのアプリ
 nav.back_to	← %s に戻る
 nav.lang	言語
+nav.az	頭文字でアプリを探す
 title.app	%s — olin.now
 title.skins	%s — スキン — olin.now
 badge.featured	★ おすすめ

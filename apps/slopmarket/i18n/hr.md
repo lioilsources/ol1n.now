@@ -57,4 +57,4 @@ nekoliko mjesta i dodaj 5 cm za obrezivanje.
 
 Katalog je zasad **ogledni**: slike imaju oznaku „Demo” i nisu na prodaju.
 Narudžba će u početku ići na upit, plaćanje karticom i dostava stižu kasnije.
-Snimke zaslona dodat ćemo kad katalog bude javan.
+Isprobaj ga na [slop.ol1n.com](https://slop.ol1n.com).
