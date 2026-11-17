@@ -57,4 +57,4 @@ w kilku miejscach i dodaj 5 cm na docięcie.
 
 Katalog jest na razie **demonstracyjny**: obrazy mają etykietę „Demo” i nie są
 na sprzedaż. Zamówienia będą na początku na zapytanie, płatność kartą i wysyłka
-pojawią się później. Zrzuty ekranu dodamy, gdy katalog będzie publiczny.
+pojawią się później. Wypróbuj go na [slop.ol1n.com](https://slop.ol1n.com).

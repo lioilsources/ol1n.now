@@ -57,4 +57,4 @@ mål veggen flere steder og legg til 5 cm for beskjæring.
 
 Katalogen er foreløpig en **demo**: bildene har merket «Demo» og er ikke til
 salgs. Bestilling skjer i starten på forespørsel, kortbetaling og frakt kommer
-senere. Skjermbilder legger vi til når katalogen blir offentlig.
+senere. Prøv det på [slop.ol1n.com](https://slop.ol1n.com).

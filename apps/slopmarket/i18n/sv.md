@@ -57,4 +57,4 @@ väggen på flera ställen och lägg till 5 cm för beskärning.
 
 Katalogen är än så länge en **demo**: bilderna har etiketten ”Demo” och är inte
 till salu. Beställning sker till en början på förfrågan, kortbetalning och frakt
-kommer senare. Skärmbilder lägger vi till när katalogen blir offentlig.
+kommer senare. Prova på [slop.ol1n.com](https://slop.ol1n.com).

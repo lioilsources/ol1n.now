@@ -57,4 +57,4 @@ dinding di beberapa titik dan tambahkan 5 cm untuk potongan.
 
 Katalog ini masih **contoh**: gambar berlabel “Demo” dan tidak dijual. Awalnya
 pesanan lewat permintaan penawaran; pembayaran kartu dan pengiriman menyusul.
-Tangkapan layar akan ditambahkan saat katalog dibuka untuk umum.
+Coba di [slop.ol1n.com](https://slop.ol1n.com).

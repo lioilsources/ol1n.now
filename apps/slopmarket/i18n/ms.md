@@ -58,4 +58,4 @@ dinding, ukur dinding di beberapa tempat dan tambah 5 cm untuk potongan.
 
 Katalog ini masih **contoh**: imej berlabel “Demo” dan tidak dijual. Pada
 mulanya pesanan melalui permintaan sebut harga; bayaran kad dan penghantaran
-akan menyusul. Tangkapan skrin akan ditambah apabila katalog dibuka kepada umum.
+akan menyusul. Cuba di [slop.ol1n.com](https://slop.ol1n.com).

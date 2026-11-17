@@ -57,4 +57,4 @@ in several places and add 5 cm for trimming.
 
 The catalogue is a **demo** for now: images carry a “Demo” label and are not
 for sale. Orders will start as enquiries; card payment and shipping
-will come later. Screenshots will be added once the catalogue is public.
+will come later. Try it at [slop.ol1n.com](https://slop.ol1n.com).

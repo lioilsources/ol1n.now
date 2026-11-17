@@ -57,4 +57,4 @@ en diversos punts i afegeix-hi 5 cm per al retall.
 
 De moment el catàleg és de **mostra**: les imatges porten l’etiqueta «Demo» i no estan
 a la venda. Al principi les comandes seran per encàrrec; el pagament amb targeta i l’enviament
-arribaran més endavant. Hi afegirem captures quan el catàleg sigui públic.
+arribaran més endavant. Prova’l a [slop.ol1n.com](https://slop.ol1n.com).

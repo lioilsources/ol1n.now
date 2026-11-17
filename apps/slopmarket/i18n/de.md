@@ -57,4 +57,4 @@ an mehreren Stellen und gib 5 cm Beschnitt dazu.
 
 Der Katalog ist vorerst eine **Demo**: Die Bilder tragen das Label „Demo“ und sind nicht
 zu kaufen. Bestellungen laufen anfangs auf Anfrage, Kartenzahlung und Versand
-kommen später. Screenshots folgen, sobald der Katalog öffentlich ist.
+kommen später. Ausprobieren auf [slop.ol1n.com](https://slop.ol1n.com).

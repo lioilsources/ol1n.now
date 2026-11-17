@@ -59,4 +59,4 @@ duvarı birkaç noktadan ölç ve kırpma payı olarak 5 cm ekle.
 
 Katalog şimdilik **örnek** niteliğinde: görsellerde “Demo” etiketi var ve
 satışta değiller. Sipariş başta talep üzerine olacak; kartla ödeme ve kargo
-daha sonra gelecek. Ekran görüntülerini katalog herkese açıldığında ekleyeceğiz.
+daha sonra gelecek. [slop.ol1n.com](https://slop.ol1n.com) adresinde deneyin.

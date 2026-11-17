@@ -68,4 +68,4 @@ na několika místech a přidej 5 cm na ořez.
 
 Katalog je zatím **ukázkový**: obrázky mají štítek „Demo“ a nejsou na
 prodej. Objednávka bude ze začátku na poptávku, platba kartou a doprava
-přijdou později. Screenshoty doplníme, až bude katalog veřejně.
+přijdou později. Vyzkoušej ho na [slop.ol1n.com](https://slop.ol1n.com).

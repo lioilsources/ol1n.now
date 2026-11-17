@@ -57,4 +57,4 @@ măsoară peretele în mai multe locuri și adaugă 5 cm pentru decupare.
 
 Catalogul este deocamdată **demonstrativ**: imaginile au eticheta „Demo” și nu sunt
 de vânzare. La început comanda se va face la cerere, plata cu cardul și livrarea vor
-veni mai târziu. Capturile de ecran le adăugăm când catalogul devine public.
+veni mai târziu. Încearcă-l pe [slop.ol1n.com](https://slop.ol1n.com).

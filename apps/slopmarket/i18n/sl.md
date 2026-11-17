@@ -57,4 +57,4 @@ na več mestih in dodaj 5 cm za obrez.
 
 Katalog je zaenkrat **predstavitveni**: slike imajo oznako »Demo« in niso naprodaj.
 Naročilo bo na začetku na povpraševanje, plačilo s kartico in dostava prideta
-pozneje. Posnetke zaslona dodamo, ko bo katalog javen.
+pozneje. Preizkusi ga na [slop.ol1n.com](https://slop.ol1n.com).
