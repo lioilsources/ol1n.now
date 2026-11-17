@@ -11,6 +11,8 @@ En del av katalogen er gratis, du logger bare inn med e-post. Betaling med kort
 og bitcoin kommer snart. Hver nedlasting kommer med en lisens og en README med
 stegene for Roblox Studio.
 
+En trinnvis veiledning med skjermbilder (på engelsk): [Guide for Roblox Studio](ugcmarket-guide.html).
+
 Ol1n Market er ikke tilknyttet, godkjent av eller sponset av Roblox Corporation.
 «Roblox» er et varemerke for Roblox Corporation og brukes her bare for å beskrive
 kompatibilitet.

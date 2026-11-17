@@ -11,6 +11,8 @@ Ol1n Market হলো অ্যাভাটারের 3D অ্যাক্স
 বিটকয়েনে কেনার সুবিধা শিগগিরই আসছে। প্রতিটি ডাউনলোডের সঙ্গে একটি লাইসেন্স আর
 Roblox Studio-র ধাপগুলো লেখা একটি README থাকে।
 
+স্ক্রিনশটসহ ধাপে ধাপে গাইড (ইংরেজিতে): [Guide for Roblox Studio](ugcmarket-guide.html)।
+
 Ol1n Market, Roblox Corporation-এর সঙ্গে যুক্ত নয় এবং Roblox Corporation এটিকে
 অনুমোদন বা পৃষ্ঠপোষকতা করে না। “Roblox” হলো Roblox Corporation-এর একটি ট্রেডমার্ক
 এবং এখানে শুধু সামঞ্জস্য বোঝাতে ব্যবহার করা হয়েছে।

@@ -11,6 +11,8 @@ Ol1n Market हे अवतार अॅक्सेसरीजच्या 3D
 पेमेंट लवकरच येत आहे. प्रत्येक डाउनलोडसोबत एक लायसन्स आणि Roblox Studio साठी
 पायऱ्या असलेली README मिळते.
 
+स्क्रीनशॉटसह टप्प्याटप्प्याने मार्गदर्शक (इंग्रजीत): [Guide for Roblox Studio](ugcmarket-guide.html).
+
 Ol1n Market चा Roblox Corporation शी कोणताही संबंध नाही, आणि Roblox Corporation कडून
 त्याला मान्यता किंवा प्रायोजकत्व नाही. “Roblox” हा Roblox Corporation चा ट्रेडमार्क आहे
 आणि इथे फक्त सुसंगतता सांगण्यासाठी वापरला आहे.

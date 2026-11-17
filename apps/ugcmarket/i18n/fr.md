@@ -11,6 +11,8 @@ Une partie du catalogue est gratuite, il suffit de te connecter avec ton e-mail.
 par carte et en bitcoin arrive bientôt. Chaque téléchargement comprend une licence et un README
 avec les étapes pour Roblox Studio.
 
+Un guide pas à pas avec captures d’écran (en anglais) : [Guide for Roblox Studio](ugcmarket-guide.html).
+
 Ol1n Market n'est ni affilié à Roblox Corporation, ni approuvé ou sponsorisé par celle-ci.
 « Roblox » est une marque de Roblox Corporation et n'est utilisée ici que pour décrire
 la compatibilité.

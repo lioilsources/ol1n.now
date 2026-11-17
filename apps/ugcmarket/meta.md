@@ -21,5 +21,7 @@ Modely vyrábí UGC Factory a před vystavením je kontroluje člověk. Část k
 zdarma, stačí se přihlásit e-mailem. Placený prodej kartou a bitcoinem se chystá.
 Ke každému stažení patří licence a README s postupem pro Roblox Studio.
 
+Návod krok za krokem se snímky obrazovky (anglicky): [Guide for Roblox Studio](ugcmarket-guide.html).
+
 Ol1n Market není spojený s Roblox Corporation a ta ho nepodporuje. „Roblox“ je
 ochranná známka Roblox Corporation, tady jen popisuje, s čím jsou modely kompatibilní.
