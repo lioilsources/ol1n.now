@@ -185,6 +185,24 @@ a:hover { text-decoration: underline; }
 .az-jump span { color: var(--text-dim); opacity: .4; }
 .app-card[id] { scroll-margin-top: 96px; }
 
+/* Channels (YouTube, TikTok) above the A-Z row: QR codes on a wide screen,
+   plain buttons on a phone, where scanning your own screen makes no sense. */
+.social { display: flex; justify-content: flex-end; gap: 16px; margin: 12px 0 0; }
+.social a {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  color: var(--text-dim); font-size: 13px; font-weight: 600;
+}
+.social a:hover { color: var(--accent); text-decoration: none; }
+.social img {
+  width: 88px; height: 88px; padding: 4px; background: #fff;
+  border: 1px solid var(--border); border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .social { justify-content: flex-start; gap: 8px; }
+  .social img { display: none; }
+  .social a { padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px; background: var(--card); }
+}
+
 /* Platform badges */
 .badges { display: flex; flex-wrap: wrap; gap: 6px; }
 .badge {

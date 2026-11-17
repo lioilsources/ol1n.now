@@ -1420,6 +1420,15 @@ az_nav_html() {
   printf '</nav>'
 }
 
+# Channels in the index header: a QR code to scan from a computer screen, and
+# on a phone (where a QR is useless) the same links as plain buttons.
+social_html() {
+  printf '<div class="social">'
+  printf '<a href="https://www.youtube.com/@Ol%%C3%%ADVo%%C5%%99echovsk%%C3%%BD" rel="me noopener"><img src="assets/img/qr-youtube.svg" width="88" height="88" alt=""><span>YouTube</span></a>'
+  printf '<a href="https://www.tiktok.com/@lioilsocial" rel="me noopener"><img src="assets/img/qr-tiktok.svg" width="88" height="88" alt=""><span>TikTok</span></a>'
+  printf '</div>\n'
+}
+
 # ---- build index ----
 # One index per language that at least one app ships: index.html stays the
 # Czech one, index.<lang>.html lists every app with the card in that language,
@@ -1431,6 +1440,7 @@ for lang in $INDEX_LANGS; do
   menu="$(lang_switch_html index "" $INDEX_LANGS)"
   {
     emit_head "Ananas&Bananas — olin.now" "$(alts_html index "" $INDEX_LANGS)"
+    social_html
     printf '<div class="page-top index-top">%s%s</div>\n' "$(az_nav_html)" "$menu"
     echo '<section class="app-grid">'
     if [ "$lang" = "$I18N_BASE" ]; then
