@@ -19,7 +19,7 @@ a fixed build" = **push a new tag on the app repo** (CI builds + uploads) then
 
 ## App ↔ repo ↔ store slug map
 
-Repos live under `/Volumes/YOTTA/Dev/`. Apps with desktop release workflows:
+Repos live under `$DEV_ROOT/`. Apps with desktop release workflows:
 
 | store slug  | repo (lioilsources/…) | flutter root        | artifact prefix |
 |-------------|-----------------------|---------------------|-----------------|
@@ -142,10 +142,10 @@ gh release view "$NEW" -R lioilsources/<repo>          # confirm *-Windows.zip a
 ### 4. Redeploy the store
 Once releases have the fresh assets:
 ```bash
-cd /Volumes/YOTTA/Dev/ol1n.now
+cd "$DEV_ROOT/ol1n.now"
 make fetch      # re-resolves newest release asset per platform → dist/downloads/*.tsv
 make build      # regenerates dist/
-make deploy     # pushes dist/ to gh-pages (Cloudflare-fronted olin.now)
+make deploy     # triggers the deploy workflow (builds origin/main on CI; never push gh-pages)
 ```
 `make fetch` needs `gh` authed (account `lioilsources`).
 

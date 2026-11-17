@@ -16,8 +16,9 @@ Repo se jmenuje `ol1n.now`, doména je `olin.now`.
 3. **`make screenshots`** vezme raw screenshoty z `apps/<slug>/screenshots/raw/`
    a resizne je na přesné rozměry vyžadované obchody do `dist/screenshots/<slug>/`.
 4. **`make build`** vygeneruje statický web do `dist/`.
-5. **`make deploy`** publikuje `dist/` na branch `gh-pages` (GitHub Pages slouží
-   `olin.now` na rootu; `CNAME` soubor v buildu drží custom doménu).
+5. **`make deploy`** spustí workflow „Build & Deploy store“, který `make all` postaví na CI
+   z `origin/main` a publikuje přes GitHub Pages (`olin.now` na rootu; `CNAME` soubor v buildu
+   drží custom doménu). Nejdřív commit a push; větev `gh-pages` je mrtvá, nepushuj na ni.
 
 `make all` = fetch + screenshots + build. `make serve` spustí lokální náhled.
 
