@@ -10,8 +10,6 @@ Modely vyrába UGC Factory a pred vystavením ich kontroluje človek. Časť kat
 zadarmo, stačí sa prihlásiť e-mailom. Platený predaj kartou a bitcoinom sa chystá.
 Ku každému stiahnutiu patrí licencia a README s postupom pre Roblox Studio.
 
-Návod krok za krokom so snímkami obrazovky (po anglicky): [Guide for Roblox Studio](ugcmarket-guide.html).
-
 Ol1n Market nie je pridružený k Roblox Corporation, ani ňou schválený či sponzorovaný.
 „Roblox“ je ochranná známka Roblox Corporation a používa sa tu len na opis
 kompatibility.

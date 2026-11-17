@@ -11,8 +11,6 @@ Ol1n Market متجر لنماذج إكسسوارات ثلاثية الأبعاد
 بالبطاقة وبالبيتكوين قادم قريبًا. ومع كل تنزيل ترخيص وملف README فيه
 خطوات العمل في Roblox Studio.
 
-دليل خطوة بخطوة مع لقطات شاشة (بالإنجليزية): [Guide for Roblox Studio](ugcmarket-guide.html).
-
 Ol1n Market غير تابع لشركة Roblox Corporation، ولا تؤيده ولا ترعاه.
 «Roblox» علامة تجارية مملوكة لشركة Roblox Corporation، وتُستخدم هنا فقط لوصف
 التوافق.
