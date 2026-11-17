@@ -57,4 +57,4 @@ helyen, és adj hozzá 5 cm-t a vágáshoz.
 
 A katalógus egyelőre **bemutató**: a képeken „Demo” címke van, és nem eladók. A
 rendelés kezdetben ajánlatkéréssel történik, a kártyás fizetés és a szállítás később
-jön. Képernyőképeket akkor teszünk fel, amikor a katalógus nyilvános lesz.
+jön. Próbáld ki: [slop.ol1n.com](https://slop.ol1n.com).

@@ -59,4 +59,4 @@ dán tường, hãy đo tường ở vài chỗ và cộng thêm 5 cm để cắ
 
 Danh mục hiện chỉ là **bản mẫu**: hình ảnh có nhãn “Demo” và không được bán.
 Ban đầu đặt hàng theo yêu cầu báo giá, thanh toán bằng thẻ và giao hàng sẽ có
-sau. Ảnh chụp màn hình sẽ được bổ sung khi danh mục công khai.
+sau. Dùng thử tại [slop.ol1n.com](https://slop.ol1n.com).

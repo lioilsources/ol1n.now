@@ -57,4 +57,4 @@ måle væggen flere steder og lægge 5 cm til beskæring.
 
 Kataloget er indtil videre en **demo**: billederne har mærket „Demo“ og er ikke
 til salg. Bestilling sker i starten efter forespørgsel, kortbetaling og levering
-kommer senere. Skærmbilleder tilføjer vi, når kataloget bliver offentligt.
+kommer senere. Prøv det på [slop.ol1n.com](https://slop.ol1n.com).

@@ -57,4 +57,4 @@ op meerdere plekken en tel 5 cm op voor het afsnijden.
 
 De catalogus is voorlopig een **demo**: de afbeeldingen hebben het label ‘Demo’ en zijn niet
 te koop. Bestellen gaat in het begin op aanvraag; betalen met kaart en verzending
-komen later. Screenshots volgen zodra de catalogus openbaar is.
+komen later. Probeer het op [slop.ol1n.com](https://slop.ol1n.com).

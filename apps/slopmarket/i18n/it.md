@@ -57,4 +57,4 @@ in più punti e aggiungi 5 cm per il rifilo.
 
 Per ora il catalogo è **dimostrativo**: le immagini hanno l'etichetta «Demo» e non sono
 in vendita. All'inizio gli ordini saranno su richiesta; pagamento con carta e spedizione
-arriveranno più avanti. Aggiungeremo gli screenshot quando il catalogo sarà pubblico.
+arriveranno più avanti. Provalo su [slop.ol1n.com](https://slop.ol1n.com).

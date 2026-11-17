@@ -57,4 +57,4 @@ em vários pontos e acrescenta 5 cm para o corte.
 
 Por agora o catálogo é de **demonstração**: as imagens têm a etiqueta «Demo» e não estão
 à venda. No início as encomendas serão sob pedido; pagamento com cartão e envio
-virão mais tarde. Vamos acrescentar capturas de ecrã quando o catálogo for público.
+virão mais tarde. Experimente em [slop.ol1n.com](https://slop.ol1n.com).

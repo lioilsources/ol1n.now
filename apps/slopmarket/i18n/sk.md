@@ -57,4 +57,4 @@ na niekoľkých miestach a pridaj 5 cm na orez.
 
 Katalóg je zatiaľ **ukážkový**: obrázky majú štítok „Demo“ a nie sú
 na predaj. Objednávka bude zo začiatku na dopyt, platba kartou a doprava
-prídu neskôr. Screenshoty doplníme, keď bude katalóg verejne.
+prídu neskôr. Vyskúšaj ho na [slop.ol1n.com](https://slop.ol1n.com).
