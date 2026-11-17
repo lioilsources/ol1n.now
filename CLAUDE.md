@@ -389,7 +389,7 @@ would shadow the extensionless `/pass` URL on GitHub Pages.
 Current apps (in `apps/`): audioscanner, beenhere (Been Here), behanek (Běhánek), djfy, doggiowars, doodlebugs,
 elftonplayer (Elfton Player, repo `ol1nplay`), hajanek (Hajánek), handwrittenstickers, immunorun (repo `BioDefenseRogue`), kindlify, kirian (Kiran), kittens,
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
-poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, webtoon,
+poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, ugcmarket (Ol1n Market), webtoon,
 chess4princesses (Šachové království), rattleramp (repo `ChrestysSkatepark`),
 fotballsimulator (Fotball Simulator), kaceny (Kačeny; default branch `master`).
 
@@ -543,6 +543,15 @@ catalog. Fotball still carries the default Flutter icon, so it gets the letter t
 RattleRamp is a landscape tablet game for the U Chřestýše bar kiosk, so its shots sit under
 `raw/desktop/tablet/` and the empty mobile section is reworded. The Fotball repo is a Godot
 project; the store builds and screenshots are of its Flutter port in `flutter_app/`.
+
+**ugcmarket** (Ol1n Market, added 2026-11-16) is the web store `market.ol1n.com` that sells the
+models UGC Factory makes. Source repo `lioilsources/RobloxMarket` (not on GitHub yet), so `repo:` is
+empty; `desktop: Web` only produces the badge and `i18n/<lang>.tsv` rewords `sec.downloads` /
+`dl.empty` (bought on the web, nothing to install). The public name is "Ol1n Market": Roblox brand
+rules forbid "Roblox" in a store name, so the slug and the text say "compatible with Roblox Studio"
+and keep the not-affiliated sentence. The icon was generated on SPARK (Qwen-Image, 2026-11-16).
+A customer guide (`pages/guide.html`) will be exported from that repo's `web/src/lib/guide/`;
+do not hand-edit it here.
 
 ## Screenshots from a throwaway web build
 
