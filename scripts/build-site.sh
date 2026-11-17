@@ -214,10 +214,16 @@ downloads_html() {
 # end up scattered between the download buttons on a phone.
 store_links_html() {
   _meta="$1"; _icons=""
-  for kv in "appstore:App Store" "playstore:Google Play" "testflight:TestFlight" "contentdb:ContentDB"; do
+  for kv in "web:" "appstore:App Store" "playstore:Google Play" "testflight:TestFlight" "contentdb:ContentDB"; do
     key="${kv%%:*}"; label="${kv#*:}"
     url="$(fm_get "$_meta" "$key")"
     [ -n "$url" ] || continue
+    # web: a live web app; the button shows its host name ("slop.ol1n.com")
+    if [ "$key" = web ]; then
+      _host="${url#*://}"; _host="${_host%%/*}"
+      printf '<a class="dl-btn" href="%s">🌐 %s</a>\n' "$url" "$_host"
+      continue
+    fi
     case "$key" in
       appstore|playstore)
         _icons="$_icons$(printf '<a class="store-icon" href="%s" title="%s"><img src="assets/img/store-%s.svg" alt="" width="64" height="64"><span>%s</span></a>' \
