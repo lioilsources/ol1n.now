@@ -30,7 +30,9 @@ Chipmunk, Echo, Underwater, Robot or Reverse. The result is saved to your galler
 
 ### Privacy
 
-The image is processed only on your phone. No account, ads or analytics. Photos
-and videos are never sent anywhere.
+The image is processed only on your phone. No account, ads or third-party
+analytics. Photos and videos are never sent anywhere. Only anonymous usage
+statistics with no identifiers go to the developer's own server, and you can
+turn them off in Settings.
 
 Built with Flutter, filters are GLSL shaders.

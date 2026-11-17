@@ -27,11 +27,14 @@ stilove, bez pretplate.
 Svaki ilustrirani špil ima dva stila slika: fotografije i jedan crtani stil
 (kist i tuš, pastel ili akvarel). Prebaciti možeš bilo kada.
 
-### Bez interneta i bez praćenja
+### Bez interneta, bez računa, bez oglasa
 
 Slike špila preuzimaju se jednom, a zatim sve radi na uređaju. Bez računa,
-bez oglasa, bez analitike, tvoj napredak ne napušta mobitel. Pogrešan
-prijevod ili sliku prijaviš izravno s kartice.
+bez oglasa, bez analitike trećih strana, tvoj napredak ne napušta mobitel. Na
+iOS-u, macOS-u i računalu aplikacija šalje na vlastiti poslužitelj razvijatelja
+anonimnu statistiku korištenja bez identifikatora, koju možeš isključiti
+u Postavkama; na Androidu ne šalje ništa. Pogrešan prijevod ili sliku prijaviš
+izravno s kartice.
 
 Izrađeno u Flutteru (repozitorij `DuolingoCards`). Radi na iOS-u, Androidu,
 macOS-u, Windowsima i Linuxu.

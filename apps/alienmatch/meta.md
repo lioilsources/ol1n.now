@@ -45,4 +45,6 @@ ukáže, jen když ho má víc lidí.
 ### Stav
 
 Ve vývoji. Hotový je backend a první verze appky, v obchodech zatím není.
-Bez reklam a bez sledování. Jen pro dospělé (18+).
+Bez reklam a bez analytiky třetích stran; na vlastní server vývojáře jdou jen
+anonymní statistiky používání bez identifikátorů a vypnout je jde v nastavení.
+Jen pro dospělé (18+).

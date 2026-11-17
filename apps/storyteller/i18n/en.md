@@ -100,5 +100,6 @@ The typeface is chubby and easy to read, the headings “bubbly” — the app i
 for children, and it should look the part.
 
 The whole flow Globe → Characters → Quest → Problem → Ending → Outline →
-Prompter runs on the phone, without a single call to a server. No ads, no
-accounts, no tracking. The interface and the tales are in Czech only for now.
+Prompter runs on the phone. No ads, no accounts, no third-party analytics; only
+anonymous usage statistics with no identifiers go to the developer's own server,
+and you can turn them off in Settings. The interface and the tales are in Czech only for now.

@@ -27,6 +27,6 @@ Besplatno je 50 recepata iz raznih kuhinja: češke, talijanske, vijetnamske, az
 
 ### Offline, bez računa
 
-Papánek ne treba internet ni registraciju i nema oglase ni analitiku. Recepti i slike su izravno u aplikaciji. Aplikacija je na češkom i engleskom.
+Papánek ne treba internet ni registraciju i nema oglase ni analitiku trećih strana. Na vlastiti poslužitelj razvijatelja šalje se samo anonimna statistika korištenja bez identifikatora, a možeš je isključiti u Postavkama. Recepti i slike su izravno u aplikaciji. Aplikacija je na češkom i engleskom.
 
 Još u razvoju: prva testna verzija 0.1 je u TestFlightu za iPhone i kao APK za Android u odjeljku **Preuzimanja**.

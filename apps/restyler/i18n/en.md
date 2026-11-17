@@ -38,7 +38,9 @@ Almost everything. Face, hair, eye and beard detection is done by a model right
 on the phone, and so are the masks, the hair colour estimate, the prompts and
 putting the strip together. Only one photo with the masks goes to the server,
 and the finished images come back. Rendering runs on our own GPU server, not in
-someone else's cloud. The app has no accounts, ads or payments.
+someone else's cloud. The app has no accounts, ads or payments. Apart from that photo, it
+sends only anonymous usage statistics with no identifiers to the developer's own
+server, and you can turn them off in Settings.
 
 Restyler is still in closed testing: on iPhone via TestFlight, on Android via
 Firebase.

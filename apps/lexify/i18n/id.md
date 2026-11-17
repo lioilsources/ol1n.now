@@ -28,12 +28,14 @@ bahasa dan gaya, tanpa langganan.
 Setiap dek bergambar punya dua gaya gambar: foto dan satu gaya lukisan (kuas
 dan tinta, pastel, atau cat air). Kamu bisa beralih kapan saja.
 
-### Offline dan tanpa pelacakan
+### Offline, tanpa akun, tanpa iklan
 
 Gambar dek diunduh sekali, setelah itu semuanya berjalan di perangkat. Tanpa
-akun, tanpa iklan, tanpa analitik, kemajuanmu tidak pernah keluar dari
-ponsel. Terjemahan atau gambar yang salah bisa kamu laporkan langsung dari
-kartunya.
+akun, tanpa iklan, tanpa analitik pihak ketiga, kemajuanmu tidak pernah keluar
+dari ponsel. Di iOS, macOS, dan desktop, aplikasi mengirim statistik penggunaan
+anonim tanpa pengenal ke server milik pengembang sendiri, dan itu bisa kamu
+matikan di Pengaturan; di Android, aplikasi tidak mengirim apa pun. Terjemahan
+atau gambar yang salah bisa kamu laporkan langsung dari kartunya.
 
 Dibuat dengan Flutter (repo `DuolingoCards`). Berjalan di iOS, Android,
 macOS, Windows, dan Linux.

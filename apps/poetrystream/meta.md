@@ -42,7 +42,9 @@ a občas kurzíva. Animované pozadí se zrnem připomíná papír ve tmě.
 
 ### Soukromí
 
-Žádné reklamy, účty ani analytika. Nastavení zůstává jen v zařízení.
+Žádné reklamy, účty ani analytika třetích stran. Nastavení zůstává jen v zařízení.
+Na vlastní server vývojáře jdou jen anonymní statistiky používání bez
+identifikátorů; vypnout je jde v nastavení.
 
 Básně otevřeně mluví o těle, sexualitě, nemoci, smrti a víře a místy
 používají hrubé výrazy. Postaveno ve Flutteru, běží na desktopu i mobilu.

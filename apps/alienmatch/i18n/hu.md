@@ -22,4 +22,4 @@ A profilodhoz legfeljebb nyolc helyet adhatsz hozzá: a megállódat, a villamos
 
 ### Állapot
 
-Fejlesztés alatt. A háttérrendszer és az app első verziója kész, de az üzletekben még nincs. Reklám és követés nélkül. Csak felnőtteknek (18+).
+Fejlesztés alatt. A háttérrendszer és az app első verziója kész, de az üzletekben még nincs. Reklám és harmadik féltől származó analitika nélkül; a fejlesztő saját szerverére csak névtelen, azonosítók nélküli használati statisztikák mennek, és ezeket a Beállításokban kikapcsolhatod. Csak felnőtteknek (18+).

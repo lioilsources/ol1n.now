@@ -30,7 +30,8 @@ Ekorn, Ekko, Under vann, Robot eller Baklengs. Resultatet lagres i galleriet.
 
 ### Personvern
 
-Bildet behandles bare på telefonen din. Ingen konto, reklame eller analyse. Bilder
-og videoer sendes ingen steder.
+Bildet behandles bare på telefonen din. Ingen konto, reklame eller tredjepartsanalyse.
+Bilder og videoer sendes ingen steder. Bare anonym bruksstatistikk uten identifikatorer
+sendes til utviklerens egen server, og du kan slå den av i Innstillinger.
 
 Laget med Flutter, filtrene er GLSL-shadere.

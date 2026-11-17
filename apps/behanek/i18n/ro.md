@@ -50,9 +50,10 @@ altitudinii. Harta e turistică (curbe de nivel, poteci) sau din satelit. Poți 
 
 ### Datele tale sunt ale tale
 
-Běhánek nu are cont, server, analiză sau reclame. Traseele rămân în telefon, iar
-locația nu se trimite nicăieri. Aplicația cere locația doar „în timpul utilizării”,
-niciodată „întotdeauna”.
+Běhánek nu are cont, reclame sau analize de la terți. Traseele rămân în telefon, iar
+locația nu se trimite nicăieri. Pe serverul propriu al dezvoltatorului ajung doar statistici
+anonime de utilizare, fără identificatori, și le poți dezactiva din Setări. Aplicația cere
+locația doar „în timpul utilizării”, niciodată „întotdeauna”.
 
 Fiecare alergare poate fi **exportată ca GPX**, iar toate deodată pot fi salvate într-un ZIP.
 Exportul e mereu gratuit.

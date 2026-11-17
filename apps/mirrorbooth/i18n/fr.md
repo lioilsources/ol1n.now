@@ -31,7 +31,9 @@ Ralenti, Écureuil, Écho, Sous l’eau, Robot ou À l’envers. Le résultat es
 
 ### Confidentialité
 
-L’image est traitée uniquement sur ton téléphone. Pas de compte, ni pub, ni statistiques.
-Les photos et vidéos ne sont envoyées nulle part.
+L’image est traitée uniquement sur ton téléphone. Pas de compte, ni pub, ni outils
+d’analyse tiers. Les photos et vidéos ne sont envoyées nulle part. Seules des statistiques
+d’utilisation anonymes, sans identifiant, partent vers le propre serveur du développeur, et
+tu peux les désactiver dans les Réglages.
 
 Développé avec Flutter, les filtres sont des shaders GLSL.

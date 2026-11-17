@@ -52,8 +52,10 @@ sentiers) ou satellite. Tu peux couper le début et la fin si tu as oublié d'ar
 
 ### Tes données t'appartiennent
 
-Běhánek n'a ni compte, ni serveur, ni pistage, ni pub. Les parcours restent sur ton
-téléphone et ta position n'est envoyée nulle part. L'appli demande la localisation
+Běhánek n'a ni compte, ni pub, ni outils d'analyse tiers. Les parcours restent sur ton
+téléphone et ta position n'est envoyée nulle part. Seules des statistiques d'utilisation
+anonymes, sans identifiant, partent vers le propre serveur du développeur, et tu peux les
+désactiver dans les Réglages. L'appli demande la localisation
 seulement « pendant l'utilisation de l'app », jamais « toujours ».
 
 Chaque course peut être **exportée en GPX**, et toutes sauvegardées d'un coup dans un ZIP.

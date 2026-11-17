@@ -31,8 +31,10 @@ papel en la oscuridad.
 
 ### Privacidad
 
-Sin anuncios, sin cuentas, sin analíticas. Los ajustes se quedan solo en tu
-dispositivo.
+Sin anuncios, sin cuentas, sin analíticas de terceros. Los ajustes se quedan
+solo en tu dispositivo. Al servidor propio del desarrollador solo llegan
+estadísticas de uso anónimas, sin identificadores, y puedes desactivarlas en
+Ajustes.
 
 Los poemas hablan abiertamente del cuerpo, la sexualidad, la enfermedad, la
 muerte y la fe, y a veces usan expresiones groseras. Hecha con Flutter,

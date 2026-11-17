@@ -108,8 +108,10 @@ aparecen el título del cuento, la parte que se está leyendo y la pausa.
 
 ### Sin anuncios, sin cuenta
 
-Hajánek no tiene anuncios, ni registro, ni analíticas. Los cuentos y los sonidos están
-en el teléfono y suenan sin conexión. La app solo usa la red para descargar cuentos
-nuevos y para subir tu voz, si la quieres.
+Hajánek no tiene anuncios, ni registro, ni analíticas de terceros. Los cuentos y los
+sonidos están en el teléfono y suenan sin conexión. La app solo usa la red para descargar
+cuentos nuevos, para subir tu voz, si la quieres, y para enviar al servidor propio del
+desarrollador estadísticas de uso anónimas, sin identificadores; puedes desactivarlas en
+Ajustes.
 
 La app es para niños de unos tres a ocho años.

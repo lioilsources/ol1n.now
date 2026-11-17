@@ -37,7 +37,9 @@ Gotovo sve. Prepoznavanje lica, kose, očiju i brade radi model izravno
 u mobitelu, kao i maske, procjenu boje kose, promptove i slaganje trake. Na
 poslužitelj odlazi samo jedna fotografija s maskama, a natrag stižu gotove
 slike. Renderiranje radi na vlastitom GPU poslužitelju, ne u tuđem oblaku.
-Aplikacija nema račune, oglase ni plaćanja.
+Aplikacija nema račune, oglase ni plaćanja. Osim te fotografije, na vlastiti
+poslužitelj razvijatelja šalje se samo anonimna statistika korištenja bez
+identifikatora, a možeš je isključiti u Postavkama.
 
 Restyler je zasad u zatvorenom testiranju: na iPhoneu preko TestFlighta, na
 Androidu preko Firebasea.

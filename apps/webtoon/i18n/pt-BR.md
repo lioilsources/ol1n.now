@@ -30,7 +30,7 @@ Histórias, livros-jogo e textos do leitor estão em 12 idiomas: tcheco, inglês
 
 ### Privacidade
 
-Sem conta, sem anúncios, sem rastreamento. O Toonfork não coleta dados pessoais; o que você comprou fica guardado no aparelho, e as compras podem ser restauradas em Ajustes.
+Sem conta, sem anúncios, sem analytics de terceiros. O Toonfork não coleta dados pessoais. Só estatísticas de uso anônimas, sem identificadores, vão para o servidor próprio do desenvolvedor; você pode desativá-las em Ajustes, e o perfil Infantil não envia nada. O que você comprou fica guardado no aparelho, e as compras podem ser restauradas em Ajustes.
 
 ## Studio: como as histórias nascem
 

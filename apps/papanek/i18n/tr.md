@@ -27,6 +27,6 @@ Farklı mutfaklardan 50 tarif ücretsiz: Çek, İtalyan, Vietnam, Asya, Meksika 
 
 ### Çevrimdışı, hesapsız
 
-Papánek internet ya da kayıt gerektirmez; reklam ya da analitik içermez. Tarifler ve görseller doğrudan uygulamanın içinde. Uygulama Çekçe ve İngilizcedir.
+Papánek internet ya da kayıt gerektirmez; reklam ya da üçüncü taraf analitik içermez. Geliştiricinin kendi sunucusuna yalnızca tanımlayıcı içermeyen anonim kullanım istatistikleri gider ve bunları Ayarlar'dan kapatabilirsin. Tarifler ve görseller doğrudan uygulamanın içinde. Uygulama Çekçe ve İngilizcedir.
 
 Hâlâ geliştirme aşamasında: ilk test sürümü 0.1, iPhone için TestFlight'ta, Android için de **İndirmeler** bölümünde APK olarak mevcut.

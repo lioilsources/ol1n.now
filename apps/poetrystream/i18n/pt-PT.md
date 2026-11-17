@@ -31,8 +31,10 @@ papel no escuro.
 
 ### Privacidade
 
-Sem anúncios, contas ou análises. As definições ficam apenas no teu
-dispositivo.
+Sem anúncios, contas ou análises de terceiros. As definições ficam apenas no
+teu dispositivo. Para o servidor próprio do programador só seguem estatísticas
+de utilização anónimas, sem identificadores, e podes desativá-las nas
+Definições.
 
 Os poemas falam abertamente do corpo, da sexualidade, da doença, da morte e
 da fé, e por vezes usam linguagem grosseira. Feita em Flutter, funciona no

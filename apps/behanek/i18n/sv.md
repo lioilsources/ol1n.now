@@ -46,8 +46,10 @@ glömde att stoppa.
 
 ### Din data är din
 
-Běhánek har inget konto, ingen server, ingen analys och inga annonser. Rutterna stannar
-i telefonen och din plats skickas aldrig någonstans. Appen ber bara om plats ”när appen
+Běhánek har inget konto, inga annonser och ingen tredjepartsanalys. Rutterna stannar
+i telefonen och din plats skickas aldrig någonstans. Bara anonym användningsstatistik
+utan identifierare skickas till utvecklarens egen server, och du kan stänga av den i
+Inställningar. Appen ber bara om plats ”när appen
 används”, aldrig ”alltid”.
 
 Varje pass kan **exporteras som GPX** och alla på en gång säkerhetskopieras till en ZIP.

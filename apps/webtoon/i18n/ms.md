@@ -30,7 +30,7 @@ Cerita, gamebook dan teks pembaca tersedia dalam 12 bahasa: Czech, Inggeris, Jer
 
 ### Privasi
 
-Tiada akaun, tiada iklan, tiada penjejakan. Toonfork tidak mengumpul data peribadi; apa yang telah anda beli diingati oleh peranti, dan pembelian boleh dipulihkan dalam Tetapan.
+Tiada akaun, tiada iklan, tiada analitik pihak ketiga. Toonfork tidak mengumpul data peribadi. Aplikasi hanya menghantar statistik penggunaan tanpa nama yang tidak mengandungi pengecam ke pelayan milik pembangun sendiri, anda boleh mematikannya dalam Tetapan, dan profil kanak-kanak tidak menghantar apa-apa. Apa yang telah anda beli diingati oleh peranti, dan pembelian boleh dipulihkan dalam Tetapan.
 
 ## Studio: bagaimana cerita dihasilkan
 

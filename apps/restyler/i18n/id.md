@@ -41,7 +41,9 @@ langsung di ponsel, begitu juga masker, perkiraan warna rambut, prompt, dan
 penyusunan strip. Ke server hanya dikirim satu foto beserta maskernya, dan
 yang kembali adalah gambar yang sudah jadi. Render berjalan di server GPU
 sendiri, bukan di cloud orang lain. Aplikasi ini tanpa akun, iklan, atau
-pembayaran.
+pembayaran. Selain foto itu, aplikasi hanya mengirim statistik penggunaan anonim
+tanpa pengenal ke server milik pengembang sendiri, dan itu bisa kamu matikan di
+Pengaturan.
 
 Restyler masih dalam pengujian tertutup: di iPhone lewat TestFlight, di
 Android lewat Firebase.

@@ -27,11 +27,14 @@ megvett pakli minden nyelvpárhoz és stílushoz feloldódik, előfizetés nélk
 Minden illusztrált pakli két képstílusban érhető el: fotó és egy rajzolt
 stílus (ecset és tus, pasztell vagy akvarell). Bármikor átválthatsz.
 
-### Offline és követés nélkül
+### Offline, fiók és reklám nélkül
 
 A pakli képei egyszer töltődnek le, utána minden az eszközön fut. Nincs
-fiók, nincs reklám, nincs analitika, a haladásod nem hagyja el a telefont. A
-hibás fordítást vagy képet közvetlenül a kártyáról jelentheted.
+fiók, nincs reklám, nincs harmadik féltől származó analitika, a haladásod nem
+hagyja el a telefont. iOS-en, macOS-en és asztali gépen az app névtelen,
+azonosítók nélküli használati statisztikákat küld a fejlesztő saját szerverére,
+ezeket a Beállításokban kikapcsolhatod; Androidon semmit sem küld. A hibás
+fordítást vagy képet közvetlenül a kártyáról jelentheted.
 
 Flutterrel készült (repó: `DuolingoCards`). Fut iOS-en, Androidon, macOS-en,
 Windowson és Linuxon.

@@ -108,8 +108,10 @@ que está sendo lida e a pausa.
 
 ### Sem anúncios, sem conta
 
-O Hajánek não tem anúncios, cadastro nem análise de uso. As histórias e os sons ficam no
-celular e tocam offline. O app só usa a internet para baixar histórias novas e enviar a
-sua voz, se você quiser.
+O Hajánek não tem anúncios, cadastro nem analytics de terceiros. As histórias e os sons
+ficam no celular e tocam offline. O app só usa a internet para baixar histórias novas,
+enviar a sua voz, se você quiser, e mandar estatísticas de uso anônimas, sem
+identificadores, para o servidor próprio do desenvolvedor; você pode desativá-las em
+Ajustes.
 
 O app é para crianças de mais ou menos três a oito anos.

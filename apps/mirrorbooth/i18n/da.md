@@ -30,7 +30,8 @@ Jordegern, Ekko, Under vand, Robot eller Baglæns. Resultatet gemmes i dit galle
 
 ### Privatliv
 
-Billedet behandles kun på din telefon. Ingen konto, reklamer eller analyse. Billeder
-og videoer sendes ingen steder hen.
+Billedet behandles kun på din telefon. Ingen konto, reklamer eller tredjepartsanalyse.
+Billeder og videoer sendes ingen steder hen. Kun anonym brugsstatistik uden
+identifikatorer sendes til udviklerens egen server, og du kan slå den fra i Indstillinger.
 
 Bygget med Flutter, filtrene er GLSL-shaders.

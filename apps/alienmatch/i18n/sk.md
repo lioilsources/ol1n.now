@@ -22,4 +22,4 @@ Do profilu si môžeš pridať až osem miest: svoju zastávku, električku, kav
 
 ### Stav
 
-Vo vývoji. Hotový je backend a prvá verzia appky, v obchodoch zatiaľ nie je. Bez reklám a bez sledovania. Len pre dospelých (18+).
+Vo vývoji. Hotový je backend a prvá verzia appky, v obchodoch zatiaľ nie je. Bez reklám a bez analytiky tretích strán; na vlastný server vývojára idú len anonymné štatistiky používania bez identifikátorov a dajú sa vypnúť v Nastaveniach. Len pre dospelých (18+).

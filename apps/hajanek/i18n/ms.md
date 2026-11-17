@@ -121,8 +121,10 @@ skrin kunci terdapat tajuk cerita, bahagian yang sedang dibacakan dan butang jed
 
 ### Tanpa iklan, tanpa akaun
 
-Hajánek tiada iklan, pendaftaran atau analitik. Cerita dan bunyi disimpan dalam telefon
-dan dimainkan di luar talian. Aplikasi hanya menggunakan rangkaian untuk memuat turun
-cerita baharu dan untuk memuat naik suara anda, jika anda mahukannya.
+Hajánek tiada iklan, pendaftaran atau analitik pihak ketiga. Cerita dan bunyi disimpan
+dalam telefon dan dimainkan di luar talian. Aplikasi hanya menggunakan rangkaian untuk
+memuat turun cerita baharu, untuk memuat naik suara anda, jika anda mahukannya, dan untuk
+menghantar statistik penggunaan tanpa nama yang tidak mengandungi pengecam ke pelayan
+milik pembangun sendiri; anda boleh mematikannya dalam Tetapan.
 
 Aplikasi ini untuk kanak-kanak berumur kira-kira tiga hingga lapan tahun.

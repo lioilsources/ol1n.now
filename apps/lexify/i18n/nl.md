@@ -27,12 +27,15 @@ alle taalparen en stijlen, zonder abonnement.
 Elk geïllustreerd pakket heeft twee beeldstijlen: foto's en één getekende
 stijl (penseel en inkt, pastel of aquarel). Wisselen kan altijd.
 
-### Offline en zonder tracking
+### Offline, zonder account, zonder advertenties
 
 De afbeeldingen van een pakket worden één keer gedownload, daarna draait
-alles op je apparaat. Geen account, geen advertenties, geen analytics, je
-voortgang verlaat je telefoon niet. Een verkeerde vertaling of afbeelding
-meld je direct vanaf het kaartje.
+alles op je apparaat. Geen account, geen advertenties, geen analytics van
+derden, je voortgang verlaat je telefoon niet. Op iOS, macOS en desktop
+stuurt de app anonieme gebruiksstatistieken zonder identificatoren naar de
+eigen server van de ontwikkelaar, en je kunt ze uitzetten in Instellingen; op
+Android stuurt hij niets. Een verkeerde vertaling of afbeelding meld je direct
+vanaf het kaartje.
 
 Gebouwd met Flutter (repo `DuolingoCards`). Draait op iOS, Android, macOS,
 Windows en Linux.

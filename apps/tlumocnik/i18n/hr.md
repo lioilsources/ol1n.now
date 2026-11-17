@@ -39,6 +39,6 @@ Aplikacija nema račun: pri prvom pokretanju mobitel se sam registrira kao uređ
 
 ### Privatnost
 
-Prepoznavanje govora, prijevod i glas rade na našem vlastitom poslužitelju s GPU-om, a ne u tuđem oblaku. Poslužitelj ne sprema zvuk ni tekstove razgovora i ne zapisuje ih u logove. Aplikacija nema račun, oglase ni analitiku. Zbog poslužitelja treba internetsku vezu.
+Prepoznavanje govora, prijevod i glas rade na našem vlastitom poslužitelju s GPU-om, a ne u tuđem oblaku. Poslužitelj ne sprema zvuk ni tekstove razgovora i ne zapisuje ih u logove. Aplikacija nema račun, oglase ni analitiku trećih strana; na vlastiti poslužitelj razvijatelja šalje se samo anonimna statistika korištenja bez identifikatora, a možeš je isključiti u Postavkama. Zbog poslužitelja treba internetsku vezu.
 
 Tlumočník je zasad u zatvorenom testiranju: na iPhoneu preko TestFlighta, na Androidu preko Firebasea.

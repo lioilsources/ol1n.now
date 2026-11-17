@@ -30,7 +30,7 @@ Zgodbe, igralne knjige in besedila bralnika so v 12 jezikih: češčini, angleš
 
 ### Zasebnost
 
-Brez računa, brez oglasov, brez sledenja. Toonfork ne zbira osebnih podatkov; kaj si kupil, si zapomni naprava, nakupe pa lahko obnoviš v Nastavitvah.
+Brez računa, brez oglasov, brez analitike tretjih oseb. Toonfork ne zbira osebnih podatkov. Na lastni strežnik razvijalca gre le anonimna statistika uporabe brez identifikatorjev, ki jo lahko izklopiš v Nastavitvah, otroški profil pa ne pošilja ničesar. Kaj si kupil, si zapomni naprava, nakupe pa lahko obnoviš v Nastavitvah.
 
 ## Studio: kako nastajajo zgodbe
 

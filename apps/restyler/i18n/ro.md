@@ -39,7 +39,9 @@ Aproape tot. Recunoașterea feței, a părului, a ochilor și a bărbii o face u
 model direct în telefon, la fel ca măștile, estimarea culorii părului,
 prompturile și asamblarea benzii. La server pleacă doar o fotografie cu
 măștile și se întorc imaginile gata. Randarea rulează pe un server GPU
-propriu, nu în cloudul altcuiva. Aplicația nu are conturi, reclame sau plăți.
+propriu, nu în cloudul altcuiva. Aplicația nu are conturi, reclame sau plăți. În afară de
+acea fotografie, pe serverul propriu al dezvoltatorului ajung doar statistici
+anonime de utilizare, fără identificatori, și le poți dezactiva din Setări.
 
 Restyler e deocamdată în testare închisă: pe iPhone prin TestFlight, pe
 Android prin Firebase.

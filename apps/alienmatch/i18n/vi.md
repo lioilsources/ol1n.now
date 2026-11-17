@@ -22,4 +22,4 @@ Bạn có thể thêm tối đa tám địa điểm vào hồ sơ: trạm dừng
 
 ### Tình trạng
 
-Đang phát triển. Phần máy chủ và phiên bản đầu tiên của ứng dụng đã xong, nhưng chưa có trên cửa hàng. Không quảng cáo và không theo dõi. Chỉ dành cho người trưởng thành (18+).
+Đang phát triển. Phần máy chủ và phiên bản đầu tiên của ứng dụng đã xong, nhưng chưa có trên cửa hàng. Không quảng cáo và không công cụ phân tích của bên thứ ba; chỉ có thống kê sử dụng ẩn danh, không kèm mã định danh, được gửi về máy chủ riêng của nhà phát triển, và bạn có thể tắt trong Cài đặt. Chỉ dành cho người trưởng thành (18+).

@@ -31,7 +31,9 @@ v tme.
 
 ### Súkromie
 
-Žiadne reklamy, účty ani analytika. Nastavenia zostávajú len v zariadení.
+Žiadne reklamy, účty ani analytika tretích strán. Nastavenia zostávajú len
+v zariadení. Na vlastný server vývojára idú len anonymné štatistiky používania
+bez identifikátorov a dajú sa vypnúť v Nastaveniach.
 
 Básne otvorene hovoria o tele, sexualite, chorobe, smrti a viere a miestami
 používajú hrubé výrazy. Postavené vo Flutteri, beží na desktope aj mobile.

@@ -27,11 +27,13 @@ sloge, brez naročnine.
 Vsak ilustrirani paket ima dva sloga slik: fotografije in en risani slog
 (čopič in tuš, pastel ali akvarel). Preklopiš lahko kadar koli.
 
-### Brez povezave in brez sledenja
+### Brez povezave, brez računa, brez oglasov
 
 Slike paketa se prenesejo enkrat, nato vse teče v napravi. Brez računa, brez
-oglasov, brez analitike, tvoj napredek ne zapusti telefona. Napačen prevod ali
-sliko prijaviš kar s kartice.
+oglasov, brez analitike tretjih oseb, tvoj napredek ne zapusti telefona. Na iOS,
+macOS in računalnikih aplikacija pošilja na lastni strežnik razvijalca anonimno
+statistiko uporabe brez identifikatorjev, ki jo lahko izklopiš v Nastavitvah; na
+Androidu ne pošilja ničesar. Napačen prevod ali sliko prijaviš kar s kartice.
 
 Narejeno v Flutterju (repozitorij `DuolingoCards`). Deluje na iOS, Androidu,
 macOS, Windows in Linuxu.

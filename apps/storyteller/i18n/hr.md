@@ -55,4 +55,4 @@ Aplikacija dijeli svijet na petnaest regija, a iz svake je deset bajki besplatno
 
 Font je bucmast i čitljiv, naslovi „mjehurasti” — aplikacija je za djecu i tako treba i izgledati.
 
-Cijeli tijek Globus → Likovi → Zadatak → Problem → Kraj → Nacrt → Šaptač radi na mobitelu, bez ijednog poziva poslužitelju. Bez oglasa, računa i praćenja. Sučelje i bajke zasad su samo na češkom.
+Cijeli tijek Globus → Likovi → Zadatak → Problem → Kraj → Nacrt → Šaptač radi na mobitelu. Bez oglasa, računa i analitike trećih strana; na vlastiti poslužitelj razvijatelja šalje se samo anonimna statistika korištenja bez identifikatora, a možeš je isključiti u Postavkama. Sučelje i bajke zasad su samo na češkom.

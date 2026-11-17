@@ -30,7 +30,9 @@ Odmev, Pod vodo, Robot ali Nazaj. Rezultat se shrani v galerijo.
 
 ### Zasebnost
 
-Slika se obdeluje samo v telefonu. Brez računa, oglasov in analitike. Fotografije in
-videoposnetki se nikamor ne pošiljajo.
+Slika se obdeluje samo v telefonu. Brez računa, oglasov in analitike tretjih oseb.
+Fotografije in videoposnetki se nikamor ne pošiljajo. Na lastni strežnik razvijalca
+gre le anonimna statistika uporabe brez identifikatorjev, ki jo lahko izklopiš
+v Nastavitvah.
 
 Narejeno v Flutterju, filtri so senčilniki GLSL.

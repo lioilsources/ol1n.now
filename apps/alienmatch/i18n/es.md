@@ -22,4 +22,4 @@ Puedes añadir a tu perfil hasta ocho lugares: tu parada, tu tranvía, una cafet
 
 ### Estado
 
-En desarrollo. El backend y la primera versión de la app están hechos, pero todavía no está en las tiendas. Sin anuncios y sin rastreo. Solo para adultos (18+).
+En desarrollo. El backend y la primera versión de la app están hechos, pero todavía no está en las tiendas. Sin anuncios y sin analíticas de terceros; al servidor propio del desarrollador solo llegan estadísticas de uso anónimas, sin identificadores, y puedes desactivarlas en Ajustes. Solo para adultos (18+).

@@ -103,6 +103,8 @@ La police est ronde et lisible, les titres sont « en bulles » – l’appli 
 faite pour les enfants, et cela doit se voir.
 
 Tout le parcours Globe → Personnages → Quête → Problème → Fin → Trame →
-Souffleur se déroule sur le téléphone, sans un seul appel à un serveur. Sans
-publicité, sans compte, sans pistage. L’interface et les contes ne sont pour
+Souffleur se déroule sur le téléphone. Sans publicité, sans compte, sans
+outils d’analyse tiers ; seules des statistiques d’utilisation anonymes, sans
+identifiant, partent vers le propre serveur du développeur, et tu peux les
+désactiver dans les Réglages. L’interface et les contes ne sont pour
 l’instant qu’en tchèque.

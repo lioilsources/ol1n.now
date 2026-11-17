@@ -21,6 +21,6 @@ Dua belas fon, sepuluh palet warna dengan teks yang bercahaya lembut, enam saiz 
 
 ### Privasi
 
-Tiada iklan, akaun atau analitik. Tetapan kekal pada peranti sahaja.
+Tiada iklan, akaun atau analitik pihak ketiga. Tetapan kekal pada peranti sahaja. Hanya statistik penggunaan tanpa nama yang tidak mengandungi pengecam dihantar ke pelayan milik pembangun sendiri, dan anda boleh mematikannya dalam Tetapan.
 
 Puisi-puisi ini bercakap secara terbuka tentang tubuh, seksualiti, penyakit, kematian dan kepercayaan, dan ada kalanya menggunakan bahasa kasar. Dibina dengan Flutter, berjalan pada desktop dan mudah alih. Puisi dan antara mukanya dalam bahasa Czech.

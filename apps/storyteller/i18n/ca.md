@@ -55,4 +55,4 @@ L’app divideix el món en quinze regions, i de cadascuna hi ha deu contes grat
 
 La lletra és rodoneta i fàcil de llegir, i els títols van en estil «bombolla»: l’app és per a infants i ho ha de semblar.
 
-Tot el recorregut Globus → Personatges → Missió → Problema → Final → Guió → Apuntador funciona al mòbil, sense ni una sola crida a un servidor. Sense anuncis, comptes ni seguiment. La interfície i els contes són, de moment, només en txec.
+Tot el recorregut Globus → Personatges → Missió → Problema → Final → Guió → Apuntador funciona al mòbil. Sense anuncis, comptes ni analítiques de tercers; al servidor propi del desenvolupador només hi arriben estadístiques d’ús anònimes, sense identificadors, i les pots desactivar a Configuració. La interfície i els contes són, de moment, només en txec.

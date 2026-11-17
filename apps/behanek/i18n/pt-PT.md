@@ -49,8 +49,10 @@ o início e o fim se te esqueceste de parar.
 
 ### Os teus dados são teus
 
-O Běhánek não tem conta, servidor, análises nem anúncios. Os percursos ficam no telemóvel
-e a localização não é enviada para lado nenhum. A app pede a localização só «durante a
+O Běhánek não tem conta, anúncios nem análises de terceiros. Os percursos ficam no
+telemóvel e a localização não é enviada para lado nenhum. Para o servidor próprio do
+programador só seguem estatísticas de utilização anónimas, sem identificadores, e podes
+desativá-las nas Definições. A app pede a localização só «durante a
 utilização», nunca «sempre».
 
 Cada corrida pode ser **exportada em GPX** e todas de uma vez guardadas num ZIP.

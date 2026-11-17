@@ -106,8 +106,10 @@ bere, in premor.
 
 ### Brez oglasov, brez računa
 
-Hajánek nima oglasov, registracije ne analitike. Pravljice in zvoki so v telefonu in
-igrajo brez povezave. Omrežje aplikacija uporablja le za prenos novih pravljic in za
-nalaganje tvojega glasu, če si ga želiš.
+Hajánek nima oglasov, registracije ne analitike tretjih oseb. Pravljice in zvoki so
+v telefonu in igrajo brez povezave. Omrežje aplikacija uporablja le za prenos novih
+pravljic, za nalaganje tvojega glasu, če si ga želiš, in za pošiljanje anonimne
+statistike uporabe brez identifikatorjev na lastni strežnik razvijalca; to lahko
+izklopiš v Nastavitvah.
 
 Aplikacija je za otroke od približno treh do osmih let.

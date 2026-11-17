@@ -40,6 +40,8 @@ ngay trên điện thoại đảm nhận, cũng như mặt nạ, ước lượng
 việc ghép dải ảnh. Lên máy chủ chỉ có một tấm ảnh kèm mặt nạ, và trở về là các
 ảnh đã hoàn thiện. Việc render chạy trên máy chủ GPU riêng, không phải trên
 đám mây của người khác. Ứng dụng không có tài khoản, quảng cáo hay thanh toán.
+Ngoài tấm ảnh đó, ứng dụng chỉ gửi thống kê sử dụng ẩn danh, không kèm mã định
+danh, về máy chủ riêng của nhà phát triển, và bạn có thể tắt trong Cài đặt.
 
 Restyler hiện vẫn đang thử nghiệm kín: trên iPhone qua TestFlight, trên
 Android qua Firebase.

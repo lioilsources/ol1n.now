@@ -27,6 +27,6 @@ Zadarmo je 50 receptov naprieč kuchyňami: česká, talianska, vietnamská, áz
 
 ### Offline, bez účtu
 
-Papánek nepotrebuje internet ani registráciu a nemá reklamy ani analytiku. Recepty aj obrázky sú priamo v appke. Appka je po česky aj po anglicky.
+Papánek nepotrebuje internet ani registráciu a nemá reklamy ani analytiku tretích strán. Na vlastný server vývojára idú len anonymné štatistiky používania bez identifikátorov a dajú sa vypnúť v Nastaveniach. Recepty aj obrázky sú priamo v appke. Appka je po česky aj po anglicky.
 
 Zatiaľ vo vývoji: prvá testovacia verzia 0.1 je v TestFlighte pre iPhone a ako APK pre Android v sekcii **Na stiahnutie**.

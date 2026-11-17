@@ -31,7 +31,9 @@ emlékeztet.
 
 ### Adatvédelem
 
-Nincs reklám, fiók és analitika. A beállítások csak az eszközön maradnak.
+Nincs reklám, fiók és harmadik féltől származó analitika. A beállítások csak az
+eszközön maradnak. A fejlesztő saját szerverére csak névtelen, azonosítók nélküli
+használati statisztikák mennek, és ezeket a Beállításokban kikapcsolhatod.
 
 A versek nyíltan beszélnek a testről, a szexualitásról, a betegségről,
 a halálról és a hitről, és helyenként durva kifejezéseket is használnak.

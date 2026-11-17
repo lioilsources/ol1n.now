@@ -41,7 +41,9 @@ terus dalam telefon, begitu juga topeng, anggaran warna rambut, prompt dan
 penyusunan jalur. Hanya satu foto bersama topengnya dihantar ke pelayan, dan
 yang kembali ialah imej yang sudah siap. Render berjalan pada pelayan GPU
 sendiri, bukan dalam awan orang lain. Aplikasi ini tiada akaun, iklan atau
-bayaran.
+bayaran. Selain foto itu, aplikasi hanya menghantar statistik penggunaan tanpa
+nama yang tidak mengandungi pengecam ke pelayan milik pembangun sendiri, dan anda
+boleh mematikannya dalam Tetapan.
 
 Restyler masih dalam ujian tertutup: pada iPhone melalui TestFlight, pada
 Android melalui Firebase.

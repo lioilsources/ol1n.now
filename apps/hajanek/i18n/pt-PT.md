@@ -109,8 +109,10 @@ conto, a parte que está a ser lida e a pausa.
 
 ### Sem anúncios, sem conta
 
-O Hajánek não tem anúncios, registo nem análise de utilização. Os contos e os sons estão
-no telemóvel e tocam offline. A app só usa a rede para descarregar contos novos e para
-enviar a tua voz, se a quiseres.
+O Hajánek não tem anúncios, registo nem análises de terceiros. Os contos e os sons estão
+no telemóvel e tocam offline. A app só usa a rede para descarregar contos novos, para
+enviar a tua voz, se a quiseres, e para mandar estatísticas de utilização anónimas, sem
+identificadores, para o servidor próprio do programador; podes desativá-las nas
+Definições.
 
 A app é para crianças dos três aos oito anos, mais ou menos.

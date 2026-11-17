@@ -55,4 +55,4 @@ Aplicația împarte lumea în cincisprezece regiuni, iar din fiecare sunt zece p
 
 Fontul e rotunjor și ușor de citit, titlurile sunt „cu bule” — aplicația e pentru copii și așa trebuie să și arate.
 
-Tot parcursul Glob → Personaje → Misiune → Problemă → Final → Schiță → Sufleor rulează în telefon, fără niciun apel la server. Fără reclame, conturi și urmărire. Interfața și poveștile sunt deocamdată doar în cehă.
+Tot parcursul Glob → Personaje → Misiune → Problemă → Final → Schiță → Sufleor rulează în telefon. Fără reclame, conturi și analize de la terți; pe serverul propriu al dezvoltatorului ajung doar statistici anonime de utilizare, fără identificatori, și le poți dezactiva din Setări. Interfața și poveștile sunt deocamdată doar în cehă.

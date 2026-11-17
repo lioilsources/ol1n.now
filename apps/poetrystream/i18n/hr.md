@@ -31,7 +31,9 @@ u mraku.
 
 ### Privatnost
 
-Bez oglasa, računa i analitike. Postavke ostaju samo na uređaju.
+Bez oglasa, računa i analitike trećih strana. Postavke ostaju samo na uređaju.
+Na vlastiti poslužitelj razvijatelja šalje se samo anonimna statistika korištenja
+bez identifikatora, a možeš je isključiti u Postavkama.
 
 Pjesme otvoreno govore o tijelu, seksualnosti, bolesti, smrti i vjeri
 i mjestimice koriste grube izraze. Izrađeno u Flutteru, radi na računalu

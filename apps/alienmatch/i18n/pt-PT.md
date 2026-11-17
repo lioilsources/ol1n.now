@@ -22,4 +22,4 @@ Podes adicionar ao perfil até oito locais: a tua paragem, o teu elétrico, um c
 
 ### Estado
 
-Em desenvolvimento. O backend e a primeira versão da app estão prontos, mas ainda não está nas lojas. Sem anúncios e sem rastreio. Apenas para adultos (18+).
+Em desenvolvimento. O backend e a primeira versão da app estão prontos, mas ainda não está nas lojas. Sem anúncios e sem análises de terceiros; para o servidor próprio do programador só seguem estatísticas de utilização anónimas, sem identificadores, e podes desativá-las nas Definições. Apenas para adultos (18+).

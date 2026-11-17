@@ -101,5 +101,7 @@ Die Schrift ist rundlich und gut lesbar, die Überschriften kommen im
 „Bubble“-Look daher – die App ist für Kinder und soll auch so aussehen.
 
 Der gesamte Ablauf Globus → Figuren → Aufgabe → Problem → Ende → Gerüst →
-Souffleur läuft auf dem Handy, ohne einen einzigen Serveraufruf. Ohne Werbung,
-Konten und Tracking. Oberfläche und Märchen gibt es vorerst nur auf Tschechisch.
+Souffleur läuft auf dem Handy. Ohne Werbung, Konten und Analytics von
+Drittanbietern; nur anonyme Nutzungsstatistiken ohne Kennungen gehen an den
+eigenen Server des Entwicklers, und du kannst sie in den Einstellungen
+abschalten. Oberfläche und Märchen gibt es vorerst nur auf Tschechisch.

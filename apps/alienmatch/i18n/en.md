@@ -22,4 +22,4 @@ You can add up to eight places to your profile: your stop, your tram, a café or
 
 ### Status
 
-In development. The backend and the first version of the app are done; it is not in the stores yet. No ads and no tracking. Adults only (18+).
+In development. The backend and the first version of the app are done; it is not in the stores yet. No ads and no third-party analytics; only anonymous usage statistics with no identifiers go to the developer's own server, and you can turn them off in Settings. Adults only (18+).

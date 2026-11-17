@@ -31,7 +31,9 @@ in the dark.
 
 ### Privacy
 
-No ads, no accounts, no analytics. Settings stay on your device.
+No ads, no accounts, no third-party analytics. Settings stay on your device.
+Only anonymous usage statistics with no identifiers go to the developer's own
+server, and you can turn them off in Settings.
 
 The poems speak openly about the body, sexuality, illness, death and faith,
 and at times use coarse language. Built with Flutter, runs on desktop and

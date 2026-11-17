@@ -107,8 +107,9 @@ okunan bölüm ve duraklatma düğmesi görünür.
 
 ### Reklamsız, hesapsız
 
-Hajánek'te reklam, kayıt ve analitik yok. Masallar ve sesler telefondadır ve çevrimdışı
-çalar. Uygulama ağı yalnızca yeni masalları indirmek ve istersen sesini yüklemek için
-kullanır.
+Hajánek'te reklam, kayıt ve üçüncü taraf analitik yok. Masallar ve sesler telefondadır
+ve çevrimdışı çalar. Uygulama ağı yalnızca yeni masalları indirmek, istersen sesini
+yüklemek ve geliştiricinin kendi sunucusuna tanımlayıcı içermeyen anonim kullanım
+istatistikleri göndermek için kullanır; bu istatistikleri Ayarlar'dan kapatabilirsin.
 
 Uygulama yaklaşık üç ila sekiz yaş arası çocuklar içindir.

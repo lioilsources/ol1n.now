@@ -30,7 +30,9 @@ Veveriță, Ecou, Sub apă, Robot sau Invers. Rezultatul se salvează în galeri
 
 ### Confidențialitate
 
-Imaginea se procesează doar pe telefonul tău. Fără cont, reclame sau analize. Pozele
-și videoclipurile nu sunt trimise nicăieri.
+Imaginea se procesează doar pe telefonul tău. Fără cont, reclame sau analize de la
+terți. Pozele și videoclipurile nu sunt trimise nicăieri. Pe serverul propriu al
+dezvoltatorului ajung doar statistici anonime de utilizare, fără identificatori, și le
+poți dezactiva din Setări.
 
 Construită cu Flutter, filtrele sunt shadere GLSL.

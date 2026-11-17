@@ -27,6 +27,6 @@ Za darmo jest 50 przepisów z różnych kuchni: czeskiej, włoskiej, wietnamskie
 
 ### Offline, bez konta
 
-Papánek nie potrzebuje internetu ani rejestracji i nie ma reklam ani analityki. Przepisy i zdjęcia są w samej aplikacji. Aplikacja jest po czesku i po angielsku.
+Papánek nie potrzebuje internetu ani rejestracji i nie ma reklam ani analityki firm trzecich. Na własny serwer twórcy trafiają tylko anonimowe statystyki użytkowania bez identyfikatorów, a możesz je wyłączyć w Ustawieniach. Przepisy i zdjęcia są w samej aplikacji. Aplikacja jest po czesku i po angielsku.
 
 Wciąż w rozwoju: pierwsza wersja testowa 0.1 jest w TestFlight na iPhone'a oraz jako APK na Androida w sekcji **Do pobrania**.

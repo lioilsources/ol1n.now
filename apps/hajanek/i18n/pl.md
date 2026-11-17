@@ -104,8 +104,10 @@ który właśnie jest czytany, i pauza.
 
 ### Bez reklam, bez konta
 
-Hajánek nie ma reklam, rejestracji ani analityki. Bajki i dźwięki są w telefonie i grają
-offline. Aplikacja korzysta z sieci tylko do pobierania nowych bajek i do wysłania
-twojego głosu, jeśli go chcesz.
+Hajánek nie ma reklam, rejestracji ani analityki firm trzecich. Bajki i dźwięki są
+w telefonie i grają offline. Aplikacja korzysta z sieci tylko do pobierania nowych bajek,
+do wysłania twojego głosu, jeśli go chcesz, i do wysyłania anonimowych statystyk
+użytkowania bez identyfikatorów na własny serwer twórcy; możesz je wyłączyć
+w Ustawieniach.
 
 Aplikacja jest dla dzieci mniej więcej od trzech do ośmiu lat.

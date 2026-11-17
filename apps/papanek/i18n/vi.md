@@ -27,6 +27,6 @@ Miễn phí 50 công thức từ nhiều nền ẩm thực: Séc, Ý, Việt Nam
 
 ### Ngoại tuyến, không cần tài khoản
 
-Papánek không cần internet hay đăng ký, không có quảng cáo hay phân tích. Công thức và hình ảnh nằm ngay trong ứng dụng. Ứng dụng có tiếng Séc và tiếng Anh.
+Papánek không cần internet hay đăng ký, không có quảng cáo hay công cụ phân tích của bên thứ ba. Ứng dụng chỉ gửi thống kê sử dụng ẩn danh, không kèm mã định danh, về máy chủ riêng của nhà phát triển, và bạn có thể tắt trong Cài đặt. Công thức và hình ảnh nằm ngay trong ứng dụng. Ứng dụng có tiếng Séc và tiếng Anh.
 
 Vẫn đang phát triển: bản thử nghiệm đầu tiên 0.1 có trên TestFlight cho iPhone và dưới dạng APK cho Android trong mục **Tải về**.

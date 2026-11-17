@@ -30,7 +30,9 @@ Yankı, Su altı, Robot veya Ters. Sonuç galeriye kaydedilir.
 
 ### Gizlilik
 
-Görüntü yalnızca telefonunda işlenir. Hesap, reklam veya analitik yok. Fotoğraflar
-ve videolar hiçbir yere gönderilmez.
+Görüntü yalnızca telefonunda işlenir. Hesap, reklam veya üçüncü taraf analitik yok.
+Fotoğraflar ve videolar hiçbir yere gönderilmez. Geliştiricinin kendi sunucusuna
+yalnızca tanımlayıcı içermeyen anonim kullanım istatistikleri gider ve bunları
+Ayarlar’dan kapatabilirsin.
 
 Flutter ile geliştirildi, filtreler GLSL shader’larıdır.

@@ -27,6 +27,6 @@ Gratuit sunt 50 de rețete din mai multe bucătării: cehă, italiană, vietname
 
 ### Offline, fără cont
 
-Papánek nu are nevoie de internet sau de înregistrare și nu are reclame sau analiză. Rețetele și imaginile sunt direct în aplicație. Aplicația este în cehă și engleză.
+Papánek nu are nevoie de internet sau de înregistrare și nu are reclame sau analize de la terți. Pe serverul propriu al dezvoltatorului ajung doar statistici anonime de utilizare, fără identificatori, și le poți dezactiva din Setări. Rețetele și imaginile sunt direct în aplicație. Aplicația este în cehă și engleză.
 
 Încă în dezvoltare: prima versiune de test 0.1 este în TestFlight pentru iPhone și ca APK pentru Android în secțiunea **Descărcări**.

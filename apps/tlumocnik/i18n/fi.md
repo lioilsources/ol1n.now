@@ -39,6 +39,6 @@ Sovelluksessa ei ole tiliä: ensimmäisellä käynnistyskerralla puhelin rekiste
 
 ### Yksityisyys
 
-Puheentunnistus, käännös ja ääni toimivat omalla GPU-palvelimellamme, eivät jonkun muun pilvessä. Palvelin ei tallenna ääntä eikä keskustelujen tekstejä eikä kirjoita niitä lokeihin. Sovelluksessa ei ole tiliä, mainoksia eikä analytiikkaa. Palvelimen takia se tarvitsee internetyhteyden.
+Puheentunnistus, käännös ja ääni toimivat omalla GPU-palvelimellamme, eivät jonkun muun pilvessä. Palvelin ei tallenna ääntä eikä keskustelujen tekstejä eikä kirjoita niitä lokeihin. Sovelluksessa ei ole tiliä, mainoksia eikä kolmannen osapuolen analytiikkaa; kehittäjän omalle palvelimelle lähtee vain nimettömiä käyttötilastoja ilman tunnisteita, ja ne voi poistaa käytöstä Asetuksista. Palvelimen takia se tarvitsee internetyhteyden.
 
 Tlumočník on vielä suljetussa testauksessa: iPhonella TestFlightin kautta, Androidilla Firebasen kautta.

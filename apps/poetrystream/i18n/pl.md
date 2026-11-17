@@ -31,7 +31,9 @@ tło przypomina papier w ciemności.
 
 ### Prywatność
 
-Bez reklam, kont i analityki. Ustawienia zostają tylko na urządzeniu.
+Bez reklam, kont i analityki firm trzecich. Ustawienia zostają tylko na
+urządzeniu. Na własny serwer twórcy trafiają tylko anonimowe statystyki
+użytkowania bez identyfikatorów, a możesz je wyłączyć w Ustawieniach.
 
 Wiersze otwarcie mówią o ciele, seksualności, chorobie, śmierci i wierze
 i miejscami używają wulgaryzmów. Zbudowana we Flutterze, działa na

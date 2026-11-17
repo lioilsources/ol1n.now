@@ -55,4 +55,4 @@ Az app tizenöt régióra osztja a világot, és mindegyikből tíz mese ingyene
 
 A betűtípus gömbölyded és jól olvasható, a címek „buborékosak” — az app gyerekeknek készült, és így is kell kinéznie.
 
-A teljes folyamat Földgömb → Szereplők → Feladat → Baj → Befejezés → Vázlat → Súgó a telefonon fut, egyetlen szerverhívás nélkül. Reklámok, fiókok és követés nélkül. A felület és a mesék egyelőre csak csehül érhetők el.
+A teljes folyamat Földgömb → Szereplők → Feladat → Baj → Befejezés → Vázlat → Súgó a telefonon fut. Reklámok, fiókok és harmadik féltől származó analitika nélkül; a fejlesztő saját szerverére csak névtelen, azonosítók nélküli használati statisztikák mennek, és ezeket a Beállításokban kikapcsolhatod. A felület és a mesék egyelőre csak csehül érhetők el.

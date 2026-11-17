@@ -49,9 +49,10 @@ nhanh nhất được làm nổi bật), độ cao leo, biểu đồ tốc độ
 
 ### Dữ liệu của bạn là của bạn
 
-Běhánek không có tài khoản, máy chủ, phân tích hay quảng cáo. Lộ trình nằm trên điện
-thoại và vị trí không bao giờ được gửi đi đâu. Ứng dụng chỉ xin vị trí “khi dùng ứng
-dụng”, không bao giờ “luôn luôn”.
+Běhánek không có tài khoản, quảng cáo hay công cụ phân tích của bên thứ ba. Lộ trình nằm
+trên điện thoại và vị trí không bao giờ được gửi đi đâu. Chỉ có thống kê sử dụng ẩn danh,
+không kèm mã định danh, được gửi về máy chủ riêng của nhà phát triển, và bạn có thể tắt
+trong Cài đặt. Ứng dụng chỉ xin vị trí “khi dùng ứng dụng”, không bao giờ “luôn luôn”.
 
 Mỗi buổi chạy đều có thể **xuất ra GPX** và sao lưu tất cả cùng lúc vào một file ZIP.
 Xuất dữ liệu luôn miễn phí.

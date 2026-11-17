@@ -29,11 +29,14 @@ Mỗi bộ thẻ minh họa có hai phong cách hình: ảnh chụp và một ph
 tay (bút lông và mực, phấn màu hoặc màu nước). Bạn có thể đổi bất cứ lúc
 nào.
 
-### Ngoại tuyến và không theo dõi
+### Ngoại tuyến, không tài khoản, không quảng cáo
 
 Hình ảnh của bộ thẻ chỉ tải về một lần, sau đó mọi thứ chạy trên thiết bị.
-Không tài khoản, không quảng cáo, không phân tích, tiến độ của bạn không rời
-khỏi điện thoại. Bạn có thể báo bản dịch hoặc hình ảnh sai ngay từ thẻ.
+Không tài khoản, không quảng cáo, không công cụ phân tích của bên thứ ba, tiến
+độ của bạn không rời khỏi điện thoại. Trên iOS, macOS và máy tính, ứng dụng gửi
+thống kê sử dụng ẩn danh, không kèm mã định danh, về máy chủ riêng của nhà phát
+triển, và bạn có thể tắt trong Cài đặt; trên Android, ứng dụng không gửi gì cả.
+Bạn có thể báo bản dịch hoặc hình ảnh sai ngay từ thẻ.
 
 Xây dựng bằng Flutter (repo `DuolingoCards`). Chạy trên iOS, Android, macOS,
 Windows và Linux.

@@ -49,7 +49,8 @@ Skoro všechno. Rozpoznání tváře, vlasů, očí a vousů dělá model přím
 v telefonu, stejně jako masky, odhad barvy vlasů, prompty a skládání pásu.
 Na server odchází jen jedna fotka s maskami a zpátky přijdou hotové obrázky.
 Render běží na vlastním GPU serveru, ne v cizím cloudu. Appka nemá účty,
-reklamy ani platby.
+reklamy ani platby. Kromě té fotky posílá na vlastní server vývojáře jen
+anonymní statistiky používání bez identifikátorů; vypnout je jde v nastavení.
 
 Restyler je zatím v uzavřeném testování: na iPhonu přes TestFlight, na
 Androidu přes Firebase.

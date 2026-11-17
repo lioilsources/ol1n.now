@@ -98,5 +98,7 @@ Czcionka jest pulchna i czytelna, nagłówki „bąbelkowe” — aplikacja jest
 dzieci i tak też ma wyglądać.
 
 Całe przejście Globus → Postacie → Zadanie → Problem → Zakończenie → Plan →
-Sufler działa w telefonie, bez ani jednego zapytania do serwera. Bez reklam,
-kont i śledzenia. Interfejs i bajki są na razie tylko po czesku.
+Sufler działa w telefonie. Bez reklam, kont i analityki firm trzecich; na
+własny serwer twórcy trafiają tylko anonimowe statystyki użytkowania bez
+identyfikatorów, a możesz je wyłączyć w Ustawieniach. Interfejs i bajki są na
+razie tylko po czesku.

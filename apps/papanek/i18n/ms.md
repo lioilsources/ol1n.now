@@ -27,6 +27,6 @@ Percuma 50 resipi daripada pelbagai masakan: Czech, Itali, Vietnam, Asia, Mexico
 
 ### Luar talian, tanpa akaun
 
-Papánek tidak memerlukan internet atau pendaftaran, dan tiada iklan atau analitik. Resipi dan gambar ada terus di dalam aplikasi. Aplikasi ini dalam bahasa Czech dan Inggeris.
+Papánek tidak memerlukan internet atau pendaftaran, dan tiada iklan atau analitik pihak ketiga. Aplikasi hanya menghantar statistik penggunaan tanpa nama yang tidak mengandungi pengecam ke pelayan milik pembangun sendiri, dan anda boleh mematikannya dalam Tetapan. Resipi dan gambar ada terus di dalam aplikasi. Aplikasi ini dalam bahasa Czech dan Inggeris.
 
 Masih dalam pembangunan: versi ujian pertama 0.1 ada di TestFlight untuk iPhone dan sebagai APK untuk Android dalam bahagian **Muat turun**.

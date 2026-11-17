@@ -41,6 +41,8 @@ mobilen, og det samme gjelder maskene, anslaget av hårfargen, promptene og
 sammensettingen av stripen. Til serveren går bare ett bilde med maskene, og
 tilbake kommer de ferdige bildene. Renderingen kjører på en egen GPU-server,
 ikke i andres sky. Appen har ingen kontoer, reklame eller betalinger.
+Utover det bildet sendes bare anonym bruksstatistikk uten identifikatorer til
+utviklerens egen server, og du kan slå den av i Innstillinger.
 
 Restyler er foreløpig i lukket testing: på iPhone via TestFlight, på Android
 via Firebase.

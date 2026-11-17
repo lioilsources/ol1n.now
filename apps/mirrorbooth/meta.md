@@ -42,7 +42,9 @@ Veverka, Ozvěna, Pod vodou, Robot nebo Pozpátku. Výsledek se uloží do galer
 
 ### Soukromí
 
-Obraz se zpracovává jen v telefonu. Žádný účet, reklamy ani analytika. Fotky
-a videa se nikam neodesílají.
+Obraz se zpracovává jen v telefonu. Žádný účet, reklamy ani analytika
+třetích stran. Fotky a videa se nikam neodesílají. Na vlastní server vývojáře
+jdou jen anonymní statistiky používání bez identifikátorů; vypnout je jde
+v nastavení.
 
 Postaveno ve Flutteru, filtry jsou GLSL shadery.

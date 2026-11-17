@@ -22,4 +22,4 @@ U profil možeš dodati do osam mjesta: svoju stanicu, tramvaj, kafić ili fakul
 
 ### Stanje
 
-U razvoju. Backend i prva verzija aplikacije gotovi su, ali još nije u trgovinama. Bez reklama i bez praćenja. Samo za odrasle (18+).
+U razvoju. Backend i prva verzija aplikacije gotovi su, ali još nije u trgovinama. Bez reklama i bez analitike trećih strana; na vlastiti poslužitelj razvijatelja šalje se samo anonimna statistika korištenja bez identifikatora, a možeš je isključiti u Postavkama. Samo za odrasle (18+).

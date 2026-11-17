@@ -55,4 +55,4 @@ Aplikasi ini membahagikan dunia kepada lima belas rantau, dan dari setiap rantau
 
 Fonnya tembam dan mudah dibaca, tajuknya bergaya "gelembung" — aplikasi ini untuk kanak-kanak dan memang patut kelihatan begitu.
 
-Seluruh aliran Glob → Watak → Misi → Masalah → Pengakhiran → Rangka → Pembisik berjalan dalam telefon, tanpa satu pun panggilan ke pelayan. Tanpa iklan, akaun dan penjejakan. Antara muka dan cerita buat masa ini hanya dalam bahasa Czech.
+Seluruh aliran Glob → Watak → Misi → Masalah → Pengakhiran → Rangka → Pembisik berjalan dalam telefon. Tanpa iklan, akaun dan analitik pihak ketiga; hanya statistik penggunaan tanpa nama yang tidak mengandungi pengecam dihantar ke pelayan milik pembangun sendiri, dan anda boleh mematikannya dalam Tetapan. Antara muka dan cerita buat masa ini hanya dalam bahasa Czech.

@@ -21,6 +21,6 @@ Douăsprezece fonturi, zece palete de culori cu text care strălucește discret,
 
 ### Confidențialitate
 
-Fără reclame, conturi sau analize. Setările rămân doar pe dispozitivul tău.
+Fără reclame, conturi sau analize de la terți. Setările rămân doar pe dispozitivul tău. Pe serverul propriu al dezvoltatorului ajung doar statistici anonime de utilizare, fără identificatori, și le poți dezactiva din Setări.
 
 Poeziile vorbesc deschis despre trup, sexualitate, boală, moarte și credință și pe alocuri folosesc expresii vulgare. Construită cu Flutter, rulează pe desktop și pe mobil. Poeziile și interfața sunt în cehă.

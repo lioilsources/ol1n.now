@@ -25,11 +25,14 @@ kortlek låses upp för alla språkpar och stilar, utan prenumeration.
 Varje illustrerad kortlek finns i två bildstilar: foton och en tecknad stil
 (pensel och tusch, pastell eller akvarell). Du kan byta när du vill.
 
-### Offline och utan spårning
+### Offline, utan konto, utan reklam
 
 En kortleks bilder laddas ner en gång, sedan körs allt på enheten. Inget
-konto, ingen reklam, ingen analys, dina framsteg lämnar aldrig telefonen. En
-felaktig översättning eller bild rapporterar du direkt från kortet.
+konto, ingen reklam, ingen tredjepartsanalys, dina framsteg lämnar aldrig
+telefonen. På iOS, macOS och datorer skickar appen anonym användningsstatistik
+utan identifierare till utvecklarens egen server, och du kan stänga av den i
+Inställningar; på Android skickar den ingenting. En felaktig översättning
+eller bild rapporterar du direkt från kortet.
 
 Byggd med Flutter (repo `DuolingoCards`). Körs på iOS, Android, macOS,
 Windows och Linux.

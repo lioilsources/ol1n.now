@@ -53,9 +53,11 @@ penghujung larian jika terlupa menghentikannya.
 
 ### Data anda milik anda
 
-Běhánek tiada akaun, pelayan, analitik atau iklan. Laluan kekal dalam telefon anda dan
-lokasi anda tidak dihantar ke mana-mana. Aplikasi hanya meminta lokasi "semasa
-digunakan", tidak pernah "sentiasa".
+Běhánek tiada akaun, iklan atau analitik pihak ketiga. Laluan kekal dalam telefon anda
+dan lokasi anda tidak dihantar ke mana-mana. Hanya statistik penggunaan tanpa nama yang
+tidak mengandungi pengecam dihantar ke pelayan milik pembangun sendiri, dan anda boleh
+mematikannya dalam Tetapan. Aplikasi hanya meminta lokasi "semasa digunakan",
+tidak pernah "sentiasa".
 
 Setiap larian boleh **dieksport sebagai GPX** dan kesemuanya sekali gus disandarkan ke ZIP.
 Eksport sentiasa percuma.

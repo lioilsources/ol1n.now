@@ -27,6 +27,6 @@ Tu ajoutes les ingrédients en tapant, avec des suggestions qui comprennent le t
 
 ### Hors ligne, sans compte
 
-Papánek n'a besoin ni d'internet ni d'inscription, et n'a ni publicité ni outils d'analyse. Les recettes et les images sont directement dans l'appli. L'appli est en tchèque et en anglais.
+Papánek n'a besoin ni d'internet ni d'inscription, et n'a ni publicité ni outils d'analyse tiers. Seules des statistiques d'utilisation anonymes, sans identifiant, partent vers le propre serveur du développeur, et tu peux les désactiver dans les Réglages. Les recettes et les images sont directement dans l'appli. L'appli est en tchèque et en anglais.
 
 Encore en développement : la première version de test 0.1 est disponible sur TestFlight pour iPhone et en APK pour Android dans la section **Téléchargements**.

@@ -116,8 +116,10 @@ being read right now, and pause.
 
 ### No ads, no account
 
-Hajánek has no ads, no sign-up and no analytics. The stories and sounds live on your
-phone and play offline. The app only uses the network to download new stories and
-to upload your voice, if you want that.
+Hajánek has no ads, no sign-up and no third-party analytics. The stories and sounds
+live on your phone and play offline. The app only uses the network to download new
+stories, to upload your voice, if you want that, and to send anonymous usage
+statistics with no identifiers to the developer's own server; you can turn those
+off in Settings.
 
 The app is for children aged roughly three to eight.

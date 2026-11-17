@@ -39,6 +39,6 @@ De app heeft geen account: bij de eerste start registreert de telefoon zich zelf
 
 ### Privacy
 
-Spraakherkenning, vertaling en stem draaien op onze eigen server met GPU, niet in de cloud van een ander. De server slaat geen audio of gespreksteksten op en schrijft ze niet naar logs. De app heeft geen account, advertenties of analytics. Vanwege de server heeft hij een internetverbinding nodig.
+Spraakherkenning, vertaling en stem draaien op onze eigen server met GPU, niet in de cloud van een ander. De server slaat geen audio of gespreksteksten op en schrijft ze niet naar logs. De app heeft geen account, advertenties of analytics van derden; alleen anonieme gebruiksstatistieken zonder identificatoren gaan naar de eigen server van de ontwikkelaar, en je kunt ze uitzetten in Instellingen. Vanwege de server heeft hij een internetverbinding nodig.
 
 Tlumočník zit nog in een gesloten test: op iPhone via TestFlight, op Android via Firebase.

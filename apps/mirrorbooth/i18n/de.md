@@ -30,7 +30,9 @@ Piepsig, Echo, Unterwasser, Roboter oder Rückwärts. Das Ergebnis landet in dei
 
 ### Datenschutz
 
-Das Bild wird nur auf deinem Handy verarbeitet. Kein Konto, keine Werbung, keine Analyse.
-Fotos und Videos werden nirgendwohin gesendet.
+Das Bild wird nur auf deinem Handy verarbeitet. Kein Konto, keine Werbung, keine Analytics
+von Drittanbietern. Fotos und Videos werden nirgendwohin gesendet. Nur anonyme
+Nutzungsstatistiken ohne Kennungen gehen an den eigenen Server des Entwicklers, und du
+kannst sie in den Einstellungen abschalten.
 
 Gebaut mit Flutter, die Filter sind GLSL-Shader.

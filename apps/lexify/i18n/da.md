@@ -26,12 +26,14 @@ for alle sprogpar og stilarter, uden abonnement.
 Hver illustreret bunke findes i to billedstilarter: fotos og én tegnet stil
 (pensel og tusch, pastel eller akvarel). Du kan skifte når som helst.
 
-### Offline og uden sporing
+### Offline, uden konto, uden reklamer
 
 Billederne i en bunke hentes én gang, derefter kører alt på enheden. Ingen
-konto, ingen reklamer, ingen analyse, og dine fremskridt forlader ikke
-telefonen. En forkert oversættelse eller et forkert billede melder du direkte
-fra kortet.
+konto, ingen reklamer, ingen tredjepartsanalyse, og dine fremskridt forlader
+ikke telefonen. På iOS, macOS og desktop sender appen anonym brugsstatistik
+uden identifikatorer til udviklerens egen server, og du kan slå den fra i
+Indstillinger; på Android sender den intet. En forkert oversættelse eller et
+forkert billede melder du direkte fra kortet.
 
 Bygget med Flutter (repo `DuolingoCards`). Kører på iOS, Android, macOS,
 Windows og Linux.

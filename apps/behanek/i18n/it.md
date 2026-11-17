@@ -49,8 +49,10 @@ Puoi tagliare l'inizio e la fine se ti sei dimenticato di fermarla.
 
 ### I tuoi dati sono tuoi
 
-Běhánek non ha account, server, tracciamento né pubblicità. I percorsi restano sul
-telefono e la posizione non viene inviata da nessuna parte. L'app chiede la posizione solo
+Běhánek non ha account, pubblicità né analytics di terze parti. I percorsi restano sul
+telefono e la posizione non viene inviata da nessuna parte. Al server proprio dello
+sviluppatore arrivano solo statistiche d'uso anonime, senza identificatori, e puoi
+disattivarle nelle Impostazioni. L'app chiede la posizione solo
 «mentre usi l'app», mai «sempre».
 
 Ogni corsa si può **esportare in GPX** e tutte insieme si possono salvare in uno ZIP.

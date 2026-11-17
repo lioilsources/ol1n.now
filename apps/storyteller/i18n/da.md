@@ -55,4 +55,4 @@ Appen deler verden op i femten regioner, og fra hver er der ti gratis eventyr, s
 
 Skriften er buttet og letlæselig, overskrifterne »boblede« — appen er til børn og skal også se sådan ud.
 
-Hele forløbet Globus → Personer → Opgave → Problem → Slutning → Oplæg → Sufflør kører på telefonen uden et eneste kald til en server. Uden reklamer, konti og sporing. Brugerfladen og eventyrene er indtil videre kun på tjekkisk.
+Hele forløbet Globus → Personer → Opgave → Problem → Slutning → Oplæg → Sufflør kører på telefonen. Uden reklamer, konti og tredjepartsanalyse; kun anonym brugsstatistik uden identifikatorer sendes til udviklerens egen server, og du kan slå den fra i Indstillinger. Brugerfladen og eventyrene er indtil videre kun på tjekkisk.

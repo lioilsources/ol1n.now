@@ -39,6 +39,6 @@ Aplicația nu are cont: la prima pornire, telefonul se înregistrează singur ca
 
 ### Confidențialitate
 
-Recunoașterea vorbirii, traducerea și vocea rulează pe propriul nostru server cu GPU, nu în cloudul altcuiva. Serverul nu păstrează nici sunetul, nici textele conversațiilor și nu le scrie în loguri. Aplicația nu are cont, reclame sau analytics. Din cauza serverului, are nevoie de conexiune la internet.
+Recunoașterea vorbirii, traducerea și vocea rulează pe propriul nostru server cu GPU, nu în cloudul altcuiva. Serverul nu păstrează nici sunetul, nici textele conversațiilor și nu le scrie în loguri. Aplicația nu are cont, reclame sau analize de la terți; pe serverul propriu al dezvoltatorului ajung doar statistici anonime de utilizare, fără identificatori, și le poți dezactiva din Setări. Din cauza serverului, are nevoie de conexiune la internet.
 
 Tlumočník e încă în testare închisă: pe iPhone prin TestFlight, pe Android prin Firebase.

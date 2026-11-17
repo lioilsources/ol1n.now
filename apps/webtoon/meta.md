@@ -67,8 +67,10 @@ a ukrajinština. Jazyk bublin se přepne v Nastavení.
 
 ### Soukromí
 
-Žádný účet, žádné reklamy, žádné sledování. Toonfork nesbírá osobní data;
-co máš koupené, si pamatuje zařízení a nákupy jde obnovit v Nastavení.
+Žádný účet, žádné reklamy, žádná analytika třetích stran. Toonfork nesbírá
+osobní data. Na vlastní server vývojáře posílá jen anonymní statistiky používání
+bez identifikátorů, vypnout je jde v Nastavení a v dětském profilu se neposílá
+nic. Co máš koupené, si pamatuje zařízení a nákupy jde obnovit v Nastavení.
 
 ## Studio: jak příběhy vznikají
 

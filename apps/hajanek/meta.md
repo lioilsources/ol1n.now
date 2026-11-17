@@ -119,8 +119,10 @@ dýchající kruh (i ten jde vypnout). Na zamčené obrazovce je název pohádky
 
 ### Bez reklam, bez účtu
 
-Hajánek nemá reklamy, registraci ani analytiku. Pohádky a zvuky jsou
-v telefonu a hrají offline. Síť appka používá jen ke stažení nových pohádek
-a k nahrání tvého hlasu, pokud o něj stojíš.
+Hajánek nemá reklamy, registraci ani analytiku třetích stran. Pohádky a zvuky jsou
+v telefonu a hrají offline. Síť appka používá jen ke stažení nových pohádek,
+k nahrání tvého hlasu, pokud o něj stojíš, a k odeslání anonymních statistik
+používání bez identifikátorů na vlastní server vývojáře; ty jde vypnout
+v nastavení.
 
 Appka je pro děti zhruba od tří do osmi let.

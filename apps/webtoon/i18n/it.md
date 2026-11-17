@@ -30,7 +30,7 @@ Storie, librogame e testi del lettore sono in 12 lingue: ceco, inglese, tedesco,
 
 ### Privacy
 
-Niente account, niente pubblicità, niente tracciamento. Toonfork non raccoglie dati personali; quello che hai comprato lo ricorda il dispositivo e gli acquisti si ripristinano nelle Impostazioni.
+Niente account, niente pubblicità, niente analytics di terze parti. Toonfork non raccoglie dati personali. Al server proprio dello sviluppatore arrivano solo statistiche d'uso anonime, senza identificatori; puoi disattivarle nelle Impostazioni, e il profilo Bambini non invia nulla. Quello che hai comprato lo ricorda il dispositivo e gli acquisti si ripristinano nelle Impostazioni.
 
 ## Studio: come nascono le storie
 

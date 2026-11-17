@@ -22,4 +22,4 @@ Pots afegir al perfil fins a vuit llocs: la teva parada, el teu tramvia, un caf�
 
 ### Estat
 
-En desenvolupament. El backend i la primera versió de l’app ja estan fets, però encara no és a les botigues. Sense anuncis i sense rastreig. Només per a adults (18+).
+En desenvolupament. El backend i la primera versió de l’app ja estan fets, però encara no és a les botigues. Sense anuncis i sense analítiques de tercers; al servidor propi del desenvolupador només hi arriben estadístiques d’ús anònimes, sense identificadors, i les pots desactivar a Configuració. Només per a adults (18+).

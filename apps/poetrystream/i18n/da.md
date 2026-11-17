@@ -21,6 +21,6 @@ Tolv skrifttyper, ti farvepaletter med blødt glødende tekst, seks størrelser 
 
 ### Privatliv
 
-Ingen reklamer, konti eller analyse. Indstillingerne bliver kun på din enhed.
+Ingen reklamer, konti eller tredjepartsanalyse. Indstillingerne bliver kun på din enhed. Kun anonym brugsstatistik uden identifikatorer sendes til udviklerens egen server, og du kan slå den fra i Indstillinger.
 
 Digtene taler åbent om krop, seksualitet, sygdom, død og tro og bruger nogle steder grove udtryk. Bygget i Flutter, kører på computer og mobil. Både digte og brugerflade er på tjekkisk.

@@ -116,8 +116,10 @@ judul dongeng, bagian yang sedang dibacakan, dan tombol jeda.
 
 ### Tanpa iklan, tanpa akun
 
-Hajánek tidak punya iklan, pendaftaran, maupun analitik. Dongeng dan suara tersimpan di
-ponsel dan bisa diputar offline. Aplikasi hanya memakai jaringan untuk mengunduh dongeng
-baru dan untuk mengunggah suaramu, kalau kamu menginginkannya.
+Hajánek tidak punya iklan, pendaftaran, maupun analitik pihak ketiga. Dongeng dan suara
+tersimpan di ponsel dan bisa diputar offline. Aplikasi hanya memakai jaringan untuk
+mengunduh dongeng baru, untuk mengunggah suaramu, kalau kamu menginginkannya, dan untuk
+mengirim statistik penggunaan anonim tanpa pengenal ke server milik pengembang sendiri;
+itu bisa kamu matikan di Pengaturan.
 
 Aplikasi ini untuk anak usia sekitar tiga sampai delapan tahun.

@@ -22,4 +22,4 @@ Você pode adicionar ao perfil até oito lugares: seu ponto de ônibus, sua linh
 
 ### Status
 
-Em desenvolvimento. O backend e a primeira versão do app estão prontos, mas ele ainda não está nas lojas. Sem anúncios e sem rastreamento. Somente para maiores de 18 anos.
+Em desenvolvimento. O backend e a primeira versão do app estão prontos, mas ele ainda não está nas lojas. Sem anúncios e sem analytics de terceiros; só estatísticas de uso anônimas, sem identificadores, vão para o servidor próprio do desenvolvedor, e você pode desativá-las em Ajustes. Somente para maiores de 18 anos.

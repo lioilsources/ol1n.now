@@ -22,4 +22,4 @@ Du kan tilføje op til otte steder til din profil: dit stoppested, din sporvogn,
 
 ### Status
 
-Under udvikling. Backend og den første version af appen er færdige, men den er endnu ikke i butikkerne. Ingen reklamer og ingen sporing. Kun for voksne (18+).
+Under udvikling. Backend og den første version af appen er færdige, men den er endnu ikke i butikkerne. Ingen reklamer og ingen tredjepartsanalyse; kun anonym brugsstatistik uden identifikatorer sendes til udviklerens egen server, og du kan slå den fra i Indstillinger. Kun for voksne (18+).

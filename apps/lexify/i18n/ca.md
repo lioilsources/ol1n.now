@@ -27,12 +27,15 @@ Cada baralla il·lustrada té dos estils d'imatge: fotografia i un estil
 dibuixat (pinzell i tinta, pastel o aquarel·la). Pots canviar-lo quan
 vulguis.
 
-### Sense connexió i sense seguiment
+### Sense connexió, sense compte, sense anuncis
 
 Les imatges d'una baralla es baixen una vegada i després tot funciona al
-dispositiu. Sense compte, sense anuncis, sense analítiques: el teu progrés no
-surt del telèfon. Una traducció o una imatge errònia la pots notificar des de
-la mateixa targeta.
+dispositiu. Sense compte, sense anuncis, sense analítiques de tercers: el teu
+progrés no surt del telèfon. A iOS, a macOS i a l'ordinador, l'app envia al
+servidor propi del desenvolupador estadístiques d'ús anònimes, sense
+identificadors, i les pots desactivar a Configuració; a Android no envia res.
+Una traducció o una imatge errònia la pots notificar des de la mateixa
+targeta.
 
 Feta amb Flutter (repositori `DuolingoCards`). Funciona a iOS, Android,
 macOS, Windows i Linux.

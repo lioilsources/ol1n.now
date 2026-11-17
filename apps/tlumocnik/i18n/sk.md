@@ -39,6 +39,6 @@ Appka nemá účet: telefón sa pri prvom spustení sám zaregistruje ako zariad
 
 ### Súkromie
 
-Rozpoznávanie reči, preklad aj hlas bežia na našom vlastnom serveri s GPU, nie v cudzom cloude. Server zvuk ani texty rozhovorov neukladá a nezapisuje do logov. Appka nemá účet, reklamy ani analytiku. Kvôli serveru potrebuje pripojenie na internet.
+Rozpoznávanie reči, preklad aj hlas bežia na našom vlastnom serveri s GPU, nie v cudzom cloude. Server zvuk ani texty rozhovorov neukladá a nezapisuje do logov. Appka nemá účet, reklamy ani analytiku tretích strán; na vlastný server vývojára idú len anonymné štatistiky používania bez identifikátorov a dajú sa vypnúť v Nastaveniach. Kvôli serveru potrebuje pripojenie na internet.
 
 Tlumočník je zatiaľ v uzavretom testovaní: na iPhone cez TestFlight, na Androide cez Firebase.

@@ -51,8 +51,10 @@ si se te olvidó parar.
 
 ### Tus datos son tuyos
 
-Běhánek no tiene cuenta, servidor, analíticas ni anuncios. Las rutas se quedan en tu móvil
-y la ubicación no se envía a ningún sitio. La app pide la ubicación solo «mientras se usa
+Běhánek no tiene cuenta, anuncios ni analíticas de terceros. Las rutas se quedan en tu móvil
+y la ubicación no se envía a ningún sitio. Al servidor propio del desarrollador solo llegan
+estadísticas de uso anónimas, sin identificadores, y puedes desactivarlas en Ajustes. La app
+pide la ubicación solo «mientras se usa
 la app», nunca «siempre».
 
 Cada carrera se puede **exportar como GPX** y todas juntas, guardar en un ZIP. Exportar

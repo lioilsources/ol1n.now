@@ -38,7 +38,9 @@ Prawie wszystko. Rozpoznawanie twarzy, włosów, oczu i brody robi model
 bezpośrednio w telefonie, tak samo jak maski, ocenę koloru włosów, prompty
 i składanie paska. Na serwer trafia tylko jedno zdjęcie z maskami, a z powrotem
 przychodzą gotowe obrazy. Render działa na własnym serwerze GPU, nie w cudzej
-chmurze. Aplikacja nie ma kont, reklam ani płatności.
+chmurze. Aplikacja nie ma kont, reklam ani płatności. Poza tym zdjęciem na własny
+serwer twórcy trafiają tylko anonimowe statystyki użytkowania bez
+identyfikatorów, a możesz je wyłączyć w Ustawieniach.
 
 Restyler jest na razie w zamkniętych testach: na iPhonie przez TestFlight, na
 Androidzie przez Firebase.

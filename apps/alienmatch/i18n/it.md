@@ -22,4 +22,4 @@ Puoi aggiungere al profilo fino a otto luoghi: la tua fermata, il tuo tram, un b
 
 ### Stato
 
-In sviluppo. Il backend e la prima versione dell’app sono pronti, ma non è ancora negli store. Senza pubblicità e senza tracciamento. Solo per adulti (18+).
+In sviluppo. Il backend e la prima versione dell’app sono pronti, ma non è ancora negli store. Senza pubblicità e senza analytics di terze parti; al server proprio dello sviluppatore arrivano solo statistiche d’uso anonime, senza identificatori, e puoi disattivarle nelle Impostazioni. Solo per adulti (18+).

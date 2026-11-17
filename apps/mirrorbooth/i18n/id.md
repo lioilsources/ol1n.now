@@ -30,7 +30,8 @@ Tupai, Gema, Bawah air, Robot, atau Terbalik. Hasilnya tersimpan di galeri.
 
 ### Privasi
 
-Gambar diproses hanya di ponselmu. Tanpa akun, iklan, atau analitik. Foto dan video
-tidak dikirim ke mana pun.
+Gambar diproses hanya di ponselmu. Tanpa akun, iklan, atau analitik pihak ketiga. Foto
+dan video tidak dikirim ke mana pun. Hanya statistik penggunaan anonim tanpa pengenal
+yang dikirim ke server milik pengembang sendiri, dan itu bisa kamu matikan di Pengaturan.
 
 Dibuat dengan Flutter, filternya berupa shader GLSL.

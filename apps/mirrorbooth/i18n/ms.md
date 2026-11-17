@@ -30,7 +30,9 @@ Tupai, Gema, Bawah air, Robot atau Terbalik. Hasilnya disimpan dalam galeri.
 
 ### Privasi
 
-Imej diproses hanya dalam telefon anda. Tiada akaun, iklan atau analitik. Foto dan video
-tidak dihantar ke mana-mana.
+Imej diproses hanya dalam telefon anda. Tiada akaun, iklan atau analitik pihak ketiga.
+Foto dan video tidak dihantar ke mana-mana. Hanya statistik penggunaan tanpa nama yang
+tidak mengandungi pengecam dihantar ke pelayan milik pembangun sendiri, dan anda boleh
+mematikannya dalam Tetapan.
 
 Dibina dengan Flutter, penapisnya ialah shader GLSL.

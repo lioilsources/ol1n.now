@@ -25,12 +25,14 @@ låses opp for alle språkpar og stiler, uten abonnement.
 Hver illustrert kortstokk finnes i to bildestiler: foto og én tegnet stil
 (pensel og tusj, pastell eller akvarell). Du kan bytte når som helst.
 
-### Offline og uten sporing
+### Offline, uten konto, uten reklame
 
 Bildene i en kortstokk lastes ned én gang, deretter kjører alt på enheten.
-Ingen konto, ingen reklame, ingen analyse, og fremgangen din forlater aldri
-telefonen. En feil oversettelse eller et feil bilde melder du rett fra
-kortet.
+Ingen konto, ingen reklame, ingen tredjepartsanalyse, og fremgangen din
+forlater aldri telefonen. På iOS, macOS og desktop sender appen anonym
+bruksstatistikk uten identifikatorer til utviklerens egen server, og du kan
+slå den av i Innstillinger; på Android sender den ingenting. En feil
+oversettelse eller et feil bilde melder du rett fra kortet.
 
 Bygd med Flutter (repo `DuolingoCards`). Kjører på iOS, Android, macOS,
 Windows og Linux.

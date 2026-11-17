@@ -110,8 +110,10 @@ gomb látható.
 
 ### Reklám nélkül, fiók nélkül
 
-A Hajánekben nincs reklám, regisztráció és analitika. A mesék és a hangok a telefonon
-vannak, és offline szólnak. Az alkalmazás csak új mesék letöltéséhez és a hangod
-feltöltéséhez használja a hálózatot, ha kéred.
+A Hajánekben nincs reklám, regisztráció és harmadik féltől származó analitika. A mesék
+és a hangok a telefonon vannak, és offline szólnak. Az alkalmazás csak három dologra
+használja a hálózatot: új mesék letöltésére, a hangod feltöltésére, ha kéred, és névtelen,
+azonosítók nélküli használati statisztikák küldésére a fejlesztő saját szerverére;
+ezeket a Beállításokban kikapcsolhatod.
 
 Az alkalmazás nagyjából háromtól nyolcéves korig ajánlott.

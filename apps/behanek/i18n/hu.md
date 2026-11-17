@@ -49,9 +49,11 @@ levághatod, ha elfelejtettél megállni.
 
 ### Az adataid a tieid
 
-A Běhánekben nincs fiók, szerver, analitika és reklám. Az útvonalak a telefonodon
-maradnak, a helyadataidat sehova nem küldi el. Az app csak „az app használata közben” kér
-helyadatot, sosem „mindig”.
+A Běhánekben nincs fiók, reklám és harmadik féltől származó analitika. Az útvonalak a
+telefonodon maradnak, a helyadataidat sehova nem küldi el. A fejlesztő saját szerverére
+csak névtelen, azonosítók nélküli használati statisztikák mennek, és ezeket a
+Beállításokban kikapcsolhatod. Az app csak „az app használata közben” kér helyadatot,
+sosem „mindig”.
 
 Minden futás **exportálható GPX-ként**, és az összeset egyszerre elmentheted egy ZIP-be.
 Az export mindig ingyenes.

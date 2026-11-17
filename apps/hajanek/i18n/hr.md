@@ -106,8 +106,10 @@ nekoliko sekundi sam potamni, a jedino što se na njemu miče jest krug koji pol
 
 ### Bez oglasa, bez računa
 
-Hajánek nema oglase, registraciju ni analitiku. Bajke i zvukovi su u telefonu i sviraju
-bez veze. Mrežu aplikacija koristi samo za preuzimanje novih bajki i za slanje tvog
-glasa, ako ga želiš.
+Hajánek nema oglase, registraciju ni analitiku trećih strana. Bajke i zvukovi su
+u telefonu i sviraju bez veze. Mrežu aplikacija koristi samo za preuzimanje novih bajki,
+za slanje tvog glasa, ako ga želiš, i za slanje anonimne statistike korištenja bez
+identifikatora na vlastiti poslužitelj razvijatelja; statistiku možeš isključiti
+u Postavkama.
 
 Aplikacija je za djecu otprilike od tri do osam godina.

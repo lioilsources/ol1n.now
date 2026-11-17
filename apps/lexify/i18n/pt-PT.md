@@ -28,11 +28,14 @@ Cada baralho ilustrado tem dois estilos de imagem: fotografia e um estilo
 desenhado (pincel e tinta-da-china, pastel ou aguarela). Podes mudar quando
 quiseres.
 
-### Offline e sem rastreio
+### Offline, sem conta, sem anúncios
 
 As imagens de um baralho são descarregadas uma vez e depois tudo corre no
-dispositivo. Sem conta, sem anúncios, sem análises: o teu progresso não sai
-do telemóvel. Uma tradução ou imagem errada podes reportá-la diretamente a
+dispositivo. Sem conta, sem anúncios, sem análises de terceiros: o teu
+progresso não sai do telemóvel. No iOS, no macOS e no computador, a app envia
+estatísticas de utilização anónimas, sem identificadores, para o servidor
+próprio do programador, e podes desativá-las nas Definições; no Android, não
+envia nada. Uma tradução ou imagem errada podes reportá-la diretamente a
 partir do cartão.
 
 Feito em Flutter (repositório `DuolingoCards`). Funciona em iOS, Android,

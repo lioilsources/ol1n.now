@@ -30,7 +30,7 @@ Príbehy, gamebooky aj texty čítačky sú v 12 jazykoch: čeština, angličtin
 
 ### Súkromie
 
-Žiadny účet, žiadne reklamy, žiadne sledovanie. Toonfork nezbiera osobné údaje; čo máš kúpené, si pamätá zariadenie a nákupy sa dajú obnoviť v Nastaveniach.
+Žiadny účet, žiadne reklamy, žiadna analytika tretích strán. Toonfork nezbiera osobné údaje. Na vlastný server vývojára idú len anonymné štatistiky používania bez identifikátorov, dajú sa vypnúť v Nastaveniach a detský profil neposiela nič. Čo máš kúpené, si pamätá zariadenie a nákupy sa dajú obnoviť v Nastaveniach.
 
 ## Studio: ako príbehy vznikajú
 

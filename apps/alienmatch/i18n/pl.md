@@ -22,4 +22,4 @@ Do profilu możesz dodać do ośmiu miejsc: swój przystanek, tramwaj, kawiarni�
 
 ### Stan
 
-W trakcie tworzenia. Backend i pierwsza wersja aplikacji są gotowe, ale w sklepach jej jeszcze nie ma. Bez reklam i bez śledzenia. Tylko dla dorosłych (18+).
+W trakcie tworzenia. Backend i pierwsza wersja aplikacji są gotowe, ale w sklepach jej jeszcze nie ma. Bez reklam i bez analityki firm trzecich; na własny serwer twórcy trafiają tylko anonimowe statystyki użytkowania bez identyfikatorów, a możesz je wyłączyć w Ustawieniach. Tylko dla dorosłych (18+).

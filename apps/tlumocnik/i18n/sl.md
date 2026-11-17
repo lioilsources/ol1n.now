@@ -39,6 +39,6 @@ Aplikacija nima računa: telefon se ob prvem zagonu sam registrira kot naprava. 
 
 ### Zasebnost
 
-Prepoznavanje govora, prevod in glas tečejo na našem lastnem strežniku z GPU, ne v tujem oblaku. Strežnik ne shranjuje zvoka ne besedil pogovorov in jih ne zapisuje v dnevnike. Aplikacija nima računa, oglasov ne analitike. Zaradi strežnika potrebuje internetno povezavo.
+Prepoznavanje govora, prevod in glas tečejo na našem lastnem strežniku z GPU, ne v tujem oblaku. Strežnik ne shranjuje zvoka ne besedil pogovorov in jih ne zapisuje v dnevnike. Aplikacija nima računa, oglasov ne analitike tretjih oseb; na lastni strežnik razvijalca gre le anonimna statistika uporabe brez identifikatorjev, ki jo lahko izklopiš v Nastavitvah. Zaradi strežnika potrebuje internetno povezavo.
 
 Tlumočník je zaenkrat v zaprtem testiranju: na iPhonu prek TestFlighta, na Androidu prek Firebasea.

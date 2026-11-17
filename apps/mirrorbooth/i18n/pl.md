@@ -30,7 +30,9 @@ Wiewiórka, Echo, Pod wodą, Robot albo Wspak. Wynik zapisuje się w galerii.
 
 ### Prywatność
 
-Obraz jest przetwarzany tylko w telefonie. Bez konta, reklam i analityki. Zdjęcia
-i filmy nie są nigdzie wysyłane.
+Obraz jest przetwarzany tylko w telefonie. Bez konta, reklam i analityki firm
+trzecich. Zdjęcia i filmy nie są nigdzie wysyłane. Na własny serwer twórcy trafiają
+tylko anonimowe statystyki użytkowania bez identyfikatorów, a możesz je wyłączyć
+w Ustawieniach.
 
 Zbudowane we Flutterze, filtry to shadery GLSL.

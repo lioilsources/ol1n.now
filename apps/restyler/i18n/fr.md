@@ -41,6 +41,9 @@ l'estimation de la couleur des cheveux, les prompts et l'assemblage de la
 bande. Seule une photo avec les masques part vers le serveur, et les images
 finies reviennent. Le rendu tourne sur notre propre serveur GPU, pas dans le
 cloud de quelqu'un d'autre. L'appli n'a ni comptes, ni pubs, ni paiements.
+En dehors de cette photo, elle n'envoie que des statistiques d'utilisation
+anonymes, sans identifiant, au propre serveur du développeur, et tu peux les
+désactiver dans les Réglages.
 
 Restyler est encore en test fermé : sur iPhone via TestFlight, sur Android via
 Firebase.

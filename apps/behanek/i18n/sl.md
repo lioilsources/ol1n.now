@@ -47,8 +47,10 @@ pohodniški (plastnice, poti) ali satelitski. Začetek in konec teka lahko obre�
 
 ### Tvoji podatki so tvoji
 
-Běhánek nima računa, strežnika, analitike ne oglasov. Poti ostanejo v telefonu
-in lokacija se nikamor ne pošilja. Aplikacija želi lokacijo samo „med uporabo“, nikoli „vedno“.
+Běhánek nima računa, oglasov ne analitike tretjih oseb. Poti ostanejo v telefonu
+in lokacija se nikamor ne pošilja. Na lastni strežnik razvijalca gre le anonimna statistika
+uporabe brez identifikatorjev, ki jo lahko izklopiš v Nastavitvah. Aplikacija želi lokacijo
+samo „med uporabo“, nikoli „vedno“.
 
 Vsak tek lahko **izvoziš kot GPX** in vse naenkrat varnostno kopiraš v ZIP.
 Izvoz je vedno brezplačen.

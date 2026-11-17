@@ -47,8 +47,10 @@ ako si ga zaboravio zaustaviti.
 
 ### Tvoji podaci su tvoji
 
-Běhánek nema račun, poslužitelj, analitiku ni oglase. Rute ostaju u mobitelu,
-a lokacija se nikamo ne šalje. Aplikacija traži lokaciju samo „tijekom korištenja“, nikad „uvijek“.
+Běhánek nema račun, oglase ni analitiku trećih strana. Rute ostaju u mobitelu,
+a lokacija se nikamo ne šalje. Na vlastiti poslužitelj razvijatelja šalje se samo anonimna
+statistika korištenja bez identifikatora, a možeš je isključiti u Postavkama. Aplikacija
+traži lokaciju samo „tijekom korištenja“, nikad „uvijek“.
 
 Svako trčanje možeš **izvesti kao GPX**, a sva odjednom sigurnosno kopirati u ZIP.
 Izvoz je uvijek besplatan.

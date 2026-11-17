@@ -31,8 +31,10 @@ denken aan papier in het donker.
 
 ### Privacy
 
-Geen advertenties, accounts of analytics. Instellingen blijven alleen op je
-apparaat.
+Geen advertenties, accounts of analytics van derden. Instellingen blijven
+alleen op je apparaat. Alleen anonieme gebruiksstatistieken zonder
+identificatoren gaan naar de eigen server van de ontwikkelaar, en je kunt ze
+uitzetten in Instellingen.
 
 De gedichten spreken openlijk over het lichaam, seksualiteit, ziekte, dood
 en geloof en gebruiken soms grove taal. Gebouwd met Flutter, werkt op

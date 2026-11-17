@@ -27,11 +27,13 @@ a štýly, bez predplatného.
 Každý ilustrovaný balíček má dva štýly obrázkov: fotografie a jeden kreslený
 (štetec a tuš, pastel alebo akvarel). Prepnúť sa dá kedykoľvek.
 
-### Offline a bez sledovania
+### Offline, bez účtu, bez reklám
 
 Obrázky balíčka sa stiahnu raz, potom všetko beží v zariadení. Žiadny účet,
-žiadne reklamy, žiadna analytika, pokrok neopúšťa telefón. Zlý preklad alebo
-obrázok nahlásiš priamo z kartičky.
+žiadne reklamy, žiadna analytika tretích strán, pokrok neopúšťa telefón. Na iOS,
+macOS a desktope posiela appka na vlastný server vývojára anonymné štatistiky
+používania bez identifikátorov, ktoré sa dajú vypnúť v Nastaveniach; na Androide
+neposiela nič. Zlý preklad alebo obrázok nahlásiš priamo z kartičky.
 
 Postavené vo Flutteri (repo `DuolingoCards`). Beží na iOS, Androide, macOS,
 Windowse a Linuxe.

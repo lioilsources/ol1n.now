@@ -27,6 +27,6 @@ Gratis zijn 50 recepten uit verschillende keukens: Tsjechisch, Italiaans, Vietna
 
 ### Offline, zonder account
 
-Papánek heeft geen internet of registratie nodig en heeft geen advertenties of analytics. Recepten en afbeeldingen zitten gewoon in de app. De app is in het Tsjechisch en Engels.
+Papánek heeft geen internet of registratie nodig en heeft geen advertenties of analytics van derden. Alleen anonieme gebruiksstatistieken zonder identificatoren gaan naar de eigen server van de ontwikkelaar, en je kunt ze uitzetten in Instellingen. Recepten en afbeeldingen zitten gewoon in de app. De app is in het Tsjechisch en Engels.
 
 Nog in ontwikkeling: de eerste testversie 0.1 staat in TestFlight voor iPhone en als APK voor Android in de sectie **Downloads**.

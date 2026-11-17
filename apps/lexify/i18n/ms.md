@@ -27,11 +27,15 @@ semua pasangan bahasa dan gaya, tanpa langganan.
 Setiap dek bergambar ada dua gaya gambar: foto dan satu gaya lukisan (berus
 dan dakwat, pastel atau cat air). Anda boleh menukarnya bila-bila masa.
 
-### Luar talian dan tanpa penjejakan
+### Luar talian, tanpa akaun, tanpa iklan
 
 Gambar dek dimuat turun sekali, kemudian semuanya berjalan dalam peranti.
-Tiada akaun, tiada iklan, tiada analitik, kemajuan anda tidak keluar dari
-telefon. Terjemahan atau gambar yang salah boleh dilaporkan terus dari kad.
+Tiada akaun, tiada iklan, tiada analitik pihak ketiga, kemajuan anda tidak
+keluar dari telefon. Pada iOS, macOS dan desktop, aplikasi menghantar statistik
+penggunaan tanpa nama yang tidak mengandungi pengecam ke pelayan milik pembangun
+sendiri, dan anda boleh mematikannya dalam Tetapan; pada Android, ia tidak
+menghantar apa-apa. Terjemahan atau gambar yang salah boleh dilaporkan terus
+dari kad.
 
 Dibina dengan Flutter (repo `DuolingoCards`). Berjalan pada iOS, Android,
 macOS, Windows dan Linux.

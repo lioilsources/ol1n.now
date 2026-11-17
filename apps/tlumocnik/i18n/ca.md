@@ -39,6 +39,6 @@ L’app no té compte: en la primera obertura, el mòbil es registra sol com a d
 
 ### Privadesa
 
-El reconeixement de veu, la traducció i la veu funcionen al nostre propi servidor amb GPU, no al núvol d’algú altre. El servidor no desa ni l’àudio ni els textos de les converses i no els escriu en registres. L’app no té compte, anuncis ni analítica. Pel servidor, necessita connexió a internet.
+El reconeixement de veu, la traducció i la veu funcionen al nostre propi servidor amb GPU, no al núvol d’algú altre. El servidor no desa ni l’àudio ni els textos de les converses i no els escriu en registres. L’app no té compte, anuncis ni analítiques de tercers; al servidor propi del desenvolupador només hi arriben estadístiques d’ús anònimes, sense identificadors, i les pots desactivar a Configuració. Pel servidor, necessita connexió a internet.
 
 Tlumočník encara és en proves tancades: a l’iPhone a través de TestFlight, a l’Android a través de Firebase.

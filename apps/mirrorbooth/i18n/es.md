@@ -30,7 +30,9 @@ Ardilla, Eco, Bajo el agua, Robot o Al revés. El resultado se guarda en tu gale
 
 ### Privacidad
 
-La imagen se procesa solo en tu teléfono. Sin cuenta, anuncios ni analíticas. Las fotos
-y los vídeos no se envían a ningún sitio.
+La imagen se procesa solo en tu teléfono. Sin cuenta, anuncios ni analíticas de terceros.
+Las fotos y los vídeos no se envían a ningún sitio. Al servidor propio del desarrollador
+solo llegan estadísticas de uso anónimas, sin identificadores, y puedes desactivarlas en
+Ajustes.
 
 Hecho con Flutter, los filtros son shaders GLSL.

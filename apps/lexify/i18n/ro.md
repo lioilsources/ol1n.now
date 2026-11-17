@@ -28,11 +28,14 @@ abonament.
 Fiecare pachet ilustrat are două stiluri de imagine: fotografii și un stil
 desenat (pensulă și tuș, pastel sau acuarelă). Poți schimba oricând.
 
-### Offline și fără urmărire
+### Offline, fără cont, fără reclame
 
 Imaginile unui pachet se descarcă o singură dată, apoi totul rulează pe
-dispozitiv. Fără cont, fără reclame, fără analiză, progresul tău nu părăsește
-telefonul. O traducere sau o imagine greșită o raportezi direct din cartonaș.
+dispozitiv. Fără cont, fără reclame, fără analize de la terți, progresul tău nu
+părăsește telefonul. Pe iOS, macOS și desktop, aplicația trimite pe serverul
+propriu al dezvoltatorului statistici anonime de utilizare, fără identificatori,
+pe care le poți dezactiva din Setări; pe Android nu trimite nimic. O traducere
+sau o imagine greșită o raportezi direct din cartonaș.
 
 Construită cu Flutter (repo `DuolingoCards`). Rulează pe iOS, Android, macOS,
 Windows și Linux.

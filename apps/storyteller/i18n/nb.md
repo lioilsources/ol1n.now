@@ -55,4 +55,4 @@ Appen deler verden inn i femten regioner, og fra hver av dem er ti eventyr grati
 
 Skriften er lubben og lettlest, overskriftene «boblete» — appen er for barn og skal se sånn ut også.
 
-Hele løpet Globus → Personer → Oppdrag → Problem → Slutt → Skisse → Sufflør kjører på telefonen, uten et eneste kall til en server. Uten reklame, kontoer og sporing. Grensesnittet og eventyrene er foreløpig bare på tsjekkisk.
+Hele løpet Globus → Personer → Oppdrag → Problem → Slutt → Skisse → Sufflør kjører på telefonen. Uten reklame, kontoer og tredjepartsanalyse; bare anonym bruksstatistikk uten identifikatorer sendes til utviklerens egen server, og du kan slå den av i Innstillinger. Grensesnittet og eventyrene er foreløpig bare på tsjekkisk.

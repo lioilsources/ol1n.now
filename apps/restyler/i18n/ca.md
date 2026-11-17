@@ -40,7 +40,9 @@ model directament al mòbil, igual que les màscares, l'estimació del color del
 cabells, els prompts i el muntatge de la tira. Al servidor només hi va una
 foto amb les màscares i tornen les imatges acabades. El render es fa en un
 servidor GPU propi, no al núvol d'altri. L'app no té comptes, anuncis ni
-pagaments.
+pagaments. A banda d'aquesta foto, al servidor propi del desenvolupador només
+hi arriben estadístiques d'ús anònimes, sense identificadors, i les pots
+desactivar a Configuració.
 
 Restyler encara és en proves tancades: a l'iPhone a través de TestFlight, a
 Android a través de Firebase.

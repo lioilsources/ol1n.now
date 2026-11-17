@@ -27,6 +27,6 @@ Kostenlos sind 50 Rezepte aus verschiedenen Küchen: tschechisch, italienisch, v
 
 ### Offline, ohne Konto
 
-Papánek braucht weder Internet noch Registrierung und hat weder Werbung noch Analytics. Rezepte und Bilder sind direkt in der App. Die App gibt es auf Tschechisch und Englisch.
+Papánek braucht weder Internet noch Registrierung und hat weder Werbung noch Analytics von Drittanbietern. Nur anonyme Nutzungsstatistiken ohne Kennungen gehen an den eigenen Server des Entwicklers, und du kannst sie in den Einstellungen abschalten. Rezepte und Bilder sind direkt in der App. Die App gibt es auf Tschechisch und Englisch.
 
 Noch in Entwicklung: Die erste Testversion 0.1 ist in TestFlight für das iPhone und als APK für Android im Bereich **Downloads** verfügbar.

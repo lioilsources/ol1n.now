@@ -39,6 +39,6 @@ A app não tem conta: no primeiro arranque, o telemóvel regista-se sozinho como
 
 ### Privacidade
 
-O reconhecimento de fala, a tradução e a voz correm no nosso próprio servidor com GPU, não na nuvem de outros. O servidor não guarda o áudio nem os textos das conversas e não os escreve em registos. A app não tem conta, anúncios nem análise de utilização. Por causa do servidor, precisa de ligação à internet.
+O reconhecimento de fala, a tradução e a voz correm no nosso próprio servidor com GPU, não na nuvem de outros. O servidor não guarda o áudio nem os textos das conversas e não os escreve em registos. A app não tem conta, anúncios nem análises de terceiros; para o servidor próprio do programador só seguem estatísticas de utilização anónimas, sem identificadores, e podes desativá-las nas Definições. Por causa do servidor, precisa de ligação à internet.
 
 O Tlumočník ainda está em testes fechados: no iPhone através do TestFlight, no Android através do Firebase.

@@ -30,7 +30,9 @@ Scoiattolo, Eco, Sott’acqua, Robot o Al contrario. Il risultato viene salvato 
 
 ### Privacy
 
-L’immagine viene elaborata solo sul telefono. Nessun account, pubblicità o analytics.
-Foto e video non vengono inviati da nessuna parte.
+L’immagine viene elaborata solo sul telefono. Nessun account, pubblicità o analytics di
+terze parti. Foto e video non vengono inviati da nessuna parte. Al server proprio dello
+sviluppatore arrivano solo statistiche d’uso anonime, senza identificatori, e puoi
+disattivarle nelle Impostazioni.
 
 Realizzata con Flutter, i filtri sono shader GLSL.

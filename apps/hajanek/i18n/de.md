@@ -114,8 +114,10 @@ gerade gelesen wird, und Pause.
 
 ### Ohne Werbung, ohne Konto
 
-Hajánek hat keine Werbung, keine Registrierung und keine Analytik. Märchen und Klänge
-sind auf dem Handy und spielen offline. Das Netz nutzt die App nur, um neue Märchen
-herunterzuladen und deine Stimme hochzuladen, wenn du das möchtest.
+Hajánek hat keine Werbung, keine Registrierung und keine Analytics von Drittanbietern.
+Märchen und Klänge sind auf dem Handy und spielen offline. Das Netz nutzt die App nur, um
+neue Märchen herunterzuladen, deine Stimme hochzuladen, wenn du das möchtest, und anonyme
+Nutzungsstatistiken ohne Kennungen an den eigenen Server des Entwicklers zu schicken; die
+kannst du in den Einstellungen abschalten.
 
 Die App ist für Kinder von etwa drei bis acht Jahren.

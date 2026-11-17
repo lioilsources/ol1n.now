@@ -30,7 +30,7 @@ Tarinat, pelikirjat ja lukijan tekstit ovat saatavilla 12 kielellä: tšekki, en
 
 ### Yksityisyys
 
-Ei tiliä, ei mainoksia, ei seurantaa. Toonfork ei kerää henkilötietoja; laite muistaa, mitä olet ostanut, ja ostot voi palauttaa Asetuksista.
+Ei tiliä, ei mainoksia, ei kolmannen osapuolen analytiikkaa. Toonfork ei kerää henkilötietoja. Kehittäjän omalle palvelimelle lähtee vain nimettömiä käyttötilastoja ilman tunnisteita, ne voi poistaa käytöstä Asetuksista, ja lasten profiili ei lähetä mitään. Laite muistaa, mitä olet ostanut, ja ostot voi palauttaa Asetuksista.
 
 ## Studio: näin tarinat syntyvät
 

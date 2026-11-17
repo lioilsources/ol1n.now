@@ -39,7 +39,9 @@ Neredeyse her şey. Yüz, saç, göz ve sakal tanımayı doğrudan telefondaki b
 model yapar; maskeler, saç rengi tahmini, istemler ve şeridin dizilmesi de
 öyle. Sunucuya maskeleriyle birlikte yalnızca bir fotoğraf gider, geriye hazır
 görseller gelir. Render, başkasının bulutunda değil, kendi GPU sunucumuzda
-çalışır. Uygulamada hesap, reklam ya da ödeme yok.
+çalışır. Uygulamada hesap, reklam ya da ödeme yok. Bu fotoğraf
+dışında geliştiricinin kendi sunucusuna yalnızca tanımlayıcı içermeyen anonim
+kullanım istatistikleri gider ve bunları Ayarlar'dan kapatabilirsin.
 
 Restyler şimdilik kapalı testte: iPhone'da TestFlight, Android'de Firebase
 üzerinden.

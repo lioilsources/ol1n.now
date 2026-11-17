@@ -39,6 +39,6 @@ L’app non ha un account: al primo avvio il telefono si registra da solo come d
 
 ### Privacy
 
-Riconoscimento vocale, traduzione e voce girano sul nostro server con GPU, non nel cloud di qualcun altro. Il server non salva né l’audio né i testi delle conversazioni e non li scrive nei log. L’app non ha account, pubblicità né analytics. Per via del server, serve una connessione a internet.
+Riconoscimento vocale, traduzione e voce girano sul nostro server con GPU, non nel cloud di qualcun altro. Il server non salva né l’audio né i testi delle conversazioni e non li scrive nei log. L’app non ha account, pubblicità né analytics di terze parti; al server proprio dello sviluppatore arrivano solo statistiche d’uso anonime, senza identificatori, e puoi disattivarle nelle Impostazioni. Per via del server, serve una connessione a internet.
 
 Tlumočník è ancora in test chiuso: su iPhone tramite TestFlight, su Android tramite Firebase.
