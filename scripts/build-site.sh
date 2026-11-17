@@ -1086,7 +1086,7 @@ done | LC_ALL=C sort -t "$TAB" -k1,1)"
 # The inner loop is the app's language list: every page an app has is built
 # once per language it declares, and the index (one shared page) is built from
 # the base language only.
-CARDS=""
+CARDS=""; AZ_SEEN=""
 # Index cards of the other languages, one file per app and language, plus the
 # pieces of the Czech card that a language the app does not ship falls back to.
 CARDTMP="$(mktemp -d "${TMPDIR:-/tmp}/oln-cards.XXXXXX")"
@@ -1101,6 +1101,13 @@ while IFS="$TAB" read -r ord meta; do
   icon="$(icon_html "$slug" "$name")"
   langs="$(app_langs "$meta")"
   INDEX_LANGS="$INDEX_LANGS $langs"; INDEX_SLUGS="$INDEX_SLUGS $slug"
+  # A-Z jump row on the index: the first card of each initial carries id="az-<letter>".
+  # The initial is that of the sort key, so Č counts as C and Š as S.
+  azid=""; az="$(printf '%s' "$ord" | cut -c1)"
+  case "$az" in
+    [a-z]) case " $AZ_SEEN " in *" $az "*) ;; *) AZ_SEEN="$AZ_SEEN $az"; azid=" id=\"az-$az\"" ;; esac ;;
+  esac
+  printf '%s' "$azid" > "$CARDTMP/$slug.az"
   {
     printf '%s\n' "$featured" "$(fm_get "$meta" desktop)" "$(fm_get "$meta" mobile)"
     printf '%s\n' "$(fm_get "$meta" name)" "$(fm_get "$meta" tagline)" "$icon"
@@ -1130,7 +1137,7 @@ while IFS="$TAB" read -r ord meta; do
 
     # index card — one per app, in the base language
     if [ "$lang" = "$I18N_BASE" ]; then
-      CARDS="$CARDS<a class=\"app-card\" href=\"$(page_name "$slug")\">
+      CARDS="$CARDS<a class=\"app-card\"$azid href=\"$(page_name "$slug")\">
   <div class=\"icon\">$icon</div>
   <h3 class=\"name\">$lname</h3>
   <p class=\"tagline\">$tagline</p>
@@ -1138,7 +1145,7 @@ while IFS="$TAB" read -r ord meta; do
 </a>
 "
     else
-      printf '%s' "<a class=\"app-card\" href=\"$(page_name "$slug")\">
+      printf '%s' "<a class=\"app-card\"$azid href=\"$(page_name "$slug")\">
   <div class=\"icon\">$icon</div>
   <h3 class=\"name\">$lname</h3>
   <p class=\"tagline\"$clang>$tagline</p>
@@ -1374,6 +1381,20 @@ for page in "$ROOT"/pages/*.html; do
 done
 I18N_LANG="$I18N_BASE"
 
+# A-Z jump row: every letter is shown so the row never shifts; a letter no app
+# starts with is a dimmed, unfocusable span.
+az_nav_html() {
+  printf '<nav class="az-jump" aria-label="%s">' "$(esc "$(t nav.az)")"
+  for _l in a b c d e f g h i j k l m n o p q r s t u v w x y z; do
+    _u="$(printf '%s' "$_l" | tr 'a-z' 'A-Z')"
+    case " $AZ_SEEN " in
+      *" $_l "*) printf '<a href="#az-%s">%s</a>' "$_l" "$_u" ;;
+      *) printf '<span aria-hidden="true">%s</span>' "$_u" ;;
+    esac
+  done
+  printf '</nav>'
+}
+
 # ---- build index ----
 # One index per language that at least one app ships: index.html stays the
 # Czech one, index.<lang>.html lists every app with the card in that language,
@@ -1385,7 +1406,7 @@ for lang in $INDEX_LANGS; do
   menu="$(lang_switch_html index "" $INDEX_LANGS)"
   {
     emit_head "Ananas&Bananas — olin.now" "$(alts_html index "" $INDEX_LANGS)"
-    if [ -n "$menu" ]; then printf '<div class="page-top index-top">%s</div>\n' "$menu"; fi
+    printf '<div class="page-top index-top">%s%s</div>\n' "$(az_nav_html)" "$menu"
     echo '<section class="app-grid">'
     if [ "$lang" = "$I18N_BASE" ]; then
       printf '%s' "$CARDS"
@@ -1394,8 +1415,8 @@ for lang in $INDEX_LANGS; do
         if [ -f "$CARDTMP/$slug.$lang" ]; then cat "$CARDTMP/$slug.$lang"; continue; fi
         { IFS= read -r fb_feat; IFS= read -r fb_desk; IFS= read -r fb_mob
           IFS= read -r fb_name; IFS= read -r fb_tag; IFS= read -r fb_icon; } < "$CARDTMP/$slug.fb"
-        printf '<a class="app-card" href="%s" hreflang="%s">\n  <div class="icon">%s</div>\n  <h3 class="name">%s</h3>\n  <p class="tagline" lang="%s" dir="ltr">%s</p>\n  <div class="badges">%s</div>\n</a>\n' \
-          "$(page_name "$slug" "" "$I18N_BASE")" "$I18N_BASE" "$fb_icon" "$fb_name" "$I18N_BASE" "$fb_tag" \
+        printf '<a class="app-card"%s href="%s" hreflang="%s">\n  <div class="icon">%s</div>\n  <h3 class="name">%s</h3>\n  <p class="tagline" lang="%s" dir="ltr">%s</p>\n  <div class="badges">%s</div>\n</a>\n' \
+          "$(cat "$CARDTMP/$slug.az")" "$(page_name "$slug" "" "$I18N_BASE")" "$I18N_BASE" "$fb_icon" "$fb_name" "$I18N_BASE" "$fb_tag" \
           "$(badges_from "$fb_feat" "$fb_desk" "$fb_mob")"
       done
     fi

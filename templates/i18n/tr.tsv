@@ -2,6 +2,7 @@
 nav.all_apps	← Tüm uygulamalar
 nav.back_to	← %s sayfasına dön
 nav.lang	Dil
+nav.az	Harfe göre uygulamalar
 title.app	%s — olin.now
 title.skins	%s — skinler — olin.now
 badge.featured	★ Öne çıkan

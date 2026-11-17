@@ -171,6 +171,20 @@ a:hover { text-decoration: underline; }
 .app-card .name { font-size: 18px; font-weight: 600; color: var(--text); margin: 0; }
 .app-card .tagline { color: var(--text-dim); font-size: 14px; margin: 0; flex: 1; }
 
+/* A-Z jump row on the index. It stays at the top while scrolling; a card
+   reached through it stops below the row, not under it. */
+.index-top { position: sticky; top: 0; z-index: 20; background: var(--bg); padding: 6px 0; }
+.az-jump { display: flex; flex-wrap: wrap; gap: 2px; margin: 8px 0 0; }
+.az-jump a, .az-jump span {
+  min-width: 28px; height: 28px; padding: 0 4px; border-radius: 8px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600;
+}
+.az-jump a { color: var(--accent); }
+.az-jump a:hover, .az-jump a:focus-visible { background: var(--accent-soft); text-decoration: none; }
+.az-jump span { color: var(--text-dim); opacity: .4; }
+.app-card[id] { scroll-margin-top: 96px; }
+
 /* Platform badges */
 .badges { display: flex; flex-wrap: wrap; gap: 6px; }
 .badge {
