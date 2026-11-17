@@ -11,8 +11,6 @@ Ol1n Market היא חנות למודלים בתלת־ממד של אביזרים 
 ובביטקוין יגיע בקרוב. כל הורדה מגיעה עם רישיון וקובץ README עם
 השלבים ל־Roblox Studio.
 
-מדריך צעד אחר צעד עם צילומי מסך (באנגלית): [Guide for Roblox Studio](ugcmarket-guide.html).
-
 Ol1n Market אינה קשורה ל־Roblox Corporation, ואינה מאושרת או ממומנת על ידה.
 "Roblox" הוא סימן מסחרי של Roblox Corporation, והשימוש בו כאן נועד רק לתיאור
 התאימות.

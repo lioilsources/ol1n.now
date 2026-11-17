@@ -10,7 +10,5 @@ Ol1n Market 是一家虛擬角色 3D 配件模型商店，網址是
 部分型錄免費，只要用電子郵件登入就好。信用卡和比特幣付款即將推出。
 每次下載都附有授權條款和一份 README，裡面寫著在 Roblox Studio 中使用的步驟。
 
-附截圖的逐步指南（英文）：[Guide for Roblox Studio](ugcmarket-guide.html)
-
 Ol1n Market 與 Roblox Corporation 並無關聯，亦未獲其認可或贊助。
 「Roblox」是 Roblox Corporation 的商標，此處僅用於說明相容性。

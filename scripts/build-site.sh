@@ -604,8 +604,29 @@ EOF
 # placeholders keep diagrams out of the prose:
 #   __BOARD:<id>__     an 8x8 board from pages/boards.tsv (rows of one id)
 #   __GESTURE:<dots>__ a maneuver gesture on the 3x3 pad, e.g. 1-4-7
+# A translation is pages/<name>.<lang>.html; the page then gets the language menu.
 page_meta() { sed -n "s/^<!-- $2: \(.*\) -->\$/\1/p" "$1" | head -1; }
-app_pages() { for _f in "$APPS/$1"/pages/*.html; do [ -f "$_f" ] && printf '%s\n' "$_f"; done; return 0; }
+# Only base-language files; a translation is pages/<name>.<lang>.html next to it.
+app_pages() {
+  for _f in "$APPS/$1"/pages/*.html; do
+    [ -f "$_f" ] || continue
+    case "$(basename "$_f" .html)" in *.*) continue ;; esac
+    printf '%s\n' "$_f"
+  done
+  return 0
+}
+# app_page_file <base page> <lang> -> the page in that language, or nothing
+app_page_file() {
+  if [ "$2" = "$I18N_BASE" ]; then printf '%s' "$1"
+  elif [ -f "${1%.html}.$2.html" ]; then printf '%s' "${1%.html}.$2.html"; fi
+  return 0
+}
+# app_page_langs <base page> <lang>... -> the languages that page exists in
+app_page_langs() {
+  _apf="$1"; shift
+  for _l in "$@"; do [ -n "$(app_page_file "$_apf" "$_l")" ] && printf '%s ' "$_l"; done
+  return 0
+}
 
 # board_svg <boards.tsv> <id>
 #   marks: self|ally|enemy (a piece), move, jump, capture, field. Row 0 is
@@ -657,15 +678,17 @@ app_page_body() {
   return 0
 }
 
-# link sections on the app page, one per subpage
+# link sections on the app page, one per subpage that exists in this language
 app_pages_teaser_html() {
-  _slug="$1"
-  app_pages "$_slug" | while IFS= read -r _f; do
-    _name="$(basename "${_f%.html}")"
+  _slug="$1"; _tl="${2:-$I18N_BASE}"
+  app_pages "$_slug" | while IFS= read -r _b; do
+    _f="$(app_page_file "$_b" "$_tl")"
+    [ -n "$_f" ] || continue
+    _name="$(basename "${_b%.html}")"
     printf '<section class="section"><h2>%s</h2>\n' "$(esc "$(page_meta "$_f" title)")"
     printf '<p class="skins-intro">%s</p>\n' "$(esc "$(page_meta "$_f" intro)")"
-    printf '<p class="skins-more"><a href="%s-%s.html">%s →</a></p>\n</section>\n' \
-      "$_slug" "$_name" "$(esc "$(page_meta "$_f" title)")"
+    printf '<p class="skins-more"><a href="%s">%s →</a></p>\n</section>\n' \
+      "$(page_name "$_slug" "$_name" "$_tl")" "$(esc "$(page_meta "$_f" title)")"
   done
   return 0
 }
@@ -1174,7 +1197,7 @@ HERO
       echo '</div></section>'
       # explicit `if` (not `&&`): under `set -e` a failing guard as the last
       # command of this group would truncate the page
-      if [ "$lang" = "$I18N_BASE" ]; then app_pages_teaser_html "$slug"; fi
+      app_pages_teaser_html "$slug" "$lang"
       if skins_have "$slug"; then skins_teaser_html "$slug"; fi
       if visuals_have "$slug"; then visuals_teaser_html "$slug" "$lmeta" "$meta"; fi
       if fleets_have "$slug"; then fleets_teaser_html "$slug"; fi
@@ -1219,21 +1242,23 @@ HERO
       echo "  built $slug-visuals.html"
     fi
 
-    # hand-written subpages - base language only, like visuals and fleets
-    if [ "$lang" = "$I18N_BASE" ]; then
-      app_pages "$slug" | while IFS= read -r pg; do
-        pg_name="$(basename "${pg%.html}")"
-        {
-          emit_head "$lname — $(page_meta "$pg" title) — olin.now"
-          page_top_html "$back_href" "$back_label" ""
-          printf '<article class="rules">\n<h1>%s — %s</h1>\n' "$(esc "$lname")" "$(esc "$(page_meta "$pg" title)")"
-          app_page_body "$pg"
-          printf '</article>\n'
-          emit_foot
-        } > "$DIST/$slug-$pg_name.html"
-        echo "  built $slug-$pg_name.html"
-      done
-    fi
+    # hand-written subpages: the base language always, other languages where
+    # pages/<name>.<lang>.html exists (with the language menu across them)
+    app_pages "$slug" | while IFS= read -r pg_base; do
+      pg="$(app_page_file "$pg_base" "$lang")"
+      [ -n "$pg" ] || continue
+      pg_name="$(basename "${pg_base%.html}")"
+      pg_langs="$(app_page_langs "$pg_base" $langs)"
+      {
+        emit_head "$lname — $(page_meta "$pg" title) — olin.now" "$(alts_html "$slug" "$pg_name" $pg_langs)"
+        page_top_html "$back_href" "$back_label" "$(lang_switch_html "$slug" "$pg_name" $pg_langs)"
+        printf '<article class="rules">\n<h1>%s — %s</h1>\n' "$(esc "$lname")" "$(esc "$(page_meta "$pg" title)")"
+        app_page_body "$pg"
+        printf '</article>\n'
+        emit_foot
+      } > "$DIST/$(page_name "$slug" "$pg_name")"
+      echo "  built $(page_name "$slug" "$pg_name")"
+    done
 
     if [ "$lang" = "$I18N_BASE" ] && fleets_have "$slug"; then
       {

@@ -12,8 +12,6 @@ Ol1n Marketは、アバター用アクセサリーの3Dモデルを扱うスト�
 カードとBitcoinでの支払いは準備中です。
 ダウンロードには、ライセンスとRoblox Studioでの手順を書いたREADMEが付いています。
 
-スクリーンショット付きの手順ガイド（英語）：[Guide for Roblox Studio](ugcmarket-guide.html)
-
 Ol1n Marketは、Roblox Corporationと提携しておらず、
 Roblox Corporationによる承認や後援も受けていません。
 「Roblox」はRoblox Corporationの商標であり、ここでは互換性の説明のためにのみ使用しています。

@@ -11,8 +11,6 @@ Del kataloga je brezplačen, prijaviš se samo z e-pošto. Plačilo s kartico
 in bitcoini prihaja kmalu. Vsakemu prenosu sta priložena licenca in README
 s koraki za Roblox Studio.
 
-Vodnik po korakih s posnetki zaslona (v angleščini): [Guide for Roblox Studio](ugcmarket-guide.html).
-
 Ol1n Market ni povezan z družbo Roblox Corporation in ga ta ne podpira ali sponzorira.
 „Roblox“ je blagovna znamka družbe Roblox Corporation in se tukaj uporablja le za opis
 združljivosti.
