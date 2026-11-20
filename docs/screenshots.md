@@ -108,6 +108,13 @@ harness renders every language (`SCREENSHOT_LANG`), and those go to App Store Co
 the store has no per-language gallery. `es` and `nl` got their chrome catalogs for it.
 The privacy policy is on GitHub Pages: `https://lioilsources.github.io/behanek/privacy.html`.
 
+**astro** too (11 files in `raw/mobile/ios/`, `NN-<what>.png`, 393×852 @3x). Harness
+`app/test/screens/screens_test.dart` in the Astro repo (Astro PR #17 until merged), tagged `screens` and skipped by default:
+`cd app && flutter test test/screens --run-skipped` writes `run/screens/*.png`, copy them over.
+Fictional profiles (Jana, Petr); transits, hours and the election search start on the day the
+harness runs, so those shots move with the date. The horary shot takes the first moment of
+19. 11. 2026 that gives a "yes" with a timing; the catalog check is the bundled people catalog.
+
 `storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
 default Flutter logo, which is not worth shipping, so they fall back to the store's
 letter tile on purpose.
