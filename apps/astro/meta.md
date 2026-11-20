@@ -8,7 +8,7 @@ featured: false
 langs: cs
 desktop:
 mobile: android,ios
-artifacts: none
+artifacts: android
 appstore:
 playstore:
 testflight:
