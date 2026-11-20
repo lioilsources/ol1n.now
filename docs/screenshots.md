@@ -111,3 +111,7 @@ The privacy policy is on GitHub Pages: `https://lioilsources.github.io/behanek/p
 `storyteller` and `audioscanner` also have **no app icon** yet — both still carry the
 default Flutter logo, which is not worth shipping, so they fall back to the store's
 letter tile on purpose.
+
+**smpl16** is shot the same way (5 files in `raw/mobile/android/`, 402×874 @3x), harness
+`smpl16/test/screenshots_test.dart` in the Sample16 repo; it needs a monospace font dir as well —
+see `docs/apps.md`.

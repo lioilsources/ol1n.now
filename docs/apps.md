@@ -9,7 +9,7 @@ elftonplayer (Elfton Player, repo `ol1nplay`), hajanek (Hajánek), handwrittenst
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
 poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, ugcmarket (Ol1n Market), webtoon,
 chess4princesses (Šachové království), rattleramp (repo `ChrestysSkatepark`),
-fotballsimulator (Fotball Simulator), kaceny (Kačeny; default branch `master`).
+fotballsimulator (Fotball Simulator), kaceny (Kačeny; default branch `master`), smpl16 (SMPL16, repo `Sample16`).
 
 Five were added on 2026-10-04 for their artwork rather than for a build, and their pages
 lean on the visuals gallery. None has a real app screenshot: what sits in
@@ -170,6 +170,20 @@ rules forbid "Roblox" in a store name, so the slug and the text say "compatible 
 and keep the not-affiliated sentence. The icon was generated on SPARK (Qwen-Image, 2026-11-16).
 A customer guide (`pages/guide.html`) will be exported from that repo's `web/src/lib/guide/`;
 do not hand-edit it here.
+
+**smpl16** (SMPL16, added 2026-11-20) is a 16-pad phone sampler, repo `lioilsources/Sample16`
+(Flutter app in `smpl16/`, bundle id `com.ol1n.smpl16`). No GitHub release yet: builds go to
+Firebase App Distribution (group Alfa) and TestFlight only, so `i18n/cs.tsv` rewords
+`sec.downloads` / `dl.empty`; `artifacts: android` because a tagged `release-android.yml` would
+attach the APK (plus AAB, and the iOS workflow an IPA). `icon.png` is `smpl16/assets/icon/icon.png`
+from that repo at 512 px (designed 2026-11-20, SVG + generator next to it). Its five shots
+(`raw/mobile/android/NN-<what>.png`, 402×874 @3x) are rendered without a device by
+`smpl16/test/screenshots_test.dart` there: `SCREENSHOT_DIR=<dir> SCREENSHOT_FONT_DIR=<dir>
+flutter test test/screenshots_test.dart`. The UI is set in `monospace`, which the test engine
+lacks, so the font dir must hold DejaVuSansMono(-Bold).ttf (npm `dejavu-fonts-ttf`), which also
+covers the ● ■ ▶ ✕ ∞ glyphs a phone takes from fallback fonts. The pad sounds are WAVs
+synthesised by the test (waveforms through the app's own `WaveformService`), playback and
+recording state are fixed provider overrides — the page says so.
 
 ## Elfton Player
 
