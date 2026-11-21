@@ -6,7 +6,7 @@ icon_src: menu/icon.png
 tagline: Voxel dogfight na vzdušných ostrovech (samostatná hra pro Luanti)
 featured: false
 desktop: macos,windows,linux
-mobile: android
+mobile: android,ios
 artifacts: mod
 appstore:
 playstore:
@@ -72,6 +72,19 @@ v chatu (`!drak`, `!velryba`, `!meduzy`…) přivolávají tvory do světa
 streamera. Chat umí jen přidat tvory, kteří po sobě uklidí, terénu se nedotkne,
 a `/chatoff` ho okamžitě vypne. Bez nastavení v `minetest.conf` je napojení
 vypnuté.
+
+### Na webu a v telefonu
+
+DoggioWars má i samostatnou verzi, která Luanti nepotřebuje: běží přímo
+v prohlížeči na
+[lioilsources.github.io/BabylonWars](https://lioilsources.github.io/BabylonWars/),
+jde nainstalovat jako aplikace a po prvním načtení hraje i offline. Stejné
+ostrovy, draci i závod se zajícem, ale s volným letem ve všech směrech,
+nakláněním horizontu a ovládáním dotykem, gamepadem nebo klávesnicí s myší.
+
+Ze stejné hry vznikají aplikace pro iPhone a Android. V App Store ani na
+Google Play zatím nejsou. Zdrojový kód webové verze je na
+[github.com/lioilsources/BabylonWars](https://github.com/lioilsources/BabylonWars).
 
 ### Instalace
 

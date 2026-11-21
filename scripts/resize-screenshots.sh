@@ -69,8 +69,13 @@ webfit() {
     *)      fit "$1" "$2" "$3" ;;
   esac
 }
-# fill <in> <out> <WxH>  cover + center-crop to exact pixels
-fill() { "$MAGICK" "$1" -resize "${3}^" -gravity center -extent "$3" "$2"; }
+# fill <in> <out> <WxH>  cover + center-crop to exact pixels; a landscape source
+# (game shot on its side) gets the target turned too, the stores take both
+fill() {
+  size="$3"
+  if [ "$("$MAGICK" "$1[0]" -format '%[fx:w>h]' info:)" = 1 ]; then size="${3#*x}x${3%x*}"; fi
+  "$MAGICK" "$1" -resize "${size}^" -gravity center -extent "$size" "$2"
+}
 # vid <in> <out.mp4>     web H.264 + AAC (<=1280px wide, <=15s, faststart)
 # -nostdin on both: the file list below is fed to `while read` on stdin, and
 # ffmpeg reads stdin for its interactive keys - it swallowed the head of the
