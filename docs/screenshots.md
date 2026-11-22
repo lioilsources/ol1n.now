@@ -122,3 +122,17 @@ letter tile on purpose.
 **smpl16** is shot the same way (5 files in `raw/mobile/android/`, 402×874 @3x), harness
 `smpl16/test/screenshots_test.dart` in the Sample16 repo; it needs a monospace font dir as well —
 see `docs/apps.md`.
+
+## DoggioWars web/mobile shots (BabylonWars)
+
+`apps/doggiowars/screenshots/raw/mobile/ios/web_*.png` are the Babylon.js web version
+(`lioilsources/BabylonWars`, seed 42, quality high, Czech), shot landscape at 956x440 @3x
+(= App Store 6.9" landscape, 2868x1320) from its `vite preview` build with `shoot.mjs`
+switched to the GPU (`--use-angle=metal` instead of SwiftShader). Scenes are set up over
+the game's own debug hooks: console commands (`/island volcanic`, `/monster dragon_fire`,
+`/race`) typed into `#b-console`, then `window.bw.sim.ship` placed by hand (sub mode, set
+`pos`, `heading/lookH`, `pitch/lookV`) and `bw.sim.weapons.fire()` for the impact shot.
+
+The game is landscape only, so `resize-screenshots.sh` `fill` now turns the store target
+for a landscape source (Play 1920x1080, App Store 2868x1320 / 2796x1290). The full store
+kit (cs + en, iPad 13" and Play variants, feature graphic) lives outside this repo.

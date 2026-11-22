@@ -66,6 +66,19 @@ streamer's world. Chat can only add creatures that clean up after themselves,
 it never touches the terrain, and `/chatoff` switches it off instantly. Without
 settings in `minetest.conf` the hookup stays off.
 
+### On the web and on your phone
+
+DoggioWars also has a standalone version that doesn't need Luanti: it runs
+right in the browser at
+[lioilsources.github.io/BabylonWars](https://lioilsources.github.io/BabylonWars/),
+can be installed as an app and plays offline after the first load. Same
+islands, dragons and rabbit race, but with free flight in every direction,
+a tilting horizon and touch, gamepad or keyboard-and-mouse controls.
+
+iPhone and Android apps are being built from the same game. They are not in
+the App Store or on Google Play yet. The web version's source code is at
+[github.com/lioilsources/BabylonWars](https://github.com/lioilsources/BabylonWars).
+
 ### Installation
 
 You need **Luanti 5.12 or newer** and **nothing else** — since version 2.0

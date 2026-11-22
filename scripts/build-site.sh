@@ -218,9 +218,10 @@ store_links_html() {
     key="${kv%%:*}"; label="${kv#*:}"
     url="$(fm_get "$_meta" "$key")"
     [ -n "$url" ] || continue
-    # web: a live web app; the button shows its host name ("slop.ol1n.com")
+    # web: a live web app; the button shows host and path without the scheme
+    # and trailing slash ("slop.ol1n.com", "lioilsources.github.io/BabylonWars")
     if [ "$key" = web ]; then
-      _host="${url#*://}"; _host="${_host%%/*}"
+      _host="${url#*://}"; _host="${_host%/}"
       printf '<a class="dl-btn" href="%s">🌐 %s</a>\n' "$url" "$_host"
       continue
     fi
