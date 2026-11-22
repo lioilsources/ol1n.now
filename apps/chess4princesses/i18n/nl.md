@@ -82,10 +82,14 @@ met de hand uitgezocht en opgeschoond.
 
 ### Roemhal
 
-Onder de beker op de kaart ligt de Roemhal met beroemde partijen van de
-meesters: Morphy's partij in de opera van Parijs in 1858, de ‘partij van de
-eeuw’ van de dertienjarige Bobby Fischer tegen Donald Byrne (1956), en Vera
-Menchik tegen Sonja Graf op het wereldkampioenschap voor vrouwen van 1937.
+Onder de beker op de kaart ligt de Roemhal met drie planken, allemaal zonder
+internet. **Het gouden bord** bevat de 64 beroemdste partijen, van de
+Onsterfelijke Partij (1851) tot Gukesh (2024), op elk veld één, en een partij
+die tot het eind is gespeeld, laat een ster achter op haar veld. **Strijd om de
+kroon** heeft alle wereldkampioenschapsmatches sinds 1886 met de uitslag en alle
+partijen, inclusief de gesplitste FIDE-titel van 1993–2006. **Kampioenes** toont
+de wereldkampioenes van Vera Menchik tot Hou Yifan en een selectie van hun
+partijen.
 
 Een partij kun je op twee manieren naspelen. **Sprookje** is voor het kind:
 de stukken van zijn eigen leger bewegen vanzelf, bij schaak, rokade of een
@@ -113,12 +117,11 @@ partij tegen de robot of tegen papa of mama op één telefoon komt later.
 
 ### Status
 
-De eerste testversie (1.0.3) is uit: de Android-APK kun je hieronder
-downloaden, en iPhone en iPad krijgen hem via TestFlight. Hierna komen de
-overige eilanden, een ouderhoek (instellingen, gevechten uitzetten, overzicht
-van wat het kind kan), een bibliotheek met meer beroemde partijen en een test
-met een echte vijfjarige schaakster: kan ze de feeën op een klein bord uit
-elkaar houden?
+De eerste testversie (1.0.4) is uit: de Android-APK kun je hieronder downloaden,
+en iPhone en iPad krijgen hem via TestFlight. Hierna komen de overige eilanden,
+een ouderhoek (instellingen, gevechten uitzetten, overzicht van wat het kind
+kan), verhalen en een stem bij de beroemde partijen en een test met een echte
+vijfjarige schaakster: kan ze de feeën op een klein bord uit elkaar houden?
 
 Zonder advertenties, zonder account, werkt offline. De app is er in 45 talen;
 de stem spreekt voorlopig Tsjechisch en Engels.

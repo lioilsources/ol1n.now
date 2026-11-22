@@ -82,10 +82,14 @@ dirapikan secara manual.
 
 ### Aula Kejayaan
 
-Di bawah piala di peta ada Aula Kejayaan berisi partai-partai terkenal para
-master: partai Morphy di gedung opera Paris tahun 1858, "partai abad ini"
-Bobby Fischer yang berumur tiga belas tahun melawan Donald Byrne (1956), dan
-Vera Menchik melawan Sonja Graf di kejuaraan dunia wanita 1937.
+Di bawah piala di peta ada Aula Kejayaan dengan tiga rak, semuanya tanpa
+internet. **Papan Emas** berisi 64 partai paling terkenal, dari Partai Abadi
+(1851) sampai Gukesh (2024), satu di setiap petak, dan partai yang dimainkan
+sampai selesai meninggalkan bintang di petaknya. **Pertandingan memperebutkan
+mahkota** memuat semua pertandingan kejuaraan dunia sejak 1886 lengkap dengan
+skor dan semua partainya, termasuk gelar FIDE yang terbelah pada 1993–2006.
+**Para juara wanita** menampilkan juara dunia wanita dari Vera Menchik sampai
+Hou Yifan beserta pilihan partai mereka.
 
 Partai bisa diputar ulang dengan dua cara. **Dongeng** untuk anak: bidak-bidak
 pasukannya sendiri bergerak sendiri, balon kata muncul saat skak, rokade, atau
@@ -114,12 +118,12 @@ terpisah melawan robot atau melawan orang tua di satu ponsel baru akan hadir.
 
 ### Status
 
-Versi uji pertama (1.0.3) sudah keluar: APK untuk Android bisa diunduh di
-bawah, dan iPhone serta iPad mendapatkannya lewat TestFlight. Berikutnya
-adalah pulau-pulau yang tersisa, zona orang tua (pengaturan, mematikan
-pertarungan, ringkasan kemampuan anak), pustaka partai terkenal yang lebih
-banyak, dan uji coba bersama pecatur cilik lima tahun sungguhan: bisakah ia
-membedakan para peri di papan kecil?
+Versi uji pertama (1.0.4) sudah keluar: APK untuk Android bisa diunduh di bawah,
+dan iPhone serta iPad mendapatkannya lewat TestFlight. Berikutnya adalah
+pulau-pulau yang tersisa, zona orang tua (pengaturan, mematikan pertarungan,
+ringkasan kemampuan anak), cerita dan suara untuk partai-partai terkenal, dan
+uji coba bersama pecatur cilik lima tahun sungguhan: bisakah ia membedakan para
+peri di papan kecil?
 
 Tanpa iklan, tanpa akun, berfungsi offline. Aplikasi ini tersedia dalam 45
 bahasa; suaranya sejauh ini berbahasa Ceko dan Inggris.

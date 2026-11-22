@@ -76,10 +76,13 @@ pusset på.
 
 ### Berømmelsens hall
 
-Under pokalen på kartet ligger berømmelsens hall med berømte partier av
-mesterne: Morphys parti i operaen i Paris i 1858, «århundrets parti» der
-trettenårige Bobby Fischer møtte Donald Byrne (1956), og Vera Menchik mot
-Sonja Graf i VM for kvinner i 1937.
+Under pokalen på kartet ligger berømmelsens hall med tre hyller, alle uten
+internett. **Det gylne brettet** har de 64 mest berømte partiene, fra Det
+udødelige partiet (1851) til Gukesh (2024), ett på hver rute, og et parti som er
+spilt til ende, legger igjen en stjerne på ruten sin. **Kamper om kronen** har
+alle VM-matchene siden 1886 med resultat og alle partiene, også den delte
+FIDE-tittelen 1993–2006. **Mesterinner** viser verdensmesterne for kvinner fra
+Vera Menchik til Hou Yifan og et utvalg av partiene deres.
 
 Et parti kan spilles av på to måter. **Eventyr** er for barnet: brikkene i
 barnets egen hær flytter av seg selv, en snakkeboble dukker opp ved sjakk,
@@ -106,12 +109,11 @@ på én telefon kommer senere.
 
 ### Status
 
-Den første testversjonen (1.0.3) er ute: APK-en for Android kan lastes ned
-nedenfor, og iPhone og iPad får den via TestFlight. Neste steg er de
-gjenværende øyene, en foreldresone (innstillinger, slå av kamper, oversikt
-over hva barnet kan), et bibliotek med flere berømte partier og en test med en
-ekte femårig sjakkspiller: Klarer hun å skille feene fra hverandre på et lite
-brett?
+Den første testversjonen (1.0.4) er ute: APK-en for Android kan lastes ned
+nedenfor, og iPhone og iPad får den via TestFlight. Neste steg er de gjenværende
+øyene, en foreldresone (innstillinger, slå av kamper, oversikt over hva barnet
+kan), historier og stemme til de berømte partiene og en test med en ekte femårig
+sjakkspiller: Klarer hun å skille feene fra hverandre på et lite brett?
 
 Uten reklame, uten konto, fungerer frakoblet. Appen finnes på 45 språk;
 stemmen snakker foreløpig tsjekkisk og engelsk.

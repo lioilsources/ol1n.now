@@ -74,10 +74,13 @@ leksaksarméerna med Qwen-Image. Allt valdes sedan ut och putsades för hand.
 
 ### Ärans hall
 
-Under pokalen på kartan finns ärans hall med mästarnas berömda partier: Morphys
-parti på operan i Paris 1858, ”århundradets parti” mellan trettonårige Bobby
-Fischer och Donald Byrne (1956) och Vera Menchik mot Sonja Graf vid
-damvärldsmästerskapet 1937.
+Under pokalen på kartan finns ärans hall med tre hyllor, alla utan internet.
+**Det gyllene brädet** har de 64 mest berömda partierna, från Det odödliga
+partiet (1851) till Gukesh (2024), ett på varje ruta, och ett parti som spelats
+till slut lämnar en stjärna på sin ruta. **Matcher om kronan** har alla
+VM-matcher sedan 1886 med resultat och alla partier, också den delade
+FIDE-titeln 1993–2006. **Mästarinnor** visar damvärldsmästarna från Vera Menchik
+till Hou Yifan och ett urval av deras partier.
 
 Ett parti kan spelas upp på två sätt. **Saga** är för barnet: pjäserna i barnets
 egen armé flyttar av sig själva, en pratbubbla dyker upp vid schack, rockad
@@ -104,11 +107,11 @@ på en och samma telefon kommer senare.
 
 ### Status
 
-Den första testversionen (1.0.3) är ute: APK-filen för Android kan laddas ner
+Den första testversionen (1.0.4) är ute: APK-filen för Android kan laddas ner
 nedan, och iPhone och iPad får den via TestFlight. Härnäst kommer de återstående
 öarna, en föräldrazon (inställningar, avstängning av striderna, en översikt över
-vad barnet kan), ett bibliotek med fler berömda partier och ett test med en
-riktig femårig schackspelare: kan hon skilja feerna åt på ett litet bräde?
+vad barnet kan), berättelser och röst till de berömda partierna och ett test med
+en riktig femårig schackspelare: kan hon skilja feerna åt på ett litet bräde?
 
 Ingen reklam, inget konto, fungerar offline. Appen finns på 45 språk; rösten
 talar än så länge tjeckiska och engelska.

@@ -83,10 +83,14 @@ todo se seleccionó y retocó a mano.
 
 ### Salón de la Fama
 
-Bajo el trofeo del mapa está el Salón de la Fama, con partidas famosas de los
-maestros: la partida de Morphy en la ópera de París en 1858, la «partida del
-siglo» de Bobby Fischer, con trece años, contra Donald Byrne (1956), y Vera
-Menchik contra Sonja Graf en el campeonato del mundo femenino de 1937.
+Bajo el trofeo del mapa está el Salón de la Fama, con tres estanterías, todas
+sin internet. **El tablero de oro** reúne las 64 partidas más famosas, desde la
+Partida Inmortal (1851) hasta Gukesh (2024), una en cada casilla, y cada partida
+jugada hasta el final deja una estrella en su casilla. **Duelos por la corona**
+tiene todos los matches por el título mundial desde 1886, con el resultado y
+todas las partidas, incluido el título dividido de la FIDE de 1993 a 2006.
+**Campeonas** muestra a las campeonas del mundo desde Vera Menchik hasta Hou
+Yifan y una selección de sus partidas.
 
 Una partida se puede revivir de dos maneras. **Cuento** es para el niño: las
 piezas de su ejército se mueven solas, aparece un bocadillo en un jaque, un
@@ -116,12 +120,12 @@ está por llegar.
 
 ### Estado
 
-Ya ha salido la primera versión de prueba (1.0.3): el APK para Android se
-puede descargar aquí abajo, y el iPhone y el iPad la reciben a través de
-TestFlight. Lo próximo son las islas que faltan, una zona para padres
-(ajustes, desactivar las batallas, resumen de lo que sabe el niño), una
-biblioteca con más partidas famosas y una prueba con una ajedrecista de cinco
-años de verdad: ¿distinguirá a las hadas en un tablero pequeño?
+Ya ha salido la primera versión de prueba (1.0.4): el APK para Android se puede
+descargar aquí abajo, y el iPhone y el iPad la reciben a través de TestFlight.
+Lo próximo son las islas que faltan, una zona para padres (ajustes, desactivar
+las batallas, resumen de lo que sabe el niño), historias y voz para las partidas
+famosas y una prueba con una ajedrecista de cinco años de verdad: ¿distinguirá a
+las hadas en un tablero pequeño?
 
 Sin anuncios, sin cuenta, funciona sin conexión. La app está en 45 idiomas; la
 voz, por ahora, habla checo e inglés.

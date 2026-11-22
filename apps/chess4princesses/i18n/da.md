@@ -78,10 +78,13 @@ og renset.
 
 ### Berømmelsens hal
 
-Under pokalen på kortet ligger Berømmelsens hal med berømte mesterpartier:
-Morphys parti i operaen i Paris i 1858, „århundredets parti“, hvor den
-13-årige Bobby Fischer slog Donald Byrne (1956), og Vera Menchik mod Sonja
-Graf ved VM for kvinder i 1937.
+Under pokalen på kortet ligger Berømmelsens hal med tre hylder, alle uden
+internet. **Det gyldne bræt** rummer de 64 mest berømte partier, fra Det
+udødelige parti (1851) til Gukesh (2024), ét på hvert felt, og et parti, der er
+spillet til ende, efterlader en stjerne på sit felt. **Kampe om kronen** har
+alle VM-matcher siden 1886 med resultatet og alle partierne, også den delte
+FIDE-titel 1993–2006. **Mesterinder** viser verdensmestrene for kvinder fra Vera
+Menchik til Hou Yifan og et udvalg af deres partier.
 
 Et parti kan genspilles på to måder. **Eventyr** er til barnet: brikkerne i
 dets egen hær flytter af sig selv, ved skak, rokade eller et modigt offer
@@ -108,12 +111,11 @@ forælder på én telefon kommer senere.
 
 ### Status
 
-Den første testversion (1.0.3) er ude: APK'en til Android kan downloades
+Den første testversion (1.0.4) er ude: APK'en til Android kan downloades
 nedenfor, og iPhone og iPad får den via TestFlight. Næste skridt er de
 resterende øer, en forældrezone (indstillinger, slå kampe fra, overblik over
-hvad barnet kan), et bibliotek med flere berømte partier og en test med en
-rigtig femårig skakspiller: Kan hun kende feerne fra hinanden på et lille
-bræt?
+hvad barnet kan), historier og stemme til de berømte partier og en test med en
+rigtig femårig skakspiller: Kan hun kende feerne fra hinanden på et lille bræt?
 
 Uden reklamer, uden konto, virker offline. Appen findes på 45 sprog; stemmen
 taler indtil videre tjekkisk og engelsk.

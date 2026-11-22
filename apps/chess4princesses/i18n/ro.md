@@ -79,11 +79,14 @@ curățate de mână.
 
 ### Sala faimei
 
-Sub cupa de pe hartă se află sala faimei, cu partide celebre ale marilor
-maeștri: partida lui Morphy de la Opera din Paris, din 1858, „partida secolului”
-jucată de Bobby Fischer, pe atunci de treisprezece ani, împotriva lui Donald
-Byrne (1956), și Vera Menchik contra Sonjei Graf la Campionatul Mondial feminin
-din 1937.
+Sub cupa de pe hartă se află sala faimei, cu trei rafturi, toate fără internet.
+**Tabla de aur** are cele mai celebre 64 de partide, de la Partida nemuritoare
+(1851) până la Gukesh (2024), câte una pe fiecare pătrat, iar o partidă jucată
+până la capăt lasă o stea pe pătratul ei. **Meciuri pentru coroană** cuprinde
+toate meciurile pentru titlul mondial din 1886 încoace, cu scorul și toate
+partidele, inclusiv titlul FIDE divizat din 1993–2006. **Campioane** le arată pe
+campioanele mondiale de la Vera Menchik până la Hou Yifan și o selecție din
+partidele lor.
 
 O partidă poate fi reluată în două feluri. **Poveste** e pentru copil: piesele
 propriei lui armate se mută singure, la un șah, la o rocadă sau la un sacrificiu
@@ -113,10 +116,10 @@ urmează.
 
 ### Stadiu
 
-Prima versiune de test (1.0.3) a apărut: APK-ul pentru Android se poate descărca
+Prima versiune de test (1.0.4) a apărut: APK-ul pentru Android se poate descărca
 mai jos, iar iPhone și iPad o primesc prin TestFlight. Urmează insulele rămase,
 o zonă pentru părinți (setări, oprirea luptelor, o privire de ansamblu asupra a
-ceea ce știe copilul), o bibliotecă cu mai multe partide celebre și un test cu o
+ceea ce știe copilul), povești și voce pentru partidele celebre și un test cu o
 adevărată șahistă de cinci ani: poate ea deosebi zânele pe o tablă mică?
 
 Fără reclame, fără cont, funcționează offline. Aplicația e disponibilă în 45 de

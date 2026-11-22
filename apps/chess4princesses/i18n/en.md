@@ -78,10 +78,13 @@ them were then hand-picked and cleaned up.
 
 ### Hall of fame
 
-Under the trophy on the map is the hall of fame with famous games of the
-masters: Morphy's game at the Paris opera in 1858, the "game of the century"
-of thirteen-year-old Bobby Fischer against Donald Byrne (1956), and Vera
-Menchik against Sonja Graf at the 1937 women's world championship.
+Under the trophy on the map is the Hall of Fame with three shelves, all offline.
+**The Golden Board** holds the 64 most famous games, from the Immortal Game
+(1851) to Gukesh (2024), one on each square, and a game played to the end leaves
+a star on its square. **Matches for the Crown** has every world championship
+match since 1886 with the score and all the games, including the split FIDE
+title of 1993–2006. **Women Champions** shows the women's world champions from
+Vera Menchik to Hou Yifan with a selection of their games.
 
 A game can be replayed in two ways. **Story** is for the child: the pieces of
 their own army move by themselves, a speech bubble pops up at a check, a
@@ -109,12 +112,11 @@ against the robot, or against a parent on one phone, is still to come.
 
 ### Status
 
-The first test version (1.0.3) is out: the Android APK can be downloaded
-below, and iPhone and iPad get it through TestFlight. Next up are the
-remaining islands, a parents' zone (settings, turning battles off, an overview
-of what the child can do), a library of more famous games, and a test with a
-real five-year-old chess player: can she tell the fairies apart on a small
-board?
+The first test version (1.0.4) is out: the Android APK can be downloaded below,
+and iPhone and iPad get it through TestFlight. Next up are the remaining
+islands, a parents' zone (settings, turning battles off, an overview of what the
+child can do), stories and voice for the famous games, and a test with a real
+five-year-old chess player: can she tell the fairies apart on a small board?
 
 No ads, no account, works offline. The app is in 45 languages; the voice
 speaks Czech and English so far.
