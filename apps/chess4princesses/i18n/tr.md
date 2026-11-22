@@ -75,10 +75,14 @@ elle seçilip temizlendi.
 
 ### Şöhret Salonu
 
-Haritadaki kupanın altında, ustaların ünlü oyunlarının bulunduğu şöhret salonu
-var: Morphy'nin 1858'de Paris Operası'nda oynadığı oyun, on üç yaşındaki Bobby
-Fischer'ın Donald Byrne'a karşı "yüzyılın oyunu" (1956) ve 1937 Kadınlar Dünya
-Şampiyonası'nda Vera Menchik ile Sonja Graf'ın karşılaşması.
+Haritadaki kupanın altında şöhret salonu var ve içinde, hepsi internetsiz
+çalışan üç raf bulunuyor. **Altın Tahta** Ölümsüz Oyun'dan (1851) Gukesh'e
+(2024) kadar en ünlü 64 oyunu, her karede bir tane olmak üzere bir araya
+getiriyor ve sonuna kadar oynanan oyun karesinde bir yıldız bırakıyor. **Taç
+için maçlar** 1886'dan bu yana tüm dünya şampiyonluğu maçlarını skorları ve
+bütün oyunlarıyla sunuyor, 1993–2006 arasında bölünmüş FIDE unvanı da dahil.
+**Şampiyon kadınlar** Vera Menchik'ten Hou Yifan'a kadar kadın dünya
+şampiyonlarını ve oyunlarından bir seçkiyi gösteriyor.
 
 Bir oyun iki şekilde yeniden oynatılabilir. **Masal** çocuk içindir: kendi
 ordusunun taşları kendiliğinden hareket eder, şahta, rokta ya da cesur bir
@@ -105,11 +109,11 @@ karşı ayrı bir oyun ise daha sonra gelecek.
 
 ### Durum
 
-İlk test sürümü (1.0.3) çıktı: Android APK'si aşağıdan indirilebilir, iPhone ve
+İlk test sürümü (1.0.4) çıktı: Android APK'si aşağıdan indirilebilir, iPhone ve
 iPad ise TestFlight üzerinden alır. Sırada kalan adalar, bir ebeveyn bölümü
-(ayarlar, savaşları kapatma, çocuğun neleri bildiğine genel bakış), daha fazla
-ünlü oyundan oluşan bir kütüphane ve gerçek bir beş yaşındaki satranççı kızla
-bir test var: küçük bir tahtada perileri birbirinden ayırt edebilecek mi?
+(ayarlar, savaşları kapatma, çocuğun neleri bildiğine genel bakış), ünlü oyunlar
+için hikâyeler ve seslendirme ve gerçek bir beş yaşındaki satranççı kızla bir
+test var: küçük bir tahtada perileri birbirinden ayırt edebilecek mi?
 
 Reklam yok, hesap yok, çevrimdışı çalışır. Uygulama 45 dilde; ses şimdilik Çekçe
 ve İngilizce konuşuyor.

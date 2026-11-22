@@ -80,10 +80,14 @@ escolhido e limpo à mão.
 
 ### Salão da Fama
 
-Debaixo do troféu, no mapa, fica o Salão da Fama, com partidas célebres dos
-mestres: a partida de Morphy na Ópera de Paris, em 1858, a «partida do século»
-de Bobby Fischer, então com treze anos, contra Donald Byrne (1956), e Vera
-Menchik contra Sonja Graf no campeonato do mundo feminino de 1937.
+Debaixo do troféu, no mapa, fica o Salão da Fama, com três prateleiras, todas
+sem internet. **O tabuleiro de ouro** tem as 64 partidas mais célebres, da
+Partida Imortal (1851) até Gukesh (2024), uma em cada casa, e cada partida
+jogada até ao fim deixa uma estrela na sua casa. **Duelos pela coroa** reúne
+todos os matches pelo título mundial desde 1886, com o resultado e todas as
+partidas, incluindo o título dividido da FIDE de 1993 a 2006. **Campeãs** mostra
+as campeãs do mundo, de Vera Menchik a Hou Yifan, e uma seleção das suas
+partidas.
 
 Uma partida pode ser revista de duas maneiras. **Conto** é para a criança: as
 peças do seu próprio exército mexem-se sozinhas, surge um balão num xeque, num
@@ -111,10 +115,10 @@ o robô ou contra um dos pais no mesmo telemóvel ainda está para vir.
 
 ### Estado
 
-A primeira versão de teste (1.0.3) já saiu: o APK para Android pode ser
+A primeira versão de teste (1.0.4) já saiu: o APK para Android pode ser
 descarregado abaixo, e o iPhone e o iPad recebem-na através do TestFlight. A
 seguir vêm as restantes ilhas, uma zona para pais (definições, desligar as
-batalhas, um resumo do que a criança já sabe), uma biblioteca com mais partidas
+batalhas, um resumo do que a criança já sabe), histórias e voz para as partidas
 célebres e um teste com uma verdadeira xadrezista de cinco anos: será que
 distingue as fadas num tabuleiro pequeno?
 

@@ -81,10 +81,14 @@ scelti e ripuliti a mano.
 
 ### Sala della fama
 
-Sotto la coppa sulla mappa c’è la Sala della fama, con le partite celebri dei
-grandi maestri: la partita di Morphy all’Opéra di Parigi nel 1858, la «partita
-del secolo» del tredicenne Bobby Fischer contro Donald Byrne (1956) e Vera
-Menchik contro Sonja Graf al campionato del mondo femminile del 1937.
+Sotto la coppa sulla mappa c’è la Sala della fama con tre scaffali, tutti senza
+internet. **La scacchiera d'oro** raccoglie le 64 partite più celebri,
+dall’Immortale (1851) a Gukesh (2024), una su ogni casa, e una partita giocata
+fino alla fine lascia una stella sulla sua casa. **Sfide per la corona**
+contiene tutti i match per il titolo mondiale dal 1886, con il punteggio e tutte
+le partite, compreso il titolo FIDE diviso dal 1993 al 2006. **Campionesse**
+presenta le campionesse del mondo da Vera Menchik a Hou Yifan e una scelta delle
+loro partite.
 
 Una partita si può rivedere in due modi. **Fiaba** è per il bambino: i pezzi
 del suo esercito si muovono da soli, a uno scacco, un arrocco o un sacrificio
@@ -112,12 +116,12 @@ contro il robot o contro un genitore sullo stesso telefono arriverà più avanti
 
 ### Stato
 
-La prima versione di prova (1.0.3) è uscita: l’APK per Android si scarica qui
+La prima versione di prova (1.0.4) è uscita: l’APK per Android si scarica qui
 sotto, mentre iPhone e iPad la ricevono tramite TestFlight. I prossimi passi
-sono le isole mancanti, un’area genitori (impostazioni, battaglie
-disattivabili, riepilogo di ciò che il bambino sa fare), una biblioteca di
-altre partite celebri e un test con una vera scacchista di cinque anni:
-riuscirà a distinguere le fate su una scacchiera piccola?
+sono le isole mancanti, un’area genitori (impostazioni, battaglie disattivabili,
+riepilogo di ciò che il bambino sa fare), storie e voce per le partite celebri e
+un test con una vera scacchista di cinque anni: riuscirà a distinguere le fate
+su una scacchiera piccola?
 
 Senza pubblicità, senza account, funziona offline. L’app è in 45 lingue; la
 voce per ora parla ceco e inglese.

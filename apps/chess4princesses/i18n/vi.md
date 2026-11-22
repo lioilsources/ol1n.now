@@ -74,10 +74,13 @@ chọn lọc và chỉnh sửa thủ công.
 
 ### Phòng vinh danh
 
-Dưới chiếc cúp trên bản đồ là phòng vinh danh với những ván cờ nổi tiếng của các
-kiện tướng: ván cờ của Morphy tại nhà hát opera Paris năm 1858, “ván cờ thế kỷ”
-của cậu bé mười ba tuổi Bobby Fischer với Donald Byrne (1956), và Vera Menchik
-đấu với Sonja Graf tại giải vô địch thế giới nữ năm 1937.
+Dưới chiếc cúp trên bản đồ là phòng vinh danh với ba kệ, tất cả đều không cần
+internet. **Bàn cờ vàng** có 64 ván cờ nổi tiếng nhất, từ Ván cờ bất tử (1851)
+đến Gukesh (2024), mỗi ô một ván, và ván cờ nào được chơi đến cuối sẽ để lại một
+ngôi sao trên ô của mình. **Những trận tranh vương miện** gồm mọi trận đấu tranh
+ngôi vô địch thế giới từ năm 1886, kèm tỉ số và tất cả các ván, kể cả danh hiệu
+FIDE bị chia tách giai đoạn 1993–2006. **Nữ vô địch** giới thiệu các nhà vô địch
+thế giới nữ từ Vera Menchik đến Hou Yifan cùng một số ván cờ chọn lọc của họ.
 
 Có hai cách xem lại một ván cờ. **Truyện kể** dành cho bé: quân của chính đội bé
 tự đi, bong bóng lời thoại hiện lên khi chiếu tướng, nhập thành hay hy sinh táo
@@ -104,11 +107,12 @@ thoại sẽ có sau.
 
 ### Tình trạng
 
-Phiên bản thử nghiệm đầu tiên (1.0.3) đã ra mắt: tệp APK cho Android có thể tải
+Phiên bản thử nghiệm đầu tiên (1.0.4) đã ra mắt: tệp APK cho Android có thể tải
 ở bên dưới, còn iPhone và iPad nhận bản này qua TestFlight. Tiếp theo là các đảo
 còn lại, khu vực dành cho phụ huynh (cài đặt, tắt trận chiến, tổng quan những gì
-bé đã biết), thư viện thêm nhiều ván cờ nổi tiếng và một buổi thử với một kỳ thủ
-năm tuổi thật sự: liệu bé có phân biệt được các nàng tiên trên bàn cờ nhỏ?
+bé đã biết), câu chuyện và giọng đọc cho các ván cờ nổi tiếng và một buổi thử
+với một kỳ thủ năm tuổi thật sự: liệu bé có phân biệt được các nàng tiên trên
+bàn cờ nhỏ?
 
 Không quảng cáo, không tài khoản, dùng ngoại tuyến. Ứng dụng có 45 ngôn ngữ;
 giọng đọc hiện mới nói tiếng Séc và tiếng Anh.

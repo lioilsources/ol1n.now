@@ -80,10 +80,14 @@ alles von Hand ausgewählt und bereinigt.
 
 ### Ruhmeshalle
 
-Unter dem Pokal auf der Karte liegt die Ruhmeshalle mit berühmten Partien der
-Meister: Morphys Partie in der Pariser Oper von 1858, die „Partie des
-Jahrhunderts“ des dreizehnjährigen Bobby Fischer gegen Donald Byrne (1956) und
-Vera Menchik gegen Sonja Graf bei der Frauenweltmeisterschaft 1937.
+Unter dem Pokal auf der Karte liegt die Ruhmeshalle mit drei Regalen, alle ohne
+Internet. **Das goldene Brett** zeigt die 64 berühmtesten Partien, von der
+Unsterblichen Partie (1851) bis zu Gukesh (2024), auf jedem Feld eine, und eine
+zu Ende gespielte Partie hinterlässt auf ihrem Feld einen Stern. **Kämpfe um die
+Krone** enthält alle Weltmeisterschaftskämpfe seit 1886 mit Ergebnis und allen
+Partien, einschließlich des geteilten FIDE-Titels von 1993 bis 2006.
+**Weltmeisterinnen** zeigt die Schachweltmeisterinnen von Vera Menchik bis Hou
+Yifan und eine Auswahl ihrer Partien.
 
 Eine Partie lässt sich auf zwei Arten nachspielen. **Märchen** ist für das Kind:
 Die Figuren seiner eigenen Armee ziehen von selbst, bei Schach, Rochade oder
@@ -111,10 +115,10 @@ Roboter oder gegen Mama oder Papa auf einem Handy kommt erst noch.
 
 ### Stand
 
-Die erste Testversion (1.0.3) ist da: Die Android-APK lässt sich unten
+Die erste Testversion (1.0.4) ist da: Die Android-APK lässt sich unten
 herunterladen, iPhone und iPad bekommen sie über TestFlight. Als Nächstes kommen
 die übrigen Inseln, ein Elternbereich (Einstellungen, Kämpfe abschalten,
-Übersicht, was das Kind schon kann), eine Bibliothek mit weiteren berühmten
+Übersicht, was das Kind schon kann), Geschichten und Stimme zu den berühmten
 Partien und ein Test mit einer echten fünfjährigen Schachspielerin: Kann sie die
 Feen auf einem kleinen Brett auseinanderhalten?
 

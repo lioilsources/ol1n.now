@@ -79,10 +79,14 @@ va triar i netejar a mà.
 
 ### Sala de la Fama
 
-Sota la copa del mapa hi ha la Sala de la Fama, amb partides famoses dels
-mestres: la partida de Morphy a l’òpera de París el 1858, la «partida del
-segle» de Bobby Fischer, amb tretze anys, contra Donald Byrne (1956), i Vera
-Menchik contra Sonja Graf al campionat del món femení de 1937.
+Sota la copa del mapa hi ha la Sala de la Fama amb tres prestatges, tots sense
+internet. **El tauler d'or** té les 64 partides més famoses, de la Partida
+Immortal (1851) fins a Gukesh (2024), una a cada casella, i una partida jugada
+fins al final deixa una estrella a la seva casella. **Duels per la corona**
+recull tots els matxs pel títol de campió del món des del 1886 amb el resultat i
+totes les partides, inclòs el títol dividit de la FIDE del 1993 al 2006.
+**Campiones** mostra les campiones del món des de Vera Menchik fins a Hou Yifan
+i una selecció de les seves partides.
 
 Una partida es pot reviure de dues maneres. **Conte** és per a l’infant: les
 peces del seu exèrcit es mouen soles, apareix una bafarada en un escac, un
@@ -111,12 +115,12 @@ contra el robot o contra el pare o la mare en un sol mòbil encara ha d’arriba
 
 ### Estat
 
-Ja ha sortit la primera versió de prova (1.0.3): l’APK per a Android es pot
+Ja ha sortit la primera versió de prova (1.0.4): l’APK per a Android es pot
 baixar aquí sota, i l’iPhone i l’iPad la reben a través de TestFlight. Ara
 toquen les illes que falten, una zona per als pares (configuració, desactivar
-les batalles, un resum del que sap fer l’infant), una biblioteca amb més
-partides famoses i una prova amb una escaquista de cinc anys de veritat:
-sabrà distingir les fades en un tauler petit?
+les batalles, un resum del que sap fer l’infant), històries i veu per a les
+partides famoses i una prova amb una escaquista de cinc anys de veritat: sabrà
+distingir les fades en un tauler petit?
 
 Sense anuncis, sense compte, funciona sense connexió. L’app està en 45
 idiomes; la veu, de moment, parla txec i anglès.

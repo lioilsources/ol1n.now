@@ -81,10 +81,14 @@ mindet kézzel válogattuk és tisztítottuk.
 
 ### Hírességek csarnoka
 
-A térképen a kupa alatt található a hírességek csarnoka a mesterek híres
-játszmáival: Morphy játszmája a párizsi operában 1858-ban, a tizenhárom éves
-Bobby Fischer „évszázad játszmája” Donald Byrne ellen (1956), valamint Vera
-Menchik és Sonja Graf összecsapása az 1937-es női világbajnokságon.
+A térképen a kupa alatt található a hírességek csarnoka három polccal, és
+mindegyik internet nélkül működik. **Az aranytábla** a 64 leghíresebb játszmát
+tartalmazza a Halhatatlan játszmától (1851) Gukeshig (2024), minden mezőn egyet,
+és a végigjátszott játszma csillagot hagy a mezőjén. A **Párosmérkőzések a
+koronáért** polcon ott van minden világbajnoki párosmérkőzés 1886 óta, az
+eredménnyel és az összes játszmával, a megosztott 1993–2006-os FIDE-címmel
+együtt. A **Bajnoknők** polc a női világbajnokokat mutatja be Vera Menchiktől
+Hou Yifanig, válogatott játszmáikkal.
 
 Egy játszmát kétféleképpen lehet visszajátszani. A **Mese** a gyereknek szól: a
 saját seregének bábui maguktól lépnek, sakknál, sáncolásnál vagy egy merész
@@ -112,10 +116,10 @@ ellen vagy egy szülő ellen egy telefonon csak később jön.
 
 ### Állapot
 
-Megjelent az első tesztverzió (1.0.3): az androidos APK lent letölthető,
+Megjelent az első tesztverzió (1.0.4): az androidos APK lent letölthető,
 iPhone-ra és iPadre pedig a TestFlighton keresztül érkezik. Következnek a
 hiányzó szigetek, egy szülői zóna (beállítások, csaták kikapcsolása, áttekintés
-arról, mit tud a gyerek), további híres játszmák könyvtára, és egy teszt egy
+arról, mit tud a gyerek), mesék és hang a híres játszmákhoz, és egy teszt egy
 igazi ötéves sakkozólánnyal: meg tudja-e különböztetni a tündéreket egy kis
 táblán?
 

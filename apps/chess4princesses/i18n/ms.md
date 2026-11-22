@@ -83,11 +83,14 @@ semuanya dipilih dan dikemaskan secara manual.
 
 ### Dewan Kemasyhuran
 
-Di bawah piala pada peta terdapat dewan kemasyhuran yang memuatkan permainan
-terkenal para pakar catur: permainan Morphy di gedung opera Paris pada 1858,
-"permainan abad ini" antara Bobby Fischer yang berusia tiga belas tahun dan
-Donald Byrne (1956), serta Vera Menchik menentang Sonja Graf pada kejohanan
-dunia wanita 1937.
+Di bawah piala pada peta terdapat dewan kemasyhuran dengan tiga rak, semuanya
+tanpa internet. **Papan Emas** memuatkan 64 permainan paling terkenal, dari
+Permainan Abadi (1851) hingga Gukesh (2024), satu pada setiap petak, dan
+permainan yang dimainkan hingga tamat meninggalkan bintang pada petaknya.
+**Perlawanan merebut mahkota** mengandungi semua perlawanan kejohanan dunia
+sejak 1886 bersama skor dan semua permainannya, termasuk gelaran FIDE yang
+berpecah pada 1993–2006. **Juara wanita** menunjukkan juara dunia wanita dari
+Vera Menchik hingga Hou Yifan serta pilihan permainan mereka.
 
 Permainan boleh dimainkan semula dengan dua cara. **Cerita** untuk kanak-kanak:
 buah catur pasukannya sendiri bergerak dengan sendiri, belon kata muncul semasa
@@ -116,12 +119,12 @@ atau menentang ibu bapa pada satu telefon akan datang kemudian.
 
 ### Status
 
-Versi ujian pertama (1.0.3) sudah keluar: APK Android boleh dimuat turun di
+Versi ujian pertama (1.0.4) sudah keluar: APK Android boleh dimuat turun di
 bawah, dan iPhone serta iPad mendapatkannya melalui TestFlight. Seterusnya ialah
 pulau-pulau yang tinggal, zon ibu bapa (tetapan, mematikan pertarungan, gambaran
-tentang apa yang sudah dikuasai anak), perpustakaan lebih banyak permainan
-terkenal dan ujian bersama pemain catur cilik lima tahun yang sebenar: bolehkah
-dia membezakan pari-pari di papan yang kecil?
+tentang apa yang sudah dikuasai anak), cerita dan suara untuk permainan terkenal
+dan ujian bersama pemain catur cilik lima tahun yang sebenar: bolehkah dia
+membezakan pari-pari di papan yang kecil?
 
 Tanpa iklan, tanpa akaun, berfungsi di luar talian. Aplikasi ini ada dalam 45
 bahasa; suaranya setakat ini bercakap bahasa Czech dan Inggeris.

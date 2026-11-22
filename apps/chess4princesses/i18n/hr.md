@@ -73,10 +73,13 @@ a vojske igračaka u Qwen-Image. Sve je zatim ručno birano i dotjerivano.
 
 ### Dvorana slavnih
 
-Ispod pehara na karti nalazi se dvorana slavnih sa slavnim partijama majstora:
-Morphyjeva partija u pariškoj operi iz 1858., „partija stoljeća”
-trinaestogodišnjeg Bobbyja Fischera protiv Donalda Byrnea (1956.) te Vera
-Menchik protiv Sonje Graf na Svjetskom prvenstvu za žene 1937.
+Ispod pehara na karti nalazi se dvorana slavnih s tri police, sve bez interneta.
+**Zlatna ploča** ima 64 najslavnije partije, od Besmrtne partije (1851) do
+Gukesha (2024), na svakom polju po jednu, a partija odigrana do kraja ostavlja
+zvjezdicu na svom polju. **Mečevi za krunu** donose sve mečeve za naslov
+svjetskog prvaka od 1886. s rezultatom i svim partijama, uključujući podijeljeni
+naslov FIDE-a 1993.–2006. **Prvakinje** prikazuju svjetske prvakinje od Vere
+Menchik do Hou Yifan i izbor njihovih partija.
 
 Partija se može ponovno pogledati na dva načina. **Bajka** je za dijete: figure
 njegove vojske same se pomiču, kod šaha, rokade ili hrabre žrtve iskoči oblačić,
@@ -103,11 +106,11 @@ mobitelu tek dolazi.
 
 ### Stanje
 
-Prva probna verzija (1.0.3) je vani: APK za Android može se preuzeti ispod, a
+Prva probna verzija (1.0.4) je vani: APK za Android može se preuzeti ispod, a
 iPhone i iPad dobivaju je putem TestFlighta. Slijede preostali otoci,
 roditeljska zona (postavke, isključivanje bitaka, pregled onoga što dijete zna),
-knjižnica s još slavnih partija i test s pravom petogodišnjom šahisticom: hoće
-li na maloj ploči razlikovati vile?
+priče i glas za slavne partije i test s pravom petogodišnjom šahisticom: hoće li
+na maloj ploči razlikovati vile?
 
 Bez oglasa, bez računa, radi offline. Aplikacija je na 45 jezika, a glas zasad
 govori češki i engleski.

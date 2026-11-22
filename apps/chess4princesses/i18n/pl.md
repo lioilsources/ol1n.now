@@ -77,10 +77,13 @@ i oczyszczone.
 
 ### Sala sław
 
-Pod pucharem na mapie jest Sala sław ze słynnymi partiami mistrzów: partia
-Morphy’ego w paryskiej operze z 1858 roku, „partia stulecia” trzynastoletniego
-Bobby’ego Fischera z Donaldem Byrne’em (1956) oraz Vera Menchik przeciwko
-Sonji Graf na mistrzostwach świata kobiet w 1937 roku.
+Pod pucharem na mapie jest Sala sław, a w niej trzy półki, wszystkie bez
+internetu. **Złota szachownica** ma 64 najsłynniejsze partie, od Nieśmiertelnej
+partii (1851) po Gukesha (2024), po jednej na każdym polu, a partia rozegrana do
+końca zostawia na swoim polu gwiazdkę. **Mecze o koronę** to wszystkie mecze o
+tytuł mistrza świata od 1886 roku z wynikiem i wszystkimi partiami, łącznie z
+podzielonym tytułem FIDE z lat 1993–2006. **Mistrzynie** pokazują mistrzynie
+świata od Very Menchik po Hou Yifan i wybór ich partii.
 
 Partię można odtworzyć na dwa sposoby. **Bajka** jest dla dziecka: figury jego
 armii same się ruszają, przy szachu, roszadzie albo odważnej ofierze pojawia
@@ -107,11 +110,11 @@ dopiero będzie.
 
 ### Stan
 
-Pierwsza wersja testowa (1.0.3) jest już dostępna: APK na Androida można
-pobrać poniżej, a iPhone i iPad dostają ją przez TestFlight. Następne
-w kolejce są pozostałe wyspy, strefa rodzica (ustawienia, wyłączanie bitew,
-podgląd tego, co dziecko umie), biblioteka kolejnych słynnych partii i test
-z prawdziwą pięcioletnią szachistką: czy odróżni wróżki na małej szachownicy?
+Pierwsza wersja testowa (1.0.4) jest już dostępna: APK na Androida można pobrać
+poniżej, a iPhone i iPad dostają ją przez TestFlight. Następne w kolejce są
+pozostałe wyspy, strefa rodzica (ustawienia, wyłączanie bitew, podgląd tego, co
+dziecko umie), opowieści i głos do słynnych partii i test z prawdziwą
+pięcioletnią szachistką: czy odróżni wróżki na małej szachownicy?
 
 Bez reklam, bez konta, działa offline. Aplikacja jest w 45 językach, głos na
 razie mówi po czesku i po angielsku.

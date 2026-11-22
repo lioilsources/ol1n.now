@@ -79,10 +79,14 @@ ja siistittiin käsin.
 
 ### Kunniahalli
 
-Kartan pokaalin alla on Kunniahalli, jossa on mestareiden kuuluisia pelejä:
-Morphyn peli Pariisin oopperassa vuonna 1858, 13-vuotiaan Bobby Fischerin
-”vuosisadan peli” Donald Byrneä vastaan (1956) sekä Vera Menchikin ja Sonja
-Grafin ottelu naisten maailmanmestaruuskisoissa 1937.
+Kartan pokaalin alla on Kunniahalli ja siellä kolme hyllyä, jotka kaikki
+toimivat ilman nettiä. **Kultainen lauta** sisältää 64 kuuluisinta peliä
+Kuolemattomasta pelistä (1851) Gukeshiin (2024), yhden jokaisella ruudulla, ja
+loppuun pelattu peli jättää ruutuunsa tähden. **Kamppailut kruunusta** kokoaa
+kaikki maailmanmestaruusottelut vuodesta 1886 tuloksineen ja kaikkine peleineen,
+myös jaetun FIDE-tittelin vuosilta 1993–2006. **Mestarinaiset** esittelee
+naisten maailmanmestarit Vera Menchikistä Hou Yifaniin ja valikoiman heidän
+pelejään.
 
 Pelin voi katsoa kahdella tavalla. **Satu** on lapselle: hänen oman
 armeijansa nappulat liikkuvat itsestään, shakin, linnoituksen tai rohkean
@@ -110,12 +114,12 @@ vanhempaa vastaan samalla puhelimella on vasta tulossa.
 
 ### Tilanne
 
-Ensimmäinen testiversio (1.0.3) on julkaistu: Androidin APK:n voi ladata alta,
+Ensimmäinen testiversio (1.0.4) on julkaistu: Androidin APK:n voi ladata alta,
 ja iPhone ja iPad saavat sen TestFlightin kautta. Seuraavaksi vuorossa ovat
-loput saaret, vanhempien osio (asetukset, taisteluiden poisto, yhteenveto
-siitä, mitä lapsi osaa), kirjasto, jossa on lisää kuuluisia pelejä, ja testi
-oikean viisivuotiaan shakinpelaajan kanssa: erottaako hän keijut toisistaan
-pienellä laudalla?
+loput saaret, vanhempien osio (asetukset, taisteluiden poisto, yhteenveto siitä,
+mitä lapsi osaa), tarinat ja ääni kuuluisiin peleihin sekä testi oikean
+viisivuotiaan shakinpelaajan kanssa: erottaako hän keijut toisistaan pienellä
+laudalla?
 
 Ei mainoksia, ei tiliä, toimii ilman yhteyttä. Sovellus on 45 kielellä; ääni
 puhuu toistaiseksi tšekkiä ja englantia.

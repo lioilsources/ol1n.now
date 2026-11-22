@@ -80,10 +80,13 @@ foi escolhido e retocado à mão.
 
 ### Salão da Fama
 
-Embaixo do troféu no mapa fica o Salão da Fama, com partidas famosas dos
-mestres: a partida de Morphy na ópera de Paris em 1858, a “partida do século”,
-em que Bobby Fischer, com treze anos, enfrentou Donald Byrne (1956), e Vera
-Menchik contra Sonja Graf no campeonato mundial feminino de 1937.
+Embaixo do troféu no mapa fica o Salão da Fama, com três prateleiras, todas sem
+internet. **O tabuleiro de ouro** traz as 64 partidas mais famosas, da Partida
+Imortal (1851) até Gukesh (2024), uma em cada casa, e a partida jogada até o fim
+deixa uma estrela na sua casa. **Duelos pela coroa** reúne todos os matches pelo
+título mundial desde 1886, com o placar e todas as partidas, incluindo o título
+dividido da FIDE de 1993 a 2006. **Campeãs** mostra as campeãs mundiais de Vera
+Menchik a Hou Yifan e uma seleção das suas partidas.
 
 Uma partida pode ser revista de dois jeitos. **História** é para a criança:
 as peças do exército dela se movem sozinhas, um balão aparece num xeque, num
@@ -111,12 +114,12 @@ contra o robô ou contra o pai ou a mãe no mesmo celular ainda vai chegar.
 
 ### Status
 
-A primeira versão de teste (1.0.3) saiu: o APK para Android pode ser baixado
-aqui embaixo, e iPhone e iPad recebem pelo TestFlight. Os próximos passos são
-as ilhas que faltam, uma área dos pais (configurações, desligar as batalhas,
-um resumo do que a criança já sabe), uma biblioteca com mais partidas famosas
-e um teste com uma enxadrista de cinco anos de verdade: será que ela distingue
-as fadas num tabuleiro pequeno?
+A primeira versão de teste (1.0.4) saiu: o APK para Android pode ser baixado
+aqui embaixo, e iPhone e iPad recebem pelo TestFlight. Os próximos passos são as
+ilhas que faltam, uma área dos pais (configurações, desligar as batalhas, um
+resumo do que a criança já sabe), histórias e voz para as partidas famosas e um
+teste com uma enxadrista de cinco anos de verdade: será que ela distingue as
+fadas num tabuleiro pequeno?
 
 Sem anúncios, sem conta, funciona offline. O app está em 45 idiomas; por
 enquanto a voz fala tcheco e inglês.

@@ -82,10 +82,14 @@ ensuite été trié et retouché à la main.
 
 ### Salle des légendes
 
-Sous le trophée, sur la carte, se trouve la salle des légendes et ses parties
-célèbres des maîtres : la partie de Morphy à l’Opéra de Paris en 1858, la «
-partie du siècle » de Bobby Fischer, treize ans, contre Donald Byrne (1956), et
-Vera Menchik contre Sonja Graf au championnat du monde féminin de 1937.
+Sous le trophée, sur la carte, se trouve la salle des légendes avec trois
+étagères, toutes sans internet. **L'échiquier d'or** réunit les 64 parties les
+plus célèbres, de l’Immortelle (1851) à Gukesh (2024), une sur chaque case, et
+une partie jouée jusqu’au bout laisse une étoile sur sa case. **Matchs pour la
+couronne** rassemble tous les matchs pour le titre de champion du monde depuis
+1886, avec le score et toutes les parties, y compris le titre FIDE scindé de
+1993 à 2006. **Championnes** présente les championnes du monde, de Vera Menchik
+à Hou Yifan, et une sélection de leurs parties.
 
 On peut rejouer une partie de deux façons. **Conte**, c’est pour l’enfant : les
 pièces de sa propre armée avancent toutes seules, une bulle apparaît lors d’un
@@ -114,12 +118,12 @@ contre un parent sur un seul téléphone arrivera plus tard.
 
 ### État
 
-La première version de test (1.0.3) est sortie : l’APK Android se télécharge
-ci-dessous, et l’iPhone et l’iPad la reçoivent via TestFlight. Prochaines étapes
-: les îles restantes, un espace parents (réglages, désactivation des batailles,
-aperçu de ce que l’enfant sait faire), une bibliothèque d’autres parties
-célèbres et un test avec une vraie joueuse d’échecs de cinq ans : saura-t-elle
-distinguer les fées sur un petit échiquier ?
+La première version de test (1.0.4) est sortie : l’APK Android se télécharge
+ci-dessous, et l’iPhone et l’iPad la reçoivent via TestFlight. Prochaines
+étapes : les îles restantes, un espace parents (réglages, désactivation des
+batailles, aperçu de ce que l’enfant sait faire), des histoires et une voix pour
+les parties célèbres et un test avec une vraie joueuse d’échecs de cinq ans :
+saura-t-elle distinguer les fées sur un petit échiquier ?
 
 Sans pub, sans compte, fonctionne hors ligne. L’app existe en 45 langues ; la
 voix parle pour l’instant tchèque et anglais.

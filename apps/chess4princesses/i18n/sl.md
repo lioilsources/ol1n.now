@@ -75,10 +75,13 @@ očiščeno.
 
 ### Dvorana slavnih
 
-Pod pokalom na zemljevidu je dvorana slavnih s slavnimi partijami mojstrov:
-Morphyjeva partija v pariški operi iz leta 1858, „partija stoletja“
-trinajstletnega Bobbyja Fischerja proti Donaldu Byrnu (1956) in Vera Menchik
-proti Sonji Graf na svetovnem prvenstvu za ženske leta 1937.
+Pod pokalom na zemljevidu je dvorana slavnih s tremi policami, vse brez
+interneta. **Zlata šahovnica** ima 64 najslavnejših partij, od Nesmrtne partije
+(1851) do Gukesha (2024), na vsakem polju po eno, in partija, odigrana do konca,
+pusti na svojem polju zvezdico. **Dvoboji za krono** so vsi dvoboji za naslov
+svetovnega prvaka od leta 1886 z izidom in vsemi partijami, vključno z
+razdeljenim naslovom FIDE v letih 1993–2006. **Prvakinje** predstavijo svetovne
+prvakinje od Vere Menchik do Hou Yifan in izbor njihovih partij.
 
 Partijo lahko predvajaš na dva načina. **Pravljica** je za otroka: figure
 njegove vojske se premikajo same, ob šahu, rokadi ali drzni žrtvi se pojavi
@@ -105,10 +108,10 @@ telefonu še pride.
 
 ### Stanje
 
-Prva preizkusna različica (1.0.3) je zunaj: APK za Android lahko preneseš
+Prva preizkusna različica (1.0.4) je zunaj: APK za Android lahko preneseš
 spodaj, iPhone in iPad pa jo dobita prek TestFlighta. Na vrsti so preostali
 otoki, starševski kotiček (nastavitve, izklop bitk, pregled, kaj otrok zna),
-knjižnica dodatnih slavnih partij in preizkus s pravo petletno šahistko: bo na
+zgodbe in glas za slavne partije in preizkus s pravo petletno šahistko: bo na
 majhni šahovnici ločila vile med sabo?
 
 Brez oglasov, brez računa, deluje brez povezave. Aplikacija je v 45 jezikih,

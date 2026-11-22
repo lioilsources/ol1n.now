@@ -75,10 +75,13 @@ FLUX.1-schnell, hračkové armády v Qwen-Image. Všetko sa potom ručne vyberal
 
 ### Sieň slávy
 
-Pod pohárom na mape je Sieň slávy so slávnymi partiami majstrov: Morphyho
-partia v parížskej opere z roku 1858, „partia storočia“ trinásťročného Bobbyho
-Fischera proti Donaldovi Byrnovi (1956) a Vera Menčíková proti Sonji Grafovej
-na majstrovstvách sveta žien 1937.
+Pod pohárom na mape je Sieň slávy a v nej tri police, všetky bez internetu.
+**Zlatá šachovnica** má 64 najslávnejších partií od Nesmrteľnej partie (1851) po
+Gukesha (2024), na každom poli jednu, a dohraná partia nechá na svojom poli
+hviezdu. **Zápasy o korunu** sú všetky zápasy o titul majstra sveta od roku 1886
+so skóre a všetkými partiami vrátane rozdeleného titulu FIDE 1993–2006.
+**Šampiónky** ukazujú majsterky sveta od Very Menčíkovej po Chou I-fan a výber
+ich partií.
 
 Partia sa dá prehrať dvoma spôsobmi. **Rozprávka** je pre dieťa: figúrky jeho
 armády ťahajú samy, pri šachu, rošáde a odvážnej obeti sa objaví bublina a z
@@ -104,11 +107,11 @@ jednom telefóne ešte len príde.
 
 ### Stav
 
-Prvá skúšobná verzia (1.0.3) je vonku: APK pre Android sa dá stiahnuť nižšie,
-iPhone a iPad ju dostávajú cez TestFlight. Na rade sú zvyšné ostrovy,
-rodičovská zóna (nastavenia, vypnutie súbojov, prehľad, čo dieťa vie),
-knižnica ďalších slávnych partií a test so skutočnou päťročnou šachistkou:
-rozozná na malej šachovnici víly od seba?
+Prvá skúšobná verzia (1.0.4) je vonku: APK pre Android sa dá stiahnuť nižšie,
+iPhone a iPad ju dostávajú cez TestFlight. Na rade sú zvyšné ostrovy, rodičovská
+zóna (nastavenia, vypnutie súbojov, prehľad, čo dieťa vie), príbehy a hlas k
+slávnym partiám a test so skutočnou päťročnou šachistkou: rozozná na malej
+šachovnici víly od seba?
 
 Bez reklám a bez účtu, funguje offline. Appka je v 45 jazykoch, hlas zatiaľ
 hovorí po česky a po anglicky.
