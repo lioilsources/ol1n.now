@@ -1498,6 +1498,7 @@ done
     b="$(basename "$f")"
     case "$b" in index.html) continue ;; esac
     case " $PAGE_OUTS " in *" $b "*) continue ;; esac
+    grep -q 'name="robots" content="noindex"' "$f" && continue
     printf '  <url><loc>%s/%s</loc></url>\n' "$SITE" "$b"
   done
   for u in $PAGE_URLS; do printf '  <url><loc>%s</loc></url>\n' "$u"; done
