@@ -154,7 +154,9 @@ block in `store.css`; no script. When episode 2 gets panels, the gamebook branch
 them instead of the script.
 
 **chess4princesses**, **rattleramp** and **fotballsimulator** (added 2026-10-25) are early
-alphas. Chess has no release yet (`i18n/cs.tsv` rewords downloads); RattleRamp ships
+alphas. Chess ships an APK on GitHub Releases since v1.0.2 (iOS goes to TestFlight only; its
+shots 12–16 of the hall of fame, replay and toy armies come from a throwaway web build, see
+`docs/screenshots.md`); RattleRamp ships
 `v0.x-alpha` pre-releases with a macOS zip + APK, Fotball an APK (both also push to TestFlight,
 which the page does not link). Fotball's `master` default branch is the second one in the
 catalog. Fotball still carries the default Flutter icon, so it gets the letter tile.

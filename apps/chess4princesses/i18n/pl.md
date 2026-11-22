@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Szachy dla pięciolatków — bajkowe lekcje, głos, który czyta wszystko na głos, i bitwy wróżek z czarownicami
+tagline: Szachy dla pięciolatków — bajkowe lekcje, głos, który czyta wszystko na głos, bitwy czternastu armii i słynne partie mistrzów
 ---
 Chess Kingdom uczy szachów dziecko, które jeszcze nie umie czytać. Każda
 figura to postać z własnym imieniem i charakterem: Daisy Tower ma kółka i
@@ -54,16 +54,49 @@ kilka słów („Ciuch-ciuch!” – „Idę do stawu…”) i jedna z nich idzi
 Nikt nie ginie, pokonana figura jedzie „do zajezdni” albo leci „na łąkę”.
 Bitwa trwa niecałe trzy sekundy i można ją pominąć stuknięciem.
 
-### Wróżki i czarownice
+### Czternaście armii
 
-Są dwie armie: **Wróżki** (King Rainbeard, Princess Sparkle, Daisy Tower,
-jednorożec zamiast kucyka) i **Czarownice** (King Grumble, który zrzędzi, ale
-uwielbia babeczki, Queen Thunder, której czary robią bum, ale nikogo nie
-bolą, Batty Tower i żabki w kapeluszach zamiast pionków). Każda ma sześć
-postaci, własną arenę i własne kwestie.
+Na początku były dwie armie: **Wróżki** (King Rainbeard, Princess Sparkle,
+Daisy Tower, jednorożec zamiast kucyka) i **Czarownice** (King Grumble, który
+zrzędzi, ale uwielbia babeczki, Queen Thunder, której czary robią bum, ale
+nikogo nie bolą, Batty Tower i żabki w kapeluszach zamiast pionków).
+
+Teraz jest ich czternaście. Doszło dwanaście armii z winylowych zabawek:
+**Królestwo** (Król Jabłuszko ze złotym jabłkiem), **Diabełki** (Król Gderek
+z wielką księgą i jeszcze większymi rogami), **Kotki**, **Pieski**,
+**Pszczółki**, **Szerszenie**, **Dinozaury** (Król Rexik, duży, ale dobry),
+**Epoka lodowcowa**, **Owoce**, **Warzywa** oraz zabawkowe **Leśne wróżki**
+i **Czarownice**. Każda armia ma sześć postaci z imionami, własną arenę,
+powitania i kwestie do bitwy. Król jest najwyższy, a pionek najmniejszy, więc
+figury da się na szachownicy rozpoznać po wzroście.
+
 Dziecko wybiera, kim gra i przeciwko komu. Postacie są oryginalne, bez marek
-i znanych bajkowych licencji. Powstały w modelu FLUX.1-schnell (licencja
-Apache 2.0), a potem zostały ręcznie wybrane i oczyszczone.
+i znanych bajkowych licencji. Wróżki i czarownice powstały w FLUX.1-schnell,
+zabawkowe armie w Qwen-Image. Wszystko zostało potem ręcznie wybrane
+i oczyszczone.
+
+### Sala sław
+
+Pod pucharem na mapie jest Sala sław ze słynnymi partiami mistrzów: partia
+Morphy’ego w paryskiej operze z 1858 roku, „partia stulecia” trzynastoletniego
+Bobby’ego Fischera z Donaldem Byrne’em (1956) oraz Vera Menchik przeciwko
+Sonji Graf na mistrzostwach świata kobiet w 1937 roku.
+
+Partię można odtworzyć na dwa sposoby. **Bajka** jest dla dziecka: figury jego
+armii same się ruszają, przy szachu, roszadzie albo odważnej ofierze pojawia
+się dymek, a z całej partii wybierane są najwyżej cztery wielkie bitwy.
+Pozostałe bicia robią tylko „puf”. Na końcu przychodzi mat z pucharem,
+poddanie (król się kłania) albo remis (podanie ręki). **Kronika** jest dla
+rodzica: zapis ruchów, krok w przód i w tył, i żadnych bitew.
+
+### Turnieje na żywo
+
+Kto chce, może w Sali sław włączyć „Partie z internetu”. Wtedy pojawi się tam
+wielki turniej, który właśnie trwa, przede wszystkim mecz o mistrzostwo świata
+2026 w Genewie. Rozegrane rundy można odtworzyć tak jak słynne partie, nawet
+bez sieci. Przełącznik jest domyślnie wyłączony. Aplikacja nigdzie się wtedy
+nie łączy, a partie pobiera tylko z własnego małego serwera, bez konta,
+ciasteczek i śledzenia.
 
 ### Gra z robocikiem
 
@@ -74,9 +107,11 @@ dopiero będzie.
 
 ### Stan
 
-Aplikacja jest w budowie i nie można jej jeszcze pobrać. Następne w kolejce są
-pozostałe wyspy, strefa rodzica (ustawienia, wyłączanie bitew, podgląd tego, co
-dziecko umie), turnieje na końcu wysp z dyplomem i test z prawdziwą
-pięcioletnią szachistką: czy odróżni wróżki na małej szachownicy?
+Pierwsza wersja testowa (1.0.2) jest już dostępna: APK na Androida można
+pobrać poniżej, a iPhone i iPad dostają ją przez TestFlight. Następne
+w kolejce są pozostałe wyspy, strefa rodzica (ustawienia, wyłączanie bitew,
+podgląd tego, co dziecko umie), biblioteka kolejnych słynnych partii i test
+z prawdziwą pięcioletnią szachistką: czy odróżni wróżki na małej szachownicy?
 
-Bez reklam, bez konta i offline. Po czesku i po angielsku.
+Bez reklam, bez konta, działa offline. Aplikacja jest w 45 językach, głos na
+razie mówi po czesku i po angielsku.

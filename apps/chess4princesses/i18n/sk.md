@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Šach pre päťročných — rozprávkové lekcie, hlas, ktorý všetko prečíta, a súboje víl s čarodejnicami
+tagline: Šach pre päťročných — rozprávkové lekcie, hlas, ktorý všetko prečíta, súboje štrnástich armád a slávne partie majstrov
 ---
 Chess Kingdom učí šach dieťa, ktoré ešte nevie čítať. Každá figúrka je
 postavička s vlastným menom a povahou: Daisy Tower má kolieska a jazdí len
@@ -52,16 +52,48 @@ slov („Tú-túú!“ – „Idem do rybníčka…“) a jedna z nich odíde od
 neumiera, porazená figúrka ide „do depa“ alebo „na lúku“. Súboj trvá necelé
 tri sekundy a dá sa preskočiť ťuknutím.
 
-### Víly a čarodejnice
+### Štrnásť armád
 
-Sú dve armády: **Víly** (King Rainbeard, Princess Sparkle, Daisy Tower,
-jednorožec namiesto koníka) a **Čarodejnice** (King Grumble, ktorý frfle, ale
-má rád koláčiky, Queen Thunder, ktorej kúzla robia bum, ale nikoho nebolia,
-Batty Tower a žabky v klobúkoch namiesto pešiakov). Každá má šesť postavičiek,
-vlastnú arénu a vlastné hlášky.
+Na začiatku boli dve armády: **Víly** (King Rainbeard, Princess Sparkle, Daisy
+Tower, jednorožec namiesto koníka) a **Čarodejnice** (King Grumble, ktorý
+frfle, ale má rád koláčiky, Queen Thunder, ktorej kúzla robia bum, ale nikoho
+nebolia, Batty Tower a žabky v klobúkoch namiesto pešiakov).
+
+Teraz ich je štrnásť. Pribudlo dvanásť armád z vinylových hračiek:
+**Kráľovstvo** (Kráľ Jabĺčko so zlatým jablkom), **Čertíci** (Čertí kráľ
+Bručko s veľkou knihou a ešte väčšími rohmi), **Mačičky**, **Psíkovia**,
+**Včielky**, **Sršne**, **Dinosaury** (Kráľ Rexík, veľký, ale dobrý), **Doba
+ľadová**, **Ovocie**, **Zelenina** a hračkové **Lesné víly** a
+**Čarodejnice**. Každá armáda má šesť postavičiek s menami, vlastnú arénu,
+pozdravy a hlášky do súboja. Kráľ je najvyšší, pešiak najmenší, takže figúrky
+sa dajú na šachovnici rozoznať podľa výšky.
+
 Dieťa si vyberie, za koho hrá a proti komu. Postavičky sú pôvodné, žiadne
-značky ani známe rozprávkové licencie. Vznikli v modeli FLUX.1-schnell
-(licencia Apache 2.0) a potom sa ručne vyberali a čistili.
+značky ani známe rozprávkové licencie. Víly a čarodejnice vznikli v modeli
+FLUX.1-schnell, hračkové armády v Qwen-Image. Všetko sa potom ručne vyberalo a
+čistilo.
+
+### Sieň slávy
+
+Pod pohárom na mape je Sieň slávy so slávnymi partiami majstrov: Morphyho
+partia v parížskej opere z roku 1858, „partia storočia“ trinásťročného Bobbyho
+Fischera proti Donaldovi Byrnovi (1956) a Vera Menčíková proti Sonji Grafovej
+na majstrovstvách sveta žien 1937.
+
+Partia sa dá prehrať dvoma spôsobmi. **Rozprávka** je pre dieťa: figúrky jeho
+armády ťahajú samy, pri šachu, rošáde a odvážnej obeti sa objaví bublina a z
+celej partie sa vyberú najviac štyri veľké súboje. Ostatné branie len urobí
+„puf“. Na konci príde mat s pohárom, vzdanie (kráľ sa ukloní) alebo remíza
+(podanie rúk). **Kronika** je pre rodičov: zápis ťahov, krok vpred a späť a
+žiadne súboje.
+
+### Živé turnaje
+
+Kto chce, môže v Sieni slávy zapnúť prepínač „Partie z internetu“. Potom sa
+tam objaví práve prebiehajúci veľký turnaj, ako prvý zápas o majstra sveta
+2026 v Ženeve. Odohrané kolá sa dajú prehrať rovnako ako slávne partie, aj bez
+siete. Prepínač je predvolene vypnutý. Appka sa potom nikam nepripája a partie
+sťahuje len z vlastného malého servera, bez účtu, cookies a sledovania.
 
 ### Hra proti robotíkovi
 
@@ -72,9 +104,11 @@ jednom telefóne ešte len príde.
 
 ### Stav
 
-Appka je rozpracovaná a zatiaľ sa nedá stiahnuť. Na rade sú zvyšné ostrovy,
-rodičovská zóna (nastavenia, vypnutie súbojov, prehľad, čo dieťa vie), turnaje
-na konci ostrovov s diplomom a test so skutočnou päťročnou šachistkou: rozozná
-na malej šachovnici víly od seba?
+Prvá skúšobná verzia (1.0.2) je vonku: APK pre Android sa dá stiahnuť nižšie,
+iPhone a iPad ju dostávajú cez TestFlight. Na rade sú zvyšné ostrovy,
+rodičovská zóna (nastavenia, vypnutie súbojov, prehľad, čo dieťa vie),
+knižnica ďalších slávnych partií a test so skutočnou päťročnou šachistkou:
+rozozná na malej šachovnici víly od seba?
 
-Bez reklám, bez účtu a offline. Po česky a po anglicky.
+Bez reklám a bez účtu, funguje offline. Appka je v 45 jazykoch, hlas zatiaľ
+hovorí po česky a po anglicky.

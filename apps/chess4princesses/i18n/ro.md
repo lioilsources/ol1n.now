@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Șah pentru copii de cinci ani — lecții ca din povești, o voce care citește totul și lupte între zâne și vrăjitoare
+tagline: Șah pentru copii de cinci ani — lecții ca din povești, o voce care citește totul, lupte între paisprezece armate și partide celebre ale marilor maeștri
 ---
 Chess Kingdom îl învață șah pe un copil care încă nu știe să citească. Fiecare
 piesă e un personaj cu nume și fire proprie: Daisy Tower are roți și merge doar
@@ -56,16 +56,52 @@ odihnească. Nu moare nimeni: piesa învinsă se întoarce „la depou” sau zb
 „pe pajiște”. O luptă durează mai puțin de trei secunde și poate fi sărită cu
 o atingere.
 
-### Zâne și vrăjitoare
+### Paisprezece armate
 
-Sunt două armate: **Zânele** (King Rainbeard, Princess Sparkle, Daisy Tower și
-un unicorn în loc de ponei) și **Vrăjitoarele** (King Grumble, care bombăne,
-dar adoră brioșele, Queen Thunder, ale cărei vrăji fac bum, dar nu doare pe
-nimeni, Batty Tower și broscuțe cu pălărie în loc de pioni). Fiecare are șase
-personaje, arena ei și replicile ei.
+Totul a început cu două armate: **Zânele** (King Rainbeard, Princess Sparkle,
+Daisy Tower și un unicorn în loc de ponei) și **Vrăjitoarele** (King Grumble,
+care bombăne, dar adoră brioșele, Queen Thunder, ale cărei vrăji fac bum, dar nu
+fac niciodată rău nimănui, Batty Tower și broscuțe cu pălărie în loc de pioni).
+
+Acum sunt paisprezece. Li s-au alăturat douăsprezece armate de jucării din
+vinil: **Regatul** (Regele Măr-de-Aur, cu mărul lui de aur), **Drăcușori**
+(Regele-drac Mormăilă, cu o carte mare și coarne și mai mari), **Pisicuțele**,
+**Cățeluși**, **Albinuțele**, **Viespile mari**, **Dinozaurii** (Regele Rexi,
+mare, dar blând), **Era glaciară**, **Fructe**, **Legume**, plus jucăriile
+**Zânele pădurii** și **Vrăjitoarele**. Fiecare armată are șase personaje cu
+nume, arena ei, salutări și replici de luptă. Regele e cel mai înalt, iar pionul
+cel mai mic, așa că piesele se deosebesc pe tablă după înălțime.
+
 Copilul alege cu cine joacă și împotriva cui. Personajele sunt originale, fără
-mărci sau licențe de povești cunoscute. Au fost create cu modelul
-FLUX.1-schnell (licență Apache 2.0), apoi alese și curățate de mână.
+mărci sau licențe de povești cunoscute. Zânele și vrăjitoarele au fost create cu
+FLUX.1-schnell, armatele de jucării cu Qwen-Image. Apoi toate au fost alese și
+curățate de mână.
+
+### Sala faimei
+
+Sub cupa de pe hartă se află sala faimei, cu partide celebre ale marilor
+maeștri: partida lui Morphy de la Opera din Paris, din 1858, „partida secolului”
+jucată de Bobby Fischer, pe atunci de treisprezece ani, împotriva lui Donald
+Byrne (1956), și Vera Menchik contra Sonjei Graf la Campionatul Mondial feminin
+din 1937.
+
+O partidă poate fi reluată în două feluri. **Poveste** e pentru copil: piesele
+propriei lui armate se mută singure, la un șah, la o rocadă sau la un sacrificiu
+îndrăzneț apare un balon de vorbire, iar din toată partida se aleg cel mult
+patru lupte mari. Orice altă captură face doar „puf”. La final vine matul cu o
+cupă, abandonul (regele face o plecăciune) sau remiza (o strângere de mână).
+**Cronica** e pentru părinte: lista mutărilor, pas înainte și înapoi, fără
+lupte.
+
+### Turnee în direct
+
+Dacă vreți, puteți porni în sala faimei comutatorul „Partide de pe internet”.
+Acolo apare atunci un turneu mare care se joacă chiar acum, în primul rând
+meciul pentru titlul mondial din 2026 de la Geneva. Rundele încheiate pot fi
+reluate ca partidele celebre, chiar și fără internet. Comutatorul e oprit
+implicit. Cât e oprit, aplicația nu se conectează nicăieri, iar când e pornit
+descarcă partide doar de pe propriul ei server mic, fără cont, cookie-uri sau
+urmărire.
 
 ### Joc contra roboțelului
 
@@ -77,9 +113,11 @@ urmează.
 
 ### Stadiu
 
-Aplicația e în lucru și încă nu se poate descărca. Urmează insulele rămase, o
-zonă pentru părinți (setări, oprirea luptelor, o privire de ansamblu asupra a
-ce știe copilul), turnee cu diplomă la capătul insulelor și un test cu o
-adevărată șahistă de cinci ani: va deosebi zânele pe o tablă mică?
+Prima versiune de test (1.0.2) a apărut: APK-ul pentru Android se poate descărca
+mai jos, iar iPhone și iPad o primesc prin TestFlight. Urmează insulele rămase,
+o zonă pentru părinți (setări, oprirea luptelor, o privire de ansamblu asupra a
+ceea ce știe copilul), o bibliotecă cu mai multe partide celebre și un test cu o
+adevărată șahistă de cinci ani: poate ea deosebi zânele pe o tablă mică?
 
-Fără reclame, fără cont și offline. În cehă și engleză.
+Fără reclame, fără cont, funcționează offline. Aplicația e disponibilă în 45 de
+limbi; vocea vorbește deocamdată ceha și engleza.

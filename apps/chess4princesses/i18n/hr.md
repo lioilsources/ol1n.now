@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Šah za petogodišnjake — bajkovite lekcije, glas koji sve pročita i bitke vila s vješticama
+tagline: Šah za petogodišnjake — bajkovite lekcije, glas koji sve pročita, bitke četrnaest vojski i slavne partije majstora
 ---
 Chess Kingdom uči šah dijete koje još ne zna čitati. Svaka figura je lik s
 vlastitim imenom i naravi: Daisy Tower ima kotačiće i vozi samo ravno, Glimmer
@@ -51,16 +51,48 @@ riječi („Tu-tuuu!” – „Idem u bajeru…”) i jedan od njih ode se odmor
 ne umire, poražena figura ide „u remizu” ili odleti „na livadu”. Bitka traje
 kraće od tri sekunde i može se preskočiti dodirom.
 
-### Vile i vještice
+### Četrnaest vojski
 
-Postoje dvije vojske: **Vile** (King Rainbeard, Princess Sparkle, Daisy Tower,
-jednorog umjesto konjića) i **Vještice** (King Grumble, koji gunđa, ali voli
-kolačiće, Queen Thunder, čije čarolije rade bum, ali nikoga ne bole, Batty
-Tower i žabice u šeširima umjesto pješaka). Svaka ima šest likova, vlastitu
-arenu i vlastite rečenice.
+Počelo je s dvije vojske: **Vile** (King Rainbeard, Princess Sparkle, Daisy
+Tower, jednorog umjesto konjića) i **Vještice** (King Grumble, koji gunđa, ali
+voli kolačiće, Queen Thunder, čije čarolije rade bum, ali nikoga ne bole, Batty
+Tower i žabice u šeširima umjesto pješaka).
+
+Sada ih je četrnaest. Pridružilo im se dvanaest vojski vinilnih igračaka:
+**Kraljevstvo** (Kralj Zlatojabuka sa svojom zlatnom jabukom), **Vražići**
+(Vražji kralj Mrgud s velikom knjigom i još većim rogovima), **Mačkice**,
+**Psići**, **Pčelice**, **Stršljeni**, **Dinosauri** (Kralj Reksi, velik, ali
+dobar), **Ledeno doba**, **Voće**, **Povrće** te igračke **Šumske vile** i
+**Vještice**. Svaka vojska ima šest likova s imenima, vlastitu arenu, pozdrave i
+rečenice za bitku. Kralj je najviši, a pješak najmanji, pa se figure na ploči
+razlikuju po visini.
+
 Dijete bira za koga igra i protiv koga. Likovi su izvorni, bez brendova i
-poznatih bajkovitih licenci. Nastali su u modelu FLUX.1-schnell (licencija
-Apache 2.0), a zatim su ručno birani i dotjerivani.
+poznatih bajkovitih licenci. Vile i vještice nastale su u modelu FLUX.1-schnell,
+a vojske igračaka u Qwen-Image. Sve je zatim ručno birano i dotjerivano.
+
+### Dvorana slavnih
+
+Ispod pehara na karti nalazi se dvorana slavnih sa slavnim partijama majstora:
+Morphyjeva partija u pariškoj operi iz 1858., „partija stoljeća”
+trinaestogodišnjeg Bobbyja Fischera protiv Donalda Byrnea (1956.) te Vera
+Menchik protiv Sonje Graf na Svjetskom prvenstvu za žene 1937.
+
+Partija se može ponovno pogledati na dva načina. **Bajka** je za dijete: figure
+njegove vojske same se pomiču, kod šaha, rokade ili hrabre žrtve iskoči oblačić,
+a iz cijele partije odabiru se najviše četiri velike bitke. Svako drugo uzimanje
+samo napravi „puf”. Na kraju dolazi mat s peharom, predaja (kralj se nakloni)
+ili remi (rukovanje). **Kronika** je za roditelje: popis poteza, korak naprijed
+i natrag, bez bitaka.
+
+### Turniri uživo
+
+Tko želi, može u dvorani slavnih uključiti „Partije s interneta”. Tada se ondje
+pojavi veliki turnir koji se upravo igra, prije svega meč za svjetsko prvenstvo
+2026. u Ženevi. Odigrana kola mogu se pogledati kao i slavne partije, čak i bez
+interneta. Prekidač je prema zadanim postavkama isključen. Dok je isključen,
+aplikacija se nikamo ne spaja, a partije preuzima samo s vlastitog malog
+poslužitelja, bez računa, kolačića i praćenja.
 
 ### Igra protiv robotića
 
@@ -71,9 +103,11 @@ mobitelu tek dolazi.
 
 ### Stanje
 
-Aplikacija je u izradi i još se ne može preuzeti. Slijede preostali otoci,
-roditeljska zona (postavke, isključivanje bitaka, pregled onoga što dijete
-zna), turniri na kraju otoka s diplomom i test s pravom petogodišnjom
-šahisticom: hoće li na maloj ploči razlikovati vile?
+Prva probna verzija (1.0.2) je vani: APK za Android može se preuzeti ispod, a
+iPhone i iPad dobivaju je putem TestFlighta. Slijede preostali otoci,
+roditeljska zona (postavke, isključivanje bitaka, pregled onoga što dijete zna),
+knjižnica s još slavnih partija i test s pravom petogodišnjom šahisticom: hoće
+li na maloj ploči razlikovati vile?
 
-Bez oglasa, bez računa i offline. Na češkom i engleskom.
+Bez oglasa, bez računa, radi offline. Aplikacija je na 45 jezika, a glas zasad
+govori češki i engleski.
