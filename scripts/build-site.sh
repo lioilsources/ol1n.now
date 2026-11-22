@@ -1472,6 +1472,21 @@ I18N_LANG="$I18N_BASE"
 # App pages, subpages and teasers embed screenshots by path too.
 for _h in "$DIST"/*.html; do webp_links "$_h"; done
 
+# ---- canonical links ----
+# GitHub Pages serves every page as both /x.html and /x, and Cloudflare also
+# serves it over plain http, so search engines see duplicates. Every page that
+# has no canonical yet (the standalone pages set their own) points to its
+# https URL as listed in the sitemap below.
+for f in "$DIST"/*.html; do
+  grep -q 'rel="canonical"' "$f" && continue
+  b="$(basename "$f")"
+  if [ "$b" = index.html ]; then cu="$SITE/"; else cu="$SITE/$b"; fi
+  CANON_URL="$cu" awk '
+    { print }
+    !done && /<meta name="viewport"/ { print "  <link rel=\"canonical\" href=\"" ENVIRON["CANON_URL"] "\">"; done = 1 }
+  ' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
+done
+
 # ---- sitemap.xml + robots.txt ----
 # Store pages under the file names they are linked by; standalone pages under
 # their canonical URLs (their hreflang alternates are in each page's head).
