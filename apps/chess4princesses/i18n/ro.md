@@ -13,7 +13,7 @@ fiecare învață o piesă.
 
 Insulele urmează una după alta pe o potecă șerpuită: **Regatul** (tabla ca un
 oraș cu străzi și case), **Micile domnișoare de onoare** (pionii), **Turnulețul
-pe roți**, **Fluturașul** (nebunul), **Prințesa** (regina), **Poneiul** și
+pe roți**, **Fluturașul** (nebunul), **Regina**, **Poneiul** și
 **Tăticul rege**. Fiecare insulă are între trei și șase lecții, iar fiecare
 lecție câteva sarcini scurte. Insula următoare se deschide când cea dinainte e
 gata. Steluțele din lecții se adună pe hartă, așa că micuțul vede cât a
@@ -113,7 +113,7 @@ urmează.
 
 ### Stadiu
 
-Prima versiune de test (1.0.2) a apărut: APK-ul pentru Android se poate descărca
+Prima versiune de test (1.0.3) a apărut: APK-ul pentru Android se poate descărca
 mai jos, iar iPhone și iPad o primesc prin TestFlight. Urmează insulele rămase,
 o zonă pentru părinți (setări, oprirea luptelor, o privire de ansamblu asupra a
 ceea ce știe copilul), o bibliotecă cu mai multe partide celebre și un test cu o

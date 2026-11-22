@@ -13,8 +13,7 @@ cada uma aprende uma peça.
 
 As ilhas seguem uma atrás da outra por um caminho sinuoso: **O Reino** (o
 tabuleiro como uma cidade com ruas e casas), **Pequenas damas de honra**
-(peões), **Torrinha de rodinhas**, **Borboleta** (bispo), **Princesa**
-(rainha), **Pônei** e **Papai Rei**. Cada ilha tem de três a seis lições, e
+(peões), **Torrinha de rodinhas**, **Borboleta** (bispo), **Rainha**, **Pônei** e **Papai Rei**. Cada ilha tem de três a seis lições, e
 cada lição algumas tarefas curtas. A próxima ilha abre quando a anterior está
 concluída. As estrelinhas das lições se somam no mapa, então a criança vê
 quanto já conseguiu.
@@ -112,7 +111,7 @@ contra o robô ou contra o pai ou a mãe no mesmo celular ainda vai chegar.
 
 ### Status
 
-A primeira versão de teste (1.0.2) saiu: o APK para Android pode ser baixado
+A primeira versão de teste (1.0.3) saiu: o APK para Android pode ser baixado
 aqui embaixo, e iPhone e iPad recebem pelo TestFlight. Os próximos passos são
 as ilhas que faltam, uma área dos pais (configurações, desligar as batalhas,
 um resumo do que a criança já sabe), uma biblioteca com mais partidas famosas

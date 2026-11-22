@@ -12,7 +12,7 @@ partiu. Prechádza mapou ostrovov a na každom sa naučí jednu figúrku.
 
 Ostrovy idú za sebou po kľukatej ceste: **Kráľovstvo** (šachovnica ako mesto
 s ulicami a domami), **Malé družičky** (pešiaci), **Vežička na kolieskach**,
-**Motýlik** (strelec), **Princezná** (dáma), **Koník** a **Kráľ ocko**. Každý
+**Motýlik** (strelec), **Kráľovná** (dáma), **Koník** a **Kráľ ocko**. Každý
 ostrov má tri až šesť lekcií a každá lekcia niekoľko krátkych úloh. Ďalší
 ostrov sa otvorí, keď je predchádzajúci hotový. Hviezdičky za lekcie sa
 sčítavajú na mape, takže dieťa vidí, koľko už zvládlo.
@@ -104,7 +104,7 @@ jednom telefóne ešte len príde.
 
 ### Stav
 
-Prvá skúšobná verzia (1.0.2) je vonku: APK pre Android sa dá stiahnuť nižšie,
+Prvá skúšobná verzia (1.0.3) je vonku: APK pre Android sa dá stiahnuť nižšie,
 iPhone a iPad ju dostávajú cez TestFlight. Na rade sú zvyšné ostrovy,
 rodičovská zóna (nastavenia, vypnutie súbojov, prehľad, čo dieťa vie),
 knižnica ďalších slávnych partií a test so skutočnou päťročnou šachistkou:

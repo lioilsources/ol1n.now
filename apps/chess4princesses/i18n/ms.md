@@ -14,7 +14,7 @@ mempelajari satu buah catur.
 
 Pulau-pulau berturutan di sepanjang jalan yang berliku: **Kerajaan** (papan
 sebagai bandar dengan jalan dan rumah), **Pengapit kecil** (bidak), **Menara
-beroda**, **Rama-rama** (gajah), **Puteri** (menteri), **Kuda padi** dan
+beroda**, **Rama-rama** (gajah), **Ratu** (menteri), **Kuda padi** dan
 **Ayahanda raja**. Setiap pulau ada tiga hingga enam pelajaran dan setiap
 pelajaran beberapa tugasan pendek. Pulau seterusnya dibuka apabila pulau
 sebelumnya selesai. Bintang daripada pelajaran dikira di peta, jadi
@@ -116,7 +116,7 @@ atau menentang ibu bapa pada satu telefon akan datang kemudian.
 
 ### Status
 
-Versi ujian pertama (1.0.2) sudah keluar: APK Android boleh dimuat turun di
+Versi ujian pertama (1.0.3) sudah keluar: APK Android boleh dimuat turun di
 bawah, dan iPhone serta iPad mendapatkannya melalui TestFlight. Seterusnya ialah
 pulau-pulau yang tinggal, zon ibu bapa (tetapan, mematikan pertarungan, gambaran
 tentang apa yang sudah dikuasai anak), perpustakaan lebih banyak permainan

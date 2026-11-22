@@ -12,7 +12,7 @@ Potuje po zemljevidu otokov in se na vsakem nauči ene figure.
 
 Otoki si sledijo po vijugasti poti: **Kraljestvo** (šahovnica kot mesto z
 ulicami in hišami), **Male družice** (kmeti), **Stolpek na kolescih**,
-**Metuljček** (tekač), **Princesa** (dama), **Konjiček** in **Kralj očka**.
+**Metuljček** (tekač), **Kraljica** (dama), **Konjiček** in **Kralj očka**.
 Vsak otok ima od tri do šest lekcij, vsaka lekcija pa nekaj kratkih nalog.
 Naslednji otok se odpre, ko je prejšnji končan. Zvezdice iz lekcij se seštevajo
 na zemljevidu, zato otrok vidi, koliko že zna.
@@ -105,7 +105,7 @@ telefonu še pride.
 
 ### Stanje
 
-Prva preizkusna različica (1.0.2) je zunaj: APK za Android lahko preneseš
+Prva preizkusna različica (1.0.3) je zunaj: APK za Android lahko preneseš
 spodaj, iPhone in iPad pa jo dobita prek TestFlighta. Na vrsti so preostali
 otoki, starševski kotiček (nastavitve, izklop bitk, pregled, kaj otrok zna),
 knjižnica dodatnih slavnih partij in preizkus s pravo petletno šahistko: bo na

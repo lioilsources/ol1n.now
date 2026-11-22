@@ -13,7 +13,7 @@ eine Inselkarte und lernt auf jeder Insel eine Figur.
 
 Die Inseln folgen einander auf einem kurvigen Weg: **Das Königreich** (das
 Brett als Stadt mit Straßen und Häusern), **Kleine Brautjungfern** (Bauern),
-**Türmchen auf Rädern**, **Schmetterling** (Läufer), **Prinzessin** (Dame),
+**Türmchen auf Rädern**, **Schmetterling** (Läufer), **Königin** (Dame),
 **Pony** und **Papa König**. Jede Insel hat drei bis sechs Lektionen, jede
 Lektion ein paar kurze Aufgaben. Die nächste Insel öffnet sich, sobald die
 vorige geschafft ist. Die Sterne aus den Lektionen werden auf der Karte
@@ -111,7 +111,7 @@ Roboter oder gegen Mama oder Papa auf einem Handy kommt erst noch.
 
 ### Stand
 
-Die erste Testversion (1.0.2) ist da: Die Android-APK lässt sich unten
+Die erste Testversion (1.0.3) ist da: Die Android-APK lässt sich unten
 herunterladen, iPhone und iPad bekommen sie über TestFlight. Als Nächstes kommen
 die übrigen Inseln, ein Elternbereich (Einstellungen, Kämpfe abschalten,
 Übersicht, was das Kind schon kann), eine Bibliothek mit weiteren berühmten

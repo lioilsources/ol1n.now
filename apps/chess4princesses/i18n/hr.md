@@ -12,7 +12,7 @@ kartom otoka i na svakom nauči jednu figuru.
 
 Otoci se nižu jedan za drugim uz vijugavi put: **Kraljevstvo** (ploča kao grad
 s ulicama i kućama), **Male djeveruše** (pješaci), **Kulica na kotačićima**,
-**Leptirić** (lovac), **Princeza** (dama), **Konjić** i **Kralj tata**. Svaki
+**Leptirić** (lovac), **Kraljica** (dama), **Konjić** i **Kralj tata**. Svaki
 otok ima tri do šest lekcija, a svaka lekcija nekoliko kratkih zadataka.
 Sljedeći otok otvara se kad je prethodni gotov. Zvjezdice iz lekcija zbrajaju
 se na karti, pa dijete vidi koliko je već svladalo.
@@ -103,7 +103,7 @@ mobitelu tek dolazi.
 
 ### Stanje
 
-Prva probna verzija (1.0.2) je vani: APK za Android može se preuzeti ispod, a
+Prva probna verzija (1.0.3) je vani: APK za Android može se preuzeti ispod, a
 iPhone i iPad dobivaju je putem TestFlighta. Slijede preostali otoci,
 roditeljska zona (postavke, isključivanje bitaka, pregled onoga što dijete zna),
 knjižnica s još slavnih partija i test s pravom petogodišnjom šahisticom: hoće

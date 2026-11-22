@@ -13,7 +13,7 @@ a map of islands and learn one piece on each.
 
 The islands follow one another along a winding path: **The Kingdom** (the
 board as a town with streets and houses), **Little Bridesmaids** (pawns),
-**Rook on Wheels**, **Butterfly** (bishop), **Princess** (queen), **Pony** and
+**Rook on Wheels**, **Butterfly** (bishop), **Queen**, **Pony** and
 **Daddy King**. Each island has three to six lessons, and each lesson a few
 short tasks. The next island opens once the previous one is done. Stars from
 the lessons add up on the map, so the child can see how much they've already
@@ -109,7 +109,7 @@ against the robot, or against a parent on one phone, is still to come.
 
 ### Status
 
-The first test version (1.0.2) is out: the Android APK can be downloaded
+The first test version (1.0.3) is out: the Android APK can be downloaded
 below, and iPhone and iPad get it through TestFlight. Next up are the
 remaining islands, a parents' zone (settings, turning battles off, an overview
 of what the child can do), a library of more famous games, and a test with a

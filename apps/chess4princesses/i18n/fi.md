@@ -13,8 +13,7 @@ jokaisella saarella yhden nappulan.
 
 Saaret seuraavat toisiaan mutkittelevan polun varrella: **Valtakunta**
 (lauta kaupunkina, jossa on katuja ja taloja), **Pienet morsiusneidot**
-(sotilaat), **Torni pyörillä**, **Perhonen** (lähetti), **Prinsessa**
-(kuningatar), **Poni** ja **Isä kuningas**. Jokaisella saarella on kolmesta
+(sotilaat), **Torni pyörillä**, **Perhonen** (lähetti), **Kuningatar**, **Poni** ja **Isä kuningas**. Jokaisella saarella on kolmesta
 kuuteen tuntia ja jokaisella tunnilla muutama lyhyt tehtävä. Seuraava saari
 aukeaa, kun edellinen on tehty. Tuntien tähdet lasketaan yhteen kartalla, joten
 lapsi näkee, kuinka paljon hän jo osaa.
@@ -111,7 +110,7 @@ vanhempaa vastaan samalla puhelimella on vasta tulossa.
 
 ### Tilanne
 
-Ensimmäinen testiversio (1.0.2) on julkaistu: Androidin APK:n voi ladata alta,
+Ensimmäinen testiversio (1.0.3) on julkaistu: Androidin APK:n voi ladata alta,
 ja iPhone ja iPad saavat sen TestFlightin kautta. Seuraavaksi vuorossa ovat
 loput saaret, vanhempien osio (asetukset, taisteluiden poisto, yhteenveto
 siitä, mitä lapsi osaa), kirjasto, jossa on lisää kuuluisia pelejä, ja testi

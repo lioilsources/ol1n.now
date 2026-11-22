@@ -13,7 +13,7 @@ y en cada una aprende una pieza.
 
 Las islas se suceden por un camino serpenteante: **El Reino** (el tablero como
 una ciudad con calles y casas), **Pequeñas damas de honor** (peones), **Torrecita
-con ruedas**, **Mariposa** (alfil), **Princesa** (dama), **Poni** y **Papá
+con ruedas**, **Mariposa** (alfil), **Reina** (dama), **Poni** y **Papá
 Rey**. Cada isla tiene de tres a seis lecciones y cada lección unas cuantas
 tareas cortas. La siguiente isla se abre cuando la anterior está terminada.
 Las estrellas de las lecciones se suman en el mapa, así el niño ve todo lo que
@@ -116,7 +116,7 @@ está por llegar.
 
 ### Estado
 
-Ya ha salido la primera versión de prueba (1.0.2): el APK para Android se
+Ya ha salido la primera versión de prueba (1.0.3): el APK para Android se
 puede descargar aquí abajo, y el iPhone y el iPad la reciben a través de
 TestFlight. Lo próximo son las islas que faltan, una zona para padres
 (ajustes, desactivar las batallas, resumen de lo que sabe el niño), una

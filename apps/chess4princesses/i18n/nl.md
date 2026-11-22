@@ -13,7 +13,7 @@ een kaart vol eilanden en leert op elk eiland één stuk.
 
 De eilanden liggen achter elkaar langs een kronkelpad: **Het Koninkrijk** (het
 bord als een stad met straten en huizen), **Kleine bruidsmeisjes** (pionnen),
-**Torentje op wieltjes**, **Vlinder** (loper), **Prinses** (dame), **Pony** en
+**Torentje op wieltjes**, **Vlinder** (loper), **Koningin** (dame), **Pony** en
 **Papa Koning**. Elk eiland heeft drie tot zes lessen en elke les een paar
 korte opdrachten. Het volgende eiland gaat open zodra het vorige klaar is. De
 sterren uit de lessen tellen op de kaart op, zodat het kind ziet hoeveel het al
@@ -113,7 +113,7 @@ partij tegen de robot of tegen papa of mama op één telefoon komt later.
 
 ### Status
 
-De eerste testversie (1.0.2) is uit: de Android-APK kun je hieronder
+De eerste testversie (1.0.3) is uit: de Android-APK kun je hieronder
 downloaden, en iPhone en iPad krijgen hem via TestFlight. Hierna komen de
 overige eilanden, een ouderhoek (instellingen, gevechten uitzetten, overzicht
 van wat het kind kan), een bibliotheek met meer beroemde partijen en een test

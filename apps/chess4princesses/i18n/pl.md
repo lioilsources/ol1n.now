@@ -13,7 +13,7 @@ figurę.
 
 Wyspy leżą jedna za drugą na krętej ścieżce: **Królestwo** (szachownica jako
 miasto z ulicami i domami), **Małe druhenki** (pionki), **Wieżyczka na
-kółkach**, **Motylek** (goniec), **Księżniczka** (hetman), **Kucyk** i **Król
+kółkach**, **Motylek** (goniec), **Królowa** (hetman), **Kucyk** i **Król
 tatuś**. Każda wyspa ma od trzech do sześciu lekcji, a każda lekcja kilka
 krótkich zadań. Kolejna wyspa otwiera się, gdy poprzednia jest ukończona.
 Gwiazdki za lekcje sumują się na mapie, więc dziecko widzi, ile już potrafi.
@@ -107,7 +107,7 @@ dopiero będzie.
 
 ### Stan
 
-Pierwsza wersja testowa (1.0.2) jest już dostępna: APK na Androida można
+Pierwsza wersja testowa (1.0.3) jest już dostępna: APK na Androida można
 pobrać poniżej, a iPhone i iPad dostają ją przez TestFlight. Następne
 w kolejce są pozostałe wyspy, strefa rodzica (ustawienia, wyłączanie bitew,
 podgląd tego, co dziecko umie), biblioteka kolejnych słynnych partii i test

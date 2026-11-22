@@ -13,8 +13,7 @@ Il parcourt une carte d’îles et, sur chacune, découvre une pièce.
 
 Les îles se suivent le long d’un chemin sinueux : **Le Royaume** (l’échiquier
 comme une ville avec des rues et des maisons), **Les petites demoiselles
-d’honneur** (pions), **La tourelle à roulettes**, **Le papillon** (fou), **La
-princesse** (dame), **Le poney** et **Papa roi**. Chaque île compte trois à
+d’honneur** (pions), **La tourelle à roulettes**, **Le papillon** (fou), **La reine** (dame), **Le poney** et **Papa roi**. Chaque île compte trois à
 six leçons, et chaque leçon quelques petites missions. L’île suivante s’ouvre
 quand la précédente est terminée. Les étoiles gagnées s’additionnent sur la
 carte, pour que l’enfant voie tout ce qu’il sait déjà faire.
@@ -115,7 +114,7 @@ contre un parent sur un seul téléphone arrivera plus tard.
 
 ### État
 
-La première version de test (1.0.2) est sortie : l’APK Android se télécharge
+La première version de test (1.0.3) est sortie : l’APK Android se télécharge
 ci-dessous, et l’iPhone et l’iPad la reçoivent via TestFlight. Prochaines étapes
 : les îles restantes, un espace parents (réglages, désactivation des batailles,
 aperçu de ce que l’enfant sait faire), une bibliothèque d’autres parties
