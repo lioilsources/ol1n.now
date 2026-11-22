@@ -13,7 +13,7 @@ lär sig en pjäs på varje ö.
 
 Öarna följer på varandra längs en slingrande stig: **Riket** (brädet som en
 stad med gator och hus), **Små brudnäbbar** (bönder), **Tornet på hjul**,
-**Fjärilen** (löpare), **Prinsessan** (dam), **Ponnyn** och **Pappa kung**.
+**Fjärilen** (löpare), **Drottningen** (dam), **Ponnyn** och **Pappa kung**.
 Varje ö har tre till sex lektioner och varje lektion några korta uppgifter.
 Nästa ö öppnas när den förra är klar. Stjärnorna från lektionerna räknas ihop
 på kartan, så att barnet ser hur mycket det redan kan.
@@ -104,7 +104,7 @@ på en och samma telefon kommer senare.
 
 ### Status
 
-Den första testversionen (1.0.2) är ute: APK-filen för Android kan laddas ner
+Den första testversionen (1.0.3) är ute: APK-filen för Android kan laddas ner
 nedan, och iPhone och iPad får den via TestFlight. Härnäst kommer de återstående
 öarna, en föräldrazon (inställningar, avstängning av striderna, en översikt över
 vad barnet kan), ett bibliotek med fler berömda partier och ett test med en

@@ -13,7 +13,7 @@ A gyerek nem rögtön egy egész játszmát játszik. Szigetek térképén halad
 
 A szigetek egy kanyargós ösvény mentén követik egymást: **A Királyság** (a
 tábla mint egy város utcákkal és házakkal), **Kis koszorúslányok** (gyalogok),
-**Kerekes toronyka**, **Pillangó** (futó), **Hercegnő** (vezér), **Póni** és
+**Kerekes toronyka**, **Pillangó** (futó), **Királynő** (vezér), **Póni** és
 **Király apuka**. Minden szigeten három–hat lecke van, minden leckében néhány
 rövid feladat. A következő sziget akkor nyílik meg, ha az előző kész. A
 leckékért kapott csillagok összeadódnak a térképen, így a gyerek látja, mennyi
@@ -112,7 +112,7 @@ ellen vagy egy szülő ellen egy telefonon csak később jön.
 
 ### Állapot
 
-Megjelent az első tesztverzió (1.0.2): az androidos APK lent letölthető,
+Megjelent az első tesztverzió (1.0.3): az androidos APK lent letölthető,
 iPhone-ra és iPadre pedig a TestFlighton keresztül érkezik. Következnek a
 hiányzó szigetek, egy szülői zóna (beállítások, csaták kikapcsolása, áttekintés
 arról, mit tud a gyerek), további híres játszmák könyvtára, és egy teszt egy

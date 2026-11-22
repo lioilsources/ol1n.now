@@ -13,7 +13,7 @@ n’aprèn una peça.
 
 Les illes se succeeixen per un camí ple de revolts: **El Regne** (el tauler com
 una ciutat amb carrers i cases), **Petites dames d’honor** (peons), **Torreta
-amb rodes**, **Papallona** (alfil), **Princesa** (reina), **Poni** i **Papa
+amb rodes**, **Papallona** (alfil), **Reina**, **Poni** i **Papa
 Rei**. Cada illa té de tres a sis lliçons i cada lliçó unes quantes tasques
 curtes. L’illa següent s’obre quan l’anterior està acabada. Les estrelles de
 les lliçons se sumen al mapa, i així l’infant veu tot el que ja domina.
@@ -111,7 +111,7 @@ contra el robot o contra el pare o la mare en un sol mòbil encara ha d’arriba
 
 ### Estat
 
-Ja ha sortit la primera versió de prova (1.0.2): l’APK per a Android es pot
+Ja ha sortit la primera versió de prova (1.0.3): l’APK per a Android es pot
 baixar aquí sota, i l’iPhone i l’iPad la reben a través de TestFlight. Ara
 toquen les illes que falten, una zona per als pares (configuració, desactivar
 les batalles, un resum del que sap fer l’infant), una biblioteca amb més

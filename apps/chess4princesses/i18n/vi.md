@@ -12,7 +12,7 @@ bản đồ các hòn đảo và ở mỗi đảo học một quân cờ.
 
 Các hòn đảo nối tiếp nhau trên một con đường quanh co: **Vương quốc** (bàn cờ
 như một thành phố có phố và nhà), **Các phù dâu nhỏ** (tốt), **Tháp nhỏ có bánh
-xe**, **Bướm** (tượng), **Công chúa** (hậu), **Ngựa con** và **Bố vua**. Mỗi
+xe**, **Bướm** (tượng), **Nữ hoàng** (hậu), **Ngựa con** và **Bố vua**. Mỗi
 đảo có từ ba đến sáu bài học, mỗi bài học vài nhiệm vụ ngắn. Đảo tiếp theo mở
 ra khi đảo trước đã xong. Sao từ các bài học được cộng dồn trên bản đồ, nên bé
 thấy mình đã làm được bao nhiêu.
@@ -104,7 +104,7 @@ thoại sẽ có sau.
 
 ### Tình trạng
 
-Phiên bản thử nghiệm đầu tiên (1.0.2) đã ra mắt: tệp APK cho Android có thể tải
+Phiên bản thử nghiệm đầu tiên (1.0.3) đã ra mắt: tệp APK cho Android có thể tải
 ở bên dưới, còn iPhone và iPad nhận bản này qua TestFlight. Tiếp theo là các đảo
 còn lại, khu vực dành cho phụ huynh (cài đặt, tắt trận chiến, tổng quan những gì
 bé đã biết), thư viện thêm nhiều ván cờ nổi tiếng và một buổi thử với một kỳ thủ

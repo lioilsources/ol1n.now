@@ -13,7 +13,7 @@ lærer én brik på hver ø.
 
 Øerne følger efter hinanden langs en snoet sti: **Kongeriget** (brættet som en
 by med gader og huse), **Små brudepiger** (bønder), **Tårnet på hjul**,
-**Sommerfuglen** (løber), **Prinsessen** (dronning), **Ponyen** og **Far
+**Sommerfuglen** (løber), **Dronningen**, **Ponyen** og **Far
 konge**. Hver ø har tre til seks lektioner, og hver lektion et par korte
 opgaver. Den næste ø åbner, når den forrige er klaret. Stjernerne fra
 lektionerne lægges sammen på kortet, så barnet kan se, hvor meget det allerede
@@ -108,7 +108,7 @@ forælder på én telefon kommer senere.
 
 ### Status
 
-Den første testversion (1.0.2) er ude: APK'en til Android kan downloades
+Den første testversion (1.0.3) er ude: APK'en til Android kan downloades
 nedenfor, og iPhone og iPad får den via TestFlight. Næste skridt er de
 resterende øer, en forældrezone (indstillinger, slå kampe fra, overblik over
 hvad barnet kan), et bibliotek med flere berømte partier og en test med en

@@ -13,7 +13,7 @@ ognuna impara un pezzo.
 
 Le isole si susseguono lungo un sentiero tortuoso: **Il Regno** (la scacchiera
 come una città con vie e case), **Piccole damigelle** (pedoni), **Torretta con
-le ruote**, **Farfalla** (alfiere), **Principessa** (donna), **Pony** e **Papà
+le ruote**, **Farfalla** (alfiere), **Regina** (donna), **Pony** e **Papà
 Re**. Ogni isola ha da tre a sei lezioni e ogni lezione qualche breve compito.
 L’isola successiva si apre quando la precedente è completata. Le stelline
 delle lezioni si sommano sulla mappa, così il bambino vede quanto ha già
@@ -112,7 +112,7 @@ contro il robot o contro un genitore sullo stesso telefono arriverà più avanti
 
 ### Stato
 
-La prima versione di prova (1.0.2) è uscita: l’APK per Android si scarica qui
+La prima versione di prova (1.0.3) è uscita: l’APK per Android si scarica qui
 sotto, mentre iPhone e iPad la ricevono tramite TestFlight. I prossimi passi
 sono le isole mancanti, un’area genitori (impostazioni, battaglie
 disattivabili, riepilogo di ciò che il bambino sa fare), una biblioteca di

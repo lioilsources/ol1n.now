@@ -13,7 +13,7 @@ her adada bir taşı öğrenir.
 
 Adalar kıvrımlı bir yol boyunca birbirini izler: **Krallık** (sokakları ve
 evleriyle bir şehir gibi tahta), **Küçük nedimeler** (piyonlar), **Tekerlekli
-kulecik**, **Kelebek** (fil), **Prenses** (vezir), **Midilli** ve **Kral
+kulecik**, **Kelebek** (fil), **Kraliçe** (vezir), **Midilli** ve **Kral
 babacık**. Her adada üç ila altı ders, her derste birkaç kısa görev vardır. Bir
 sonraki ada, öncekinin bitmesiyle açılır. Derslerden kazanılan yıldızlar
 haritada toplanır, böylece çocuk neleri başardığını görür.
@@ -105,7 +105,7 @@ karşı ayrı bir oyun ise daha sonra gelecek.
 
 ### Durum
 
-İlk test sürümü (1.0.2) çıktı: Android APK'si aşağıdan indirilebilir, iPhone ve
+İlk test sürümü (1.0.3) çıktı: Android APK'si aşağıdan indirilebilir, iPhone ve
 iPad ise TestFlight üzerinden alır. Sırada kalan adalar, bir ebeveyn bölümü
 (ayarlar, savaşları kapatma, çocuğun neleri bildiğine genel bakış), daha fazla
 ünlü oyundan oluşan bir kütüphane ve gerçek bir beş yaşındaki satranççı kızla

@@ -13,7 +13,7 @@ menjelajahi peta pulau dan di setiap pulau mempelajari satu bidak.
 
 Pulau-pulau berurutan di sepanjang jalan berkelok: **Kerajaan** (papan sebagai
 kota dengan jalan dan rumah), **Pengiring pengantin kecil** (pion), **Menara
-beroda**, **Kupu-kupu** (gajah), **Putri** (menteri), **Kuda poni**, dan **Ayah
+beroda**, **Kupu-kupu** (gajah), **Ratu** (menteri), **Kuda poni**, dan **Ayah
 raja**. Setiap pulau punya tiga sampai enam pelajaran, dan setiap pelajaran
 beberapa tugas singkat. Pulau berikutnya terbuka setelah pulau sebelumnya
 selesai. Bintang dari pelajaran dijumlahkan di peta, jadi anak bisa melihat
@@ -114,7 +114,7 @@ terpisah melawan robot atau melawan orang tua di satu ponsel baru akan hadir.
 
 ### Status
 
-Versi uji pertama (1.0.2) sudah keluar: APK untuk Android bisa diunduh di
+Versi uji pertama (1.0.3) sudah keluar: APK untuk Android bisa diunduh di
 bawah, dan iPhone serta iPad mendapatkannya lewat TestFlight. Berikutnya
 adalah pulau-pulau yang tersisa, zona orang tua (pengaturan, mematikan
 pertarungan, ringkasan kemampuan anak), pustaka partai terkenal yang lebih

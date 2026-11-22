@@ -13,7 +13,7 @@ lærer én brikke på hver øy.
 
 Øyene følger etter hverandre langs en svingete sti: **Kongeriket** (brettet som
 en by med gater og hus), **Små brudepiker** (bønder), **Tårnet på hjul**,
-**Sommerfuglen** (løper), **Prinsessen** (dronning), **Ponnien** og **Pappa
+**Sommerfuglen** (løper), **Dronningen**, **Ponnien** og **Pappa
 konge**. Hver øy har tre til seks leksjoner, og hver leksjon noen korte
 oppgaver. Neste øy åpner seg når den forrige er ferdig. Stjernene fra
 leksjonene legges sammen på kartet, så barnet ser hvor mye det allerede kan.
@@ -106,7 +106,7 @@ på én telefon kommer senere.
 
 ### Status
 
-Den første testversjonen (1.0.2) er ute: APK-en for Android kan lastes ned
+Den første testversjonen (1.0.3) er ute: APK-en for Android kan lastes ned
 nedenfor, og iPhone og iPad får den via TestFlight. Neste steg er de
 gjenværende øyene, en foreldresone (innstillinger, slå av kamper, oversikt
 over hva barnet kan), et bibliotek med flere berømte partier og en test med en
