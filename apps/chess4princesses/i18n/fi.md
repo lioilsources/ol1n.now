@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Shakkia viisivuotiaille — satutunnit, ääni joka lukee kaiken ääneen ja keijujen taistelut noitia vastaan
+tagline: Shakkia viisivuotiaille — satutunnit, ääni joka lukee kaiken ääneen, neljäntoista armeijan taistelut ja mestareiden kuuluisat pelit
 ---
 Chess Kingdom opettaa shakkia lapselle, joka ei vielä osaa lukea. Jokainen
 nappula on hahmo, jolla on oma nimi ja luonne: Daisy Towerilla on pyörät ja se
@@ -55,17 +55,52 @@ Hahmot asettuvat vastakkain vastustajan areenalla, vaihtavat pari sanaa
 kuole: hävinnyt nappula ajaa ”varikolle” tai lentää ”niitylle”. Taistelu kestää
 alle kolme sekuntia, ja sen voi ohittaa napautuksella.
 
-### Keijut ja noidat
+### Neljätoista armeijaa
 
-Armeijoita on kaksi: **Keijut** (King Rainbeard, Princess Sparkle, Daisy Tower
-ja ponin tilalla yksisarvinen) ja **Noidat** (King Grumble, joka murisee mutta
-rakastaa kuppikakkuja, Queen Thunder, jonka loitsut sanovat pum mutta eivät
-satu ketään, Batty Tower sekä hattupäiset sammakot sotilaiden tilalla).
-Kummallakin on kuusi hahmoa, oma areena ja omat repliikit.
+Alussa armeijoita oli kaksi: **Keijut** (King Rainbeard, Princess Sparkle,
+Daisy Tower ja ponin tilalla yksisarvinen) ja **Noidat** (King Grumble, joka
+murisee mutta rakastaa kuppikakkuja, Queen Thunder, jonka loitsut sanovat pum
+mutta eivät satu ketään, Batty Tower sekä hattupäiset sammakot sotilaiden
+tilalla).
+
+Nyt niitä on neljätoista. Mukaan tuli kaksitoista vinyylilelujen armeijaa:
+**Valtakunta** (Kuningas Kultaomena ja hänen kultainen omenansa),
+**Pikkupirut** (Piruntakuningas Murisija, jolla on iso kirja ja vielä isommat
+sarvet), **Kissat**, **Koirat**, **Mehiläiset**, **Ampiaiset**, **Dinot**
+(Kuningas Rexi, iso mutta kiltti), **Jääkausi**, **Hedelmät**, **Vihannekset**
+sekä leluversioina **Metsäkeijut** ja **Noidat**. Jokaisella armeijalla on
+kuusi nimettyä hahmoa, oma areena, tervehdykset ja taisteluhuudot. Kuningas
+on pisin ja sotilas pienin, joten nappulat erottaa laudalla toisistaan
+pituuden perusteella.
+
 Lapsi valitsee, kenenä hän pelaa ja ketä vastaan. Hahmot ovat alkuperäisiä,
-ilman tuotemerkkejä tai tunnettuja satulisenssejä. Ne tehtiin
-FLUX.1-schnell-mallilla (lisenssi Apache 2.0) ja valittiin ja siistittiin
-sitten käsin.
+ilman tuotemerkkejä tai tunnettuja satulisenssejä. Keijut ja noidat tehtiin
+FLUX.1-schnellillä, leluarmeijat Qwen-Imagella. Sen jälkeen kaikki valittiin
+ja siistittiin käsin.
+
+### Kunniahalli
+
+Kartan pokaalin alla on Kunniahalli, jossa on mestareiden kuuluisia pelejä:
+Morphyn peli Pariisin oopperassa vuonna 1858, 13-vuotiaan Bobby Fischerin
+”vuosisadan peli” Donald Byrneä vastaan (1956) sekä Vera Menchikin ja Sonja
+Grafin ottelu naisten maailmanmestaruuskisoissa 1937.
+
+Pelin voi katsoa kahdella tavalla. **Satu** on lapselle: hänen oman
+armeijansa nappulat liikkuvat itsestään, shakin, linnoituksen tai rohkean
+uhrauksen kohdalla ponnahtaa puhekupla, ja koko pelistä valitaan enintään
+neljä suurta taistelua. Muut lyönnit sanovat vain ”puff”. Lopuksi tulee matti
+ja pokaali, luovutus (kuningas kumartaa) tai tasapeli (kädenpuristus).
+**Kronikka** on vanhemmalle: siirtolista, askel eteen ja taakse, eikä
+taisteluita.
+
+### Turnaukset livenä
+
+Halutessaan Kunniahallissa voi kytkeä päälle valinnan ”Pelejä netistä”.
+Silloin sinne ilmestyy parhaillaan pelattava suuri turnaus, ensimmäisenä
+vuoden 2026 MM-ottelu Genevessä. Pelatut kierrokset voi katsoa samaan tapaan
+kuin kuuluisat pelit, myös ilman yhteyttä. Valinta on oletuksena pois päältä,
+eikä sovellus silloin yhdistä mihinkään. Pelit se lataa vain omalta pieneltä
+palvelimeltaan, ilman tiliä, evästeitä tai seurantaa.
 
 ### Peli robottia vastaan
 
@@ -76,10 +111,12 @@ vanhempaa vastaan samalla puhelimella on vasta tulossa.
 
 ### Tilanne
 
-Sovellus on vielä työn alla, eikä sitä voi ladata. Seuraavaksi vuorossa ovat
-loput saaret, vanhempien osio (asetukset, taisteluiden poisto, yhteenveto siitä,
-mitä lapsi osaa), saarten lopputurnaukset diplomeineen ja testi oikean
-viisivuotiaan shakinpelaajan kanssa: erottaako hän keijut toisistaan pienellä
-laudalla?
+Ensimmäinen testiversio (1.0.2) on julkaistu: Androidin APK:n voi ladata alta,
+ja iPhone ja iPad saavat sen TestFlightin kautta. Seuraavaksi vuorossa ovat
+loput saaret, vanhempien osio (asetukset, taisteluiden poisto, yhteenveto
+siitä, mitä lapsi osaa), kirjasto, jossa on lisää kuuluisia pelejä, ja testi
+oikean viisivuotiaan shakinpelaajan kanssa: erottaako hän keijut toisistaan
+pienellä laudalla?
 
-Ei mainoksia, ei tiliä, toimii ilman yhteyttä. Tšekiksi ja englanniksi.
+Ei mainoksia, ei tiliä, toimii ilman yhteyttä. Sovellus on 45 kielellä; ääni
+puhuu toistaiseksi tšekkiä ja englantia.

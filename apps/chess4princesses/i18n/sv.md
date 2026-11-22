@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Schack för femåringar — sagolektioner, en röst som läser upp allt och feer som strider mot häxor
+tagline: Schack för femåringar — sagolektioner, en röst som läser upp allt, strider mellan fjorton arméer och mästarnas berömda partier
 ---
 Chess Kingdom lär ut schack till ett barn som ännu inte kan läsa. Varje pjäs
 är en figur med eget namn och egen personlighet: Daisy Tower har hjul och åker
@@ -53,16 +53,47 @@ några ord (”Tjoff-tjoff!” – ”Jag går till dammen …”) och en av dem
 vilar. Ingen dör: den besegrade pjäsen åker ”till depån” eller flyger ”ut på
 ängen”. En strid varar under tre sekunder och kan hoppas över med ett tryck.
 
-### Feer och häxor
+### Fjorton arméer
 
-Det finns två arméer: **Feerna** (King Rainbeard, Princess Sparkle, Daisy
-Tower och en enhörning i stället för ponnyn) och **Häxorna** (King Grumble,
-som muttrar men älskar muffins, Queen Thunder, vars trollformler säger pang
-men inte gör ont på någon, Batty Tower och grodor med hatt i stället för
-bönder). Varje armé har sex figurer, en egen arena och egna repliker.
-Barnet väljer vem det spelar som och mot vem. Figurerna är egna, utan
-varumärken eller kända sagolicenser. De skapades med modellen FLUX.1-schnell
-(licens Apache 2.0) och valdes sedan ut och putsades för hand.
+Det började med två arméer: **Feerna** (King Rainbeard, Princess Sparkle, Daisy
+Tower och en enhörning i stället för ponnyn) och **Häxorna** (King Grumble, som
+muttrar men älskar muffins, Queen Thunder, vars trollformler säger pang men
+aldrig gör ont på någon, Batty Tower och grodor med hatt i stället för bönder).
+
+Nu är de fjorton. Tolv arméer av vinylleksaker har anslutit sig: **Riket** (Kung
+Guldäpple med sitt gyllene äpple), **Små djävlar** (Djävulskungen Mullra med en
+stor bok och ännu större horn), **Katter**, **Hundar**, **Bin**, **Getingar**,
+**Dinosaurier** (Kung Rexi, stor men snäll), **Istiden**, **Frukt**,
+**Grönsaker** och leksakernas **Skogsfeer** och **Häxor**. Varje armé har sex
+figurer med namn, en egen arena, egna hälsningar och stridsrepliker. Kungen är
+längst och bonden minst, så pjäserna går att skilja åt på brädet efter höjden.
+
+Barnet väljer vem det spelar som och mot vem. Figurerna är egna, utan varumärken
+eller kända sagolicenser. Feerna och häxorna skapades med FLUX.1-schnell,
+leksaksarméerna med Qwen-Image. Allt valdes sedan ut och putsades för hand.
+
+### Ärans hall
+
+Under pokalen på kartan finns ärans hall med mästarnas berömda partier: Morphys
+parti på operan i Paris 1858, ”århundradets parti” mellan trettonårige Bobby
+Fischer och Donald Byrne (1956) och Vera Menchik mot Sonja Graf vid
+damvärldsmästerskapet 1937.
+
+Ett parti kan spelas upp på två sätt. **Saga** är för barnet: pjäserna i barnets
+egen armé flyttar av sig själva, en pratbubbla dyker upp vid schack, rockad
+eller ett djärvt offer, och högst fyra stora strider väljs ut ur hela partiet.
+Alla andra slag säger bara ”puff”. På slutet kommer schackmatt med pokal,
+uppgivning (kungen bugar) eller remi (ett handslag). **Krönika** är för
+föräldern: draglistan, steg framåt och bakåt och inga strider.
+
+### Direktsända turneringar
+
+Den som vill kan slå på ”Partier från internet” i ärans hall. Då visas en stor
+turnering som spelas just nu, först och främst VM-matchen 2026 i Genève.
+Färdigspelade ronder kan spelas upp precis som de berömda partierna, även
+offline. Reglaget är avslaget från början. Då ansluter appen ingenstans, och
+påslagen hämtar den partier bara från sin egen lilla server, utan konto, cookies
+eller spårning.
 
 ### Spela mot roboten
 
@@ -73,9 +104,11 @@ på en och samma telefon kommer senare.
 
 ### Status
 
-Appen är under utveckling och går inte att ladda ner än. Härnäst kommer de
-återstående öarna, en föräldrazon (inställningar, stänga av strider, översikt
-över vad barnet kan), turneringar i slutet av öarna med diplom och ett test med
-en riktig femårig schackspelare: kan hon skilja feerna åt på ett litet bräde?
+Den första testversionen (1.0.2) är ute: APK-filen för Android kan laddas ner
+nedan, och iPhone och iPad får den via TestFlight. Härnäst kommer de återstående
+öarna, en föräldrazon (inställningar, avstängning av striderna, en översikt över
+vad barnet kan), ett bibliotek med fler berömda partier och ett test med en
+riktig femårig schackspelare: kan hon skilja feerna åt på ett litet bräde?
 
-Utan reklam, utan konto och offline. På tjeckiska och engelska.
+Ingen reklam, inget konto, fungerar offline. Appen finns på 45 språk; rösten
+talar än så länge tjeckiska och engelska.

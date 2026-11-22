@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Chess for five-year-olds — fairy-tale lessons, a voice that reads everything aloud, and fairies battling witches
+tagline: Chess for five-year-olds — fairy-tale lessons, a voice that reads everything aloud, battles between fourteen armies and famous games of the masters
 ---
 Chess Kingdom teaches chess to a child who can't read yet. Every piece is a
 character with its own name and personality: Daisy Tower has wheels and only
@@ -55,17 +55,50 @@ words ("Choo-choo!" – "Off to the pond…") and one of them goes off to rest.
 Nobody dies: the defeated piece heads "back to the depot" or "off to the
 meadow". A battle lasts under three seconds and can be skipped with a tap.
 
-### Fairies and witches
+### Fourteen armies
 
-There are two armies: the **Fairies** (King Rainbeard, Princess Sparkle, Daisy
-Tower, a unicorn instead of the pony) and the **Witches** (King Grumble, who
-grumbles but loves cupcakes, Queen Thunder, whose spells go boom but never hurt
-anyone, Batty Tower, and frogs in hats instead of pawns). Each has six
-characters, its own arena and its own lines.
+It started with two armies: the **Fairies** (King Rainbeard, Princess Sparkle,
+Daisy Tower, a unicorn instead of the pony) and the **Witches** (King Grumble,
+who grumbles but loves cupcakes, Queen Thunder, whose spells go boom but never
+hurt anyone, Batty Tower, and frogs in hats instead of pawns).
+
+Now there are fourteen. Twelve vinyl-toy armies joined them: the **Kingdom**
+(King Goldapple with his golden apple), the **Little Devils** (King
+Grumblehorn with a big book and even bigger horns), **Cats**, **Dogs**,
+**Bees**, **Hornets**, **Dinos** (King Rexy, big but kind), **Ice Age**,
+**Fruit**, **Veggies**, and the toy **Woodland Fairies** and **Hedge
+Witches**. Every army has six named characters, its own arena, greetings and
+battle lines. The king is the tallest and the pawn the smallest, so the pieces
+can be told apart on the board by height.
+
 The child chooses who to play as and against whom. The characters are
-original, with no brands or well-known fairy-tale licences. They were made
-with the FLUX.1-schnell model (Apache 2.0 licence) and then hand-picked and
-cleaned up.
+original, with no brands or well-known fairy-tale licences. The fairies and
+witches were made with FLUX.1-schnell, the toy armies with Qwen-Image. All of
+them were then hand-picked and cleaned up.
+
+### Hall of fame
+
+Under the trophy on the map is the hall of fame with famous games of the
+masters: Morphy's game at the Paris opera in 1858, the "game of the century"
+of thirteen-year-old Bobby Fischer against Donald Byrne (1956), and Vera
+Menchik against Sonja Graf at the 1937 women's world championship.
+
+A game can be replayed in two ways. **Story** is for the child: the pieces of
+their own army move by themselves, a speech bubble pops up at a check, a
+castle or a bold sacrifice, and at most four big battles are picked from the
+whole game. Every other capture just goes "poof". At the end comes checkmate
+with a trophy, a resignation (the king takes a bow) or a draw (a handshake).
+**Chronicle** is for the parent: the move list, step forward and back, and no
+battles.
+
+### Live tournaments
+
+If you want, you can turn on "Games from the internet" in the hall of fame.
+A big tournament that is being played right now then shows up there, first of
+all the 2026 world championship match in Geneva. Finished rounds can be
+replayed like the famous games, even offline. The switch is off by default.
+The app then connects nowhere, and it downloads games only from its own small
+server, with no account, cookies or tracking.
 
 ### Playing against the robot
 
@@ -76,10 +109,12 @@ against the robot, or against a parent on one phone, is still to come.
 
 ### Status
 
-The app is a work in progress and not available for download yet. Next up are
-the remaining islands, a parents' zone (settings, turning battles off, an
-overview of what the child can do), tournaments at the end of the islands with
-a diploma, and a test with a real five-year-old chess player: can she tell
-the fairies apart on a small board?
+The first test version (1.0.2) is out: the Android APK can be downloaded
+below, and iPhone and iPad get it through TestFlight. Next up are the
+remaining islands, a parents' zone (settings, turning battles off, an overview
+of what the child can do), a library of more famous games, and a test with a
+real five-year-old chess player: can she tell the fairies apart on a small
+board?
 
-No ads, no account, offline. In Czech and English.
+No ads, no account, works offline. The app is in 45 languages; the voice
+speaks Czech and English so far.

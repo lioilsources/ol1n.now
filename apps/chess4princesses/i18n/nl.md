@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Schaken voor vijfjarigen — sprookjeslessen, een stem die alles voorleest en feeën die het opnemen tegen heksen
+tagline: Schaken voor vijfjarigen — sprookjeslessen, een stem die alles voorleest, gevechten tussen veertien legers en beroemde meesterpartijen
 ---
 Chess Kingdom leert schaken aan een kind dat nog niet kan lezen. Elk stuk is
 een personage met een eigen naam en karakter: Daisy Tower heeft wieltjes en
@@ -57,17 +57,52 @@ vijver…’) en een van hen gaat uitrusten. Niemand gaat dood: het verslagen st
 gaat ‘naar de remise’ of ‘naar de wei’. Een gevecht duurt nog geen drie
 seconden en is met één tik over te slaan.
 
-### Feeën en heksen
+### Veertien legers
 
-Er zijn twee legers: de **Feeën** (King Rainbeard, Princess Sparkle, Daisy
-Tower, een eenhoorn in plaats van het pony) en de **Heksen** (King Grumble, die
-bromt maar dol is op cakejes, Queen Thunder, wier spreuken boem doen maar
-niemand pijn doen, Batty Tower en kikkers met hoedjes in plaats van pionnen).
-Elk leger heeft zes personages, een eigen arena en eigen zinnetjes.
+Het begon met twee legers: de **Feeën** (King Rainbeard, Princess Sparkle,
+Daisy Tower, een eenhoorn in plaats van het pony) en de **Heksen** (King
+Grumble, die bromt maar dol is op cakejes, Queen Thunder, wier spreuken boem
+doen maar niemand pijn doen, Batty Tower en kikkers met hoedjes in plaats van
+pionnen).
+
+Nu zijn het er veertien. Er kwamen twaalf legers van vinyl speelgoed bij:
+**Het Koninkrijk** (Koning Gouden Appel met zijn gouden appel), de
+**Duiveltjes** (Duivelskoning Bromhoorn met een groot boek en nog grotere
+hoorns), **Poesjes**, **Hondjes**, **Bijtjes**, **Hoornaars**, **Dino's**
+(Koning Rexie, groot maar lief), **IJstijd**, **Fruit**, **Groentjes** en de
+speelgoedversies van de **Bosfeeën** en **Heksjes**. Elk leger heeft zes
+personages met een naam, een eigen arena, begroetingen en strijdkreten. De
+koning is het grootst en de pion het kleinst, zodat je de stukken op het bord
+aan hun lengte herkent.
+
 Het kind kiest met wie het speelt en tegen wie. De personages zijn eigen
-ontwerpen, zonder merken of bekende sprookjeslicenties. Ze zijn gemaakt met
-het model FLUX.1-schnell (licentie Apache 2.0) en daarna met de hand uitgezocht
-en opgeschoond.
+ontwerpen, zonder merken of bekende sprookjeslicenties. De feeën en heksen zijn
+gemaakt met FLUX.1-schnell, de speelgoedlegers met Qwen-Image. Daarna is alles
+met de hand uitgezocht en opgeschoond.
+
+### Roemhal
+
+Onder de beker op de kaart ligt de Roemhal met beroemde partijen van de
+meesters: Morphy's partij in de opera van Parijs in 1858, de ‘partij van de
+eeuw’ van de dertienjarige Bobby Fischer tegen Donald Byrne (1956), en Vera
+Menchik tegen Sonja Graf op het wereldkampioenschap voor vrouwen van 1937.
+
+Een partij kun je op twee manieren naspelen. **Sprookje** is voor het kind:
+de stukken van zijn eigen leger bewegen vanzelf, bij schaak, rokade of een
+dapper offer verschijnt een tekstballon, en uit de hele partij worden hooguit
+vier grote gevechten gekozen. Elke andere slag doet alleen ‘poef’. Aan het
+eind volgt mat met een beker, opgave (de koning maakt een buiging) of remise
+(een handdruk). **Kroniek** is voor de ouder: de zettenlijst, een stap vooruit
+en terug, en geen gevechten.
+
+### Live toernooien
+
+Wie wil, kan in de Roemhal ‘Partijen van internet’ aanzetten. Dan verschijnt
+daar een groot toernooi dat op dat moment gespeeld wordt, als eerste de
+WK-match van 2026 in Genève. Gespeelde ronden kun je naspelen net als de
+beroemde partijen, ook offline. Standaard staat de schakelaar uit en maakt de
+app nergens verbinding. Partijen downloadt de app alleen van haar eigen kleine
+server, zonder account, cookies of tracking.
 
 ### Spelen tegen de robot
 
@@ -78,10 +113,12 @@ partij tegen de robot of tegen papa of mama op één telefoon komt later.
 
 ### Status
 
-De app is in ontwikkeling en nog niet te downloaden. Hierna komen de overige
-eilanden, een ouderhoek (instellingen, gevechten uitzetten, overzicht van wat
-het kind kan), toernooien aan het eind van de eilanden met diploma en een test
+De eerste testversie (1.0.2) is uit: de Android-APK kun je hieronder
+downloaden, en iPhone en iPad krijgen hem via TestFlight. Hierna komen de
+overige eilanden, een ouderhoek (instellingen, gevechten uitzetten, overzicht
+van wat het kind kan), een bibliotheek met meer beroemde partijen en een test
 met een echte vijfjarige schaakster: kan ze de feeën op een klein bord uit
 elkaar houden?
 
-Zonder advertenties, zonder account en offline. In het Tsjechisch en Engels.
+Zonder advertenties, zonder account, werkt offline. De app is er in 45 talen;
+de stem spreekt voorlopig Tsjechisch en Engels.

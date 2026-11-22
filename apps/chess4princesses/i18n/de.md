@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Schach für Fünfjährige — Märchenlektionen, eine Stimme, die alles vorliest, und Feen im Kampf gegen Hexen
+tagline: Schach für Fünfjährige — Märchenlektionen, eine Stimme, die alles vorliest, Kämpfe zwischen vierzehn Armeen und berühmte Partien der Meister
 ---
 Chess Kingdom bringt Schach einem Kind bei, das noch nicht lesen kann. Jede
 Figur ist eine Gestalt mit eigenem Namen und Charakter: Daisy Tower hat Räder
@@ -57,17 +57,50 @@ sich ausruhen. Niemand stirbt, die besiegte Figur fährt „ins Depot“ oder
 fliegt „auf die Wiese“. Ein Kampf dauert keine drei Sekunden und lässt sich
 mit einem Tipp überspringen.
 
-### Feen und Hexen
+### Vierzehn Armeen
 
-Es gibt zwei Armeen: die **Feen** (King Rainbeard, Princess Sparkle, Daisy
-Tower, ein Einhorn statt des Ponys) und die **Hexen** (King Grumble, der
-brummt, aber Küchlein liebt, Queen Thunder, deren Zauber bumm machen, aber
-niemandem wehtun, Batty Tower und Frösche mit Hüten statt Bauern). Jede hat
-sechs Figuren, eine eigene Arena und eigene Sprüche.
+Angefangen hat es mit zwei Armeen: den **Feen** (King Rainbeard, Princess
+Sparkle, Daisy Tower, ein Einhorn statt des Ponys) und den **Hexen** (King
+Grumble, der brummt, aber Küchlein liebt, Queen Thunder, deren Zauber bumm
+machen, aber niemandem wehtun, Batty Tower und Frösche mit Hüten statt Bauern).
+
+Jetzt sind es vierzehn. Dazu kamen zwölf Armeen aus Vinylfiguren: **Das
+Königreich** (König Goldapfel mit seinem goldenen Apfel), die **Teufelchen**
+(Teufelskönig Brummhorn mit einem großen Buch und noch größeren Hörnern),
+**Kätzchen**, **Hündchen**, **Bienchen**, **Hornissen**, **Dinos** (König Rexi,
+groß, aber lieb), **Eiszeit**, **Obst**, **Gemüse** sowie die **Waldfeen** und
+**Hexen** als Spielzeug. Jede Armee hat sechs Figuren mit Namen, eine eigene
+Arena, Begrüßungen und Kampfsprüche. Der König ist der Größte, der Bauer der
+Kleinste, so lassen sich die Figuren auf dem Brett an der Höhe unterscheiden.
+
 Das Kind wählt, für wen es spielt und gegen wen. Die Figuren sind eigene
-Entwürfe, ohne Marken oder bekannte Märchenlizenzen. Sie entstanden mit dem
-Modell FLUX.1-schnell (Lizenz Apache 2.0) und wurden danach von Hand
-ausgewählt und bereinigt.
+Entwürfe, ohne Marken oder bekannte Märchenlizenzen. Die Feen und Hexen
+entstanden mit FLUX.1-schnell, die Spielzeugarmeen mit Qwen-Image. Danach wurde
+alles von Hand ausgewählt und bereinigt.
+
+### Ruhmeshalle
+
+Unter dem Pokal auf der Karte liegt die Ruhmeshalle mit berühmten Partien der
+Meister: Morphys Partie in der Pariser Oper von 1858, die „Partie des
+Jahrhunderts“ des dreizehnjährigen Bobby Fischer gegen Donald Byrne (1956) und
+Vera Menchik gegen Sonja Graf bei der Frauenweltmeisterschaft 1937.
+
+Eine Partie lässt sich auf zwei Arten nachspielen. **Märchen** ist für das Kind:
+Die Figuren seiner eigenen Armee ziehen von selbst, bei Schach, Rochade oder
+einem kühnen Opfer erscheint eine Sprechblase, und aus der ganzen Partie werden
+höchstens vier große Kämpfe ausgewählt. Jedes andere Schlagen macht nur „puff“.
+Am Ende steht ein Matt mit Pokal, eine Aufgabe (der König verbeugt sich) oder
+ein Remis (ein Handschlag). **Chronik** ist für die Eltern: die Zugliste,
+Schritt vor und zurück und keine Kämpfe.
+
+### Live-Turniere
+
+Wer möchte, kann in der Ruhmeshalle „Partien aus dem Internet“ einschalten. Dann
+erscheint dort ein großes Turnier, das gerade gespielt wird, allen voran der
+WM-Kampf 2026 in Genf. Gespielte Runden lassen sich wie die berühmten Partien
+nachspielen, auch offline. Der Schalter ist standardmäßig aus. Solange er aus
+ist, verbindet sich die App nirgendwohin, und Partien lädt sie nur von ihrem
+eigenen kleinen Server, ohne Konto, Cookies oder Tracking.
 
 ### Spiel gegen den Roboter
 
@@ -78,10 +111,12 @@ Roboter oder gegen Mama oder Papa auf einem Handy kommt erst noch.
 
 ### Stand
 
-Die App ist in Arbeit und noch nicht zum Download verfügbar. Als Nächstes
-kommen die übrigen Inseln, ein Elternbereich (Einstellungen, Kämpfe abschalten,
-Übersicht, was das Kind schon kann), Turniere am Ende der Inseln mit Urkunde
-und ein Test mit einer echten fünfjährigen Schachspielerin: Kann sie die Feen
-auf einem kleinen Brett auseinanderhalten?
+Die erste Testversion (1.0.2) ist da: Die Android-APK lässt sich unten
+herunterladen, iPhone und iPad bekommen sie über TestFlight. Als Nächstes kommen
+die übrigen Inseln, ein Elternbereich (Einstellungen, Kämpfe abschalten,
+Übersicht, was das Kind schon kann), eine Bibliothek mit weiteren berühmten
+Partien und ein Test mit einer echten fünfjährigen Schachspielerin: Kann sie die
+Feen auf einem kleinen Brett auseinanderhalten?
 
-Ohne Werbung, ohne Konto und offline. Auf Tschechisch und Englisch.
+Ohne Werbung, ohne Konto, funktioniert offline. Die App gibt es in 45 Sprachen,
+die Stimme spricht bisher Tschechisch und Englisch.

@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Catur untuk kanak-kanak lima tahun — pelajaran ala dongeng, suara yang membacakan semuanya dan pertarungan pari-pari menentang ahli sihir
+tagline: Catur untuk kanak-kanak lima tahun — pelajaran ala dongeng, suara yang membacakan semuanya, pertarungan empat belas pasukan dan permainan terkenal para pakar catur
 ---
 Chess Kingdom mengajar catur kepada kanak-kanak yang belum pandai membaca.
 Setiap buah catur ialah watak dengan nama dan perangai tersendiri: Daisy Tower
@@ -58,17 +58,54 @@ pergi berehat. Tiada siapa yang mati: buah yang kalah pulang "ke depoh" atau
 terbang "ke padang". Pertarungan berlangsung kurang daripada tiga saat dan
 boleh dilangkau dengan satu ketikan.
 
-### Pari-pari dan ahli sihir
+### Empat belas pasukan
 
-Ada dua pasukan: **Pari-pari** (King Rainbeard, Princess Sparkle, Daisy Tower
-dan unikorn sebagai ganti kuda padi) dan **Ahli sihir** (King Grumble yang suka
-merungut tetapi gemar kek cawan, Queen Thunder yang jampinya berbunyi bum
-tetapi tidak menyakiti sesiapa, Batty Tower dan katak bertopi sebagai ganti
-bidak). Setiap pasukan ada enam watak, arena sendiri dan kata-kata sendiri.
+Semuanya bermula dengan dua pasukan: **Pari-pari** (King Rainbeard, Princess
+Sparkle, Daisy Tower dan unikorn sebagai ganti kuda padi) dan **Ahli sihir**
+(King Grumble yang suka merungut tetapi gemar kek cawan, Queen Thunder yang
+jampinya berbunyi bum tetapi tidak pernah menyakiti sesiapa, Batty Tower dan
+katak bertopi sebagai ganti bidak).
+
+Kini ada empat belas. Dua belas pasukan mainan vinil telah menyertai mereka:
+**Kerajaan** (Raja Epal Emas dengan epal emasnya), **Iblis-iblis Kecil** (Raja
+Iblis Tanduk Rungut dengan buku besar dan tanduk yang lebih besar lagi),
+**Kucing-kucing**, **Anjing-anjing**, **Lebah-lebah**, **Tebuan-tebuan**,
+**Dinosaur** (Raja Rexy, besar tetapi baik hati), **Zaman Ais**,
+**Buah-buahan**, **Sayur-sayuran**, serta mainan **Peri-peri Hutan** dan
+**Penyihir-penyihir Hutan**. Setiap pasukan ada enam watak bernama, arena
+sendiri, ucapan salam dan kata-kata pertarungan. Raja paling tinggi dan bidak
+paling kecil, jadi buah catur boleh dibezakan di papan mengikut ketinggian.
+
 Kanak-kanak memilih untuk bermain sebagai siapa dan menentang siapa. Watak-watak
-ini asli, tanpa jenama atau lesen dongeng terkenal. Ia dicipta dengan model
-FLUX.1-schnell (lesen Apache 2.0), kemudian dipilih dan dikemaskan secara
-manual.
+ini asli, tanpa jenama atau lesen dongeng terkenal. Pari-pari dan ahli sihir
+dicipta dengan FLUX.1-schnell, pasukan mainan dengan Qwen-Image. Kemudian
+semuanya dipilih dan dikemaskan secara manual.
+
+### Dewan Kemasyhuran
+
+Di bawah piala pada peta terdapat dewan kemasyhuran yang memuatkan permainan
+terkenal para pakar catur: permainan Morphy di gedung opera Paris pada 1858,
+"permainan abad ini" antara Bobby Fischer yang berusia tiga belas tahun dan
+Donald Byrne (1956), serta Vera Menchik menentang Sonja Graf pada kejohanan
+dunia wanita 1937.
+
+Permainan boleh dimainkan semula dengan dua cara. **Cerita** untuk kanak-kanak:
+buah catur pasukannya sendiri bergerak dengan sendiri, belon kata muncul semasa
+sekak, berkubu atau korban yang berani, dan paling banyak empat pertarungan
+besar dipilih daripada seluruh permainan. Tangkapan lain hanya berbunyi "puf".
+Di penghujungnya datang mat dengan piala, menyerah kalah (raja menunduk hormat)
+atau seri (berjabat tangan). **Kronik** untuk ibu bapa: senarai langkah, langkah
+ke depan dan ke belakang, tanpa pertarungan.
+
+### Kejohanan secara langsung
+
+Jika mahu, anda boleh menghidupkan "Permainan dari internet" di dewan
+kemasyhuran. Kejohanan besar yang sedang berlangsung akan muncul di situ, yang
+pertama ialah perlawanan kejohanan dunia 2026 di Geneva. Pusingan yang sudah
+tamat boleh dimainkan semula seperti permainan terkenal, walaupun tanpa
+internet. Suis ini dimatikan secara lalai. Apabila dimatikan, aplikasi tidak
+bersambung ke mana-mana; apabila dihidupkan, ia memuat turun permainan hanya
+dari pelayan kecilnya sendiri, tanpa akaun, kuki atau penjejakan.
 
 ### Bermain menentang robot
 
@@ -79,10 +116,12 @@ atau menentang ibu bapa pada satu telefon akan datang kemudian.
 
 ### Status
 
-Aplikasi ini masih dalam pembangunan dan belum boleh dimuat turun. Seterusnya
-ialah pulau-pulau yang tinggal, zon ibu bapa (tetapan, mematikan pertarungan,
-ringkasan apa yang sudah diketahui anak), kejohanan di hujung pulau dengan
-sijil dan ujian bersama pemain catur cilik lima tahun yang sebenar: bolehkah
+Versi ujian pertama (1.0.2) sudah keluar: APK Android boleh dimuat turun di
+bawah, dan iPhone serta iPad mendapatkannya melalui TestFlight. Seterusnya ialah
+pulau-pulau yang tinggal, zon ibu bapa (tetapan, mematikan pertarungan, gambaran
+tentang apa yang sudah dikuasai anak), perpustakaan lebih banyak permainan
+terkenal dan ujian bersama pemain catur cilik lima tahun yang sebenar: bolehkah
 dia membezakan pari-pari di papan yang kecil?
 
-Tanpa iklan, tanpa akaun dan luar talian. Dalam bahasa Czech dan Inggeris.
+Tanpa iklan, tanpa akaun, berfungsi di luar talian. Aplikasi ini ada dalam 45
+bahasa; suaranya setakat ini bercakap bahasa Czech dan Inggeris.

@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Scacchi per bambini di cinque anni — lezioni da fiaba, una voce che legge tutto e battaglie tra fate e streghe
+tagline: Scacchi per bambini di cinque anni — lezioni da fiaba, una voce che legge tutto, battaglie tra quattordici eserciti e partite celebri dei grandi maestri
 ---
 Chess Kingdom insegna gli scacchi a un bambino che non sa ancora leggere. Ogni
 pezzo è un personaggio con un nome e un carattere: Daisy Tower ha le ruote e
@@ -56,16 +56,52 @@ va a riposarsi. Nessuno muore: il pezzo sconfitto torna «al deposito» o vola
 «sul prato». Una battaglia dura meno di tre secondi e si può saltare con un
 tocco.
 
-### Fate e streghe
+### Quattordici eserciti
 
-Ci sono due eserciti: le **Fate** (King Rainbeard, Princess Sparkle, Daisy
-Tower, un unicorno al posto del pony) e le **Streghe** (King Grumble, che
-brontola ma adora i dolcetti, Queen Thunder, i cui incantesimi fanno bum ma
-non fanno male a nessuno, Batty Tower e ranocchie col cappello al posto dei
-pedoni). Ognuno ha sei personaggi, la sua arena e le sue battute.
+All’inizio c’erano due eserciti: le **Fate** (King Rainbeard, Princess
+Sparkle, Daisy Tower e un unicorno al posto del pony) e le **Streghe** (King
+Grumble, che brontola ma adora i dolcetti, Queen Thunder, i cui incantesimi
+fanno bum ma non fanno male a nessuno, Batty Tower e ranocchie col cappello al
+posto dei pedoni).
+
+Ora sono quattordici. Si sono aggiunti dodici eserciti di giocattoli in vinile:
+**Il Regno** (Re Mela d'Oro con la sua mela dorata), i **Diavoletti** (Re
+Diavolo Cornobrontolo con un grande libro e corna ancora più grandi),
+**Gattini**, **Cagnolini**, **Apine**, **Calabroni**, **Dinosauri** (Re Rexi,
+grande ma buono), **Era Glaciale**, **Frutta**, **Verdure** e, in versione
+giocattolo, le **Fate del bosco** e le **Streghe**. Ogni esercito ha sei
+personaggi con un nome, la sua arena, i suoi saluti e le sue battute di
+battaglia. Il re è il più alto e il pedone il più piccolo, così sulla
+scacchiera i pezzi si riconoscono dall’altezza.
+
 Il bambino sceglie con chi giocare e contro chi. I personaggi sono originali,
-senza marchi né licenze di fiabe famose. Sono nati con il modello
-FLUX.1-schnell (licenza Apache 2.0) e poi sono stati scelti e ripuliti a mano.
+senza marchi né licenze di fiabe famose. Le fate e le streghe sono nate con
+FLUX.1-schnell, gli eserciti giocattolo con Qwen-Image. Poi sono stati tutti
+scelti e ripuliti a mano.
+
+### Sala della fama
+
+Sotto la coppa sulla mappa c’è la Sala della fama, con le partite celebri dei
+grandi maestri: la partita di Morphy all’Opéra di Parigi nel 1858, la «partita
+del secolo» del tredicenne Bobby Fischer contro Donald Byrne (1956) e Vera
+Menchik contro Sonja Graf al campionato del mondo femminile del 1937.
+
+Una partita si può rivedere in due modi. **Fiaba** è per il bambino: i pezzi
+del suo esercito si muovono da soli, a uno scacco, un arrocco o un sacrificio
+coraggioso compare un fumetto, e dall’intera partita si scelgono al massimo
+quattro grandi battaglie. Ogni altra cattura fa solo «puf». Alla fine arriva
+lo scacco matto con la coppa, l’abbandono (il re fa un inchino) o la patta
+(una stretta di mano). **Cronaca** è per il genitore: l’elenco delle mosse, un
+passo avanti e uno indietro, e niente battaglie.
+
+### Tornei dal vivo
+
+Chi vuole può attivare «Partite da internet» nella Sala della fama. Lì compare
+allora un grande torneo in corso, per primo il match per il titolo mondiale
+2026 a Ginevra. I turni già giocati si possono rivedere come le partite
+celebri, anche senza rete. Di serie l’interruttore è spento e l’app non si
+collega da nessuna parte; le partite le scarica solo dal suo piccolo server,
+senza account, cookie né tracciamento.
 
 ### Gioca contro il robot
 
@@ -76,10 +112,12 @@ contro il robot o contro un genitore sullo stesso telefono arriverà più avanti
 
 ### Stato
 
-L’app è in lavorazione e non è ancora scaricabile. I prossimi passi sono le
-isole mancanti, un’area genitori (impostazioni, battaglie disattivabili,
-riepilogo di ciò che il bambino sa fare), tornei di fine isola con diploma e
-un test con una vera scacchista di cinque anni: riuscirà a distinguere le fate
-su una scacchiera piccola?
+La prima versione di prova (1.0.2) è uscita: l’APK per Android si scarica qui
+sotto, mentre iPhone e iPad la ricevono tramite TestFlight. I prossimi passi
+sono le isole mancanti, un’area genitori (impostazioni, battaglie
+disattivabili, riepilogo di ciò che il bambino sa fare), una biblioteca di
+altre partite celebri e un test con una vera scacchista di cinque anni:
+riuscirà a distinguere le fate su una scacchiera piccola?
 
-Senza pubblicità, senza account e offline. In ceco e in inglese.
+Senza pubblicità, senza account, funziona offline. L’app è in 45 lingue; la
+voce per ora parla ceco e inglese.

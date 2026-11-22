@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Šah za petletnike — pravljične lekcije, glas, ki vse prebere, in bitke vil s čarovnicami
+tagline: Šah za petletnike — pravljične lekcije, glas, ki vse prebere, bitke štirinajstih vojsk in slavne partije mojstrov
 ---
 Chess Kingdom uči šah otroka, ki še ne zna brati. Vsaka figura je junak z
 lastnim imenom in značajem: Daisy Tower ima kolesca in vozi samo naravnost,
@@ -52,16 +52,49 @@ besed (»Tu-tuuu!« – »Grem v ribnik …«) in eden od njiju gre počivat. Ni
 umre, premagana figura gre »v remizo« ali odleti »na travnik«. Bitka traja
 manj kot tri sekunde in jo lahko preskočiš s tapom.
 
-### Vile in čarovnice
+### Štirinajst vojsk
 
-Vojski sta dve: **Vile** (King Rainbeard, Princess Sparkle, Daisy Tower in
-samorog namesto konjička) in **Čarovnice** (King Grumble, ki godrnja, a ima rad
-piškotke, Queen Thunder, katere uroki naredijo bum, a nikogar ne bolijo, Batty
-Tower in žabice s klobučki namesto kmetov). Vsaka ima šest junakov, svojo
-areno in svoje izjave.
+Na začetku sta bili dve vojski: **Vile** (King Rainbeard, Princess Sparkle,
+Daisy Tower in samorog namesto konjička) in **Čarovnice** (King Grumble, ki
+godrnja, a ima rad piškotke, Queen Thunder, katere uroki naredijo bum, a nikogar
+ne bolijo, Batty Tower in žabice s klobučki namesto kmetov).
+
+Zdaj jih je štirinajst. Pridružilo se jim je dvanajst vojsk iz vinilnih igrač:
+**Kraljestvo** (Kralj Zlatojabolko s svojim zlatim jabolkom), **Vražički**
+(Vražji kralj Godrnjač z veliko knjigo in še večjimi rogovi), **Mucke**,
+**Psički**, **Čebelice**, **Sršeni**, **Dinozavri** (Kralj Reksi, velik, a
+prijazen), **Ledena doba**, **Sadje**, **Zelenjava** ter igračne **Gozdne vile**
+in **Čarovnice**. Vsaka vojska ima šest junakov z imeni, svojo areno, pozdrave
+in izjave za bitko. Kralj je najvišji, kmet najmanjši, zato figure na šahovnici
+ločiš po višini.
+
 Otrok si izbere, za koga igra in proti komu. Junaki so izvirni, brez blagovnih
-znamk in znanih pravljičnih licenc. Nastali so z modelom FLUX.1-schnell
-(licenca Apache 2.0), nato pa so bili ročno izbrani in očiščeni.
+znamk in znanih pravljičnih licenc. Vile in čarovnice so nastale z modelom
+FLUX.1-schnell, vojske igrač s Qwen-Image. Vse je bilo nato ročno izbrano in
+očiščeno.
+
+### Dvorana slavnih
+
+Pod pokalom na zemljevidu je dvorana slavnih s slavnimi partijami mojstrov:
+Morphyjeva partija v pariški operi iz leta 1858, „partija stoletja“
+trinajstletnega Bobbyja Fischerja proti Donaldu Byrnu (1956) in Vera Menchik
+proti Sonji Graf na svetovnem prvenstvu za ženske leta 1937.
+
+Partijo lahko predvajaš na dva načina. **Pravljica** je za otroka: figure
+njegove vojske se premikajo same, ob šahu, rokadi ali drzni žrtvi se pojavi
+oblaček, iz cele partije pa se izberejo največ štiri velike bitke. Vsako drugo
+jemanje naredi samo „puf“. Na koncu pride mat s pokalom, predaja (kralj se
+prikloni) ali remi (stisk roke). **Kronika** je za starše: seznam potez, korak
+naprej in nazaj in nobenih bitk.
+
+### Turnirji v živo
+
+Kdor želi, lahko v dvorani slavnih vklopi „Partije z interneta“. Takrat se tam
+pojavi velik turnir, ki se ravno igra, najprej dvoboj za svetovnega prvaka 2026
+v Ženevi. Odigrana kola lahko predvajaš kot slavne partije, tudi brez povezave.
+Stikalo je privzeto izklopljeno. Dokler je izklopljeno, se aplikacija ne poveže
+nikamor, partije pa prenaša le s svojega majhnega strežnika, brez računa,
+piškotkov in sledenja.
 
 ### Igra proti robotku
 
@@ -72,9 +105,11 @@ telefonu še pride.
 
 ### Stanje
 
-Aplikacija je v delu in je še ni mogoče prenesti. Na vrsti so preostali otoki,
-starševski kotiček (nastavitve, izklop bitk, pregled, kaj otrok zna), turnirji
-na koncu otokov z diplomo in preizkus s pravo petletno šahistko: bo na majhni
-šahovnici ločila vile med sabo?
+Prva preizkusna različica (1.0.2) je zunaj: APK za Android lahko preneseš
+spodaj, iPhone in iPad pa jo dobita prek TestFlighta. Na vrsti so preostali
+otoki, starševski kotiček (nastavitve, izklop bitk, pregled, kaj otrok zna),
+knjižnica dodatnih slavnih partij in preizkus s pravo petletno šahistko: bo na
+majhni šahovnici ločila vile med sabo?
 
-Brez oglasov, brez računa in brez povezave. V češčini in angleščini.
+Brez oglasov, brez računa, deluje brez povezave. Aplikacija je v 45 jezikih,
+glas zaenkrat govori češko in angleško.

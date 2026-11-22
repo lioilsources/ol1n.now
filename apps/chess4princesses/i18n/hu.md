@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Sakk ötéveseknek — mesés leckék, egy hang, amely mindent felolvas, és tündérek csatái boszorkányokkal
+tagline: Sakk ötéveseknek — mesés leckék, egy hang, amely mindent felolvas, tizennégy sereg csatái és a mesterek híres játszmái
 ---
 A Chess Kingdom olyan gyereknek tanít sakkot, aki még nem tud olvasni. Minden
 bábu egy saját nevű és egyéniségű figura: Daisy Tower kerekeken gurul és csak
@@ -56,16 +56,52 @@ elmegy pihenni. Senki nem hal meg, a legyőzött bábu „a remízbe” megy vag
 rétre” repül. Egy csata alig három másodperc, és egy koppintással
 átugorható.
 
-### Tündérek és boszorkányok
+### Tizennégy sereg
 
-Két sereg van: a **Tündérek** (King Rainbeard, Princess Sparkle, Daisy Tower,
-és póni helyett egy egyszarvú) és a **Boszorkányok** (King Grumble, aki
+Két sereggel kezdődött: a **Tündérek** (King Rainbeard, Princess Sparkle, Daisy
+Tower, és póni helyett egy egyszarvú) és a **Boszorkányok** (King Grumble, aki
 morog, de imádja a muffint, Queen Thunder, akinek a varázslatai bumm-ot
-csinálnak, de senkinek sem fájnak, Batty Tower, és gyalogok helyett kalapos
-békák). Mindegyiknek hat figurája, saját arénája és saját mondásai vannak.
+csinálnak, de soha senkinek sem fájnak, Batty Tower, és gyalogok helyett kalapos
+békák).
+
+Mára tizennégyen lettek. Csatlakozott hozzájuk tizenkét vinylfigura-sereg: **A
+Birodalom** (Aranyalma király az aranyalmájával), az **Ördögfiókák** (Morgó
+ördögkirály egy nagy könyvvel és még nagyobb szarvakkal), a **Cicák**, a
+**Kutyusok**, a **Méhecskék**, a **Darazsak**, a **Dinoszauruszok** (Rexi
+király, nagy, de kedves), a **Jégkorszak**, a **Gyümölcsök**, a **Zöldségek**,
+valamint a játékfigura **Erdei tündérek** és **Boszorkányok**. Minden seregnek
+hat saját nevű figurája, saját arénája, köszönései és csatamondásai vannak. A
+király a legmagasabb, a gyalog a legkisebb, így a bábuk a táblán magasság
+alapján is megkülönböztethetők.
+
 A gyerek kiválasztja, kivel játszik és ki ellen. A figurák eredetiek, nincsenek
-mögöttük márkák vagy ismert mesés licencek. A FLUX.1-schnell modellel
-készültek (Apache 2.0 licenc), aztán kézzel válogattuk és tisztítottuk őket.
+mögöttük márkák vagy ismert mesés licencek. A tündérek és a boszorkányok a
+FLUX.1-schnell modellel, a játékseregek a Qwen-Image-dzsel készültek. Utána
+mindet kézzel válogattuk és tisztítottuk.
+
+### Hírességek csarnoka
+
+A térképen a kupa alatt található a hírességek csarnoka a mesterek híres
+játszmáival: Morphy játszmája a párizsi operában 1858-ban, a tizenhárom éves
+Bobby Fischer „évszázad játszmája” Donald Byrne ellen (1956), valamint Vera
+Menchik és Sonja Graf összecsapása az 1937-es női világbajnokságon.
+
+Egy játszmát kétféleképpen lehet visszajátszani. A **Mese** a gyereknek szól: a
+saját seregének bábui maguktól lépnek, sakknál, sáncolásnál vagy egy merész
+áldozatnál szövegbuborék jelenik meg, és az egész játszmából legfeljebb négy
+nagy csatát választ ki az app. Minden más ütés csak egy „puff”. A végén jön a
+matt kupával, a feladás (a király meghajol) vagy a döntetlen (kézfogás). A
+**Krónika** a szülőnek szól: lépéslista, lépés előre és vissza, csaták nélkül.
+
+### Élő versenyek
+
+Aki szeretné, a hírességek csarnokában bekapcsolhatja a „Játszmák az
+internetről” kapcsolót. Ekkor ott megjelenik egy éppen zajló nagy verseny,
+elsőként a 2026-os genfi világbajnoki párosmérkőzés. A befejezett fordulók a
+híres játszmákhoz hasonlóan visszajátszhatók, akár internet nélkül is. A
+kapcsoló alapból ki van kapcsolva. Kikapcsolva az app sehová nem csatlakozik,
+bekapcsolva pedig csak a saját kis szerveréről tölt le játszmákat, fiók, sütik
+és követés nélkül.
 
 ### Játék a robotka ellen
 
@@ -76,10 +112,12 @@ ellen vagy egy szülő ellen egy telefonon csak később jön.
 
 ### Állapot
 
-Az app fejlesztés alatt áll, és még nem tölthető le. Következnek a hiányzó
-szigetek, egy szülői zóna (beállítások, csaták kikapcsolása, áttekintés arról,
-mit tud a gyerek), oklevéllel járó tornák a szigetek végén, és egy teszt egy
+Megjelent az első tesztverzió (1.0.2): az androidos APK lent letölthető,
+iPhone-ra és iPadre pedig a TestFlighton keresztül érkezik. Következnek a
+hiányzó szigetek, egy szülői zóna (beállítások, csaták kikapcsolása, áttekintés
+arról, mit tud a gyerek), további híres játszmák könyvtára, és egy teszt egy
 igazi ötéves sakkozólánnyal: meg tudja-e különböztetni a tündéreket egy kis
 táblán?
 
-Reklámok és fiók nélkül, offline. Csehül és angolul.
+Reklámok és fiók nélkül, offline is működik. Az app 45 nyelven érhető el, a hang
+egyelőre csehül és angolul beszél.

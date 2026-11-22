@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Beş yaşındakiler için satranç — masal tadında dersler, her şeyi sesli okuyan bir ses ve perilerle cadıların savaşı
+tagline: Beş yaşındakiler için satranç — masal tadında dersler, her şeyi sesli okuyan bir ses, on dört ordunun savaşları ve ustaların ünlü oyunları
 ---
 Chess Kingdom, henüz okuma bilmeyen bir çocuğa satranç öğretir. Her taş, kendi
 adı ve karakteri olan bir kahramandır: Daisy Tower'ın tekerlekleri vardır ve
@@ -52,16 +52,49 @@ yaşanır. Kahramanlar rakibin arenasında karşı karşıya gelir, birkaç laf 
 yenilen taş “garaja” döner ya da “çayıra” uçar. Bir savaş üç saniyeden kısa
 sürer ve bir dokunuşla geçilebilir.
 
-### Periler ve cadılar
+### On dört ordu
 
-İki ordu var: **Periler** (King Rainbeard, Princess Sparkle, Daisy Tower ve
-midilli yerine bir tek boynuzlu at) ve **Cadılar** (homurdanan ama kekleri çok
-seven King Grumble, büyüleri güm diye patlayan ama kimseyi incitmeyen Queen
-Thunder, Batty Tower ve piyonların yerine şapkalı kurbağalar). Her birinin altı
-kahramanı, kendi arenası ve kendi sözleri var.
+Her şey iki orduyla başladı: **Periler** (King Rainbeard, Princess Sparkle,
+Daisy Tower ve midilli yerine bir tek boynuzlu at) ve **Cadılar** (homurdanan
+ama kekleri çok seven King Grumble, büyüleri güm diye patlayan ama kimseyi asla
+incitmeyen Queen Thunder, Batty Tower ve piyonların yerine şapkalı kurbağalar).
+
+Şimdi on dört ordu var. Onlara vinil oyuncaklardan on iki ordu katıldı:
+**Krallık** (altın elmasıyla Kral Altınelma), **Şeytancıklar** (koca bir kitabı
+ve ondan da koca boynuzları olan Şeytan Kral Homurtu), **Kediler**,
+**Köpekler**, **Arılar**, **Eşekarıları**, **Dinozorlar** (iri ama iyi kalpli
+Kral Reksi), **Buz Devri**, **Meyveler**, **Sebzeler** ve oyuncak **Orman
+Perileri** ile **Cadılar**. Her ordunun adı olan altı kahramanı, kendi arenası,
+selamlaşmaları ve savaş sözleri var. Şah en uzun, piyon en kısa; böylece taşlar
+tahtada boylarından ayırt edilebilir.
+
 Çocuk kimin tarafında ve kime karşı oynayacağını seçer. Kahramanlar özgündür;
-hiçbir marka ya da bilinen masal lisansı yoktur. FLUX.1-schnell modeliyle
-(Apache 2.0 lisansı) oluşturuldular, ardından elle seçilip temizlendiler.
+hiçbir marka ya da bilinen masal lisansı yoktur. Periler ve cadılar
+FLUX.1-schnell ile, oyuncak ordular Qwen-Image ile oluşturuldu. Ardından hepsi
+elle seçilip temizlendi.
+
+### Şöhret Salonu
+
+Haritadaki kupanın altında, ustaların ünlü oyunlarının bulunduğu şöhret salonu
+var: Morphy'nin 1858'de Paris Operası'nda oynadığı oyun, on üç yaşındaki Bobby
+Fischer'ın Donald Byrne'a karşı "yüzyılın oyunu" (1956) ve 1937 Kadınlar Dünya
+Şampiyonası'nda Vera Menchik ile Sonja Graf'ın karşılaşması.
+
+Bir oyun iki şekilde yeniden oynatılabilir. **Masal** çocuk içindir: kendi
+ordusunun taşları kendiliğinden hareket eder, şahta, rokta ya da cesur bir
+fedada bir konuşma balonu çıkar ve tüm oyundan en fazla dört büyük savaş
+seçilir. Diğer bütün taş almalar yalnızca "puf" diye olur. Sonunda kupayla mat,
+terk (şah reverans yapar) ya da beraberlik (el sıkışma) gelir. **Kronik**
+ebeveyn içindir: hamle listesi, ileri ve geri adım, savaş yok.
+
+### Canlı turnuvalar
+
+İsteyen, şöhret salonunda "İnternetten oyunlar" anahtarını açabilir. O zaman
+orada şu anda oynanan büyük bir turnuva görünür, ilk olarak da 2026'da
+Cenevre'deki dünya şampiyonluğu maçı. Biten turlar, ünlü oyunlar gibi, internet
+olmadan da yeniden oynatılabilir. Anahtar varsayılan olarak kapalıdır.
+Kapalıyken uygulama hiçbir yere bağlanmaz; açıkken de oyunları yalnızca kendi
+küçük sunucusundan, hesap, çerez ve takip olmadan indirir.
 
 ### Robota karşı oyun
 
@@ -72,10 +105,11 @@ karşı ayrı bir oyun ise daha sonra gelecek.
 
 ### Durum
 
-Uygulama geliştirme aşamasında ve henüz indirilemiyor. Sırada kalan adalar,
-bir ebeveyn bölümü (ayarlar, savaşları kapatma, çocuğun neler bildiğine dair
-özet), adaların sonunda diplomalı turnuvalar ve gerçek bir beş yaşındaki
-satranççı kızla bir test var: küçük bir tahtada perileri birbirinden ayırt
-edebilecek mi?
+İlk test sürümü (1.0.2) çıktı: Android APK'si aşağıdan indirilebilir, iPhone ve
+iPad ise TestFlight üzerinden alır. Sırada kalan adalar, bir ebeveyn bölümü
+(ayarlar, savaşları kapatma, çocuğun neleri bildiğine genel bakış), daha fazla
+ünlü oyundan oluşan bir kütüphane ve gerçek bir beş yaşındaki satranççı kızla
+bir test var: küçük bir tahtada perileri birbirinden ayırt edebilecek mi?
 
-Reklamsız, hesapsız ve çevrimdışı. Çekçe ve İngilizce.
+Reklam yok, hesap yok, çevrimdışı çalışır. Uygulama 45 dilde; ses şimdilik Çekçe
+ve İngilizce konuşuyor.

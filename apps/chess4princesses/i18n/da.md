@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Skak for femårige — eventyrlektioner, en stemme der læser alt højt, og feer i kamp mod hekse
+tagline: Skak for femårige — eventyrlektioner, en stemme der læser alt højt, kampe mellem fjorten hære og berømte mesterpartier
 ---
 Chess Kingdom lærer skak til et barn, der endnu ikke kan læse. Hver brik er en
 figur med sit eget navn og sin egen personlighed: Daisy Tower har hjul og kører
@@ -54,16 +54,50 @@ et par ord („Tjuhej-tjuhej!“ – „Jeg hopper i dammen…“), og den ene g
 hviler sig. Ingen dør: Den besejrede brik kører „i remisen“ eller flyver „ud på
 engen“. En kamp varer under tre sekunder og kan springes over med et tryk.
 
-### Feer og hekse
+### Fjorten hære
 
-Der er to hære: **Feerne** (King Rainbeard, Princess Sparkle, Daisy Tower og en
-enhjørning i stedet for ponyen) og **Heksene** (King Grumble, der brokker sig,
-men elsker muffins, Queen Thunder, hvis trylleformularer siger bum, men ikke
-gør ondt på nogen, Batty Tower og frøer med hat i stedet for bønder). Hver hær
-har seks figurer, sin egen arena og sine egne replikker.
-Barnet vælger, hvem det spiller som og mod hvem. Figurerne er originale, uden
-mærker eller kendte eventyrlicenser. De er lavet med modellen FLUX.1-schnell
-(licens Apache 2.0) og derefter håndplukket og renset.
+Det begyndte med to hære: **Feerne** (King Rainbeard, Princess Sparkle, Daisy
+Tower og en enhjørning i stedet for ponyen) og **Heksene** (King Grumble, der
+brokker sig, men elsker muffins, Queen Thunder, hvis trylleformularer siger
+bum, men ikke gør ondt på nogen, Batty Tower og frøer med hat i stedet for
+bønder).
+
+Nu er der fjorten. Tolv hære af vinyllegetøj er kommet til: **Kongeriget**
+(Kong Guldæble med sit gyldne æble), **Små djævle** (Djævlekong Brummer med en
+stor bog og endnu større horn), **Misser**, **Hunde**, **Bier**,
+**Gedehamse**, **Dinoer** (Kong Rexi, stor, men venlig), **Istiden**,
+**Frugt**, **Grøntsager** og legetøjsudgaverne af **Skovfeer** og **Hekse**.
+Hver hær har seks figurer med navne, sin egen arena, hilsner og kampreplikker.
+Kongen er højest og bonden mindst, så brikkerne kan kendes fra hinanden på
+brættet på højden.
+
+Barnet vælger, hvem det spiller som, og mod hvem. Figurerne er originale, uden
+mærker eller kendte eventyrlicenser. Feerne og heksene er lavet med
+FLUX.1-schnell, legetøjshærene med Qwen-Image. Alle blev derefter håndplukket
+og renset.
+
+### Berømmelsens hal
+
+Under pokalen på kortet ligger Berømmelsens hal med berømte mesterpartier:
+Morphys parti i operaen i Paris i 1858, „århundredets parti“, hvor den
+13-årige Bobby Fischer slog Donald Byrne (1956), og Vera Menchik mod Sonja
+Graf ved VM for kvinder i 1937.
+
+Et parti kan genspilles på to måder. **Eventyr** er til barnet: brikkerne i
+dets egen hær flytter af sig selv, ved skak, rokade eller et modigt offer
+dukker en taleboble op, og fra hele partiet vælges højst fire store kampe.
+Alle andre slag siger bare „puf“. Til sidst kommer skakmat med pokal,
+opgivelse (kongen bukker) eller remis (et håndtryk). **Krøniken** er til
+forælderen: træklisten, et skridt frem og tilbage og ingen kampe.
+
+### Live-turneringer
+
+Hvis man vil, kan man slå „Partier fra internettet“ til i Berømmelsens hal.
+Så dukker en stor turnering, der spilles lige nu, op dér, først og fremmest
+VM-matchen 2026 i Genève. Færdigspillede runder kan genspilles ligesom de
+berømte partier, også offline. Kontakten er slået fra som standard, og så
+forbinder appen sig ingen steder. Partierne henter den kun fra sin egen lille
+server, uden konto, cookies eller sporing.
 
 ### Spil mod robotten
 
@@ -74,10 +108,12 @@ forælder på én telefon kommer senere.
 
 ### Status
 
-Appen er under udvikling og kan endnu ikke downloades. Næste skridt er de
+Den første testversion (1.0.2) er ude: APK'en til Android kan downloades
+nedenfor, og iPhone og iPad får den via TestFlight. Næste skridt er de
 resterende øer, en forældrezone (indstillinger, slå kampe fra, overblik over
-hvad barnet kan), turneringer sidst på øerne med diplom og en test med en
+hvad barnet kan), et bibliotek med flere berømte partier og en test med en
 rigtig femårig skakspiller: Kan hun kende feerne fra hinanden på et lille
 bræt?
 
-Uden reklamer, uden konto og offline. På tjekkisk og engelsk.
+Uden reklamer, uden konto, virker offline. Appen findes på 45 sprog; stemmen
+taler indtil videre tjekkisk og engelsk.

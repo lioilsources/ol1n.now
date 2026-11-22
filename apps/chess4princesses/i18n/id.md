@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Catur untuk anak lima tahun — pelajaran ala dongeng, suara yang membacakan semuanya, dan pertarungan peri melawan penyihir
+tagline: Catur untuk anak lima tahun — pelajaran ala dongeng, suara yang membacakan semuanya, pertarungan empat belas pasukan, dan partai terkenal para master
 ---
 Chess Kingdom mengajarkan catur kepada anak yang belum bisa membaca. Setiap
 bidak adalah tokoh dengan nama dan sifatnya sendiri: Daisy Tower punya roda dan
@@ -57,16 +57,53 @@ Tidak ada yang mati: bidak yang kalah pulang "ke depo" atau terbang "ke
 padang rumput". Pertarungan berlangsung kurang dari tiga detik dan bisa
 dilewati dengan sekali ketuk.
 
-### Peri dan penyihir
+### Empat belas pasukan
 
-Ada dua pasukan: **Peri** (King Rainbeard, Princess Sparkle, Daisy Tower, dan
-unicorn sebagai ganti kuda poni) dan **Penyihir** (King Grumble yang suka
-menggerutu tapi gemar kue mangkuk, Queen Thunder yang mantranya berbunyi bum
-tapi tidak menyakiti siapa pun, Batty Tower, dan katak bertopi sebagai ganti
-pion). Masing-masing punya enam tokoh, arena sendiri, dan ucapan sendiri.
+Awalnya ada dua pasukan: **Peri** (King Rainbeard, Princess Sparkle, Daisy
+Tower, dan unicorn sebagai ganti kuda poni) dan **Penyihir** (King Grumble
+yang suka menggerutu tapi gemar kue mangkuk, Queen Thunder yang mantranya
+berbunyi bum tapi tidak menyakiti siapa pun, Batty Tower, dan katak bertopi
+sebagai ganti pion).
+
+Sekarang ada empat belas. Dua belas pasukan mainan vinil bergabung:
+**Kerajaan** (Raja Apel Emas dengan apel emasnya), **Iblis-iblis Kecil** (Raja
+Iblis Tanduk Gerutu dengan buku besar dan tanduk yang lebih besar lagi),
+**Kucing-kucing**, **Anjing-anjing**, **Lebah-lebah**, **Tawon-tawon Hornet**,
+**Dinosaurus** (Raja Rexy, besar tapi baik hati), **Zaman Es**,
+**Buah-buahan**, **Sayur-sayuran**, serta versi mainan **Peri-peri Hutan** dan
+**Penyihir-penyihir Hutan**. Setiap pasukan punya enam tokoh bernama, arena
+sendiri, sapaan, dan ucapan pertarungan. Raja paling tinggi dan pion paling
+kecil, jadi bidak-bidak bisa dibedakan di papan dari tingginya.
+
 Anak memilih bermain sebagai siapa dan melawan siapa. Para tokoh orisinal,
-tanpa merek atau lisensi dongeng terkenal. Mereka dibuat dengan model
-FLUX.1-schnell (lisensi Apache 2.0), lalu dipilih dan dirapikan secara manual.
+tanpa merek atau lisensi dongeng terkenal. Peri dan penyihir dibuat dengan
+FLUX.1-schnell, pasukan mainan dengan Qwen-Image. Semuanya lalu dipilih dan
+dirapikan secara manual.
+
+### Aula Kejayaan
+
+Di bawah piala di peta ada Aula Kejayaan berisi partai-partai terkenal para
+master: partai Morphy di gedung opera Paris tahun 1858, "partai abad ini"
+Bobby Fischer yang berumur tiga belas tahun melawan Donald Byrne (1956), dan
+Vera Menchik melawan Sonja Graf di kejuaraan dunia wanita 1937.
+
+Partai bisa diputar ulang dengan dua cara. **Dongeng** untuk anak: bidak-bidak
+pasukannya sendiri bergerak sendiri, balon kata muncul saat skak, rokade, atau
+pengorbanan yang berani, dan dari seluruh partai dipilih paling banyak empat
+pertarungan besar. Pemakanan lainnya hanya berbunyi "puf". Di akhir datang
+skakmat dengan piala, menyerah (raja membungkuk), atau remis (berjabat
+tangan). **Kronik** untuk orang tua: daftar langkah, maju dan mundur satu
+langkah, tanpa pertarungan.
+
+### Turnamen langsung
+
+Kalau mau, Anda bisa menyalakan "Permainan dari internet" di Aula Kejayaan.
+Lalu di sana muncul turnamen besar yang sedang berlangsung, terutama
+pertandingan kejuaraan dunia 2026 di Jenewa. Babak yang sudah selesai bisa
+diputar ulang seperti partai terkenal, bahkan tanpa internet. Sakelar ini
+mati secara bawaan. Saat itu aplikasi tidak terhubung ke mana pun, dan ia
+hanya mengunduh partai dari servernya sendiri yang kecil, tanpa akun, cookie,
+atau pelacakan.
 
 ### Melawan robot
 
@@ -77,10 +114,12 @@ terpisah melawan robot atau melawan orang tua di satu ponsel baru akan hadir.
 
 ### Status
 
-Aplikasi ini masih dalam pengembangan dan belum bisa diunduh. Berikutnya adalah
-pulau-pulau yang tersisa, zona orang tua (pengaturan, mematikan pertarungan,
-ringkasan kemampuan anak), turnamen di akhir pulau dengan piagam, dan uji coba
-bersama pecatur cilik lima tahun sungguhan: bisakah ia membedakan para peri di
-papan kecil?
+Versi uji pertama (1.0.2) sudah keluar: APK untuk Android bisa diunduh di
+bawah, dan iPhone serta iPad mendapatkannya lewat TestFlight. Berikutnya
+adalah pulau-pulau yang tersisa, zona orang tua (pengaturan, mematikan
+pertarungan, ringkasan kemampuan anak), pustaka partai terkenal yang lebih
+banyak, dan uji coba bersama pecatur cilik lima tahun sungguhan: bisakah ia
+membedakan para peri di papan kecil?
 
-Tanpa iklan, tanpa akun, dan offline. Dalam bahasa Ceko dan Inggris.
+Tanpa iklan, tanpa akun, berfungsi offline. Aplikasi ini tersedia dalam 45
+bahasa; suaranya sejauh ini berbahasa Ceko dan Inggris.

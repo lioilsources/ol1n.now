@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Xadrez para crianças de cinco anos — lições de conto de fadas, uma voz que lê tudo e batalhas de fadas contra bruxas
+tagline: Xadrez para crianças de cinco anos — lições de conto de fadas, uma voz que lê tudo, batalhas entre quatorze exércitos e partidas famosas dos mestres
 ---
 Chess Kingdom ensina xadrez a uma criança que ainda não sabe ler. Cada peça é
 um personagem com nome e jeito próprios: Daisy Tower tem rodinhas e só anda
@@ -56,16 +56,52 @@ descansar. Ninguém morre: a peça derrotada volta “para a garagem” ou voa �
 o campo”. Uma batalha dura menos de três segundos e pode ser pulada com um
 toque.
 
-### Fadas e bruxas
+### Quatorze exércitos
 
-São dois exércitos: as **Fadas** (King Rainbeard, Princess Sparkle, Daisy
-Tower e um unicórnio no lugar do pônei) e as **Bruxas** (King Grumble, que
-resmunga mas adora bolinhos, Queen Thunder, cujos feitiços fazem bum mas não
-machucam ninguém, Batty Tower e sapinhas de chapéu no lugar dos peões). Cada
-um tem seis personagens, sua própria arena e suas próprias falas.
+Tudo começou com dois exércitos: as **Fadas** (King Rainbeard, Princess
+Sparkle, Daisy Tower e um unicórnio no lugar do pônei) e as **Bruxas** (King
+Grumble, que resmunga mas adora bolinhos, Queen Thunder, cujos feitiços fazem
+bum mas não machucam ninguém, Batty Tower e sapinhas de chapéu no lugar dos
+peões).
+
+Agora são quatorze. Chegaram doze exércitos de bonecos de vinil: **O Reino**
+(Rei Maçã Dourada com sua maçã de ouro), os **Diabinhos** (Rei Diabo Chifre
+Resmungão com um livro grande e chifres maiores ainda), **Gatinhos**,
+**Cachorrinhos**, **Abelhinhas**, **Vespões**, **Dinossauros** (Rei Rexi,
+grandão mas bonzinho), **Era do Gelo**, **Frutas**, **Legumes** e as versões
+de brinquedo das **Fadas da floresta** e das **Bruxas**. Cada exército tem
+seis personagens com nome, sua própria arena, cumprimentos e falas de batalha.
+O rei é o mais alto e o peão o menor, então dá para distinguir as peças no
+tabuleiro pela altura.
+
 A criança escolhe com quem joga e contra quem. Os personagens são originais,
-sem marcas nem licenças de contos famosos. Foram criados com o modelo
-FLUX.1-schnell (licença Apache 2.0) e depois escolhidos e retocados à mão.
+sem marcas nem licenças de contos famosos. As fadas e as bruxas foram criadas
+com o FLUX.1-schnell, os exércitos de brinquedo com o Qwen-Image. Depois tudo
+foi escolhido e retocado à mão.
+
+### Salão da Fama
+
+Embaixo do troféu no mapa fica o Salão da Fama, com partidas famosas dos
+mestres: a partida de Morphy na ópera de Paris em 1858, a “partida do século”,
+em que Bobby Fischer, com treze anos, enfrentou Donald Byrne (1956), e Vera
+Menchik contra Sonja Graf no campeonato mundial feminino de 1937.
+
+Uma partida pode ser revista de dois jeitos. **História** é para a criança:
+as peças do exército dela se movem sozinhas, um balão aparece num xeque, num
+roque ou num sacrifício ousado, e da partida inteira são escolhidas no máximo
+quatro grandes batalhas. As outras capturas só fazem “puf”. No fim vem o
+xeque-mate com troféu, a desistência (o rei faz uma reverência) ou o empate
+(um aperto de mão). **Crônica** é para os pais: a lista de lances, um passo
+para a frente e para trás, e nenhuma batalha.
+
+### Torneios ao vivo
+
+Quem quiser pode ligar “Partidas da internet” no Salão da Fama. Aí aparece lá
+um grande torneio que está sendo jogado agora, a começar pelo match do
+campeonato mundial de 2026 em Genebra. As rodadas já jogadas podem ser
+revistas como as partidas famosas, mesmo offline. O botão vem desligado, e
+então o app não se conecta a lugar nenhum. As partidas ele baixa só do próprio
+servidorzinho, sem conta, cookies nem rastreamento.
 
 ### Jogue contra o robô
 
@@ -76,10 +112,12 @@ contra o robô ou contra o pai ou a mãe no mesmo celular ainda vai chegar.
 
 ### Status
 
-O app está em desenvolvimento e ainda não está disponível para download. Os
-próximos passos são as ilhas que faltam, uma área dos pais (configurações,
-desligar as batalhas, um resumo do que a criança já sabe), torneios no fim das
-ilhas com diploma e um teste com uma enxadrista de cinco anos de verdade: será
-que ela distingue as fadas num tabuleiro pequeno?
+A primeira versão de teste (1.0.2) saiu: o APK para Android pode ser baixado
+aqui embaixo, e iPhone e iPad recebem pelo TestFlight. Os próximos passos são
+as ilhas que faltam, uma área dos pais (configurações, desligar as batalhas,
+um resumo do que a criança já sabe), uma biblioteca com mais partidas famosas
+e um teste com uma enxadrista de cinco anos de verdade: será que ela distingue
+as fadas num tabuleiro pequeno?
 
-Sem anúncios, sem conta e offline. Em tcheco e inglês.
+Sem anúncios, sem conta, funciona offline. O app está em 45 idiomas; por
+enquanto a voz fala tcheco e inglês.

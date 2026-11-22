@@ -1,6 +1,6 @@
 ---
 name: Chess Kingdom
-tagline: Escacs per a nens de cinc anys — lliçons de conte, una veu que ho llegeix tot i batalles de fades contra bruixes
+tagline: Escacs per a nens de cinc anys — lliçons de conte, una veu que ho llegeix tot, batalles entre catorze exèrcits i partides famoses dels mestres
 ---
 Chess Kingdom ensenya escacs a un infant que encara no sap llegir. Cada peça és
 un personatge amb nom i caràcter propis: Daisy Tower té rodes i només va
@@ -54,16 +54,53 @@ quatre paraules («Txu-txuu!» – «Me’n vaig a l’estany…») i un d’ell
 descansar. Ningú no mor: la peça vençuda torna «a la cotxera» o vola «al
 prat». Una batalla dura menys de tres segons i es pot saltar amb un toc.
 
-### Fades i bruixes
+### Catorze exèrcits
 
-Hi ha dos exèrcits: les **Fades** (King Rainbeard, Princess Sparkle, Daisy
-Tower i un unicorn en lloc del poni) i les **Bruixes** (King Grumble, que
-remuga però adora les magdalenes; Queen Thunder, els encanteris de la qual fan
-bum però no fan mal a ningú; Batty Tower i granotes amb barret en lloc de
-peons). Cada un té sis personatges, la seva arena i les seves frases.
+Tot va començar amb dos exèrcits: les **Fades** (King Rainbeard, Princess
+Sparkle, Daisy Tower i un unicorn en lloc del poni) i les **Bruixes** (King
+Grumble, que remuga però adora les magdalenes; Queen Thunder, els encanteris de
+la qual fan bum però no fan mal a ningú; Batty Tower i granotes amb barret en
+lloc de peons).
+
+Ara n’hi ha catorze. S’hi han afegit dotze exèrcits de joguines de vinil:
+**El Regne** (el Rei Poma d'Or amb la seva poma daurada), els **Diablets** (el
+Rei Diable Banyarondina, amb un llibre gros i unes banyes encara més grosses),
+**Gatets**, **Gossets**, **Abelletes**, **Vespons**, **Dinosaures** (el Rei
+Rexi, gran però bondadós), **Edat de Gel**, **Fruites**, **Verdures** i, en
+versió de joguina, les **Fades del bosc** i les **Bruixes**. Cada exèrcit té
+sis personatges amb nom, la seva arena, salutacions i frases de batalla. El rei
+és el més alt i el peó el més petit, així que les peces es distingeixen al
+tauler per l’alçada.
+
 L’infant tria amb qui juga i contra qui. Els personatges són originals, sense
-marques ni llicències de contes coneguts. Es van crear amb el model
-FLUX.1-schnell (llicència Apache 2.0) i després es van triar i netejar a mà.
+marques ni llicències de contes coneguts. Les fades i les bruixes es van crear
+amb FLUX.1-schnell, i els exèrcits de joguina amb Qwen-Image. Després tot es
+va triar i netejar a mà.
+
+### Sala de la Fama
+
+Sota la copa del mapa hi ha la Sala de la Fama, amb partides famoses dels
+mestres: la partida de Morphy a l’òpera de París el 1858, la «partida del
+segle» de Bobby Fischer, amb tretze anys, contra Donald Byrne (1956), i Vera
+Menchik contra Sonja Graf al campionat del món femení de 1937.
+
+Una partida es pot reviure de dues maneres. **Conte** és per a l’infant: les
+peces del seu exèrcit es mouen soles, apareix una bafarada en un escac, un
+enroc o un sacrifici agosarat, i de tota la partida se’n trien com a molt
+quatre grans batalles. Les altres captures només fan «puf». Al final arriba el
+mat amb una copa, l’abandonament (el rei fa una reverència) o les taules (una
+encaixada de mans). **Crònica** és per als pares: la llista de moviments,
+endavant i enrere, i cap batalla.
+
+### Tornejos en directe
+
+Si voleu, podeu activar «Partides d’internet» a la Sala de la Fama. Aleshores
+hi apareix un gran torneig que s’està jugant ara mateix, i abans de res el
+matx del campionat del món 2026 a Ginebra. Les rondes acabades es poden
+reviure com les partides famoses, fins i tot sense connexió. L’interruptor
+està desactivat per defecte. Llavors l’app no es connecta enlloc, i les
+partides només les baixa del seu propi servidor petit, sense compte, galetes
+ni seguiment.
 
 ### Juga contra el robot
 
@@ -74,10 +111,12 @@ contra el robot o contra el pare o la mare en un sol mòbil encara ha d’arriba
 
 ### Estat
 
-L’app està en desenvolupament i encara no es pot descarregar. Ara toquen les
-illes que falten, una zona per als pares (configuració, desactivar les
-batalles, un resum del que sap fer l’infant), tornejos al final de les illes
-amb diploma i una prova amb una escaquista de cinc anys de veritat: sabrà
-distingir les fades en un tauler petit?
+Ja ha sortit la primera versió de prova (1.0.2): l’APK per a Android es pot
+baixar aquí sota, i l’iPhone i l’iPad la reben a través de TestFlight. Ara
+toquen les illes que falten, una zona per als pares (configuració, desactivar
+les batalles, un resum del que sap fer l’infant), una biblioteca amb més
+partides famoses i una prova amb una escaquista de cinc anys de veritat:
+sabrà distingir les fades en un tauler petit?
 
-Sense anuncis, sense compte i sense connexió. En txec i en anglès.
+Sense anuncis, sense compte, funciona sense connexió. L’app està en 45
+idiomes; la veu, de moment, parla txec i anglès.
