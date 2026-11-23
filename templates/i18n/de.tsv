@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Builds folgen in Kürze.
+dl.play	Im Browser spielen
 skins.title	Skins
 skins.teaser_intro	%s visuelle Themes — jedes mit eigenen Sprites, Parallax-Hintergrund, Sounds und Musik.
 skins.more	Alle Skins entdecken →

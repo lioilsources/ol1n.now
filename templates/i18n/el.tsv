@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Οι εκδόσεις έρχονται σύντομα.
+dl.play	Παίξτε στον browser
 skins.title	Skins
 skins.teaser_intro	%s οπτικά θέματα — το καθένα με δικά του sprites, φόντο parallax, ήχους και μουσική.
 skins.more	Δείτε όλα τα skins →

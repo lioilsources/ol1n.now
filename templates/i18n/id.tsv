@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Build segera hadir.
+dl.play	Main di browser
 skins.title	Skin
 skins.teaser_intro	%s tema visual — masing-masing dengan sprite, latar parallax, suara, dan musik sendiri.
 skins.more	Jelajahi semua skin →

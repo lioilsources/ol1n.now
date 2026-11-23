@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Verzije uskoro.
+dl.play	Igraj u pregledniku
 skins.title	Skinovi
 skins.teaser_intro	Vizualne teme: %s — svaka s vlastitim spriteovima, paralaksnom pozadinom, zvukovima i glazbom.
 skins.more	Istraži sve skinove →

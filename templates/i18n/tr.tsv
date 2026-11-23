@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Derlemeler yakında geliyor.
+dl.play	Tarayıcıda oyna
 skins.title	Skinler
 skins.teaser_intro	%s görsel tema — her birinin kendi sprite'ları, parallax arka planı, sesleri ve müziği var.
 skins.more	Tüm skinleri keşfet →

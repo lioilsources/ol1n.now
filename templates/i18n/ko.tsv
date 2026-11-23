@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	빌드가 곧 제공됩니다.
+dl.play	브라우저에서 플레이
 skins.title	스킨
 skins.teaser_intro	비주얼 테마 %s종 — 테마마다 전용 스프라이트, 패럴랙스 배경, 효과음, 음악이 있습니다.
 skins.more	모든 스킨 둘러보기 →

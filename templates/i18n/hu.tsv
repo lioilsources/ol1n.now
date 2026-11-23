@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	A buildek hamarosan elérhetők.
+dl.play	Játék a böngészőben
 skins.title	Skinek
 skins.teaser_intro	%s vizuális téma — mindegyik saját sprite-okkal, parallaxos háttérrel, hangokkal és zenével.
 skins.more	Az összes skin megtekintése →

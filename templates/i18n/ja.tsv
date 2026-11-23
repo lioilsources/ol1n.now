@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android（APK）
 dl.mod	Mod（ZIP）
 dl.empty	ビルドは近日公開予定です。
+dl.play	ブラウザでプレイ
 skins.title	スキン
 skins.teaser_intro	%s 種類のビジュアルテーマ — どれも専用のスプライト、パララックス背景、効果音、音楽を備えています。
 skins.more	すべてのスキンを見る →

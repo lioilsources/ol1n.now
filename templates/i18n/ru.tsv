@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Сборки скоро появятся.
+dl.play	Играть в браузере
 skins.title	Скины
 skins.teaser_intro	Визуальных тем: %s — у каждой свои спрайты, параллакс-фон, звуки и музыка.
 skins.more	Смотреть все скины →

@@ -214,10 +214,16 @@ downloads_html() {
 # end up scattered between the download buttons on a phone.
 store_links_html() {
   _meta="$1"; _icons=""
-  for kv in "web:" "appstore:App Store" "playstore:Google Play" "testflight:TestFlight" "contentdb:ContentDB"; do
+  for kv in "play:" "web:" "appstore:App Store" "playstore:Google Play" "testflight:TestFlight" "contentdb:ContentDB"; do
     key="${kv%%:*}"; label="${kv#*:}"
     url="$(fm_get "$_meta" "$key")"
     [ -n "$url" ] || continue
+    # play: the game itself runs in the browser (Babylon.js port under /play/);
+    # one localized "Play in browser" button, independent of store links
+    if [ "$key" = play ]; then
+      printf '<a class="dl-btn" href="%s">▶ %s</a>\n' "$url" "$(esc "$(t dl.play)")"
+      continue
+    fi
     # web: a live web app; the button shows host and path without the scheme
     # and trailing slash ("slop.ol1n.com", "lioilsources.github.io/BabylonWars")
     if [ "$key" = web ]; then

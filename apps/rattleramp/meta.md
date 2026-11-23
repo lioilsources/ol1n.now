@@ -12,6 +12,7 @@ artifacts: macos,android
 appstore:
 playstore:
 testflight:
+play: https://lioilsources.github.io/ChrestysSkatepark/play/
 ---
 RattleRamp je hra na tablet, který visí na baru U Chřestýše vedle skateparku.
 Host čeká na pivo nebo na jídlo, tapne na obrazovku a jede.
