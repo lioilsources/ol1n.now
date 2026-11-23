@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Збірки незабаром.
+dl.play	Грати в браузері
 skins.title	Скіни
 skins.teaser_intro	Візуальних тем: %s — кожна з власними спрайтами, паралакс-фоном, звуками й музикою.
 skins.more	Переглянути всі скіни →

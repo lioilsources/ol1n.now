@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Bản dựng sắp ra mắt.
+dl.play	Chơi trên trình duyệt
 skins.title	Skin
 skins.teaser_intro	%s chủ đề hình ảnh — mỗi chủ đề có sprite, nền parallax, âm thanh và nhạc riêng.
 skins.more	Khám phá tất cả skin →

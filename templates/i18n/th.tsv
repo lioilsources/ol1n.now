@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	บิลด์จะพร้อมให้ดาวน์โหลดเร็ว ๆ นี้
+dl.play	เล่นในเบราว์เซอร์
 skins.title	สกิน
 skins.teaser_intro	ธีมภาพ %s แบบ — แต่ละแบบมีสไปรต์ ฉากหลังพารัลแลกซ์ เสียงเอฟเฟกต์ และเพลงเป็นของตัวเอง
 skins.more	สำรวจสกินทั้งหมด →

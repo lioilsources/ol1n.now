@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	ستتوفر الإصدارات قريبًا.
+dl.play	العب في المتصفح
 skins.title	المظاهر
 skins.teaser_intro	عدد السمات البصرية: %s — لكلٍّ منها رسومها الخاصة وخلفية بتأثير المنظور (parallax) وأصوات وموسيقى.
 skins.more	استكشف كل المظاهر ←

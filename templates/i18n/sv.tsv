@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Byggen kommer snart.
+dl.play	Spela i webbläsaren
 skins.title	Skins
 skins.teaser_intro	%s visuella teman — vart och ett med egna sprites, parallaxbakgrund, ljud och musik.
 skins.more	Utforska alla skins →

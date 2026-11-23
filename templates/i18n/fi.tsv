@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Koontiversiot tulossa pian.
+dl.play	Pelaa selaimessa
 skins.title	Skinit
 skins.teaser_intro	%s visuaalista teemaa — jokaisella omat spritet, parallax-tausta, äänet ja musiikki.
 skins.more	Tutustu kaikkiin skineihin →

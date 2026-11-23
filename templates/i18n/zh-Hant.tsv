@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android（APK）
 dl.mod	Mod（ZIP）
 dl.empty	建置版本即將推出。
+dl.play	在瀏覽器中玩
 skins.title	造型
 skins.teaser_intro	%s 款視覺主題，每款都有專屬的精靈圖、視差背景、音效與音樂。
 skins.more	瀏覽所有造型 →

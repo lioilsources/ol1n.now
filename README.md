@@ -43,6 +43,7 @@ Volitelně přidej `apps/<slug>/icon.png` (čtvercová ikona). Hotovo — build 
 | `desktop` | CSV platforem: `macos,windows,linux` |
 | `mobile` | CSV platforem: `android,ios` |
 | `artifacts` | CSV bucketů pro `make fetch`; default `macos,windows,linux,android`. `mod` = platformově neutrální `.zip` (Luanti mod) |
+| `play` | URL hry hratelné v prohlížeči (Babylon.js port pod `/play/`), tlačítko „▶ Hrát v prohlížeči“ přeložené přes `dl.play` (volitelné) |
 | `web` | URL živé webové appky, tlačítko s názvem hostitele (volitelné) |
 | `appstore` / `playstore` / `testflight` / `contentdb` | URL na obchody (volitelné) |
 | `langs` | CSV jazyků aplikace, např. `cs,ja`; default `cs` (viz [Jazyky](#jazyky)) |

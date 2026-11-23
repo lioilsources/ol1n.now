@@ -32,6 +32,7 @@ dl.linux	Linux
 dl.android	Android (APK)
 dl.mod	Mod (ZIP)
 dl.empty	Buildy brzy k dispozici.
+dl.play	Hrát v prohlížeči
 # skins gallery (kirian): teaser on the app page + the -skins subpage
 skins.title	Skiny
 # %s = number of skins

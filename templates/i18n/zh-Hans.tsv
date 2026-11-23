@@ -19,6 +19,7 @@ dl.linux	Linux
 dl.android	Android（APK）
 dl.mod	Mod（ZIP）
 dl.empty	构建版本即将推出。
+dl.play	在浏览器中玩
 skins.title	皮肤
 skins.teaser_intro	%s 套视觉主题，每套都有专属的精灵图、视差背景、音效和音乐。
 skins.more	浏览全部皮肤 →
