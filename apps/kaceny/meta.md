@@ -6,12 +6,13 @@ tagline: 90 vteřin, 8 nábojů a hodně kačen. Arkádová střílečka na vý�
 featured: false
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:
-mobile: android,ios
+mobile: android,ios,web
 artifacts:
 visuals: {n} ukázek — z každého balíčku jeden skin s mávající kachnou a pár nápadů na další cíle.
 appstore:
 playstore:
 testflight:
+play: https://lioilsources.github.io/Kaceny/play/
 icon_src: ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
 ---
 Kačeny se hrají jedním palcem na výšku. Kachny letí shora dolů přes celou
@@ -48,3 +49,6 @@ koupit nic, co by pomohlo ve hře.
 
 Zatím jde o testovací build. Pro Android je ke stažení APK, do App Store ani
 Google Play ještě nevyšel.
+
+Webová verze se hraje rovnou v prohlížeči. Zatím je to jen základní kolo
+bez menu, skinů a zvuku, další části přibývají.
