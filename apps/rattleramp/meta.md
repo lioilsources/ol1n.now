@@ -7,7 +7,7 @@ tagline: U-rampa na tablet v baru U Chřestýše — triky se kreslí prstem do 
 featured: false
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop: macos
-mobile: android,ios
+mobile: android,ios,web
 artifacts: macos,android
 appstore:
 playstore:
@@ -81,3 +81,13 @@ obsluhu.
 
 Buildy níže jsou zkušební (alfa). Hra je dělaná na tablet na šířku,
 na telefonu je všechno malé. Offline, bez účtů a bez reklam.
+
+### V prohlížeči
+
+Celá hra jde hrát i v prohlížeči, bez instalace: tlačítko **Hrát
+v prohlížeči** nahoře. Je to stejná hra přepsaná do Babylon.js: stejné triky,
+body i fyzika jízdy (testy hlídají shodu s Flutter verzí trik po triku),
+všechny postavy, tři styly a trick book. Na telefonu jde hrát i na výšku,
+na počítači myší nebo klávesnicí (Q W E / A S D / Z X C, mezerník pustí tah).
+Načte se za vteřinu i na pomalých datech. Ukázky z webové verze jsou
+v sekci Telefon.
