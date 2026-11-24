@@ -7,11 +7,12 @@ tagline: Horoskop, tranzity a český výklad — počítá se v telefonu, bez i
 featured: false
 langs: cs
 desktop:
-mobile: android,ios
+mobile: android,ios,web
 artifacts: android
 appstore:
 playstore:
 testflight:
+web: https://lioilsources.github.io/Astro/app/
 ---
 Astro spočítá nativní horoskop a tranzity přímo v telefonu a vyloží je
 česky. Nepotřebuje internet ani účet a data narození neopustí zařízení.

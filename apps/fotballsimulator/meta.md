@@ -5,11 +5,12 @@ repo: lioilsources/FotballSimulator
 tagline: Volej jedním tahem prstu — kde nárt potká míč, s jakou falší a v kterou milisekundu
 featured: false
 desktop:
-mobile: android,ios
+mobile: android,ios,web
 artifacts: android
 appstore:
 playstore:
 testflight:
+play: https://lioilsources.github.io/FotballSimulator/play/
 icon_src: icon.svg
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 ---
