@@ -42,7 +42,7 @@ sfx, music). A category with no manifest rows emits nothing at all — that is h
 ## Visuals gallery
 
 The flat one: categorised artwork, no entities, no audio. `doodlebugs`, `kittens`,
-`mutants`, `memeshorts`, `immunorun`, `handwrittenstickers`, `swypekids`, `webtoon` and `kaceny` have one.
+`mutants`, `memeshorts`, `immunorun`, `handwrittenstickers`, `swypekids`, `webtoon`, `kaceny` and `metropole` have one.
 `scripts/import-visuals.sh <slug>` holds one `import_<slug>` function per app — where
 the art lives in that app's checkout, how it is bucketed, the Czech titles — and
 `make build` only copies the result. Gated on `dist/visuals/<slug>/cats.tsv`; emits a
@@ -76,6 +76,11 @@ What deliberately stays out of a gallery, per app:
   target ideas are read from the game repo's git-ignored `tool/skins/out/target/`, so
   a fresh checkout drops that category until `tool/skins/generate.py` has run. Phone
   screenshots and clips come from `tool/store_screenshots.sh <dir>` in the Kaceny repo.
+- **metropole** — the Passport postcards (`assets/postcards/<city>/` in the GTT repo),
+  one category per city, captions from the game's `i18n/cs.json` (`lm_<id>_title`). The
+  local GTT checkout can lag `origin/main` (Moscow came later): import from an export,
+  `git -C ../GTT archive origin/main assets/postcards i18n/cs.json | tar -x -C <dir>`, then
+  `scripts/import-visuals.sh metropole <dir>`.
 - **handwrittenstickers** — the stickers are composed by the import script from the
   app's glyph PNGs, in capitals only: without the app's baseline metrics, capitals are
   what bottom-aligns correctly.

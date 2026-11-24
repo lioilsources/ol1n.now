@@ -9,7 +9,8 @@ elftonplayer (Elfton Player, repo `ol1nplay`), hajanek (Hajánek), handwrittenst
 lexify, mangaprompts, memeshorts, mirrorbooth, mutants, ol1nllm, orbitrontactics,
 poetrystream, puff, storyteller, swypekids, terrareality, ugcfactory, ugcmarket (Ol1n Market), webtoon,
 chess4princesses (Šachové království), rattleramp (repo `ChrestysSkatepark`),
-fotballsimulator (Fotball Simulator), kaceny (Kačeny; default branch `master`), smpl16 (SMPL16, repo `Sample16`).
+fotballsimulator (Fotball Simulator), kaceny (Kačeny; default branch `master`), smpl16 (SMPL16, repo `Sample16`),
+metropole (Metropole, repo `GTT`).
 
 Five were added on 2026-10-04 for their artwork rather than for a build, and their pages
 lean on the visuals gallery. None has a real app screenshot: what sits in
@@ -197,3 +198,13 @@ development build (`flutter drive` against a demo engine — `test_driver/shots_
 that repo), and the description says so. There is no phone screenshot yet, and as of `v0.1.0` the
 ASIO/WASAPI output has never played on a real DAC — the page says that too; drop the sentence
 once it has.
+
+**metropole** (added 2026-11-24) is a portrait driving game whose web client (Babylon.js) is
+live on GitHub Pages, so `play:` links it and iOS/Android are not out yet. `artifacts: none`:
+the GTT repo's releases are city map packs (`pack-<city>-…`), not app builds. The phone shots
+(`raw/mobile/web/`) are the live web build shot headless at 430×860 @2x with the perf overlay
+and the boost hint hidden; the UI in them is English (the headless browser's locale).
+Every number on the page (rewards, fares, fines, 36 minigames, 25+ landmarks per city) is
+hand-copied from that repo's `content/tuning.yaml`, `content/minigames/catalog.yaml` and
+`specs/economy.md` / `specs/travel.md` as of 2026-11-24 and drifts with them. Languages: cs, en.
+

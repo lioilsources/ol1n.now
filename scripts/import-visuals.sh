@@ -47,6 +47,7 @@ case "$SLUG" in
   handwrittenstickers) SRC="${2:-${HWS_SRC:-$DEV/HandWritenStickers}}";      PROBE="docs/glyph_sheets_handwriting.png" ;;
   webtoon)             SRC="${2:-${WEBTOON_SRC:-$DEV/Webtoon}}";             PROBE="out/2026-10-18/final_les" ;;
   kaceny)              SRC="${2:-${KACENY_SRC:-$DEV/Kaceny}}";               PROBE="assets/skins/duck/classic_0.png" ;;
+  metropole)           SRC="${2:-${METROPOLE_SRC:-$DEV/GTT}}";               PROBE="assets/postcards/moscow" ;;
   *) echo "error: no visuals described for '$SLUG'" >&2; exit 1 ;;
 esac
 [ -e "$SRC/$PROBE" ] || { echo "error: no $SLUG checkout at $SRC (missing $PROBE)" >&2; exit 1; }
@@ -501,6 +502,27 @@ toast|Toasty — vyskakují z toustovače
 letters|Písmenka — sestav slovo
 drones|Drony — víc zásahů
 TARGETS
+}
+
+# Metropole (repo GTT): the Passport postcards, one category per city in the
+# game's own order. A postcard's caption is the landmark's Czech name from the
+# game's i18n (`lm_<id>_title`); a landmark without one falls back to pretty().
+# The game's README and specs call them illustrations, not screenshots: every
+# city has its own flat style (specs/art.md there). Needs `jq`.
+import_metropole() {
+  _p="$SRC/assets/postcards"
+  for kv in "prague:Praha" "nyc:New York" "tokyo:Tokio" "moscow:Moskva"; do
+    c="${kv%%:*}"
+    [ -d "$_p/$c" ] || { echo "warning: no postcards for $c" >&2; continue; }
+    emit_cat "$c" "${kv#*:}" "Pohlednice z Pasu: dostaneš ji, když k památce dojedeš. Každé město má vlastní plochý ilustrovaný styl." art
+    n=0
+    for f in "$_p/$c"/*.png; do
+      id="$(basename "$f" .png)"
+      label="$(jq -r --arg k "lm_${id}_title" '.[$k] // empty' "$SRC/i18n/cs.json")"
+      [ -n "$label" ] || label="$(pretty "$id")"
+      n=$((n + 1)); add "$c" "$n" "$f" "$label" photo 540x675
+    done
+  done
 }
 
 "import_$SLUG"
