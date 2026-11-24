@@ -7,11 +7,12 @@ tagline: Neonová fyzikální hra — podrž, táhni, pusť
 featured: true
 langs: cs,en,ar,bn,ca,da,de,el,es,fi,fr,gu,he,hi,hr,hu,id,it,ja,kn,ko,ml,mr,ms,nb,nl,or,pa,pl,pt-BR,pt-PT,ro,ru,sk,sl,sv,ta,te,th,tr,uk,ur,vi,zh-Hans,zh-Hant
 desktop:
-mobile: android,ios
+mobile: android,ios,web
 artifacts: none
 appstore: https://apps.apple.com/app/id6808586613
 playstore: https://play.google.com/store/apps/details?id=com.ol1n.puff
 testflight:
+play: https://lioilsources.github.io/puff/play/
 ---
 Držíš prst na displeji a pod ním roste tlakový oblak. Táhneš ho, kam
 potřebuješ, a v ten správný okamžik pustíš — tlak se uvolní a rozmetá
