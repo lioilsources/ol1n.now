@@ -11,6 +11,7 @@ mobile: android,ios
 appstore:
 playstore:
 testflight:
+play: https://lioilsources.github.io/Chess4Princesses/play/
 ---
 Šachové království učí šachy dítě, které ještě neumí číst. Každá figurka je
 postavička s vlastním jménem a povahou: věžka Kopretinka má kolečka a jezdí
