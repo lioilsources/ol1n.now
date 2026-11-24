@@ -11,6 +11,7 @@ mobile: android,ios
 appstore:
 playstore:
 testflight:
+play: https://lioilsources.github.io/OrbitronTactics/play/
 ---
 Archion je strategická šachová varianta pro dva — vlastní pohyb figur
 a vítězství přes ovládnutí všech pěti silových polí, pád krále i královny,
