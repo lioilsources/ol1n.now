@@ -1509,6 +1509,9 @@ done
   for u in $PAGE_URLS; do printf '  <url><loc>%s</loc></url>\n' "$u"; done
   echo '</urlset>'
 } > "$DIST/sitemap.xml"
-printf 'User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' "$SITE" > "$DIST/robots.txt"
+# /cdn-cgi/l/ is Cloudflare's email-obfuscation link: it answers crawlers with
+# 404, which Search Console then reports. The .m4a files are game music linked
+# from the skin pages; Seznam counts every one of them as a page with an error.
+printf 'User-agent: *\nAllow: /\nDisallow: /cdn-cgi/l/\nDisallow: /*.m4a$\n\nSitemap: %s/sitemap.xml\n' "$SITE" > "$DIST/robots.txt"
 echo "  built sitemap.xml, robots.txt"
 echo "Done -> $DIST"
