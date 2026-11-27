@@ -50,3 +50,22 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # IndexNow tells Bing (and through it DuckDuckGo and Yahoo), Seznam and
+      # Yandex which URLs exist, so they do not wait for their own crawl of the
+      # sitemap. The key is public by design: static/<key>.txt proves the site
+      # owns it. A failed ping never fails the deploy.
+      - name: Ping IndexNow
+        continue-on-error: true
+        run: |
+          KEY=$(basename "$(ls static/*.txt | grep -E '/[0-9a-f]{32}\.txt$' | head -1)" .txt)
+          HOST=$(tr -d '[:space:]' < CNAME)
+          grep -o '<loc>[^<]*' dist/sitemap.xml | sed 's/<loc>//' \
+            | jq -R . | jq -s --arg h "$HOST" --arg k "$KEY" \
+                '{host: $h, key: $k, keyLocation: "https://\($h)/\($k).txt", urlList: .[:10000]}' > indexnow.json
+          echo "URLs: $(jq '.urlList | length' indexnow.json)"
+          for ep in https://api.indexnow.org/indexnow https://search.seznam.cz/indexnow; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' -X POST "$ep" \
+              -H 'Content-Type: application/json; charset=utf-8' --data @indexnow.json)
+            echo "$ep → $code"
+          done
