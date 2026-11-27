@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Családfa</span><span class="y">Egyházi anyakönyvekből felkutatott ősök</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Ingatlanirodák és bérleménykezelők</span><span class="y">Bérbeadás a hirdetéstől a kifizetett bérleti díjig</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Éttermek</span><span class="y">A konyha hallja a rendeléseket, a felszolgálók tudják, mikor mit vigyenek</span></a>
+    <a class="skin-chip" role="tab" href="#panel-rekonstrukce" data-skin="rekonstrukce" id="tab-rekonstrukce" aria-selected="false" aria-controls="panel-rekonstrukce"><span class="n">Felújítás</span><span class="y">Műszakok, napló és távfelügyelet koordinátoroknak</span></a>
     <a class="skin-chip" role="tab" href="#panel-vecirky" data-skin="vecirky" id="tab-vecirky" aria-selected="false" aria-controls="panel-vecirky"><span class="n">Céges bulik és rendezvények</span><span class="y">Partishow a kivetítőn a vendégek telefonjairól</span></a>
     <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Saját GPU-szerverrel rendelkező cégek</span><span class="y">Dokumentumok, hívások és adatok felhős API-k nélkül</span></a>
   </div>
@@ -615,6 +616,61 @@
     </div>
   </div>
 
+  <!-- ============ Rekonstrukce ============ -->
+  <div class="skin-panel" id="panel-rekonstrukce" role="tabpanel" aria-labelledby="tab-rekonstrukce" data-skin="rekonstrukce">
+    <header class="offer-head">
+      <h2>Felújítás telefonálgatás nélkül</h2>
+      <p>Felújításkoordinátoroknak: kivitelezést is vállaló építészeknek és tervezőknek, építésvezetőknek és lakáskezelőknek. A MegaJob egy helyen tartja a munkát, a szakembereket és az ütemtervet, és megmutatja, mi történik valójában az építkezésen.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Mit old meg</h3>
+        <ul>
+          <li>Ki mikor jön, és van-e egyáltalán valaki az építkezésen.</li>
+          <li>Mit mondjon az ügyfélnek, aki tudni akarja, hogy halad a munka.</li>
+          <li>Hol van az anyag, és mikor érkezik.</li>
+          <li>Mi legyen a tervvel, ha valami csúszik.</li>
+        </ul>
+        <h3>Mit kap</h3>
+        <ul>
+          <li>A munka vázlatát: rétegeket és lépéseket, amelyek közé bármikor beszúrhat újabbat.</li>
+          <li>Műszakokat, amelyeket a szakemberek visszaigazolnak.</li>
+          <li>Naplót előtte–utána fotókkal minden műszakból.</li>
+          <li>Ellenőrzött jelenlétet az építkezésen, követés nélkül: a koordinátákat nem mentjük, és műszakon kívül semmit sem gyűjtünk.</li>
+          <li>Hozzáférést az ügyfélnek, aki látja, ki van a helyszínen, és mi készült el.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Őszintén szólva</h3>
+          <ul>
+            <li>Az alkalmazás még nem létezik. Három koordinátort keresek, akikkel az első verziót az ő valódi munkáikon építem meg.</li>
+            <li>A hivatalos építési naplót nem váltja ki.</li>
+          </ul>
+        </div>
+        <h3>Árak</h3>
+        <table class="price">
+          <tr><th>Pilotprojekt</th><td>ingyenes</td></tr>
+          <tr><th>Utána</th><td>alapverzió ingyenes<span class="sub">fizetős kiegészítők</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Első lépés: félórás hívás</h3>
+      <p>Átbeszéljük, hogyan irányítja ma a munkákat: hol veszít időt, mit intéz telefonon, és mi segítene a legtöbbet.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=MegaJob%20pilot">Írjon a pilotprojekt ügyében</a>
+    </div>
+    <div class="demo">
+      <h3>Ízelítő</h3>
+      <p>Képernyőtervek, nem a kész alkalmazás képei. A nevek és a címek kitaláltak. Bővebben a <a href="megajob-features.html">Hogyan működik</a> oldalon.</p>
+      <div class="shots mobile">
+        <img src="visuals/megajob/koordinator/a1-dnes.webp" alt="Képernyőterv: a mai nap az összes munkán át" loading="lazy">
+        <img src="visuals/megajob/koordinator/a2-osnova.webp" alt="Képernyőterv: a munka vázlata" loading="lazy">
+        <img src="visuals/megajob/zakaznik/c4-dnes.webp" alt="Képernyőterv: amit az ügyfél lát" loading="lazy">
+      </div>
+    </div>
+  </div>
+
   <!-- ============ Firemní večírky a akce ============ -->
   <div class="skin-panel" id="panel-vecirky" role="tabpanel" aria-labelledby="tab-vecirky" data-skin="vecirky">
     <header class="offer-head">
@@ -825,6 +881,7 @@
       { "@type": "Offer", "name": "Családfa: egy vonal, 4 nemzedék", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Lakásbérlési platform pilotprojekt", "price": "25000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Předávka pilotprojekt éttermeknek", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "MegaJob pilotprojekt felújításkoordinátoroknak", "price": "0", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "PartyCockpit partishow céges bulira", "price": "24000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "MI-feladat benchmarkja saját GPU-szerveren", "price": "25000", "priceCurrency": "CZK" }
     ]

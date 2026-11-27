@@ -17,8 +17,8 @@ all CSS variables, so `business.css` is mostly a palette (black, gold, grey) —
 cards, chips and badges are the store's own. The ten offers reuse the skins markup
 (`.skins`, `.skin-picker`, `.skin-chip[data-skin]`, `.skin-panel`), which is why the
 switching and the `#agentury` / `#hry` / `#eshopy` / `#firmy` / `#skoly` / `#rodokmen` /
-`#reality` / `#gastro` / `#vecirky` / `#gpu` deep links need no JavaScript of their own. `reality` sells the
-TerraReality platform and `gastro` Předávka (both added 2026-10-21), `gpu` provisioning and workloads on an own/rented GPU server (added 2026-10-26, numbers from the L40S sandbox benchmarks, no screenshots); `vecirky` sells PartyCockpit as a party show for corporate parties, teambuildings and school events (added 2026-11-17 on a friend's feedback; prices are a first proposal, the first event is at half price because it has never run at a real party), screenshots borrowed from `screenshots/partycockpit/…`; their screenshots are
+`#reality` / `#gastro` / `#rekonstrukce` / `#vecirky` / `#gpu` deep links need no JavaScript of their own. `reality` sells the
+TerraReality platform and `gastro` Předávka (both added 2026-10-21), `gpu` provisioning and workloads on an own/rented GPU server (added 2026-10-26, numbers from the L40S sandbox benchmarks, no screenshots); `rekonstrukce` offers a free MegaJob pilot to renovation coordinators (added 2026-11-27; the app does not exist yet, so the panel says so and shows wireframes from `visuals/megajob/…`, JSON-LD offer price 0); `vecirky` sells PartyCockpit as a party show for corporate parties, teambuildings and school events (added 2026-11-17 on a friend's feedback; prices are a first proposal, the first event is at half price because it has never run at a real party), screenshots borrowed from `screenshots/partycockpit/…`; their screenshots are
 borrowed from the store by path (`screenshots/terrareality/…`, `screenshots/predavka/…`), so
 renaming a raw file there breaks the business page too — the build warns about it. The
 Školy panel's SwypeKids shots broke exactly that way when that gallery was renumbered. The catch that comes with it: `show()`

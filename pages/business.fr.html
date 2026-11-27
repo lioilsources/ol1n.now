@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Généalogie</span><span class="y">Vos ancêtres retrouvés dans les registres paroissiaux</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Agences immobilières et gestionnaires locatifs</span><span class="y">La location, de l’annonce au loyer payé</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Restaurants</span><span class="y">La cuisine entend les commandes, la salle sait quand porter quoi</span></a>
+    <a class="skin-chip" role="tab" href="#panel-rekonstrukce" data-skin="rekonstrukce" id="tab-rekonstrukce" aria-selected="false" aria-controls="panel-rekonstrukce"><span class="n">Rénovations</span><span class="y">Interventions, journal et suivi à distance pour les coordinateurs</span></a>
     <a class="skin-chip" role="tab" href="#panel-vecirky" data-skin="vecirky" id="tab-vecirky" aria-selected="false" aria-controls="panel-vecirky"><span class="n">Soirées et événements d’entreprise</span><span class="y">Un show de soirée sur grand écran depuis les téléphones des invités</span></a>
     <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Entreprises avec leur propre serveur GPU</span><span class="y">Documents, appels et données sans API cloud</span></a>
   </div>
@@ -615,6 +616,61 @@
     </div>
   </div>
 
+  <!-- ============ Rekonstrukce ============ -->
+  <div class="skin-panel" id="panel-rekonstrukce" role="tabpanel" aria-labelledby="tab-rekonstrukce" data-skin="rekonstrukce">
+    <header class="offer-head">
+      <h2>La rénovation sans enchaîner les coups de fil</h2>
+      <p>Pour les coordinateurs de rénovation : architectes et designers qui suivent aussi les travaux, conducteurs de travaux et gestionnaires de logements. MegaJob réunit le projet, les artisans et le planning au même endroit et montre ce qui se passe vraiment sur le chantier.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Ce que ça résout</h3>
+        <ul>
+          <li>Qui vient quand, et s’il y a seulement quelqu’un sur le chantier.</li>
+          <li>Quoi répondre au client qui veut savoir où en sont les travaux.</li>
+          <li>Où est le matériel et quand il arrive.</li>
+          <li>Que faire du planning quand quelque chose glisse.</li>
+        </ul>
+        <h3>Ce que vous obtenez</h3>
+        <ul>
+          <li>Le plan du projet : des niveaux et des étapes, où l’on peut en insérer d’autres à tout moment.</li>
+          <li>Des interventions confirmées par les artisans.</li>
+          <li>Un journal avec des photos avant et après de chaque intervention.</li>
+          <li>Une présence vérifiée sur le chantier, sans surveillance : les coordonnées GPS ne sont pas enregistrées et rien n’est collecté en dehors d’une intervention.</li>
+          <li>Un accès pour le client, qui voit qui est sur place et ce qui a été fait.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>En toute franchise</h3>
+          <ul>
+            <li>L’application n’existe pas encore. Je cherche trois coordinateurs avec qui construire la première version sur leurs vrais projets.</li>
+            <li>Elle ne remplace pas le journal de chantier officiel.</li>
+          </ul>
+        </div>
+        <h3>Tarifs</h3>
+        <table class="price">
+          <tr><th>Pilote</th><td>gratuit</td></tr>
+          <tr><th>Ensuite</th><td>version de base gratuite<span class="sub">options payantes</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Première étape : un appel d’une demi-heure</h3>
+      <p>Nous voyons comment vous pilotez vos projets aujourd’hui : où vous perdez du temps, ce que vous réglez par téléphone et ce qui vous aiderait le plus.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=MegaJob%20pilot">Écrire pour un pilote</a>
+    </div>
+    <div class="demo">
+      <h3>Exemples</h3>
+      <p>Des maquettes d’écrans, pas des captures d’une application finie. Les noms et les adresses sont inventés. Plus de détails sur la page <a href="megajob-features.html">Comment ça marche</a>.</p>
+      <div class="shots mobile">
+        <img src="visuals/megajob/koordinator/a1-dnes.webp" alt="Maquette d’écran : la journée sur tous les projets" loading="lazy">
+        <img src="visuals/megajob/koordinator/a2-osnova.webp" alt="Maquette d’écran : le plan du projet" loading="lazy">
+        <img src="visuals/megajob/zakaznik/c4-dnes.webp" alt="Maquette d’écran : ce que voit le client" loading="lazy">
+      </div>
+    </div>
+  </div>
+
   <!-- ============ Firemní večírky a akce ============ -->
   <div class="skin-panel" id="panel-vecirky" role="tabpanel" aria-labelledby="tab-vecirky" data-skin="vecirky">
     <header class="offer-head">
@@ -825,6 +881,7 @@
       { "@type": "Offer", "name": "Généalogie : une lignée, 4 générations", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilote de la plateforme de location d’appartements", "price": "25000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilote de Předávka pour restaurants", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Pilote MegaJob pour les coordinateurs de rénovation", "price": "0", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Show de soirée PartyCockpit pour un événement d’entreprise", "price": "24000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Benchmark d’une tâche d’IA sur votre propre serveur GPU", "price": "25000", "priceCurrency": "CZK" }
     ]

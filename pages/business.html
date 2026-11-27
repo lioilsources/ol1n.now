@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Rodokmen</span><span class="y">Předci dohledaní v matrikách</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Realitky a správci nájmů</span><span class="y">Pronájem od inzerátu po zaplacený nájem</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Restaurace</span><span class="y">Kuchyň slyší objednávky, plac ví, kdy co nést</span></a>
+    <a class="skin-chip" role="tab" href="#panel-rekonstrukce" data-skin="rekonstrukce" id="tab-rekonstrukce" aria-selected="false" aria-controls="panel-rekonstrukce"><span class="n">Rekonstrukce</span><span class="y">Šichty, deník a dozor na dálku pro koordinátory</span></a>
     <a class="skin-chip" role="tab" href="#panel-vecirky" data-skin="vecirky" id="tab-vecirky" aria-selected="false" aria-controls="panel-vecirky"><span class="n">Firemní večírky a akce</span><span class="y">Party show na plátně z telefonů hostů</span></a>
     <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Firmy s vlastním GPU serverem</span><span class="y">Dokumenty, hovory a data bez cloudových API</span></a>
   </div>
@@ -615,6 +616,61 @@
     </div>
   </div>
 
+  <!-- ============ Rekonstrukce ============ -->
+  <div class="skin-panel" id="panel-rekonstrukce" role="tabpanel" aria-labelledby="tab-rekonstrukce" data-skin="rekonstrukce">
+    <header class="offer-head">
+      <h2>Rekonstrukce bez obvolávání</h2>
+      <p>Pro koordinátory rekonstrukcí: architekty a designéry s realizací, stavbyvedoucí a správce bytů. MegaJob drží zakázku, řemeslníky a harmonogram na jednom místě a ukazuje, co se na stavbě opravdu děje.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Co to řeší</h3>
+        <ul>
+          <li>Kdo kdy přijde a jestli na stavbě vůbec někdo je.</li>
+          <li>Co odpovědět zákazníkovi, který chce vědět, jak to jde.</li>
+          <li>Kde je materiál a kdy dorazí.</li>
+          <li>Co s plánem, když se něco posune.</li>
+        </ul>
+        <h3>Co dostanete</h3>
+        <ul>
+          <li>Osnovu zakázky: vrstvy a kroky, do kterých jde kdykoli vložit další.</li>
+          <li>Šichty s potvrzením od řemeslníků.</li>
+          <li>Deník s fotkami před a po z každé šichty.</li>
+          <li>Ověřenou přítomnost na stavbě bez sledování: souřadnice se neukládají a mimo šichtu se nesbírá nic.</li>
+          <li>Přístup pro zákazníka, který vidí, kdo je na místě a co se udělalo.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Na rovinu</h3>
+          <ul>
+            <li>Aplikace zatím neexistuje. Hledám tři koordinátory, se kterými první verzi postavím na jejich skutečných zakázkách.</li>
+            <li>Úřední stavební deník nenahrazuje.</li>
+          </ul>
+        </div>
+        <h3>Cena</h3>
+        <table class="price">
+          <tr><th>Pilot</th><td>zdarma</td></tr>
+          <tr><th>Potom</th><td>základ zdarma<span class="sub">placené doplňky</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>První krok: půlhodinový hovor</h3>
+      <p>Probereme, jak zakázky řídíte dnes: kde ztrácíte čas, co řešíte po telefonu a co by vám pomohlo nejvíc.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=MegaJob%20pilot">Napsat kvůli pilotu</a>
+    </div>
+    <div class="demo">
+      <h3>Ukázky</h3>
+      <p>Návrhy obrazovek, ne snímky hotové aplikace. Jména a adresy jsou smyšlené. Víc na stránce <a href="megajob-features.html">Jak to funguje</a>.</p>
+      <div class="shots mobile">
+        <img src="visuals/megajob/koordinator/a1-dnes.webp" alt="Návrh obrazovky: dnešek napříč zakázkami" loading="lazy">
+        <img src="visuals/megajob/koordinator/a2-osnova.webp" alt="Návrh obrazovky: osnova zakázky" loading="lazy">
+        <img src="visuals/megajob/zakaznik/c4-dnes.webp" alt="Návrh obrazovky: co vidí zákazník" loading="lazy">
+      </div>
+    </div>
+  </div>
+
   <!-- ============ Firemní večírky a akce ============ -->
   <div class="skin-panel" id="panel-vecirky" role="tabpanel" aria-labelledby="tab-vecirky" data-skin="vecirky">
     <header class="offer-head">
@@ -825,6 +881,7 @@
       { "@type": "Offer", "name": "Rodokmen: jedna linie, 4 generace", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilot platformy pro pronájem bytů", "price": "25000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilot Předávky pro restaurace", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Pilot MegaJobu pro koordinátory rekonstrukcí", "price": "0", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Party show PartyCockpit na firemní večírek", "price": "24000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Benchmark AI úlohy na vlastním GPU serveru", "price": "25000", "priceCurrency": "CZK" }
     ]

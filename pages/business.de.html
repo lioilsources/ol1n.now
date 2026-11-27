@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Stammbaum</span><span class="y">Vorfahren, gefunden in Kirchenbüchern</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Makler und Mietverwalter</span><span class="y">Vermietung vom Inserat bis zur bezahlten Miete</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Restaurants</span><span class="y">Die Küche hört die Bestellungen, der Service weiß, wann was rausgeht</span></a>
+    <a class="skin-chip" role="tab" href="#panel-rekonstrukce" data-skin="rekonstrukce" id="tab-rekonstrukce" aria-selected="false" aria-controls="panel-rekonstrukce"><span class="n">Renovierungen</span><span class="y">Schichten, Baustellentagebuch und Aufsicht aus der Ferne für Koordinatoren</span></a>
     <a class="skin-chip" role="tab" href="#panel-vecirky" data-skin="vecirky" id="tab-vecirky" aria-selected="false" aria-controls="panel-vecirky"><span class="n">Firmenfeiern und Events</span><span class="y">Party-Show auf der Leinwand von den Handys der Gäste</span></a>
     <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Firmen mit eigenem GPU-Server</span><span class="y">Dokumente, Anrufe und Daten ohne Cloud-APIs</span></a>
   </div>
@@ -615,6 +616,61 @@
     </div>
   </div>
 
+  <!-- ============ Rekonstrukce ============ -->
+  <div class="skin-panel" id="panel-rekonstrukce" role="tabpanel" aria-labelledby="tab-rekonstrukce" data-skin="rekonstrukce">
+    <header class="offer-head">
+      <h2>Renovierung ohne Herumtelefonieren</h2>
+      <p>Für Koordinatoren von Renovierungen: Architekten und Designer mit Bauausführung, Bauleiter und Hausverwalter. MegaJob hält den Auftrag, die Handwerker und den Zeitplan an einem Ort und zeigt, was auf der Baustelle wirklich passiert.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Was es löst</h3>
+        <ul>
+          <li>Wer wann kommt und ob überhaupt jemand auf der Baustelle ist.</li>
+          <li>Was man dem Kunden antwortet, der wissen will, wie es läuft.</li>
+          <li>Wo das Material ist und wann es ankommt.</li>
+          <li>Was mit dem Plan passiert, wenn sich etwas verschiebt.</li>
+        </ul>
+        <h3>Was Sie bekommen</h3>
+        <ul>
+          <li>Eine Gliederung des Auftrags: Ebenen und Schritte, in die sich jederzeit weitere einfügen lassen.</li>
+          <li>Schichten mit Bestätigung durch die Handwerker.</li>
+          <li>Ein Baustellentagebuch mit Vorher-nachher-Fotos aus jeder Schicht.</li>
+          <li>Bestätigte Anwesenheit auf der Baustelle ohne Überwachung: Koordinaten werden nicht gespeichert, und außerhalb der Schicht wird nichts erfasst.</li>
+          <li>Zugang für den Kunden, der sieht, wer vor Ort ist und was erledigt wurde.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Klartext</h3>
+          <ul>
+            <li>Die App gibt es noch nicht. Ich suche drei Koordinatoren, mit denen ich die erste Version an ihren echten Aufträgen baue.</li>
+            <li>Das amtliche Bautagebuch ersetzt sie nicht.</li>
+          </ul>
+        </div>
+        <h3>Preis</h3>
+        <table class="price">
+          <tr><th>Pilotprojekt</th><td>kostenlos</td></tr>
+          <tr><th>Danach</th><td>Grundversion kostenlos<span class="sub">kostenpflichtige Erweiterungen</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Erster Schritt: ein halbstündiges Gespräch</h3>
+      <p>Wir gehen durch, wie Sie Aufträge heute steuern: wo Sie Zeit verlieren, was Sie am Telefon klären und was Ihnen am meisten helfen würde.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=MegaJob%20pilot">Pilotprojekt anfragen</a>
+    </div>
+    <div class="demo">
+      <h3>Beispiele</h3>
+      <p>Bildschirmentwürfe, keine Screenshots einer fertigen App. Namen und Adressen sind erfunden. Mehr auf der Seite <a href="megajob-features.html">So funktioniert es</a>.</p>
+      <div class="shots mobile">
+        <img src="visuals/megajob/koordinator/a1-dnes.webp" alt="Bildschirmentwurf: der heutige Tag über alle Aufträge" loading="lazy">
+        <img src="visuals/megajob/koordinator/a2-osnova.webp" alt="Bildschirmentwurf: Gliederung des Auftrags" loading="lazy">
+        <img src="visuals/megajob/zakaznik/c4-dnes.webp" alt="Bildschirmentwurf: was der Kunde sieht" loading="lazy">
+      </div>
+    </div>
+  </div>
+
   <!-- ============ Firemní večírky a akce ============ -->
   <div class="skin-panel" id="panel-vecirky" role="tabpanel" aria-labelledby="tab-vecirky" data-skin="vecirky">
     <header class="offer-head">
@@ -825,6 +881,7 @@
       { "@type": "Offer", "name": "Stammbaum: eine Linie, 4 Generationen", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilotprojekt: Plattform für die Wohnungsvermietung", "price": "25000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilotprojekt: Předávka für Restaurants", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "MegaJob-Pilotprojekt für Renovierungskoordinatoren", "price": "0", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Party-Show PartyCockpit für eine Firmenfeier", "price": "24000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Benchmark einer KI-Aufgabe auf dem eigenen GPU-Server", "price": "25000", "priceCurrency": "CZK" }
     ]

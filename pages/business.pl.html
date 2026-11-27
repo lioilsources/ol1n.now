@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Drzewo genealogiczne</span><span class="y">Przodkowie odnalezieni w księgach metrykalnych</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Biura nieruchomości i zarządcy najmu</span><span class="y">Wynajem od ogłoszenia po opłacony czynsz</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Restauracje</span><span class="y">Kuchnia słyszy zamówienia, sala wie, kiedy co nieść</span></a>
+    <a class="skin-chip" role="tab" href="#panel-rekonstrukce" data-skin="rekonstrukce" id="tab-rekonstrukce" aria-selected="false" aria-controls="panel-rekonstrukce"><span class="n">Remonty</span><span class="y">Zmiany, dziennik i nadzór na odległość dla koordynatorów</span></a>
     <a class="skin-chip" role="tab" href="#panel-vecirky" data-skin="vecirky" id="tab-vecirky" aria-selected="false" aria-controls="panel-vecirky"><span class="n">Imprezy firmowe i eventy</span><span class="y">Party show na ekranie z telefonów gości</span></a>
     <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Firmy z własnym serwerem GPU</span><span class="y">Dokumenty, rozmowy i dane bez chmurowych API</span></a>
   </div>
@@ -615,6 +616,61 @@
     </div>
   </div>
 
+  <!-- ============ Rekonstrukce ============ -->
+  <div class="skin-panel" id="panel-rekonstrukce" role="tabpanel" aria-labelledby="tab-rekonstrukce" data-skin="rekonstrukce">
+    <header class="offer-head">
+      <h2>Remonty bez obdzwaniania</h2>
+      <p>Dla koordynatorów remontów: architektów i projektantów z realizacją, kierowników budowy i zarządców mieszkań. MegaJob trzyma zlecenie, fachowców i harmonogram w jednym miejscu i pokazuje, co naprawdę dzieje się na budowie.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Co to rozwiązuje</h3>
+        <ul>
+          <li>Kto kiedy przyjdzie i czy na budowie w ogóle ktoś jest.</li>
+          <li>Co odpowiedzieć klientowi, który chce wiedzieć, jak idą prace.</li>
+          <li>Gdzie jest materiał i kiedy dotrze.</li>
+          <li>Co zrobić z planem, gdy coś się przesunie.</li>
+        </ul>
+        <h3>Co Państwo otrzymują</h3>
+        <ul>
+          <li>Konspekt zlecenia: warstwy i kroki, między które można w każdej chwili wstawić kolejne.</li>
+          <li>Zmiany potwierdzane przez fachowców.</li>
+          <li>Dziennik ze zdjęciami przed i po z każdej zmiany.</li>
+          <li>Potwierdzoną obecność na budowie bez śledzenia: współrzędne nie są zapisywane, a poza zmianą nic się nie zbiera.</li>
+          <li>Dostęp dla klienta, który widzi, kto jest na miejscu i co zostało zrobione.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Szczerze mówiąc</h3>
+          <ul>
+            <li>Aplikacja jeszcze nie istnieje. Szukam trzech koordynatorów, z którymi zbuduję pierwszą wersję na ich prawdziwych zleceniach.</li>
+            <li>Nie zastępuje urzędowego dziennika budowy.</li>
+          </ul>
+        </div>
+        <h3>Cena</h3>
+        <table class="price">
+          <tr><th>Pilotaż</th><td>bezpłatnie</td></tr>
+          <tr><th>Potem</th><td>podstawa bezpłatnie<span class="sub">płatne dodatki</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Pierwszy krok: półgodzinna rozmowa</h3>
+      <p>Omówimy, jak Państwo dziś prowadzą zlecenia: gdzie tracą Państwo czas, co załatwiają przez telefon i co pomogłoby najbardziej.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=MegaJob%20pilot">Napisać w sprawie pilotażu</a>
+    </div>
+    <div class="demo">
+      <h3>Przykłady</h3>
+      <p>Projekty ekranów, nie zrzuty gotowej aplikacji. Imiona i adresy są fikcyjne. Więcej na stronie <a href="megajob-features.html">Jak to działa</a>.</p>
+      <div class="shots mobile">
+        <img src="visuals/megajob/koordinator/a1-dnes.webp" alt="Projekt ekranu: dzisiejszy dzień we wszystkich zleceniach" loading="lazy">
+        <img src="visuals/megajob/koordinator/a2-osnova.webp" alt="Projekt ekranu: konspekt zlecenia" loading="lazy">
+        <img src="visuals/megajob/zakaznik/c4-dnes.webp" alt="Projekt ekranu: co widzi klient" loading="lazy">
+      </div>
+    </div>
+  </div>
+
   <!-- ============ Firemní večírky a akce ============ -->
   <div class="skin-panel" id="panel-vecirky" role="tabpanel" aria-labelledby="tab-vecirky" data-skin="vecirky">
     <header class="offer-head">
@@ -825,6 +881,7 @@
       { "@type": "Offer", "name": "Drzewo genealogiczne: jedna linia, 4 pokolenia", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilotaż platformy do wynajmu mieszkań", "price": "25000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Pilotaż systemu Předávka dla restauracji", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Pilotaż MegaJob dla koordynatorów remontów", "price": "0", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Party show PartyCockpit na imprezę firmową", "price": "24000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Benchmark zadania AI na własnym serwerze GPU", "price": "25000", "priceCurrency": "CZK" }
     ]
