@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">家系図</span><span class="y">教区簿冊でたどるご先祖</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">不動産会社・賃貸管理会社</span><span class="y">募集から家賃の入金まで</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">飲食店</span><span class="y">厨房は注文を耳で聞き、ホールはいつ何を運ぶかがわかる</span></a>
+    <a class="skin-chip" role="tab" href="#panel-rekonstrukce" data-skin="rekonstrukce" id="tab-rekonstrukce" aria-selected="false" aria-controls="panel-rekonstrukce"><span class="n">リフォーム</span><span class="y">コーディネーター向けのシフト、日誌、遠隔での現場管理</span></a>
     <a class="skin-chip" role="tab" href="#panel-vecirky" data-skin="vecirky" id="tab-vecirky" aria-selected="false" aria-controls="panel-vecirky"><span class="n">社内パーティー・企業イベント</span><span class="y">ゲストのスマホから大画面のパーティーショー</span></a>
     <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">自前のGPUサーバーを持つ会社</span><span class="y">書類も通話もデータも、クラウドAPIなしで</span></a>
   </div>
@@ -615,6 +616,61 @@
     </div>
   </div>
 
+  <!-- ============ リフォーム ============ -->
+  <div class="skin-panel" id="panel-rekonstrukce" role="tabpanel" aria-labelledby="tab-rekonstrukce" data-skin="rekonstrukce">
+    <header class="offer-head">
+      <h2>電話をかけ回らずに進めるリフォーム</h2>
+      <p>リフォームのコーディネーター向け：施工まで手がける建築家やデザイナー、現場監督、住宅の管理者。MegaJob は案件、職人、工程表を一か所にまとめ、現場で実際に何が起きているかを示します。</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>解決すること</h3>
+        <ul>
+          <li>誰がいつ来るのか、そもそも現場に誰かいるのか。</li>
+          <li>進み具合を知りたいお客様に何と答えるか。</li>
+          <li>資材がどこにあり、いつ届くのか。</li>
+          <li>何かがずれたとき、計画をどうするか。</li>
+        </ul>
+        <h3>提供するもの</h3>
+        <ul>
+          <li>案件のアウトライン：階層とステップで構成され、いつでも新しいものを差し込めます。</li>
+          <li>職人が確認するシフト。</li>
+          <li>シフトごとのビフォー・アフター写真付きの日誌。</li>
+          <li>追跡なしで確認できる現場での出勤：座標は保存せず、シフト外は何も収集しません。</li>
+          <li>お客様用のアクセス。誰が現場にいて、何が終わったかを見られます。</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>率直に言うと</h3>
+          <ul>
+            <li>アプリはまだ存在しません。実際の案件で最初のバージョンを一緒に作る3人のコーディネーターを探しています。</li>
+            <li>公式の工事日誌の代わりにはなりません。</li>
+          </ul>
+        </div>
+        <h3>料金</h3>
+        <table class="price">
+          <tr><th>パイロット</th><td>無料</td></tr>
+          <tr><th>その後</th><td>基本機能は無料<span class="sub">有料の追加機能</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>最初のステップ：30分の通話</h3>
+      <p>今どのように案件を管理しているかを伺います。どこで時間を失っているか、何を電話で済ませているか、何が一番役に立つか。</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=MegaJob%20pilot">パイロットについて問い合わせる</a>
+    </div>
+    <div class="demo">
+      <h3>画面例</h3>
+      <p>画面のデザイン案で、完成したアプリのスクリーンショットではありません。名前と住所は架空のものです。詳しくは<a href="megajob-features.html">仕組み</a>のページへ。</p>
+      <div class="shots mobile">
+        <img src="visuals/megajob/koordinator/a1-dnes.webp" alt="画面のデザイン案：すべての案件の今日" loading="lazy">
+        <img src="visuals/megajob/koordinator/a2-osnova.webp" alt="画面のデザイン案：案件のアウトライン" loading="lazy">
+        <img src="visuals/megajob/zakaznik/c4-dnes.webp" alt="画面のデザイン案：お客様に見える画面" loading="lazy">
+      </div>
+    </div>
+  </div>
+
   <!-- ============ 社内パーティー・企業イベント ============ -->
   <div class="skin-panel" id="panel-vecirky" role="tabpanel" aria-labelledby="tab-vecirky" data-skin="vecirky">
     <header class="offer-head">
@@ -825,6 +881,7 @@
       { "@type": "Offer", "name": "家系図：1系統、4世代", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "賃貸管理プラットフォームのパイロット", "price": "25000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "飲食店向け Předávka のパイロット", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "リフォームコーディネーター向け MegaJob のパイロット", "price": "0", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "社内パーティー向け PartyCockpit パーティーショー", "price": "24000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "自前のGPUサーバーでのAIタスクのベンチマーク", "price": "25000", "priceCurrency": "CZK" }
     ]

@@ -33,6 +33,7 @@
     <a class="skin-chip" role="tab" href="#panel-rodokmen" data-skin="rodokmen" id="tab-rodokmen" aria-selected="false" aria-controls="panel-rodokmen"><span class="n">Родовід</span><span class="y">Предки, знайдені в метричних книгах</span></a>
     <a class="skin-chip" role="tab" href="#panel-reality" data-skin="reality" id="tab-reality" aria-selected="false" aria-controls="panel-reality"><span class="n">Агентства нерухомості та керуючі орендою</span><span class="y">Оренда від оголошення до сплаченого платежу</span></a>
     <a class="skin-chip" role="tab" href="#panel-gastro" data-skin="gastro" id="tab-gastro" aria-selected="false" aria-controls="panel-gastro"><span class="n">Ресторани</span><span class="y">Кухня чує замовлення, зал знає, коли що нести</span></a>
+    <a class="skin-chip" role="tab" href="#panel-rekonstrukce" data-skin="rekonstrukce" id="tab-rekonstrukce" aria-selected="false" aria-controls="panel-rekonstrukce"><span class="n">Ремонти</span><span class="y">Зміни, журнал і нагляд на відстані для координаторів</span></a>
     <a class="skin-chip" role="tab" href="#panel-vecirky" data-skin="vecirky" id="tab-vecirky" aria-selected="false" aria-controls="panel-vecirky"><span class="n">Корпоративи та заходи</span><span class="y">Паті-шоу на екрані з телефонів гостей</span></a>
     <a class="skin-chip" role="tab" href="#panel-gpu" data-skin="gpu" id="tab-gpu" aria-selected="false" aria-controls="panel-gpu"><span class="n">Фірми з власним GPU-сервером</span><span class="y">Документи, дзвінки й дані без хмарних API</span></a>
   </div>
@@ -615,6 +616,61 @@
     </div>
   </div>
 
+  <!-- ============ Rekonstrukce ============ -->
+  <div class="skin-panel" id="panel-rekonstrukce" role="tabpanel" aria-labelledby="tab-rekonstrukce" data-skin="rekonstrukce">
+    <header class="offer-head">
+      <h2>Ремонт без нескінченних дзвінків</h2>
+      <p>Для координаторів ремонтів: архітекторів і дизайнерів, які ведуть реалізацію, виконробів і керуючих квартирами. MegaJob тримає проєкт, майстрів і графік в одному місці й показує, що насправді відбувається на об’єкті.</p>
+    </header>
+    <div class="offer-cols">
+      <div>
+        <h3>Які проблеми це розв’язує</h3>
+        <ul>
+          <li>Хто й коли прийде і чи є на об’єкті взагалі хтось.</li>
+          <li>Що відповісти замовникові, який хоче знати, як ідуть справи.</li>
+          <li>Де матеріал і коли він приїде.</li>
+          <li>Що робити з планом, коли щось зсувається.</li>
+        </ul>
+        <h3>Що ви отримаєте</h3>
+        <ul>
+          <li>Структуру проєкту: рівні й кроки, до яких будь-коли можна додати нові.</li>
+          <li>Зміни з підтвердженням від майстрів.</li>
+          <li>Журнал із фото «до» і «після» з кожної зміни.</li>
+          <li>Підтверджену присутність на об’єкті без стеження: координати не зберігаються, а поза зміною нічого не збирається.</li>
+          <li>Доступ для замовника, який бачить, хто на місці і що зроблено.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="straight">
+          <h3>Відверто кажучи</h3>
+          <ul>
+            <li>Застосунку поки не існує. Шукаю трьох координаторів, з якими побудую першу версію на їхніх реальних проєктах.</li>
+            <li>Офіційного журналу робіт він не замінює.</li>
+          </ul>
+        </div>
+        <h3>Ціна</h3>
+        <table class="price">
+          <tr><th>Пілот</th><td>безкоштовно</td></tr>
+          <tr><th>Потім</th><td>базова версія безкоштовно<span class="sub">платні доповнення</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="first-step">
+      <h3>Перший крок: півгодинна розмова</h3>
+      <p>Обговоримо, як ви керуєте проєктами сьогодні: де втрачаєте час, що вирішуєте телефоном і що допомогло б найбільше.</p>
+      <a class="dl-btn" href="mailto:__EMAIL__?subject=MegaJob%20pilot">Написати про пілот</a>
+    </div>
+    <div class="demo">
+      <h3>Приклади</h3>
+      <p>Макети екранів, а не знімки готового застосунку. Імена та адреси вигадані. Більше на сторінці <a href="megajob-features.html">Як це працює</a>.</p>
+      <div class="shots mobile">
+        <img src="visuals/megajob/koordinator/a1-dnes.webp" alt="Макет екрана: сьогоднішній день за всіма проєктами" loading="lazy">
+        <img src="visuals/megajob/koordinator/a2-osnova.webp" alt="Макет екрана: структура проєкту" loading="lazy">
+        <img src="visuals/megajob/zakaznik/c4-dnes.webp" alt="Макет екрана: що бачить замовник" loading="lazy">
+      </div>
+    </div>
+  </div>
+
   <!-- ============ Firemní večírky a akce ============ -->
   <div class="skin-panel" id="panel-vecirky" role="tabpanel" aria-labelledby="tab-vecirky" data-skin="vecirky">
     <header class="offer-head">
@@ -825,6 +881,7 @@
       { "@type": "Offer", "name": "Родовід: одна лінія, 4 покоління", "price": "12900", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Пілот платформи для оренди квартир", "price": "25000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Пілот Předávka для ресторанів", "price": "15000", "priceCurrency": "CZK" },
+      { "@type": "Offer", "name": "Пілот MegaJob для координаторів ремонтів", "price": "0", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Паті-шоу PartyCockpit на корпоратив", "price": "24000", "priceCurrency": "CZK" },
       { "@type": "Offer", "name": "Бенчмарк ШІ-завдання на власному GPU-сервері", "price": "25000", "priceCurrency": "CZK" }
     ]
