@@ -42,7 +42,7 @@ sfx, music). A category with no manifest rows emits nothing at all — that is h
 ## Visuals gallery
 
 The flat one: categorised artwork, no entities, no audio. `doodlebugs`, `kittens`,
-`mutants`, `memeshorts`, `immunorun`, `handwrittenstickers`, `swypekids`, `webtoon`, `kaceny` and `metropole` have one.
+`mutants`, `memeshorts`, `immunorun`, `handwrittenstickers`, `swypekids`, `webtoon`, `kaceny`, `metropole` and `megajob` have one.
 `scripts/import-visuals.sh <slug>` holds one `import_<slug>` function per app — where
 the art lives in that app's checkout, how it is bucketed, the Czech titles — and
 `make build` only copies the result. Gated on `dist/visuals/<slug>/cats.tsv`; emits a
@@ -84,6 +84,14 @@ What deliberately stays out of a gallery, per app:
 - **handwrittenstickers** — the stickers are composed by the import script from the
   app's glyph PNGs, in capitals only: without the app's baseline metrics, capitals are
   what bottom-aligns correctly.
+- **megajob** — not imported: the gallery is hand-written wireframes, not app art. Sources
+  live in `apps/megajob/wireframes/` (`wf.css`, `wireframes.tsv` = `id kind cat ord label`,
+  `screens/<id>.html` at 390×880, `boards/<id>.html` at 1600×1000, no JavaScript; the build
+  ignores the folder). `make wireframes APP=megajob` (`scripts/render-wireframes.sh`, optional
+  ids to render only some) shoots them with `shoot.mjs` (screens @2x, boards @1.5x), writes
+  WebP q82 into `visuals/<cat>/` and rewrites `assets.tsv`; `cats.tsv` is hand-written. Every
+  image carries the „NÁVRH · MegaJob · olin.now“ stamp in its bottom strip. Layout `phone`
+  shows whole screens uncropped; boards use `sheet`.
 
 The default checkout paths are the local folder names, three of which differ from the
 GitHub repo: `KittenCards` (Kittens), `MutantCards` (Mutants), `HandWritenStickers`

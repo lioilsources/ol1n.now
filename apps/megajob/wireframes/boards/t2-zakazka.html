@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><title>Cesta zakázky</title><link rel="stylesheet" href="../wf.css"></head>
+<body class="board">
+<div class="wf-board">
+<div class="wf-board-title">Cesta zakázky</div>
+<div class="wf-board-sub">Od poptávky po předání. Mezi vrstvami jsou pauzy, dodávky a kontroly.</div>
+</div>
+<svg class="wf-wires" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<polyline points="260,275 288,275 288,275 316,275" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="516,275 544,275 544,275 572,275" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="772,275 800,275 800,275 828,275" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1028,275 1056,275 1056,275 1084,275" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1284,275 1312,275 1312,275 1340,275" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="260,550 288,550 288,550 316,550" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="516,550 544,550 544,550 572,550" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="772,550 800,550 800,550 828,550" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1028,550 1056,550 1056,550 1084,550" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1284,550 1312,550 1312,550 1340,550" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1440,330 1440,415 160,415 160,500" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+</svg>
+<div class="wf-node abs " style="left:60px;top:220px;width:200px;height:110px">Poptávka</div>
+<div class="wf-node abs " style="left:316px;top:220px;width:200px;height:110px">Orientační nabídka<small>rozpětí ceny a termínu</small></div>
+<div class="wf-node abs " style="left:572px;top:220px;width:200px;height:110px">Prohlídky</div>
+<div class="wf-node abs warn" style="left:828px;top:220px;width:200px;height:110px">Nálezy<small>např. shnilá stoupačka</small></div>
+<div class="wf-node abs blue" style="left:1084px;top:220px;width:200px;height:110px">Závazná nabídka<small>po prohlídkách</small></div>
+<div class="wf-node abs lock" style="left:1340px;top:220px;width:200px;height:110px">Zakázka</div>
+<div class="wf-node abs " style="left:60px;top:500px;width:200px;height:100px">Bourání</div>
+<div class="wf-node abs " style="left:316px;top:500px;width:200px;height:100px">Rozvody</div>
+<div class="wf-node abs " style="left:572px;top:500px;width:200px;height:100px">Zednické práce</div>
+<div class="wf-node abs " style="left:828px;top:500px;width:200px;height:100px">Obklady</div>
+<div class="wf-node abs " style="left:1084px;top:500px;width:200px;height:100px">Kompletace</div>
+<div class="wf-node abs ok" style="left:1340px;top:500px;width:200px;height:100px">Předání</div>
+<div style="position:absolute;left:287px;top:552px;width:2px;height:60px;border-left:2px dashed var(--mute)"></div>
+<div class="wf-node mini" style="position:absolute;left:288px;top:612px;transform:translateX(-50%);white-space:nowrap">dodávka</div>
+<div style="position:absolute;left:543px;top:552px;width:2px;height:60px;border-left:2px dashed var(--mute)"></div>
+<div class="wf-node mini" style="position:absolute;left:544px;top:612px;transform:translateX(-50%);white-space:nowrap">kontrola před zakrytím</div>
+<div style="position:absolute;left:799px;top:552px;width:2px;height:60px;border-left:2px dashed var(--mute)"></div>
+<div class="wf-node mini" style="position:absolute;left:800px;top:612px;transform:translateX(-50%);white-space:nowrap">schnutí</div>
+<div class="wf-lane-label" style="position:absolute;left:60px;top:190px;margin:0">Nabídka</div>
+<div class="wf-lane-label" style="position:absolute;left:190px;top:470px;margin:0">Vrstvy zakázky</div>
+<div class="wf-callout " style="position:absolute;left:60px;top:820px;">Krok jde vložit kdykoli</div>
+<div class="wf-callout warn" style="position:absolute;left:420px;top:820px;">Každá změna je nová verze, kterou zákazník schvaluje</div>
+<div class="wf-stamp"></div>
+</body></html>

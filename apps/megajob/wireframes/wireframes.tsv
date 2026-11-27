@@ -1,0 +1,25 @@
+# id	kind	cat	ord	label
+t1-prehled	board	toky	1	Jak MegaJob funguje
+t2-zakazka	board	toky	2	Cesta zakázky
+t3-den	board	toky	3	Den řemeslníka
+t4-zmena	board	toky	4	Když řemeslník vezme lepší práci
+t5-platby	board	toky	5	Platby na očích
+r1-dnes	screen	remeslnik	1	Dnes
+r2-nabidka	screen	remeslnik	2	Nabídka práce
+r3-sichta	screen	remeslnik	3	Detail šichty
+r4-fotky	screen	remeslnik	4	Fotky před
+r5-zapis	screen	remeslnik	5	Zápis
+r6-kalendar	screen	remeslnik	6	Kalendář
+r7-predavka	screen	remeslnik	7	Předávka
+c1-prihlaska	screen	zakaznik	1	Přihláška
+c2-nabidka	screen	zakaznik	2	Nabídka
+c3-tym	screen	zakaznik	3	Tým
+c4-dnes	screen	zakaznik	4	Moje rekonstrukce
+c5-denik	screen	zakaznik	5	Deník dne
+c6-osnova	screen	zakaznik	6	Osnova
+c7-zmena	screen	zakaznik	7	Změna v týmu
+c8-platby	screen	zakaznik	8	Platby
+a1-dnes	screen	koordinator	1	Dnes napříč zakázkami
+a2-osnova	screen	koordinator	2	Osnova zakázky
+a3-sit	screen	koordinator	3	Moje síť
+a4-burza	screen	koordinator	4	Burza kapacit

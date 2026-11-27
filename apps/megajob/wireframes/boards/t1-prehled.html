@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><title>Jak MegaJob funguje</title><link rel="stylesheet" href="../wf.css"></head>
+<body class="board">
+<div class="wf-board">
+<div class="wf-board-title">Jak MegaJob funguje</div>
+<div class="wf-board-sub">Dvě cesty k zakázce. Obě používají stejný tok zakázky, stejné šichty a stejný deník.</div>
+</div>
+<svg class="wf-wires" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<polyline points="280,460 330,460 330,300 380,300" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="280,460 330,460 330,620 380,620" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="720,300 770,300 770,460 820,460" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="720,620 770,620 770,460 820,460" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1050,460 1080,460 1080,460 1110,460" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1310,460 1340,460 1340,460 1370,460" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1210,650 1210,585 1210,585 1210,520" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+</svg>
+<div class="wf-node abs fill" style="left:60px;top:400px;width:220px;height:120px">Zákazník<small>poptávka, fotky, termín</small></div>
+<div class="wf-node abs blue" style="left:380px;top:240px;width:340px;height:120px">Zakázku řídí koordinátor<small>zná zákazníka i své řemeslníky</small></div>
+<div class="wf-node abs tentative" style="left:380px;top:560px;width:340px;height:120px">Přímo: plán sestaví systém<small>z ověřených řemeslníků</small></div>
+<div class="wf-node abs " style="left:820px;top:400px;width:230px;height:120px">Tok zakázky<small>kroky a verze nabídky</small></div>
+<div class="wf-node abs " style="left:1110px;top:400px;width:200px;height:120px">Šichty<small>nabídnuto · přijato · zámek</small></div>
+<div class="wf-node abs ok" style="left:1370px;top:400px;width:180px;height:120px">Deník a dozor na dálku</div>
+<div class="wf-node abs fill" style="left:1090px;top:650px;width:240px;height:110px">Ověření řemeslníci<small>vlastní ceník a kalendář</small></div>
+<div class="wf-callout ok" style="position:absolute;left:60px;top:830px;">Platby jdou přímo a jsou vidět</div>
+<div class="wf-callout " style="position:absolute;left:470px;top:830px;">Hodnocení z faktů</div>
+<div class="wf-stamp"></div>
+</body></html>

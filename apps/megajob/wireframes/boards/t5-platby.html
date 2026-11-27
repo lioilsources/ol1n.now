@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><title>Platby na očích</title><link rel="stylesheet" href="../wf.css"></head>
+<body class="board">
+<div class="wf-board">
+<div class="wf-board-title">Platby na očích</div>
+<div class="wf-board-sub">Peníze jdou mimo MegaJob, ale je vidět, co je zaplacené.</div>
+</div>
+<svg class="wf-wires" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<polyline points="340,255 380,255 380,255 420,255" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="720,255 760,255 760,255 800,255" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="990,310 990,365 820,365 820,420" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="990,310 990,365 1180,365 1180,420" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="820,520 820,575 1010,575 1010,630" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1180,520 1180,575 1010,575 1010,630" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1120,680 1160,680 1160,680 1200,680" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+</svg>
+<div class="wf-node abs " style="left:60px;top:200px;width:280px;height:110px">Platební kalendář<small>součást nabídky</small></div>
+<div class="wf-node abs " style="left:420px;top:200px;width:300px;height:110px">Závazek s QR Platbou<small>kdo, komu, kolik, po kterém kroku</small></div>
+<div class="wf-node abs blue" style="left:800px;top:200px;width:380px;height:110px">Zákazník platí přímo řemeslníkovi</div>
+<div class="wf-node abs " style="left:680px;top:420px;width:280px;height:100px">Banka spáruje<small>podle symbolu</small></div>
+<div class="wf-node abs " style="left:1020px;top:420px;width:320px;height:100px">Příjemce potvrdí: Přišlo</div>
+<div class="wf-node abs ok" style="left:900px;top:630px;width:220px;height:100px">Uhrazeno</div>
+<div class="wf-node abs fill" style="left:1200px;top:630px;width:320px;height:100px">Hodnocení plátce<small>Platí? Včas? Celé?</small></div>
+<div class="wf-callout ok" style="position:absolute;left:60px;top:830px;">MegaJob peníze nedrží</div>
+<div class="wf-stamp"></div>
+</body></html>

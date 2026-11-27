@@ -1,0 +1,146 @@
+/* MegaJob wireframe kit. Deliberately rough so nobody mistakes it for a finished design.
+   One screen = one HTML file at 390x880 (844 screen + 36 stamp), one board = 1600x1000.
+   No JavaScript. Rendered by scripts/render-wireframes.sh. */
+:root {
+  --bg: #ffffff; --ink: #222222; --mute: #8a8a8e; --line: #c9c9ce; --fill: #f2f2f4;
+  --blue: #2f6fed; --warn: #d97706; --ok: #2e9e5b; --r: 12px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--ink);
+  font: 15px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+body.screen { width: 390px; height: 880px; overflow: hidden; position: relative; }
+body.board  { width: 1600px; height: 1000px; overflow: hidden; position: relative; }
+b, strong { font-weight: 650; }
+.mute { color: var(--mute); }
+.small { font-size: 13px; }
+
+/* ---------- phone ---------- */
+.wf-phone { position: absolute; inset: 0 0 36px 0; display: flex; flex-direction: column; }
+.wf-status { height: 44px; flex: none; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 22px; font-weight: 650; font-size: 15px; }
+.wf-status::after { content: "▮▮▮ ◔ ▭"; letter-spacing: 2px; font-size: 11px; color: var(--ink); }
+.wf-body { flex: 1; overflow: hidden; padding: 6px 16px 12px; display: flex; flex-direction: column; gap: 10px; }
+.wf-title { font-size: 26px; font-weight: 700; line-height: 1.15; }
+.wf-sub { font-size: 14px; color: var(--mute); }
+.wf-h { font-size: 13px; font-weight: 650; text-transform: uppercase; letter-spacing: .04em; color: var(--mute); margin-top: 4px; }
+.wf-back { color: var(--blue); font-size: 15px; }
+
+.wf-card { border: 1px solid var(--line); border-radius: var(--r); padding: 11px 12px; display: flex;
+  flex-direction: column; gap: 5px; background: var(--bg); }
+.wf-card.fill { background: var(--fill); border-color: var(--fill); }
+.wf-card.tentative { border-style: dashed; border-width: 2px; }
+.wf-card.warn { border-color: var(--warn); border-width: 2px; }
+.wf-row { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+.wf-row.start { justify-content: flex-start; }
+.wf-stack { display: flex; flex-direction: column; gap: 4px; }
+.wf-list > .wf-row { padding: 9px 0; border-bottom: 1px solid var(--line); }
+.wf-list > .wf-row:last-child { border-bottom: 0; }
+
+.wf-chip { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px;
+  font-size: 13px; white-space: nowrap; }
+.wf-chip.on { background: var(--blue); border-color: var(--blue); color: #fff; }
+.wf-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.wf-badge { display: inline-block; border-radius: 6px; padding: 2px 7px; font-size: 12px; font-weight: 650;
+  background: var(--fill); color: var(--ink); white-space: nowrap; }
+.wf-badge.ok { background: #e3f4ea; color: var(--ok); }
+.wf-badge.warn { background: #fdf0e1; color: var(--warn); }
+.wf-badge.tentative { background: transparent; border: 1.5px dashed var(--ink); padding: 1px 6px; }
+.wf-badge.blue { background: #e6eefd; color: var(--blue); }
+
+.wf-btn { display: block; text-align: center; border-radius: var(--r); padding: 12px; font-weight: 650;
+  font-size: 15px; border: 1px solid var(--line); background: var(--fill); }
+.wf-btn.primary { background: var(--blue); border-color: var(--blue); color: #fff; }
+.wf-btn.outline { background: transparent; border: 1.5px solid var(--blue); color: var(--blue); }
+.wf-btn.ghost { background: transparent; border-color: transparent; color: var(--blue); padding: 8px; }
+.wf-btns { display: flex; flex-direction: column; gap: 8px; margin-top: auto; }
+.wf-btns.row { flex-direction: row; } .wf-btns.row > * { flex: 1; }
+
+/* placeholder photo: dashed box with diagonals */
+.wf-photo { position: relative; border: 1.5px dashed var(--mute); border-radius: 8px; min-height: 60px;
+  background:
+    linear-gradient(to top right, transparent calc(50% - .75px), var(--line) calc(50% - .75px), var(--line) calc(50% + .75px), transparent calc(50% + .75px)),
+    linear-gradient(to top left,  transparent calc(50% - .75px), var(--line) calc(50% - .75px), var(--line) calc(50% + .75px), transparent calc(50% + .75px)); }
+.wf-photo > span { position: absolute; left: 6px; bottom: 4px; font-size: 11px; color: var(--mute); background: #fff; padding: 0 3px; }
+.wf-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.wf-photos .wf-photo { aspect-ratio: 1; min-height: 0; }
+
+/* placeholder QR */
+.wf-qr { width: 120px; height: 120px; border: 1px solid var(--ink); padding: 8px; margin: 2px auto;
+  background:
+    repeating-conic-gradient(var(--ink) 0 25%, transparent 0 50%) 0 0 / 16px 16px content-box; position: relative; }
+.wf-qr::before, .wf-qr::after { content: ""; position: absolute; width: 30px; height: 30px; border: 6px solid var(--ink); background: #fff; }
+.wf-qr::before { left: 8px; top: 8px; } .wf-qr::after { right: 8px; top: 8px; }
+
+.wf-avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--fill); border: 1px solid var(--line);
+  display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 650; flex: none; }
+.wf-progress { height: 8px; border-radius: 4px; background: var(--fill); overflow: hidden; }
+.wf-progress > i { display: block; height: 100%; background: var(--blue); }
+.wf-note { font-size: 13px; color: var(--mute); border-left: 3px solid var(--line); padding: 2px 0 2px 8px; }
+.wf-note.warn { border-color: var(--warn); color: var(--warn); }
+.wf-note.ok { border-color: var(--ok); color: var(--ok); }
+.wf-check { display: inline-flex; width: 20px; height: 20px; border: 1.5px solid var(--line); border-radius: 5px;
+  align-items: center; justify-content: center; font-size: 13px; flex: none; }
+.wf-check.on { background: var(--ok); border-color: var(--ok); color: #fff; }
+.wf-check.no { background: var(--warn); border-color: var(--warn); color: #fff; }
+.wf-x { color: var(--mute); font-size: 16px; }
+.wf-field { border: 1px solid var(--line); border-radius: 8px; padding: 9px 10px; color: var(--mute); }
+.hatch { background: repeating-linear-gradient(45deg, var(--fill) 0 5px, var(--line) 5px 7px); }
+.dashed { border-style: dashed !important; border-width: 2px !important; }
+
+.wf-tabbar { height: 62px; flex: none; border-top: 1px solid var(--line); display: flex; justify-content: space-around;
+  align-items: flex-start; padding-top: 9px; font-size: 11px; color: var(--mute); }
+.wf-tabbar > span { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.wf-tabbar > span::before { content: ""; width: 22px; height: 22px; border-radius: 6px; border: 1.5px solid currentColor; }
+.wf-tabbar > .on { color: var(--blue); }
+
+/* ---------- DRAFT stamp (always the bottom 36 px) ---------- */
+.wf-stamp { position: absolute; left: 0; right: 0; bottom: 0; height: 36px; background: #e4e4e7; color: #55555a;
+  display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700;
+  letter-spacing: .08em; }
+.wf-stamp::before { content: "NÁVRH · MegaJob · olin.now"; }
+body.board .wf-stamp { height: 44px; font-size: 16px; }
+
+/* ---------- boards ---------- */
+.wf-board { position: absolute; inset: 0 0 44px 0; padding: 40px 48px; }
+.wf-board-title { font-size: 34px; font-weight: 750; margin-bottom: 6px; }
+.wf-board-sub { font-size: 17px; color: var(--mute); margin-bottom: 26px; }
+.wf-lane { display: flex; align-items: center; gap: 0; }
+.wf-lane-label { font-size: 13px; font-weight: 650; text-transform: uppercase; letter-spacing: .06em; color: var(--mute); margin: 18px 0 8px; }
+.wf-node { border: 1.5px solid var(--ink); border-radius: var(--r); padding: 14px 16px; font-size: 17px; font-weight: 600;
+  background: #fff; text-align: center; min-width: 120px; }
+.wf-node.fill { background: var(--fill); }
+.wf-node.blue { border-color: var(--blue); color: var(--blue); }
+.wf-node.ok { border-color: var(--ok); color: var(--ok); }
+.wf-node.warn { border-color: var(--warn); color: var(--warn); }
+.wf-node.lock { background: var(--ink); color: #fff; }
+.wf-node.tentative { border-style: dashed; }
+.wf-node.mini { font-size: 13px; font-weight: 500; padding: 6px 10px; min-width: 0; border-color: var(--mute);
+  color: var(--mute); background: var(--fill); border-radius: 999px; }
+.wf-node small { display: block; font-size: 13px; font-weight: 400; color: var(--mute); margin-top: 3px; }
+.wf-arrow { flex: none; width: 46px; height: 2px; background: var(--ink); position: relative; margin: 0 4px; }
+.wf-arrow::after { content: ""; position: absolute; right: -1px; top: -5px; border: 6px solid transparent; border-left: 9px solid var(--ink); border-right: 0; }
+.wf-arrow.short { width: 22px; }
+.wf-arrow.v { width: 2px; height: 34px; margin: 4px auto; }
+.wf-arrow.v::after { right: auto; top: auto; bottom: -1px; left: -5px; border: 6px solid transparent; border-top: 9px solid var(--ink); border-bottom: 0; }
+.wf-callout { border: 1.5px dashed var(--blue); background: #f3f7ff; color: #1d4fb8; border-radius: var(--r);
+  padding: 12px 16px; font-size: 16px; font-weight: 600; }
+.wf-callout.warn { border-color: var(--warn); background: #fff8ef; color: #9a5203; }
+.wf-callout.ok { border-color: var(--ok); background: #f1faf4; color: #1f7343; }
+
+/* mini phones inside a board */
+.wf-mini { width: 248px; height: 480px; border: 1.5px solid var(--ink); border-radius: 22px; padding: 26px 10px 10px;
+  display: flex; flex-direction: column; gap: 8px; font-size: 14px; background: #fff; flex: none; }
+.wf-mini .t { font-size: 19px; font-weight: 700; }
+.wf-mini .wf-card { padding: 6px 7px; border-radius: 8px; gap: 2px; }
+.wf-mini .wf-btn { padding: 9px; font-size: 14px; border-radius: 8px; }
+.wf-mini .wf-photo { min-height: 80px; }
+
+/* absolute board layout: nodes placed in px, wires drawn in one SVG layer beneath them */
+.wf-wires { position: absolute; left: 0; top: 0; }
+.wf-node.abs { position: absolute; display: flex; flex-direction: column; justify-content: center;
+  align-items: center; font-size: 21px; line-height: 1.2; min-width: 0; padding: 10px 14px; }
+.wf-node.abs small { font-size: 15px; margin-top: 6px; }
+.wf-node.lock small { color: #c9c9ce; }
+body.board .wf-callout { font-size: 19px; padding: 14px 20px; }
+body.board .wf-node.mini { font-size: 15px; }

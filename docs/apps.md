@@ -132,6 +132,14 @@ apps/display/build/web` in that repo (scenarios `empty`, `few`, `rush`, clock fr
 borrows them by path; its status section lists what the pilot still has to verify — update it
 when the pilot happens.
 
+**megajob** (MegaJob, added 2026-11-27) is a product that does not exist yet: a renovation
+coordination tool (plan in the MegaJob project's `Prompts/`). `repo:` and `artifacts:` are empty,
+so the page shows „Buildy brzy k dispozici“ and no store badge. Everything on it is a wireframe:
+the visuals gallery and `pages/features.html` are rendered from `apps/megajob/wireframes/`
+(see `docs/galleries.md`), the screenshot sections stay empty on purpose, and names and
+addresses in the drafts are made up. `icon.png` is a placeholder (white M on #2f6fed).
+No MegaJob prices on the page — only „základ zdarma, placené doplňky“.
+
 **webtoon** (added 2026-10-18) is an unreleased project (Go backend + Flutter app + Python
 prototype in the public repo `lioilsources/Webtoon`, no releases), so `repo:` is empty and
 `desktop: Web` only produces the badge; `i18n/cs.tsv` rewords downloads and the empty desktop
