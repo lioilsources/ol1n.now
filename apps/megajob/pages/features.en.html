@@ -1,0 +1,177 @@
+<!-- title: How it works -->
+<!-- intro: The path of a job from request to paid work, and what the tradesperson, customer and coordinator see along the way — on draft screens. -->
+<p class="lead">MegaJob is still being built. This page shows how it is meant to work. The pictures are draft screens, not screenshots of a finished app, and they are in Czech; names and addresses are made up. What comes in the first version and what later is at the end.</p>
+
+<nav class="rules-toc">
+<a href="#prehled">How MegaJob works</a>
+<a href="#zakazka">The path of a job</a>
+<a href="#remeslnik">Tradesperson</a>
+<a href="#denik">Site diary and remote oversight</a>
+<a href="#zakaznik">Customer</a>
+<a href="#zmeny">When the plan changes</a>
+<a href="#predavka">Handover between trades</a>
+<a href="#platby">Payments in plain sight</a>
+<a href="#koordinator">Coordinator</a>
+<a href="#stav">Status and what comes when</a>
+</nav>
+
+<h2 id="prehled">How MegaJob works</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t1-prehled.webp" alt="How MegaJob works (draft)" width="2400" height="1500" loading="lazy"><figcaption>How MegaJob works · draft</figcaption></figure>
+<div class="feat-text">
+<p>A job can arrive by two routes. Either a coordinator runs it, someone who knows both the customer and their own tradespeople, or the customer submits it directly and the system builds the plan from verified tradespeople. Both routes use the same job flow, the same shifts and the same diary.</p>
+</div>
+</div>
+
+<h2 id="zakazka">The path of a job</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t2-zakazka.webp" alt="The path of a job (draft)" width="2400" height="1500" loading="lazy"><figcaption>The path of a job · draft</figcaption></figure>
+<div class="feat-shots">
+<figure><img src="visuals/megajob/zakaznik/c2-nabidka.webp" alt="Quote (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Quote</figcaption></figure>
+<figure><img src="visuals/megajob/zakaznik/c6-osnova.webp" alt="Outline (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Outline</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>A job is a tree of layers and steps. A step can be work, but also a structural engineer’s inspection, a material delivery, the owners’ association’s consent or a drying pause.</p>
+<ul>
+<li><strong>The quote has versions.</strong> First an indicative range of price and dates. After the inspections, a binding quote. Every later change is a new version where the customer sees the difference and approves it.</li>
+<li><strong>Findings change the plan.</strong> When an inspection finds a rotten riser, a new layer is proposed with its price and its effect on the dates.</li>
+<li><strong>A step can be added at any time,</strong> even to a job already under way.</li>
+<li><strong>Divide and rule.</strong> A whole layer can be handed to a crew; its lead splits it up.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="remeslnik">Tradesperson</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="visuals/megajob/remeslnik/r1-dnes.webp" alt="Today (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Today</figcaption></figure>
+<figure><img src="visuals/megajob/remeslnik/r2-nabidka.webp" alt="Job offer (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Job offer</figcaption></figure>
+<figure><img src="visuals/megajob/remeslnik/r3-sichta.webp" alt="Shift detail (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Shift detail</figcaption></figure>
+<figure><img src="visuals/megajob/remeslnik/r6-kalendar.webp" alt="Calendar (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Calendar</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>One calendar for everyone the tradesperson works for.</p>
+<ul>
+<li><strong>Today:</strong> shifts in order, travel between them and free slots that fit a small job nearby.</li>
+<li><strong>Offer:</strong> scope, dates, price from their own price list, who works before and after them, travel time and how the client pays. Answers: Take it, Can’t, Propose another date.</li>
+<li><strong>Declining costs nothing.</strong></li>
+<li><strong>Tentative and confirmed.</strong> Accepted work is only tentative until the date is locked and can be released. After the lock it is binding.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="denik">Site diary and remote oversight</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t3-den.webp" alt="A tradesperson's day (draft)" width="2400" height="1500" loading="lazy"><figcaption>A tradesperson's day · draft</figcaption></figure>
+<div class="feat-shots">
+<figure><img src="visuals/megajob/remeslnik/r4-fotky.webp" alt="Before photos (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Before photos</figcaption></figure>
+<figure><img src="visuals/megajob/remeslnik/r5-zapis.webp" alt="Diary entry (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Diary entry</figcaption></figure>
+<figure><img src="visuals/megajob/zakaznik/c4-dnes.webp" alt="My renovation (draft screen)" width="780" height="1760" loading="lazy"><figcaption>My renovation</figcaption></figure>
+<figure><img src="visuals/megajob/zakaznik/c5-denik.webp" alt="Day's diary (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Day's diary</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>One entry per shift: when they arrived and left, before and after photos, what got done, how much is finished and what got stuck.</p>
+<ul>
+<li><strong>The server checks arrival.</strong> The app sends a location only on arrival and departure. The server works out whether the tradesperson is on site, stores the answer yes or no and throws the coordinates away.</li>
+<li><strong>Nothing is collected outside the shift.</strong> No route, no dot on a map.</li>
+<li><strong>Photos only from the app’s camera,</strong> not from the gallery.</li>
+<li><strong>A voice note</strong> instead of typing with dirty hands.</li>
+<li><strong>Works without signal.</strong> The entry is sent once there is a connection.</li>
+<li><strong>The customer</strong> sees who is on site and since when, and gets a summary of the day in the evening.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="zakaznik">Customer</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="visuals/megajob/zakaznik/c1-prihlaska.webp" alt="Request (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Request</figcaption></figure>
+<figure><img src="visuals/megajob/zakaznik/c3-tym.webp" alt="Team (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Team</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>The customer does not approve individual shifts. They approve the scope, price, dates, team and changes.</p>
+<ul>
+<li><strong>Request:</strong> what they want done, photos or a short video, when. It can be spoken, and a relative can submit it from afar.</li>
+<li><strong>Team:</strong> for each part of the work they approve a group of two to four tradespeople. They can strike anyone off.</li>
+<li><strong>Trusted person:</strong> bigger changes can be co-approved by a second person, such as a son or daughter.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="zmeny">When the plan changes</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t4-zmena.webp" alt="When a tradesperson takes a better job (draft)" width="2400" height="1500" loading="lazy"><figcaption>When a tradesperson takes a better job · draft</figcaption></figure>
+<div class="feat-shots">
+<figure><img src="visuals/megajob/zakaznik/c7-zmena.webp" alt="Team change (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Team change</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>A tradesperson may release tentatively accepted work when a better job comes along. So that the customer is not left with a half-demolished bathroom, three rules apply.</p>
+<ul>
+<li><strong>The lock.</strong> Before work starts the date is locked and the work is binding.</li>
+<li><strong>A job under way cannot be abandoned.</strong> Once demolition starts, the following steps are binding.</li>
+<li><strong>A replacement from the approved group.</strong> The freed slot goes to the next person in the group the customer has already approved. The customer sees who leaves, who arrives and from when, and can accept the change, ask for someone else or wait.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="predavka">Handover between trades</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="visuals/megajob/remeslnik/r7-predavka.webp" alt="Handover (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Handover</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Whoever comes next takes over from whoever finishes: with a checklist and photos. A tiler spots a badly levelled wall better than the customer does. A reservation goes to whoever runs the job and counts towards the rating.</p>
+</div>
+</div>
+
+<h2 id="platby">Payments in plain sight</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t5-platby.webp" alt="Payments in plain sight (draft)" width="2400" height="1500" loading="lazy"><figcaption>Payments in plain sight · draft</figcaption></figure>
+<div class="feat-shots">
+<figure><img src="visuals/megajob/zakaznik/c8-platby.webp" alt="Payments (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Payments</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>No money flows through MegaJob. The customer pays the tradesperson directly.</p>
+<ul>
+<li><strong>The payment schedule</strong> is part of the quote: who pays whom, how much and after which step.</li>
+<li><strong>A QR payment</strong> for every amount. The payment is recognised by its reference and matched automatically, or the recipient confirms it.</li>
+<li><strong>Debt is visible:</strong> what is paid, what is pending and what is overdue.</li>
+<li><strong>Payments are the payer’s rating.</strong> Do they pay? On time? In full? The tradesperson sees it before accepting an offer.</li>
+<li><strong>A payment withheld over faulty work does not count against the rating</strong> until the dispute is resolved.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="koordinator">Coordinator</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="visuals/megajob/koordinator/a1-dnes.webp" alt="Today across jobs (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Today across jobs</figcaption></figure>
+<figure><img src="visuals/megajob/koordinator/a2-osnova.webp" alt="Job outline (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Job outline</figcaption></figure>
+<figure><img src="visuals/megajob/koordinator/a3-sit.webp" alt="My network (draft screen)" width="780" height="1760" loading="lazy"><figcaption>My network</figcaption></figure>
+<figure><img src="visuals/megajob/koordinator/a4-burza.webp" alt="Capacity exchange (draft screen)" width="780" height="1760" loading="lazy"><figcaption>Capacity exchange</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>A tool for whoever runs the jobs. It works on a phone, because a coordinator spends more time on site than at a desk.</p>
+<ul>
+<li><strong>Today:</strong> all jobs at once, who is where, and an alert when someone has not turned up.</li>
+<li><strong>Outline:</strong> the job tree, where steps can be inserted, moved and handed to a crew.</li>
+<li><strong>Network:</strong> their own tradespeople with notes nobody else sees. Each one shows when they are free.</li>
+<li><strong>Capacity exchange:</strong> when their own network is not enough, spare capacity of tradespeople from elsewhere. A request can be promoted, and it shows. The order of tradespeople cannot be bought.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="stav">Status and what comes when</h2>
+<div class="feat">
+<div class="feat-text">
+<p>The app does not exist yet. The plan and these drafts are done.</p>
+<div class="table"><table class="rules-table"><thead><tr><th>When</th><th>What</th></tr></thead><tbody>
+<tr><td>First version</td><td>A tool for coordinators: job and outline, shifts, accepting and releasing, diary, remote oversight</td></tr>
+<tr><td>Then</td><td>Quote versions, inspection findings, rescheduling, handovers</td></tr>
+<tr><td>Then</td><td>Shared capacity between coordinators, tradesperson ratings</td></tr>
+<tr><td>Then</td><td>Payments in plain sight and paid extras</td></tr>
+<tr><td>Finally</td><td>Jobs without a coordinator</td></tr>
+</tbody></table></div>
+<p>I am looking for the first coordinators to try the tool on a real job.</p>
+</div>
+</div>

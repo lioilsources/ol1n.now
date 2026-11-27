@@ -24,7 +24,7 @@
 // turns to mush long before the text on it becomes readable.
 (function () {
   "use strict";
-  var SEL = ".shots img, .feat-shots img";
+  var SEL = ".shots img, .feat-shots img, .feat-board img";
   if (!document.querySelector(SEL)) return;
 
   var box, img, pct, opener;

@@ -28,6 +28,7 @@
 #   hero      painted scenes, cropped to the tile
 #   wide      one full-width strip per row
 #   sheet     one full-width specimen sheet per row, on white
+#   phone     whole portrait phone screens, uncropped (render-wireframes.sh)
 set -euo pipefail
 
 SLUG="${1:-doodlebugs}"

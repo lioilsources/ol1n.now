@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><title>Když řemeslník vezme lepší práci</title><link rel="stylesheet" href="../wf.css"></head>
+<body class="board">
+<div class="wf-board">
+<div class="wf-board-title">Když řemeslník vezme lepší práci</div>
+<div class="wf-board-sub">Předběžně přijatou práci jde pustit. Po zámku už ne.</div>
+</div>
+<svg class="wf-wires" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<polyline points="310,260 355,260 355,260 400,260" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="630,260 675,260 675,260 720,260" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="950,260 995,260 995,260 1040,260" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="515,310 515,375 515,375 515,440" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="630,490 675,490 675,490 720,490" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="1040,490 1080,490 1080,490 1120,490" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="515,540 515,710 720,710" fill="none" stroke="#222" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#ah)"/>
+<polyline points="1040,710 1080,710 1080,710 1120,710" fill="none" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+</svg>
+<div class="wf-node abs " style="left:80px;top:210px;width:230px;height:100px">Nabídnuto</div>
+<div class="wf-node abs tentative" style="left:400px;top:210px;width:230px;height:100px">Předběžně<small>jde uvolnit</small></div>
+<div class="wf-node abs lock" style="left:720px;top:210px;width:230px;height:100px">Zámek<small>před začátkem</small></div>
+<div class="wf-node abs ok" style="left:1040px;top:210px;width:230px;height:100px">Potvrzeno<small>závazné</small></div>
+<div class="wf-node abs warn" style="left:400px;top:440px;width:230px;height:100px">Uvolní<small>vzal lepší práci</small></div>
+<div class="wf-node abs blue" style="left:720px;top:440px;width:320px;height:100px">Další ze schválené skupiny</div>
+<div class="wf-node abs " style="left:1120px;top:440px;width:340px;height:100px">Zákazník dostane oznámení<small>kdo odchází, kdo přichází, od kdy</small></div>
+<div class="wf-node abs warn" style="left:720px;top:660px;width:320px;height:100px">Nikdo ze skupiny</div>
+<div class="wf-node abs fill" style="left:1120px;top:660px;width:340px;height:100px">Zákazník rozhoduje<small>přijmout · jiného · počkat</small></div>
+<div class="wf-callout warn" style="position:absolute;left:80px;top:830px;">Rozjetou zakázku opustit nejde</div>
+<div class="wf-stamp"></div>
+</body></html>

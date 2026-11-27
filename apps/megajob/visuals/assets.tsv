@@ -1,0 +1,24 @@
+toky	1	t1-prehled.webp	Jak MegaJob funguje	2400t1500
+toky	2	t2-zakazka.webp	Cesta zakázky	2400t1500
+toky	3	t3-den.webp	Den řemeslníka	2400t1500
+toky	4	t4-zmena.webp	Když řemeslník vezme lepší práci	2400t1500
+toky	5	t5-platby.webp	Platby na očích	2400t1500
+remeslnik	1	r1-dnes.webp	Dnes	780t1760
+remeslnik	2	r2-nabidka.webp	Nabídka práce	780t1760
+remeslnik	3	r3-sichta.webp	Detail šichty	780t1760
+remeslnik	4	r4-fotky.webp	Fotky před	780t1760
+remeslnik	5	r5-zapis.webp	Zápis	780t1760
+remeslnik	6	r6-kalendar.webp	Kalendář	780t1760
+remeslnik	7	r7-predavka.webp	Předávka	780t1760
+zakaznik	1	c1-prihlaska.webp	Přihláška	780t1760
+zakaznik	2	c2-nabidka.webp	Nabídka	780t1760
+zakaznik	3	c3-tym.webp	Tým	780t1760
+zakaznik	4	c4-dnes.webp	Moje rekonstrukce	780t1760
+zakaznik	5	c5-denik.webp	Deník dne	780t1760
+zakaznik	6	c6-osnova.webp	Osnova	780t1760
+zakaznik	7	c7-zmena.webp	Změna v týmu	780t1760
+zakaznik	8	c8-platby.webp	Platby	780t1760
+koordinator	1	a1-dnes.webp	Dnes napříč zakázkami	780t1760
+koordinator	2	a2-osnova.webp	Osnova zakázky	780t1760
+koordinator	3	a3-sit.webp	Moje síť	780t1760
+koordinator	4	a4-burza.webp	Burza kapacit	780t1760

@@ -1,0 +1,177 @@
+<!-- title: Jak to funguje -->
+<!-- intro: Cesta zakázky od poptávky po zaplacenou práci a co při ní vidí řemeslník, zákazník a koordinátor — na návrzích obrazovek. -->
+<p class="lead">MegaJob se teprve staví. Tahle stránka ukazuje, jak má fungovat. Obrázky jsou návrhy obrazovek, ne snímky hotové aplikace; jména a adresy jsou smyšlené. Co bude v první verzi a co později, je na konci.</p>
+
+<nav class="rules-toc">
+<a href="#prehled">Jak MegaJob funguje</a>
+<a href="#zakazka">Cesta zakázky</a>
+<a href="#remeslnik">Řemeslník</a>
+<a href="#denik">Deník a dozor na dálku</a>
+<a href="#zakaznik">Zákazník</a>
+<a href="#zmeny">Když se plán změní</a>
+<a href="#predavka">Předávka mezi řemesly</a>
+<a href="#platby">Platby na očích</a>
+<a href="#koordinator">Koordinátor</a>
+<a href="#stav">Stav a co bude kdy</a>
+</nav>
+
+<h2 id="prehled">Jak MegaJob funguje</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t1-prehled.webp" alt="Jak MegaJob funguje (návrh)" width="2400" height="1500" loading="lazy"><figcaption>Jak MegaJob funguje · návrh</figcaption></figure>
+<div class="feat-text">
+<p>Zakázka může přijít dvěma cestami. Buď ji řídí koordinátor, který zná zákazníka i své řemeslníky, nebo ji zákazník zadá přímo a plán sestaví systém z ověřených řemeslníků. Obě cesty používají stejný tok zakázky, stejné šichty a stejný deník.</p>
+</div>
+</div>
+
+<h2 id="zakazka">Cesta zakázky</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t2-zakazka.webp" alt="Cesta zakázky (návrh)" width="2400" height="1500" loading="lazy"><figcaption>Cesta zakázky · návrh</figcaption></figure>
+<div class="feat-shots">
+<figure><img src="visuals/megajob/zakaznik/c2-nabidka.webp" alt="Nabídka (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Nabídka</figcaption></figure>
+<figure><img src="visuals/megajob/zakaznik/c6-osnova.webp" alt="Osnova (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Osnova</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Zakázka je strom vrstev a kroků. Krok může být práce, ale i prohlídka statika, dodávka materiálu, souhlas společenství vlastníků nebo pauza na schnutí.</p>
+<ul>
+<li><strong>Nabídka má verze.</strong> Nejdřív orientační rozpětí ceny a termínu. Po prohlídkách závazná nabídka. Každá další změna je nová verze, u které zákazník vidí rozdíl a schvaluje ho.</li>
+<li><strong>Nálezy mění plán.</strong> Když prohlídka najde shnilou stoupačku, vznikne návrh nové vrstvy s cenou a dopadem na termín.</li>
+<li><strong>Krok jde vložit kdykoli,</strong> i do rozjeté zakázky.</li>
+<li><strong>Rozděl a panuj.</strong> Celou vrstvu jde předat partě; její vedoucí si ji rozdělí sám.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="remeslnik">Řemeslník</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="visuals/megajob/remeslnik/r1-dnes.webp" alt="Dnes (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Dnes</figcaption></figure>
+<figure><img src="visuals/megajob/remeslnik/r2-nabidka.webp" alt="Nabídka práce (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Nabídka práce</figcaption></figure>
+<figure><img src="visuals/megajob/remeslnik/r3-sichta.webp" alt="Detail šichty (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Detail šichty</figcaption></figure>
+<figure><img src="visuals/megajob/remeslnik/r6-kalendar.webp" alt="Kalendář (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Kalendář</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Jeden kalendář pro všechny, pro koho řemeslník pracuje.</p>
+<ul>
+<li><strong>Dnes:</strong> šichty v pořadí, dojezdy mezi nimi a volná okna, do kterých se vejde drobná práce poblíž.</li>
+<li><strong>Nabídka:</strong> rozsah, termín, cena podle vlastního ceníku, kdo dělá před ním a po něm, dojezd a jak zadavatel platí. Odpovědi: Beru, Nemůžu, Navrhnout jiný termín.</li>
+<li><strong>Odmítnutí nic nestojí.</strong></li>
+<li><strong>Předběžně a potvrzeno.</strong> Přijatá práce je do uzamčení termínu jen předběžná a jde uvolnit. Po uzamčení je závazná.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="denik">Deník a dozor na dálku</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t3-den.webp" alt="Den řemeslníka (návrh)" width="2400" height="1500" loading="lazy"><figcaption>Den řemeslníka · návrh</figcaption></figure>
+<div class="feat-shots">
+<figure><img src="visuals/megajob/remeslnik/r4-fotky.webp" alt="Fotky před (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Fotky před</figcaption></figure>
+<figure><img src="visuals/megajob/remeslnik/r5-zapis.webp" alt="Zápis (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Zápis</figcaption></figure>
+<figure><img src="visuals/megajob/zakaznik/c4-dnes.webp" alt="Moje rekonstrukce (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Moje rekonstrukce</figcaption></figure>
+<figure><img src="visuals/megajob/zakaznik/c5-denik.webp" alt="Deník dne (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Deník dne</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Jeden zápis za šichtu: kdy přišel a odešel, fotky před a po, co se udělalo, kolik je hotovo a co se zadrhlo.</p>
+<ul>
+<li><strong>Příchod ověřuje server.</strong> Appka pošle polohu jen při příchodu a odchodu. Server zjistí, jestli je řemeslník na místě, uloží odpověď ano nebo ne a souřadnice zahodí.</li>
+<li><strong>Mimo šichtu se nesbírá nic.</strong> Žádná trasa, žádná tečka na mapě.</li>
+<li><strong>Fotky jen z fotoaparátu appky,</strong> ne z galerie.</li>
+<li><strong>Hlasová poznámka</strong> místo psaní špinavýma rukama.</li>
+<li><strong>Funguje bez signálu.</strong> Zápis se odešle, až bude připojení.</li>
+<li><strong>Zákazník</strong> vidí, kdo je na místě a od kdy, a večer dostane souhrn dne.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="zakaznik">Zákazník</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="visuals/megajob/zakaznik/c1-prihlaska.webp" alt="Přihláška (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Přihláška</figcaption></figure>
+<figure><img src="visuals/megajob/zakaznik/c3-tym.webp" alt="Tým (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Tým</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Zákazník neschvaluje jednotlivé šichty. Schvaluje rozsah, cenu, termín, tým a změny.</p>
+<ul>
+<li><strong>Přihláška:</strong> co chce udělat, fotky nebo krátké video, kdy. Jde i namluvit a může ji podat příbuzný na dálku.</li>
+<li><strong>Tým:</strong> ke každé části práce schvaluje skupinu dvou až čtyř řemeslníků. Kohokoli může vyřadit.</li>
+<li><strong>Důvěrník:</strong> větší změny může spoluschvalovat druhá osoba, třeba syn nebo dcera.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="zmeny">Když se plán změní</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t4-zmena.webp" alt="Když řemeslník vezme lepší práci (návrh)" width="2400" height="1500" loading="lazy"><figcaption>Když řemeslník vezme lepší práci · návrh</figcaption></figure>
+<div class="feat-shots">
+<figure><img src="visuals/megajob/zakaznik/c7-zmena.webp" alt="Změna v týmu (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Změna v týmu</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Řemeslník může předběžně přijatou práci pustit, když dostane lepší. Aby zákazník nezůstal s rozbouranou koupelnou, platí tři pravidla.</p>
+<ul>
+<li><strong>Zámek.</strong> Před začátkem se termín uzamkne a práce je závazná.</li>
+<li><strong>Rozjetou zakázku opustit nejde.</strong> Jakmile se začne bourat, navazující kroky jsou závazné.</li>
+<li><strong>Náhrada ze schválené skupiny.</strong> Uvolněné místo dostane další člověk ze skupiny, kterou zákazník už schválil. Zákazník vidí, kdo odchází, kdo přichází a od kdy, a může změnu přijmout, chtít někoho jiného nebo počkat.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="predavka">Předávka mezi řemesly</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="visuals/megajob/remeslnik/r7-predavka.webp" alt="Předávka (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Předávka</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Kdo nastupuje, přebírá práci po tom, kdo končí: s kontrolním seznamem a fotkami. Obkladač pozná špatně vyrovnanou stěnu líp než zákazník. Výhrada jde tomu, kdo zakázku řídí, a počítá se do hodnocení.</p>
+</div>
+</div>
+
+<h2 id="platby">Platby na očích</h2>
+<div class="feat">
+<figure class="feat-board"><img src="visuals/megajob/toky/t5-platby.webp" alt="Platby na očích (návrh)" width="2400" height="1500" loading="lazy"><figcaption>Platby na očích · návrh</figcaption></figure>
+<div class="feat-shots">
+<figure><img src="visuals/megajob/zakaznik/c8-platby.webp" alt="Platby (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Platby</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Peníze přes MegaJob netečou. Zákazník platí řemeslníkovi přímo.</p>
+<ul>
+<li><strong>Platební kalendář</strong> je součást nabídky: kdo, komu, kolik a po kterém kroku.</li>
+<li><strong>QR Platba</strong> pro každou částku. Platba se pozná podle symbolu a spáruje se sama, nebo ji příjemce potvrdí.</li>
+<li><strong>Dluh je vidět:</strong> co je uhrazené, co čeká a co je po splatnosti.</li>
+<li><strong>Platby jsou hodnocení plátce.</strong> Platí? Platí včas? Platí celé? Řemeslník to vidí, než nabídku přijme.</li>
+<li><strong>Zadržená platba za vadnou práci se do hodnocení nepočítá,</strong> dokud se spor nevyřeší.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="koordinator">Koordinátor</h2>
+<div class="feat">
+<div class="feat-shots">
+<figure><img src="visuals/megajob/koordinator/a1-dnes.webp" alt="Dnes napříč zakázkami (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Dnes napříč zakázkami</figcaption></figure>
+<figure><img src="visuals/megajob/koordinator/a2-osnova.webp" alt="Osnova zakázky (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Osnova zakázky</figcaption></figure>
+<figure><img src="visuals/megajob/koordinator/a3-sit.webp" alt="Moje síť (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Moje síť</figcaption></figure>
+<figure><img src="visuals/megajob/koordinator/a4-burza.webp" alt="Burza kapacit (návrh obrazovky)" width="780" height="1760" loading="lazy"><figcaption>Burza kapacit</figcaption></figure>
+</div>
+<div class="feat-text">
+<p>Nástroj pro toho, kdo zakázky řídí. Funguje na telefonu, protože koordinátor je víc na stavbě než u stolu.</p>
+<ul>
+<li><strong>Dnes:</strong> všechny zakázky naráz, kdo kde je, a upozornění, když někdo nepřišel.</li>
+<li><strong>Osnova:</strong> strom zakázky, do kterého jde vkládat, přesouvat a předávat partě.</li>
+<li><strong>Síť:</strong> vlastní řemeslníci s poznámkami, které nikdo jiný nevidí. U každého je vidět, kdy má volno.</li>
+<li><strong>Burza kapacit:</strong> když vlastní síť nestačí, volné kapacity řemeslníků odjinud. Poptávku jde topovat a je to na ní vidět. Pořadí řemeslníků se koupit nedá.</li>
+</ul>
+</div>
+</div>
+
+<h2 id="stav">Stav a co bude kdy</h2>
+<div class="feat">
+<div class="feat-text">
+<p>Appka zatím neexistuje. Hotový je plán a tyto návrhy.</p>
+<div class="table"><table class="rules-table"><thead><tr><th>Kdy</th><th>Co</th></tr></thead><tbody>
+<tr><td>První verze</td><td>Nástroj pro koordinátory: zakázka a osnova, šichty, přijetí a uvolnění, deník, dozor na dálku</td></tr>
+<tr><td>Potom</td><td>Verze nabídky, nálezy z prohlídek, přeplánování, předávky</td></tr>
+<tr><td>Potom</td><td>Sdílené kapacity mezi koordinátory, hodnocení řemeslníků</td></tr>
+<tr><td>Potom</td><td>Platby na očích a placené doplňky</td></tr>
+<tr><td>Nakonec</td><td>Zadání bez koordinátora</td></tr>
+</tbody></table></div>
+<p>Hledám první koordinátory, kteří by nástroj vyzkoušeli na skutečné zakázce.</p>
+</div>
+</div>
